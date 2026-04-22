@@ -1,0 +1,44 @@
+{
+  "id": "notation",
+  "title": "Reading Chess Notation",
+  "summary": "Decode any chess move in algebraic notation",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "The System",
+      "text": "Algebraic notation describes every move uniquely. Files (columns) are letters a–h, ranks (rows) are numbers 1–8. White's first rank is 1, Black's is 8. A square is file+rank: e4, d5, h8."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Piece Letters",
+      "text": "Pieces are K (King), Q (Queen), R (Rook), B (Bishop), N (Knight). Pawns have no letter — \"e4\" alone means a pawn to e4. Captures use \"x\": Nxe5 means knight captures on e5."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Special Symbols",
+      "text": "\"+\" means check. \"#\" means checkmate. \"O-O\" is short castle, \"O-O-O\" is long castle. \"=\" marks promotion: e8=Q (pawn promotes to queen). When two pieces could move to the same square, the starting file or rank is added: Nbd2 or R1e1."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "Play 1.e4 — push the king's pawn.",
+      "targetSan": [
+        "e4"
+      ],
+      "hint": "Just select the pawn on e2 and move it to e4."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "Now play 2.Nf3.",
+      "targetSan": [
+        "Nf3"
+      ],
+      "hint": "The knight from g1 jumps to f3."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "kings-pawn-family",
+  "title": "1.e4 — The King's Pawn",
+  "summary": "An overview of every major 1.e4 reply",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+      "title": "The Romantic Opening",
+      "text": "1.e4 opens lines for the queen and bishop and fights for the center with a pawn. It's sharp, tactical, and the most popular first move in chess history."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+      "title": "Black's Main Replies",
+      "text": "Black has several serious answers: 1...e5 (classical, symmetrical), 1...c5 (Sicilian, asymmetric), 1...e6 (French), 1...c6 (Caro-Kann), 1...d5 (Scandinavian). Each leads to a distinct game."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+      "prompt": "Meet 1.e4 with the classical reply.",
+      "targetSan": [
+        "e5"
+      ],
+      "hint": "1...e5 mirrors White's claim on the center."
+    }
+  ]
+}

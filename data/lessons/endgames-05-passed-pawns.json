@@ -1,0 +1,21 @@
+{
+  "id": "passed-pawns",
+  "title": "Passed Pawns",
+  "summary": "The engine of endgame victories",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "4k3/8/8/8/4P3/8/8/4K3 w - - 0 1",
+      "title": "What Is a Passed Pawn?",
+      "text": "A passed pawn has no enemy pawn in front of it or on either adjacent file — nothing can stop it from promoting except a piece. Passed pawns are enormous assets in the endgame. The phrase 'a passed pawn must be pushed' is a Nimzowitsch-ism for a reason." },
+    { "type": "play",
+      "fen": "4k3/8/8/8/4P3/8/8/4K3 w - - 0 1",
+      "prompt": "Advance the passed pawn.",
+      "targetSan": ["e5"],
+      "hint": "e5 — one step closer to promotion." },
+    { "type": "teach",
+      "fen": "4k3/8/8/4P3/8/8/8/4K3 b - - 0 1",
+      "title": "Support It!",
+      "text": "A lone passed pawn still needs help. Without a king escorting it forward, a single enemy piece can stop it. Activate your king to support the advance — and create a new queen." }
+  ]
+}

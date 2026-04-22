@@ -1,0 +1,20 @@
+{
+  "id": "weak-squares",
+  "title": "Weak Squares and Colors",
+  "summary": "Squares your opponent can't defend",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "The Holes",
+      "text": "A weak square is one your opponent can't defend with a pawn. Usually the result of a careless pawn push. If a knight lands there and can't be kicked, it becomes an immovable strong point."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "Color Complexes",
+      "text": "Deeper than individual squares are \"color complexes\" — groups of squares of ONE color that are systematically weak. If your opponent's pawns are all on light squares, his dark squares are weak. Your dark-squared pieces become monsters."
+    }
+  ]
+}

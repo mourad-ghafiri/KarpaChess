@@ -1,0 +1,20 @@
+{
+  "id": "xray-attack",
+  "title": "X-Ray Attack",
+  "summary": "Attack THROUGH a piece",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "3rk3/8/8/8/8/8/3R4/3RK3 w - - 0 1",
+      "title": "Seeing Through",
+      "text": "An X-ray attack is when a piece attacks THROUGH an intervening piece — often the enemy's own piece. If the intervening piece moves, your attack lands behind it. Unlike a pin, X-ray usually wins or gains tempo either way."
+    },
+    {
+      "type": "teach",
+      "fen": "3rk3/8/8/8/8/8/3R4/3RK3 w - - 0 1",
+      "title": "Example",
+      "text": "Here White's d1 rook X-rays the enemy king through the d2 and d8 rooks. After exchanges on d8, the king is pinned or the back-rank collapses."
+    }
+  ]
+}

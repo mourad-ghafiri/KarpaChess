@@ -1,0 +1,8 @@
+{
+  "id": "mate-in-1-03",
+  "fen": "7k/6pp/8/8/8/8/1R6/1R5K w - - 0 1",
+  "solution": [
+    "Rb8#"
+  ],
+  "hint": "One rook steps up while the other controls the rank."
+}

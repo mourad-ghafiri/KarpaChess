@@ -1,0 +1,21 @@
+{
+  "id": "english",
+  "title": "The English Opening",
+  "summary": "Flexible flank play",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Control the Center From the Flanks",
+      "text": "The English (1.c4) is a flexible opening championed by top players. Instead of rushing to push d4, White prepares it with c-pawn support and develops pieces first. Games often transpose into Queen's Gambit or Indian structures." },
+    { "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "Play the English Opening.",
+      "targetSan": ["c4"],
+      "hint": "1.c4 — the English." },
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/2P5/8/PP1PPPPP/RNBQKBNR b KQkq - 0 1",
+      "title": "Flexible Follow-ups",
+      "text": "Depending on Black's reply, White can play d4 (transposing to Queen's Gambit), Nc3 + g3 (positional Botvinnik-style), or e3 (flexible). The English is a great choice if you dislike memorizing sharp theory." }
+  ]
+}

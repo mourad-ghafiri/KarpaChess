@@ -1,0 +1,25 @@
+{
+  "id": "en-passant",
+  "title": "En Passant",
+  "summary": "The pawn capture most players never learn",
+  "difficulty": "beginner",
+  "steps": [
+    { "type": "teach",
+      "fen": "4k3/3p4/8/4P3/8/8/8/4K3 w - - 0 1",
+      "title": "A Sneaky Rule",
+      "text": "When pawns advance two squares from their starting rank, they can sometimes be captured by an enemy pawn 'in passing.' This is called en passant — French for 'in passing.' It only works on the very next move." },
+    { "type": "teach",
+      "fen": "rnbqkbnr/ppp1p1pp/8/3pPp2/8/8/PPPP1PPP/RNBQKBNR w KQkq f6 0 3",
+      "title": "The Opportunity",
+      "text": "Black just played ...f5, zipping two squares past White's e5 pawn. White's pawn could have captured at f6 if the Black pawn had only moved one square. En passant says: you can still do it — just this turn." },
+    { "type": "play",
+      "fen": "rnbqkbnr/ppp1p1pp/8/3pPp2/8/8/PPPP1PPP/RNBQKBNR w KQkq f6 0 3",
+      "prompt": "Capture the f5 pawn en passant.",
+      "targetSan": ["exf6"],
+      "hint": "The move is exf6 — your pawn captures as if the f-pawn were on f6." },
+    { "type": "teach",
+      "fen": "rnbqkbnr/ppp1p1pp/5P2/3p4/8/8/PPPP1PPP/RNBQKBNR b KQkq - 0 3",
+      "title": "One-Shot Rule",
+      "text": "You MUST use en passant on the very next move or lose the right. It's one of the most commonly forgotten rules — now you know." }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "interference",
+  "title": "Interference",
+  "summary": "Block the enemy's defense line",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "4k3/8/8/8/8/8/8/4K3 w - - 0 1",
+      "title": "The Blocker",
+      "text": "Interference tactics work when an enemy piece is defending a key square along a line — you interpose your own piece to block that defense. Often decisive in the middlegame."
+    },
+    {
+      "type": "teach",
+      "fen": "4k3/8/8/8/8/8/8/4K3 w - - 0 1",
+      "title": "Novotny and Plachutta",
+      "text": "Two classical interference patterns: the Novotny (sacrificing on a crossing of two lines, forcing one defender to block the other) and the Plachutta (same idea but with like-moving pieces). Beautiful geometrical tactics."
+    }
+  ]
+}

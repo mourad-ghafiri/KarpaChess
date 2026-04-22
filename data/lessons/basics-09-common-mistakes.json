@@ -1,0 +1,26 @@
+{
+  "id": "common-mistakes",
+  "title": "Common Beginner Mistakes",
+  "summary": "Avoid the traps every beginner falls into",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "The Big Five",
+      "text": "Every beginner makes these mistakes: (1) moving the same piece twice in the opening, (2) forgetting to castle, (3) bringing the queen out too early, (4) making \"automatic\" moves without checking, (5) playing without a plan."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/3PP3/8/PPP2PPP/RNBQKBNR b KQkq d3 0 2",
+      "title": "Don't Grab Every Pawn",
+      "text": "Not every capture is good. Sometimes taking a pawn wastes time — your opponent develops while you move the same piece again. Ask: \"Is this pawn worth a tempo?\""
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Watch Your Opponent's Threats",
+      "text": "Half of losing positions come from ignoring the opponent. When they move, always ask: \"What does this move attack?\" If you can't see it, you probably missed it."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "minor-piece-endings",
+  "title": "Bishop vs Knight Endings",
+  "summary": "Which minor piece is better?",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "4k3/8/8/8/8/3N4/8/4K3 w - - 0 1",
+      "title": "Open vs Closed Position",
+      "text": "In OPEN positions with pawns on both wings, the bishop is usually better — its long diagonals reach everywhere. In CLOSED positions with fixed pawns, the knight is usually better — it can jump over."
+    },
+    {
+      "type": "teach",
+      "fen": "4k3/8/8/8/8/4B3/8/4K3 w - - 0 1",
+      "title": "Fischer's Dictum",
+      "text": "Bobby Fischer famously said \"the bishop is stronger\" — but only in simplified positions. The truth: know what kind of position favors each piece, and aim to trade into the one that favors YOUR piece."
+    }
+  ]
+}

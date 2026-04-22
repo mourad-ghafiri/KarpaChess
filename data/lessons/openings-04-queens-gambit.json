@@ -1,0 +1,26 @@
+{
+  "id": "queens-gambit",
+  "title": "The Queen's Gambit",
+  "summary": "Offer a pawn to control the center",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "The Classical Queen's Pawn",
+      "text": "The Queen's Gambit begins 1.d4 d5 2.c4. White offers the c-pawn. If Black takes, the center is abandoned. If Black declines (most common at master level), White maintains strong central control." },
+    { "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "Open with the queen's pawn.",
+      "targetSan": ["d4"],
+      "hint": "1.d4 — classical central thrust." },
+    { "type": "play",
+      "fen": "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "Now offer the gambit.",
+      "targetSan": ["c4"],
+      "hint": "2.c4 — attack the d5 pawn with a flank pawn." },
+    { "type": "teach",
+      "fen": "rnbqkbnr/ppp1pppp/8/3p4/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2",
+      "title": "Decline or Accept?",
+      "text": "If Black accepts (2...dxc4), White usually recovers the pawn quickly. If Black declines (2...e6, 2...c6, 2...Nf6), the game becomes a positional battle for central squares. Either way, White gets a strong initiative." }
+  ]
+}

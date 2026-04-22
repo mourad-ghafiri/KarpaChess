@@ -1,0 +1,21 @@
+{
+  "id": "deflection",
+  "title": "Deflection",
+  "summary": "Force a piece to move where it shouldn't",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "4r1k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
+      "title": "The Lure",
+      "text": "Deflection is forcing an enemy piece away from a key square or defensive role. Often it's done with a check or a tempting capture. The piece can't refuse, and its departure opens a winning line." },
+    { "type": "play",
+      "fen": "4r1k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
+      "prompt": "Invade with the rook. What happens if Black trades?",
+      "targetSan": ["Ra8"],
+      "hint": "Ra8 pressures the rook on e8 — a trade simplifies the game." },
+    { "type": "teach",
+      "fen": "R3r1k1/5ppp/8/8/8/8/5PPP/6K1 b - - 0 1",
+      "title": "Forced Exchange",
+      "text": "Black will likely trade (Rxa8 or Rb8). After the trade, simplification favors the active side. The lesson: pressure forces decisions — and decisions under pressure usually go wrong." }
+  ]
+}

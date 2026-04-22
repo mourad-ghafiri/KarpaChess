@@ -1,0 +1,20 @@
+{
+  "id": "exchange-sacrifice",
+  "title": "The Exchange Sacrifice",
+  "summary": "Give up a rook for a minor piece",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "Giving Up the Rook",
+      "text": "An exchange sacrifice (rook for minor piece) is one of the most advanced concepts. Petrosian was its virtuoso — sacrificing \"the exchange\" (rook for bishop/knight) for long-term positional advantages."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "When It Works",
+      "text": "Good exchange sacrifices require: (1) the resulting structure favors you long-term, (2) your minor piece is strong (outpost, bishop pair), (3) your opponent's remaining rook has no good file. Petrosian's Rxc3 is the classical example."
+    }
+  ]
+}

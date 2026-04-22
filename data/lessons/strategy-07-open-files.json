@@ -1,0 +1,20 @@
+{
+  "id": "open-files",
+  "title": "Open Files",
+  "summary": "Lanes of invasion for your rooks",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r3k2r/ppp2ppp/8/8/8/8/PPP2PPP/R3K2R w KQkq - 0 1",
+      "title": "Why Rooks Love Open Files",
+      "text": "Rooks are fearsome on open files (no pawns) or half-open files (no OWN pawn). Controlling an open file often decides games in the middlegame — especially one leading to the enemy king."
+    },
+    {
+      "type": "teach",
+      "fen": "r3k2r/ppp2ppp/8/8/8/8/PPP2PPP/R3K2R w KQkq - 0 1",
+      "title": "Doubling & The 7th Rank",
+      "text": "The best file control is DOUBLED rooks (both rooks on the same file). From there, penetrate to the 7th rank — \"pigs on the 7th\" — where they attack pawns and trap the enemy king."
+    }
+  ]
+}

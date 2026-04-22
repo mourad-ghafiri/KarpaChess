@@ -1,0 +1,20 @@
+{
+  "id": "pawn-structure",
+  "title": "Pawn Structure",
+  "summary": "Pawns are the soul of chess",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Philidor Was Right",
+      "text": "The 18th-century master Philidor said 'pawns are the soul of chess' — because pawn structure determines which pieces are active, which squares are weak, and where to play. Unlike pieces, pawns don't go backward. Every push is permanent." },
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Pawn Weaknesses",
+      "text": "Learn to spot: isolated pawns (no pawn on adjacent files — hard to defend), doubled pawns (two on the same file — can't defend each other), backward pawns (stuck behind its neighbors — a permanent target), and passed pawns (unstoppable going forward)." },
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Structure Shapes the Plan",
+      "text": "The pawn structure tells you WHERE to attack. Caro-Kann players attack on the queenside, King's Indian players on the kingside — not by choice, but because that's where their pawns allow. Read the pawns, then make the plan." }
+  ]
+}

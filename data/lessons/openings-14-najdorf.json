@@ -1,0 +1,26 @@
+{
+  "id": "najdorf-sicilian",
+  "title": "Najdorf Sicilian",
+  "summary": "The sharpest opening in modern chess",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/1p2pppp/p2p1n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6",
+      "title": "Fischer's Favorite",
+      "text": "The Najdorf Sicilian (5...a6) is considered the sharpest and most theoretical opening in chess. Kasparov, Fischer, and Carlsen have all played it at the highest level. The ...a6 move has many purposes: prevents Bb5+ pins, prepares ...e5 or ...b5, and creates flexibility."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/1p2pppp/p2p1n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6",
+      "title": "Main Lines",
+      "text": "White has many ambitious choices: 6.Be3 (English Attack — mutual attacks), 6.Bg5 (classical poisoned pawn), 6.Bc4 (Fischer-Sozin), 6.Be2 (Scheveningen-style). Each leads to a distinct, heavily-analyzed battle. Prepare deep theory or avoid."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/1p2pppp/p2p1n2/6B1/3NP3/2N5/PPP2PPP/R2QKB1R b KQkq - 1 6",
+      "title": "The Poisoned Pawn",
+      "text": "The famous line 6.Bg5 e6 7.f4 Qb6!? invites White to defend the b2 pawn. Black's queen goes on a greedy raid while White builds a huge attack. Not for the faint of heart — one of the most-analyzed variations in all of chess."
+    }
+  ]
+}

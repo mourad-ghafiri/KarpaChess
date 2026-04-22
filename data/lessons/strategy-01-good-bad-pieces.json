@@ -1,0 +1,16 @@
+{
+  "id": "good-bad-pieces",
+  "title": "Good vs Bad Pieces",
+  "summary": "Activity matters more than raw piece count",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Not All Bishops Are Equal",
+      "text": "A bishop blocked by its own pawns on the same color is a 'bad bishop' — cramped and ineffective. A bishop with open diagonals is a 'good bishop' — long-range firepower. The same is true for every piece: what it does is more important than what it is." },
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Improve Your Worst Piece",
+      "text": "A useful principle from grandmaster Makagonov: 'every move, improve your worst-placed piece.' Before attacking, make sure your slowest pieces are doing something. Quiet moves to improve piece coordination often win games." }
+  ]
+}

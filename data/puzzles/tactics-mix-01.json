@@ -1,0 +1,9 @@
+{
+  "id": "tactics-mix-01",
+  "fen": "r1bqkb1r/pppp1ppp/2n5/4p3/2B1P3/8/PPPP1PPP/RNBQK1NR w KQkq - 0 1",
+  "solution": [
+    "Bxf7+",
+    "Kxf7"
+  ],
+  "hint": "Sacrifice to drag the king out."
+}

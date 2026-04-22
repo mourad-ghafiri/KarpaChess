@@ -1,0 +1,21 @@
+{
+  "id": "remove-the-defender",
+  "title": "Remove the Defender",
+  "summary": "Take out the piece that holds theirs together",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "5rk1/R4ppp/8/8/8/8/5PPP/6K1 w - - 0 1",
+      "title": "The Key Defender",
+      "text": "Many tactics fail because one enemy piece defends everything. The fix: remove or trade it. Here Black's rook on f8 defends the back rank. If White takes the f7 pawn, the rook is diverted and the king is naked." },
+    { "type": "play",
+      "fen": "5rk1/R4ppp/8/8/8/8/5PPP/6K1 w - - 0 1",
+      "prompt": "Take the f7 pawn — it forces Black to react.",
+      "targetSan": ["Rxf7"],
+      "hint": "Rxf7 removes the defender of the back rank." },
+    { "type": "teach",
+      "fen": "5rk1/5Rpp/8/8/8/8/5PPP/6K1 b - - 0 1",
+      "title": "What Follows",
+      "text": "Now Black must deal with the rook on f7. If Black trades with ...Rxf7, the back rank is still weak. Always ask: 'What holds their position together?' The answer is usually one specific piece." }
+  ]
+}

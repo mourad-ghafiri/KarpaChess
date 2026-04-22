@@ -1,0 +1,29 @@
+{
+  "id": "queens-pawn-family",
+  "title": "1.d4 — The Queen's Pawn",
+  "summary": "Understanding 1.d4 systems",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
+      "title": "The Positional Push",
+      "text": "1.d4 claims the center and prepares c4. Games are more positional than 1.e4 — slow strategic battles over pawn structures and outposts."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
+      "title": "Main Responses",
+      "text": "Black's options: 1...d5 (classical, leads to Queen's Gambit), 1...Nf6 (Indian defenses — hypermodern), 1...f5 (Dutch), 1...e6 (flexible). The Indian defenses are the modern grandmaster choice."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
+      "prompt": "Play the classical 1...d5 — stake your own claim.",
+      "targetSan": [
+        "d5"
+      ],
+      "hint": "1...d5 mirrors White. Classical, solid, respected."
+    }
+  ]
+}

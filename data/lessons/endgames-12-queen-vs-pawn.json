@@ -1,0 +1,20 @@
+{
+  "id": "queen-vs-pawn",
+  "title": "Queen vs Advanced Pawn",
+  "summary": "The famous race — usually the queen wins",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "8/8/8/8/8/1K6/1p6/1k5Q w - - 0 1",
+      "title": "The Zig-Zag Technique",
+      "text": "When a queen faces a pawn one step from promotion, the queen wins IF she can zig-zag checks to force the enemy king in front of his own pawn. Each time the king blocks, the queen gains a tempo to bring her king closer."
+    },
+    {
+      "type": "teach",
+      "fen": "8/8/8/8/8/1K6/1p6/1k5Q w - - 0 1",
+      "title": "The Exceptions",
+      "text": "The queen FAILS to win against: (a) a bishop-pawn on the 7th (stalemate tricks), (b) a rook-pawn on the 7th (same). Against knight or center pawns, the queen always wins."
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "mate-in-1-25",
+  "fen": "4k3/R7/4K3/8/8/8/8/8 w - - 0 1",
+  "solution": [
+    "Ra8#"
+  ],
+  "hint": "Back-rank mate with king opposition."
+}

@@ -1,0 +1,20 @@
+{
+  "id": "windmill",
+  "title": "The Windmill",
+  "summary": "Devastating discovered-check sequence",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1b1k2r/pp3ppp/1qn1p3/3pn3/8/1P2PN2/PB1N1PPP/R2QKB1R w KQkq - 0 1",
+      "title": "The Windmill Pattern",
+      "text": "The windmill is a sequence of discovered checks that allows you to capture piece after piece. The most famous example is Torre vs. Lasker, 1925 — Torre's bishop and rook combined to harvest Lasker's army."
+    },
+    {
+      "type": "teach",
+      "fen": "r1b1k2r/pp3ppp/1qn1p3/3pn3/8/1P2PN2/PB1N1PPP/R2QKB1R w KQkq - 0 1",
+      "title": "How It Works",
+      "text": "Key setup: your rook/queen gives check, you move a bishop/knight out and back (discovered check each time), picking off an undefended enemy piece each cycle. The enemy king can't stop — he's in check every move."
+    }
+  ]
+}

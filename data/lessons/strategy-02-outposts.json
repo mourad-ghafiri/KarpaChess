@@ -1,0 +1,16 @@
+{
+  "id": "outposts",
+  "title": "Outposts",
+  "summary": "Squares no enemy pawn can touch",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "The Dream Square",
+      "text": "An outpost is a square in the opponent's half of the board that no enemy pawn can attack. When a knight or bishop lands on one, it's practically immovable. A knight on d5 or e5 in front of Black's pawn chain is an endgame dominator." },
+    { "type": "teach",
+      "fen": "rnbqkb1r/pppp1ppp/5n2/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+      "title": "How to Create Them",
+      "text": "Outposts appear when the opponent weakens their pawn structure — often by pushing a flank pawn or playing an awkward capture. Never rush to trade a piece your opponent wants traded — they might be trying to relieve the pressure of a future outpost." }
+  ]
+}

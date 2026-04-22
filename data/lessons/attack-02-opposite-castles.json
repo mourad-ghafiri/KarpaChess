@@ -1,0 +1,20 @@
+{
+  "id": "opposite-castles",
+  "title": "Opposite-Side Castling Attacks",
+  "summary": "Race to the enemy king with pawns",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bqk2r/ppp2ppp/2npbn2/4p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 b kq - 0 6",
+      "title": "The Pawn Storm",
+      "text": "When you castle kingside and your opponent castles queenside, you can attack with pawns WITHOUT weakening your own king. Push h4, g4, Nf5, h5, hxg6 — the attack is a pawn storm."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqk2r/ppp2ppp/2npbn2/4p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 b kq - 0 6",
+      "title": "Speed Counts",
+      "text": "Opposite-side castling creates a race: both sides attack each other's king. Whoever opens lines first usually wins. Count tempos — every move matters. \"Opposite castling means mate in 20 moves — to somebody.\""
+    }
+  ]
+}

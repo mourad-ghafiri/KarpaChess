@@ -1,0 +1,20 @@
+{
+  "id": "rook-pawn-vs-rook",
+  "title": "Rook and Pawn vs Rook",
+  "summary": "The most common endgame at every level",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "8/8/8/3k4/8/8/4P3/R3K2r w - - 0 1",
+      "title": "Half Wins, Half Draws",
+      "text": "The most frequent endgame is R+P vs R. About half of cases are drawn, half are wins — and the result often hinges on knowing Philidor (draw) or Lucena (win) by heart."
+    },
+    {
+      "type": "teach",
+      "fen": "8/8/8/3k4/8/8/4P3/R3K2r w - - 0 1",
+      "title": "Key Rules of Thumb",
+      "text": "Rule 1: The defender's rook belongs BEHIND the passed pawn (yours or theirs). Rule 2: Rook pawn (a/h) is drawish — the defending king often reaches the corner. Rule 3: The attacker must push the pawn while keeping his king escorted."
+    }
+  ]
+}

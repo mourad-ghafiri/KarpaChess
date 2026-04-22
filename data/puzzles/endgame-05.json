@@ -1,0 +1,8 @@
+{
+  "id": "endgame-05",
+  "fen": "6k1/6pp/8/8/8/8/4R2P/6K1 w - - 0 1",
+  "solution": [
+    "Re8+"
+  ],
+  "hint": "Winning rook endgame — cut off the king."
+}

@@ -1,0 +1,21 @@
+{
+  "id": "piece-values",
+  "title": "Piece Values",
+  "summary": "Learn what every piece is worth",
+  "difficulty": "beginner",
+  "steps": [
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "The Approximate Values",
+      "text": "Knowing piece value is essential for making trades. Pawn = 1. Knight = 3. Bishop = 3 (slightly more in open positions). Rook = 5. Queen = 9. King = priceless. These are approximations — context matters — but they're the starting point of every good trade." },
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Trading Principles",
+      "text": "Trade equal-value pieces when ahead in material (simplifies to a winning endgame). Avoid trades when behind — keep pieces on the board to create chances. Sacrificing a piece of higher value for a lesser one is a 'sacrifice' — sometimes worth it for a winning attack." },
+    { "type": "play",
+      "fen": "rnbqkb1r/pppp1ppp/5n2/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3",
+      "prompt": "Which central pawn should you push to claim more space? Play one.",
+      "targetSan": ["d4", "c4"],
+      "hint": "d4 or c4 — both reinforce your center." }
+  ]
+}

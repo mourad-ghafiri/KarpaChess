@@ -1,0 +1,177 @@
+{
+  "version": 1,
+  "themes": [
+    {
+      "id": "mate-in-1",
+      "name": "Mate in 1",
+      "icon": "\u265b",
+      "description": "Find the killing blow \u2014 deliver checkmate in a single move.",
+      "difficulty": "beginner",
+      "puzzles": [
+        "mate-in-1-01.json",
+        "mate-in-1-02.json",
+        "mate-in-1-03.json",
+        "mate-in-1-04.json",
+        "mate-in-1-05.json",
+        "mate-in-1-06.json",
+        "mate-in-1-07.json",
+        "mate-in-1-08.json",
+        "mate-in-1-09.json",
+        "mate-in-1-10.json",
+        "mate-in-1-11.json",
+        "mate-in-1-12.json",
+        "mate-in-1-13.json",
+        "mate-in-1-14.json",
+        "mate-in-1-15.json",
+        "mate-in-1-16.json",
+        "mate-in-1-17.json",
+        "mate-in-1-18.json",
+        "mate-in-1-19.json",
+        "mate-in-1-20.json",
+        "mate-in-1-21.json",
+        "mate-in-1-22.json",
+        "mate-in-1-23.json",
+        "mate-in-1-24.json",
+        "mate-in-1-25.json",
+        "mate-in-1-26.json",
+        "mate-in-1-27.json",
+        "mate-in-1-28.json",
+        "mate-in-1-29.json",
+        "mate-in-1-30.json",
+        "mate-in-1-31.json"
+      ]
+    },
+    {
+      "id": "mate-in-2",
+      "name": "Mate in 2",
+      "icon": "\u265a",
+      "description": "Two-move forced mates. Think one step ahead.",
+      "difficulty": "intermediate",
+      "puzzles": [
+        "mate-in-2-01.json",
+        "mate-in-2-02.json",
+        "mate-in-2-03.json"
+      ]
+    },
+    {
+      "id": "forks",
+      "name": "Forks",
+      "icon": "\u265e",
+      "description": "Attack two pieces at once and win material.",
+      "difficulty": "beginner",
+      "puzzles": [
+        "forks-01.json",
+        "forks-02.json",
+        "forks-03.json",
+        "forks-04.json",
+        "forks-05.json",
+        "forks-06.json",
+        "forks-07.json",
+        "forks-08.json",
+        "forks-09.json",
+        "forks-10.json",
+        "forks-11.json",
+        "forks-12.json",
+        "forks-13.json",
+        "forks-14.json",
+        "forks-15.json"
+      ]
+    },
+    {
+      "id": "pins-skewers",
+      "name": "Pins & Skewers",
+      "icon": "\u265d",
+      "description": "Line up the enemy pieces and win the one behind.",
+      "difficulty": "intermediate",
+      "puzzles": [
+        "pins-skewers-01.json",
+        "pins-skewers-02.json",
+        "pins-skewers-03.json",
+        "pins-skewers-04.json",
+        "pins-skewers-05.json",
+        "pins-skewers-06.json",
+        "pins-skewers-07.json",
+        "pins-skewers-08.json",
+        "pins-skewers-09.json",
+        "pins-skewers-10.json",
+        "pins-skewers-11.json"
+      ]
+    },
+    {
+      "id": "back-rank",
+      "name": "Back Rank",
+      "icon": "\u265c",
+      "description": "Exploit the king trapped behind its own pawns.",
+      "difficulty": "beginner",
+      "puzzles": [
+        "back-rank-01.json",
+        "back-rank-02.json",
+        "back-rank-03.json",
+        "back-rank-04.json",
+        "back-rank-05.json",
+        "back-rank-06.json",
+        "back-rank-07.json",
+        "back-rank-08.json",
+        "back-rank-09.json",
+        "back-rank-10.json",
+        "back-rank-11.json",
+        "back-rank-12.json"
+      ]
+    },
+    {
+      "id": "tactics-mix",
+      "name": "Mixed Tactics",
+      "icon": "\u26a1",
+      "description": "A variety of tactical patterns \u2014 find the best move.",
+      "difficulty": "intermediate",
+      "puzzles": [
+        "tactics-mix-01.json",
+        "tactics-mix-02.json",
+        "tactics-mix-03.json",
+        "tactics-mix-04.json",
+        "tactics-mix-05.json",
+        "tactics-mix-06.json",
+        "tactics-mix-07.json",
+        "tactics-mix-08.json",
+        "tactics-mix-09.json",
+        "tactics-mix-10.json",
+        "tactics-mix-11.json",
+        "tactics-mix-12.json",
+        "tactics-mix-13.json",
+        "tactics-mix-14.json",
+        "tactics-mix-15.json",
+        "tactics-mix-16.json",
+        "tactics-mix-17.json",
+        "tactics-mix-18.json"
+      ]
+    },
+    {
+      "id": "discovered",
+      "name": "Discovered Attacks",
+      "icon": "\ud83c\udfaf",
+      "description": "Move one piece, unleash another.",
+      "difficulty": "intermediate",
+      "puzzles": [
+        "discovered-01.json",
+        "discovered-02.json",
+        "discovered-03.json",
+        "discovered-04.json",
+        "discovered-05.json"
+      ]
+    },
+    {
+      "id": "endgame",
+      "name": "Endgame Technique",
+      "icon": "\u2654",
+      "description": "Convert winning endgames cleanly.",
+      "difficulty": "intermediate",
+      "puzzles": [
+        "endgame-01.json",
+        "endgame-02.json",
+        "endgame-03.json",
+        "endgame-04.json",
+        "endgame-05.json"
+      ]
+    }
+  ]
+}

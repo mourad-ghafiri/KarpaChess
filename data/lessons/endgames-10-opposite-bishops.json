@@ -1,0 +1,20 @@
+{
+  "id": "opposite-bishops",
+  "title": "Opposite-Colored Bishops",
+  "summary": "Drawing tendencies and attacking potential",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "4k3/8/8/4b3/8/8/8/4KB2 w - - 0 1",
+      "title": "The Drawing Endgame",
+      "text": "Opposite-colored bishops (one on light, one on dark) create notoriously drawish endgames. Even 2 extra pawns often aren't enough to win — the weaker side can just block on his bishop's color."
+    },
+    {
+      "type": "teach",
+      "fen": "r3k3/8/8/4b3/8/8/8/R3KB2 w - - 0 1",
+      "title": "Exception: With Queens",
+      "text": "PARADOX: in the MIDDLEGAME, opposite-colored bishops FAVOR the attacker. If you're attacking, your bishop has no opposite-color defender. Many brilliant attacks exploit this imbalance."
+    }
+  ]
+}

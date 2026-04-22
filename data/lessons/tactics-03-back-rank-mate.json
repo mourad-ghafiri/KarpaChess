@@ -1,0 +1,38 @@
+{
+  "id": "back-rank-mate",
+  "title": "Back-Rank Mate",
+  "summary": "Exploit the king trapped behind his pawns",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "6k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
+      "title": "The Classic Pattern",
+      "text": "A castled king is usually safe — unless his escape squares are blocked by his own pawns. A rook or queen on the 8th rank becomes unstoppable."
+    },
+    {
+      "type": "play",
+      "fen": "6k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
+      "prompt": "Deliver back-rank mate.",
+      "targetSan": [
+        "Ra8#"
+      ],
+      "hint": "The pawn wall is also a prison wall."
+    },
+    {
+      "type": "teach",
+      "fen": "3r2k1/5ppp/8/8/8/8/5PPP/3R2K1 w - - 0 1",
+      "title": "Trade & Mate",
+      "text": "When both sides have a back-rank weakness, the one who strikes first wins. Trade the defender to clear the way."
+    },
+    {
+      "type": "play",
+      "fen": "3r2k1/5ppp/8/8/8/8/5PPP/3R2K1 w - - 0 1",
+      "prompt": "Trade rooks into mate.",
+      "targetSan": [
+        "Rxd8#"
+      ],
+      "hint": "After the trade, Black has no defender left."
+    }
+  ]
+}

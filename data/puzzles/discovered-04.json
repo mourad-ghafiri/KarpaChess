@@ -1,0 +1,8 @@
+{
+  "id": "discovered-04",
+  "fen": "r3k3/8/8/8/3N4/8/8/3RK3 w - - 0 1",
+  "solution": [
+    "Nc6"
+  ],
+  "hint": "Knight moves away — rook hits the rook."
+}

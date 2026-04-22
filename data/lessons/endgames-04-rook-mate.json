@@ -1,0 +1,21 @@
+{
+  "id": "rook-mate",
+  "title": "K + R vs K",
+  "summary": "Drive the king to the edge and deliver mate",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "7k/8/5K2/8/8/8/8/6R1 w - - 0 1",
+      "title": "The Technique",
+      "text": "King and rook vs. king is always a win for the stronger side. The technique: use the rook to cut off the enemy king, then walk your king up alongside to drive him to the edge. Finally, deliver mate on the back rank." },
+    { "type": "teach",
+      "fen": "7k/5K1p/8/8/8/8/8/6R1 w - - 0 1",
+      "title": "The Mating Net",
+      "text": "When the enemy king is pinned to the edge and the opposing king stops any escape, your rook slides in for mate. The pattern is this — memorize it." },
+    { "type": "play",
+      "fen": "7k/5K1p/8/8/8/8/8/6R1 w - - 0 1",
+      "prompt": "Deliver checkmate.",
+      "targetSan": ["Rg8#"],
+      "hint": "The king's own pawn is his prison wall." }
+  ]
+}

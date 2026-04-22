@@ -1,0 +1,20 @@
+{
+  "id": "space-advantage",
+  "title": "Space Advantage",
+  "summary": "More squares, more options",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/3PP3/8/PPP2PPP/RNBQKBNR b KQkq d3 0 2",
+      "title": "What Is Space?",
+      "text": "Space is the number of squares your pieces can reach — especially in the opponent's half of the board. The side with more space has more piece mobility and easier coordination."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/3PP3/8/PPP2PPP/RNBQKBNR b KQkq d3 0 2",
+      "title": "Exploiting Space",
+      "text": "When you have more space: AVOID trades (your cramped opponent needs room). PRESS slowly — build threats, shift pieces across the board, then strike."
+    }
+  ]
+}

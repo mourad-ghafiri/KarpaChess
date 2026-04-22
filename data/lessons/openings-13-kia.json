@@ -1,0 +1,38 @@
+{
+  "id": "kings-indian-attack",
+  "title": "King's Indian Attack",
+  "summary": "Reversed King's Indian — a White system",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "A Flexible Weapon",
+      "text": "The King's Indian Attack (KIA) is the King's Indian Defense played by White. Fianchetto the king's bishop, castle fast, then expand with e4/e5. Used by Bobby Fischer with deadly effect."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "Start with 1.Nf3",
+      "targetSan": [
+        "Nf3"
+      ],
+      "hint": "Flexible first move."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/8/5N2/PPPPPPPP/RNBQKB1R w KQkq - 0 2",
+      "prompt": "Now fianchetto: 2.g3",
+      "targetSan": [
+        "g3"
+      ],
+      "hint": "Prepare the bishop's long diagonal."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/8/5NP1/PPPPPP1P/RNBQKB1R b KQkq - 0 2",
+      "title": "KIA Structure",
+      "text": "Next: Bg2, 0-0, d3, Nbd2, e4. You'll get a solid kingside fortress and a coiled spring ready for e5. Ideal if you want ONE opening against everything."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "discovered-attack",
+  "title": "Discovered Attack",
+  "summary": "One piece moves — another attacks",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "4k3/8/8/8/4N3/8/8/4R2K w - - 0 1",
+      "title": "The Unmasking",
+      "text": "A discovered attack happens when you move one of your pieces and reveal an attack from another piece behind it. When the revealed attack is a check AND the moved piece also checks, it's called a double check — the most devastating tactic in chess."
+    },
+    {
+      "type": "play",
+      "fen": "4k3/8/8/8/4N3/8/8/4R2K w - - 0 1",
+      "prompt": "Move the knight to expose the rook — better yet, have the knight ALSO attack the king.",
+      "targetSan": ["Nd6+"],
+      "hint": "Nd6 attacks e8 AND unveils the rook. Double check!"
+    },
+    {
+      "type": "teach",
+      "fen": "4k3/8/3N4/8/8/8/8/4R2K w - - 0 1",
+      "title": "Why It's Lethal",
+      "text": "Against a double check, the king MUST move — you can't block two attacks with one piece, and capturing one leaves the other. Double checks are among the fastest mating patterns in chess."
+    }
+  ]
+}

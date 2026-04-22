@@ -1,0 +1,47 @@
+{
+  "id": "ruy-lopez-basics",
+  "title": "The Ruy Lopez",
+  "summary": "The oldest serious opening in chess",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "The Spanish",
+      "text": "Named after a 16th-century Spanish priest, the Ruy Lopez (or \"Spanish\") pressures the e5 pawn via the c6 knight. It leads to rich, nuanced middlegames. Every world champion from Steinitz to Carlsen has played it."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "Play 1.e4",
+      "targetSan": [
+        "e4"
+      ],
+      "hint": "King's pawn two squares."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "Develop the king's knight: 2.Nf3",
+      "targetSan": [
+        "Nf3"
+      ],
+      "hint": "Attacks e5, develops a piece."
+    },
+    {
+      "type": "play",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+      "prompt": "The defining move: 3.Bb5",
+      "targetSan": [
+        "Bb5"
+      ],
+      "hint": "Pins the knight indirectly, threatens to undermine e5."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+      "title": "Main Ideas",
+      "text": "The bishop doesn't actually win e5 immediately (after 3...a6 4.Bxc6 dxc6, Black's e-pawn is still defended). The REAL threat is to disrupt Black's structure and squeeze him positionally. Classical chess at its finest."
+    }
+  ]
+}

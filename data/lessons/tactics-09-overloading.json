@@ -1,0 +1,21 @@
+{
+  "id": "overloading",
+  "title": "Overloading",
+  "summary": "A piece doing two jobs will fail at one",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "4k3/4q3/8/8/8/8/4R3/4K3 w - - 0 1",
+      "title": "Too Much Work",
+      "text": "An overloaded piece is defending (or attacking) more than it can handle. The classic case: one piece defends two squares. When you attack one, the other falls. Here Black's queen is defending the king — she can't move without losing to Rxe7+." },
+    { "type": "play",
+      "fen": "4k3/4q3/8/8/8/8/4R3/4K3 w - - 0 1",
+      "prompt": "Capture the pinned queen.",
+      "targetSan": ["Rxe7+"],
+      "hint": "The queen's double duty (defending king AND her square) means she dies." },
+    { "type": "teach",
+      "fen": "4k3/4R3/8/8/8/8/8/4K3 b - - 0 1",
+      "title": "Spotting Overloads",
+      "text": "Look for pieces defending multiple things — pawns defending each other plus a piece, or a knight holding back a file while also blockading a passed pawn. When you find one, attack one of its duties." }
+  ]
+}

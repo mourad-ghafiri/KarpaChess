@@ -1,0 +1,21 @@
+{
+  "id": "opposition",
+  "title": "Opposition",
+  "summary": "The single most important endgame concept",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "4k3/8/4K3/8/8/8/8/8 w - - 0 1",
+      "title": "Face to Face",
+      "text": "Two kings face each other with one square between them. The side NOT to move has the opposition — the other king must step aside. In king-and-pawn endings, having the opposition often decides the game." },
+    { "type": "teach",
+      "fen": "4k3/8/4K3/4P3/8/8/8/8 w - - 0 1",
+      "title": "With a Pawn",
+      "text": "Here White has an extra pawn and wants to promote it. To win, White's king must PRECEDE the pawn with the opposition. The rule: 'king in front, pawn behind.'" },
+    { "type": "play",
+      "fen": "4k3/8/4K3/4P3/8/8/8/8 w - - 0 1",
+      "prompt": "Step to take the opposition.",
+      "targetSan": ["Kd6", "Kf6"],
+      "hint": "Kd6 or Kf6 both claim the opposition and win." }
+  ]
+}

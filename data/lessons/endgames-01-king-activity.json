@@ -1,0 +1,24 @@
+{
+  "id": "king-activity",
+  "title": "Activate Your King",
+  "summary": "In the endgame, your king fights",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "4k3/8/8/4K3/4P3/8/8/8 w - - 0 1",
+      "title": "King Power",
+      "text": "In the middlegame the king hides. In the endgame he comes out to fight. Here your king must escort his pawn to promotion. Technique matters."
+    },
+    {
+      "type": "play",
+      "fen": "4k3/8/8/4K3/4P3/8/8/8 w - - 0 1",
+      "prompt": "Push your king forward — take the opposition.",
+      "targetSan": [
+        "Kd6",
+        "Kf6"
+      ],
+      "hint": "Kd6 or Kf6 — both seize the opposition."
+    }
+  ]
+}

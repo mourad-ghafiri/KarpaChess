@@ -1,0 +1,30 @@
+{
+  "id": "k-p-vs-k",
+  "title": "King and Pawn vs King",
+  "summary": "The most common endgame — master it",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "4k3/8/8/8/4P3/8/8/4K3 w - - 0 1",
+      "title": "The Core Endgame",
+      "text": "Every chess player must know K+P vs K cold. The result depends on ONE thing: can the stronger side get his king IN FRONT of the pawn with opposition? If yes, the pawn promotes. If no, it's a draw."
+    },
+    {
+      "type": "teach",
+      "fen": "4k3/8/4K3/4P3/8/8/8/8 w - - 0 1",
+      "title": "Key Squares",
+      "text": "For a pawn on the 5th rank or lower, the \"key squares\" are the three squares diagonally ahead of it. If your king reaches any one, you win. Learn the key squares for each pawn position."
+    },
+    {
+      "type": "play",
+      "fen": "4k3/8/4K3/4P3/8/8/8/8 w - - 0 1",
+      "prompt": "Walk toward a key square.",
+      "targetSan": [
+        "Kd6",
+        "Kf6"
+      ],
+      "hint": "Kd6 or Kf6 both grab the opposition."
+    }
+  ]
+}

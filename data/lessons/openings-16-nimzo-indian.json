@@ -1,0 +1,26 @@
+{
+  "id": "nimzo-indian-advanced",
+  "title": "Nimzo-Indian Defense",
+  "summary": "Strategic masterpiece — pin and control",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqk2r/pppp1ppp/4pn2/8/1bPP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 3 4",
+      "title": "The Bb4 Pin",
+      "text": "The Nimzo-Indian (1.d4 Nf6 2.c4 e6 3.Nc3 Bb4) pins the c3 knight and threatens to double White's pawns with ...Bxc3+. Named after Aron Nimzowitsch, the father of hypermodern chess."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqk2r/pppp1ppp/4pn2/8/1bPP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 3 4",
+      "title": "Two Main Lines",
+      "text": "White chooses: 4.Qc2 (avoid pawn doubles, develop naturally), 4.e3 (Rubinstein — classical buildup), or 4.f3 (Kmoch — ambitious). Each leads to heavily-studied middlegames where Black plays to exploit the doubled c-pawns."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqk2r/pppp1ppp/2n1pn2/8/1bPP4/2N1P3/PP3PPP/R1BQKBNR w KQkq - 2 5",
+      "title": "Strategic Depth",
+      "text": "The Nimzo is one of the most strategically rich openings. Black often sacrifices the bishop pair to double White's pawns, betting that the damaged pawn structure outweighs the bishop advantage. Classical positional chess."
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "tactics-mix-12",
+  "fen": "4k3/5ppp/8/8/8/8/5PPP/3QK3 w - - 0 1",
+  "solution": [
+    "Qd8+"
+  ],
+  "hint": "Check the king on its back rank."
+}

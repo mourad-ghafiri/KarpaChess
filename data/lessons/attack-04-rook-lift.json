@@ -1,0 +1,20 @@
+{
+  "id": "rook-lift",
+  "title": "The Rook Lift",
+  "summary": "Bring a rook to attack via the 3rd rank",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQR1K1 w - - 0 1",
+      "title": "Lift and Swing",
+      "text": "A rook lift is the maneuver Re1-e3-g3 (or h3) — the rook rises to the third rank, then swings across to attack the enemy king. Classic pattern: Re3, Qh5 with kingside fireworks."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQR1K1 w - - 0 1",
+      "title": "When to Use It",
+      "text": "Rook lifts work when: the position is half-closed (rook can't use files directly), the enemy king is castled, and you have pieces already nearby. Works especially well combined with h-pawn pushes."
+    }
+  ]
+}

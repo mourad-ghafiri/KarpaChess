@@ -1,0 +1,64 @@
+{
+  "id": "opening-principles",
+  "title": "The Three Principles",
+  "summary": "Center, development, king safety",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "The Three Laws",
+      "text": "Every strong opening rests on three pillars: (1) control the center, (2) develop your pieces quickly, (3) get your king safe. Let's practice all three."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "Start by pushing a central pawn. Play e4 or d4.",
+      "targetSan": [
+        "e4",
+        "d4"
+      ],
+      "hint": "Central pawns claim space and open lines for your pieces."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "title": "Now Develop",
+      "text": "Pawns first — then pieces. Knights before bishops. Knights out toward the center (f3, c3) attack four central squares each."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "Develop a knight toward the center.",
+      "targetSan": [
+        "Nf3",
+        "Nc3"
+      ],
+      "hint": "Nf3 and Nc3 both hit four central squares."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+      "title": "Bishops Next",
+      "text": "With both knights out, develop bishops to active squares. Bc4 eyes the weak f7 square — the most vulnerable point in Black's camp in the opening."
+    },
+    {
+      "type": "play",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+      "prompt": "Develop the light-squared bishop to an active square.",
+      "targetSan": [
+        "Bc4",
+        "Bb5",
+        "Bd3",
+        "Be2"
+      ],
+      "hint": "Bc4 is the classical choice — straight at f7."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+      "title": "King Safety",
+      "text": "Two pieces out on each side is a good moment to castle. Castling whisks the king into a corner and connects your rooks. Do it before launching attacks."
+    }
+  ]
+}

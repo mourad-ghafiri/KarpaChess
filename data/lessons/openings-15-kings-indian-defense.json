@@ -1,0 +1,26 @@
+{
+  "id": "kings-indian-advanced",
+  "title": "King's Indian Defense",
+  "summary": "Hypermodern counterattack — the fighter's choice",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqk2r/ppppppbp/5np1/8/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 4 5",
+      "title": "Let Them Build the Center",
+      "text": "The King's Indian (1.d4 Nf6 2.c4 g6) is the ultimate hypermodern defense. Black lets White build a huge pawn center, then strikes it with ...e5 or ...c5. Famous for producing fierce kingside attacks — Kasparov's weapon of choice."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2N2N2/PP3PPP/R1BQKB1R w KQ - 0 6",
+      "title": "The Classical Main Line",
+      "text": "After the Classical Main Line, White has a huge center. Black's plan: push ...e5, close the center with ...d4 blockade or ...f5, then launch the kingside pawns. Both sides attack simultaneously on opposite flanks — chess at full throttle."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqk2r/ppppppbp/5np1/8/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 4 5",
+      "title": "Why It's Hard",
+      "text": "The King's Indian requires accurate calculation — one wrong pawn move and your kingside caves in. But if you love dynamic imbalances and attacks on the king, there's nothing better."
+    }
+  ]
+}

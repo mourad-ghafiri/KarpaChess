@@ -1,0 +1,21 @@
+{
+  "id": "king-safety",
+  "title": "King Safety",
+  "summary": "A safe king wins games",
+  "difficulty": "beginner",
+  "steps": [
+    { "type": "teach",
+      "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQK2R w KQkq - 0 1",
+      "title": "Tuck Him Away",
+      "text": "The king's worst enemies are open files and diagonals leading to him. Castling gets him out of the center into a fortress of pawns. Keep that fortress intact — don't rush to push your castled-side pawns unless you have a concrete reason." },
+    { "type": "play",
+      "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQK2R w KQkq - 0 1",
+      "prompt": "Castle your king into safety.",
+      "targetSan": ["O-O"],
+      "hint": "Short castling — the most common choice." },
+    { "type": "teach",
+      "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 b kq - 1 1",
+      "title": "After Castling",
+      "text": "You're not done! Keep pawns in front: f2, g2, h2. The knight on f3 defends h2. Don't play g3 or h3 unless necessary — every pawn move near your king creates a weakness for later." }
+  ]
+}

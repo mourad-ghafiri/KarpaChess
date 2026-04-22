@@ -1,0 +1,26 @@
+{
+  "id": "gruenfeld-advanced",
+  "title": "Grünfeld Defense",
+  "summary": "A counter-punching hypermodern system",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/ppp1pp1p/5np1/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4",
+      "title": "Let Them Overextend",
+      "text": "The Grünfeld (1.d4 Nf6 2.c4 g6 3.Nc3 d5) is the counter-puncher's dream. Black lets White build a massive center and then attacks it with queenside pieces and pawn breaks."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/ppp1pp1p/5np1/3P4/2P5/2N5/PP2PPPP/R1BQKBNR b KQkq - 0 4",
+      "title": "The Exchange Variation",
+      "text": "After 4.cxd5 Nxd5 5.e4, Black's knight retreats and White has a huge center — but Black threatens to destroy it with pieces. A key test of dynamic chess: static center vs. piece activity."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/ppp1pp1p/5np1/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4",
+      "title": "Classical Grünfeld Themes",
+      "text": "Black's plans: fianchetto on g7, pressure d4 with ...c5, castle, ...Nc6, ...Bg4. The fianchettoed bishop on g7 is key — it radiates power into White's position, especially after ...d4 breakdowns."
+    }
+  ]
+}

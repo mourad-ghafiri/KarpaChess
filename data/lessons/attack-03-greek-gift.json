@@ -1,0 +1,20 @@
+{
+  "id": "greek-gift",
+  "title": "The Greek Gift (Bxh7+)",
+  "summary": "Classic bishop sacrifice against the castled king",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2BPP3/2N2N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "The Pattern",
+      "text": "The \"Greek Gift\" is a bishop sacrifice on h7: Bxh7+ Kxh7 Ng5+ Kg8 (or Kg6) Qh5 — and the attack breaks through. Named because it seems free but carries destruction."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2BPP3/2N2N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "Checklist",
+      "text": "Greek Gift works when: (1) Black has a knight NOT on f6 blocking Ng5, (2) the queen can reach h5 quickly, (3) no Black piece can interfere. If those hold, it's usually decisive. If not, you just lose a bishop."
+    }
+  ]
+}

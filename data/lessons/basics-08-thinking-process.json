@@ -1,0 +1,26 @@
+{
+  "id": "thinking-process",
+  "title": "How to Think",
+  "summary": "A simple 3-step process for every move",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Three Questions",
+      "text": "Before every move, run through this checklist: (1) What is my opponent threatening? (2) What are MY checks, captures, and threats? (3) If I play my candidate, what's the best reply? Answer all three, then move."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "The Blunder Check",
+      "text": "Before you play your move, pause and ask: \"After I make this move, is any of my pieces being attacked? Can my opponent give check? Can they capture something free?\" This 5-second check saves most blunders."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Candidate Moves",
+      "text": "Strong players don't calculate one move — they calculate 2-3 candidates and compare. Pick moves that develop a piece, improve a square, or create a threat. Reject random-looking moves early."
+    }
+  ]
+}

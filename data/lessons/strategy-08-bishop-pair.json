@@ -1,0 +1,20 @@
+{
+  "id": "bishop-pair",
+  "title": "The Bishop Pair",
+  "summary": "Two bishops are worth more than you think",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Why Two Bishops?",
+      "text": "Two bishops cover ALL 64 squares between them — one dark, one light. A bishop pair is worth ~0.5 pawns more than a bishop+knight or two knights. This advantage compounds in open positions."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "When to Trade",
+      "text": "If you have the bishop pair: open the position, trade PAWNS not pieces, avoid allowing a knight outpost. If you GAVE up the bishop pair: close the position, create pawn chains, fight for knight outposts."
+    }
+  ]
+}

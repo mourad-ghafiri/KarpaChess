@@ -1,0 +1,27 @@
+{
+  "id": "the-skewer",
+  "title": "The Skewer",
+  "summary": "Like a pin — but in reverse",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "8/8/3q4/8/8/3k4/8/R6K w - - 0 1",
+      "title": "The Skewer",
+      "text": "A skewer is the mirror image of a pin. You attack a valuable piece that MUST move — and when it does, a less valuable piece behind it is exposed. Most often the king is the skewered piece: he must move out of check, abandoning whatever was behind him."
+    },
+    {
+      "type": "play",
+      "fen": "8/8/3q4/8/8/3k4/8/R6K w - - 0 1",
+      "prompt": "Bring your rook to the d-file to skewer king and queen.",
+      "targetSan": ["Rd1+"],
+      "hint": "Rd1 gives check — the queen will be next."
+    },
+    {
+      "type": "teach",
+      "fen": "8/8/8/3q4/8/3k4/8/3R3K w - - 0 1",
+      "title": "Collect the Prize",
+      "text": "After Rd1+, the king must move. The queen is lost on the next move. This is why skewers are so powerful on open files and diagonals — even a well-placed rook can topple a queen."
+    }
+  ]
+}

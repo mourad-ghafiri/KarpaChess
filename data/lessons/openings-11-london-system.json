@@ -1,0 +1,38 @@
+{
+  "id": "london-system",
+  "title": "The London System",
+  "summary": "The universal system — same setup, every time",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Why Play London?",
+      "text": "The London System is a \"universal\" opening — White plays the same setup regardless of Black's response. Great for beginners: less theory, more reliable patterns."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "1.d4",
+      "targetSan": [
+        "d4"
+      ],
+      "hint": "Queen's pawn two squares."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2",
+      "prompt": "Develop the dark-squared bishop: 2.Bf4",
+      "targetSan": [
+        "Bf4"
+      ],
+      "hint": "Bishop goes BEFORE e3, so it's not blocked by its own pawns."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/pppppppp/5n2/8/3P1B2/8/PPP1PPPP/RNBQKBNR b KQkq - 2 2",
+      "title": "The Full Setup",
+      "text": "The full London recipe: d4, Bf4, Nf3, e3, c3, Nbd2, Bd3, 0-0. Solid, symmetric-ish, hard to break down. Magnus Carlsen has used it in world championship matches."
+    }
+  ]
+}

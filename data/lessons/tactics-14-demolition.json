@@ -1,0 +1,20 @@
+{
+  "id": "demolition",
+  "title": "Demolition of Defense",
+  "summary": "Blast open the enemy position",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "Sacrifices that Crack the Shell",
+      "text": "Sometimes the only way to reach a king is to blast through the pawn shield. The Greek Gift (Bxh7+), Nxf7 sacrifices, and exchange sacrifices on c3/c6 are all classic demolition patterns."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "When to Demolish",
+      "text": "The sacrifice works when: (1) you have attacking pieces ready to follow up, (2) the enemy king has no escape squares, (3) the defender can't bring reinforcements in time. Calculate 4-6 moves deep before committing."
+    }
+  ]
+}

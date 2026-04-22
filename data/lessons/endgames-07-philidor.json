@@ -1,0 +1,20 @@
+{
+  "id": "philidor-position",
+  "title": "Philidor Position",
+  "summary": "Defensive technique in rook endgames",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "2k5/2p5/8/2K5/R7/8/8/r7 w - - 0 1",
+      "title": "The Drawing Fortress",
+      "text": "The Philidor Position is a DEFENSIVE technique in rook endgames. When the stronger side's king is two ranks in front of the pawn, the defender's rook goes to the third rank of the pawn's color. Prevents the king from advancing."
+    },
+    {
+      "type": "teach",
+      "fen": "2k5/2p5/8/2K5/R7/8/8/r7 w - - 0 1",
+      "title": "The Third-Rank Defense",
+      "text": "Black's rook on the 3rd rank cuts off White's king. Once White pushes the pawn, Black's rook swings behind to check from the other side. This is the most important drawing technique in rook endings."
+    }
+  ]
+}

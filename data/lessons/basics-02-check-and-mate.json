@@ -1,0 +1,55 @@
+{
+  "id": "check-and-mate",
+  "title": "Check & Checkmate",
+  "summary": "Understand the goal of every game",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "4k3/8/4K3/4Q3/8/8/8/8 w - - 0 1",
+      "title": "The Goal",
+      "text": "You win chess by checkmating the opposing king — attacking him in a way he cannot escape. Here your queen and king are closing in. Let's finish it."
+    },
+    {
+      "type": "play",
+      "fen": "4k3/8/4K3/4Q3/8/8/8/8 w - - 0 1",
+      "prompt": "Deliver checkmate in one move.",
+      "targetSan": [
+        "Qb8#",
+        "Qh8#"
+      ],
+      "hint": "Hit the 8th rank — the king has no escape."
+    },
+    {
+      "type": "teach",
+      "fen": "3k4/8/3K4/3Q4/8/8/8/8 w - - 0 1",
+      "title": "Different Angle",
+      "text": "Same idea, different position. The back rank is ripe."
+    },
+    {
+      "type": "play",
+      "fen": "3k4/8/3K4/3Q4/8/8/8/8 w - - 0 1",
+      "prompt": "Find checkmate.",
+      "targetSan": [
+        "Qa8#",
+        "Qd7"
+      ],
+      "hint": "Cut off the 8th rank from the side. Qa8#."
+    },
+    {
+      "type": "teach",
+      "fen": "6k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
+      "title": "Back-Rank Mate",
+      "text": "When a king is trapped behind his own pawns on the back rank, a rook or queen on that rank can deliver mate. This is one of the most common patterns in chess."
+    },
+    {
+      "type": "play",
+      "fen": "6k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
+      "prompt": "Deliver back-rank mate.",
+      "targetSan": [
+        "Ra8#"
+      ],
+      "hint": "The king's pawns are his wall — but also his prison."
+    }
+  ]
+}

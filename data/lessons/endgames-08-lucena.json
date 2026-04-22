@@ -1,0 +1,20 @@
+{
+  "id": "lucena-position",
+  "title": "Lucena Position",
+  "summary": "The winning technique in rook endgames",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "3K4/3P1k2/8/8/8/8/1R6/6r1 w - - 0 1",
+      "title": "Building a Bridge",
+      "text": "The Lucena Position is the companion to Philidor — the WINNING technique when the stronger side's king has escaped in front of the pawn. The \"Bridge\" technique uses the rook to shelter the king from checks."
+    },
+    {
+      "type": "teach",
+      "fen": "3K4/3P1k2/8/8/8/8/1R6/6r1 w - - 0 1",
+      "title": "The Bridge",
+      "text": "Method: put your rook on the 4th rank. When the enemy rook checks from the side, your rook interposes — building the \"bridge\" your king walks across. Paired with Philidor, these two positions cover most rook endgames."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "opening-traps",
+  "title": "Common Opening Traps",
+  "summary": "Recognize (and avoid) classic blunders",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "rnbqkbnr/ppp2ppp/8/3pp3/4P3/2N5/PPPP1PPP/R1BQKBNR w KQkq - 0 3",
+      "title": "The Scholar's Mate",
+      "text": "The most famous trap: bring the queen and bishop out early to attack f7. If Black doesn't defend carefully, checkmate comes in four moves. After 1.e4 e5 2.Bc4 Nc6 3.Qh5 — if Black plays a natural-looking move like 3...Nf6?? — the game can end with 4.Qxf7#." },
+    { "type": "teach",
+      "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 0 4",
+      "title": "The Punishment",
+      "text": "Against a prepared opponent, this is easily met by 3...g6 or 3...Qe7, defending f7. Knowing the trap lets you both avoid it as Black and punish careless play as White." },
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPPBPPP/RNBQK2R w KQkq - 0 3",
+      "title": "Develop Don't Dash",
+      "text": "Most 'traps' rely on the opponent breaking basic principles — leaving the king in the center, walking into a fork, or weakening a key square like f2/f7. Develop calmly and watch for tactics every single move." }
+  ]
+}

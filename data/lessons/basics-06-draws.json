@@ -1,0 +1,20 @@
+{
+  "id": "draws",
+  "title": "Stalemate & Draws",
+  "summary": "Half a point is sometimes a win",
+  "difficulty": "beginner",
+  "steps": [
+    { "type": "teach",
+      "fen": "7k/8/6K1/8/8/8/8/8 w - - 0 1",
+      "title": "Stalemate",
+      "text": "Stalemate happens when the side to move has NO legal moves but their king is NOT in check. It's a draw. Beware: when you have an overwhelming advantage, take care not to stalemate the enemy king — it throws away the win!" },
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Other Ways to Draw",
+      "text": "Besides stalemate: (1) threefold repetition — same position reached three times; (2) 50-move rule — 50 moves without a capture or pawn move; (3) insufficient material — e.g. two kings alone, or king + knight vs king; (4) both players agreeing to a draw." },
+    { "type": "teach",
+      "fen": "4k3/4q3/8/8/8/8/8/4K3 w - - 0 1",
+      "title": "Avoiding Accidents",
+      "text": "Even when you're obviously losing, stalemate can save you! Always check: does my opponent have a legal move? If not, and you're not in check, it's a draw. This is why endgame technique matters — even with K+Q vs K, careless play can stalemate." }
+  ]
+}

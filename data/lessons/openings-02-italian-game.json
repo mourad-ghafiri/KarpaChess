@@ -1,0 +1,41 @@
+{
+  "id": "italian-game",
+  "title": "The Italian Game",
+  "summary": "Classical, principled, still played at the top",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "The Italian",
+      "text": "The Italian Game begins with the most principled first move: e4. We'll build up to Bc4, eyeing f7, the classical recipe."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "Open with 1. e4",
+      "targetSan": [
+        "e4"
+      ],
+      "hint": "Push the king's pawn two squares."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "Now 2. Nf3, attacking the e5 pawn.",
+      "targetSan": [
+        "Nf3"
+      ],
+      "hint": "Knight to f3 — every master's go-to."
+    },
+    {
+      "type": "play",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+      "prompt": "3. Bc4 — stake your claim on f7.",
+      "targetSan": [
+        "Bc4"
+      ],
+      "hint": "Bishop to c4 enters the Italian Game proper."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "uncastled-king",
+  "title": "Attacking the Uncastled King",
+  "summary": "A king in the center is a target",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 0 4",
+      "title": "Why Centralized Kings Die",
+      "text": "A king stuck in the center is exposed to attacks from both sides. If your opponent delays castling, open the position — pry open the e-file with pawn breaks, rip the king out with sacrifices. Speed is essential."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 0 4",
+      "title": "The Recipe",
+      "text": "Open files aimed at the king. Sacrifice pawns to blast lines. Bring all pieces to the attack. Don't worry about material — you win when the king dies, regardless of piece count. Morphy was the master."
+    }
+  ]
+}

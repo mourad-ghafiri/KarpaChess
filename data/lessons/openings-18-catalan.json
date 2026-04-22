@@ -1,0 +1,26 @@
+{
+  "id": "catalan-advanced",
+  "title": "The Catalan",
+  "summary": "Positional squeeze from move one",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "The Long-Diagonal Weapon",
+      "text": "The Catalan (1.d4 Nf6 2.c4 e6 3.g3) combines Queen's Gambit structure with a fianchettoed bishop. White gets a slight but persistent edge — grinding, technical chess. Kramnik's favorite."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/pppp1ppp/4pn2/8/2PP4/6P1/PP2PP1P/RNBQKBNR b KQkq - 0 3",
+      "title": "Why the Fianchetto?",
+      "text": "The bishop on g2 puts long-term pressure on the a8-h1 diagonal. If Black plays ...dxc4 (Open Catalan), White often gives up the pawn for continued pressure. Pure technique."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/pppp1ppp/4pn2/8/2PP4/6P1/PP2PP1P/RNBQKBNR b KQkq - 0 3",
+      "title": "Catalan Dream Position",
+      "text": "White's ideal: long diagonal open for Bg2, knights on d2 and f3, rooks connected, strong central pawns. Black must play precisely or get strangled. Magnus Carlsen uses the Catalan to grind opponents into dust."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "the-pin",
+  "title": "The Pin",
+  "summary": "Freeze a piece — it can't move away",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "3k4/8/3q4/8/8/8/3R4/3K4 w - - 0 1",
+      "title": "Absolute Pin",
+      "text": "When a piece is pinned against its king, it cannot legally move — moving would expose the king to check. Here the black queen is pinned along the d-file. She's frozen."
+    },
+    {
+      "type": "play",
+      "fen": "3k4/8/3q4/8/8/8/3R4/3K4 w - - 0 1",
+      "prompt": "Capture the pinned queen.",
+      "targetSan": [
+        "Rxd6+"
+      ],
+      "hint": "She can't move. Just take her."
+    }
+  ]
+}

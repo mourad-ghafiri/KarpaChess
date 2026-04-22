@@ -1,0 +1,20 @@
+{
+  "id": "quiet-move",
+  "title": "The Quiet Move",
+  "summary": "The move that kills without a check",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "The Hardest Move to See",
+      "text": "Amateurs see checks and captures easily. Masters see QUIET moves — moves that don't attack anything immediately but create an unstoppable threat. These are hardest to spot because they're not \"noisy.\""
+    },
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "The Training",
+      "text": "When you're sure you've found the win, always ask: \"Is there a QUIET move that's even better?\" Sometimes stepping BACK with a rook or bishop creates devastating threats. Train yourself to consider them."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "id": "how-pieces-move",
+  "title": "How the Pieces Move",
+  "summary": "Meet every piece on the board",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Welcome",
+      "text": "Chess is played on 64 squares by 16 pieces per side. White always moves first. You'll meet every piece in turn — the pawn, knight, bishop, rook, queen, and king."
+    },
+    {
+      "type": "teach",
+      "fen": "8/8/8/8/8/8/4P3/4K3 w - - 0 1",
+      "title": "The Pawn",
+      "text": "Pawns march forward one square at a time — or two on their very first move. They capture diagonally. A pawn that reaches the far side promotes into any piece you choose. Small, but decisive."
+    },
+    {
+      "type": "play",
+      "fen": "8/8/8/8/8/8/4P3/4K3 w - - 0 1",
+      "prompt": "Push the pawn two squares forward to claim the center.",
+      "targetSan": [
+        "e4"
+      ],
+      "hint": "On its first move, a pawn may jump two squares. Try e4."
+    },
+    {
+      "type": "teach",
+      "fen": "8/8/8/8/8/8/8/4K2N w - - 0 1",
+      "title": "The Knight",
+      "text": "Knights leap in an L-shape — two squares one way, then one at a right angle. They're the only piece that can jump over others. Tricky to see, deadly in the right spot."
+    },
+    {
+      "type": "play",
+      "fen": "8/8/8/8/8/8/8/4K2N w - - 0 1",
+      "prompt": "Develop the knight toward the center. Play Nf3 or Ng3.",
+      "targetSan": [
+        "Nf2",
+        "Ng3"
+      ],
+      "hint": "Knight on h1 can reach f2 or g3."
+    },
+    {
+      "type": "teach",
+      "fen": "8/8/8/8/8/8/8/2B1K3 w - - 0 1",
+      "title": "The Bishop",
+      "text": "Bishops glide along diagonals as far as they like. Each bishop stays on one color forever — one controls light squares, the other dark. They love open positions."
+    },
+    {
+      "type": "teach",
+      "fen": "8/8/8/8/8/8/8/R3K3 w - - 0 1",
+      "title": "The Rook",
+      "text": "Rooks move in straight lines — along ranks and files. They become monsters in the endgame and love open files."
+    },
+    {
+      "type": "teach",
+      "fen": "8/8/8/8/8/8/8/3QK3 w - - 0 1",
+      "title": "The Queen",
+      "text": "The queen combines rook and bishop — moving any distance along ranks, files, or diagonals. She's the most powerful piece. Don't bring her out too early; she can be chased."
+    },
+    {
+      "type": "teach",
+      "fen": "8/8/8/8/8/8/8/4K3 w - - 0 1",
+      "title": "The King",
+      "text": "The king steps one square in any direction. Protect him at all costs — if he's checkmated, the game ends. In the endgame, activate him: he's worth about three pawns in the attack."
+    }
+  ]
+}

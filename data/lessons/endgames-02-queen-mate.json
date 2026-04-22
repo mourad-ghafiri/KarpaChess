@@ -1,0 +1,24 @@
+{
+  "id": "queen-mate",
+  "title": "King & Queen vs King",
+  "summary": "The most important mate to learn",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "4k3/8/4K3/4Q3/8/8/8/8 w - - 0 1",
+      "title": "Classic Mate",
+      "text": "With king and queen vs bare king, walk the enemy king to the edge, then mate. The queen controls a wall — your king prevents escape."
+    },
+    {
+      "type": "play",
+      "fen": "4k3/8/4K3/4Q3/8/8/8/8 w - - 0 1",
+      "prompt": "Deliver checkmate in one.",
+      "targetSan": [
+        "Qb8#",
+        "Qh8#"
+      ],
+      "hint": "Cut the 8th rank — the enemy king has nowhere to run."
+    }
+  ]
+}
