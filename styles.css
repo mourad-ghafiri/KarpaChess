@@ -127,11 +127,30 @@ body.modal-open { overflow: hidden; }
   margin-top: 5px; font-weight: 600;
 }
 
+.nav-wrap { position: relative; }
 .nav-tabs {
   display: flex; gap: 2px; padding: 4px; border-radius: 12px;
   background: var(--paper-2);
   border: 1px solid var(--paper-edge);
 }
+
+/* Breadcrumb dropdown toggle — hidden on desktop, shown on mobile */
+.nav-crumb {
+  display: none;
+  align-items: center; gap: 8px;
+  padding: 9px 14px;
+  border: 1px solid var(--paper-edge);
+  border-radius: 11px;
+  background: var(--paper-1);
+  color: var(--ink-0);
+  font: 600 13px 'Inter';
+  cursor: pointer;
+  transition: background var(--t-fast), border-color var(--t-fast);
+}
+.nav-crumb:hover { background: var(--paper-2); border-color: var(--sage-soft); }
+.nav-crumb-chevron { transition: transform var(--t-fast); flex: 0 0 auto; }
+.nav-wrap.open .nav-crumb { border-color: var(--sage); background: var(--sage-soft); color: var(--sage-deep); }
+.nav-wrap.open .nav-crumb-chevron { transform: rotate(180deg); }
 .tab {
   appearance: none; background: transparent; color: var(--ink-2);
   border: 0; padding: 8px 18px; border-radius: 9px;
@@ -1664,15 +1683,250 @@ body.theme-emerald  { --board-a: #ebe1bf; --board-b: #6e8c52; }
 body.theme-rose     { --board-a: #f1dadf; --board-b: #a14b6c; }
 body.theme-ice      { --board-a: #e8f0f5; --board-b: #6794c9; }
 
-/* ---------- Responsive ---------- */
-@media (max-width: 1060px) {
-  .layout { grid-template-columns: 1fr; grid-template-rows: auto 1fr auto; height: auto; min-height: calc(100vh - 64px); overflow: auto; }
-  .panel-left, .panel-right { max-height: 40vh; }
-  .board { --size: min(90vw, 560px); }
+/* ============================================================
+   Responsive — tablet + mobile
+   Breakpoints:
+     ≤ 1059  tablet landscape / small desktop
+     ≤ 767   phone landscape / tablet portrait
+     ≤ 479   small phone portrait
+   ============================================================ */
+
+/* Touch-friendly behavior across all viewports */
+.board { touch-action: manipulation; }        /* kill iOS double-tap zoom */
+.draw-overlay { touch-action: none; }          /* no page scroll while drawing */
+@media (hover: none) {
+  /* Kill transform/background hover effects on touch devices so taps don't
+     leave buttons "pressed" after release. :active still fires for feedback. */
+  .btn:hover,
+  .icon-btn:hover,
+  .mode-card:hover,
+  .lesson-card:hover,
+  .category-card:hover,
+  .theme-card:hover,
+  .cm-sample:hover,
+  .promo-choice:hover,
+  .draw-swatch:hover,
+  .draw-tool:hover { transform: none; }
 }
-@media (max-width: 640px) {
-  .nav-tabs .tab { padding: 7px 10px; font-size: 12px; }
+
+/* iOS safe-area: only applied where it's needed without cover viewport */
+.toast-wrap { right: max(22px, env(safe-area-inset-right, 0)); }
+
+/* -------- Tablet landscape / small desktop: ≤ 1199 -------- */
+@media (max-width: 1199px) {
+  body { overflow: auto; }
+  .topbar {
+    display: grid;
+    grid-template-columns: auto auto 1fr auto;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .brand      { grid-column: 1; min-width: 0; }
+  .nav-wrap   { grid-column: 2; }
+  /* grid column 3 acts as an empty spacer that eats the remaining width */
+  .top-actions { grid-column: 4; justify-self: end; margin: 0; }
+  .layout {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "board board" "left right";
+    gap: 14px;
+    padding: 14px;
+    height: auto;
+    min-height: calc(100vh - 64px);
+    overflow: visible;
+  }
+  .board-area  { grid-area: board; }
+  .panel-left  { grid-area: left; }
+  .panel-right { grid-area: right; }
+  .panel-left, .panel-right { max-height: none; overflow-y: auto; }
+
+  /* Account for .layout padding (28) + .board-frame padding (32) + label gutter (~40)
+     so the board never overflows its container on this breakpoint. */
+  .board { --size: min(60vh, calc(100vw - 110px), 620px); }
+  .board-frame { padding: 14px; max-width: 100%; box-sizing: border-box; }
+  .board-area { max-width: 100%; overflow: hidden; }
+
+  .game-banner { margin: 0 20px; padding: 22px 22px 18px; }
+  .banner-title { font-size: 24px; }
+}
+
+/* -------- Phone landscape / tablet portrait: ≤ 767 -------- */
+@media (max-width: 767px) {
+  body { overflow: auto; }
+  .brand { min-width: 0; gap: 10px; }
+  .topbar { height: 60px; padding: 0 14px; gap: 8px; }
+  .layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "board" "left" "right";
+    gap: 12px;
+    padding: 12px;
+    min-height: auto;
+  }
+
+  /* Subtract layout padding (24) + board-frame padding (20) + label gutter (~36) */
+  .board { --size: min(75vh, calc(100vw - 80px), 520px); }
+  .board-frame { padding: 10px; max-width: 100%; box-sizing: border-box; }
+  .board-area  { max-width: 100%; overflow: hidden; }
+
+  .panel { padding: 14px; }
+  .panel-left, .panel-right { max-height: none; }
+  .move-history { max-height: 32vh; }
+
+  /* Nav becomes a dropdown (breadcrumb) on mobile */
+  .nav-crumb { display: inline-flex; }
+  .nav-tabs {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px); left: 50%; transform: translateX(-50%);
+    flex-direction: column;
+    gap: 2px;
+    padding: 6px;
+    background: var(--paper-1);
+    border: 1px solid var(--paper-edge);
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    min-width: 180px;
+    z-index: 20;
+    animation: navDropIn 140ms cubic-bezier(.2,.8,.2,1);
+  }
+  .nav-wrap.open .nav-tabs { display: flex; }
+  .tab {
+    text-align: left;
+    padding: 10px 14px;
+    font-size: 14px;
+    min-height: 42px;
+    border-radius: 8px;
+  }
+  .tab.active {
+    background: var(--sage-soft);
+    color: var(--sage-deep);
+    box-shadow: none;
+  }
+  @keyframes navDropIn {
+    from { opacity: 0; transform: translateX(-50%) translateY(-6px); }
+    to   { opacity: 1; transform: translateX(-50%) translateY(0);    }
+  }
+
+  /* Tap targets */
+  .icon-btn { width: 44px; height: 44px; }
+
+  /* Modals: full-width, body scrolls */
+  .modal-backdrop { padding: 12px; place-items: start center; padding-top: 40px; }
+  .modal { width: 100%; max-width: none; max-height: calc(100vh - 48px); }
+  .modal-head { padding: 16px 18px; position: sticky; top: 0; background: var(--paper-1); z-index: 2; }
+  .modal-body { padding: 16px 18px; }
+
+  /* Promotion picker: larger tiles */
+  .promo-choice { padding: 18px 8px; min-height: 80px; }
+  .promo-choice .promo-glyph { font-size: 38px; }
+
+  /* Commentator: draw toolbar wraps; nav row keeps buttons tappable */
+  .cm-draw-toolbar { padding: 8px 10px; gap: 8px; }
+  .cm-draw-toolbar .draw-tools { flex-wrap: wrap; }
+  .draw-tool { flex: 0 0 auto; min-height: 38px; font-size: 11px; padding: 6px 8px; }
+  .cm-nav-row .icon-btn { flex: 1; min-height: 40px; }
+
+  /* Game banner */
+  .game-banner { margin: 0 14px; padding: 20px 18px 16px; }
+  .banner-title { font-size: 22px; }
+  .banner-sub { font-size: 13px; }
+  .banner-actions { flex-direction: column; width: 100%; }
+  .banner-actions .btn { width: 100%; min-width: 0; }
+
+  /* Hint card: compress */
+  .hint-card { padding: 14px 16px; gap: 10px; }
+  .hint-card .hint-icon { display: none; }
+  .hint-move { font-size: 22px; }
+  .hint-text { font-size: 12.5px; }
+
+  /* Toast shifts below the top bar */
+  .toast-wrap {
+    top: calc(70px + env(safe-area-inset-top, 0));
+    right: calc(10px + env(safe-area-inset-right, 0));
+    left: calc(10px + env(safe-area-inset-left, 0));
+  }
+  .toast { max-width: none; }
+
+  /* Coach chat log: cap height so input stays visible */
+  .coach-chat { max-height: 45vh; }
+  .cm-ask-log { max-height: 30vh; }
+
+  /* Hide never-critical chrome */
+  .streak, .xp-chip { display: none; }
+}
+
+/* -------- Small phone portrait: ≤ 479 -------- */
+@media (max-width: 479px) {
+  .topbar { height: 56px; padding: 0 12px; gap: 6px; }
+  .brand { min-width: 0; gap: 10px; }
+  .brand-crest { width: 38px; height: 38px; border-radius: 10px; }
+  .brand-title { font-size: 16px; }
   .brand-sub { display: none; }
-  .topbar { padding: 0 14px; }
-  .streak { display: none; }
+  .nav-tabs { padding: 3px; max-width: calc(100vw - 110px); }
+  .tab { padding: 8px 12px; font-size: 12px; }
+  .icon-btn { width: 42px; height: 42px; }
+
+  .layout { padding: 8px; gap: 10px; }
+  /* Layout padding (16) + frame padding (16) + label gutter (~28) = ~60px reserved */
+  .board { --size: min(60vh, calc(100vw - 60px), 420px); }
+  .board-frame { padding: 8px; max-width: 100%; box-sizing: border-box; }
+  .board-with-ranks { gap: 4px; }
+
+  .panel { padding: 12px; }
+  .player-card { padding: 8px 10px; gap: 10px; grid-template-columns: 40px 1fr auto; }
+  .avatar { width: 40px; height: 40px; font-size: 22px; }
+  .player-name { font-size: 13px; }
+  .player-meta { font-size: 10px; }
+  .timer { font-size: 13px; padding: 5px 10px; }
+
+  .move-history { font-size: 12px; line-height: 1.6; max-height: 26vh; padding: 8px; }
+
+  .captured-row { min-height: 26px; font-size: 18px; padding: 4px 8px; }
+
+  /* Modal — drop border radius, full width, scrollable */
+  .modal-backdrop { padding: 0; padding-top: max(0px, env(safe-area-inset-top, 0)); }
+  .modal { border-radius: 0; width: 100vw; max-height: 100vh; height: 100vh; }
+
+  .modal-head { padding: 14px 16px; }
+  .modal-head h2 { font-size: 18px; }
+  .modal-body { padding: 14px 16px; }
+
+  /* Promotion picker: 2×2 on really narrow */
+  .promotion-choices { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .promo-choice { padding: 22px 10px; min-height: 90px; }
+
+  /* Commentator compact */
+  .cm-insight-head { padding: 8px 10px; gap: 10px; }
+  .cm-insight-glyph { width: 32px; height: 32px; font-size: 15px; }
+  .cm-insight-label { font-size: 13px; }
+  .cm-insight-sub { font-size: 11px; }
+  .cm-sample { padding: 10px; }
+  .cm-sample-title { font-size: 13px; }
+  .cm-sample-byline { font-size: 11px; }
+  #cm-import-text { font-size: 12px; min-height: 80px; }
+  .cm-players { grid-template-columns: 1fr; gap: 6px; }
+  .cm-nav-row { gap: 4px; padding: 6px 8px; }
+
+  /* Settings — theme swatches smaller */
+  .theme-grid { gap: 6px; }
+
+  /* Coach chat input row wraps */
+  .coach-input { flex-wrap: wrap; }
+}
+
+/* -------- Landscape phones (short & wide): avoid vertical overflow -------- */
+@media (max-width: 900px) and (max-height: 500px) and (orientation: landscape) {
+  .layout {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "board right"
+                         "board left";
+    min-height: calc(100vh - 52px);
+  }
+  .panel-left, .panel-right { max-height: 50vh; overflow-y: auto; }
+  .board { --size: min(80vh, calc(50vw - 40px), 500px); }
+  .topbar { height: 52px; }
 }

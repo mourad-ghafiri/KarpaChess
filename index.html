@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f3ecd9" />
   <title>KarpaChess — Learn. Play. Master.</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=r4" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
@@ -34,13 +35,21 @@
       </div>
     </div>
 
-    <nav class="nav-tabs" role="tablist">
-      <button class="tab" data-tab="learn" role="tab">Learn</button>
-      <button class="tab" data-tab="puzzles" role="tab">Puzzles</button>
-      <button class="tab active" data-tab="practice" role="tab">Practice</button>
-      <button class="tab" data-tab="coach" role="tab">AI Coach</button>
-      <button class="tab" data-tab="commentator" role="tab">Commentator</button>
-    </nav>
+    <div class="nav-wrap">
+      <button class="nav-crumb" id="nav-crumb" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="nav-tabs">
+        <span class="nav-crumb-label" id="nav-crumb-label">Practice</span>
+        <svg class="nav-crumb-chevron" viewBox="0 0 12 8" width="12" height="8" aria-hidden="true">
+          <path d="M1 1 L6 6 L11 1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <nav class="nav-tabs" id="nav-tabs" role="tablist">
+        <button class="tab" data-tab="learn" role="tab">Learn</button>
+        <button class="tab" data-tab="puzzles" role="tab">Puzzles</button>
+        <button class="tab active" data-tab="practice" role="tab">Practice</button>
+        <button class="tab" data-tab="coach" role="tab">AI Coach</button>
+        <button class="tab" data-tab="commentator" role="tab">Commentator</button>
+      </nav>
+    </div>
 
     <div class="top-actions">
       <button class="icon-btn" id="btn-settings" title="Settings" aria-label="Settings">
