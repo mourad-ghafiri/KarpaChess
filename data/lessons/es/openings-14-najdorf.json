@@ -1,0 +1,26 @@
+{
+  "id": "najdorf-sicilian",
+  "title": "Siciliana Najdorf",
+  "summary": "La apertura más afilada del ajedrez moderno",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/1p2pppp/p2p1n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6",
+      "title": "La Favorita de Fischer",
+      "text": "La Siciliana Najdorf (5...a6) se considera la apertura más afilada y teórica del ajedrez. Kasparov, Fischer y Carlsen la han jugado al más alto nivel. La jugada ...a6 tiene varios propósitos: impide las clavadas con Bb5+, prepara ...e5 o ...b5 y crea flexibilidad."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/1p2pppp/p2p1n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6",
+      "title": "Líneas Principales",
+      "text": "Las Blancas tienen muchas opciones ambiciosas: 6.Be3 (Ataque Inglés — ataques mutuos), 6.Bg5 (Peón Envenenado clásico), 6.Bc4 (Fischer-Sozin), 6.Be2 (estilo Scheveningen). Cada una conduce a una batalla distinta y enormemente analizada. Prepara teoría profunda o evita la línea."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/1p2pppp/p2p1n2/6B1/3NP3/2N5/PPP2PPP/R2QKB1R b KQkq - 1 6",
+      "title": "El Peón Envenenado",
+      "text": "La famosa línea 6.Bg5 e6 7.f4 Qb6!? invita a las Blancas a defender el peón b2. La dama negra sale de incursión codiciosa mientras las Blancas montan un enorme ataque. No apto para tímidos — una de las variantes más analizadas de todo el ajedrez."
+    }
+  ]
+}

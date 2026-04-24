@@ -1,0 +1,21 @@
+{
+  "id": "piece-values",
+  "title": "棋子价值",
+  "summary": "了解每个棋子的价值",
+  "difficulty": "beginner",
+  "steps": [
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "大致价值",
+      "text": "了解棋子价值对于进行交换至关重要。兵=1。马=3。象=3（在开放局面中略高）。车=5。后=9。王=无价。这些只是近似值——具体情况具体分析——但它们是每一次好的交换的起点。" },
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "交换原则",
+      "text": "当你物质领先时,进行等价交换（可简化为制胜残局）。当你落后时,避免交换——在盘面上保留棋子以制造机会。用更高价值棋子换取较低价值棋子称为“弃子”——有时为了制胜攻势是值得的。" },
+    { "type": "play",
+      "fen": "rnbqkb1r/pppp1ppp/5n2/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3",
+      "prompt": "应该推进哪个中心兵来占据更多空间？走一步。",
+      "targetSan": ["d4", "c4"],
+      "hint": "d4 或 c4——两者都能加强你的中心。" }
+  ]
+}

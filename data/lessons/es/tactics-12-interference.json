@@ -1,0 +1,20 @@
+{
+  "id": "interference",
+  "title": "Interferencia",
+  "summary": "Bloquea la línea de defensa del rival",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "4k3/8/8/8/8/8/8/4K3 w - - 0 1",
+      "title": "El Bloqueador",
+      "text": "Las tácticas de interferencia funcionan cuando una pieza enemiga defiende una casilla clave a lo largo de una línea — interpones tu propia pieza para bloquear esa defensa. A menudo decisivas en el medio juego."
+    },
+    {
+      "type": "teach",
+      "fen": "4k3/8/8/8/8/8/8/4K3 w - - 0 1",
+      "title": "Novotny y Plachutta",
+      "text": "Dos patrones clásicos de interferencia: el Novotny (sacrificar en el cruce de dos líneas, forzando a un defensor a bloquear al otro) y el Plachutta (misma idea pero con piezas de movimiento similar). Hermosas tácticas geométricas."
+    }
+  ]
+}

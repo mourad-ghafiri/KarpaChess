@@ -1,0 +1,44 @@
+{
+  "id": "notation",
+  "title": "Lire la notation des échecs",
+  "summary": "Décodez n'importe quel coup d'échecs en notation algébrique",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Le système",
+      "text": "La notation algébrique décrit chaque coup de manière unique. Les colonnes sont des lettres a–h, les rangées sont des nombres 1–8. La première rangée des Blancs est 1, celle des Noirs est 8. Une case est colonne+rangée : e4, d5, h8."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Lettres des pièces",
+      "text": "Les pièces sont K (Roi), Q (Dame), R (Tour), B (Fou), N (Cavalier). Les pions n'ont pas de lettre — « e4 » seul signifie un pion en e4. Les prises utilisent « x » : Nxe5 signifie le cavalier prend en e5."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Symboles spéciaux",
+      "text": "« + » signifie échec. « # » signifie échec et mat. « O-O » est le petit roque, « O-O-O » est le grand roque. « = » indique la promotion : e8=Q (le pion promeut en dame). Lorsque deux pièces peuvent aller sur la même case, on ajoute la colonne ou la rangée de départ : Nbd2 ou R1e1."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "Jouez 1.e4 — poussez le pion roi.",
+      "targetSan": [
+        "e4"
+      ],
+      "hint": "Sélectionnez simplement le pion en e2 et déplacez-le en e4."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "Maintenant jouez 2.Nf3.",
+      "targetSan": [
+        "Nf3"
+      ],
+      "hint": "Le cavalier de g1 saute en f3."
+    }
+  ]
+}

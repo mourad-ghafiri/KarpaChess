@@ -1,0 +1,25 @@
+{
+  "id": "en-passant",
+  "title": "En passant",
+  "summary": "La prise de pion que la plupart des joueurs n'apprennent jamais",
+  "difficulty": "beginner",
+  "steps": [
+    { "type": "teach",
+      "fen": "4k3/3p4/8/4P3/8/8/8/4K3 w - - 0 1",
+      "title": "Une règle sournoise",
+      "text": "Lorsque des pions avancent de deux cases depuis leur rangée de départ, ils peuvent parfois être capturés par un pion adverse « en passant ». Cela s'appelle la prise en passant — une expression française signifiant « au passage ». Cela ne fonctionne qu'au coup immédiatement suivant." },
+    { "type": "teach",
+      "fen": "rnbqkbnr/ppp1p1pp/8/3pPp2/8/8/PPPP1PPP/RNBQKBNR w KQkq f6 0 3",
+      "title": "L'opportunité",
+      "text": "Les Noirs viennent de jouer ...f5, filant deux cases au-delà du pion blanc en e5. Le pion blanc aurait pu capturer en f6 si le pion noir n'avait avancé que d'une case. La règle de la prise en passant dit : vous pouvez quand même le faire — mais seulement à ce coup-ci." },
+    { "type": "play",
+      "fen": "rnbqkbnr/ppp1p1pp/8/3pPp2/8/8/PPPP1PPP/RNBQKBNR w KQkq f6 0 3",
+      "prompt": "Capturez le pion f5 en passant.",
+      "targetSan": ["exf6"],
+      "hint": "Le coup est exf6 — votre pion capture comme si le pion f était en f6." },
+    { "type": "teach",
+      "fen": "rnbqkbnr/ppp1p1pp/5P2/3p4/8/8/PPPP1PPP/RNBQKBNR b KQkq - 0 3",
+      "title": "Règle d'un seul coup",
+      "text": "Vous DEVEZ utiliser la prise en passant au coup immédiatement suivant, sinon vous perdez ce droit. C'est l'une des règles les plus oubliées — maintenant vous la connaissez." }
+  ]
+}

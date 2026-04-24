@@ -1,0 +1,44 @@
+{
+  "id": "notation",
+  "title": "Membaca Notasi Catur",
+  "summary": "Menguraikan setiap langkah catur dalam notasi aljabar",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Sistemnya",
+      "text": "Notasi aljabar menggambarkan setiap langkah secara unik. Kolom adalah huruf a–h, baris adalah angka 1–8. Baris pertama Putih adalah 1, baris Hitam adalah 8. Sebuah kotak adalah kolom+baris: e4, d5, h8."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Huruf Bidak",
+      "text": "Bidak adalah K (Raja), Q (Menteri), R (Benteng), B (Gajah), N (Kuda). Pion tidak memiliki huruf — \"e4\" saja berarti pion ke e4. Penangkapan menggunakan \"x\": Nxe5 berarti kuda menangkap di e5."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Simbol Khusus",
+      "text": "\"+\" berarti skak. \"#\" berarti skakmat. \"O-O\" adalah rokade pendek, \"O-O-O\" adalah rokade panjang. \"=\" menandai promosi: e8=Q (pion dipromosikan menjadi menteri). Ketika dua bidak bisa bergerak ke kotak yang sama, kolom atau baris awal ditambahkan: Nbd2 atau R1e1."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "Mainkan 1.e4 — dorong pion raja.",
+      "targetSan": [
+        "e4"
+      ],
+      "hint": "Pilih saja pion di e2 dan gerakkan ke e4."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "Sekarang mainkan 2.Nf3.",
+      "targetSan": [
+        "Nf3"
+      ],
+      "hint": "Kuda dari g1 melompat ke f3."
+    }
+  ]
+}

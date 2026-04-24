@@ -1,0 +1,8 @@
+{
+  "id": "mate-in-1-17",
+  "fen": "2B1k3/8/4K3/8/8/8/8/7Q w - - 0 1",
+  "solution": [
+    "Qh8#"
+  ],
+  "hint": "La dame prend la 8e rangée."
+}

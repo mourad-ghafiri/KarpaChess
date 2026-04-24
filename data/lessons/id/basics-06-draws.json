@@ -1,0 +1,20 @@
+{
+  "id": "draws",
+  "title": "Pat & Remis",
+  "summary": "Setengah poin kadang-kadang adalah kemenangan",
+  "difficulty": "beginner",
+  "steps": [
+    { "type": "teach",
+      "fen": "7k/8/6K1/8/8/8/8/8 w - - 0 1",
+      "title": "Pat",
+      "text": "Pat terjadi ketika pihak yang akan bergerak TIDAK memiliki langkah legal tetapi rajanya TIDAK dalam skak. Ini remis. Hati-hati: ketika Anda memiliki keunggulan yang luar biasa, jangan sampai membuat pat raja lawan — itu membuang kemenangan!" },
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Cara Lain untuk Remis",
+      "text": "Selain pat: (1) pengulangan tiga kali — posisi yang sama dicapai tiga kali; (2) aturan 50 langkah — 50 langkah tanpa penangkapan atau gerakan pion; (3) material tidak cukup — misalnya dua raja sendirian, atau raja + kuda vs raja; (4) kedua pemain setuju remis." },
+    { "type": "teach",
+      "fen": "4k3/4q3/8/8/8/8/8/4K3 w - - 0 1",
+      "title": "Menghindari Kecelakaan",
+      "text": "Bahkan ketika Anda jelas-jelas kalah, pat bisa menyelamatkan Anda! Selalu periksa: apakah lawan saya memiliki langkah legal? Jika tidak, dan Anda tidak dalam skak, itu remis. Inilah sebabnya teknik babak akhir penting — bahkan dengan R+M vs R, permainan ceroboh bisa pat." }
+  ]
+}

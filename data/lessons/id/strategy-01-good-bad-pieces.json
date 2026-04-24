@@ -1,0 +1,16 @@
+{
+  "id": "good-bad-pieces",
+  "title": "Bidak Baik vs Bidak Buruk",
+  "summary": "Aktivitas lebih penting daripada jumlah bidak",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Tidak Semua Gajah Sama",
+      "text": "Gajah yang diblokir oleh pionnya sendiri di warna yang sama adalah 'gajah buruk' — sempit dan tidak efektif. Gajah dengan diagonal terbuka adalah 'gajah baik' — daya tembak jarak jauh. Hal yang sama berlaku untuk setiap bidak: apa yang dilakukannya lebih penting daripada apa dia." },
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Perbaiki Bidak Terburuk Anda",
+      "text": "Prinsip berguna dari grandmaster Makagonov: 'setiap langkah, perbaiki bidak Anda yang paling buruk ditempatkan.' Sebelum menyerang, pastikan bidak Anda yang paling lambat sedang melakukan sesuatu. Langkah tenang untuk memperbaiki koordinasi bidak sering memenangkan permainan." }
+  ]
+}

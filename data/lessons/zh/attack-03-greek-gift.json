@@ -1,0 +1,20 @@
+{
+  "id": "greek-gift",
+  "title": "希腊式献礼 (Bxh7+)",
+  "summary": "对易位王的经典象弃子",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2BPP3/2N2N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "经典模式",
+      "text": "\"希腊式献礼\"是在 h7 弃象的攻击:Bxh7+ Kxh7 Ng5+ Kg8(或 Kg6) Qh5——攻击就此突破。取名是因为它看似免费,却带来毁灭。"
+    },
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2BPP3/2N2N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "适用条件",
+      "text": "希腊式献礼奏效的条件:(1) 黑方有马但不在 f6 阻挡 Ng5,(2) 后能迅速到达 h5,(3) 黑方没有棋子能干扰。若条件满足,通常决定胜负。否则你就白送一个象。"
+    }
+  ]
+}

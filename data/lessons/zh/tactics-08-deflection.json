@@ -1,0 +1,29 @@
+{
+  "id": "deflection",
+  "title": "引离",
+  "summary": "强迫一个子离开它应处的位置",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "4r1k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
+      "title": "诱饵",
+      "text": "引离是迫使对方的子离开关键格或防守角色。常用将军或诱人的吃子实施。对方无法拒绝,它一离开就打开了获胜的线路。"
+    },
+    {
+      "type": "play",
+      "fen": "4r1k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
+      "prompt": "用车侵入。如果黑方交换会怎样?",
+      "targetSan": [
+        "Ra8"
+      ],
+      "hint": "Ra8 向 e8 的车施压——交换简化棋局。"
+    },
+    {
+      "type": "teach",
+      "fen": "R3r1k1/5ppp/8/8/8/8/5PPP/6K1 b - - 0 1",
+      "title": "强制的交换",
+      "text": "黑方可能会交换(Rxa8 或 Rb8)。交换后,简化有利于活跃一方。道理是:压力迫使决定——被迫的决定往往出错。"
+    }
+  ]
+}

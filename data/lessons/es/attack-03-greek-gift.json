@@ -1,0 +1,20 @@
+{
+  "id": "greek-gift",
+  "title": "El Regalo Griego (Bxh7+)",
+  "summary": "Sacrificio clásico de alfil contra el rey enrocado",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2BPP3/2N2N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "El Patrón",
+      "text": "El \"Regalo Griego\" es un sacrificio de alfil en h7: Bxh7+ Kxh7 Ng5+ Kg8 (o Kg6) Qh5 — y el ataque rompe. Se llama así porque parece gratis pero lleva destrucción."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2BPP3/2N2N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "Lista de Verificación",
+      "text": "El Regalo Griego funciona cuando: (1) Las Negras tienen un caballo NO en f6 bloqueando Ng5, (2) la dama puede llegar a h5 rápidamente, (3) ninguna pieza negra puede interferir. Si eso se cumple, suele ser decisivo. Si no, simplemente pierdes un alfil."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "quiet-move",
+  "title": "La Jugada Tranquila",
+  "summary": "La jugada que mata sin dar jaque",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "La Jugada Más Difícil de Ver",
+      "text": "Los aficionados ven fácilmente los jaques y las capturas. Los maestros ven las jugadas TRANQUILAS — jugadas que no atacan nada de inmediato pero crean una amenaza imparable. Son las más difíciles de detectar porque no son \"ruidosas\"."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "El Entrenamiento",
+      "text": "Cuando estés seguro de haber hallado la victoria, pregúntate siempre: \"¿Hay una jugada TRANQUILA que sea aún mejor?\" A veces retroceder con una torre o un alfil crea amenazas demoledoras. Entrénate a considerarlas."
+    }
+  ]
+}

@@ -1,0 +1,746 @@
+{
+  "language": { "name": "Français", "code": "fr" },
+
+  "ui": {
+    "brand": {
+      "title": "KarpaChess",
+      "tagline": "Apprenez les échecs · Chaque coup enseigne"
+    },
+    "nav": {
+      "learn": "Apprendre",
+      "puzzles": "Énigmes",
+      "practice": "Pratique",
+      "coach": "Coach IA",
+      "commentator": "Commentateur"
+    },
+    "button": {
+      "flip": "Retourner",
+      "undo": "Annuler",
+      "hint": "Indice",
+      "analyze": "Analyser",
+      "newGame": "Nouvelle partie",
+      "playIt": "Jouer ce coup",
+      "dismiss": "Fermer",
+      "ask": "Demander",
+      "load": "Charger",
+      "chooseFile": "Choisir un fichier…",
+      "settings": "Paramètres",
+      "close": "Fermer",
+      "back": "Retour",
+      "next": "Suivant",
+      "skip": "Passer",
+      "showHint": "Afficher l'indice",
+      "allCategories": "← Toutes les catégories",
+      "allLessons": "← Toutes les leçons",
+      "allThemes": "← Tous les thèmes",
+      "exitReview": "← Quitter la revue",
+      "resetAll": "Réinitialiser progression et clés"
+    },
+    "buttonTitle": {
+      "flip": "Retourner l'échiquier (F)",
+      "undo": "Annuler (Ctrl+Z)",
+      "hint": "Obtenir un indice (H)",
+      "analyze": "Analyse approfondie",
+      "newGame": "Nouvelle partie (N)",
+      "settings": "Paramètres",
+      "dismissHint": "Fermer l'indice",
+      "closeBanner": "Fermer"
+    },
+    "label": {
+      "provider": "Fournisseur",
+      "difficulty": "Difficulté",
+      "playAs": "Jouer avec",
+      "timeControl": "Cadence",
+      "moveHistory": "Historique des coups",
+      "coachWhisper": "Murmure du coach",
+      "language": "Langue",
+      "boardTheme": "Thème de l'échiquier",
+      "apiKey": "Clé API",
+      "model": "Modèle",
+      "serverUrl": "URL du serveur",
+      "customModel": "ID de modèle personnalisé",
+      "customModelTag": "Étiquette de modèle personnalisée",
+      "customModelIdentifier": "Identifiant de modèle personnalisé"
+    },
+    "placeholder": {
+      "coachAsk": "Demandez : « Pourquoi Nf3 est-il fort ici ? »",
+      "pgnInput": "Collez un PGN ou une liste de coups (ex : e4 e5 Nf3 Nc6)…",
+      "drawText": "Saisir…"
+    },
+    "empty": {
+      "moveHistory": "Vos coups apparaîtront ici.",
+      "moveHistoryCommentator": "Les coups apparaissent ici au fur et à mesure de la partie.",
+      "moveTree": "Importez une partie pour commencer.",
+      "insights": "Avancez dans les coups pour voir l'avis du moteur."
+    },
+    "practiceLede": "Jouez contre l'ordinateur. Le coach vous souffle des conseils au fil de la partie, et vous pouvez toujours demander au Coach IA une aide plus approfondie.",
+    "aria": {
+      "capturedByWhite": "Pièces capturées par les Blancs",
+      "capturedByBlack": "Pièces capturées par les Noirs",
+      "chessBoard": "Échiquier",
+      "dismissHint": "Fermer l'indice"
+    },
+    "section": {
+      "pasteOrUpload": "Coller ou téléverser",
+      "sampleGames": "Parties d'exemple",
+      "moveHistory": "Historique des coups"
+    },
+    "toast": {
+      "notYourTurn": "Ce n'est pas votre tour.",
+      "matchLoaded": "Partie chargée.",
+      "pasteFirst": "Collez d'abord un PGN ou une liste de coups.",
+      "parseFail": "Impossible d'analyser : {error}",
+      "imgLoadFail": "Impossible de charger cette image.",
+      "noReview": "Aucun coup à revoir pour le moment.",
+      "lessonComplete": "Leçon terminée !"
+    }
+  },
+
+  "game": {
+    "result": {
+      "checkmate": "Échec et mat !",
+      "stalemate": "Pat",
+      "draw": "Nulle",
+      "timeout": "Temps écoulé",
+      "drawRepetition": "Nulle",
+      "drawAgreed": "Nulle"
+    },
+    "resultSub": {
+      "whiteWins": "Les Blancs gagnent",
+      "blackWins": "Les Noirs gagnent",
+      "stalemate": "Nulle par pat",
+      "fiftyMove": "Règle des 50 coups",
+      "insufficient": "Matériel insuffisant",
+      "repetition": "Triple répétition",
+      "agreed": "Nulle par accord",
+      "whiteWinsTime": "Les Blancs gagnent au temps",
+      "blackWinsTime": "Les Noirs gagnent au temps"
+    },
+    "side": {
+      "white": "Blancs",
+      "black": "Noirs"
+    },
+    "playerDefault": {
+      "top": "Noirs",
+      "bottom": "Vous",
+      "topMeta": "IA · Niveau 2",
+      "botMeta": "Humain"
+    },
+    "playAsOption": {
+      "white": "Blancs",
+      "random": "Aléatoire",
+      "black": "Noirs"
+    },
+    "timeControl": {
+      "unlimited": "Illimité",
+      "custom": "{minutes}+{increment}"
+    },
+    "difficulty": {
+      "1": "Débutant",
+      "2": "Occasionnel",
+      "3": "Club",
+      "4": "Maître"
+    },
+    "clock": {
+      "timeUsed": "{seconds}s utilisées",
+      "timeUsedLong": "{time} utilisées"
+    }
+  },
+
+  "chess": {
+    "piece": {
+      "p": "pion",
+      "n": "cavalier",
+      "b": "fou",
+      "r": "tour",
+      "q": "dame",
+      "k": "roi"
+    },
+    "pieceCapital": {
+      "p": "Pion",
+      "n": "Cavalier",
+      "b": "Fou",
+      "r": "Tour",
+      "q": "Dame",
+      "k": "Roi"
+    },
+    "direction": {
+      "kingside": "aile roi",
+      "queenside": "aile dame"
+    }
+  },
+
+  "classification": {
+    "best":       { "label": "Meilleur coup", "glyph": "★",  "comment": "C'est le choix préféré du moteur — aucun meilleur coup sur l'échiquier." },
+    "good":       { "label": "Solide",      "glyph": "✓",  "commentAgree": "Le moteur approuve — un choix solide.", "commentAlt": "Une continuation raisonnable. Le moteur préférait légèrement <b>{best}</b>." },
+    "inaccuracy": { "label": "Imprécision", "glyph": "?!", "comment": "Petit écart — <b>{best}</b> aurait été un peu plus fort.", "commentShort": "Petit écart." },
+    "mistake":    { "label": "Erreur",      "glyph": "?",  "comment": "Une erreur — <b>{best}</b> était nettement meilleur.", "commentShort": "Une erreur." },
+    "blunder":    { "label": "Gaffe",       "glyph": "??", "comment": "Une gaffe. <b>{best}</b> était nécessaire.", "commentShort": "Une gaffe." },
+    "review": {
+      "good": "Meilleur coup ou presque.",
+      "ok": "Coup solide.",
+      "inaccuracy": "Légèrement imprécis.",
+      "mistake": "Une erreur.",
+      "blunder": "Gaffe."
+    }
+  },
+
+  "nag": {
+    "1": "Bon coup",
+    "2": "Erreur",
+    "3": "Coup brillant",
+    "4": "Gaffe",
+    "5": "Coup intéressant",
+    "6": "Coup douteux",
+    "10": "Position égale",
+    "13": "Position peu claire",
+    "14": "Les Blancs sont légèrement mieux",
+    "15": "Les Noirs sont légèrement mieux",
+    "16": "Les Blancs sont mieux",
+    "17": "Les Noirs sont mieux",
+    "18": "Les Blancs gagnent",
+    "19": "Les Noirs gagnent"
+  },
+
+  "hint": {
+    "eyebrow": "Coup suggéré",
+    "loading": "…",
+    "loadingSub": "J'examine quelques coups à l'avance…",
+    "checkmate": "Donne <b>échec et mat</b>. Terminez la partie !",
+    "castle": "Roque {dir} — le roi se met à l'abri derrière un rideau de pions.",
+    "promote": "Pousse jusqu'à la dernière rangée et promeut en <b>{piece}</b>.",
+    "capture": "Gagne du matériel : votre <b>{piece}</b> capture le <b>{target}</b>.",
+    "develop": "Développe votre <b>{piece}</b> en <b>{square}</b>, améliorant l'activité et visant le centre.",
+    "pawn": "Avance votre <b>pion</b> en <b>{square}</b>, conquérant de l'espace.",
+    "rook": "Active votre <b>tour</b> en <b>{square}</b> — les colonnes ouvertes adorent les tours.",
+    "queen": "Amène la <b>dame</b> en <b>{square}</b> avec intention.",
+    "quiet": "Améliore votre <b>{piece}</b> en <b>{square}</b>.",
+    "checkSuffix": " Donne aussi <b>échec</b>."
+  },
+
+  "banner": {
+    "reviewBtn": "🔍 Revoir la partie",
+    "newGameBtn": "Nouvelle partie"
+  },
+
+  "coach": {
+    "greeting": "Bonjour — je suis votre coach d'échecs. Posez-moi n'importe quelle question sur la position. J'explique les idées, les tactiques et les plans.",
+    "thinking": "Réflexion…",
+    "analyzing": "Analyse…",
+    "status": {
+      "unknown": "inconnu",
+      "missingKey": "clé API manquante"
+    },
+    "system": "Vous êtes KarpaChess, un coach d'échecs expert, enthousiaste et encourageant. Expliquez les idées dans un langage clair, imagé et motivant pour un apprenant. Soyez concis : 2 à 4 courts paragraphes, ou une liste à puces serrée. Appuyez vos affirmations sur la position actuelle. Utilisez la notation SAN pour les coups. Lorsque vous recommandez un coup, expliquez brièvement POURQUOI. N'inventez jamais des pièces ou des cases qui ne sont pas présentes. Répondez en {language}.",
+    "fallbackPrefix": "**Échec de la requête {provider}.** {error}\n\nRepli sur le coach intégré :\n\n{fallback}",
+    "whisper": {
+      "tip1": "Bien — et maintenant, qu'en est-il de votre prochaine pièce ?",
+      "tip2": "À chaque coup, demandez-vous : est-ce que j'améliore ma pièce la moins active ?",
+      "tip3": "Surveillez les fourchettes et les tactiques après chaque échange.",
+      "tip4": "Gardez votre roi en sécurité. Roquez si ce n'est pas déjà fait.",
+      "tip5": "Cherchez les pièces sans défenseur — les vôtres et celles de l'adversaire.",
+      "check": "⚠️ <b>{side}</b> est en échec !",
+      "capture": "💥 {piece} prend {target} en {square}. Éval : {eval}.",
+      "castle": "🏰 Joli roque ! La sécurité du roi compte. Éval : {eval}.",
+      "promote": "✨ Promu en {piece} ! Éval : {eval}.",
+      "tipWithEval": "{tip} ({eval})",
+      "welcome": "Bienvenue ! Jouez un coup et je partagerai un aperçu rapide. Quand la partie se termine, je vous proposerai de revoir vos coups.",
+      "newGame": "Nouvelle partie ! Bonne chance — jouez le premier coup."
+    },
+    "builtin": {
+      "name": "Intégré (hors ligne)",
+      "on": "en",
+      "bestMove": {
+        "recommendation": "Ma recommandation : <b>{move}</b>.",
+        "shallow": "Sans recherche approfondie, envisagez : <b>{move}</b>.",
+        "whyHeader": "<b>Pourquoi c'est pertinent ici :</b>",
+        "castle": "• Le roi est encore au centre — roquer est une priorité absolue.",
+        "develop": "• Pièces mineures encore en {squares} — développez-les.",
+        "center": "• Aucun pion sur les quatre cases centrales — une poussée de pion central est précieuse.",
+        "loose": "• L'adversaire a des <b>{pieceWord}</b> : {list}. Cherchez comment les gagner.",
+        "oppKing": "• Le roi adverse est <b>{score}</b> — les coups d'attaque fonctionnent souvent.",
+        "ownKing": "• Votre roi est sous le feu — envisagez d'abord la défense.",
+        "passedEnd": "• Vous avez des <b>{pawnWord}</b> en {squares} — poussez-les !",
+        "activeKing": "• Activez votre roi — en finale, c'est une pièce combattante.",
+        "aheadBehind": "• Vous avez {state} {n} points — {advice}.",
+        "ahead": "une avance de",
+        "behind": "un retard de",
+        "adviceAhead": "échangez les pièces, gardez les pions",
+        "adviceBehind": "créez des complications",
+        "evalSuffix": "_Éval : {eval}_"
+      },
+      "loosePieces": {
+        "singular": "pièce non défendue",
+        "plural": "pièces non défendues"
+      },
+      "passedPawns": {
+        "singular": "pion passé",
+        "plural": "pions passés"
+      },
+      "tactics": {
+        "header": "<b>Analyse tactique pour {side}</b>",
+        "loose": "L'adversaire a {n} {pieceWord} non défendues : {list}.",
+        "undefendedSingle": "pièce",
+        "undefendedPlural": "pièces",
+        "defended": "Les pièces adverses semblent défendues. Tactiques plus difficiles — cherchez des clouages, des décoys ou des coups de dégagement.",
+        "exposedKing": "Leur roi est <b>{score}</b> ({notes}) — des schémas de mat peuvent se cacher.",
+        "openLines": "lignes ouvertes",
+        "queenTarget": "Leur dame en <b>{square}</b> — pouvez-vous l'attaquer à peu de frais pour gagner du tempo ?",
+        "engineSuggests": "Le moteur suggère <b>{move}</b> — ce coup correspond-il à l'un des schémas ci-dessus ?",
+        "footer": "_Entraînez votre œil à repérer ces trois éléments à chaque coup : pièces non défendues, rois exposés, défenseurs surchargés._"
+      },
+      "plan": {
+        "header": "<b>Plan pour {side}</b> _({phase})_",
+        "developMinors": "Développez les {pieceWord} mineures restantes depuis {squares}.",
+        "minorSingular": "pièce",
+        "minorPlural": "pièces",
+        "castle": "Roquez — la sécurité du roi d'abord.",
+        "queenEarly": "Attention — la dame a bougé avant que toutes les pièces mineures ne soient développées. Ne la laissez pas se faire chasser.",
+        "centerPawn": "Placez un pion sur les quatre cases centrales (d4/e4/d5/e5).",
+        "kingDanger": "Votre roi est en danger — améliorez la défense avant d'attaquer.",
+        "oppositeWings": "Vous avez tous les deux roqué — attaquez l'aile opposée avec les pions si vous avez roqué sur des côtés opposés.",
+        "pushPassed": "Poussez vos {pawnWord} en {squares}.",
+        "passedPawnSingular": "pion passé",
+        "passedPawnPlural": "pions passés",
+        "isolated": "Surveillez vos {pawnWord} en {squares} — l'activité compense la faiblesse.",
+        "isolatedSingular": "pion isolé",
+        "isolatedPlural": "pions isolés",
+        "improveWorst": "Améliorez votre pièce la moins active. Chaque coup doit rendre une de vos pièces meilleure.",
+        "racePassed": "Lancez vos {pawnWord} en {squares} vers la promotion.",
+        "raceSingular": "pion passé",
+        "racePlural": "pions passés",
+        "activateKing": "Activez votre roi — amenez-le dans l'action.",
+        "aheadTrade": "Vous avez {n} points d'avance — échangez les pièces (pas les pions) pour simplifier vers une finale gagnante.",
+        "behindKeep": "Vous avez {n} points de retard — gardez les pièces sur l'échiquier, créez du contre-jeu, évitez les échanges.",
+        "fewPawns": "Peu de pions restants — pensez à l'opposition, au zugzwang et aux cases clés."
+      },
+      "lastMove": {
+        "none": "Aucun coup joué pour l'instant — commencez par un pion central (e4 ou d4) ou un coup de cavalier (Nf3).",
+        "capture": "a capturé du matériel",
+        "check": "a donné échec",
+        "checkmate": "a donné échec et mat",
+        "castleKingside": "a roqué côté roi",
+        "castleQueenside": "a roqué côté dame",
+        "promote": "a promu un pion",
+        "line": "<b>{san}</b> — {anns}.",
+        "quiet": "<b>{san}</b> — un coup positionnel tranquille.",
+        "evalLine": "Éval actuelle : {eval}. ",
+        "topChoice": "Meilleur choix du moteur pour la suite : <b>{move}</b>."
+      },
+      "opening": {
+        "noneHeader": "<b>Les premiers coups classiques :</b>",
+        "noneE4": "<b>1.e4</b> — ouvre des lignes pour la dame et le fou, lutte pour le centre. Mène à un jeu tactique tranchant.",
+        "noneD4": "<b>1.d4</b> — revendique le centre, prépare c4 (Gambit Dame). Stratégique, positionnel.",
+        "noneNf3": "<b>1.Nf3</b> — flexible, retarde la révélation de votre plan. Transpose souvent.",
+        "noneC4": "<b>1.c4</b> — Anglaise. Attaque du centre par le flanc, style hypermoderne.",
+        "nonePick": "Choisissez-en une, jouez-la cent fois, et apprenez-en les secrets.",
+        "known": "<b>{name}</b>\n\n{tip}\n\n_Coups joués : {moves}_",
+        "unknownHeader": "{n} {moveWord} joués — aucune correspondance d'ouverture claire pour l'instant. Tenez-vous-en à trois principes :",
+        "moveSingular": "coup",
+        "movePlural": "coups",
+        "unknownP1": "• Contrôlez le centre avec des pions ou des pièces",
+        "unknownP2": "• Développez chaque pièce mineure avant de bouger la dame",
+        "unknownP3": "• Roquez avant de lancer des attaques"
+      },
+      "endgame": {
+        "header": "<b>Essentiels de la finale</b>",
+        "activateKing": "• <b>Activez votre roi</b> — en finale, il vaut environ trois pions. Amenez-le au centre.",
+        "passed": "• Les <b>pions passés</b> sont en or. Les Blancs en ont {w} ; les Noirs en ont {b}.",
+        "none": "aucun",
+        "opposition": "• L'<b>opposition</b> décide des finales roi et pion — le camp qui n'est pas au trait gagne souvent la case clé.",
+        "rookRule": "• Les <b>finales de tours</b> suivent la règle : la tour se place DERRIÈRE le pion passé (le vôtre ou celui de l'adversaire).",
+        "tradePieces": "• Quand vous gagnez, échangez les pièces, pas les pions. Quand vous perdez, gardez les pièces et cherchez des tactiques."
+      },
+      "evaluation": {
+        "header": "<b>Évaluation de la position</b> _({phase}, {side} au trait)_",
+        "material": "• <b>Matériel :</b> Blancs {w} vs Noirs {b}{diff}",
+        "equalSuffix": " (égal)",
+        "diffSuffix": " — {side} a +{n}",
+        "engine": "• <b>Moteur :</b> {eval}",
+        "whiteKing": "• <b>Roi blanc :</b> {score}{notes}",
+        "blackKing": "• <b>Roi noir :</b> {score}{notes}",
+        "notesFmt": " ({notes})",
+        "pawnWeaknessesWhite": "• <b>Problèmes de pions blancs :</b> {list}",
+        "pawnWeaknessesBlack": "• <b>Problèmes de pions noirs :</b> {list}",
+        "isolatedPrefix": "isolé en {sq}",
+        "doubledPrefix": "doublé sur {file}",
+        "passedWhite": "• <b>{pawnWord} blancs :</b> {squares}",
+        "passedBlack": "• <b>{pawnWord} noirs :</b> {squares}",
+        "passedSingular": "Pion passé",
+        "passedPlural": "Pions passés",
+        "topMove": "• <b>Meilleur coup du moteur :</b> <b>{move}</b>"
+      },
+      "kingSafety": {
+        "header": "<b>Sécurité du roi</b>",
+        "line": "• <b>Roi {side}</b> ({who}) : {score}{castled}. {notes}",
+        "you": "vous",
+        "opponent": "adversaire",
+        "castledSuffix": " — a roqué",
+        "noConcerns": "Aucune inquiétude immédiate.",
+        "footer": "Si votre roi est exposé : défendez d'abord. Si celui de l'adversaire est exposé : cherchez les échecs, les levées de tour et l'infiltration de la dame."
+      },
+      "pawns": {
+        "header": "<b>Structure de pions</b>",
+        "side": "<b>{side}</b> ({n} pions)",
+        "isolated": "• Isolés : {squares} — difficiles à défendre, mais souvent actifs.",
+        "doubled": "• Doublés sur {files} — ne peuvent pas se défendre mutuellement, souvent une faiblesse à long terme.",
+        "passed": "• <b>Passés :</b> {squares} — poussez-les avec le soutien des pièces !",
+        "clean": "• Structure saine — aucune faiblesse notable ni pion passé."
+      },
+      "development": {
+        "header": "<b>Développement</b>",
+        "white": "• Blancs : {n}/4 mineures développées{castled}{home}",
+        "black": "• Noirs : {n}/4 mineures développées{castled}{home}",
+        "castledSuffix": ", a roqué ✓",
+        "homeSuffix": " — encore à la maison : {squares}",
+        "openingNote": "En ouverture, chaque coup doit soit (1) développer une pièce, (2) contrôler le centre, ou (3) améliorer la sécurité du roi. Les coups qui ne font rien de tout cela sont suspects."
+      },
+      "improvement": {
+        "header": "<b>Améliorez votre pièce la moins active</b>",
+        "intro": "Regardez chacune de vos pièces et demandez-vous : « Que fait-elle ? » Votre objectif à chaque coup est de donner un rôle significatif à la pièce la moins active.",
+        "commonHeader": "<b>Pièces souvent les moins actives :</b>",
+        "bishop": "• Un fou derrière ses propres pions — redéployez-le ou échangez-le.",
+        "knight": "• Un cavalier au bord (h3, a6, etc.) — centralisez en d4/e4/d5/e5.",
+        "rook": "• Une tour sur sa case de départ sans colonne ouverte — trouvez-en une et envahissez.",
+        "queen": "• La dame sortie trop tôt et exposée — ramenez-la d'abord à l'abri.",
+        "kingMid": "• Un roi encore au centre après le 10e coup — roquez immédiatement."
+      },
+      "summary": {
+        "header": "<b>Aperçu de la position</b> — _{pulse}_",
+        "pulseMaterial": "matériel {sign}{n} pour {side}",
+        "pulseMaterialEven": "matériel égal",
+        "pulsePhase": "phase de {phase}",
+        "pulseToMove": "{side} au trait",
+        "material": "• <b>Matériel :</b> B {w} · N {b}{diff}",
+        "diff": " ({sign}{n})",
+        "equal": " (égal)",
+        "kings": "• <b>Rois :</b> Blanc {wScore}{wCastled}, Noir {bScore}{bCastled}",
+        "castledGlyph": " ✓",
+        "eval": "• <b>Éval :</b> {eval}",
+        "engineSuggests": "• <b>Le moteur suggère :</b> <b>{move}</b>",
+        "target": "• <b>Cible :</b> {list} non défendues de l'adversaire",
+        "menu": "Demandez-moi : <b>meilleur coup · tactiques · plan · sécurité du roi · pions · développement · évaluation</b>"
+      },
+      "phase": {
+        "opening": "ouverture",
+        "middlegame": "milieu de jeu",
+        "endgame": "finale"
+      },
+      "kingScore": {
+        "safe": "en sécurité",
+        "exposed": "exposé",
+        "danger": "en danger",
+        "shelter": "abrité",
+        "waiting": "en attente",
+        "active": "actif",
+        "unknown": "inconnu"
+      },
+      "kingNote": {
+        "tuckedCorner": "encore blotti dans le coin — centralisez-le",
+        "startingSquare": "roi sur sa case de départ — faites-le sortir",
+        "activeOn": "roi actif en {square}",
+        "wanderingOn": "roi errant en {square}",
+        "centerAfter8": "roi encore au centre après le 8e coup",
+        "thinShield": "couverture de pions mince ({count}/3)",
+        "enemyHeavy": "pièce lourde ennemie sur la colonne du roi",
+        "fullShield": "a roqué avec un bouclier de pions complet"
+      },
+      "eval": {
+        "unclear": "peu clair",
+        "balanced": "équilibré ({pawns})",
+        "better": "{sign}{pawns} — <b>{side}</b> est mieux"
+      }
+    },
+    "openingNames": {
+      "ruyLopez": "Ruy López",
+      "ruyLopezMorphy": "Ruy López — Défense Morphy",
+      "italianGame": "Partie italienne",
+      "italianGiuocoPiano": "Partie italienne — Giuoco Piano",
+      "italianTwoKnights": "Partie italienne — Deux Cavaliers",
+      "petroff": "Défense Petroff",
+      "scotchGame": "Partie écossaise",
+      "viennaGame": "Partie viennoise",
+      "kingsGambit": "Gambit du Roi",
+      "openGame": "Partie ouverte",
+      "kingsPawnGame": "Jeu du pion roi",
+      "sicilian": "Défense sicilienne",
+      "sicilianNajdorf": "Sicilienne — complexe Najdorf",
+      "sicilianOpenNc6": "Sicilienne — Ouverte avec ...Nc6",
+      "sicilianTaimanovKan": "Sicilienne — Taïmanov/Kan",
+      "sicilianClosed": "Sicilienne — Fermée",
+      "french": "Défense française",
+      "caroKann": "Défense Caro-Kann",
+      "scandinavian": "Défense scandinave",
+      "pirc": "Défense Pirc",
+      "modern": "Défense moderne",
+      "alekhine": "Défense Alekhine",
+      "queensGambit": "Gambit Dame",
+      "queensGambitDeclined": "Gambit Dame refusé",
+      "queensGambitAccepted": "Gambit Dame accepté",
+      "slav": "Défense slave",
+      "londonSetup": "Système de Londres (mise en place)",
+      "london": "Système de Londres",
+      "kingsIndian": "Défense est-indienne",
+      "nimzoIndian": "Nimzo-indienne",
+      "queensIndian": "Ouest-indienne (complexe)",
+      "benoni": "Défense Benoni",
+      "indianGame": "Partie indienne",
+      "dutch": "Défense hollandaise",
+      "english": "Ouverture anglaise",
+      "reti": "Ouverture Réti",
+      "retiKia": "Réti / KIA (mise en place)",
+      "retiSetup": "Réti (mise en place)",
+      "larsen": "Ouverture Larsen",
+      "sokolsky": "Sokolsky / Polonaise",
+      "benko": "Ouverture Benko"
+    },
+    "openingTips": {
+      "ruyLopez": "La plus ancienne ouverture sérieuse des échecs. Le Bb5 cloue le cavalier — les Noirs jouent généralement ...a6 pour forcer une décision. Après Ba4, le jeu se transforme en longues batailles stratégiques.",
+      "ruyLopezMorphy": "La réponse principale des Noirs. Les Blancs choisissent généralement entre la ligne principale (Ba4 Nf6 0-0) et la variante d'échange (Bxc6). De riches échecs classiques vous attendent.",
+      "italianGame": "Bc4 vise f7 — le point le plus faible du camp noir. Développez les cavaliers en f3/c3, roquez petit, et cherchez les cassures en d3/d4.",
+      "italianGiuocoPiano": "« Jeu tranquille » — les deux fous visent la case faible de chaque roi. Mise en place classique : développer, roquer, puis pousser d4.",
+      "italianTwoKnights": "Jeu tranchant ! Les Blancs peuvent tenter le Foie Frit (Ng5) ou la cassure plus calme d4. Les Noirs doivent naviguer en eaux tactiques.",
+      "petroff": "Défense symétrique très solide. Les Noirs copient les Blancs et développent naturellement — réputée pour ses tendances nulles au haut niveau.",
+      "scotchGame": "Les Blancs ouvrent le centre tôt avec d4. Jeu actif pour les deux camps, moins théorique que la Ruy.",
+      "viennaGame": "Développe Nc3 avant Nf3, gardant le pion f libre pour des possibilités d'attaque (f4 plus tard).",
+      "kingsGambit": "Sacrifice de l'ère romantique ! Les Blancs offrent le pion f contre un développement rapide et des attaques sur f7. Rare mais exaltant.",
+      "openGame": "Les échecs classiques à leur meilleur. Attendez-vous à un jeu de principes, centré sur le centre.",
+      "kingsPawnGame": "Les deux camps revendiquent l'espace central avec des pions. Un jeu tranchant et direct s'annonce.",
+      "sicilian": "La réponse la plus populaire à 1.e4. Asymétrique — les Blancs attaquent à l'aile roi, les Noirs contre-attaquent à l'aile dame. Parties tranchantes et décisives.",
+      "sicilianNajdorf": "L'ouverture de combat ultime. Chaque coup est riche en théorie. Préparez-vous à un jeu dynamique et déséquilibré.",
+      "sicilianOpenNc6": "Sicilienne classique. Attendez-vous à une course entre l'attaque à l'aile roi des Blancs et la contre-attaque à l'aile dame des Noirs.",
+      "sicilianTaimanovKan": "Sicilienne flexible et moderne. Les Noirs gardent leurs options ouvertes pour l'expansion ...a6, ...b5.",
+      "sicilianClosed": "Les Blancs évitent la sicilienne ouverte avec Nc3. Jeu plus lent et plus positionnel. À éviter si vous adorez la tactique.",
+      "french": "Les Noirs construisent une chaîne de pions en granite. Cherchez les cassures ...c5 ou ...f6 pour libérer le fou de cases blanches.",
+      "caroKann": "Solide et flexible. ...d5 arrive ensuite avec un plein contre-jeu central.",
+      "scandinavian": "Les Noirs attaquent le pion e4 immédiatement. Après Nc3, la dame se fait chasser — attention à son placement.",
+      "pirc": "Hypermoderne. Les Noirs invitent les Blancs à bâtir un grand centre, puis le frappent avec des cassures de pions.",
+      "modern": "Similaire à la Pirc mais encore plus flexible. Les Noirs retardent leur engagement dans une mise en place.",
+      "alekhine": "Provocante ! Les Noirs attirent les pions blancs en avant, puis les attaquent. Tranchante et non conventionnelle.",
+      "queensGambit": "Offrir le pion c pour détourner le pion d noir et dominer le centre. Classique, de principes, de haut niveau.",
+      "queensGambitDeclined": "Les Noirs refusent le pion et construisent une structure solide. L'ouverture positionnelle par excellence.",
+      "queensGambitAccepted": "Les Noirs prennent le pion, comptant le rendre pour un jeu de pièces actif.",
+      "slav": "Soutient le pion d5 avec ...c6. Solide, difficile à ébranler, garde le fou de c8 vivant.",
+      "londonSetup": "Le système universel des Blancs — Bf4 et développement stable. Moins de théorie, résultats fiables.",
+      "london": "Solide et facile à apprendre. Revendiquez d4, développez Bf4, jouez Nf3, Nbd2, c3, e3. Fondation stable.",
+      "kingsIndian": "Classique hypermoderne. Laissez les Blancs bâtir un énorme centre, puis faites-le exploser avec ...e5 ou ...c5. Les attaques à l'aile roi sont légendaires.",
+      "nimzoIndian": "Les Noirs clouent le cavalier avec Bb4 et jouent pour doubler les pions blancs sur la colonne c. Échecs stratégiques de haute volée.",
+      "queensIndian": "Mise en place solide, basée sur le fianchetto. Populaire au niveau maître pour ses chances de nulle.",
+      "benoni": "Tranchante, déséquilibrée, tactique. Les Noirs abandonnent le centre contre de l'activité.",
+      "indianGame": "Réponse hypermoderne. Attendez de voir le plan des Blancs avant de vous engager.",
+      "dutch": "Les Noirs jouent ...f5 pour lutter pour e4. Tranchante, à double tranchant. Attention à la sécurité du roi !",
+      "english": "Ouverture de flanc flexible. Transpose souvent dans des structures de Gambit Dame ou est-indiennes. Difficile à préparer pour les Noirs.",
+      "reti": "Hypermoderne — attaquez le centre depuis les flancs. Excellent si vous adorez le jeu positionnel.",
+      "retiKia": "Flexible — peut transposer dans l'Attaque est-indienne (KIA) ou d'autres mises en place fermées.",
+      "retiSetup": "Flexibilité tranquille. Transpose souvent.",
+      "larsen": "Fianchettez tôt le fou dame. Inhabituel mais sain.",
+      "sokolsky": "Fianchetto Bb2 avec b4 en prime. Inhabituelle — surprenez votre adversaire !",
+      "benko": "Système de fianchetto tranquille. Flexible, peu théorique, positionnel.",
+      "generic": "Concentrez-vous sur les idées — placement des pièces, cassures de pions, finales typiques."
+    }
+  },
+
+  "settings": {
+    "title": "Paramètres",
+    "board": "Échiquier",
+    "boardTheme": "Thème de l'échiquier",
+    "theme": {
+      "royal": "Royal",
+      "emerald": "Émeraude",
+      "midnight": "Pierre",
+      "rose": "Rose",
+      "ice": "Glace"
+    },
+    "toggle": {
+      "coords": "Afficher les coordonnées",
+      "legal": "Mettre en évidence les coups légaux",
+      "last": "Mettre en évidence le dernier coup",
+      "sound": "Son",
+      "animations": "Animations"
+    },
+    "language": "Langue",
+    "languageSection": "Langue",
+    "aiCoach": "Coach IA",
+    "aiNote": "Les clés sont stockées localement dans votre navigateur. Les appels vont de votre navigateur directement au fournisseur.",
+    "dangerZone": "Zone de danger",
+    "resetBtn": "Réinitialiser progression et clés",
+    "resetConfirm": "Réinitialiser toute la progression, les clés et les paramètres ?",
+    "provider": {
+      "builtin": "Intégré (heuristiques hors ligne)",
+      "anthropic": "Anthropic (Claude)",
+      "openai": "OpenAI (GPT)",
+      "openrouter": "OpenRouter (100+ modèles)",
+      "mistral": "Mistral AI",
+      "deepseek": "DeepSeek",
+      "xai": "xAI (Grok)",
+      "qwen": "Qwen (Alibaba)",
+      "glm": "GLM (Zhipu)",
+      "minimax": "MiniMax",
+      "ollama": "Ollama",
+      "lmstudio": "LM Studio",
+      "groupCloud": "API Cloud",
+      "groupLocal": "Local / auto-hébergé",
+      "customOption": "Personnalisé…"
+    },
+    "providerNote": {
+      "builtin": "Aucune configuration nécessaire — le coach intégré fonctionne entièrement hors ligne en utilisant des heuristiques locales et le moteur intégré.",
+      "lmstudio": "Chargez un modèle dans LM Studio et démarrez son serveur local. Choisissez l'un des préréglages ci-dessous, ou saisissez l'identifiant exact du modèle que LM Studio affiche sur sa page serveur.",
+      "openrouter": "Une seule clé, 100+ modèles d'Anthropic, OpenAI, Meta, Mistral, DeepSeek, xAI, Google et plus.",
+      "glm": "Les modèles GLM de Zhipu AI. Le point de terminaison par défaut est la région Chine — passez par un proxy si nécessaire."
+    }
+  },
+
+  "commentator": {
+    "title": "Studio Commentateur",
+    "importLede": "Collez un PGN, déposez un fichier ou choisissez une partie d'exemple ci-dessous pour commencer à commenter.",
+    "pasteOrUpload": "Coller ou téléverser",
+    "sampleGames": "Parties d'exemple",
+    "close": "Fermer cette partie et retourner à l'import",
+    "confirmClose": "Fermer cette partie et retourner à l'import ?",
+    "moves": "Coups",
+    "movesHint": "cliquez pour afficher · se masque pour un visionnage sécurisé en stream",
+    "badgesShow": "Afficher les icônes du moteur sur l'échiquier",
+    "badgesHide": "Masquer les icônes du moteur sur l'échiquier",
+    "firstMove": "Premier coup (Home)",
+    "prevMove": "Précédent (←)",
+    "nextMove": "Suivant (→)",
+    "lastMove": "Dernier (End)",
+    "mainLine": "Retour à la ligne principale (↑)",
+    "mainLineShort": "↩ principale",
+    "startPos": "Position de départ. Cliquez sur ▶ ou appuyez sur → pour entrer dans la partie.",
+    "enginePrefers": "Le moteur préfère <b>{move}</b>",
+    "engineAgrees": "Le moteur approuve : meilleur choix",
+    "eval": "Éval <b>{score}</b>",
+    "sidePlayed": "{side} a joué <b>{san}</b>",
+    "enginePrefersLabel": "Le moteur préfère",
+    "engineAgreesLabel": "Le moteur approuve",
+    "topChoiceShort": "meilleur choix",
+    "evalLabel": "Éval",
+    "noMatch": "Aucune partie chargée.",
+    "untitled": "Sans titre",
+    "ply": "demi-coup {n}/{total}",
+    "variation": "(variante)",
+    "act": {
+      "captures": "capture un(e) {piece}",
+      "castleK": "roque côté roi",
+      "castleQ": "roque côté dame",
+      "promotes": "promeut en {piece}",
+      "check": "donne échec",
+      "checkmate": "donne échec et mat",
+      "and": "et",
+      "leadIn": "Coup {tactics}."
+    },
+    "drawTools": {
+      "select": "Sélectionner",
+      "erase": "Effacer",
+      "arrow": "Flèche",
+      "line": "Ligne",
+      "box": "Rectangle",
+      "circle": "Cercle",
+      "pen": "Stylo",
+      "text": "Texte",
+      "strokeWidth": "Épaisseur du trait",
+      "deleteSelected": "Supprimer la sélection (Suppr)",
+      "clearAll": "Effacer toutes les formes sur ce coup"
+    }
+  },
+
+  "learn": {
+    "title": "Apprendre les échecs",
+    "lede": "Leçons guidées sur les grands sujets. Touchez une catégorie pour plonger.",
+    "noData": "Les leçons se chargent… Si cela persiste, assurez-vous que l'application est servie (pas ouverte via file://).",
+    "successDefault": "Exactement.",
+    "failDefault": "Pas tout à fait. Réessayez.",
+    "play": "Jouer le coup",
+    "next": "Suivant →",
+    "finish": "Terminer",
+    "completedHeader": "Leçon terminée",
+    "completedBody": "Vous avez terminé {title}. Prêt pour la suivante ?",
+    "backToLessons": "Retour aux leçons",
+    "categoryCount": "{done}/{total}"
+  },
+
+  "puzzles": {
+    "title": "Énigmes",
+    "lede": "Choisissez un thème à pratiquer. Chaque ensemble enseigne un schéma.",
+    "prompt": "Trouvez le meilleur coup.",
+    "counter": "Énigme {n} sur {total}",
+    "correct": "✅ Correct !",
+    "wrong": "❌ Pas ce coup. Réessayez.",
+    "solved": "Résolu !",
+    "solvedCelebrate": "✅ Résolu — bravo !",
+    "noData": "Les énigmes se chargent…",
+    "turnLabel": "{side} au trait.",
+    "themeCount": "{n} énigmes",
+    "themeCompleteHeader": "🏆 Thème terminé.",
+    "themeCompleteBody": "Vous avez terminé toutes les énigmes de {theme}."
+  },
+
+  "coachTab": {
+    "title": "Coach IA",
+    "providerLabel": "Fournisseur",
+    "builtin": "Intégré",
+    "changeInSettings": "Modifier dans les paramètres",
+    "chip": {
+      "best": "Meilleur coup ?",
+      "tactics": "Tactiques ?",
+      "explain": "Expliquer le dernier",
+      "plans": "Plans"
+    },
+    "chipQuery": {
+      "best": "Quel est le meilleur coup dans cette position ?",
+      "tactics": "Quels motifs tactiques existent ici ?",
+      "explain": "Expliquez mon dernier coup.",
+      "plans": "Quel est le plan pour les deux camps ?"
+    },
+    "analyzeQuestion": "Analysez la position actuelle.",
+    "analyzePrompt": "Donnez une analyse claire de cette position : caractéristiques clés, menaces, coups candidats, et une recommandation avec ses raisons."
+  },
+
+  "promotion": {
+    "title": "Promouvoir le pion"
+  },
+
+  "review": {
+    "title": "Revue de la partie",
+    "analyzing": "Analyse…",
+    "progress": "Analyse du coup {i} sur {total}…",
+    "engineTopChoice": "Meilleur choix du moteur : <b>{san}</b>",
+    "enginePreferred": "Le moteur préférait {best}.",
+    "badge": {
+      "good": "Meilleur",
+      "ok": "Ok",
+      "inaccuracy": "Imprécision",
+      "mistake": "Erreur",
+      "blunder": "Gaffe"
+    },
+    "tally": {
+      "best": "Meilleur",
+      "inaccurate": "Imprécis",
+      "mistake": "Erreur",
+      "blunder": "Gaffe"
+    }
+  },
+
+  "lessons": {
+    "categories": {
+      "basics":   { "name": "Bases",       "description": "Les fondamentaux que tout joueur d'échecs doit connaître." },
+      "openings": { "name": "Ouvertures",  "description": "Commencez chaque partie avec intention." },
+      "tactics":  { "name": "Tactiques",   "description": "Des schémas qui gagnent du matériel et des parties." },
+      "endgames": { "name": "Finales",     "description": "Convertissez les positions gagnées ; sauvez les perdues." },
+      "strategy": { "name": "Stratégie",   "description": "Pensez en plans, pas seulement en coups." },
+      "attack":   { "name": "Attaque",     "description": "Attaques de mat et chasses au roi." }
+    }
+  },
+
+  "puzzleThemes": {
+    "mate-in-1":    { "name": "Mat en 1",              "description": "Trouvez le coup décisif — donnez échec et mat en un seul coup." },
+    "mate-in-2":    { "name": "Mat en 2",              "description": "Mats forcés en deux coups. Pensez un pas en avance." },
+    "forks":        { "name": "Fourchettes",           "description": "Attaquez deux pièces à la fois et gagnez du matériel." },
+    "pins-skewers": { "name": "Clouages et enfilades", "description": "Alignez les pièces ennemies et gagnez celle de derrière." },
+    "back-rank":    { "name": "Dernière rangée",       "description": "Exploitez le roi piégé derrière ses propres pions." },
+    "tactics-mix":  { "name": "Tactiques mixtes",      "description": "Une variété de schémas tactiques — trouvez le meilleur coup." },
+    "discovered":   { "name": "Attaques à la découverte", "description": "Bougez une pièce, en libérez une autre." },
+    "endgame":      { "name": "Technique de finale",   "description": "Convertissez proprement les finales gagnantes." }
+  }
+}

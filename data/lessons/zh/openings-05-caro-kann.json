@@ -1,0 +1,38 @@
+{
+  "id": "caro-kann",
+  "title": "卡罗-卡恩防御",
+  "summary": "对 1.e4 极其坚固的防御",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "稳固而健全",
+      "text": "卡罗-卡恩(1.e4 c6)用 c 兵支撑准备 ...d5。与法国防御不同,白格象能自由出动。棋风安静、富有战略,且以难以攻破而著称。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+      "prompt": "黑方摆出卡罗-卡恩布局。",
+      "targetSan": [
+        "c6"
+      ],
+      "hint": "1...c6 为 ...d5 做准备。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "白方主要回应:强化中心。",
+      "targetSan": [
+        "d4"
+      ],
+      "hint": "2.d4 占据整个中心。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pp1ppppp/2p5/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2",
+      "title": "冲击",
+      "text": "黑方接着走 2...d5,直接挑战白方中心。白方可选:推进(e5)、交换(exd5),或走入进击变例。各自通向不同类型的棋局。"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "tactics-mix-05",
+  "fen": "rnbqkbnr/ppp2ppp/8/3pp3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3",
+  "solution": [
+    "exd5"
+  ],
+  "hint": "Возьмите центральную пешку — просто, но важно."
+}

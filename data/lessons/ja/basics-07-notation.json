@@ -1,0 +1,44 @@
+{
+  "id": "notation",
+  "title": "チェスの棋譜を読む",
+  "summary": "代数式記法でどんな一手も読み解く",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "仕組み",
+      "text": "代数式記法はすべての手を一意に表します。ファイル(列)はa–hの文字、ランク(行)は1–8の数字で表します。白の初期ランクが1、黒は8です。マスはファイル+ランクで表記します。例:e4、d5、h8。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "駒の文字",
+      "text": "駒はK(キング)、Q(クイーン)、R(ルーク)、B(ビショップ)、N(ナイト)で表します。ポーンには文字がなく、「e4」だけでポーンがe4に進む手を意味します。駒取りは「x」で表します。Nxe5はナイトがe5で駒を取る手です。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "特別な記号",
+      "text": "「+」はチェック、「#」はチェックメイトです。「O-O」はショートキャスリング、「O-O-O」はロングキャスリングです。「=」は昇格を表します。例:e8=Q(ポーンがクイーンに昇格)。2つの駒が同じマスに行ける場合、元のファイルやランクを添えます。例:Nbd2やR1e1。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "1.e4を指しましょう。キングのポーンを突いてください。",
+      "targetSan": [
+        "e4"
+      ],
+      "hint": "e2のポーンを選び、e4に動かすだけです。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "次に2.Nf3を指しましょう。",
+      "targetSan": [
+        "Nf3"
+      ],
+      "hint": "g1のナイトがf3に跳びます。"
+    }
+  ]
+}

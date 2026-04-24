@@ -1,0 +1,21 @@
+{
+  "id": "king-safety",
+  "title": "Keamanan Raja",
+  "summary": "Raja yang aman memenangkan permainan",
+  "difficulty": "beginner",
+  "steps": [
+    { "type": "teach",
+      "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQK2R w KQkq - 0 1",
+      "title": "Sembunyikan Dia",
+      "text": "Musuh terburuk raja adalah kolom terbuka dan diagonal yang mengarah kepadanya. Rokade membawanya keluar dari pusat ke dalam benteng pion. Jaga benteng itu tetap utuh — jangan terburu-buru mendorong pion sisi rokade kecuali Anda punya alasan konkret." },
+    { "type": "play",
+      "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQK2R w KQkq - 0 1",
+      "prompt": "Rokade raja Anda ke tempat aman.",
+      "targetSan": ["O-O"],
+      "hint": "Rokade pendek — pilihan paling umum." },
+    { "type": "teach",
+      "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 b kq - 1 1",
+      "title": "Setelah Rokade",
+      "text": "Anda belum selesai! Jaga pion di depan: f2, g2, h2. Kuda di f3 mempertahankan h2. Jangan memainkan g3 atau h3 kecuali perlu — setiap langkah pion dekat raja menciptakan kelemahan untuk nanti." }
+  ]
+}

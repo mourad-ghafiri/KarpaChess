@@ -1,0 +1,21 @@
+{
+  "id": "passed-pawns",
+  "title": "Pion Lewat",
+  "summary": "Mesin kemenangan babak akhir",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "4k3/8/8/8/4P3/8/8/4K3 w - - 0 1",
+      "title": "Apa Itu Pion Lewat?",
+      "text": "Pion lewat tidak memiliki pion musuh di depannya atau di kolom sebelahnya — tidak ada yang bisa menghentikan promosi kecuali sebuah bidak. Pion lewat adalah aset besar di babak akhir. Ungkapan 'pion lewat harus didorong' adalah ucapan khas Nimzowitsch dengan alasan yang jelas." },
+    { "type": "play",
+      "fen": "4k3/8/8/8/4P3/8/8/4K3 w - - 0 1",
+      "prompt": "Majukan pion lewat.",
+      "targetSan": ["e5"],
+      "hint": "e5 — satu langkah lebih dekat ke promosi." },
+    { "type": "teach",
+      "fen": "4k3/8/8/4P3/8/8/8/4K3 b - - 0 1",
+      "title": "Dukung Dia!",
+      "text": "Pion lewat sendirian tetap butuh bantuan. Tanpa raja mengawalnya, satu bidak musuh bisa menghentikannya. Aktifkan raja Anda untuk mendukung kemajuan — dan ciptakan menteri baru." }
+  ]
+}

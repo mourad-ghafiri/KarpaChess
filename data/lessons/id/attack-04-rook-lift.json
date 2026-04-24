@@ -1,0 +1,20 @@
+{
+  "id": "rook-lift",
+  "title": "Angkat Benteng",
+  "summary": "Bawa benteng untuk menyerang lewat baris ke-3",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQR1K1 w - - 0 1",
+      "title": "Angkat dan Ayun",
+      "text": "Mengangkat benteng adalah manuver Re1-e3-g3 (atau h3) — benteng naik ke baris ketiga, lalu mengayun menyeberang untuk menyerang raja lawan. Pola klasik: Re3, Qh5 dengan kembang api di sisi raja."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQR1K1 w - - 0 1",
+      "title": "Kapan Menggunakannya",
+      "text": "Mengangkat benteng berhasil ketika: posisi setengah tertutup (benteng tidak bisa langsung memakai kolom), raja lawan sudah rokade, dan Anda sudah punya bidak di dekatnya. Sangat efektif dikombinasikan dengan dorongan pion h."
+    }
+  ]
+}

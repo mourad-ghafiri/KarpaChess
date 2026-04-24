@@ -1,0 +1,38 @@
+{
+  "id": "london-system",
+  "title": "Sistem London",
+  "summary": "Sistem universal — susunan yang sama, setiap kali",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Mengapa Main London?",
+      "text": "Sistem London adalah pembukaan \"universal\" — Putih memainkan susunan yang sama terlepas dari respons Hitam. Bagus untuk pemula: lebih sedikit teori, pola yang lebih dapat diandalkan."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "1.d4",
+      "targetSan": [
+        "d4"
+      ],
+      "hint": "Pion menteri dua kotak."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2",
+      "prompt": "Kembangkan gajah kotak gelap: 2.Bf4",
+      "targetSan": [
+        "Bf4"
+      ],
+      "hint": "Gajah dikeluarkan SEBELUM e3, sehingga tidak diblokir oleh pionnya sendiri."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/pppppppp/5n2/8/3P1B2/8/PPP1PPPP/RNBQKBNR b KQkq - 2 2",
+      "title": "Susunan Lengkap",
+      "text": "Resep London lengkap: d4, Bf4, Nf3, e3, c3, Nbd2, Bd3, 0-0. Kokoh, nyaris simetris, sulit ditembus. Magnus Carlsen telah menggunakannya dalam pertandingan kejuaraan dunia."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "opposition",
+  "title": "L'opposition",
+  "summary": "Le concept de finale le plus important",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "4k3/8/4K3/8/8/8/8/8 w - - 0 1",
+      "title": "Face à face",
+      "text": "Deux rois se font face avec une case d'écart. Le camp qui N'A PAS le trait a l'opposition — l'autre roi doit s'écarter. Dans les finales roi et pion, avoir l'opposition décide souvent de la partie." },
+    { "type": "teach",
+      "fen": "4k3/8/4K3/4P3/8/8/8/8 w - - 0 1",
+      "title": "Avec un pion",
+      "text": "Ici, les Blancs ont un pion de plus et veulent le promouvoir. Pour gagner, le roi blanc doit PRÉCÉDER le pion avec l'opposition. La règle : 'roi devant, pion derrière.'" },
+    { "type": "play",
+      "fen": "4k3/8/4K3/4P3/8/8/8/8 w - - 0 1",
+      "prompt": "Avancez pour prendre l'opposition.",
+      "targetSan": ["Kd6", "Kf6"],
+      "hint": "Kd6 ou Kf6 réclament l'opposition et gagnent." }
+  ]
+}

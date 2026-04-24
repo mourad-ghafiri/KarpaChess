@@ -1,0 +1,8 @@
+{
+  "id": "mate-in-1-27",
+  "fen": "k7/7R/2K5/8/8/8/8/8 w - - 0 1",
+  "solution": [
+    "Ra7+"
+  ],
+  "hint": "Coupez la colonne a et le roi meurt."
+}

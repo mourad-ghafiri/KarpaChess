@@ -1,0 +1,20 @@
+{
+  "id": "queen-vs-pawn",
+  "title": "Menteri vs Pion Maju",
+  "summary": "Balapan terkenal — biasanya menteri menang",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "8/8/8/8/8/1K6/1p6/1k5Q w - - 0 1",
+      "title": "Teknik Zig-Zag",
+      "text": "Ketika menteri menghadapi pion satu langkah dari promosi, menteri menang JIKA dia bisa memberikan skak zig-zag untuk memaksa raja musuh ke depan pionnya sendiri. Setiap kali raja memblokir, menteri mendapatkan tempo untuk membawa rajanya lebih dekat."
+    },
+    {
+      "type": "teach",
+      "fen": "8/8/8/8/8/1K6/1p6/1k5Q w - - 0 1",
+      "title": "Pengecualian",
+      "text": "Menteri GAGAL menang melawan: (a) pion-gajah di baris ke-7 (trik pat), (b) pion-benteng di baris ke-7 (sama). Melawan pion-kuda atau pion tengah, menteri selalu menang."
+    }
+  ]
+}

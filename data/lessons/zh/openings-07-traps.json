@@ -1,0 +1,26 @@
+{
+  "id": "opening-traps",
+  "title": "常见开局陷阱",
+  "summary": "识别(并避开)经典的漏着",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/ppp2ppp/8/3pp3/4P3/2N5/PPPP1PPP/R1BQKBNR w KQkq - 0 3",
+      "title": "学者将军",
+      "text": "最著名的陷阱:早早把后和象出动攻击 f7。如果黑方防守不当,四步内将死。1.e4 e5 2.Bc4 Nc6 3.Qh5 之后——如果黑方走看似自然的 3...Nf6??——棋局就以 4.Qxf7# 告终。"
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 0 4",
+      "title": "反击之道",
+      "text": "对于有准备的对手,轻易用 3...g6 或 3...Qe7 防住 f7。了解陷阱既能作为黑方避开它,也能作为白方惩罚粗心的走法。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPPBPPP/RNBQK2R w KQkq - 0 3",
+      "title": "出子而非冒进",
+      "text": "大多数\"陷阱\"依赖对手违反基本原则——把王留在中心、走入分叉、或削弱如 f2/f7 等关键格。平稳地出子,每一步都要留意战术。"
+    }
+  ]
+}

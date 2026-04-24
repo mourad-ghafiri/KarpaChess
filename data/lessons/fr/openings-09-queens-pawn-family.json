@@ -1,0 +1,29 @@
+{
+  "id": "queens-pawn-family",
+  "title": "1.d4 — Le pion dame",
+  "summary": "Comprendre les systèmes à 1.d4",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
+      "title": "La poussée positionnelle",
+      "text": "1.d4 réclame le centre et prépare c4. Les parties sont plus positionnelles qu'avec 1.e4 — des batailles stratégiques lentes autour des structures de pions et des avant-postes."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
+      "title": "Réponses principales",
+      "text": "Options des Noirs : 1...d5 (classique, mène au gambit de la dame), 1...Nf6 (défenses indiennes — hypermodernes), 1...f5 (hollandaise), 1...e6 (flexible). Les défenses indiennes sont le choix moderne des grands maîtres."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
+      "prompt": "Jouez le classique 1...d5 — affirmez votre propre prétention.",
+      "targetSan": [
+        "d5"
+      ],
+      "hint": "1...d5 reflète les Blancs. Classique, solide, respecté."
+    }
+  ]
+}

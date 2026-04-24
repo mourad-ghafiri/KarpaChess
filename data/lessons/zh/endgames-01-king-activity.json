@@ -1,0 +1,24 @@
+{
+  "id": "king-activity",
+  "title": "激活你的王",
+  "summary": "在残局中,王要参与战斗",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "4k3/8/8/4K3/4P3/8/8/8 w - - 0 1",
+      "title": "王的力量",
+      "text": "中局时王要躲藏,残局里他要出来战斗。这里你的王必须护送兵去升变。技术很重要。"
+    },
+    {
+      "type": "play",
+      "fen": "4k3/8/8/4K3/4P3/8/8/8 w - - 0 1",
+      "prompt": "把王向前推——占据对王。",
+      "targetSan": [
+        "Kd6",
+        "Kf6"
+      ],
+      "hint": "Kd6 或 Kf6——两个都占对王。"
+    }
+  ]
+}

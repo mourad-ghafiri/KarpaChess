@@ -1,0 +1,746 @@
+{
+  "language": { "name": "Español", "code": "es" },
+
+  "ui": {
+    "brand": {
+      "title": "KarpaChess",
+      "tagline": "Aprende ajedrez · Cada jugada enseña"
+    },
+    "nav": {
+      "learn": "Aprender",
+      "puzzles": "Puzles",
+      "practice": "Practicar",
+      "coach": "Entrenador IA",
+      "commentator": "Comentarista"
+    },
+    "button": {
+      "flip": "Girar",
+      "undo": "Deshacer",
+      "hint": "Pista",
+      "analyze": "Analizar",
+      "newGame": "Partida nueva",
+      "playIt": "Jugarla",
+      "dismiss": "Descartar",
+      "ask": "Preguntar",
+      "load": "Cargar",
+      "chooseFile": "Elegir archivo…",
+      "settings": "Ajustes",
+      "close": "Cerrar",
+      "back": "Atrás",
+      "next": "Siguiente",
+      "skip": "Saltar",
+      "showHint": "Mostrar pista",
+      "allCategories": "← Todas las categorías",
+      "allLessons": "← Todas las lecciones",
+      "allThemes": "← Todos los temas",
+      "exitReview": "← Salir de la revisión",
+      "resetAll": "Reiniciar progreso y claves"
+    },
+    "buttonTitle": {
+      "flip": "Girar tablero (F)",
+      "undo": "Deshacer (Ctrl+Z)",
+      "hint": "Obtener una pista (H)",
+      "analyze": "Análisis profundo",
+      "newGame": "Partida nueva (N)",
+      "settings": "Ajustes",
+      "dismissHint": "Descartar pista",
+      "closeBanner": "Descartar"
+    },
+    "label": {
+      "provider": "Proveedor",
+      "difficulty": "Dificultad",
+      "playAs": "Jugar como",
+      "timeControl": "Control de tiempo",
+      "moveHistory": "Historial de jugadas",
+      "coachWhisper": "Susurro del entrenador",
+      "language": "Idioma",
+      "boardTheme": "Tema del tablero",
+      "apiKey": "Clave API",
+      "model": "Modelo",
+      "serverUrl": "URL del servidor",
+      "customModel": "ID de modelo personalizado",
+      "customModelTag": "Etiqueta de modelo personalizado",
+      "customModelIdentifier": "Identificador de modelo personalizado"
+    },
+    "placeholder": {
+      "coachAsk": "Pregunta: '¿Por qué es fuerte Nf3 aquí?'",
+      "pgnInput": "Pega un PGN o una lista de jugadas (p. ej. e4 e5 Nf3 Nc6)…",
+      "drawText": "Escribe…"
+    },
+    "empty": {
+      "moveHistory": "Tus jugadas aparecerán aquí.",
+      "moveHistoryCommentator": "Las jugadas aparecen aquí conforme avanzas por la partida.",
+      "moveTree": "Importa una partida para comenzar.",
+      "insights": "Avanza por las jugadas para ver la opinión del motor."
+    },
+    "practiceLede": "Juega contra el ordenador. El entrenador te susurra consejos mientras avanzas, y siempre puedes pedirle al Entrenador IA una ayuda más profunda.",
+    "aria": {
+      "capturedByWhite": "Piezas capturadas por las blancas",
+      "capturedByBlack": "Piezas capturadas por las negras",
+      "chessBoard": "Tablero de ajedrez",
+      "dismissHint": "Descartar pista"
+    },
+    "section": {
+      "pasteOrUpload": "Pegar o subir",
+      "sampleGames": "Partidas de ejemplo",
+      "moveHistory": "Historial de jugadas"
+    },
+    "toast": {
+      "notYourTurn": "No es tu turno.",
+      "matchLoaded": "Partida cargada.",
+      "pasteFirst": "Pega primero un PGN o una lista de jugadas.",
+      "parseFail": "No se pudo analizar: {error}",
+      "imgLoadFail": "No se pudo cargar esa imagen.",
+      "noReview": "Aún no hay jugadas que revisar.",
+      "lessonComplete": "¡Lección completada!"
+    }
+  },
+
+  "game": {
+    "result": {
+      "checkmate": "¡Jaque mate!",
+      "stalemate": "Rey ahogado",
+      "draw": "Tablas",
+      "timeout": "Tiempo agotado",
+      "drawRepetition": "Tablas",
+      "drawAgreed": "Tablas"
+    },
+    "resultSub": {
+      "whiteWins": "Ganan las Blancas",
+      "blackWins": "Ganan las Negras",
+      "stalemate": "Tablas por rey ahogado",
+      "fiftyMove": "Regla de las 50 jugadas",
+      "insufficient": "Material insuficiente",
+      "repetition": "Triple repetición",
+      "agreed": "Tablas acordadas",
+      "whiteWinsTime": "Ganan las Blancas por tiempo",
+      "blackWinsTime": "Ganan las Negras por tiempo"
+    },
+    "side": {
+      "white": "Blancas",
+      "black": "Negras"
+    },
+    "playerDefault": {
+      "top": "Negras",
+      "bottom": "Tú",
+      "topMeta": "IA · Nivel 2",
+      "botMeta": "Humano"
+    },
+    "playAsOption": {
+      "white": "Blancas",
+      "random": "Aleatorio",
+      "black": "Negras"
+    },
+    "timeControl": {
+      "unlimited": "Sin límite",
+      "custom": "{minutes}+{increment}"
+    },
+    "difficulty": {
+      "1": "Principiante",
+      "2": "Aficionado",
+      "3": "Club",
+      "4": "Maestro"
+    },
+    "clock": {
+      "timeUsed": "{seconds}s usados",
+      "timeUsedLong": "{time} usados"
+    }
+  },
+
+  "chess": {
+    "piece": {
+      "p": "peón",
+      "n": "caballo",
+      "b": "alfil",
+      "r": "torre",
+      "q": "dama",
+      "k": "rey"
+    },
+    "pieceCapital": {
+      "p": "Peón",
+      "n": "Caballo",
+      "b": "Alfil",
+      "r": "Torre",
+      "q": "Dama",
+      "k": "Rey"
+    },
+    "direction": {
+      "kingside": "flanco de rey",
+      "queenside": "flanco de dama"
+    }
+  },
+
+  "classification": {
+    "best":       { "label": "Mejor jugada", "glyph": "★",  "comment": "Es la opción preferida del motor — no hay mejor jugada sobre el tablero." },
+    "good":       { "label": "Sólida",       "glyph": "✓",  "commentAgree": "El motor la aprueba — una elección sólida.", "commentAlt": "Una continuación razonable. El motor prefería ligeramente <b>{best}</b>." },
+    "inaccuracy": { "label": "Imprecisión",  "glyph": "?!", "comment": "Pequeño desliz — <b>{best}</b> habría sido un poco más fuerte.", "commentShort": "Pequeño desliz." },
+    "mistake":    { "label": "Error",        "glyph": "?",  "comment": "Un error — <b>{best}</b> era notablemente mejor.", "commentShort": "Un error." },
+    "blunder":    { "label": "Error grave",  "glyph": "??", "comment": "Un error grave. Se necesitaba <b>{best}</b>.", "commentShort": "Un error grave." },
+    "review": {
+      "good": "Mejor jugada o casi.",
+      "ok": "Jugada sólida.",
+      "inaccuracy": "Ligeramente imprecisa.",
+      "mistake": "Un error.",
+      "blunder": "Error grave."
+    }
+  },
+
+  "nag": {
+    "1": "Buena jugada",
+    "2": "Error",
+    "3": "Jugada brillante",
+    "4": "Error grave",
+    "5": "Jugada interesante",
+    "6": "Jugada dudosa",
+    "10": "Posición igualada",
+    "13": "Posición poco clara",
+    "14": "Blancas ligeramente mejor",
+    "15": "Negras ligeramente mejor",
+    "16": "Blancas mejor",
+    "17": "Negras mejor",
+    "18": "Blancas ganan",
+    "19": "Negras ganan"
+  },
+
+  "hint": {
+    "eyebrow": "Jugada sugerida",
+    "loading": "…",
+    "loadingSub": "Mirando unas jugadas por delante…",
+    "checkmate": "Entrega <b>jaque mate</b>. ¡Remátalo!",
+    "castle": "Enroque {dir} — pone al rey tras una muralla de peones.",
+    "promote": "Empuja a la última fila y promociona a <b>{piece}</b>.",
+    "capture": "Gana material: tu <b>{piece}</b> captura al <b>{target}</b>.",
+    "develop": "Desarrolla tu <b>{piece}</b> a <b>{square}</b>, mejorando su actividad y apuntando al centro.",
+    "pawn": "Avanza tu <b>peón</b> a <b>{square}</b>, ganando espacio.",
+    "rook": "Activa tu <b>torre</b> en <b>{square}</b> — las columnas abiertas adoran a las torres.",
+    "queen": "Lleva la <b>dama</b> a <b>{square}</b> con un propósito.",
+    "quiet": "Mejora tu <b>{piece}</b> a <b>{square}</b>.",
+    "checkSuffix": " Además da <b>jaque</b>."
+  },
+
+  "banner": {
+    "reviewBtn": "🔍 Revisar partida",
+    "newGameBtn": "Partida nueva"
+  },
+
+  "coach": {
+    "greeting": "Hola — soy tu entrenador de ajedrez. Pregúntame lo que quieras sobre la posición. Explico ideas, tácticas y planes.",
+    "thinking": "Pensando…",
+    "analyzing": "Analizando…",
+    "status": {
+      "unknown": "desconocido",
+      "missingKey": "falta la clave API"
+    },
+    "system": "Eres KarpaChess, un entrenador de ajedrez experto, animado y cercano. Explica las ideas con un lenguaje claro, vivo y alentador para un aprendiz. Sé conciso: 2–4 párrafos cortos o una lista breve con viñetas. Fundamenta tus afirmaciones en la posición actual. Usa SAN para las jugadas. Cuando recomiendes una jugada, explica brevemente POR QUÉ. Nunca inventes piezas o casillas que no estén presentes. Responde en {language}.",
+    "fallbackPrefix": "**La solicitud a {provider} falló.** {error}\n\nRecurriendo al entrenador integrado:\n\n{fallback}",
+    "whisper": {
+      "tip1": "Bien — ¿y ahora qué hay de tu siguiente pieza?",
+      "tip2": "En cada jugada, pregúntate: ¿estoy mejorando mi peor pieza?",
+      "tip3": "Vigila horquillas y tácticas tras cada cambio.",
+      "tip4": "Mantén a tu rey a salvo. Enroca si aún no lo has hecho.",
+      "tip5": "Busca piezas sin defensor — las tuyas y las suyas.",
+      "check": "⚠️ ¡<b>{side}</b> están en jaque!",
+      "capture": "💥 {piece} captura a {target} en {square}. Eval: {eval}.",
+      "castle": "🏰 ¡Bien enrocado! La seguridad del rey importa. Eval: {eval}.",
+      "promote": "✨ ¡Promocionado a {piece}! Eval: {eval}.",
+      "tipWithEval": "{tip} ({eval})",
+      "welcome": "¡Bienvenido! Haz una jugada y te daré una idea rápida. Cuando termine la partida te ofreceré revisar tus jugadas.",
+      "newGame": "¡Partida nueva! Suerte — haz la primera jugada."
+    },
+    "builtin": {
+      "name": "Integrado (sin conexión)",
+      "on": "activo",
+      "bestMove": {
+        "recommendation": "Mi recomendación: <b>{move}</b>.",
+        "shallow": "Sin una búsqueda más profunda, considera: <b>{move}</b>.",
+        "whyHeader": "<b>Por qué tiene sentido aquí:</b>",
+        "castle": "• El rey sigue en el centro — enrocar es prioridad absoluta.",
+        "develop": "• Aún hay piezas menores en {squares} — desarróllalas.",
+        "center": "• Ningún peón en las cuatro casillas centrales — un empuje central vale la pena.",
+        "loose": "• El rival tiene <b>{pieceWord}</b>: {list}. Busca cómo ganarlas.",
+        "oppKing": "• El rey rival está <b>{score}</b> — las jugadas de ataque suelen funcionar.",
+        "ownKing": "• Tu rey está en el punto de mira — piensa primero en la defensa.",
+        "passedEnd": "• Tienes <b>{pawnWord}</b> en {squares} — ¡empújalos!",
+        "activeKing": "• Activa a tu rey — en finales es una pieza de combate.",
+        "aheadBehind": "• Vas {state} {n} puntos — {advice}.",
+        "ahead": "por delante",
+        "behind": "por detrás",
+        "adviceAhead": "cambia piezas, conserva peones",
+        "adviceBehind": "crea complicaciones",
+        "evalSuffix": "_Eval: {eval}_"
+      },
+      "loosePieces": {
+        "singular": "pieza suelta",
+        "plural": "piezas sueltas"
+      },
+      "passedPawns": {
+        "singular": "peón pasado",
+        "plural": "peones pasados"
+      },
+      "tactics": {
+        "header": "<b>Escaneo táctico para {side}</b>",
+        "loose": "El rival tiene {n} {pieceWord} sin defender: {list}.",
+        "undefendedSingle": "pieza",
+        "undefendedPlural": "piezas",
+        "defended": "Las piezas rivales parecen defendidas. Tácticas más difíciles — busca clavadas, señuelos o jugadas de despeje.",
+        "exposedKing": "Su rey está <b>{score}</b> ({notes}) — puede haber patrones de mate al acecho.",
+        "openLines": "líneas abiertas",
+        "queenTarget": "Su dama en <b>{square}</b> — ¿puedes atacarla barato para ganar tiempo?",
+        "engineSuggests": "El motor sugiere <b>{move}</b> — ¿encaja esa jugada en alguno de los patrones anteriores?",
+        "footer": "_Entrena el ojo para detectar estas tres cosas en cada jugada: piezas sueltas, reyes expuestos y defensores sobrecargados._"
+      },
+      "plan": {
+        "header": "<b>Plan para {side}</b> _({phase})_",
+        "developMinors": "Desarrolla las {pieceWord} menores que quedan desde {squares}.",
+        "minorSingular": "pieza",
+        "minorPlural": "piezas",
+        "castle": "Enroca — la seguridad del rey primero.",
+        "queenEarly": "Cuidado — la dama salió antes de desarrollar todas las piezas menores. No dejes que la persigan.",
+        "centerPawn": "Coloca un peón en las cuatro centrales (d4/e4/d5/e5).",
+        "kingDanger": "Tu rey está en peligro — mejora la defensa antes de atacar.",
+        "oppositeWings": "Ambos habéis enrocado — ataca el flanco opuesto con peones si enrocasteis en lados opuestos.",
+        "pushPassed": "Empuja tus {pawnWord} en {squares}.",
+        "passedPawnSingular": "peón pasado",
+        "passedPawnPlural": "peones pasados",
+        "isolated": "Vigila tus {pawnWord} en {squares} — la actividad compensa la debilidad.",
+        "isolatedSingular": "peón aislado",
+        "isolatedPlural": "peones aislados",
+        "improveWorst": "Mejora tu peor pieza. Cada jugada debería mejorar a una de tus piezas.",
+        "racePassed": "Corre tus {pawnWord} en {squares} hacia la promoción.",
+        "raceSingular": "peón pasado",
+        "racePlural": "peones pasados",
+        "activateKing": "Activa a tu rey — llévalo a la acción.",
+        "aheadTrade": "Vas {n} puntos por delante — cambia piezas (no peones) para simplificar a un final ganador.",
+        "behindKeep": "Vas {n} puntos por detrás — conserva las piezas, crea contrajuego y evita los cambios.",
+        "fewPawns": "Quedan pocos peones — piensa en oposición, zugzwang y casillas clave."
+      },
+      "lastMove": {
+        "none": "Aún no se han jugado jugadas — empieza con un peón central (e4 o d4) o una jugada de caballo (Nf3).",
+        "capture": "capturó material",
+        "check": "dio jaque",
+        "checkmate": "dio jaque mate",
+        "castleKingside": "enrocó corto",
+        "castleQueenside": "enrocó largo",
+        "promote": "promocionó un peón",
+        "line": "<b>{san}</b> — {anns}.",
+        "quiet": "<b>{san}</b> — una jugada posicional tranquila.",
+        "evalLine": "Eval ahora: {eval}. ",
+        "topChoice": "Mejor opción del motor a partir de aquí: <b>{move}</b>."
+      },
+      "opening": {
+        "noneHeader": "<b>Las primeras jugadas clásicas:</b>",
+        "noneE4": "<b>1.e4</b> — abre líneas para la dama y el alfil, lucha por el centro. Lleva a un juego táctico agudo.",
+        "noneD4": "<b>1.d4</b> — reclama el centro, prepara c4 (Gambito de Dama). Estratégica y posicional.",
+        "noneNf3": "<b>1.Nf3</b> — flexible, retrasa revelar tu plan. A menudo transpone.",
+        "noneC4": "<b>1.c4</b> — Inglesa. Ataque de flanco contra el centro, estilo hipermoderno.",
+        "nonePick": "Elige una, juégala cien veces y aprende sus secretos.",
+        "known": "<b>{name}</b>\n\n{tip}\n\n_Jugadas realizadas: {moves}_",
+        "unknownHeader": "{n} {moveWord} jugadas — aún no hay una apertura clara. Cíñete a tres principios:",
+        "moveSingular": "jugada",
+        "movePlural": "jugadas",
+        "unknownP1": "• Controla el centro con peones o piezas",
+        "unknownP2": "• Desarrolla todas las piezas menores antes de mover la dama",
+        "unknownP3": "• Enroca antes de lanzar ataques"
+      },
+      "endgame": {
+        "header": "<b>Esenciales del final</b>",
+        "activateKing": "• <b>Activa a tu rey</b> — en el final vale unos tres peones. Llévalo al centro.",
+        "passed": "• Los <b>peones pasados</b> son oro. Blancas tienen {w}; Negras tienen {b}.",
+        "none": "ninguno",
+        "opposition": "• La <b>oposición</b> decide los finales de rey y peón — el bando que no mueve suele ganar la casilla clave.",
+        "rookRule": "• Los <b>finales de torre</b> siguen la regla: la torre va DETRÁS del peón pasado (tuyo o del rival).",
+        "tradePieces": "• Cuando ganas, cambia piezas, no peones. Cuando pierdes, conserva las piezas y busca tácticas."
+      },
+      "evaluation": {
+        "header": "<b>Evaluación de la posición</b> _({phase}, juegan {side})_",
+        "material": "• <b>Material:</b> Blancas {w} vs Negras {b}{diff}",
+        "equalSuffix": " (igualdad)",
+        "diffSuffix": " — {side} tiene +{n}",
+        "engine": "• <b>Motor:</b> {eval}",
+        "whiteKing": "• <b>Rey blanco:</b> {score}{notes}",
+        "blackKing": "• <b>Rey negro:</b> {score}{notes}",
+        "notesFmt": " ({notes})",
+        "pawnWeaknessesWhite": "• <b>Problemas de peones blancos:</b> {list}",
+        "pawnWeaknessesBlack": "• <b>Problemas de peones negros:</b> {list}",
+        "isolatedPrefix": "aislado {sq}",
+        "doubledPrefix": "doblados en {file}",
+        "passedWhite": "• <b>{pawnWord} blancos:</b> {squares}",
+        "passedBlack": "• <b>{pawnWord} negros:</b> {squares}",
+        "passedSingular": "Peón pasado",
+        "passedPlural": "Peones pasados",
+        "topMove": "• <b>Mejor jugada del motor:</b> <b>{move}</b>"
+      },
+      "kingSafety": {
+        "header": "<b>Seguridad del rey</b>",
+        "line": "• <b>Rey de las {side}</b> ({who}): {score}{castled}. {notes}",
+        "you": "tú",
+        "opponent": "rival",
+        "castledSuffix": " — enrocado",
+        "noConcerns": "Sin preocupaciones inmediatas.",
+        "footer": "Si tu rey está expuesto: defiende primero. Si el rival lo está: busca jaques, torres levantadas e infiltración de dama."
+      },
+      "pawns": {
+        "header": "<b>Estructura de peones</b>",
+        "side": "<b>{side}</b> ({n} peones)",
+        "isolated": "• Aislados: {squares} — difíciles de defender, pero a menudo activos.",
+        "doubled": "• Doblados en {files} — no pueden defenderse entre sí, suelen ser una debilidad a largo plazo.",
+        "passed": "• <b>Pasados:</b> {squares} — ¡empújalos con apoyo de piezas!",
+        "clean": "• Estructura limpia — sin debilidades notables ni peones pasados."
+      },
+      "development": {
+        "header": "<b>Desarrollo</b>",
+        "white": "• Blancas: {n}/4 menores desarrolladas{castled}{home}",
+        "black": "• Negras: {n}/4 menores desarrolladas{castled}{home}",
+        "castledSuffix": ", enrocadas ✓",
+        "homeSuffix": " — aún en casa: {squares}",
+        "openingNote": "En la apertura, cada jugada debería (1) desarrollar una pieza, (2) controlar el centro o (3) mejorar la seguridad del rey. Las jugadas que no hagan nada de esto son sospechosas."
+      },
+      "improvement": {
+        "header": "<b>Mejora tu peor pieza</b>",
+        "intro": "Mira cada una de tus piezas y pregúntate: \"¿Qué está haciendo esta?\" Tu objetivo en cada jugada es dar a la pieza menos activa una tarea significativa.",
+        "commonHeader": "<b>Peores piezas habituales:</b>",
+        "bishop": "• Un alfil detrás de sus propios peones — reubícalo o cámbialo.",
+        "knight": "• Un caballo en el borde (h3, a6, etc.) — centralízalo a d4/e4/d5/e5.",
+        "rook": "• Una torre en su casilla inicial sin columna abierta — busca una e invade.",
+        "queen": "• La dama salió pronto y está expuesta — devuélvela antes a un lugar seguro.",
+        "kingMid": "• Un rey todavía en el centro pasada la jugada 10 — enroca ya."
+      },
+      "summary": {
+        "header": "<b>Instantánea de la posición</b> — _{pulse}_",
+        "pulseMaterial": "material {sign}{n} para {side}",
+        "pulseMaterialEven": "material igualado",
+        "pulsePhase": "fase de {phase}",
+        "pulseToMove": "juegan {side}",
+        "material": "• <b>Material:</b> B {w} · N {b}{diff}",
+        "diff": " ({sign}{n})",
+        "equal": " (igualdad)",
+        "kings": "• <b>Reyes:</b> Blanco {wScore}{wCastled}, Negro {bScore}{bCastled}",
+        "castledGlyph": " ✓",
+        "eval": "• <b>Eval:</b> {eval}",
+        "engineSuggests": "• <b>El motor sugiere:</b> <b>{move}</b>",
+        "target": "• <b>Objetivo:</b> piezas sueltas del rival {list}",
+        "menu": "Pregúntame: <b>mejor jugada · tácticas · plan · seguridad del rey · peones · desarrollo · evaluación</b>"
+      },
+      "phase": {
+        "opening": "apertura",
+        "middlegame": "medio juego",
+        "endgame": "final"
+      },
+      "kingScore": {
+        "safe": "seguro",
+        "exposed": "expuesto",
+        "danger": "en peligro",
+        "shelter": "refugiado",
+        "waiting": "esperando",
+        "active": "activo",
+        "unknown": "desconocido"
+      },
+      "kingNote": {
+        "tuckedCorner": "aún escondido en la esquina — centralízalo",
+        "startingSquare": "rey en su casilla inicial — sácalo",
+        "activeOn": "rey activo en {square}",
+        "wanderingOn": "rey deambulando en {square}",
+        "centerAfter8": "rey todavía en el centro tras la jugada 8",
+        "thinShield": "escudo de peones fino ({count}/3)",
+        "enemyHeavy": "pieza pesada enemiga en la columna del rey",
+        "fullShield": "enrocado con escudo de peones completo"
+      },
+      "eval": {
+        "unclear": "poco clara",
+        "balanced": "equilibrada ({pawns})",
+        "better": "{sign}{pawns} — <b>{side}</b> están mejor"
+      }
+    },
+    "openingNames": {
+      "ruyLopez": "Apertura Española",
+      "ruyLopezMorphy": "Apertura Española — Defensa Morphy",
+      "italianGame": "Apertura Italiana",
+      "italianGiuocoPiano": "Apertura Italiana — Giuoco Piano",
+      "italianTwoKnights": "Apertura Italiana — Dos Caballos",
+      "petroff": "Defensa Petrov",
+      "scotchGame": "Apertura Escocesa",
+      "viennaGame": "Apertura Vienesa",
+      "kingsGambit": "Gambito de Rey",
+      "openGame": "Juego Abierto",
+      "kingsPawnGame": "Juego de Peón de Rey",
+      "sicilian": "Defensa Siciliana",
+      "sicilianNajdorf": "Siciliana — Complejo Najdorf",
+      "sicilianOpenNc6": "Siciliana — Abierta con ...Cc6",
+      "sicilianTaimanovKan": "Siciliana — Taimanov/Kan",
+      "sicilianClosed": "Siciliana — Cerrada",
+      "french": "Defensa Francesa",
+      "caroKann": "Defensa Caro-Kann",
+      "scandinavian": "Defensa Escandinava",
+      "pirc": "Defensa Pirc",
+      "modern": "Defensa Moderna",
+      "alekhine": "Defensa Alekhine",
+      "queensGambit": "Gambito de Dama",
+      "queensGambitDeclined": "Gambito de Dama Rehusado",
+      "queensGambitAccepted": "Gambito de Dama Aceptado",
+      "slav": "Defensa Eslava",
+      "londonSetup": "Planteamiento del Sistema Londres",
+      "london": "Sistema Londres",
+      "kingsIndian": "Defensa India de Rey",
+      "nimzoIndian": "Nimzo-India",
+      "queensIndian": "Complejo India de Dama",
+      "benoni": "Defensa Benoni",
+      "indianGame": "Apertura India",
+      "dutch": "Defensa Holandesa",
+      "english": "Apertura Inglesa",
+      "reti": "Apertura Réti",
+      "retiKia": "Réti / planteamiento AIR",
+      "retiSetup": "Planteamiento Réti",
+      "larsen": "Apertura Larsen",
+      "sokolsky": "Sokolsky / Polaca",
+      "benko": "Apertura Benko"
+    },
+    "openingTips": {
+      "ruyLopez": "La apertura seria más antigua del ajedrez. Ab5 clava el caballo — las Negras suelen jugar ...a6 para forzar una decisión. Tras Aa4, la partida deriva en largas batallas estratégicas.",
+      "ruyLopezMorphy": "La respuesta principal de las Negras. Las Blancas suelen elegir entre la línea principal (Aa4 Cf6 0-0) y la Variante del Cambio (Axc6). Te espera un ajedrez clásico y rico.",
+      "italianGame": "Ac4 apunta a f7 — el punto más débil del campo negro. Desarrolla los caballos a f3/c3, enroca corto y busca rupturas con d3/d4.",
+      "italianGiuocoPiano": "«Juego tranquilo» — ambos alfiles apuntan a la casilla débil del rey rival. Planteamiento clásico: desarrollar, enrocar y empujar d4.",
+      "italianTwoKnights": "¡Juego agudo! Las Blancas pueden probar el Hígado Frito (Cg5) o la ruptura más tranquila d4. Las Negras deben sortear aguas tácticas.",
+      "petroff": "Defensa simétrica sólida como una roca. Las Negras copian a las Blancas y desarrollan con naturalidad — célebre por sus tendencias tablistas en el alto nivel.",
+      "scotchGame": "Las Blancas abren el centro pronto con d4. Juego activo para ambos bandos, menos teórico que la Española.",
+      "viennaGame": "Desarrolla Cc3 antes de Cf3, dejando libre el peón de f para posibilidades de ataque (f4 más tarde).",
+      "kingsGambit": "¡Sacrificio de la era romántica! Las Blancas ofrecen el peón de f a cambio de desarrollo rápido y ataques a f7. Raro pero apasionante.",
+      "openGame": "Ajedrez clásico en su máxima expresión. Espera un juego de principios y centrado en el centro.",
+      "kingsPawnGame": "Ambos bandos reclaman espacio central con peones. Se avecina ajedrez agudo y directo.",
+      "sicilian": "La respuesta más popular a 1.e4. Asimétrica — las Blancas atacan en el flanco de rey y las Negras contraatacan en el flanco de dama. Partidas agudas y decisivas.",
+      "sicilianNajdorf": "La apertura combativa por excelencia. Cada jugada está llena de teoría. Prepárate para un juego dinámico y desequilibrado.",
+      "sicilianOpenNc6": "Siciliana clásica. Espera una carrera entre el ataque blanco en el flanco de rey y la contra negra en el flanco de dama.",
+      "sicilianTaimanovKan": "Siciliana flexible y moderna. Las Negras mantienen abiertas las opciones de expansión con ...a6, ...b5.",
+      "sicilianClosed": "Las Blancas evitan la Siciliana Abierta con Cc3. Juego más lento y posicional. Evítala si te encantan las tácticas.",
+      "french": "Las Negras construyen una cadena de peones de granito. Busca rupturas con ...c5 o ...f6 para liberar al alfil de casillas claras.",
+      "caroKann": "Sólida y flexible. Llegará ...d5 con contrajuego central pleno.",
+      "scandinavian": "Las Negras atacan el peón de e4 de inmediato. Tras Cc3 la dama se ve perseguida — cuidado con su ubicación.",
+      "pirc": "Hipermoderna. Las Negras invitan a las Blancas a montar un gran centro y luego lo golpean con rupturas de peón.",
+      "modern": "Similar a la Pirc pero aún más flexible. Las Negras retrasan comprometerse con un planteamiento concreto.",
+      "alekhine": "¡Provocadora! Las Negras atraen los peones blancos hacia adelante y luego los atacan. Aguda y poco convencional.",
+      "queensGambit": "Ofrece el peón de c para desviar el peón de d de las Negras y dominar el centro. Clásica, principista y de alto nivel.",
+      "queensGambitDeclined": "Las Negras rechazan el peón y levantan una estructura sólida. La apertura posicional por antonomasia.",
+      "queensGambitAccepted": "Las Negras toman el peón y planean devolverlo para obtener un juego activo de piezas.",
+      "slav": "Apoya el peón de d5 con ...c6. Sólida, difícil de romper, mantiene vivo al alfil de c8.",
+      "londonSetup": "El sistema universal blanco — Af4 y desarrollo estable. Menos teoría, resultados fiables.",
+      "london": "Sólida y fácil de aprender. Reclama d4, desarrolla Af4, juega Cf3, Cbd2, c3, e3. Cimiento estable.",
+      "kingsIndian": "Clásico hipermoderno. Deja que las Blancas monten un gran centro y luego estállalo con ...e5 o ...c5. Los ataques en el flanco de rey son legendarios.",
+      "nimzoIndian": "Las Negras clavan el caballo con Ab4 y juegan para doblar los peones blancos de la columna c. Ajedrez estratégico de alto nivel.",
+      "queensIndian": "Planteamiento sólido basado en el fianchetto. Popular a nivel de maestro por sus posibilidades de tablas.",
+      "benoni": "Aguda, desequilibrada, táctica. Las Negras ceden el centro a cambio de actividad.",
+      "indianGame": "Respuesta hipermoderna. Espera a ver el plan blanco antes de comprometerte.",
+      "dutch": "Las Negras juegan ...f5 para luchar por e4. Aguda y de doble filo. ¡Cuidado con la seguridad del rey!",
+      "english": "Apertura de flanco flexible. Suele transponer a estructuras del Gambito de Dama o de la India de Rey. Difícil de preparar para las Negras.",
+      "reti": "Hipermoderna — ataca el centro desde los flancos. Ideal si te gusta el juego posicional.",
+      "retiKia": "Flexible — puede transponer al Ataque Indio de Rey u otros planteamientos cerrados.",
+      "retiSetup": "Flexibilidad tranquila. A menudo transpone.",
+      "larsen": "Fianchetto temprano del alfil de dama. Inusual pero sólida.",
+      "sokolsky": "Fianchetto con Ab2 y b4 incluido. Rara — ¡pilla al rival desprevenido!",
+      "benko": "Sistema tranquilo con fianchetto. Flexible, con poca teoría y posicional.",
+      "generic": "Céntrate en las ideas — colocación de piezas, rupturas de peón y finales típicos."
+    }
+  },
+
+  "settings": {
+    "title": "Ajustes",
+    "board": "Tablero",
+    "boardTheme": "Tema del tablero",
+    "theme": {
+      "royal": "Real",
+      "emerald": "Esmeralda",
+      "midnight": "Piedra",
+      "rose": "Rosa",
+      "ice": "Hielo"
+    },
+    "toggle": {
+      "coords": "Mostrar coordenadas",
+      "legal": "Resaltar jugadas legales",
+      "last": "Resaltar última jugada",
+      "sound": "Sonido",
+      "animations": "Animaciones"
+    },
+    "language": "Idioma",
+    "languageSection": "Idioma",
+    "aiCoach": "Entrenador IA",
+    "aiNote": "Las claves se guardan localmente en tu navegador. Las llamadas van desde tu navegador directamente al proveedor.",
+    "dangerZone": "Zona de peligro",
+    "resetBtn": "Reiniciar progreso y claves",
+    "resetConfirm": "¿Reiniciar todo el progreso, las claves y los ajustes?",
+    "provider": {
+      "builtin": "Integrado (heurística sin conexión)",
+      "anthropic": "Anthropic (Claude)",
+      "openai": "OpenAI (GPT)",
+      "openrouter": "OpenRouter (más de 100 modelos)",
+      "mistral": "Mistral AI",
+      "deepseek": "DeepSeek",
+      "xai": "xAI (Grok)",
+      "qwen": "Qwen (Alibaba)",
+      "glm": "GLM (Zhipu)",
+      "minimax": "MiniMax",
+      "ollama": "Ollama",
+      "lmstudio": "LM Studio",
+      "groupCloud": "APIs en la nube",
+      "groupLocal": "Local / autoalojado",
+      "customOption": "Personalizado…"
+    },
+    "providerNote": {
+      "builtin": "No requiere configuración — el entrenador integrado funciona totalmente sin conexión usando heurísticas locales y el motor incorporado.",
+      "lmstudio": "Carga un modelo en LM Studio e inicia su servidor local. Elige uno de los preajustes de abajo o escribe el identificador exacto del modelo que muestra LM Studio en su página del servidor.",
+      "openrouter": "Una clave, más de 100 modelos de Anthropic, OpenAI, Meta, Mistral, DeepSeek, xAI, Google y más.",
+      "glm": "Los modelos GLM de Zhipu AI. El endpoint por defecto es el de la región de China — cámbialo a un proxy si lo necesitas."
+    }
+  },
+
+  "commentator": {
+    "title": "Estudio del Comentarista",
+    "importLede": "Pega un PGN, suelta un archivo o elige una partida de ejemplo abajo para empezar a comentar.",
+    "pasteOrUpload": "Pegar o subir",
+    "sampleGames": "Partidas de ejemplo",
+    "close": "Cerrar esta partida y volver a la importación",
+    "confirmClose": "¿Cerrar esta partida y volver a la importación?",
+    "moves": "Jugadas",
+    "movesHint": "clic para mostrar · se ocultan para una visualización segura en streaming",
+    "badgesShow": "Mostrar iconos del motor en el tablero",
+    "badgesHide": "Ocultar iconos del motor en el tablero",
+    "firstMove": "Primera jugada (Inicio)",
+    "prevMove": "Anterior (←)",
+    "nextMove": "Siguiente (→)",
+    "lastMove": "Última (Fin)",
+    "mainLine": "Volver a la línea principal (↑)",
+    "mainLineShort": "↩ principal",
+    "startPos": "Posición inicial. Haz clic en ▶ o pulsa → para entrar en la partida.",
+    "enginePrefers": "El motor prefiere <b>{move}</b>",
+    "engineAgrees": "El motor coincide: mejor opción",
+    "eval": "Eval <b>{score}</b>",
+    "sidePlayed": "{side} jugaron <b>{san}</b>",
+    "enginePrefersLabel": "El motor prefiere",
+    "engineAgreesLabel": "El motor coincide",
+    "topChoiceShort": "mejor opción",
+    "evalLabel": "Eval",
+    "noMatch": "No hay partida cargada.",
+    "untitled": "Sin título",
+    "ply": "semijugada {n}/{total}",
+    "variation": "(variante)",
+    "act": {
+      "captures": "captura un {piece}",
+      "castleK": "enroca corto",
+      "castleQ": "enroca largo",
+      "promotes": "promociona a {piece}",
+      "check": "da jaque",
+      "checkmate": "da jaque mate",
+      "and": "y",
+      "leadIn": "Jugada {tactics}."
+    },
+    "drawTools": {
+      "select": "Seleccionar",
+      "erase": "Borrar",
+      "arrow": "Flecha",
+      "line": "Línea",
+      "box": "Rectángulo",
+      "circle": "Círculo",
+      "pen": "Lápiz",
+      "text": "Texto",
+      "strokeWidth": "Grosor del trazo",
+      "deleteSelected": "Borrar selección (Supr)",
+      "clearAll": "Borrar todas las formas de esta jugada"
+    }
+  },
+
+  "learn": {
+    "title": "Aprender Ajedrez",
+    "lede": "Lecciones guiadas por los grandes temas. Toca una categoría para sumergirte.",
+    "noData": "Las lecciones están cargando… Si persiste, asegúrate de que la aplicación está servida (no abierta mediante file://).",
+    "successDefault": "Exactamente.",
+    "failDefault": "No del todo. Inténtalo de nuevo.",
+    "play": "Realizar jugada",
+    "next": "Siguiente →",
+    "finish": "Terminar",
+    "completedHeader": "Lección completada",
+    "completedBody": "Has terminado {title}. ¿Listo para la siguiente?",
+    "backToLessons": "Volver a las lecciones",
+    "categoryCount": "{done}/{total}"
+  },
+
+  "puzzles": {
+    "title": "Puzles",
+    "lede": "Elige un tema para practicar. Cada conjunto enseña un patrón.",
+    "prompt": "Encuentra la mejor jugada.",
+    "counter": "Puzle {n} de {total}",
+    "correct": "✅ ¡Correcto!",
+    "wrong": "❌ No es esta jugada. Inténtalo de nuevo.",
+    "solved": "¡Resuelto!",
+    "solvedCelebrate": "✅ Resuelto — ¡bien hecho!",
+    "noData": "Los puzles están cargando…",
+    "turnLabel": "Juegan {side}.",
+    "themeCount": "{n} puzles",
+    "themeCompleteHeader": "🏆 Tema completado.",
+    "themeCompleteBody": "Has terminado todos los puzles de {theme}."
+  },
+
+  "coachTab": {
+    "title": "Entrenador IA",
+    "providerLabel": "Proveedor",
+    "builtin": "Integrado",
+    "changeInSettings": "Cambiar en Ajustes",
+    "chip": {
+      "best": "¿Mejor jugada?",
+      "tactics": "¿Tácticas?",
+      "explain": "Explicar la última",
+      "plans": "Planes"
+    },
+    "chipQuery": {
+      "best": "¿Cuál es la mejor jugada en esta posición?",
+      "tactics": "¿Qué motivos tácticos hay aquí?",
+      "explain": "Explica mi última jugada.",
+      "plans": "¿Cuál es el plan para ambos bandos?"
+    },
+    "analyzeQuestion": "Analiza la posición actual.",
+    "analyzePrompt": "Da un análisis claro de esta posición: características clave, amenazas, jugadas candidatas y una recomendación con razones."
+  },
+
+  "promotion": {
+    "title": "Promocionar peón"
+  },
+
+  "review": {
+    "title": "Revisión de la partida",
+    "analyzing": "Analizando…",
+    "progress": "Analizando jugada {i} de {total}…",
+    "engineTopChoice": "Mejor opción del motor: <b>{san}</b>",
+    "enginePreferred": "El motor prefería {best}.",
+    "badge": {
+      "good": "Mejor",
+      "ok": "Aceptable",
+      "inaccuracy": "Imprecisión",
+      "mistake": "Error",
+      "blunder": "Error grave"
+    },
+    "tally": {
+      "best": "Mejor",
+      "inaccurate": "Imprecisa",
+      "mistake": "Error",
+      "blunder": "Error grave"
+    }
+  },
+
+  "lessons": {
+    "categories": {
+      "basics":   { "name": "Fundamentos", "description": "Lo esencial que todo ajedrecista debe saber." },
+      "openings": { "name": "Aperturas",   "description": "Empieza cada partida con un propósito." },
+      "tactics":  { "name": "Tácticas",    "description": "Patrones que ganan material y partidas." },
+      "endgames": { "name": "Finales",     "description": "Concreta posiciones ganadas; salva las perdidas." },
+      "strategy": { "name": "Estrategia",  "description": "Piensa en planes, no solo en jugadas." },
+      "attack":   { "name": "Ataque",      "description": "Ataques de mate y cacerías al rey." }
+    }
+  },
+
+  "puzzleThemes": {
+    "mate-in-1":    { "name": "Mate en 1",             "description": "Encuentra el golpe decisivo — entrega jaque mate en una sola jugada." },
+    "mate-in-2":    { "name": "Mate en 2",             "description": "Mates forzados en dos jugadas. Piensa un paso por delante." },
+    "forks":        { "name": "Horquillas",            "description": "Ataca dos piezas a la vez y gana material." },
+    "pins-skewers": { "name": "Clavadas y Enfiladas",  "description": "Alinea las piezas rivales y gana la de detrás." },
+    "back-rank":    { "name": "Última fila",           "description": "Aprovecha al rey atrapado tras sus propios peones." },
+    "tactics-mix":  { "name": "Tácticas variadas",     "description": "Una variedad de patrones tácticos — encuentra la mejor jugada." },
+    "discovered":   { "name": "Ataques al descubierto","description": "Mueve una pieza y desata a otra." },
+    "endgame":      { "name": "Técnica de finales",    "description": "Concreta finales ganadores con limpieza." }
+  }
+}

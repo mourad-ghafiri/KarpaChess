@@ -1,0 +1,26 @@
+{
+  "id": "catalan-advanced",
+  "title": "Catalan",
+  "summary": "Cekikan posisional dari langkah pertama",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Senjata Diagonal Panjang",
+      "text": "Catalan (1.d4 Nf6 2.c4 e6 3.g3) menggabungkan struktur Gambit Menteri dengan gajah fianchetto. Putih mendapatkan keunggulan tipis namun konsisten — catur yang memeras dan teknis. Favorit Kramnik."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/pppp1ppp/4pn2/8/2PP4/6P1/PP2PP1P/RNBQKBNR b KQkq - 0 3",
+      "title": "Mengapa Fianchetto?",
+      "text": "Gajah di g2 memberikan tekanan jangka panjang di diagonal a8-h1. Jika Hitam memainkan ...dxc4 (Catalan Terbuka), Putih sering merelakan pion demi tekanan berkelanjutan. Teknik murni."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/pppp1ppp/4pn2/8/2PP4/6P1/PP2PP1P/RNBQKBNR b KQkq - 0 3",
+      "title": "Posisi Impian Catalan",
+      "text": "Ideal Putih: diagonal panjang terbuka untuk Bg2, kuda di d2 dan f3, benteng terhubung, pion tengah yang kuat. Hitam harus bermain tepat atau dicekik. Magnus Carlsen menggunakan Catalan untuk menggiling lawan menjadi debu."
+    }
+  ]
+}

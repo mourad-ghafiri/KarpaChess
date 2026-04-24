@@ -4,6 +4,7 @@
  */
 import * as Chess from '../engine/chess.js';
 import { $, $$, markdownLite } from '../core/dom.js';
+import { i18n } from '../core/i18n.js';
 
 export class CoachController {
   constructor({ coach, gameState, bus, openSettings }) {
@@ -20,7 +21,7 @@ export class CoachController {
       if (!q) return;
       inp.value = '';
       this.#addMessage('user', q);
-      const thinking = this.#addMessage('bot', 'Thinking...', true);
+      const thinking = this.#addMessage('bot', i18n.t('coach.thinking'), true);
       const ctx = this.#buildContext();
       const answer = await this.coach.ask(q, ctx);
       thinking.classList.remove('thinking');
@@ -34,17 +35,19 @@ export class CoachController {
     $('#coach-form').addEventListener('submit', (e) => e.preventDefault());
 
     $$('.sug').forEach(b => b.addEventListener('click', () => {
-      $('#coach-text').value = b.dataset.q;
+      const chip = b.dataset.chip;
+      const q = chip ? i18n.t('coachTab.chipQuery.' + chip) : (b.dataset.q || b.textContent);
+      $('#coach-text').value = q;
       send();
     }));
 
     // Practice's Analyze button deep-dives via coach
     this.bus.on('practice:analyze-request', async () => {
       this.bus.emit('tab:switch', { name: 'coach' });
-      this.#addMessage('user', 'Analyze the current position.');
-      const thinking = this.#addMessage('bot', 'Analyzing...', true);
+      this.#addMessage('user', i18n.t('coachTab.analyzeQuestion'));
+      const thinking = this.#addMessage('bot', i18n.t('coach.analyzing'), true);
       const ctx = this.#buildContext();
-      const answer = await this.coach.ask('Give a clear analysis of this position: key features, threats, candidate moves, and a recommendation with reasons.', ctx);
+      const answer = await this.coach.ask(i18n.t('coachTab.analyzePrompt'), ctx);
       thinking.classList.remove('thinking');
       thinking.innerHTML = markdownLite(answer);
     });
@@ -59,7 +62,11 @@ export class CoachController {
   }
 
   greet() {
-    this.#addMessage('bot', 'Hi — I\'m your chess coach. Ask me anything about the position. I explain ideas, tactics, and plans.');
+    // Clear any previous chat so a language switch replaces the greeting
+    // rather than stacking a second one.
+    const chat = $('#coach-chat');
+    if (chat) chat.innerHTML = '';
+    this.#addMessage('bot', i18n.t('coach.greeting'));
   }
 
   #addMessage(role, text, thinking = false) {

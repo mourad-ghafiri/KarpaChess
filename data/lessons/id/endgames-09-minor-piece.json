@@ -1,0 +1,20 @@
+{
+  "id": "minor-piece-endings",
+  "title": "Babak Akhir Gajah vs Kuda",
+  "summary": "Bidak ringan mana yang lebih baik?",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "4k3/8/8/8/8/3N4/8/4K3 w - - 0 1",
+      "title": "Posisi Terbuka vs Tertutup",
+      "text": "Dalam posisi TERBUKA dengan pion di kedua sayap, gajah biasanya lebih baik — diagonal panjangnya menjangkau ke mana-mana. Dalam posisi TERTUTUP dengan pion yang tetap, kuda biasanya lebih baik — dia bisa melompat."
+    },
+    {
+      "type": "teach",
+      "fen": "4k3/8/8/8/8/4B3/8/4K3 w - - 0 1",
+      "title": "Dogma Fischer",
+      "text": "Bobby Fischer terkenal mengatakan \"gajah lebih kuat\" — tetapi hanya dalam posisi yang disederhanakan. Kenyataannya: pahami jenis posisi apa yang menguntungkan setiap bidak, dan bertujuan untuk bertukar ke posisi yang menguntungkan bidak ANDA."
+    }
+  ]
+}

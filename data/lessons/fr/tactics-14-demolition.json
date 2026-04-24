@@ -1,0 +1,20 @@
+{
+  "id": "demolition",
+  "title": "Démolition de la défense",
+  "summary": "Ouvrir brutalement la position ennemie",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "Sacrifices qui brisent la coquille",
+      "text": "Parfois, le seul moyen d'atteindre un roi est de percer le bouclier de pions. Le cadeau grec (Bxh7+), les sacrifices Nxf7 et les sacrifices de qualité en c3/c6 sont tous des motifs classiques de démolition."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "Quand démolir",
+      "text": "Le sacrifice fonctionne quand : (1) vous avez des pièces d'attaque prêtes à suivre, (2) le roi ennemi n'a pas de cases d'évasion, (3) le défenseur ne peut pas amener de renforts à temps. Calculez 4 à 6 coups en avant avant de vous engager."
+    }
+  ]
+}

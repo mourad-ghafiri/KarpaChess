@@ -1,0 +1,29 @@
+{
+  "id": "kings-pawn-family",
+  "title": "1.e4 — キングのポーン",
+  "summary": "1.e4に対する主要応手の概観",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+      "title": "ロマンティックなオープニング",
+      "text": "1.e4はクイーンとビショップのラインを開け、ポーンで中央を争います。シャープで戦術的、チェスの歴史上もっとも人気のある初手です。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+      "title": "黒の主要応手",
+      "text": "黒にはいくつかの有力な応手があります。1...e5(古典的、対称)、1...c5(シシリアン、非対称)、1...e6(フレンチ)、1...c6(カロカン)、1...d5(スカンジナビアン)。それぞれ異なる対局になります。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+      "prompt": "1.e4を古典的な応手で迎え撃ちましょう。",
+      "targetSan": [
+        "e5"
+      ],
+      "hint": "1...e5は白の中央主張を映し返します。"
+    }
+  ]
+}

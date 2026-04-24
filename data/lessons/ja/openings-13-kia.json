@@ -1,0 +1,38 @@
+{
+  "id": "kings-indian-attack",
+  "title": "キングズインディアンアタック",
+  "summary": "リバース版キングズインディアン — 白のシステム",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "柔軟な武器",
+      "text": "キングズインディアンアタック(KIA)は、キングズインディアンディフェンスを白側で指すものです。キングのビショップをフィアンケット、素早くキャスリング、そしてe4/e5で展開します。ボビー・フィッシャーが猛威を振るった指し方です。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "1.Nf3で始めましょう。",
+      "targetSan": [
+        "Nf3"
+      ],
+      "hint": "柔軟な初手です。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/8/5N2/PPPPPPPP/RNBQKB1R w KQkq - 0 2",
+      "prompt": "フィアンケットしましょう。2.g3。",
+      "targetSan": [
+        "g3"
+      ],
+      "hint": "ビショップのロングダイアゴナルを準備します。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/8/5NP1/PPPPPP1P/RNBQKB1R b KQkq - 0 2",
+      "title": "KIAの構造",
+      "text": "次は Bg2、0-0、d3、Nbd2、e4 と続きます。堅いキングサイドの要塞と、e5へ跳ねる準備のバネができます。何に対しても同じ一つのオープニングで戦いたい人に最適です。"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "outposts",
+  "title": "Puestos Avanzados",
+  "summary": "Casillas que ningún peón enemigo puede tocar",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "La Casilla Soñada",
+      "text": "Un puesto avanzado es una casilla en la mitad del tablero rival que ningún peón enemigo puede atacar. Cuando un caballo o alfil aterriza en ella, es prácticamente inamovible. Un caballo en d5 o e5 frente a la cadena de peones negra domina el final." },
+    { "type": "teach",
+      "fen": "rnbqkb1r/pppp1ppp/5n2/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+      "title": "Cómo Crearlos",
+      "text": "Los puestos avanzados aparecen cuando el rival debilita su estructura de peones — a menudo empujando un peón de flanco o haciendo una captura incómoda. Nunca te apresures a cambiar una pieza que tu oponente quiere cambiar — puede estar tratando de aliviar la presión de un futuro puesto avanzado." }
+  ]
+}

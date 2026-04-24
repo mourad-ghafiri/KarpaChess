@@ -3,9 +3,7 @@
   "categories": [
     {
       "id": "basics",
-      "name": "Basics",
       "icon": "♙",
-      "description": "The fundamentals every chess player must know.",
       "lessons": [
         "basics-01-how-pieces-move.json",
         "basics-02-check-and-mate.json",
@@ -20,9 +18,7 @@
     },
     {
       "id": "openings",
-      "name": "Openings",
       "icon": "♞",
-      "description": "Start every game with purpose.",
       "lessons": [
         "openings-01-opening-principles.json",
         "openings-02-italian-game.json",
@@ -46,9 +42,7 @@
     },
     {
       "id": "tactics",
-      "name": "Tactics",
       "icon": "⚔",
-      "description": "Patterns that win material or deliver mate.",
       "lessons": [
         "tactics-01-the-fork.json",
         "tactics-02-the-pin.json",
@@ -71,9 +65,7 @@
     },
     {
       "id": "endgames",
-      "name": "Endgames",
       "icon": "♔",
-      "description": "Convert advantages, hold tough positions.",
       "lessons": [
         "endgames-01-king-activity.json",
         "endgames-02-queen-mate.json",
@@ -91,9 +83,7 @@
     },
     {
       "id": "strategy",
-      "name": "Strategy",
       "icon": "♗",
-      "description": "Long-term thinking beyond tactics.",
       "lessons": [
         "strategy-01-good-bad-pieces.json",
         "strategy-02-outposts.json",
@@ -110,9 +100,7 @@
     },
     {
       "id": "attack",
-      "name": "Attack",
       "icon": "⚡",
-      "description": "Patterns and plans for attacking the king.",
       "lessons": [
         "attack-01-uncastled-king.json",
         "attack-02-opposite-castles.json",

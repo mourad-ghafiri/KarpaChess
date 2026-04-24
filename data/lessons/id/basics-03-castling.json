@@ -1,0 +1,30 @@
+{
+  "id": "castling",
+  "title": "Rokade",
+  "summary": "Gerakkan raja dan benteng dalam satu langkah",
+  "difficulty": "beginner",
+  "steps": [
+    { "type": "teach",
+      "fen": "r3k2r/pppq1ppp/2n1pn2/3p4/3P4/2N1PN2/PPPQ1PPP/R3K2R w KQkq - 0 1",
+      "title": "Apa Itu Rokade?",
+      "text": "Rokade adalah satu-satunya langkah dalam catur di mana DUA bidak bergerak sekaligus: raja Anda dan satu benteng. Ini cara tercepat untuk menyelipkan raja ke tempat aman DAN mengaktifkan benteng. Anda bisa melakukan rokade sayap raja (pendek) atau sayap menteri (panjang)." },
+    { "type": "teach",
+      "fen": "r3k2r/pppq1ppp/2n1pn2/3p4/3P4/2N1PN2/PPPQ1PPP/R3K2R w KQkq - 0 1",
+      "title": "Aturannya",
+      "text": "Untuk melakukan rokade: (1) raja atau benteng tersebut belum pernah bergerak, (2) tidak ada bidak di antara mereka, (3) raja tidak sedang dalam skak, dan (4) raja tidak melewati atau mendarat di kotak yang diserang." },
+    { "type": "play",
+      "fen": "r3k2r/pppq1ppp/2n1pn2/3p4/3P4/2N1PN2/PPPQ1PPP/R3K2R w KQkq - 0 1",
+      "prompt": "Rokade sayap raja (rokade pendek).",
+      "targetSan": ["O-O"],
+      "hint": "Pada kebanyakan antarmuka catur, Anda cukup menggerakkan raja dua kotak ke arah benteng." },
+    { "type": "play",
+      "fen": "r3k2r/pppq1ppp/2n1pn2/3p4/3P4/2N1PN2/PPPQ1PPP/R3K2R b KQkq - 0 1",
+      "prompt": "Sekarang Hitam rokade sayap menteri (rokade panjang).",
+      "targetSan": ["O-O-O"],
+      "hint": "Gerakkan raja dua kotak ke arah benteng di kolom-a." },
+    { "type": "teach",
+      "fen": "2kr3r/pppq1ppp/2n1pn2/3p4/3P4/2N1PN2/PPPQ1PPP/R4RK1 w - - 0 1",
+      "title": "Selesai!",
+      "text": "Kedua raja aman dan kedua benteng di kolom-a sudah terhubung dengan benteng lainnya. Rokade lebih awal adalah salah satu kebiasaan terpenting dalam catur — usahakan melakukannya pada langkah ke-10 di sebagian besar permainan." }
+  ]
+}

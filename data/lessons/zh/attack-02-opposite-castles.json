@@ -1,0 +1,20 @@
+{
+  "id": "opposite-castles",
+  "title": "异侧易位的攻击",
+  "summary": "用兵冲向敌王",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bqk2r/ppp2ppp/2npbn2/4p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 b kq - 0 6",
+      "title": "兵的风暴",
+      "text": "当你王翼易位而对手后翼易位时,你可以用兵发动进攻,而不削弱自己王的安全。推进 h4、g4、Nf5、h5、hxg6——这种进攻叫做兵的风暴。"
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqk2r/ppp2ppp/2npbn2/4p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 b kq - 0 6",
+      "title": "速度就是一切",
+      "text": "异侧易位形成一场竞赛:双方互相攻击对方的王。谁先打开线路,谁通常就赢。要数先手——每一步都至关重要。\"异侧易位意味着 20 步之内必有一方被将死。\""
+    }
+  ]
+}

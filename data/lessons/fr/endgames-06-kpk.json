@@ -1,0 +1,30 @@
+{
+  "id": "k-p-vs-k",
+  "title": "Roi et pion contre roi",
+  "summary": "La finale la plus courante — maîtrisez-la",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "4k3/8/8/8/4P3/8/8/4K3 w - - 0 1",
+      "title": "La finale fondamentale",
+      "text": "Tout joueur d'échecs doit connaître R+P contre R sur le bout des doigts. Le résultat dépend d'UNE chose : le camp fort peut-il amener son roi DEVANT le pion avec l'opposition ? Si oui, le pion promeut. Sinon, c'est nulle."
+    },
+    {
+      "type": "teach",
+      "fen": "4k3/8/4K3/4P3/8/8/8/8 w - - 0 1",
+      "title": "Cases clés",
+      "text": "Pour un pion sur la 5e rangée ou en dessous, les \"cases clés\" sont les trois cases en diagonale devant lui. Si votre roi atteint l'une d'elles, vous gagnez. Apprenez les cases clés pour chaque position de pion."
+    },
+    {
+      "type": "play",
+      "fen": "4k3/8/4K3/4P3/8/8/8/8 w - - 0 1",
+      "prompt": "Avancez vers une case clé.",
+      "targetSan": [
+        "Kd6",
+        "Kf6"
+      ],
+      "hint": "Kd6 ou Kf6 saisissent tous deux l'opposition."
+    }
+  ]
+}

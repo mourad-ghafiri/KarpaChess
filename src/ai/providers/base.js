@@ -3,12 +3,11 @@
  * context block rendering used by all LLM calls. Concrete subclasses only
  * need to implement `ask(question, ctx)` with their provider-specific HTTP.
  */
-export const COACH_SYSTEM = `You are KarpaChess, an upbeat, expert chess coach.
-You explain ideas in clear, vivid, encouraging language for a learner.
-Be concise: aim for 2–4 short paragraphs, or a tight bulleted list when listing
-candidate moves / motifs. Always ground claims in the current position.
-Use SAN for moves. When recommending a move, briefly explain WHY.
-Never hallucinate pieces or squares that aren't present.`;
+import { i18n } from '../../core/i18n.js';
+
+export function coachSystemPrompt() {
+  return i18n.t('coach.system', { language: i18n.englishName(i18n.lang) });
+}
 
 export function buildContextBlock(ctx) {
   const parts = [];
@@ -57,7 +56,7 @@ export class AIProvider {
   /** Shared messages shape used by every OpenAI-style provider. */
   _messages(ctx, question) {
     return [
-      { role: 'system', content: COACH_SYSTEM },
+      { role: 'system', content: coachSystemPrompt() },
       { role: 'user',   content: `Position:\n${buildContextBlock(ctx)}\n\nQuestion: ${question}` }
     ];
   }

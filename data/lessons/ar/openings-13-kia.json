@@ -1,0 +1,38 @@
+{
+  "id": "kings-indian-attack",
+  "title": "هجوم الهندي الملكي",
+  "summary": "الهندي الملكي معكوساً — نظام للأبيض",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "سلاح مرن",
+      "text": "هجوم الهندي الملكي (KIA) هو الدفاع الهندي الملكي يلعبه الأبيض. فياكيتو لفيل الملك، تبييت سريع، ثم توسّع بـ e4/e5. استخدمه بوبي فيشر بفعالية مميتة."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "ابدأ بـ 1.Nf3",
+      "targetSan": [
+        "Nf3"
+      ],
+      "hint": "نقلة أولى مرنة."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/8/5N2/PPPPPPPP/RNBQKB1R w KQkq - 0 2",
+      "prompt": "الآن فياكيتو: 2.g3",
+      "targetSan": [
+        "g3"
+      ],
+      "hint": "جهّز القطر الطويل للفيل."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/8/5NP1/PPPPPP1P/RNBQKB1R b KQkq - 0 2",
+      "title": "تركيب KIA",
+      "text": "التالي: Bg2، 0-0، d3، Nbd2، e4. ستحصل على حصن صلب على جهة الملك ونابض ملفوف مستعد لـ e5. مثالي إذا أردت افتتاحاً واحداً ضد كل شيء."
+    }
+  ]
+}

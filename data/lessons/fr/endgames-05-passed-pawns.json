@@ -1,0 +1,21 @@
+{
+  "id": "passed-pawns",
+  "title": "Pions passés",
+  "summary": "Le moteur des victoires en finale",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "4k3/8/8/8/4P3/8/8/4K3 w - - 0 1",
+      "title": "Qu'est-ce qu'un pion passé ?",
+      "text": "Un pion passé n'a aucun pion ennemi devant lui ni sur les colonnes adjacentes — rien ne peut l'empêcher de promouvoir sauf une pièce. Les pions passés sont des atouts énormes en finale. La phrase 'un pion passé doit être poussé' est une maxime de Nimzowitsch pour une raison." },
+    { "type": "play",
+      "fen": "4k3/8/8/8/4P3/8/8/4K3 w - - 0 1",
+      "prompt": "Avancez le pion passé.",
+      "targetSan": ["e5"],
+      "hint": "e5 — un pas de plus vers la promotion." },
+    { "type": "teach",
+      "fen": "4k3/8/8/4P3/8/8/8/4K3 b - - 0 1",
+      "title": "Soutenez-le !",
+      "text": "Un pion passé seul a quand même besoin d'aide. Sans un roi pour l'escorter, une seule pièce ennemie peut l'arrêter. Activez votre roi pour soutenir l'avancée — et créer une nouvelle dame." }
+  ]
+}

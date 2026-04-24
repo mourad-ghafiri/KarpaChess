@@ -1,0 +1,31 @@
+{
+  "id": "sicilian",
+  "title": "La défense sicilienne",
+  "summary": "La réponse la plus tranchante des Noirs à 1.e4",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "La réponse la plus tranchante",
+      "text": "Quand les Blancs jouent 1.e4, la réponse la plus combative des Noirs est 1...c5 — la défense sicilienne. Les Noirs ne concèdent rien au centre et préparent une contre-attaque à l'aile dame. C'est la défense la plus populaire à tous les niveaux." },
+    { "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "Jouez le premier coup de principe des Blancs.",
+      "targetSan": ["e4"],
+      "hint": "1.e4 — l'ouverture classique du pion roi." },
+    { "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+      "prompt": "Les Noirs jouent la sicilienne — poussez le pion c.",
+      "targetSan": ["c5"],
+      "hint": "1...c5 se bat pour d4 sans bloquer la colonne c." },
+    { "type": "play",
+      "fen": "rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "Réponse classique des Blancs : développez le cavalier.",
+      "targetSan": ["Nf3"],
+      "hint": "2.Nf3 prépare d4, la sicilienne ouverte." },
+    { "type": "teach",
+      "fen": "rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
+      "title": "Pourquoi la sicilienne ?",
+      "text": "Contrairement à ...e5 qui reproduit le coup des Blancs, ...c5 crée un jeu asymétrique. Les Blancs attaquent à l'aile roi ; les Noirs contre-attaquent à l'aile dame. Les parties sont tranchantes et décisives — les victoires, pas les nulles, sont fréquentes." }
+  ]
+}

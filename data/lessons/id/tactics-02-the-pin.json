@@ -1,0 +1,23 @@
+{
+  "id": "the-pin",
+  "title": "Ikatan",
+  "summary": "Bekukan bidak — tidak bisa pergi",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "3k4/8/3q4/8/8/8/3R4/3K4 w - - 0 1",
+      "title": "Ikatan Mutlak",
+      "text": "Ketika bidak terikat pada rajanya, ia tidak bisa bergerak secara legal — bergerak akan membuka raja pada skak. Di sini menteri Hitam terikat di kolom d. Dia beku."
+    },
+    {
+      "type": "play",
+      "fen": "3k4/8/3q4/8/8/8/3R4/3K4 w - - 0 1",
+      "prompt": "Tangkap menteri yang terikat.",
+      "targetSan": [
+        "Rxd6+"
+      ],
+      "hint": "Dia tidak bisa bergerak. Ambil saja."
+    }
+  ]
+}

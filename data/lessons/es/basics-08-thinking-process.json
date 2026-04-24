@@ -1,0 +1,26 @@
+{
+  "id": "thinking-process",
+  "title": "Cómo Pensar",
+  "summary": "Un proceso simple de 3 pasos para cada jugada",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Tres Preguntas",
+      "text": "Antes de cada jugada, repasa esta lista: (1) ¿Qué está amenazando mi oponente? (2) ¿Cuáles son MIS jaques, capturas y amenazas? (3) Si juego mi candidata, ¿cuál es la mejor respuesta? Responde las tres, luego mueve."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "La Verificación de Error",
+      "text": "Antes de jugar tu movimiento, haz una pausa y pregunta: \"Después de hacer esta jugada, ¿alguna de mis piezas está siendo atacada? ¿Puede mi oponente dar jaque? ¿Pueden capturar algo gratis?\" Esta verificación de 5 segundos evita la mayoría de los errores."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Jugadas Candidatas",
+      "text": "Los jugadores fuertes no calculan una jugada — calculan 2-3 candidatas y comparan. Elige jugadas que desarrollen una pieza, mejoren una casilla o creen una amenaza. Rechaza jugadas que parezcan aleatorias temprano."
+    }
+  ]
+}

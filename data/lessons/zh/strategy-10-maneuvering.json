@@ -1,0 +1,20 @@
+{
+  "id": "maneuvering",
+  "title": "调运",
+  "summary": "缓慢重组以求取胜阵型",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "\"无所作为\"的艺术",
+      "text": "在封闭局面中,进展靠缓慢的重组取得——用曲折的路线调马(如 Nc3-e2-g3-f5)、重新布置象、转移后。每一步都让子力改善一分。"
+    },
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "卡尔波夫之道",
+      "text": "阿纳托利·卡尔波夫是调运大师。他可以花 30 步改善子力位置而没有明显的威胁,然后以压倒性的精准发动攻击。研究他的对局可以学到耐心。"
+    }
+  ]
+}

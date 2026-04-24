@@ -1,5 +1,5 @@
 /** Anthropic Claude — different payload shape (system at top level, content array). */
-import { AIProvider, COACH_SYSTEM, buildContextBlock } from './base.js';
+import { AIProvider, coachSystemPrompt, buildContextBlock } from './base.js';
 
 export class AnthropicProvider extends AIProvider {
   get id() { return 'anthropic'; }
@@ -12,7 +12,7 @@ export class AnthropicProvider extends AIProvider {
     const body = {
       model: this.getModel(),
       max_tokens: 700,
-      system: COACH_SYSTEM,
+      system: coachSystemPrompt(),
       messages: [{ role: 'user', content: `Position:\n${buildContextBlock(ctx)}\n\nQuestion: ${question}` }]
     };
     const res = await fetch('https://api.anthropic.com/v1/messages', {

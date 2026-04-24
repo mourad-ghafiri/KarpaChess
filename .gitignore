@@ -1,0 +1,52 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors / IDEs / agents
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.cursor/
+.claude/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Node (in case dev tooling is added later)
+node_modules/
+.npm
+.yarn-cache/
+
+# Python (in case translation/build scripts are added later)
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Local env / secrets — never commit API keys
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Build / cache artifacts (none today, but reserve for the future)
+dist/
+build/
+.cache/
+.parcel-cache/
+
+# Local server scratchpads
+/tmp/
+*.tmp
+
+# Coverage / test artifacts
+coverage/
+.nyc_output/

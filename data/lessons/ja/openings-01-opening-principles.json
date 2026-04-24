@@ -1,0 +1,64 @@
+{
+  "id": "opening-principles",
+  "title": "3つの原則",
+  "summary": "中央、展開、キングの安全",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "3つの法則",
+      "text": "強いオープニングはすべて3本の柱の上にあります。(1)中央を支配する、(2)駒を素早く展開する、(3)キングを安全にする。3つとも実践してみましょう。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "まず中央ポーンを突きましょう。e4またはd4を指してください。",
+      "targetSan": [
+        "e4",
+        "d4"
+      ],
+      "hint": "中央ポーンはスペースを確保し、駒のためのラインを開けます。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "title": "次は展開",
+      "text": "まずポーン、次に駒です。ビショップよりもナイトを先に。中央に向けて出すナイト(f3、c3)は、それぞれ4つの中央マスを攻撃します。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "ナイトを中央に向けて展開しましょう。",
+      "targetSan": [
+        "Nf3",
+        "Nc3"
+      ],
+      "hint": "Nf3もNc3も、中央マスを4つ攻撃します。"
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+      "title": "次はビショップ",
+      "text": "両ナイトを展開したら、ビショップを活発なマスに出しましょう。Bc4は弱点f7を狙います。オープニングで黒陣のもっとも脆い地点です。"
+    },
+    {
+      "type": "play",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+      "prompt": "白マスのビショップを活発なマスに展開しましょう。",
+      "targetSan": [
+        "Bc4",
+        "Bb5",
+        "Bd3",
+        "Be2"
+      ],
+      "hint": "Bc4は古典的な選択、まっすぐf7を狙います。"
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+      "title": "キングの安全",
+      "text": "両サイドに駒が2枚ずつ出たら、キャスリングの好機です。キャスリングはキングを隅に送り込み、ルークを連結させます。攻撃を始める前に済ませましょう。"
+    }
+  ]
+}

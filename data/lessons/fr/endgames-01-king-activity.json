@@ -1,0 +1,24 @@
+{
+  "id": "king-activity",
+  "title": "Activez votre roi",
+  "summary": "En finale, votre roi combat",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "4k3/8/8/4K3/4P3/8/8/8 w - - 0 1",
+      "title": "Puissance du roi",
+      "text": "Au milieu de partie, le roi se cache. En finale, il sort pour combattre. Ici, votre roi doit escorter son pion jusqu'à la promotion. La technique compte."
+    },
+    {
+      "type": "play",
+      "fen": "4k3/8/8/4K3/4P3/8/8/8 w - - 0 1",
+      "prompt": "Avancez votre roi — prenez l'opposition.",
+      "targetSan": [
+        "Kd6",
+        "Kf6"
+      ],
+      "hint": "Kd6 ou Kf6 — les deux saisissent l'opposition."
+    }
+  ]
+}

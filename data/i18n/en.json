@@ -1,0 +1,746 @@
+{
+  "language": { "name": "English", "code": "en" },
+
+  "ui": {
+    "brand": {
+      "title": "KarpaChess",
+      "tagline": "Learn Chess · Every Move Teaches"
+    },
+    "nav": {
+      "learn": "Learn",
+      "puzzles": "Puzzles",
+      "practice": "Practice",
+      "coach": "AI Coach",
+      "commentator": "Commentator"
+    },
+    "button": {
+      "flip": "Flip",
+      "undo": "Undo",
+      "hint": "Hint",
+      "analyze": "Analyze",
+      "newGame": "New Game",
+      "playIt": "Play it",
+      "dismiss": "Dismiss",
+      "ask": "Ask",
+      "load": "Load",
+      "chooseFile": "Choose file…",
+      "settings": "Settings",
+      "close": "Close",
+      "back": "Back",
+      "next": "Next",
+      "skip": "Skip",
+      "showHint": "Show Hint",
+      "allCategories": "← All categories",
+      "allLessons": "← All lessons",
+      "allThemes": "← All themes",
+      "exitReview": "← Exit review",
+      "resetAll": "Reset progress & keys"
+    },
+    "buttonTitle": {
+      "flip": "Flip board (F)",
+      "undo": "Undo (Ctrl+Z)",
+      "hint": "Get a hint (H)",
+      "analyze": "Deep analysis",
+      "newGame": "New game (N)",
+      "settings": "Settings",
+      "dismissHint": "Dismiss hint",
+      "closeBanner": "Dismiss"
+    },
+    "label": {
+      "provider": "Provider",
+      "difficulty": "Difficulty",
+      "playAs": "Play as",
+      "timeControl": "Time Control",
+      "moveHistory": "Move History",
+      "coachWhisper": "Coach Whisper",
+      "language": "Language",
+      "boardTheme": "Board theme",
+      "apiKey": "API Key",
+      "model": "Model",
+      "serverUrl": "Server URL",
+      "customModel": "Custom model ID",
+      "customModelTag": "Custom model tag",
+      "customModelIdentifier": "Custom model identifier"
+    },
+    "placeholder": {
+      "coachAsk": "Ask: 'Why is Nf3 strong here?'",
+      "pgnInput": "Paste PGN or a move list (e.g. e4 e5 Nf3 Nc6)…",
+      "drawText": "Type…"
+    },
+    "empty": {
+      "moveHistory": "Your moves will appear here.",
+      "moveHistoryCommentator": "Moves appear here as you step through the game.",
+      "moveTree": "Import a game to begin.",
+      "insights": "Step through the moves to see the engine's take."
+    },
+    "practiceLede": "Play against the computer. The coach whispers tips as you go, and you can always ask the AI Coach for deeper help.",
+    "aria": {
+      "capturedByWhite": "Pieces captured by white",
+      "capturedByBlack": "Pieces captured by black",
+      "chessBoard": "Chess board",
+      "dismissHint": "Dismiss hint"
+    },
+    "section": {
+      "pasteOrUpload": "Paste or upload",
+      "sampleGames": "Sample games",
+      "moveHistory": "Move History"
+    },
+    "toast": {
+      "notYourTurn": "Not your turn.",
+      "matchLoaded": "Match loaded.",
+      "pasteFirst": "Paste PGN or a move list first.",
+      "parseFail": "Could not parse: {error}",
+      "imgLoadFail": "Could not load that image.",
+      "noReview": "No moves to review yet.",
+      "lessonComplete": "Lesson complete!"
+    }
+  },
+
+  "game": {
+    "result": {
+      "checkmate": "Checkmate!",
+      "stalemate": "Stalemate",
+      "draw": "Draw",
+      "timeout": "Time out",
+      "drawRepetition": "Draw",
+      "drawAgreed": "Draw"
+    },
+    "resultSub": {
+      "whiteWins": "White wins",
+      "blackWins": "Black wins",
+      "stalemate": "Draw by stalemate",
+      "fiftyMove": "50-move rule",
+      "insufficient": "Insufficient material",
+      "repetition": "Threefold repetition",
+      "agreed": "Agreed draw",
+      "whiteWinsTime": "White wins on time",
+      "blackWinsTime": "Black wins on time"
+    },
+    "side": {
+      "white": "White",
+      "black": "Black"
+    },
+    "playerDefault": {
+      "top": "Black",
+      "bottom": "You",
+      "topMeta": "AI · Level 2",
+      "botMeta": "Human"
+    },
+    "playAsOption": {
+      "white": "White",
+      "random": "Random",
+      "black": "Black"
+    },
+    "timeControl": {
+      "unlimited": "Unlimited",
+      "custom": "{minutes}+{increment}"
+    },
+    "difficulty": {
+      "1": "Beginner",
+      "2": "Casual",
+      "3": "Club",
+      "4": "Master"
+    },
+    "clock": {
+      "timeUsed": "{seconds}s used",
+      "timeUsedLong": "{time} used"
+    }
+  },
+
+  "chess": {
+    "piece": {
+      "p": "pawn",
+      "n": "knight",
+      "b": "bishop",
+      "r": "rook",
+      "q": "queen",
+      "k": "king"
+    },
+    "pieceCapital": {
+      "p": "Pawn",
+      "n": "Knight",
+      "b": "Bishop",
+      "r": "Rook",
+      "q": "Queen",
+      "k": "King"
+    },
+    "direction": {
+      "kingside": "kingside",
+      "queenside": "queenside"
+    }
+  },
+
+  "classification": {
+    "best":       { "label": "Best move",  "glyph": "★",  "comment": "This is the engine's top pick — no better move on the board." },
+    "good":       { "label": "Solid",      "glyph": "✓",  "commentAgree": "Engine approves — a solid choice.", "commentAlt": "A reasonable continuation. The engine slightly preferred <b>{best}</b>." },
+    "inaccuracy": { "label": "Inaccuracy", "glyph": "?!", "comment": "Small slip — <b>{best}</b> would have been a touch stronger.", "commentShort": "Small slip." },
+    "mistake":    { "label": "Mistake",    "glyph": "?",  "comment": "A mistake — <b>{best}</b> was noticeably better.", "commentShort": "A mistake." },
+    "blunder":    { "label": "Blunder",    "glyph": "??", "comment": "A blunder. <b>{best}</b> was needed.", "commentShort": "A blunder." },
+    "review": {
+      "good": "Best or near-best move.",
+      "ok": "Solid move.",
+      "inaccuracy": "Slightly inaccurate.",
+      "mistake": "A mistake.",
+      "blunder": "Blunder."
+    }
+  },
+
+  "nag": {
+    "1": "Good move",
+    "2": "Mistake",
+    "3": "Brilliant move",
+    "4": "Blunder",
+    "5": "Interesting move",
+    "6": "Dubious move",
+    "10": "Equal position",
+    "13": "Unclear position",
+    "14": "White is slightly better",
+    "15": "Black is slightly better",
+    "16": "White is better",
+    "17": "Black is better",
+    "18": "White is winning",
+    "19": "Black is winning"
+  },
+
+  "hint": {
+    "eyebrow": "Suggested move",
+    "loading": "…",
+    "loadingSub": "Looking a few moves ahead…",
+    "checkmate": "Delivers <b>checkmate</b>. End it!",
+    "castle": "Castles {dir} — tucks the king behind a wall of pawns.",
+    "promote": "Pushes to the last rank and promotes to a <b>{piece}</b>.",
+    "capture": "Wins material: your <b>{piece}</b> captures the <b>{target}</b>.",
+    "develop": "Develops your <b>{piece}</b> to <b>{square}</b>, improving activity and eyeing the center.",
+    "pawn": "Advances your <b>pawn</b> to <b>{square}</b>, claiming space.",
+    "rook": "Activates your <b>rook</b> on <b>{square}</b> — open files love rooks.",
+    "queen": "Brings the <b>queen</b> to <b>{square}</b> with purpose.",
+    "quiet": "Improves your <b>{piece}</b> to <b>{square}</b>.",
+    "checkSuffix": " Also gives <b>check</b>."
+  },
+
+  "banner": {
+    "reviewBtn": "🔍 Review Match",
+    "newGameBtn": "New Game"
+  },
+
+  "coach": {
+    "greeting": "Hi — I'm your chess coach. Ask me anything about the position. I explain ideas, tactics, and plans.",
+    "thinking": "Thinking…",
+    "analyzing": "Analyzing…",
+    "status": {
+      "unknown": "unknown",
+      "missingKey": "missing API key"
+    },
+    "system": "You are KarpaChess, an upbeat, expert chess coach. Explain ideas in clear, vivid, encouraging language for a learner. Be concise: 2–4 short paragraphs, or a tight bulleted list. Ground claims in the current position. Use SAN for moves. When recommending a move, briefly explain WHY. Never hallucinate pieces or squares that aren't present. Reply in {language}.",
+    "fallbackPrefix": "**{provider} request failed.** {error}\n\nFalling back to built-in coach:\n\n{fallback}",
+    "whisper": {
+      "tip1": "Nice — now what about your next piece?",
+      "tip2": "Every move, ask: am I improving my worst piece?",
+      "tip3": "Watch for forks and tactics after each exchange.",
+      "tip4": "Keep your king safe. Castle if you haven't.",
+      "tip5": "Look for pieces without defenders — yours and theirs.",
+      "check": "⚠️ <b>{side}</b> is in check!",
+      "capture": "💥 {piece} takes {target} on {square}. Eval: {eval}.",
+      "castle": "🏰 Nicely castled! King safety matters. Eval: {eval}.",
+      "promote": "✨ Promoted to {piece}! Eval: {eval}.",
+      "tipWithEval": "{tip} ({eval})",
+      "welcome": "Welcome! Make a move and I'll share a quick insight. When the game ends I'll offer to review your moves.",
+      "newGame": "New game! Good luck — make the first move."
+    },
+    "builtin": {
+      "name": "Built-in (offline)",
+      "on": "on",
+      "bestMove": {
+        "recommendation": "My recommendation: <b>{move}</b>.",
+        "shallow": "Without deeper search, consider: <b>{move}</b>.",
+        "whyHeader": "<b>Why this makes sense here:</b>",
+        "castle": "• King still in the center — castling is a top priority.",
+        "develop": "• Minor pieces still on {squares} — develop them.",
+        "center": "• No pawn on the central four — a central pawn push is valuable.",
+        "loose": "• Opponent has <b>{pieceWord}</b>: {list}. Look for ways to win them.",
+        "oppKing": "• Opponent's king is <b>{score}</b> — attacking moves often work.",
+        "ownKing": "• Your king is under fire — consider defense first.",
+        "passedEnd": "• You have <b>{pawnWord}</b> on {squares} — push them!",
+        "activeKing": "• Activate your king — in endgames, he's a fighting piece.",
+        "aheadBehind": "• You're {state} {n} points — {advice}.",
+        "ahead": "ahead",
+        "behind": "behind",
+        "adviceAhead": "trade pieces, keep pawns",
+        "adviceBehind": "create complications",
+        "evalSuffix": "_Eval: {eval}_"
+      },
+      "loosePieces": {
+        "singular": "loose piece",
+        "plural": "loose pieces"
+      },
+      "passedPawns": {
+        "singular": "passed pawn",
+        "plural": "passed pawns"
+      },
+      "tactics": {
+        "header": "<b>Tactical scan for {side}</b>",
+        "loose": "Opponent has {n} undefended {pieceWord}: {list}.",
+        "undefendedSingle": "piece",
+        "undefendedPlural": "pieces",
+        "defended": "Opponent's pieces look defended. Harder tactics — look for pins, decoys, or clearance moves.",
+        "exposedKing": "Their king is <b>{score}</b> ({notes}) — mating patterns may be lurking.",
+        "openLines": "open lines",
+        "queenTarget": "Their queen on <b>{square}</b> — can you attack her cheaply to gain tempo?",
+        "engineSuggests": "Engine suggests <b>{move}</b> — does that move fit any of the patterns above?",
+        "footer": "_Train your eye to spot these three every move: loose pieces, exposed kings, overworked defenders._"
+      },
+      "plan": {
+        "header": "<b>Plan for {side}</b> _({phase})_",
+        "developMinors": "Develop remaining minor {pieceWord} from {squares}.",
+        "minorSingular": "piece",
+        "minorPlural": "pieces",
+        "castle": "Castle — king safety first.",
+        "queenEarly": "Careful — queen moved before all minor pieces were developed. Don't let her be chased.",
+        "centerPawn": "Put a pawn on the central four (d4/e4/d5/e5).",
+        "kingDanger": "Your king is in danger — improve defense before attacking.",
+        "oppositeWings": "You both castled — attack the opposite wing with pawns if castled on opposite sides.",
+        "pushPassed": "Push your {pawnWord} on {squares}.",
+        "passedPawnSingular": "passed pawn",
+        "passedPawnPlural": "passed pawns",
+        "isolated": "Watch your {pawnWord} on {squares} — activity compensates for weakness.",
+        "isolatedSingular": "isolated pawn",
+        "isolatedPlural": "isolated pawns",
+        "improveWorst": "Improve your worst piece. Every move should make one of your pieces better.",
+        "racePassed": "Race your {pawnWord} on {squares} to promotion.",
+        "raceSingular": "passed pawn",
+        "racePlural": "passed pawns",
+        "activateKing": "Activate your king — walk him into the action.",
+        "aheadTrade": "You're up {n} points — trade pieces (not pawns) to simplify to a winning endgame.",
+        "behindKeep": "You're down {n} points — keep pieces on the board, create counterplay, avoid trades.",
+        "fewPawns": "Few pawns left — think about opposition, zugzwang, and key squares."
+      },
+      "lastMove": {
+        "none": "No moves played yet — start with a central pawn (e4 or d4) or a knight move (Nf3).",
+        "capture": "captured material",
+        "check": "delivered check",
+        "checkmate": "delivered checkmate",
+        "castleKingside": "castled kingside",
+        "castleQueenside": "castled queenside",
+        "promote": "promoted a pawn",
+        "line": "<b>{san}</b> — {anns}.",
+        "quiet": "<b>{san}</b> — a quiet positional move.",
+        "evalLine": "Eval now: {eval}. ",
+        "topChoice": "Engine's top choice going forward: <b>{move}</b>."
+      },
+      "opening": {
+        "noneHeader": "<b>The classical first moves:</b>",
+        "noneE4": "<b>1.e4</b> — opens lines for queen and bishop, fights for the center. Leads to sharp tactical play.",
+        "noneD4": "<b>1.d4</b> — claims the center, prepares c4 (Queen's Gambit). Strategic, positional.",
+        "noneNf3": "<b>1.Nf3</b> — flexible, delays revealing your plan. Often transposes.",
+        "noneC4": "<b>1.c4</b> — English. Flank attack on the center, hypermodern style.",
+        "nonePick": "Pick one, play it a hundred times, and learn its secrets.",
+        "known": "<b>{name}</b>\n\n{tip}\n\n_Moves played: {moves}_",
+        "unknownHeader": "{n} {moveWord} played — no clear opening match yet. Stick to three principles:",
+        "moveSingular": "move",
+        "movePlural": "moves",
+        "unknownP1": "• Control the center with pawns or pieces",
+        "unknownP2": "• Develop every minor piece before moving the queen",
+        "unknownP3": "• Castle before launching attacks"
+      },
+      "endgame": {
+        "header": "<b>Endgame essentials</b>",
+        "activateKing": "• <b>Activate your king</b> — in the endgame, he's worth about three pawns. Walk him into the center.",
+        "passed": "• <b>Passed pawns</b> are gold. White has {w}; Black has {b}.",
+        "none": "none",
+        "opposition": "• <b>Opposition</b> decides king-and-pawn endgames — the side not to move often wins the key square.",
+        "rookRule": "• <b>Rook endings</b> follow the rule: rook belongs BEHIND the passed pawn (yours or theirs).",
+        "tradePieces": "• When winning, trade pieces not pawns. When losing, keep pieces and seek tactics."
+      },
+      "evaluation": {
+        "header": "<b>Position assessment</b> _({phase}, {side} to move)_",
+        "material": "• <b>Material:</b> White {w} vs Black {b}{diff}",
+        "equalSuffix": " (equal)",
+        "diffSuffix": " — {side} is +{n}",
+        "engine": "• <b>Engine:</b> {eval}",
+        "whiteKing": "• <b>White king:</b> {score}{notes}",
+        "blackKing": "• <b>Black king:</b> {score}{notes}",
+        "notesFmt": " ({notes})",
+        "pawnWeaknessesWhite": "• <b>White pawn issues:</b> {list}",
+        "pawnWeaknessesBlack": "• <b>Black pawn issues:</b> {list}",
+        "isolatedPrefix": "isolated {sq}",
+        "doubledPrefix": "doubled on {file}",
+        "passedWhite": "• <b>White {pawnWord}:</b> {squares}",
+        "passedBlack": "• <b>Black {pawnWord}:</b> {squares}",
+        "passedSingular": "passed pawn",
+        "passedPlural": "passed pawns",
+        "topMove": "• <b>Engine's top move:</b> <b>{move}</b>"
+      },
+      "kingSafety": {
+        "header": "<b>King Safety</b>",
+        "line": "• <b>{side} king</b> ({who}): {score}{castled}. {notes}",
+        "you": "you",
+        "opponent": "opponent",
+        "castledSuffix": " — castled",
+        "noConcerns": "No immediate concerns.",
+        "footer": "If your king is exposed: defend first. If your opponent's is exposed: look for checks, rook lifts, and queen infiltration."
+      },
+      "pawns": {
+        "header": "<b>Pawn Structure</b>",
+        "side": "<b>{side}</b> ({n} pawns)",
+        "isolated": "• Isolated: {squares} — hard to defend, but often active.",
+        "doubled": "• Doubled on {files} — can't defend each other, often a long-term weakness.",
+        "passed": "• <b>Passed:</b> {squares} — push them with piece support!",
+        "clean": "• Clean structure — no notable weaknesses or passed pawns."
+      },
+      "development": {
+        "header": "<b>Development</b>",
+        "white": "• White: {n}/4 minors developed{castled}{home}",
+        "black": "• Black: {n}/4 minors developed{castled}{home}",
+        "castledSuffix": ", castled ✓",
+        "homeSuffix": " — still home: {squares}",
+        "openingNote": "In the opening, every move should either (1) develop a piece, (2) control the center, or (3) improve king safety. Moves that don't do one of these are suspect."
+      },
+      "improvement": {
+        "header": "<b>Improve your worst piece</b>",
+        "intro": "Look at each of your pieces and ask: \"What is this doing?\" Your goal each move is to give the least active piece a meaningful job.",
+        "commonHeader": "<b>Common worst pieces:</b>",
+        "bishop": "• A bishop behind its own pawns — reroute or trade.",
+        "knight": "• A knight on the rim (h3, a6 etc.) — centralize to d4/e4/d5/e5.",
+        "rook": "• A rook on its starting square with no open file — find one and invade.",
+        "queen": "• The queen too early and exposed — bring her back to safety first.",
+        "kingMid": "• A king still in the center past move 10 — castle immediately."
+      },
+      "summary": {
+        "header": "<b>Position snapshot</b> — _{pulse}_",
+        "pulseMaterial": "material {sign}{n} for {side}",
+        "pulseMaterialEven": "material even",
+        "pulsePhase": "{phase} phase",
+        "pulseToMove": "{side} to move",
+        "material": "• <b>Material:</b> W {w} · B {b}{diff}",
+        "diff": " ({sign}{n})",
+        "equal": " (equal)",
+        "kings": "• <b>Kings:</b> White {wScore}{wCastled}, Black {bScore}{bCastled}",
+        "castledGlyph": " ✓",
+        "eval": "• <b>Eval:</b> {eval}",
+        "engineSuggests": "• <b>Engine suggests:</b> <b>{move}</b>",
+        "target": "• <b>Target:</b> opponent's loose {list}",
+        "menu": "Ask me: <b>best move · tactics · plan · king safety · pawns · development · evaluation</b>"
+      },
+      "phase": {
+        "opening": "opening",
+        "middlegame": "middlegame",
+        "endgame": "endgame"
+      },
+      "kingScore": {
+        "safe": "safe",
+        "exposed": "exposed",
+        "danger": "danger",
+        "shelter": "shelter",
+        "waiting": "waiting",
+        "active": "active",
+        "unknown": "unknown"
+      },
+      "kingNote": {
+        "tuckedCorner": "still tucked in the corner — centralize him",
+        "startingSquare": "king on his starting square — walk him out",
+        "activeOn": "active king on {square}",
+        "wanderingOn": "king wandering on {square}",
+        "centerAfter8": "king still in the center after move 8",
+        "thinShield": "thin pawn cover ({count}/3)",
+        "enemyHeavy": "enemy heavy piece on the king's file",
+        "fullShield": "castled with a full pawn shield"
+      },
+      "eval": {
+        "unclear": "unclear",
+        "balanced": "balanced ({pawns})",
+        "better": "{sign}{pawns} — <b>{side}</b> is better"
+      }
+    },
+    "openingNames": {
+      "ruyLopez": "Ruy Lopez",
+      "ruyLopezMorphy": "Ruy Lopez — Morphy Defense",
+      "italianGame": "Italian Game",
+      "italianGiuocoPiano": "Italian Game — Giuoco Piano",
+      "italianTwoKnights": "Italian Game — Two Knights",
+      "petroff": "Petroff Defense",
+      "scotchGame": "Scotch Game",
+      "viennaGame": "Vienna Game",
+      "kingsGambit": "King's Gambit",
+      "openGame": "Open Game",
+      "kingsPawnGame": "King's Pawn Game",
+      "sicilian": "Sicilian Defense",
+      "sicilianNajdorf": "Sicilian — Najdorf complex",
+      "sicilianOpenNc6": "Sicilian — Open with ...Nc6",
+      "sicilianTaimanovKan": "Sicilian — Taimanov/Kan",
+      "sicilianClosed": "Sicilian — Closed",
+      "french": "French Defense",
+      "caroKann": "Caro-Kann Defense",
+      "scandinavian": "Scandinavian Defense",
+      "pirc": "Pirc Defense",
+      "modern": "Modern Defense",
+      "alekhine": "Alekhine's Defense",
+      "queensGambit": "Queen's Gambit",
+      "queensGambitDeclined": "Queen's Gambit Declined",
+      "queensGambitAccepted": "Queen's Gambit Accepted",
+      "slav": "Slav Defense",
+      "londonSetup": "London System setup",
+      "london": "London System",
+      "kingsIndian": "King's Indian Defense",
+      "nimzoIndian": "Nimzo-Indian",
+      "queensIndian": "Queen's Indian complex",
+      "benoni": "Benoni Defense",
+      "indianGame": "Indian Game",
+      "dutch": "Dutch Defense",
+      "english": "English Opening",
+      "reti": "Réti Opening",
+      "retiKia": "Réti / KIA setup",
+      "retiSetup": "Réti setup",
+      "larsen": "Larsen's Opening",
+      "sokolsky": "Sokolsky / Polish",
+      "benko": "Benko Opening"
+    },
+    "openingTips": {
+      "ruyLopez": "The oldest serious opening in chess. The Bb5 pins the knight — Black usually plays ...a6 to force a decision. After Ba4, play develops into long strategic battles.",
+      "ruyLopezMorphy": "Black's main response. White usually chooses between the Main Line (Ba4 Nf6 0-0) and the Exchange Variation (Bxc6). Rich, classical chess awaits.",
+      "italianGame": "Bc4 targets f7 — the weakest point in Black's camp. Develop knights to f3/c3, castle kingside, and look for d3/d4 breaks.",
+      "italianGiuocoPiano": "\"Quiet game\" — both bishops point at each king's weak square. Classical setup: develop, castle, then push d4.",
+      "italianTwoKnights": "Sharp play! White can try the Fried Liver (Ng5) or the quieter d4 break. Black has to navigate some tactical waters.",
+      "petroff": "Rock-solid symmetric defense. Black copies White and develops naturally — notorious for its drawish tendencies at high levels.",
+      "scotchGame": "White opens the center early with d4. Active play for both sides, less theoretical than the Ruy.",
+      "viennaGame": "Develops Nc3 before Nf3, keeping f-pawn free for attacking possibilities (f4 later).",
+      "kingsGambit": "Romantic-era sacrifice! White offers the f-pawn for rapid development and attacks on f7. Rare but thrilling.",
+      "openGame": "Classical chess at its finest. Expect principled, center-based play.",
+      "kingsPawnGame": "Both sides claim central space with pawns. Sharp, direct chess is ahead.",
+      "sicilian": "The most popular answer to 1.e4. Asymmetric — White attacks on the kingside, Black counter-attacks on the queenside. Sharp, decisive games.",
+      "sicilianNajdorf": "The ultimate fighting opening. Every move is rich in theory. Prepare for dynamic, unbalanced play.",
+      "sicilianOpenNc6": "Classical Sicilian. Expect a race between White's kingside attack and Black's queenside counter.",
+      "sicilianTaimanovKan": "Flexible, modern Sicilian. Black keeps options open for ...a6, ...b5 expansion.",
+      "sicilianClosed": "White avoids the Open Sicilian with Nc3. Slower, more positional game. Avoid if you love tactics.",
+      "french": "Black builds a granite pawn chain. Look for ...c5 or ...f6 breaks to free the light-squared bishop.",
+      "caroKann": "Solid and flexible. ...d5 is coming next with full central counterplay.",
+      "scandinavian": "Black attacks the e4 pawn immediately. After Nc3 the queen gets chased — careful with her placement.",
+      "pirc": "Hypermodern. Black invites White to build a big center, then strikes it with pawn breaks.",
+      "modern": "Similar to the Pirc but even more flexible. Black delays committing to a setup.",
+      "alekhine": "Provocative! Black lures White's pawns forward, then attacks them. Sharp and unconventional.",
+      "queensGambit": "Offer the c-pawn to deflect Black's d-pawn and dominate the center. Classical, principled, top-tier.",
+      "queensGambitDeclined": "Black refuses the pawn and builds a solid structure. The quintessential positional opening.",
+      "queensGambitAccepted": "Black takes the pawn, plans to give it back for active piece play.",
+      "slav": "Supports the d5 pawn with ...c6. Solid, hard to break down, keeps the bishop on c8 alive.",
+      "londonSetup": "White's universal system — Bf4 and stable development. Less theory, reliable results.",
+      "london": "Solid and easy to learn. Claim d4, develop Bf4, play Nf3, Nbd2, c3, e3. Stable foundation.",
+      "kingsIndian": "Hypermodern classic. Let White build a huge center, then blast it with ...e5 or ...c5. Kingside attacks are legendary.",
+      "nimzoIndian": "Black pins the knight with Bb4 and plays to double White's pawns on c-file. Strategic, high-class chess.",
+      "queensIndian": "Solid, fianchetto-based setup. Popular at master level for its drawing chances.",
+      "benoni": "Sharp, unbalanced, tactical. Black gives up the center for activity.",
+      "indianGame": "Hypermodern response. Wait to see White's plan before committing.",
+      "dutch": "Black plays ...f5 to fight for e4. Sharp, double-edged. Careful with king safety!",
+      "english": "Flexible flank opening. Often transposes into Queen's Gambit or King's Indian structures. Hard for Black to prepare against.",
+      "reti": "Hypermodern — attack the center from the flanks. Great if you love positional play.",
+      "retiKia": "Flexible — can transpose into the King's Indian Attack or other closed setups.",
+      "retiSetup": "Quiet flexibility. Often transposes.",
+      "larsen": "Fianchetto the queen's bishop early. Unusual but sound.",
+      "sokolsky": "Bb2 fianchetto with b4 thrown in. Offbeat — catch your opponent unprepared!",
+      "benko": "Quiet fianchetto system. Flexible, low-theory, positional.",
+      "generic": "Focus on the ideas — piece placement, pawn breaks, typical endgames."
+    }
+  },
+
+  "settings": {
+    "title": "Settings",
+    "board": "Board",
+    "boardTheme": "Board theme",
+    "theme": {
+      "royal": "Royal",
+      "emerald": "Emerald",
+      "midnight": "Stone",
+      "rose": "Rose",
+      "ice": "Ice"
+    },
+    "toggle": {
+      "coords": "Show coordinates",
+      "legal": "Highlight legal moves",
+      "last": "Highlight last move",
+      "sound": "Sound",
+      "animations": "Animations"
+    },
+    "language": "Language",
+    "languageSection": "Language",
+    "aiCoach": "AI Coach",
+    "aiNote": "Keys are stored locally in your browser. Calls go from your browser directly to the provider.",
+    "dangerZone": "Danger zone",
+    "resetBtn": "Reset progress & keys",
+    "resetConfirm": "Reset all progress, keys, and settings?",
+    "provider": {
+      "builtin": "Built-in (offline heuristics)",
+      "anthropic": "Anthropic (Claude)",
+      "openai": "OpenAI (GPT)",
+      "openrouter": "OpenRouter (100+ models)",
+      "mistral": "Mistral AI",
+      "deepseek": "DeepSeek",
+      "xai": "xAI (Grok)",
+      "qwen": "Qwen (Alibaba)",
+      "glm": "GLM (Zhipu)",
+      "minimax": "MiniMax",
+      "ollama": "Ollama",
+      "lmstudio": "LM Studio",
+      "groupCloud": "Cloud APIs",
+      "groupLocal": "Local / self-hosted",
+      "customOption": "Custom…"
+    },
+    "providerNote": {
+      "builtin": "No configuration needed — the built-in coach runs fully offline using local heuristics and the built-in engine.",
+      "lmstudio": "Load a model in LM Studio and start its local server. Pick one of the presets below, or type the exact model identifier LM Studio shows on its server page.",
+      "openrouter": "One key, 100+ models from Anthropic, OpenAI, Meta, Mistral, DeepSeek, xAI, Google, and more.",
+      "glm": "Zhipu AI's GLM models. The default endpoint is the China region — swap to a proxy if needed."
+    }
+  },
+
+  "commentator": {
+    "title": "Commentator Studio",
+    "importLede": "Paste a PGN, drop a file, or pick a sample game below to start commenting.",
+    "pasteOrUpload": "Paste or upload",
+    "sampleGames": "Sample games",
+    "close": "Close this match and return to import",
+    "confirmClose": "Close this match and return to import?",
+    "moves": "Moves",
+    "movesHint": "click to show · hides for stream-safe viewing",
+    "badgesShow": "Show engine icons on board",
+    "badgesHide": "Hide engine icons on board",
+    "firstMove": "First move (Home)",
+    "prevMove": "Previous (←)",
+    "nextMove": "Next (→)",
+    "lastMove": "Last (End)",
+    "mainLine": "Return to main line (↑)",
+    "mainLineShort": "↩ main",
+    "startPos": "Starting position. Click ▶ or press → to step into the game.",
+    "enginePrefers": "Engine prefers <b>{move}</b>",
+    "engineAgrees": "Engine agrees: top choice",
+    "eval": "Eval <b>{score}</b>",
+    "sidePlayed": "{side} played <b>{san}</b>",
+    "enginePrefersLabel": "Engine prefers",
+    "engineAgreesLabel": "Engine agrees",
+    "topChoiceShort": "top choice",
+    "evalLabel": "Eval",
+    "noMatch": "No match loaded.",
+    "untitled": "Untitled",
+    "ply": "ply {n}/{total}",
+    "variation": "(variation)",
+    "act": {
+      "captures": "captures a {piece}",
+      "castleK": "castles kingside",
+      "castleQ": "castles queenside",
+      "promotes": "promotes to a {piece}",
+      "check": "gives check",
+      "checkmate": "delivers checkmate",
+      "and": "and",
+      "leadIn": "Move {tactics}."
+    },
+    "drawTools": {
+      "select": "Select",
+      "erase": "Erase",
+      "arrow": "Arrow",
+      "line": "Line",
+      "box": "Box",
+      "circle": "Circle",
+      "pen": "Pen",
+      "text": "Text",
+      "strokeWidth": "Stroke width",
+      "deleteSelected": "Delete selected (Del)",
+      "clearAll": "Clear all shapes on this move"
+    }
+  },
+
+  "learn": {
+    "title": "Learn Chess",
+    "lede": "Guided lessons across the big topics. Tap a category to dive in.",
+    "noData": "Lessons are loading… If this persists, make sure the app is served (not opened via file://).",
+    "successDefault": "Exactly right.",
+    "failDefault": "Not quite. Try again.",
+    "play": "Play move",
+    "next": "Next →",
+    "finish": "Finish",
+    "completedHeader": "Lesson complete",
+    "completedBody": "You finished {title}. Ready for the next one?",
+    "backToLessons": "Back to lessons",
+    "categoryCount": "{done}/{total}"
+  },
+
+  "puzzles": {
+    "title": "Puzzles",
+    "lede": "Pick a theme to practice. Each set teaches one pattern.",
+    "prompt": "Find the best move.",
+    "counter": "Puzzle {n} of {total}",
+    "correct": "✅ Correct!",
+    "wrong": "❌ Not this move. Try again.",
+    "solved": "Solved!",
+    "solvedCelebrate": "✅ Solved — great job!",
+    "noData": "Puzzles are loading…",
+    "turnLabel": "{side} to move.",
+    "themeCount": "{n} puzzles",
+    "themeCompleteHeader": "🏆 Theme complete.",
+    "themeCompleteBody": "You've finished all puzzles in {theme}."
+  },
+
+  "coachTab": {
+    "title": "AI Coach",
+    "providerLabel": "Provider",
+    "builtin": "Built-in",
+    "changeInSettings": "Change in Settings",
+    "chip": {
+      "best": "Best move?",
+      "tactics": "Tactics?",
+      "explain": "Explain last",
+      "plans": "Plans"
+    },
+    "chipQuery": {
+      "best": "What's the best move in this position?",
+      "tactics": "What tactical motifs exist here?",
+      "explain": "Explain my last move.",
+      "plans": "What's the plan for both sides?"
+    },
+    "analyzeQuestion": "Analyze the current position.",
+    "analyzePrompt": "Give a clear analysis of this position: key features, threats, candidate moves, and a recommendation with reasons."
+  },
+
+  "promotion": {
+    "title": "Promote pawn"
+  },
+
+  "review": {
+    "title": "Match Review",
+    "analyzing": "Analyzing…",
+    "progress": "Analyzing move {i} of {total}…",
+    "engineTopChoice": "Engine's top choice: <b>{san}</b>",
+    "enginePreferred": "Engine preferred {best}.",
+    "badge": {
+      "good": "Best",
+      "ok": "Ok",
+      "inaccuracy": "Inaccuracy",
+      "mistake": "Mistake",
+      "blunder": "Blunder"
+    },
+    "tally": {
+      "best": "Best",
+      "inaccurate": "Inaccurate",
+      "mistake": "Mistake",
+      "blunder": "Blunder"
+    }
+  },
+
+  "lessons": {
+    "categories": {
+      "basics":   { "name": "Basics",   "description": "The fundamentals every chess player must know." },
+      "openings": { "name": "Openings", "description": "Start every game with purpose." },
+      "tactics":  { "name": "Tactics",  "description": "Patterns that win material and games." },
+      "endgames": { "name": "Endgames", "description": "Convert won positions; save lost ones." },
+      "strategy": { "name": "Strategy", "description": "Think in plans, not just moves." },
+      "attack":   { "name": "Attack",   "description": "Mating attacks and king hunts." }
+    }
+  },
+
+  "puzzleThemes": {
+    "mate-in-1":    { "name": "Mate in 1",          "description": "Find the killing blow — deliver checkmate in a single move." },
+    "mate-in-2":    { "name": "Mate in 2",          "description": "Two-move forced mates. Think one step ahead." },
+    "forks":        { "name": "Forks",              "description": "Attack two pieces at once and win material." },
+    "pins-skewers": { "name": "Pins & Skewers",     "description": "Line up the enemy pieces and win the one behind." },
+    "back-rank":    { "name": "Back Rank",          "description": "Exploit the king trapped behind its own pawns." },
+    "tactics-mix":  { "name": "Mixed Tactics",      "description": "A variety of tactical patterns — find the best move." },
+    "discovered":   { "name": "Discovered Attacks", "description": "Move one piece, unleash another." },
+    "endgame":      { "name": "Endgame Technique", "description": "Convert winning endgames cleanly." }
+  }
+}

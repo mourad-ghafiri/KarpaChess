@@ -1,0 +1,38 @@
+{
+  "id": "london-system",
+  "title": "伦敦体系",
+  "summary": "通用体系——每次都同一套布局",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "为什么下伦敦体系?",
+      "text": "伦敦体系是\"通用型\"开局——无论黑方如何回应,白方都摆同一套阵型。非常适合初学者:理论少、模式可靠。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "1.d4",
+      "targetSan": [
+        "d4"
+      ],
+      "hint": "后前兵推两格。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2",
+      "prompt": "出黑格象:2.Bf4",
+      "targetSan": [
+        "Bf4"
+      ],
+      "hint": "象在 e3 之前就出动,以免被自己的兵挡住。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/pppppppp/5n2/8/3P1B2/8/PPP1PPPP/RNBQKBNR b KQkq - 2 2",
+      "title": "完整阵型",
+      "text": "完整的伦敦配方:d4、Bf4、Nf3、e3、c3、Nbd2、Bd3、0-0。坚实、近乎对称、难以攻破。马格努斯·卡尔森在世界冠军赛中用过它。"
+    }
+  ]
+}

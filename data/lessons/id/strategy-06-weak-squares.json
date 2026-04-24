@@ -1,0 +1,20 @@
+{
+  "id": "weak-squares",
+  "title": "Kotak Lemah dan Warna",
+  "summary": "Kotak yang tidak bisa dipertahankan lawan",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "Lubangnya",
+      "text": "Kotak lemah adalah kotak yang tidak bisa dipertahankan lawan dengan pion. Biasanya akibat dorongan pion yang ceroboh. Jika kuda mendarat di sana dan tidak bisa diusir, ia menjadi titik kuat yang tak tergerakkan."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "Kompleks Warna",
+      "text": "Lebih dalam dari kotak individu adalah \"kompleks warna\" — kelompok kotak SATU warna yang secara sistematis lemah. Jika pion lawan semua di kotak terang, kotak gelapnya lemah. Bidak kotak gelap Anda menjadi monster."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "sicilian",
+  "title": "La Defensa Siciliana",
+  "summary": "La respuesta más afilada de las Negras a 1.e4",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "La Réplica Más Afilada",
+      "text": "Cuando las Blancas juegan 1.e4, la respuesta más combativa de las Negras es 1...c5 — la Defensa Siciliana. Las Negras no ceden nada en el centro y preparan un contrataque en el flanco de dama. Es la defensa más popular en todos los niveles del ajedrez." },
+    { "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "Juega la primera jugada más principista de las Blancas.",
+      "targetSan": ["e4"],
+      "hint": "1.e4 — la clásica apertura del peón rey." },
+    { "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+      "prompt": "Las Negras juegan la Siciliana — empuja el peón c.",
+      "targetSan": ["c5"],
+      "hint": "1...c5 lucha por d4 sin bloquear la columna c." },
+    { "type": "play",
+      "fen": "rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "Respuesta clásica de las Blancas: desarrolla el caballo.",
+      "targetSan": ["Nf3"],
+      "hint": "2.Nf3 prepara d4, la Siciliana Abierta." },
+    { "type": "teach",
+      "fen": "rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
+      "title": "¿Por Qué la Siciliana?",
+      "text": "A diferencia de ...e5 que refleja la jugada de las Blancas, ...c5 crea juego asimétrico. Las Blancas atacan en el flanco de rey; las Negras contraatacan en el de dama. Las partidas son afiladas y decisivas — los triunfos, no las tablas, son comunes." }
+  ]
+}

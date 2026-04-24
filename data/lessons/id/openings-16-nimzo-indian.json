@@ -1,0 +1,26 @@
+{
+  "id": "nimzo-indian-advanced",
+  "title": "Pertahanan Nimzo-Indian",
+  "summary": "Mahakarya strategis — ikat dan kontrol",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqk2r/pppp1ppp/4pn2/8/1bPP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 3 4",
+      "title": "Ikatan Bb4",
+      "text": "Nimzo-Indian (1.d4 Nf6 2.c4 e6 3.Nc3 Bb4) mengikat kuda c3 dan mengancam menggandakan pion Putih dengan ...Bxc3+. Dinamai sesuai Aron Nimzowitsch, bapak catur hipermodern."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqk2r/pppp1ppp/4pn2/8/1bPP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 3 4",
+      "title": "Dua Variasi Utama",
+      "text": "Putih memilih: 4.Qc2 (menghindari pion ganda, mengembangkan secara alami), 4.e3 (Rubinstein — pembangunan klasik), atau 4.f3 (Kmoch — ambisius). Masing-masing mengarah ke babak tengah yang banyak dipelajari di mana Hitam memainkan untuk mengeksploitasi pion-c ganda."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqk2r/pppp1ppp/2n1pn2/8/1bPP4/2N1P3/PP3PPP/R1BQKBNR w KQkq - 2 5",
+      "title": "Kedalaman Strategis",
+      "text": "Nimzo adalah salah satu pembukaan yang paling kaya secara strategis. Hitam sering mengorbankan pasangan gajah untuk menggandakan pion Putih, bertaruh bahwa struktur pion yang rusak lebih berat daripada keunggulan gajah. Catur posisional klasik."
+    }
+  ]
+}

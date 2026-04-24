@@ -1,0 +1,20 @@
+{
+  "id": "exchange-sacrifice",
+  "title": "Pengorbanan Pertukaran",
+  "summary": "Relakan benteng demi bidak ringan",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "Merelakan Benteng",
+      "text": "Pengorbanan pertukaran (benteng demi bidak ringan) adalah salah satu konsep paling maju. Petrosian adalah pemain piawainya — mengorbankan \"pertukaran\" (benteng demi gajah/kuda) demi keunggulan posisional jangka panjang."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "Kapan Berhasil",
+      "text": "Pengorbanan pertukaran yang baik memerlukan: (1) struktur yang dihasilkan menguntungkan Anda jangka panjang, (2) bidak ringan Anda kuat (pos terdepan, pasangan gajah), (3) benteng lawan yang tersisa tidak punya kolom bagus. Rxc3 dari Petrosian adalah contoh klasik."
+    }
+  ]
+}

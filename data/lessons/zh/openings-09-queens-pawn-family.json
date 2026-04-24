@@ -1,0 +1,29 @@
+{
+  "id": "queens-pawn-family",
+  "title": "1.d4——后前兵开局",
+  "summary": "理解 1.d4 体系",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
+      "title": "阵地的推进",
+      "text": "1.d4 占据中心并为 c4 做准备。局面比 1.e4 更注重阵地——围绕兵形和据点的慢战略较量。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
+      "title": "主要回应",
+      "text": "黑方的选择:1...d5(古典,走向后翼弃兵)、1...Nf6(印度防御——超现代派)、1...f5(荷兰防御)、1...e6(灵活)。印度防御是现代特级大师的选择。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
+      "prompt": "走古典的 1...d5——坚持己方主张。",
+      "targetSan": [
+        "d5"
+      ],
+      "hint": "1...d5 与白方对称。古典、坚实、受人尊敬。"
+    }
+  ]
+}

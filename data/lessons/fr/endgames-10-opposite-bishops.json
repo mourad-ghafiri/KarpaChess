@@ -1,0 +1,20 @@
+{
+  "id": "opposite-bishops",
+  "title": "Fous de couleurs opposées",
+  "summary": "Tendances à la nulle et potentiel d'attaque",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "4k3/8/8/4b3/8/8/8/4KB2 w - - 0 1",
+      "title": "La finale nulle",
+      "text": "Les fous de couleurs opposées (un sur cases claires, un sur cases foncées) créent des finales notoirement nulles. Même 2 pions d'avance ne suffisent souvent pas à gagner — le camp faible peut simplement bloquer sur la couleur de son fou."
+    },
+    {
+      "type": "teach",
+      "fen": "r3k3/8/8/4b3/8/8/8/R3KB2 w - - 0 1",
+      "title": "Exception : avec les dames",
+      "text": "PARADOXE : en MILIEU DE PARTIE, les fous de couleurs opposées FAVORISENT l'attaquant. Si vous attaquez, votre fou n'a pas de défenseur de couleur opposée. De nombreuses attaques brillantes exploitent ce déséquilibre."
+    }
+  ]
+}

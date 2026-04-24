@@ -1,0 +1,38 @@
+{
+  "id": "french-defense-deep",
+  "title": "法国防御",
+  "summary": "坚实的兵链,具备反击潜力",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+      "title": "不同的哲学",
+      "text": "法国防御(1...e6)让出中心空间但建立花岗岩般的兵链。黑方计划走 ...d5、...c5、...Nc6,以拆解白方的中心。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+      "prompt": "1...e6——法国防御阵型。",
+      "targetSan": [
+        "e6"
+      ],
+      "hint": "准备第二步的 ...d5。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "白方走 2.d4——占据中心。",
+      "targetSan": [
+        "d4"
+      ],
+      "hint": "建立大中心。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/ppp2ppp/4p3/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
+      "title": "封闭的中心",
+      "text": "在 2...d5 之后,白方必须决定:推进(e5,得空间但封闭中心)、交换(exd5,简化)、或古典式(Nc3,战术)。法国防御教你如何在兵链中进攻与防守。"
+    }
+  ]
+}

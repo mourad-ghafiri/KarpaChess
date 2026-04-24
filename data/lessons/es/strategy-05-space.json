@@ -1,0 +1,20 @@
+{
+  "id": "space-advantage",
+  "title": "Ventaja de Espacio",
+  "summary": "Más casillas, más opciones",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/3PP3/8/PPP2PPP/RNBQKBNR b KQkq d3 0 2",
+      "title": "¿Qué es el Espacio?",
+      "text": "El espacio es el número de casillas que tus piezas pueden alcanzar — sobre todo en la mitad del rival. El bando con más espacio tiene más movilidad de piezas y mayor facilidad de coordinación."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/3PP3/8/PPP2PPP/RNBQKBNR b KQkq d3 0 2",
+      "title": "Explotar el Espacio",
+      "text": "Cuando tengas más espacio: EVITA los cambios (tu rival estrecho necesita aire). PRESIONA despacio — crea amenazas, traslada piezas por el tablero y luego golpea."
+    }
+  ]
+}

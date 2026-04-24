@@ -1,0 +1,20 @@
+{
+  "id": "quiet-move",
+  "title": "平静着法",
+  "summary": "不将军却致命的一步",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "最难看见的一步",
+      "text": "业余棋手容易看到将军和吃子。大师却能看到平静着法——不立即攻击任何东西却制造无法阻挡的威胁。这种着法最难发现,因为它们\"不喧闹\"。"
+    },
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "训练",
+      "text": "当你确信找到了胜着时,始终问:\"是否有更好的平静着法?\" 有时车或象后退反而造成毁灭性的威胁。训练自己去考虑它们。"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "k-p-vs-k",
+  "title": "Raja dan Pion vs Raja",
+  "summary": "Babak akhir paling umum — kuasai",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "4k3/8/8/8/4P3/8/8/4K3 w - - 0 1",
+      "title": "Babak Akhir Inti",
+      "text": "Setiap pemain catur harus hafal R+B vs R di luar kepala. Hasilnya bergantung pada SATU hal: bisakah pihak yang lebih kuat membawa rajanya DI DEPAN pion dengan oposisi? Jika ya, pion promosi. Jika tidak, remis."
+    },
+    {
+      "type": "teach",
+      "fen": "4k3/8/4K3/4P3/8/8/8/8 w - - 0 1",
+      "title": "Kotak Kunci",
+      "text": "Untuk pion di baris ke-5 atau lebih rendah, \"kotak kunci\" adalah tiga kotak secara diagonal di depannya. Jika raja Anda mencapai salah satunya, Anda menang. Pelajari kotak kunci untuk setiap posisi pion."
+    },
+    {
+      "type": "play",
+      "fen": "4k3/8/4K3/4P3/8/8/8/8 w - - 0 1",
+      "prompt": "Jalan menuju kotak kunci.",
+      "targetSan": [
+        "Kd6",
+        "Kf6"
+      ],
+      "hint": "Kd6 atau Kf6 sama-sama merebut oposisi."
+    }
+  ]
+}

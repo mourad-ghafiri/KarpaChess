@@ -1,0 +1,29 @@
+{
+  "id": "queens-pawn-family",
+  "title": "1.d4 — Pion Menteri",
+  "summary": "Memahami sistem 1.d4",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
+      "title": "Dorongan Posisional",
+      "text": "1.d4 merebut pusat dan menyiapkan c4. Permainan lebih posisional daripada 1.e4 — pertempuran strategis lambat atas struktur pion dan pos terdepan."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
+      "title": "Balasan Utama",
+      "text": "Pilihan Hitam: 1...d5 (klasik, mengarah ke Gambit Menteri), 1...Nf6 (pertahanan Indian — hipermodern), 1...f5 (Belanda), 1...e6 (fleksibel). Pertahanan Indian adalah pilihan grandmaster modern."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
+      "prompt": "Mainkan 1...d5 klasik — klaim hak Anda sendiri.",
+      "targetSan": [
+        "d5"
+      ],
+      "hint": "1...d5 mencerminkan Putih. Klasik, kokoh, dihormati."
+    }
+  ]
+}

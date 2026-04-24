@@ -1,0 +1,21 @@
+{
+  "id": "king-safety",
+  "title": "Sécurité du roi",
+  "summary": "Un roi en sécurité gagne les parties",
+  "difficulty": "beginner",
+  "steps": [
+    { "type": "teach",
+      "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQK2R w KQkq - 0 1",
+      "title": "Mettez-le à l'abri",
+      "text": "Les pires ennemis du roi sont les colonnes et diagonales ouvertes qui mènent à lui. Le roque le sort du centre pour l'amener dans une forteresse de pions. Gardez cette forteresse intacte — ne poussez pas les pions autour de votre roque sans raison concrète." },
+    { "type": "play",
+      "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQK2R w KQkq - 0 1",
+      "prompt": "Roquez votre roi en sécurité.",
+      "targetSan": ["O-O"],
+      "hint": "Petit roque — le choix le plus courant." },
+    { "type": "teach",
+      "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 b kq - 1 1",
+      "title": "Après le roque",
+      "text": "Ce n'est pas fini ! Gardez les pions devant : f2, g2, h2. Le cavalier en f3 défend h2. Ne jouez pas g3 ou h3 sans nécessité — chaque coup de pion près de votre roi crée une faiblesse pour plus tard." }
+  ]
+}

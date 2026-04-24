@@ -1,0 +1,26 @@
+{
+  "id": "kings-indian-advanced",
+  "title": "Pertahanan King's Indian",
+  "summary": "Serangan balik hipermodern — pilihan pejuang",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqk2r/ppppppbp/5np1/8/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 4 5",
+      "title": "Biarkan Mereka Membangun Pusat",
+      "text": "King's Indian (1.d4 Nf6 2.c4 g6) adalah pertahanan hipermodern terbaik. Hitam membiarkan Putih membangun pusat pion yang besar, lalu menyerangnya dengan ...e5 atau ...c5. Terkenal menghasilkan serangan sisi raja yang ganas — senjata pilihan Kasparov."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2N2N2/PP3PPP/R1BQKB1R w KQ - 0 6",
+      "title": "Variasi Utama Klasik",
+      "text": "Setelah Variasi Utama Klasik, Putih memiliki pusat yang besar. Rencana Hitam: dorong ...e5, kunci pusat dengan ...d4 blokade atau ...f5, lalu luncurkan pion sisi raja. Kedua pihak menyerang bersamaan di sayap yang berlawanan — catur dengan kecepatan penuh."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqk2r/ppppppbp/5np1/8/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 4 5",
+      "title": "Mengapa Ini Sulit",
+      "text": "King's Indian memerlukan kalkulasi yang akurat — satu langkah pion yang salah dan sisi raja Anda runtuh. Tetapi jika Anda mencintai ketidakseimbangan dinamis dan serangan pada raja, tidak ada yang lebih baik."
+    }
+  ]
+}

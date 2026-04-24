@@ -1,0 +1,26 @@
+{
+  "id": "gruenfeld-advanced",
+  "title": "Pertahanan Grünfeld",
+  "summary": "Sistem hipermodern serangan balik",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/ppp1pp1p/5np1/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4",
+      "title": "Biarkan Mereka Berlebihan",
+      "text": "Grünfeld (1.d4 Nf6 2.c4 g6 3.Nc3 d5) adalah impian petinju balik. Hitam membiarkan Putih membangun pusat besar lalu menyerangnya dengan bidak sisi menteri dan gebrakan pion."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/ppp1pp1p/5np1/3P4/2P5/2N5/PP2PPPP/R1BQKBNR b KQkq - 0 4",
+      "title": "Variasi Tukar",
+      "text": "Setelah 4.cxd5 Nxd5 5.e4, kuda Hitam mundur dan Putih memiliki pusat besar — tetapi Hitam mengancam menghancurkannya dengan bidak. Ujian kunci catur dinamis: pusat statis vs aktivitas bidak."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/ppp1pp1p/5np1/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4",
+      "title": "Tema Grünfeld Klasik",
+      "text": "Rencana Hitam: fianchetto di g7, tekan d4 dengan ...c5, rokade, ...Nc6, ...Bg4. Gajah fianchetto di g7 adalah kuncinya — ia memancarkan kekuatan ke posisi Putih, terutama setelah pecahnya ...d4."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "outposts",
+  "title": "据点",
+  "summary": "敌方兵无法攻击的格子",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "梦想之格",
+      "text": "据点是对方半边棋盘上敌方兵无法攻击的格子。当马或象落在上面时,几乎不可动摇。黑方兵链前的 d5 或 e5 马是残局的主宰。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/pppp1ppp/5n2/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+      "title": "如何制造据点",
+      "text": "据点出现在对方削弱兵形之时——通常因推进侧翼兵或笨拙的吃子。千万不要急于换掉对手想换的子——他可能正是在缓解未来据点的压力。"
+    }
+  ]
+}

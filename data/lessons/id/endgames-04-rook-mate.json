@@ -1,0 +1,21 @@
+{
+  "id": "rook-mate",
+  "title": "R + B vs R",
+  "summary": "Giring raja ke tepi dan lakukan skakmat",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "7k/8/5K2/8/8/8/8/6R1 w - - 0 1",
+      "title": "Tekniknya",
+      "text": "Raja dan benteng melawan raja selalu menang untuk pihak yang lebih kuat. Tekniknya: gunakan benteng untuk memotong raja lawan, lalu jalankan raja Anda di sampingnya untuk menggiringnya ke tepi. Akhirnya, lakukan skakmat di baris belakang." },
+    { "type": "teach",
+      "fen": "7k/5K1p/8/8/8/8/8/6R1 w - - 0 1",
+      "title": "Jaring Skakmat",
+      "text": "Ketika raja lawan terpojok di tepi dan raja penyerang menghentikan segala pelarian, benteng Anda meluncur masuk untuk skakmat. Inilah polanya — hafalkan." },
+    { "type": "play",
+      "fen": "7k/5K1p/8/8/8/8/8/6R1 w - - 0 1",
+      "prompt": "Lakukan skakmat.",
+      "targetSan": ["Rg8#"],
+      "hint": "Pion raja sendiri adalah dinding penjaranya." }
+  ]
+}

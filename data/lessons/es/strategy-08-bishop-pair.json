@@ -1,0 +1,20 @@
+{
+  "id": "bishop-pair",
+  "title": "La Pareja de Alfiles",
+  "summary": "Dos alfiles valen más de lo que crees",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "¿Por Qué Dos Alfiles?",
+      "text": "Dos alfiles cubren las 64 casillas entre ambos — uno en oscuras, otro en claras. La pareja de alfiles vale ~0.5 peones más que alfil+caballo o dos caballos. Esta ventaja se acrecienta en posiciones abiertas."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Cuándo Cambiar",
+      "text": "Si tienes la pareja de alfiles: abre la posición, cambia PEONES no piezas, evita permitir un puesto avanzado para caballo. Si entregaste la pareja: cierra la posición, crea cadenas de peones, lucha por puestos avanzados para caballos."
+    }
+  ]
+}

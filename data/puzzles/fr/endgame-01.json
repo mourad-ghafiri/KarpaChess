@@ -1,0 +1,10 @@
+{
+  "id": "endgame-01",
+  "fen": "4k3/8/4K3/4P3/8/8/8/8 w - - 0 1",
+  "solution": [
+    "Kd6",
+    "Kd8",
+    "e6"
+  ],
+  "hint": "Prenez l'opposition, puis poussez."
+}

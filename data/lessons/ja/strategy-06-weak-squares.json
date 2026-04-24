@@ -1,0 +1,20 @@
+{
+  "id": "weak-squares",
+  "title": "弱いマスと色",
+  "summary": "相手が守れないマス",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "穴",
+      "text": "弱いマスとは、相手がポーンで守れないマスのことです。たいていは不用意なポーン突きの結果です。そこへナイトが到達して追い返せなければ、動かせない強点になります。"
+    },
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "色の複合",
+      "text": "個々のマスより深い概念が「色の複合」です。体系的に弱い一色のマス群のこと。相手のポーンがすべて白マスにあれば、黒マスが弱い。あなたの黒マスの駒たちは化け物になります。"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "open-files",
+  "title": "Columnas Abiertas",
+  "summary": "Vías de invasión para tus torres",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r3k2r/ppp2ppp/8/8/8/8/PPP2PPP/R3K2R w KQkq - 0 1",
+      "title": "Por Qué las Torres Aman las Columnas Abiertas",
+      "text": "Las torres son temibles en columnas abiertas (sin peones) o semiabiertas (sin peón PROPIO). Controlar una columna abierta suele decidir partidas en el medio juego — sobre todo una que apunte al rey enemigo."
+    },
+    {
+      "type": "teach",
+      "fen": "r3k2r/ppp2ppp/8/8/8/8/PPP2PPP/R3K2R w KQkq - 0 1",
+      "title": "Doblar y la Séptima Fila",
+      "text": "El mejor control de columna es DOBLAR las torres (ambas torres en la misma columna). Desde ahí, penetra a la séptima fila — \"cerdos en la séptima\" — donde atacan peones y atrapan al rey enemigo."
+    }
+  ]
+}

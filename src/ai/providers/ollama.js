@@ -1,5 +1,5 @@
 /** Ollama — local server, slightly different API (/api/chat, no auth, no `messages.choices`). */
-import { AIProvider, COACH_SYSTEM, buildContextBlock } from './base.js';
+import { AIProvider, coachSystemPrompt, buildContextBlock } from './base.js';
 
 export class OllamaProvider extends AIProvider {
   get id() { return 'ollama'; }
@@ -13,7 +13,7 @@ export class OllamaProvider extends AIProvider {
       model: this.getModel(),
       stream: false,
       messages: [
-        { role: 'system', content: COACH_SYSTEM },
+        { role: 'system', content: coachSystemPrompt() },
         { role: 'user',   content: `Position:\n${buildContextBlock(ctx)}\n\nQuestion: ${question}` }
       ]
     };

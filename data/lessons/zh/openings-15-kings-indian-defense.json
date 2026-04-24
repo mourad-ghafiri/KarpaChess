@@ -1,0 +1,26 @@
+{
+  "id": "kings-indian-advanced",
+  "title": "王翼印度防御",
+  "summary": "超现代派反击——斗士的选择",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqk2r/ppppppbp/5np1/8/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 4 5",
+      "title": "让他们先建中心",
+      "text": "王翼印度防御(1.d4 Nf6 2.c4 g6)是超现代派的终极防御。黑方让白方建立庞大的兵中心,然后用 ...e5 或 ...c5 予以打击。以猛烈的王翼进攻闻名——卡斯帕罗夫的招牌武器。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2N2N2/PP3PPP/R1BQKB1R w KQ - 0 6",
+      "title": "古典主变",
+      "text": "经过古典主变后,白方有巨大的中心。黑方的计划:推 ...e5,以 ...d4 封堵或 ...f5 封闭中心,然后发动王翼兵。双方同时在不同翼攻击——全速飞驰的棋局。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqk2r/ppppppbp/5np1/8/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 4 5",
+      "title": "难度所在",
+      "text": "王翼印度防御要求精确计算——一步走错王翼就崩溃。但如果你热爱动态的不平衡和对王的攻击,没什么比它更好。"
+    }
+  ]
+}

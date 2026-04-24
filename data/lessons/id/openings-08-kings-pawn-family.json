@@ -1,0 +1,29 @@
+{
+  "id": "kings-pawn-family",
+  "title": "1.e4 — Pion Raja",
+  "summary": "Gambaran umum setiap balasan utama 1.e4",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+      "title": "Pembukaan Romantis",
+      "text": "1.e4 membuka garis untuk menteri dan gajah serta berjuang untuk pusat dengan pion. Tajam, taktis, dan langkah pertama paling populer dalam sejarah catur."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+      "title": "Balasan Utama Hitam",
+      "text": "Hitam memiliki beberapa jawaban serius: 1...e5 (klasik, simetris), 1...c5 (Sisilia, asimetris), 1...e6 (French), 1...c6 (Caro-Kann), 1...d5 (Skandinavia). Masing-masing mengarah ke permainan yang berbeda."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+      "prompt": "Balas 1.e4 dengan balasan klasik.",
+      "targetSan": [
+        "e5"
+      ],
+      "hint": "1...e5 mencerminkan klaim Putih di pusat."
+    }
+  ]
+}

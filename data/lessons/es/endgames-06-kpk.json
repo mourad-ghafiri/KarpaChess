@@ -1,0 +1,30 @@
+{
+  "id": "k-p-vs-k",
+  "title": "Rey y Peón contra Rey",
+  "summary": "El final más común — domínalo",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "4k3/8/8/8/4P3/8/8/4K3 w - - 0 1",
+      "title": "El Final Esencial",
+      "text": "Todo ajedrecista debe conocer R+P vs R a la perfección. El resultado depende de UNA cosa: ¿puede el bando fuerte colocar su rey DELANTE del peón con oposición? Si sí, el peón promociona. Si no, son tablas."
+    },
+    {
+      "type": "teach",
+      "fen": "4k3/8/4K3/4P3/8/8/8/8 w - - 0 1",
+      "title": "Casillas Clave",
+      "text": "Para un peón en la quinta fila o más atrás, las \"casillas clave\" son las tres casillas diagonalmente delante de él. Si tu rey alcanza cualquiera, ganas. Aprende las casillas clave para cada posición del peón."
+    },
+    {
+      "type": "play",
+      "fen": "4k3/8/4K3/4P3/8/8/8/8 w - - 0 1",
+      "prompt": "Avanza hacia una casilla clave.",
+      "targetSan": [
+        "Kd6",
+        "Kf6"
+      ],
+      "hint": "Kd6 o Kf6 toman la oposición."
+    }
+  ]
+}

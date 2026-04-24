@@ -1,0 +1,47 @@
+{
+  "id": "ruy-lopez-basics",
+  "title": "La Ruy Lopez",
+  "summary": "La plus ancienne ouverture sérieuse aux échecs",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "L'espagnole",
+      "text": "Nommée d'après un prêtre espagnol du XVIe siècle, la Ruy Lopez (ou \"espagnole\") met la pression sur le pion e5 via le cavalier c6. Elle mène à des milieux de partie riches et nuancés. Tous les champions du monde, de Steinitz à Carlsen, l'ont jouée."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "Jouez 1.e4",
+      "targetSan": [
+        "e4"
+      ],
+      "hint": "Pion roi de deux cases."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "Développez le cavalier roi : 2.Nf3",
+      "targetSan": [
+        "Nf3"
+      ],
+      "hint": "Attaque e5, développe une pièce."
+    },
+    {
+      "type": "play",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+      "prompt": "Le coup caractéristique : 3.Bb5",
+      "targetSan": [
+        "Bb5"
+      ],
+      "hint": "Cloue indirectement le cavalier, menace de saper e5."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+      "title": "Idées principales",
+      "text": "Le fou ne gagne pas réellement e5 immédiatement (après 3...a6 4.Bxc6 dxc6, le pion e des Noirs est toujours défendu). La VRAIE menace est de perturber la structure noire et de l'étrangler positionnellement. Les échecs classiques à leur meilleur."
+    }
+  ]
+}

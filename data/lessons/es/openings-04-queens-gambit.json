@@ -1,0 +1,26 @@
+{
+  "id": "queens-gambit",
+  "title": "El Gambito de Dama",
+  "summary": "Ofrece un peón para controlar el centro",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "El Clásico Peón de Dama",
+      "text": "El Gambito de Dama comienza con 1.d4 d5 2.c4. Las Blancas ofrecen el peón c. Si las Negras aceptan, abandonan el centro. Si rehúsan (lo más común a nivel maestro), las Blancas conservan un fuerte control central." },
+    { "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "Abre con el peón de dama.",
+      "targetSan": ["d4"],
+      "hint": "1.d4 — empuje central clásico." },
+    { "type": "play",
+      "fen": "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "Ahora ofrece el gambito.",
+      "targetSan": ["c4"],
+      "hint": "2.c4 — ataca el peón d5 con un peón de flanco." },
+    { "type": "teach",
+      "fen": "rnbqkbnr/ppp1pppp/8/3p4/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2",
+      "title": "¿Rehusar o Aceptar?",
+      "text": "Si las Negras aceptan (2...dxc4), las Blancas suelen recuperar el peón rápidamente. Si rehúsan (2...e6, 2...c6, 2...Nf6), la partida se convierte en una batalla posicional por las casillas centrales. De un modo u otro, las Blancas obtienen una fuerte iniciativa." }
+  ]
+}

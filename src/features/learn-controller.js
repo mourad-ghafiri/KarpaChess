@@ -6,6 +6,7 @@ import * as Chess from '../engine/chess.js';
 import { $ } from '../core/dom.js';
 import { MODE_IDS } from '../core/constants.js';
 import { normalizeSan } from '../engine/chess.js';
+import { i18n } from '../core/i18n.js';
 
 export class LearnController {
   constructor({ gameState, content, prefs, learnState, sound, toast }) {
@@ -48,19 +49,21 @@ export class LearnController {
     list.innerHTML = '';
     const data = this.content.lessons;
     if (!data) {
-      list.innerHTML = '<div class="review-empty">Lessons are loading… If this persists, make sure the app is served (not opened via file://).</div>';
+      list.innerHTML = `<div class="review-empty">${esc(i18n.t('learn.noData'))}</div>`;
       return;
     }
     for (const cat of data.categories) {
       const doneCount = cat.lessons.filter(l => this.prefs.isLessonComplete(l.id)).length;
+      const name = i18n.t(`lessons.categories.${cat.id}.name`);
+      const desc = i18n.t(`lessons.categories.${cat.id}.description`);
       const btn = document.createElement('button');
       btn.type = 'button';
       btn.className = 'category-card';
       btn.innerHTML = `
         <div class="cat-icon">${cat.icon || '♟'}</div>
         <div>
-          <div class="cat-title">${esc(cat.name)}</div>
-          <div class="cat-desc">${esc(cat.description || '')}</div>
+          <div class="cat-title">${esc(name)}</div>
+          <div class="cat-desc">${esc(desc)}</div>
         </div>
         <div class="cat-count">${doneCount}/${cat.lessons.length}</div>`;
       btn.addEventListener('click', () => { this.learnState.goToCategory(cat.id); this.render(); });
@@ -71,8 +74,8 @@ export class LearnController {
   #renderLessonList() {
     const cat = this.#currentCategory();
     if (!cat) { this.learnState.goToCategories(); this.render(); return; }
-    $('#learn-cat-title').textContent = cat.name;
-    $('#learn-cat-desc').textContent = cat.description || '';
+    $('#learn-cat-title').textContent = i18n.t(`lessons.categories.${cat.id}.name`);
+    $('#learn-cat-desc').textContent = i18n.t(`lessons.categories.${cat.id}.description`);
     const list = $('#learn-lesson-list');
     list.innerHTML = '';
     for (const lesson of cat.lessons) {
@@ -138,12 +141,12 @@ export class LearnController {
     if (step.type === 'teach') {
       const next = document.createElement('button');
       next.className = 'btn primary'; next.type = 'button';
-      next.textContent = this.learnState.stepIdx === total - 1 ? 'Finish' : 'Next →';
+      next.textContent = this.learnState.stepIdx === total - 1 ? i18n.t('learn.finish') : i18n.t('learn.next');
       next.addEventListener('click', () => this.#advance());
       actions.appendChild(next);
     } else {
       const hint = document.createElement('button');
-      hint.className = 'btn ghost'; hint.type = 'button'; hint.textContent = 'Show Hint';
+      hint.className = 'btn ghost'; hint.type = 'button'; hint.textContent = i18n.t('ui.button.showHint');
       hint.addEventListener('click', () => {
         $('#learn-step-feedback').textContent = `💡 ${step.hint || ''}`;
         $('#learn-step-feedback').className = 'step-feedback';
@@ -167,14 +170,14 @@ export class LearnController {
     content.className = 'lesson-complete';
     content.innerHTML = `
       <div class="trophy">🏆</div>
-      <h3>Lesson complete</h3>
-      <p>You finished <b>${esc(lesson.title)}</b>. Ready for the next one?</p>`;
+      <h3>${esc(i18n.t('learn.completedHeader'))}</h3>
+      <p>${esc(i18n.t('learn.completedBody', { title: lesson.title }))}</p>`;
     $('#learn-progress').style.width = '100%';
     $('#learn-step-feedback').textContent = '';
     const actions = $('#learn-step-actions');
     actions.innerHTML = '';
     const back = document.createElement('button');
-    back.className = 'btn primary'; back.type = 'button'; back.textContent = 'Back to lessons';
+    back.className = 'btn primary'; back.type = 'button'; back.textContent = i18n.t('learn.backToLessons');
     back.addEventListener('click', () => {
       this.learnState.goToCategory(this.learnState.catId);
       this.gameState.setMode(MODE_IDS.PRACTICE);
@@ -195,12 +198,12 @@ export class LearnController {
     const played = normalizeSan(move.san);
     const ok = targets.some(t => normalizeSan(t) === played);
     if (ok) {
-      $('#learn-step-feedback').textContent = '✅ ' + (step.successText || 'Exactly right.');
+      $('#learn-step-feedback').textContent = '✅ ' + (step.successText || i18n.t('learn.successDefault'));
       $('#learn-step-feedback').className = 'step-feedback good';
       this.sound.good();
       setTimeout(() => this.#advance(), 650);
     } else {
-      $('#learn-step-feedback').textContent = '❌ ' + (step.failText || 'Not quite. Try again.') + (step.hint ? `  💡 ${step.hint}` : '');
+      $('#learn-step-feedback').textContent = '❌ ' + (step.failText || i18n.t('learn.failDefault')) + (step.hint ? `  💡 ${step.hint}` : '');
       $('#learn-step-feedback').className = 'step-feedback bad';
       this.sound.bad();
       setTimeout(() => {

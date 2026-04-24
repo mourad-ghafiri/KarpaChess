@@ -7,6 +7,8 @@
  * so adding a new provider needs zero edits here.
  */
 import { $, $$ } from '../core/dom.js';
+import { SUPPORTED_LANGS, LANG_LABELS } from '../core/constants.js';
+import { i18n } from '../core/i18n.js';
 
 /**
  * Current-flagship preset models per provider (April 2026). Most-powerful
@@ -124,6 +126,21 @@ export class SettingsView {
     if (this.wired) return;
     this.wired = true;
 
+    // Language dropdown — populated with native-script labels
+    const langSel = $('#sel-language');
+    if (langSel) {
+      for (const code of SUPPORTED_LANGS) {
+        const opt = document.createElement('option');
+        opt.value = code;
+        opt.textContent = LANG_LABELS[code] || code;
+        langSel.appendChild(opt);
+      }
+      langSel.value = this.prefs.get('lang');
+      langSel.addEventListener('change', (e) => {
+        this.prefs.set('lang', e.target.value);
+      });
+    }
+
     // Board toggles
     $('#opt-coords').addEventListener('change', (e) => this.prefs.set('coords', e.target.checked));
     $('#opt-legal').addEventListener('change',  (e) => this.prefs.set('legalHighlight', e.target.checked));
@@ -183,7 +200,7 @@ export class SettingsView {
 
     // Reset progress
     $('#btn-reset-all').addEventListener('click', () => {
-      if (confirm('Reset all progress, keys, and settings?')) this.prefs.reset();
+      if (confirm(i18n.t('settings.resetConfirm'))) this.prefs.reset();
     });
   }
 
@@ -198,6 +215,8 @@ export class SettingsView {
 
   #populate() {
     const p = this.prefs;
+    const langSel = $('#sel-language');
+    if (langSel) langSel.value = p.get('lang');
     $('#opt-coords').checked = p.get('coords');
     $('#opt-legal').checked  = p.get('legalHighlight');
     $('#opt-last').checked   = p.get('lastMoveHighlight');

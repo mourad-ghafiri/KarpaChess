@@ -1,0 +1,24 @@
+{
+  "id": "queen-mate",
+  "title": "Roi et dame contre roi",
+  "summary": "Le mat le plus important à apprendre",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "4k3/8/4K3/4Q3/8/8/8/8 w - - 0 1",
+      "title": "Mat classique",
+      "text": "Avec roi et dame contre roi seul, conduisez le roi ennemi vers le bord, puis matez. La dame contrôle un mur — votre roi empêche l'évasion."
+    },
+    {
+      "type": "play",
+      "fen": "4k3/8/4K3/4Q3/8/8/8/8 w - - 0 1",
+      "prompt": "Donnez échec et mat en un coup.",
+      "targetSan": [
+        "Qb8#",
+        "Qh8#"
+      ],
+      "hint": "Coupez la 8e rangée — le roi ennemi n'a nulle part où aller."
+    }
+  ]
+}

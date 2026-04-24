@@ -1,0 +1,20 @@
+{
+  "id": "prophylaxis",
+  "title": "预防性走法",
+  "summary": "先预防,再进攻",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "尼姆佐维奇的思想",
+      "text": "预防性走法(出自尼姆佐维奇):走一步阻止对方想做的事。在推进自己计划之前,先中和他们的。卡尔波夫是现代大师——他会走\"毫无动静\"的着法,悄悄熄灭所有希望。"
+    },
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "如何发现",
+      "text": "出招之前问自己:\"如果轮到对手走,他最好的着法是什么?\" 然后把它阻止。预防性着法并不进攻——它剥夺对方的可能性。"
+    }
+  ]
+}

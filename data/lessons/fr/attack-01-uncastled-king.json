@@ -1,0 +1,20 @@
+{
+  "id": "uncastled-king",
+  "title": "Attaquer le roi non roqué",
+  "summary": "Un roi au centre est une cible",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 0 4",
+      "title": "Pourquoi les rois centralisés tombent",
+      "text": "Un roi bloqué au centre est exposé aux attaques des deux côtés. Si votre adversaire retarde le roque, ouvrez la position — forcez l'ouverture de la colonne e avec des ruptures de pions, extrayez le roi par des sacrifices. La rapidité est essentielle."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 0 4",
+      "title": "La recette",
+      "text": "Ouvrir des colonnes dirigées vers le roi. Sacrifier des pions pour dégager des lignes. Amener toutes les pièces à l'attaque. Ne vous inquiétez pas du matériel — vous gagnez quand le roi meurt, peu importe le compte des pièces. Morphy en était le maître."
+    }
+  ]
+}

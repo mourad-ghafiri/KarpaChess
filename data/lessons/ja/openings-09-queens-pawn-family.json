@@ -1,0 +1,29 @@
+{
+  "id": "queens-pawn-family",
+  "title": "1.d4 — クイーンのポーン",
+  "summary": "1.d4系システムを理解する",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
+      "title": "ポジショナルな突破",
+      "text": "1.d4は中央を確保し、c4を準備します。1.e4よりポジショナルで、ポーン構造とアウトポストをめぐるゆっくりとした戦略的戦いになります。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
+      "title": "主要な応手",
+      "text": "黒の選択肢。1...d5(古典的、クイーンズギャンビットへ)、1...Nf6(インディアンディフェンス — ハイパーモダン)、1...f5(ダッチ)、1...e6(柔軟)。インディアンディフェンスは現代のグランドマスターの主流です。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
+      "prompt": "古典的な1...d5で、自分も中央を主張しましょう。",
+      "targetSan": [
+        "d5"
+      ],
+      "hint": "1...d5は白を映し返す、古典的で堅実、格式ある手です。"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "english",
+  "title": "英国式开局",
+  "summary": "灵活的侧翼走法",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "从侧翼控制中心",
+      "text": "英国式(1.c4)是顶级棋手推崇的灵活开局。白方不急于推 d4,而是用 c 兵支援并先出子。棋局常转为后翼弃兵或印度防御结构。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "走英国式开局。",
+      "targetSan": [
+        "c4"
+      ],
+      "hint": "1.c4——英国式。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/2P5/8/PP1PPPPP/RNBQKBNR b KQkq - 0 1",
+      "title": "灵活的后续",
+      "text": "根据黑方的回应,白方可走 d4(转入后翼弃兵)、Nc3 + g3(博特温尼克式阵地)或 e3(灵活)。如果你不喜欢背尖锐理论,英国式是绝佳选择。"
+    }
+  ]
+}

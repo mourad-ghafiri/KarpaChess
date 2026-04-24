@@ -1,0 +1,29 @@
+{
+  "id": "english",
+  "title": "イングリッシュオープニング",
+  "summary": "柔軟なフランクプレー",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "フランクから中央を支配する",
+      "text": "イングリッシュ(1.c4)はトッププレイヤーが支持する柔軟なオープニングです。d4を急がず、cポーンの支えで準備し、駒を先に展開します。クイーンズギャンビットやインディアン系への手順変換もよく起こります。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "イングリッシュオープニングを指しましょう。",
+      "targetSan": [
+        "c4"
+      ],
+      "hint": "1.c4、イングリッシュです。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/2P5/8/PP1PPPPP/RNBQKBNR b KQkq - 0 1",
+      "title": "柔軟な続き",
+      "text": "黒の応手に応じて、白はd4(クイーンズギャンビットへ転換)、Nc3+g3(ポジショナルなボトヴィニク流)、e3(柔軟)などを選べます。シャープな定跡を覚えるのが苦手なら最適な選択です。"
+    }
+  ]
+}

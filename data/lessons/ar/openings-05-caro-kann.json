@@ -1,0 +1,38 @@
+{
+  "id": "caro-kann",
+  "title": "كارو-كان",
+  "summary": "دفاع صلب كالصخر ضد 1.e4",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "صلب وسليم",
+      "text": "يُعدّ كارو-كان (1.e4 c6) لنقلة ...d5 مدعومة ببيدق c. على عكس الفرنسي، يُطوَّر الفيل ذو المربعات الفاتحة بحرية. إنه هادئ، استراتيجي، ومشهور بصعوبة اختراقه."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+      "prompt": "يلعب الأسود ترتيب كارو-كان.",
+      "targetSan": [
+        "c6"
+      ],
+      "hint": "1...c6 يُعدّ لـ ...d5."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "أفضل ردود الأبيض: قوِّ المركز.",
+      "targetSan": [
+        "d4"
+      ],
+      "hint": "2.d4 يطالب بالمركز الكامل."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pp1ppppp/2p5/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2",
+      "title": "الكسر",
+      "text": "يلعب الأسود الآن 2...d5، متحدياً مركز الأبيض مباشرة. يستطيع الأبيض التقدّم (e5)، أو المبادلة (exd5)، أو الدفع إلى متغيّر التقدّم. كل خيار يؤدي إلى نوع مختلف من المباريات."
+    }
+  ]
+}

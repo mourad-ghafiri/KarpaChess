@@ -1,0 +1,20 @@
+{
+  "id": "uncastled-king",
+  "title": "Menyerang Raja yang Belum Rokade",
+  "summary": "Raja di tengah adalah sasaran",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 0 4",
+      "title": "Mengapa Raja di Tengah Mati",
+      "text": "Raja yang terjebak di tengah terpapar pada serangan dari kedua sisi. Jika lawan Anda menunda rokade, buka posisinya — congkel kolom e dengan gebrakan pion, seret raja keluar dengan pengorbanan. Kecepatan sangat penting."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 0 4",
+      "title": "Resepnya",
+      "text": "Buka kolom yang mengarah ke raja. Korbankan pion untuk meledakkan garis. Bawa semua bidak ke serangan. Jangan khawatir soal material — Anda menang ketika raja mati, berapa pun jumlah bidaknya. Morphy adalah sang master."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "king-safety",
+  "title": "キングの安全",
+  "summary": "安全なキングは対局に勝つ",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQK2R w KQkq - 0 1",
+      "title": "奥に隠せ",
+      "text": "キングの最大の敵は、キングに向かうオープンファイルとダイアゴナルです。キャスリングで中央から要塞のポーンに囲まれた場所へ移します。その要塞を無傷に保ちましょう。具体的な理由がない限り、キャスリング側のポーンを急いで突かないこと。"
+    },
+    {
+      "type": "play",
+      "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQK2R w KQkq - 0 1",
+      "prompt": "キングをキャスリングで安全にしましょう。",
+      "targetSan": [
+        "O-O"
+      ],
+      "hint": "ショートキャスリング、もっとも一般的な選択です。"
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 b kq - 1 1",
+      "title": "キャスリング後",
+      "text": "これで終わりではありません!前にポーンを保ちましょう。f2、g2、h2。f3のナイトはh2を守ります。必要でなければg3やh3は突かないこと。キング近くのポーンを動かすたびに、のちの弱点を作っています。"
+    }
+  ]
+}

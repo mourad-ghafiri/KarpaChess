@@ -1,0 +1,20 @@
+{
+  "id": "rook-lift",
+  "title": "La Elevación de Torre",
+  "summary": "Lleva una torre al ataque por la tercera fila",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQR1K1 w - - 0 1",
+      "title": "Elevar y Desplazar",
+      "text": "Una elevación de torre es la maniobra Re1-e3-g3 (o h3) — la torre sube a la tercera fila, luego se desplaza para atacar al rey enemigo. Patrón clásico: Re3, Qh5 con fuegos artificiales en el flanco de rey."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQR1K1 w - - 0 1",
+      "title": "Cuándo Usarla",
+      "text": "Las elevaciones de torre funcionan cuando: la posición es semicerrada (la torre no puede usar columnas directamente), el rey enemigo está enrocado, y tienes piezas ya cerca. Funciona especialmente bien combinada con avances del peón de torre."
+    }
+  ]
+}

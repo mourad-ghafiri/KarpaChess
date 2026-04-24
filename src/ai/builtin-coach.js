@@ -3,20 +3,22 @@
  * features (material, king safety, pawn structure, loose pieces, phase, named
  * opening) and answers position-specific questions.
  *
- * Intent-routed responders: given the user's natural-language question, we
- * match a small set of intents and dispatch to a specialist responder that
- * assembles a concrete, position-grounded reply.
- *
- * No network, no keys — always available.
+ * All user-facing text goes through `i18n.t()`. The opening book's keys are
+ * the SAN prefix → opening-id; the id looks up a translated name and tip in
+ * the current language bundle.
  */
+import { i18n } from '../core/i18n.js';
 
 const FILES = 'abcdefgh';
-const PIECE_NAME = { p: 'pawn', n: 'knight', b: 'bishop', r: 'rook', q: 'queen', k: 'king' };
 const PIECE_GLYPH = { p: '♟', n: '♞', b: '♝', r: '♜', q: '♛', k: '♚' };
 
 const sq = (r, c) => r * 8 + c;
 const squareName = (r, c) => FILES[c] + (8 - r);
 const inBoard = (r, c) => r >= 0 && r < 8 && c >= 0 && c < 8;
+
+const pieceLower = (p) => i18n.piece(p);
+const pieceCap   = (p) => { const n = pieceLower(p); return n.charAt(0).toUpperCase() + n.slice(1); };
+const sideName   = (color) => i18n.side(color);
 
 // ----------------------------------------------------------------
 // FEN parsing → structured position
@@ -71,7 +73,7 @@ function materialReport(pos) {
   return { whitePoints: ptsW, blackPoints: ptsB, diff: ptsW - ptsB, nonPawnW, nonPawnB };
 }
 
-function phaseOf(pos, moveCount) {
+function phaseKey(pos, moveCount) {
   const mr = materialReport(pos);
   const totalNonPawn = mr.nonPawnW + mr.nonPawnB;
   const hasQueens = pos.material.w.q + pos.material.b.q > 0;
@@ -107,18 +109,18 @@ function kingSafety(pos, color, gamePhase) {
 
   if (gamePhase === 'endgame') {
     let score = 'active';
-    if (castled) { score = 'shelter'; notes.push(`still tucked in the corner — centralize him`); }
-    else if (center) { score = 'waiting'; notes.push(`king on his starting square — walk him out`); }
-    else notes.push(`active king on ${squareName(k.r, k.c)}`);
+    if (castled) { score = 'shelter'; notes.push(i18n.t('coach.builtin.kingNote.tuckedCorner')); }
+    else if (center) { score = 'waiting'; notes.push(i18n.t('coach.builtin.kingNote.startingSquare')); }
+    else notes.push(i18n.t('coach.builtin.kingNote.activeOn', { square: squareName(k.r, k.c) }));
     return { score, castled, center, shieldCount, notes };
   }
 
   let score = 'safe';
-  if (!castled && !center) { score = 'exposed'; notes.push(`king wandering on ${squareName(k.r, k.c)}`); }
-  else if (center && pos.fullmove > 8) { score = 'exposed'; notes.push('king still in the center after move 8'); }
-  if (shieldCount <= 1 && (castled || center)) { score = 'exposed'; notes.push(`thin pawn cover (${shieldCount}/3)`); }
-  if (dangerFile) { score = 'danger'; notes.push(`enemy heavy piece on the king's file`); }
-  if (castled && shieldCount === 3 && !dangerFile) notes.push('castled with a full pawn shield');
+  if (!castled && !center) { score = 'exposed'; notes.push(i18n.t('coach.builtin.kingNote.wanderingOn', { square: squareName(k.r, k.c) })); }
+  else if (center && pos.fullmove > 8) { score = 'exposed'; notes.push(i18n.t('coach.builtin.kingNote.centerAfter8')); }
+  if (shieldCount <= 1 && (castled || center)) { score = 'exposed'; notes.push(i18n.t('coach.builtin.kingNote.thinShield', { count: shieldCount })); }
+  if (dangerFile) { score = 'danger'; notes.push(i18n.t('coach.builtin.kingNote.enemyHeavy')); }
+  if (castled && shieldCount === 3 && !dangerFile) notes.push(i18n.t('coach.builtin.kingNote.fullShield'));
   return { score, castled, center, shieldCount, notes };
 }
 
@@ -213,104 +215,59 @@ function loosePieces(pos, color) {
 }
 
 // ----------------------------------------------------------------
-// Opening book
+// Opening book — SAN prefix → opening id (keys live in i18n bundle)
 // ----------------------------------------------------------------
 const OPENING_BOOK = [
-  ['e4 e5 Nf3 Nc6 Bb5 a6', 'Ruy Lopez — Morphy Defense'],
-  ['e4 e5 Nf3 Nc6 Bb5', 'Ruy Lopez'],
-  ['e4 e5 Nf3 Nc6 Bc4 Bc5', 'Italian Game — Giuoco Piano'],
-  ['e4 e5 Nf3 Nc6 Bc4 Nf6', 'Italian Game — Two Knights'],
-  ['e4 e5 Nf3 Nc6 Bc4', 'Italian Game'],
-  ['e4 e5 Nf3 Nf6', 'Petroff Defense'],
-  ['e4 e5 Nf3 Nc6 d4', 'Scotch Game'],
-  ['e4 e5 Nc3', 'Vienna Game'],
-  ['e4 e5 f4', 'King\'s Gambit'],
-  ['e4 e5 Nf3', 'Open Game'],
-  ['e4 e5', 'King\'s Pawn Game'],
-  ['e4 c5 Nf3 d6', 'Sicilian — Najdorf complex'],
-  ['e4 c5 Nf3 Nc6', 'Sicilian — Open with ...Nc6'],
-  ['e4 c5 Nf3 e6', 'Sicilian — Taimanov/Kan'],
-  ['e4 c5 Nc3', 'Sicilian — Closed'],
-  ['e4 c5', 'Sicilian Defense'],
-  ['e4 e6 d4 d5', 'French Defense'],
-  ['e4 e6', 'French Defense'],
-  ['e4 c6 d4 d5', 'Caro-Kann'],
-  ['e4 c6', 'Caro-Kann Defense'],
-  ['e4 d5', 'Scandinavian Defense'],
-  ['e4 d6', 'Pirc Defense'],
-  ['e4 g6', 'Modern Defense'],
-  ['e4 Nf6', 'Alekhine\'s Defense'],
-  ['d4 d5 c4 e6', 'Queen\'s Gambit Declined'],
-  ['d4 d5 c4 c6', 'Slav Defense'],
-  ['d4 d5 c4 dxc4', 'Queen\'s Gambit Accepted'],
-  ['d4 d5 c4', 'Queen\'s Gambit'],
-  ['d4 d5 Nf3', 'London System setup'],
-  ['d4 d5 Bf4', 'London System'],
-  ['d4 Nf6 c4 g6', 'King\'s Indian Defense'],
-  ['d4 Nf6 c4 e6 Nc3 Bb4', 'Nimzo-Indian'],
-  ['d4 Nf6 c4 e6', 'Queen\'s Indian complex'],
-  ['d4 Nf6 c4 c5', 'Benoni Defense'],
-  ['d4 Nf6 Bf4', 'London System'],
-  ['d4 Nf6', 'Indian Game'],
-  ['d4 f5', 'Dutch Defense'],
-  ['c4', 'English Opening'],
-  ['Nf3 d5 c4', 'Réti Opening'],
-  ['Nf3 d5', 'Réti / KIA setup'],
-  ['Nf3', 'Réti setup'],
-  ['b3', 'Larsen\'s Opening'],
-  ['b4', 'Sokolsky / Polish'],
-  ['g3', 'Benko Opening']
+  ['e4 e5 Nf3 Nc6 Bb5 a6', 'ruyLopezMorphy'],
+  ['e4 e5 Nf3 Nc6 Bb5',    'ruyLopez'],
+  ['e4 e5 Nf3 Nc6 Bc4 Bc5','italianGiuocoPiano'],
+  ['e4 e5 Nf3 Nc6 Bc4 Nf6','italianTwoKnights'],
+  ['e4 e5 Nf3 Nc6 Bc4',    'italianGame'],
+  ['e4 e5 Nf3 Nf6',        'petroff'],
+  ['e4 e5 Nf3 Nc6 d4',     'scotchGame'],
+  ['e4 e5 Nc3',            'viennaGame'],
+  ['e4 e5 f4',             'kingsGambit'],
+  ['e4 e5 Nf3',            'openGame'],
+  ['e4 e5',                'kingsPawnGame'],
+  ['e4 c5 Nf3 d6',         'sicilianNajdorf'],
+  ['e4 c5 Nf3 Nc6',        'sicilianOpenNc6'],
+  ['e4 c5 Nf3 e6',         'sicilianTaimanovKan'],
+  ['e4 c5 Nc3',            'sicilianClosed'],
+  ['e4 c5',                'sicilian'],
+  ['e4 e6 d4 d5',          'french'],
+  ['e4 e6',                'french'],
+  ['e4 c6 d4 d5',          'caroKann'],
+  ['e4 c6',                'caroKann'],
+  ['e4 d5',                'scandinavian'],
+  ['e4 d6',                'pirc'],
+  ['e4 g6',                'modern'],
+  ['e4 Nf6',               'alekhine'],
+  ['d4 d5 c4 e6',          'queensGambitDeclined'],
+  ['d4 d5 c4 c6',          'slav'],
+  ['d4 d5 c4 dxc4',        'queensGambitAccepted'],
+  ['d4 d5 c4',             'queensGambit'],
+  ['d4 d5 Nf3',            'londonSetup'],
+  ['d4 d5 Bf4',            'london'],
+  ['d4 Nf6 c4 g6',         'kingsIndian'],
+  ['d4 Nf6 c4 e6 Nc3 Bb4', 'nimzoIndian'],
+  ['d4 Nf6 c4 e6',         'queensIndian'],
+  ['d4 Nf6 c4 c5',         'benoni'],
+  ['d4 Nf6 Bf4',           'london'],
+  ['d4 Nf6',               'indianGame'],
+  ['d4 f5',                'dutch'],
+  ['c4',                   'english'],
+  ['Nf3 d5 c4',            'reti'],
+  ['Nf3 d5',               'retiKia'],
+  ['Nf3',                  'retiSetup'],
+  ['b3',                   'larsen'],
+  ['b4',                   'sokolsky'],
+  ['g3',                   'benko']
 ];
 
-const OPENING_TIPS = {
-  'Ruy Lopez': 'The oldest serious opening in chess. The Bb5 pins the knight — Black usually plays ...a6 to force a decision. After Ba4, play develops into long strategic battles.',
-  'Ruy Lopez — Morphy Defense': 'Black\'s main response. White usually chooses between the Main Line (Ba4 Nf6 0-0) and the Exchange Variation (Bxc6). Rich, classical chess awaits.',
-  'Italian Game': 'Bc4 targets f7 — the weakest point in Black\'s camp. Develop knights to f3/c3, castle kingside, and look for d3/d4 breaks.',
-  'Italian Game — Giuoco Piano': '"Quiet game" — both bishops point at each king\'s weak square. Classical setup: develop, castle, then push d4.',
-  'Italian Game — Two Knights': 'Sharp play! White can try the Fried Liver (Ng5) or the quieter d4 break. Black has to navigate some tactical waters.',
-  'Petroff Defense': 'Rock-solid symmetric defense. Black copies White and develops naturally — notorious for its drawish tendencies at high levels.',
-  'Scotch Game': 'White opens the center early with d4. Active play for both sides, less theoretical than the Ruy.',
-  'Vienna Game': 'Develops Nc3 before Nf3, keeping f-pawn free for attacking possibilities (f4 later).',
-  'King\'s Gambit': 'Romantic-era sacrifice! White offers the f-pawn for rapid development and attacks on f7. Rare but thrilling.',
-  'Open Game': 'Classical chess at its finest. Expect principled, center-based play.',
-  'King\'s Pawn Game': 'Both sides claim central space with pawns. Sharp, direct chess is ahead.',
-  'Sicilian Defense': 'The most popular answer to 1.e4. Asymmetric — White attacks on the kingside, Black counter-attacks on the queenside. Sharp, decisive games.',
-  'Sicilian — Najdorf complex': 'The ultimate fighting opening. Every move is rich in theory. Prepare for dynamic, unbalanced play.',
-  'Sicilian — Open with ...Nc6': 'Classical Sicilian. Expect a race between White\'s kingside attack and Black\'s queenside counter.',
-  'Sicilian — Taimanov/Kan': 'Flexible, modern Sicilian. Black keeps options open for ...a6, ...b5 expansion.',
-  'Sicilian — Closed': 'White avoids the Open Sicilian with Nc3. Slower, more positional game. Avoid if you love tactics.',
-  'French Defense': 'Black builds a granite pawn chain. Look for ...c5 or ...f6 breaks to free the light-squared bishop.',
-  'Caro-Kann': 'Solid like the French, but the light-squared bishop develops freely. Famously hard to beat.',
-  'Caro-Kann Defense': 'Solid and flexible. ...d5 is coming next with full central counterplay.',
-  'Scandinavian Defense': 'Black attacks the e4 pawn immediately. After Nc3 the queen gets chased — careful with her placement.',
-  'Pirc Defense': 'Hypermodern. Black invites White to build a big center, then strikes it with pawn breaks.',
-  'Modern Defense': 'Similar to the Pirc but even more flexible. Black delays committing to a setup.',
-  'Alekhine\'s Defense': 'Provocative! Black lures White\'s pawns forward, then attacks them. Sharp and unconventional.',
-  'Queen\'s Gambit': 'Offer the c-pawn to deflect Black\'s d-pawn and dominate the center. Classical, principled, top-tier.',
-  'Queen\'s Gambit Declined': 'Black refuses the pawn and builds a solid structure. The quintessential positional opening.',
-  'Queen\'s Gambit Accepted': 'Black takes the pawn, plans to give it back for active piece play.',
-  'Slav Defense': 'Supports the d5 pawn with ...c6. Solid, hard to break down, keeps the bishop on c8 alive.',
-  'London System setup': 'White\'s universal system — Bf4 and stable development. Less theory, reliable results.',
-  'London System': 'Solid and easy to learn. Claim d4, develop Bf4, play Nf3, Nbd2, c3, e3. Stable foundation.',
-  'King\'s Indian Defense': 'Hypermodern classic. Let White build a huge center, then blast it with ...e5 or ...c5. Kingside attacks are legendary.',
-  'Nimzo-Indian': 'Black pins the knight with Bb4 and plays to double White\'s pawns on c-file. Strategic, high-class chess.',
-  'Queen\'s Indian complex': 'Solid, fianchetto-based setup. Popular at master level for its drawing chances.',
-  'Benoni Defense': 'Sharp, unbalanced, tactical. Black gives up the center for activity.',
-  'Indian Game': 'Hypermodern response. Wait to see White\'s plan before committing.',
-  'Dutch Defense': 'Black plays ...f5 to fight for e4. Sharp, double-edged. Careful with king safety!',
-  'English Opening': 'Flexible flank opening. Often transposes into Queen\'s Gambit or King\'s Indian structures. Hard for Black to prepare against.',
-  'Réti Opening': 'Hypermodern — attack the center from the flanks. Great if you love positional play.',
-  'Réti / KIA setup': 'Flexible — can transpose into the King\'s Indian Attack or other closed setups.',
-  'Réti setup': 'Quiet flexibility. Often transposes.',
-  'Larsen\'s Opening': 'Fianchetto the queen\'s bishop early. Unusual but sound.',
-  'Sokolsky / Polish': 'Bb2 fianchetto with b4 thrown in. Offbeat — catch your opponent unprepared!',
-  'Benko Opening': 'Quiet fianchetto system. Flexible, low-theory, positional.'
-};
-
-function detectOpening(sanHistory) {
+function detectOpeningId(sanHistory) {
   const line = sanHistory.map(s => String(s).replace(/[+#?!]/g, '')).join(' ');
-  for (const [key, name] of OPENING_BOOK) {
-    if (line.startsWith(key)) return name;
+  for (const [key, id] of OPENING_BOOK) {
+    if (line.startsWith(key)) return id;
   }
   return null;
 }
@@ -319,59 +276,85 @@ function detectOpening(sanHistory) {
 // Response helpers
 // ----------------------------------------------------------------
 function formatEval(cp, turn) {
-  if (cp === undefined || cp === null) return 'unclear';
+  if (cp === undefined || cp === null) return i18n.t('coach.builtin.eval.unclear');
   const pawns = (cp / 100).toFixed(2);
-  if (Math.abs(cp) < 30) return `balanced (${pawns})`;
-  const side = cp > 0 ? (turn === 'w' ? 'White' : 'Black') : (turn === 'w' ? 'Black' : 'White');
-  return cp > 0 ? `+${pawns} — **${side}** is better` : `${pawns} — **${side}** is better`;
+  if (Math.abs(cp) < 30) return i18n.t('coach.builtin.eval.balanced', { pawns });
+  const sideColor = cp > 0 ? turn : (turn === 'w' ? 'b' : 'w');
+  const side = sideName(sideColor);
+  const sign = cp > 0 ? '+' : '';
+  return i18n.t('coach.builtin.eval.better', { sign, pawns, side });
 }
 
 function quickPulse(mr, ph, turn) {
+  const phase = i18n.t('coach.builtin.phase.' + ph);
   const bits = [];
-  if (mr.diff !== 0) bits.push(`material ${mr.diff > 0 ? '+' : ''}${mr.diff} for ${mr.diff > 0 ? 'White' : 'Black'}`);
-  else bits.push('material even');
-  bits.push(`${ph} phase`);
-  bits.push(`${turn === 'w' ? 'White' : 'Black'} to move`);
+  if (mr.diff !== 0) {
+    const sideColor = mr.diff > 0 ? 'w' : 'b';
+    bits.push(i18n.t('coach.builtin.summary.pulseMaterial', {
+      sign: mr.diff > 0 ? '+' : '', n: Math.abs(mr.diff), side: sideName(sideColor)
+    }));
+  } else {
+    bits.push(i18n.t('coach.builtin.summary.pulseMaterialEven'));
+  }
+  bits.push(i18n.t('coach.builtin.summary.pulsePhase', { phase }));
+  bits.push(i18n.t('coach.builtin.summary.pulseToMove', { side: sideName(turn) }));
   return bits.join(' · ');
 }
 
+function scoreLabel(key) { return i18n.t('coach.builtin.kingScore.' + key); }
+
+function looseList(loose) {
+  return loose.map(l => `${pieceCap(l.piece)} ${i18n.t('coach.builtin.on')} ${l.square}`).join(', ');
+}
+
 // ----------------------------------------------------------------
-// Responders — each returns the final Markdown text for one intent.
+// Responders
 // ----------------------------------------------------------------
 function respondBestMove(ctx, pos, mr, ph, ksW, ksB, psW, psB, loose) {
   let out = '';
-  if (ctx.bestMoveHint) out += `My recommendation: **${ctx.bestMoveHint}**.\n\n`;
-  else if (ctx.legalSample?.length) out += `Without deeper search, consider: **${ctx.legalSample[0]}**.\n\n`;
-  out += `**Why this makes sense here:**\n`;
+  if (ctx.bestMoveHint) out += i18n.t('coach.builtin.bestMove.recommendation', { move: ctx.bestMoveHint }) + '\n\n';
+  else if (ctx.legalSample?.length) out += i18n.t('coach.builtin.bestMove.shallow', { move: ctx.legalSample[0] }) + '\n\n';
+  out += i18n.t('coach.builtin.bestMove.whyHeader') + '\n';
 
   if (ph === 'opening') {
     const dev = developmentReport(pos, ctx.turn);
-    if (!dev.castled) out += `• King still in the center — castling is a top priority.\n`;
-    if (dev.minorHome.length > 0) out += `• Minor pieces still on ${dev.minorHome.join(', ')} — develop them.\n`;
+    if (!dev.castled) out += i18n.t('coach.builtin.bestMove.castle') + '\n';
+    if (dev.minorHome.length > 0) out += i18n.t('coach.builtin.bestMove.develop', { squares: dev.minorHome.join(', ') }) + '\n';
     const cc = centerControl(pos, ctx.turn);
-    if (cc.pawnsOnCenter === 0) out += `• No pawn on the central four — a central pawn push is valuable.\n`;
+    if (cc.pawnsOnCenter === 0) out += i18n.t('coach.builtin.bestMove.center') + '\n';
   } else if (ph === 'middlegame') {
     if (loose.length > 0) {
-      out += `• Opponent has **loose piece${loose.length > 1 ? 's' : ''}**: ` +
-        loose.map(l => `${PIECE_NAME[l.piece]} on ${l.square}`).join(', ') + `. Look for ways to win them.\n`;
+      const pieceWord = loose.length > 1
+        ? i18n.t('coach.builtin.loosePieces.plural')
+        : i18n.t('coach.builtin.loosePieces.singular');
+      out += i18n.t('coach.builtin.bestMove.loose', { pieceWord, list: looseList(loose) }) + '\n';
     }
     const opp = ctx.turn === 'w' ? ksB : ksW;
-    if (opp.score !== 'safe') out += `• Opponent's king is **${opp.score}** — attacking moves often work.\n`;
+    if (opp.score !== 'safe') out += i18n.t('coach.builtin.bestMove.oppKing', { score: scoreLabel(opp.score) }) + '\n';
     const own = ctx.turn === 'w' ? ksW : ksB;
-    if (own.score === 'danger') out += `• Your king is under fire — consider defense first.\n`;
+    if (own.score === 'danger') out += i18n.t('coach.builtin.bestMove.ownKing') + '\n';
   } else {
     const ps = ctx.turn === 'w' ? psW : psB;
-    if (ps.passed.length > 0) out += `• You have **passed pawn${ps.passed.length > 1 ? 's' : ''}** on ${ps.passed.join(', ')} — push them!\n`;
-    out += `• Activate your king — in endgames, he's a fighting piece.\n`;
-    if (mr.diff !== 0) out += `• You're ${mr.diff > 0 ? 'ahead' : 'behind'} ${Math.abs(mr.diff)} points — ${mr.diff > 0 ? 'trade pieces, keep pawns' : 'create complications'}.\n`;
+    if (ps.passed.length > 0) {
+      const pawnWord = ps.passed.length > 1
+        ? i18n.t('coach.builtin.passedPawns.plural')
+        : i18n.t('coach.builtin.passedPawns.singular');
+      out += i18n.t('coach.builtin.bestMove.passedEnd', { pawnWord, squares: ps.passed.join(', ') }) + '\n';
+    }
+    out += i18n.t('coach.builtin.bestMove.activeKing') + '\n';
+    if (mr.diff !== 0) {
+      const state = i18n.t(mr.diff > 0 ? 'coach.builtin.bestMove.ahead' : 'coach.builtin.bestMove.behind');
+      const advice = i18n.t(mr.diff > 0 ? 'coach.builtin.bestMove.adviceAhead' : 'coach.builtin.bestMove.adviceBehind');
+      out += i18n.t('coach.builtin.bestMove.aheadBehind', { state, n: Math.abs(mr.diff), advice }) + '\n';
+    }
   }
-  out += `\n_Eval: ${formatEval(ctx.evalScore, ctx.turn)}_`;
+  out += '\n' + i18n.t('coach.builtin.bestMove.evalSuffix', { eval: formatEval(ctx.evalScore, ctx.turn) });
   return out;
 }
 
 function respondTactics(ctx, pos, loose) {
-  const turn = ctx.turn === 'w' ? 'White' : 'Black';
-  const ph = phaseOf(pos, (ctx.moveHistory || []).length);
+  const turn = sideName(ctx.turn);
+  const ph = phaseKey(pos, (ctx.moveHistory || []).length);
   const ksW = kingSafety(pos, 'w', ph);
   const ksB = kingSafety(pos, 'b', ph);
   const targetSide = ctx.turn === 'w' ? 'b' : 'w';
@@ -379,26 +362,31 @@ function respondTactics(ctx, pos, loose) {
 
   const lines = [];
   if (loose.length > 0) {
-    lines.push(`Opponent has ${loose.length} undefended piece${loose.length > 1 ? 's' : ''}: ` +
-      loose.map(l => `${PIECE_GLYPH[l.piece]} ${PIECE_NAME[l.piece]} on **${l.square}**`).join(', ') + `.`);
+    const pieceWord = loose.length > 1
+      ? i18n.t('coach.builtin.tactics.undefendedPlural')
+      : i18n.t('coach.builtin.tactics.undefendedSingle');
+    const list = loose.map(l => `${PIECE_GLYPH[l.piece]} ${pieceLower(l.piece)} ${i18n.t('coach.builtin.on')} <b>${l.square}</b>`).join(', ');
+    lines.push(i18n.t('coach.builtin.tactics.loose', { n: loose.length, pieceWord, list }));
   } else {
-    lines.push(`Opponent's pieces look defended. Harder tactics — look for pins, decoys, or clearance moves.`);
+    lines.push(i18n.t('coach.builtin.tactics.defended'));
   }
   if (theirKing.score !== 'safe') {
-    lines.push(`Their king is **${theirKing.score}** (${theirKing.notes.join(', ') || 'open lines'}) — mating patterns may be lurking.`);
+    const notes = theirKing.notes.join(', ') || i18n.t('coach.builtin.tactics.openLines');
+    lines.push(i18n.t('coach.builtin.tactics.exposedKing', { score: scoreLabel(theirKing.score), notes }));
   }
   if (pos.material[targetSide].q > 0) {
     const q = pos.pieces[targetSide].find(p => p.piece === 'q');
-    if (q) lines.push(`Their queen on **${q.square}** — can you attack her cheaply to gain tempo?`);
+    if (q) lines.push(i18n.t('coach.builtin.tactics.queenTarget', { square: q.square }));
   }
-  if (ctx.bestMoveHint) lines.push(`Engine suggests **${ctx.bestMoveHint}** — does that move fit any of the patterns above?`);
+  if (ctx.bestMoveHint) lines.push(i18n.t('coach.builtin.tactics.engineSuggests', { move: ctx.bestMoveHint }));
 
-  return `**Tactical scan for ${turn}**\n\n` + lines.map(l => '• ' + l).join('\n') +
-    `\n\n_Train your eye to spot these three every move: loose pieces, exposed kings, overworked defenders._`;
+  return i18n.t('coach.builtin.tactics.header', { side: turn }) + '\n\n' +
+    lines.map(l => '• ' + l).join('\n') + '\n\n' +
+    i18n.t('coach.builtin.tactics.footer');
 }
 
 function respondPlan(ctx, pos, mr, ph, ksW, ksB, psW, psB) {
-  const turn = ctx.turn === 'w' ? 'White' : 'Black';
+  const turn = sideName(ctx.turn);
   const myKS = ctx.turn === 'w' ? ksW : ksB;
   const oppKS = ctx.turn === 'w' ? ksB : ksW;
   const myPawns = ctx.turn === 'w' ? psW : psB;
@@ -406,112 +394,185 @@ function respondPlan(ctx, pos, mr, ph, ksW, ksB, psW, psB) {
 
   if (ph === 'opening') {
     const dev = developmentReport(pos, ctx.turn);
-    if (dev.minorHome.length > 0) plans.push(`Develop remaining minor piece${dev.minorHome.length > 1 ? 's' : ''} from ${dev.minorHome.join(', ')}.`);
-    if (!dev.castled) plans.push(`Castle — king safety first.`);
-    if (dev.queenMoved && dev.minorHome.length > 0) plans.push(`Careful — queen moved before all minor pieces were developed. Don't let her be chased.`);
-    const cc = centerControl(pos, ctx.turn);
-    if (cc.pawnsOnCenter === 0) plans.push(`Put a pawn on the central four (d4/e4/d5/e5).`);
-  } else if (ph === 'middlegame') {
-    if (myKS.score === 'danger') plans.push(`Your king is in danger — improve defense before attacking.`);
-    if (myKS.castled && oppKS.castled && myKS.notes.length > 0) {
-      plans.push(`You both castled — attack the opposite wing with pawns if castled on opposite sides.`);
+    if (dev.minorHome.length > 0) {
+      const pieceWord = dev.minorHome.length > 1
+        ? i18n.t('coach.builtin.plan.minorPlural')
+        : i18n.t('coach.builtin.plan.minorSingular');
+      plans.push(i18n.t('coach.builtin.plan.developMinors', { pieceWord, squares: dev.minorHome.join(', ') }));
     }
-    if (myPawns.passed.length > 0) plans.push(`Push your passed pawn${myPawns.passed.length > 1 ? 's' : ''} on ${myPawns.passed.join(', ')}.`);
-    if (myPawns.isolated.length > 0) plans.push(`Watch your isolated pawn${myPawns.isolated.length > 1 ? 's' : ''} on ${myPawns.isolated.join(', ')} — activity compensates for weakness.`);
-    plans.push(`Improve your worst piece. Every move should make one of your pieces better.`);
+    if (!dev.castled) plans.push(i18n.t('coach.builtin.plan.castle'));
+    if (dev.queenMoved && dev.minorHome.length > 0) plans.push(i18n.t('coach.builtin.plan.queenEarly'));
+    const cc = centerControl(pos, ctx.turn);
+    if (cc.pawnsOnCenter === 0) plans.push(i18n.t('coach.builtin.plan.centerPawn'));
+  } else if (ph === 'middlegame') {
+    if (myKS.score === 'danger') plans.push(i18n.t('coach.builtin.plan.kingDanger'));
+    if (myKS.castled && oppKS.castled && myKS.notes.length > 0) {
+      plans.push(i18n.t('coach.builtin.plan.oppositeWings'));
+    }
+    if (myPawns.passed.length > 0) {
+      const pawnWord = myPawns.passed.length > 1
+        ? i18n.t('coach.builtin.plan.passedPawnPlural')
+        : i18n.t('coach.builtin.plan.passedPawnSingular');
+      plans.push(i18n.t('coach.builtin.plan.pushPassed', { pawnWord, squares: myPawns.passed.join(', ') }));
+    }
+    if (myPawns.isolated.length > 0) {
+      const pawnWord = myPawns.isolated.length > 1
+        ? i18n.t('coach.builtin.plan.isolatedPlural')
+        : i18n.t('coach.builtin.plan.isolatedSingular');
+      plans.push(i18n.t('coach.builtin.plan.isolated', { pawnWord, squares: myPawns.isolated.join(', ') }));
+    }
+    plans.push(i18n.t('coach.builtin.plan.improveWorst'));
   } else {
-    if (myPawns.passed.length > 0) plans.push(`Race your passed pawn${myPawns.passed.length > 1 ? 's' : ''} on ${myPawns.passed.join(', ')} to promotion.`);
-    plans.push(`Activate your king — walk him into the action.`);
-    if (mr.diff > 0) plans.push(`You're up ${mr.diff} points — trade pieces (not pawns) to simplify to a winning endgame.`);
-    else if (mr.diff < 0) plans.push(`You're down ${Math.abs(mr.diff)} points — keep pieces on the board, create counterplay, avoid trades.`);
-    if (myPawns.count <= 2) plans.push(`Few pawns left — think about opposition, zugzwang, and key squares.`);
+    if (myPawns.passed.length > 0) {
+      const pawnWord = myPawns.passed.length > 1
+        ? i18n.t('coach.builtin.plan.racePlural')
+        : i18n.t('coach.builtin.plan.raceSingular');
+      plans.push(i18n.t('coach.builtin.plan.racePassed', { pawnWord, squares: myPawns.passed.join(', ') }));
+    }
+    plans.push(i18n.t('coach.builtin.plan.activateKing'));
+    if (mr.diff > 0) plans.push(i18n.t('coach.builtin.plan.aheadTrade', { n: mr.diff }));
+    else if (mr.diff < 0) plans.push(i18n.t('coach.builtin.plan.behindKeep', { n: Math.abs(mr.diff) }));
+    if (myPawns.count <= 2) plans.push(i18n.t('coach.builtin.plan.fewPawns'));
   }
-  return `**Plan for ${turn}** _(${ph})_\n\n` + plans.map(p => '• ' + p).join('\n');
+  const phase = i18n.t('coach.builtin.phase.' + ph);
+  return i18n.t('coach.builtin.plan.header', { side: turn, phase }) + '\n\n' +
+    plans.map(p => '• ' + p).join('\n');
 }
 
 function respondLastMove(ctx) {
-  if (!ctx.lastMove) return `No moves played yet — start with a central pawn (e4 or d4) or a knight move (Nf3).`;
+  if (!ctx.lastMove) return i18n.t('coach.builtin.lastMove.none');
   const san = ctx.lastMove;
   const anns = [];
-  if (san.includes('x'))       anns.push('captured material');
-  if (san.endsWith('+'))        anns.push('delivered check');
-  if (san.endsWith('#'))        anns.push('delivered checkmate');
-  if (san.startsWith('O-O-O')) anns.push('castled queenside');
-  else if (san.startsWith('O-O')) anns.push('castled kingside');
-  if (san.includes('='))        anns.push('promoted a pawn');
-  let out = `**${san}** — `;
-  out += anns.length ? anns.join(', ') + '.\n\n' : 'a quiet positional move.\n\n';
-  out += `Eval now: ${formatEval(ctx.evalScore, ctx.turn)}. `;
-  if (ctx.bestMoveHint) out += `Engine's top choice going forward: **${ctx.bestMoveHint}**.`;
+  if (san.includes('x'))          anns.push(i18n.t('coach.builtin.lastMove.capture'));
+  if (san.endsWith('+'))          anns.push(i18n.t('coach.builtin.lastMove.check'));
+  if (san.endsWith('#'))          anns.push(i18n.t('coach.builtin.lastMove.checkmate'));
+  if (san.startsWith('O-O-O'))    anns.push(i18n.t('coach.builtin.lastMove.castleQueenside'));
+  else if (san.startsWith('O-O')) anns.push(i18n.t('coach.builtin.lastMove.castleKingside'));
+  if (san.includes('='))          anns.push(i18n.t('coach.builtin.lastMove.promote'));
+  let out = anns.length
+    ? i18n.t('coach.builtin.lastMove.line', { san, anns: anns.join(', ') })
+    : i18n.t('coach.builtin.lastMove.quiet', { san });
+  out += '\n\n' + i18n.t('coach.builtin.lastMove.evalLine', { eval: formatEval(ctx.evalScore, ctx.turn) });
+  if (ctx.bestMoveHint) out += i18n.t('coach.builtin.lastMove.topChoice', { move: ctx.bestMoveHint });
   return out;
 }
 
 function respondOpening(moves) {
   if (moves.length === 0) {
-    return `**The classical first moves:**\n\n` +
-      `• **1.e4** — opens lines for queen and bishop, fights for the center. Leads to sharp tactical play.\n` +
-      `• **1.d4** — claims the center, prepares c4 (Queen's Gambit). Strategic, positional.\n` +
-      `• **1.Nf3** — flexible, delays revealing your plan. Often transposes.\n` +
-      `• **1.c4** — English. Flank attack on the center, hypermodern style.\n\n` +
-      `Pick one, play it a hundred times, and learn its secrets.`;
+    return i18n.t('coach.builtin.opening.noneHeader') + '\n\n' +
+      '• ' + i18n.t('coach.builtin.opening.noneE4') + '\n' +
+      '• ' + i18n.t('coach.builtin.opening.noneD4') + '\n' +
+      '• ' + i18n.t('coach.builtin.opening.noneNf3') + '\n' +
+      '• ' + i18n.t('coach.builtin.opening.noneC4') + '\n\n' +
+      i18n.t('coach.builtin.opening.nonePick');
   }
-  const name = detectOpening(moves);
-  if (name) {
-    const tip = OPENING_TIPS[name] || 'Focus on the ideas — piece placement, pawn breaks, typical endgames.';
-    return `**${name}**\n\n${tip}\n\n_Moves played: ${moves.slice(0, 12).join(' ')}${moves.length > 12 ? '…' : ''}_`;
+  const id = detectOpeningId(moves);
+  if (id) {
+    const name = i18n.t('coach.openingNames.' + id);
+    const tip = i18n.t('coach.openingTips.' + id) || i18n.t('coach.openingTips.generic');
+    const shown = moves.slice(0, 12).join(' ') + (moves.length > 12 ? '…' : '');
+    return i18n.t('coach.builtin.opening.known', { name, tip, moves: shown });
   }
-  return `${moves.length} move${moves.length === 1 ? '' : 's'} played — no clear opening match yet. ` +
-    `Stick to three principles:\n` +
-    `• Control the center with pawns or pieces\n` +
-    `• Develop every minor piece before moving the queen\n` +
-    `• Castle before launching attacks`;
+  const moveWord = moves.length === 1
+    ? i18n.t('coach.builtin.opening.moveSingular')
+    : i18n.t('coach.builtin.opening.movePlural');
+  return i18n.t('coach.builtin.opening.unknownHeader', { n: moves.length, moveWord }) + '\n' +
+    i18n.t('coach.builtin.opening.unknownP1') + '\n' +
+    i18n.t('coach.builtin.opening.unknownP2') + '\n' +
+    i18n.t('coach.builtin.opening.unknownP3');
 }
 
 function respondEndgame(psW, psB) {
+  const none = i18n.t('coach.builtin.endgame.none');
   return [
-    '**Endgame essentials**',
+    i18n.t('coach.builtin.endgame.header'),
     '',
-    `• **Activate your king** — in the endgame, he's worth about three pawns. Walk him into the center.`,
-    `• **Passed pawns** are gold. White has ${psW.passed.length ? psW.passed.join(', ') : 'none'}; Black has ${psB.passed.length ? psB.passed.join(', ') : 'none'}.`,
-    `• **Opposition** decides king-and-pawn endgames — the side not to move often wins the key square.`,
-    `• **Rook endings** follow the rule: rook belongs BEHIND the passed pawn (yours or theirs).`,
-    `• When winning, trade pieces not pawns. When losing, keep pieces and seek tactics.`
+    i18n.t('coach.builtin.endgame.activateKing'),
+    i18n.t('coach.builtin.endgame.passed', {
+      w: psW.passed.length ? psW.passed.join(', ') : none,
+      b: psB.passed.length ? psB.passed.join(', ') : none
+    }),
+    i18n.t('coach.builtin.endgame.opposition'),
+    i18n.t('coach.builtin.endgame.rookRule'),
+    i18n.t('coach.builtin.endgame.tradePieces')
   ].join('\n');
 }
 
 function respondEvaluation(ctx, pos, mr, ph, ksW, ksB, psW, psB) {
-  const turn = ctx.turn === 'w' ? 'White' : 'Black';
-  const out = [`**Position assessment** _(${ph}, ${turn} to move)_`, ''];
-  out.push(`• **Material:** White ${mr.whitePoints} vs Black ${mr.blackPoints}${mr.diff === 0 ? ' (equal)' : ` — ${mr.diff > 0 ? 'White' : 'Black'} is +${Math.abs(mr.diff)}`}`);
-  out.push(`• **Engine:** ${formatEval(ctx.evalScore, ctx.turn)}`);
-  out.push(`• **White king:** ${ksW.score}${ksW.notes.length ? ' (' + ksW.notes.join(', ') + ')' : ''}`);
-  out.push(`• **Black king:** ${ksB.score}${ksB.notes.length ? ' (' + ksB.notes.join(', ') + ')' : ''}`);
-  const wWeak = [...psW.isolated.map(s => 'isolated ' + s), ...psW.doubled.map(f => 'doubled on ' + f)];
-  const bWeak = [...psB.isolated.map(s => 'isolated ' + s), ...psB.doubled.map(f => 'doubled on ' + f)];
-  if (wWeak.length) out.push(`• **White pawn issues:** ${wWeak.join(', ')}`);
-  if (bWeak.length) out.push(`• **Black pawn issues:** ${bWeak.join(', ')}`);
-  if (psW.passed.length) out.push(`• **White passed pawn${psW.passed.length > 1 ? 's' : ''}:** ${psW.passed.join(', ')}`);
-  if (psB.passed.length) out.push(`• **Black passed pawn${psB.passed.length > 1 ? 's' : ''}:** ${psB.passed.join(', ')}`);
-  if (ctx.bestMoveHint) out.push(`• **Engine's top move:** **${ctx.bestMoveHint}**`);
+  const phase = i18n.t('coach.builtin.phase.' + ph);
+  const turn = sideName(ctx.turn);
+  const out = [i18n.t('coach.builtin.evaluation.header', { phase, side: turn }), ''];
+
+  let diffSuffix = i18n.t('coach.builtin.evaluation.equalSuffix');
+  if (mr.diff !== 0) {
+    diffSuffix = i18n.t('coach.builtin.evaluation.diffSuffix', {
+      side: mr.diff > 0 ? sideName('w') : sideName('b'),
+      n: Math.abs(mr.diff)
+    });
+  }
+  out.push(i18n.t('coach.builtin.evaluation.material', { w: mr.whitePoints, b: mr.blackPoints, diff: diffSuffix }));
+  out.push(i18n.t('coach.builtin.evaluation.engine', { eval: formatEval(ctx.evalScore, ctx.turn) }));
+
+  const notesFmt = (arr) => arr.length ? i18n.t('coach.builtin.evaluation.notesFmt', { notes: arr.join(', ') }) : '';
+  out.push(i18n.t('coach.builtin.evaluation.whiteKing', { score: scoreLabel(ksW.score), notes: notesFmt(ksW.notes) }));
+  out.push(i18n.t('coach.builtin.evaluation.blackKing', { score: scoreLabel(ksB.score), notes: notesFmt(ksB.notes) }));
+
+  const weakList = (ps) => {
+    const bits = [];
+    for (const s of ps.isolated) bits.push(i18n.t('coach.builtin.evaluation.isolatedPrefix', { sq: s }));
+    for (const f of ps.doubled) bits.push(i18n.t('coach.builtin.evaluation.doubledPrefix', { file: f }));
+    return bits;
+  };
+  const wWeak = weakList(psW);
+  const bWeak = weakList(psB);
+  if (wWeak.length) out.push(i18n.t('coach.builtin.evaluation.pawnWeaknessesWhite', { list: wWeak.join(', ') }));
+  if (bWeak.length) out.push(i18n.t('coach.builtin.evaluation.pawnWeaknessesBlack', { list: bWeak.join(', ') }));
+
+  if (psW.passed.length) {
+    const pawnWord = psW.passed.length > 1
+      ? i18n.t('coach.builtin.evaluation.passedPlural')
+      : i18n.t('coach.builtin.evaluation.passedSingular');
+    out.push(i18n.t('coach.builtin.evaluation.passedWhite', { pawnWord, squares: psW.passed.join(', ') }));
+  }
+  if (psB.passed.length) {
+    const pawnWord = psB.passed.length > 1
+      ? i18n.t('coach.builtin.evaluation.passedPlural')
+      : i18n.t('coach.builtin.evaluation.passedSingular');
+    out.push(i18n.t('coach.builtin.evaluation.passedBlack', { pawnWord, squares: psB.passed.join(', ') }));
+  }
+  if (ctx.bestMoveHint) out.push(i18n.t('coach.builtin.evaluation.topMove', { move: ctx.bestMoveHint }));
   return out.join('\n');
 }
 
-function respondKingSafety(ksW, ksB, turn) {
-  return `**King Safety**\n\n` +
-    `• **White king** (${turn === 'White' ? 'you' : 'opponent'}): ${ksW.score}${ksW.castled ? ' — castled' : ''}. ${ksW.notes.join(', ') || 'No immediate concerns.'}\n` +
-    `• **Black king** (${turn === 'Black' ? 'you' : 'opponent'}): ${ksB.score}${ksB.castled ? ' — castled' : ''}. ${ksB.notes.join(', ') || 'No immediate concerns.'}\n\n` +
-    `If your king is exposed: defend first. If your opponent's is exposed: look for checks, rook lifts, and queen infiltration.`;
+function respondKingSafety(ksW, ksB, turnColor) {
+  const head = i18n.t('coach.builtin.kingSafety.header');
+  const youStr = i18n.t('coach.builtin.kingSafety.you');
+  const oppStr = i18n.t('coach.builtin.kingSafety.opponent');
+  const castledW = ksW.castled ? i18n.t('coach.builtin.kingSafety.castledSuffix') : '';
+  const castledB = ksB.castled ? i18n.t('coach.builtin.kingSafety.castledSuffix') : '';
+  const notesW = ksW.notes.join(', ') || i18n.t('coach.builtin.kingSafety.noConcerns');
+  const notesB = ksB.notes.join(', ') || i18n.t('coach.builtin.kingSafety.noConcerns');
+  return head + '\n\n' +
+    i18n.t('coach.builtin.kingSafety.line', {
+      side: sideName('w'), who: turnColor === 'w' ? youStr : oppStr,
+      score: scoreLabel(ksW.score), castled: castledW, notes: notesW
+    }) + '\n' +
+    i18n.t('coach.builtin.kingSafety.line', {
+      side: sideName('b'), who: turnColor === 'b' ? youStr : oppStr,
+      score: scoreLabel(ksB.score), castled: castledB, notes: notesB
+    }) + '\n\n' +
+    i18n.t('coach.builtin.kingSafety.footer');
 }
 
 function respondPawns(psW, psB) {
-  const out = ['**Pawn Structure**'];
-  for (const [side, ps] of [['White', psW], ['Black', psB]]) {
+  const out = [i18n.t('coach.builtin.pawns.header')];
+  for (const [sideColor, ps] of [['w', psW], ['b', psB]]) {
     out.push('');
-    out.push(`**${side}** (${ps.count} pawns)`);
-    if (ps.isolated.length) out.push(`• Isolated: ${ps.isolated.join(', ')} — hard to defend, but often active.`);
-    if (ps.doubled.length)  out.push(`• Doubled on ${ps.doubled.join(', ')} — can't defend each other, often a long-term weakness.`);
-    if (ps.passed.length)   out.push(`• **Passed:** ${ps.passed.join(', ')} — push them with piece support!`);
-    if (!ps.isolated.length && !ps.doubled.length && !ps.passed.length) out.push(`• Clean structure — no notable weaknesses or passed pawns.`);
+    out.push(i18n.t('coach.builtin.pawns.side', { side: sideName(sideColor), n: ps.count }));
+    if (ps.isolated.length) out.push(i18n.t('coach.builtin.pawns.isolated', { squares: ps.isolated.join(', ') }));
+    if (ps.doubled.length)  out.push(i18n.t('coach.builtin.pawns.doubled', { files: ps.doubled.join(', ') }));
+    if (ps.passed.length)   out.push(i18n.t('coach.builtin.pawns.passed', { squares: ps.passed.join(', ') }));
+    if (!ps.isolated.length && !ps.doubled.length && !ps.passed.length) out.push(i18n.t('coach.builtin.pawns.clean'));
   }
   return out.join('\n');
 }
@@ -519,41 +580,51 @@ function respondPawns(psW, psB) {
 function respondDevelopment(pos, ph) {
   const w = developmentReport(pos, 'w');
   const b = developmentReport(pos, 'b');
-  const lines = ['**Development**', ''];
-  lines.push(`• White: ${w.minorDev}/4 minors developed${w.castled ? ', castled ✓' : ''}${w.minorHome.length ? ` — still home: ${w.minorHome.join(', ')}` : ''}`);
-  lines.push(`• Black: ${b.minorDev}/4 minors developed${b.castled ? ', castled ✓' : ''}${b.minorHome.length ? ` — still home: ${b.minorHome.join(', ')}` : ''}`);
-  if (ph === 'opening') lines.push('', `In the opening, every move should either (1) develop a piece, (2) control the center, or (3) improve king safety. Moves that don't do one of these are suspect.`);
+  const lines = [i18n.t('coach.builtin.development.header'), ''];
+  const homeSuffix = (arr) => arr.length ? i18n.t('coach.builtin.development.homeSuffix', { squares: arr.join(', ') }) : '';
+  const castledSuffix = (cast) => cast ? i18n.t('coach.builtin.development.castledSuffix') : '';
+  lines.push(i18n.t('coach.builtin.development.white', { n: w.minorDev, castled: castledSuffix(w.castled), home: homeSuffix(w.minorHome) }));
+  lines.push(i18n.t('coach.builtin.development.black', { n: b.minorDev, castled: castledSuffix(b.castled), home: homeSuffix(b.minorHome) }));
+  if (ph === 'opening') { lines.push(''); lines.push(i18n.t('coach.builtin.development.openingNote')); }
   return lines.join('\n');
 }
 
 function respondImprovement(ph) {
   const lines = [
-    '**Improve your worst piece**',
+    i18n.t('coach.builtin.improvement.header'),
     '',
-    `Look at each of your pieces and ask: "What is this doing?" Your goal each move is to give the least active piece a meaningful job.`,
+    i18n.t('coach.builtin.improvement.intro'),
     '',
-    '**Common worst pieces:**',
-    `• A bishop behind its own pawns — reroute or trade.`,
-    `• A knight on the rim (h3, a6 etc.) — centralize to d4/e4/d5/e5.`,
-    `• A rook on its starting square with no open file — find one and invade.`,
-    `• The queen too early and exposed — bring her back to safety first.`
+    i18n.t('coach.builtin.improvement.commonHeader'),
+    i18n.t('coach.builtin.improvement.bishop'),
+    i18n.t('coach.builtin.improvement.knight'),
+    i18n.t('coach.builtin.improvement.rook'),
+    i18n.t('coach.builtin.improvement.queen')
   ];
-  if (ph === 'middlegame') lines.push(`• A king still in the center past move 10 — castle immediately.`);
+  if (ph === 'middlegame') lines.push(i18n.t('coach.builtin.improvement.kingMid'));
   return lines.join('\n');
 }
 
 function respondSummary(ctx, pos, mr, ph, ksW, ksB, loose) {
-  const lines = [
-    `**Position snapshot** — _${quickPulse(mr, ph, ctx.turn)}_`,
-    ''
-  ];
-  lines.push(`• **Material:** W ${mr.whitePoints} · B ${mr.blackPoints}${mr.diff ? ` (${mr.diff > 0 ? '+' : ''}${mr.diff})` : ' (equal)'}`);
-  lines.push(`• **Kings:** White ${ksW.score}${ksW.castled ? ' ✓' : ''}, Black ${ksB.score}${ksB.castled ? ' ✓' : ''}`);
-  if (ctx.evalScore !== undefined) lines.push(`• **Eval:** ${formatEval(ctx.evalScore, ctx.turn)}`);
-  if (ctx.bestMoveHint)            lines.push(`• **Engine suggests:** **${ctx.bestMoveHint}**`);
-  if (loose.length)                lines.push(`• **Target:** opponent's loose ${loose.map(l => `${PIECE_NAME[l.piece]}/${l.square}`).join(', ')}`);
+  const pulse = quickPulse(mr, ph, ctx.turn);
+  const lines = [i18n.t('coach.builtin.summary.header', { pulse }), ''];
+  const diff = mr.diff
+    ? i18n.t('coach.builtin.summary.diff', { sign: mr.diff > 0 ? '+' : '', n: mr.diff })
+    : i18n.t('coach.builtin.summary.equal');
+  lines.push(i18n.t('coach.builtin.summary.material', { w: mr.whitePoints, b: mr.blackPoints, diff }));
+  const castledGlyph = i18n.t('coach.builtin.summary.castledGlyph');
+  lines.push(i18n.t('coach.builtin.summary.kings', {
+    wScore: scoreLabel(ksW.score), wCastled: ksW.castled ? castledGlyph : '',
+    bScore: scoreLabel(ksB.score), bCastled: ksB.castled ? castledGlyph : ''
+  }));
+  if (ctx.evalScore !== undefined) lines.push(i18n.t('coach.builtin.summary.eval', { eval: formatEval(ctx.evalScore, ctx.turn) }));
+  if (ctx.bestMoveHint)            lines.push(i18n.t('coach.builtin.summary.engineSuggests', { move: ctx.bestMoveHint }));
+  if (loose.length) {
+    const list = loose.map(l => `${pieceLower(l.piece)}/${l.square}`).join(', ');
+    lines.push(i18n.t('coach.builtin.summary.target', { list }));
+  }
   lines.push('');
-  lines.push(`Ask me: **best move · tactics · plan · king safety · pawns · development · evaluation**`);
+  lines.push(i18n.t('coach.builtin.summary.menu'));
   return lines.join('\n');
 }
 
@@ -562,14 +633,14 @@ function respondSummary(ctx, pos, mr, ph, ksW, ksB, loose) {
 // ----------------------------------------------------------------
 export class BuiltinCoach {
   get id() { return 'builtin'; }
-  get name() { return 'Built-in (offline)'; }
+  get name() { return i18n.t('coach.builtin.name'); }
 
   ask(question, ctx) {
     const q = (question || '').toLowerCase();
     const pos = parseFEN(ctx.fen);
     const moves = ctx.moveHistory || [];
     const mr = materialReport(pos);
-    const ph = phaseOf(pos, moves.length);
+    const ph = phaseKey(pos, moves.length);
     const ksW = kingSafety(pos, 'w', ph);
     const ksB = kingSafety(pos, 'b', ph);
     const psW = pawnStructure(pos, 'w');
@@ -583,7 +654,7 @@ export class BuiltinCoach {
     if (/opening|first move/.test(q))                                             return respondOpening(moves);
     if (/endgame|pawn endgame|king.*activ/.test(q))                               return respondEndgame(psW, psB);
     if (/evaluat|eval|who.*better|winning|losing|standing|assess/.test(q))        return respondEvaluation(ctx, pos, mr, ph, ksW, ksB, psW, psB);
-    if (/king safety|attack.*king|defend.*king/.test(q))                          return respondKingSafety(ksW, ksB, ctx.turn === 'w' ? 'White' : 'Black');
+    if (/king safety|attack.*king|defend.*king/.test(q))                          return respondKingSafety(ksW, ksB, ctx.turn);
     if (/pawn.*structure|weak.*pawn|isolated|doubled|passed/.test(q))             return respondPawns(psW, psB);
     if (/develop|developm/.test(q))                                               return respondDevelopment(pos, ph);
     if (/weak|worst piece|improve|bad piece/.test(q))                             return respondImprovement(ph);

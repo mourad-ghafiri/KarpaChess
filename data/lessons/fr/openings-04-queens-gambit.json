@@ -1,0 +1,26 @@
+{
+  "id": "queens-gambit",
+  "title": "Le gambit de la dame",
+  "summary": "Offrir un pion pour contrôler le centre",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Le pion dame classique",
+      "text": "Le gambit de la dame commence par 1.d4 d5 2.c4. Les Blancs offrent le pion c. Si les Noirs prennent, le centre est abandonné. S'ils refusent (le plus courant au niveau maître), les Blancs gardent un fort contrôle central." },
+    { "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "Ouvrez avec le pion dame.",
+      "targetSan": ["d4"],
+      "hint": "1.d4 — poussée centrale classique." },
+    { "type": "play",
+      "fen": "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "Offrez maintenant le gambit.",
+      "targetSan": ["c4"],
+      "hint": "2.c4 — attaquez le pion d5 avec un pion d'aile." },
+    { "type": "teach",
+      "fen": "rnbqkbnr/ppp1pppp/8/3p4/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2",
+      "title": "Refuser ou accepter ?",
+      "text": "Si les Noirs acceptent (2...dxc4), les Blancs récupèrent généralement le pion rapidement. Si les Noirs refusent (2...e6, 2...c6, 2...Nf6), la partie devient une bataille positionnelle pour les cases centrales. Dans tous les cas, les Blancs obtiennent une forte initiative." }
+  ]
+}

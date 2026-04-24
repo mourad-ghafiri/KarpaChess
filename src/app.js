@@ -6,8 +6,9 @@
  * first-paint. Nothing else in the codebase reaches across module boundaries.
  */
 import { EventBus } from './core/event-bus.js';
-import { STORAGE_KEY, EVENTS } from './core/constants.js';
+import { STORAGE_KEY, EVENTS, SUPPORTED_LANGS } from './core/constants.js';
 import { $ } from './core/dom.js';
+import { I18n, i18n } from './core/i18n.js';
 
 // Services
 import { Storage } from './services/storage.js';
@@ -62,6 +63,7 @@ import { BannerView } from './ui/banner-view.js';
 import { PromotionView } from './ui/promotion-view.js';
 import { SettingsView } from './ui/settings-view.js';
 import { TabController } from './ui/tabs.js';
+import { LangSwitcherView } from './ui/lang-switcher.js';
 import { DrawingOverlay } from './ui/drawing-overlay.js';
 import { MoveTreeView } from './ui/move-tree-view.js';
 
@@ -81,6 +83,23 @@ async function bootstrap() {
   // ---------- state
   const prefs = new PrefsStore(storage, bus);
   prefs.load();
+
+  // ---------- i18n: detect language if unset, then load bundle
+  if (!storage.read()?.lang) {
+    const detected = detectLanguage();
+    prefs.set('lang', detected);
+  }
+  const i18nImpl = new I18n(bus);
+  i18n.bind(i18nImpl);
+  await i18nImpl.init(prefs.get('lang'));
+  // Reload bundle + content + re-render when language changes
+  bus.on(EVENTS.PREFS_CHANGED, async (patch) => {
+    if (patch && 'lang' in patch) {
+      await i18nImpl.load(patch.lang);
+      await content.loadAll(patch.lang);
+      bus.emit(EVENTS.CONTENT_RELOADED);
+    }
+  });
   const gameState = new GameState(bus);
   gameState.setPlayAs(prefs.get('playAs'));
   const learnState = new LearnState();
@@ -174,6 +193,9 @@ async function bootstrap() {
   settings.wire();
   $('#btn-settings').addEventListener('click', (e) => { e.stopPropagation(); settings.open(); });
 
+  // Topbar language switcher (flag dropdown next to settings)
+  new LangSwitcherView(prefs, bus);
+
   // Promotion
   const promotion = new PromotionView(modals, 'promotion-modal', $('#promotion-choices'));
   $('#promotion-modal').addEventListener('click', (e) => {
@@ -259,12 +281,32 @@ async function bootstrap() {
   bus.on('tab:switch', ({ name }) => tabs.activate(name));
 
   // ---------- content + first game
-  await content.loadAll();
+  await content.loadAll(prefs.get('lang'));
   // Re-render learn/puzzles lists now that content is in.
   learn.render();
   puzzles.render();
 
+  // Re-render tab UIs when content reloads (language switch)
+  bus.on(EVENTS.CONTENT_RELOADED, () => {
+    learn.render();
+    puzzles.render();
+    coachCtrl.updateStatus();
+    coachCtrl.greet();
+    // Re-render insights / move tree so commentator text flips languages too
+    if (commentator && commentatorState.hasMatch()) {
+      drawingOverlay.render();
+      moveTreeView.render();
+    }
+  });
+
   practice.newGame();
+}
+
+/** Pick the best matching supported language from navigator.language. */
+function detectLanguage() {
+  const nav = (navigator.language || 'en').toLowerCase();
+  const code = nav.split('-')[0];
+  return SUPPORTED_LANGS.includes(code) ? code : 'en';
 }
 
 function applyTheme(name) {

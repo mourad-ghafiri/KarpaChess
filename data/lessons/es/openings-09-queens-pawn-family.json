@@ -1,0 +1,29 @@
+{
+  "id": "queens-pawn-family",
+  "title": "1.d4 — El Peón Dama",
+  "summary": "Entendiendo los sistemas con 1.d4",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
+      "title": "El Empuje Posicional",
+      "text": "1.d4 reclama el centro y prepara c4. Las partidas son más posicionales que con 1.e4 — batallas estratégicas lentas sobre estructuras de peones y puestos avanzados."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
+      "title": "Respuestas Principales",
+      "text": "Opciones de las Negras: 1...d5 (clásica, conduce al Gambito de Dama), 1...Nf6 (defensas indias — hipermodernas), 1...f5 (Holandesa), 1...e6 (flexible). Las defensas indias son la elección moderna de los grandes maestros."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
+      "prompt": "Juega la clásica 1...d5 — reclama tu propio territorio.",
+      "targetSan": [
+        "d5"
+      ],
+      "hint": "1...d5 refleja a las Blancas. Clásica, sólida, respetada."
+    }
+  ]
+}

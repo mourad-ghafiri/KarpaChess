@@ -1,0 +1,20 @@
+{
+  "id": "pawn-structure",
+  "title": "Estructura de Peones",
+  "summary": "Los peones son el alma del ajedrez",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Philidor Tenía Razón",
+      "text": "El maestro del siglo XVIII Philidor dijo que 'los peones son el alma del ajedrez' — porque la estructura de peones determina qué piezas están activas, qué casillas son débiles y dónde jugar. A diferencia de las piezas, los peones no retroceden. Cada empuje es permanente." },
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Debilidades de Peones",
+      "text": "Aprende a detectar: peones aislados (sin peón en columnas adyacentes — difíciles de defender), peones doblados (dos en la misma columna — no pueden defenderse mutuamente), peones retrasados (atrás de sus vecinos — objetivo permanente) y peones pasados (imparables hacia adelante)." },
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "La Estructura Moldea el Plan",
+      "text": "La estructura de peones te dice DÓNDE atacar. Los jugadores de Caro-Kann atacan en el flanco de dama, los de India de Rey en el de rey — no por elección, sino porque sus peones lo permiten. Lee los peones, luego haz el plan." }
+  ]
+}

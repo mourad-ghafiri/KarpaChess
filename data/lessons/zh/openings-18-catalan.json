@@ -1,0 +1,26 @@
+{
+  "id": "catalan-advanced",
+  "title": "加泰罗尼亚开局",
+  "summary": "从第一步就开始的阵地压迫",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "长对角线武器",
+      "text": "加泰罗尼亚(1.d4 Nf6 2.c4 e6 3.g3)把后翼弃兵的结构与翼角象结合起来。白方获得微小却持续的优势——研磨、技术性的棋局。克拉姆尼克最爱。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/pppp1ppp/4pn2/8/2PP4/6P1/PP2PP1P/RNBQKBNR b KQkq - 0 3",
+      "title": "为什么翼角?",
+      "text": "g2 的象在 a8-h1 对角线上施加长期压力。如果黑方走 ...dxc4(开放式加泰罗尼亚),白方常乐于放弃兵以换取持续压力。纯粹的技术。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/pppp1ppp/4pn2/8/2PP4/6P1/PP2PP1P/RNBQKBNR b KQkq - 0 3",
+      "title": "加泰罗尼亚梦幻局面",
+      "text": "白方的理想:长对角线对 Bg2 开放、马在 d2 和 f3、两车联通、强大的中心兵。黑方必须精准应对,否则被扼杀。马格努斯·卡尔森用加泰罗尼亚把对手碾成尘土。"
+    }
+  ]
+}

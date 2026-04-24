@@ -1,0 +1,16 @@
+{
+  "id": "zwischenzug",
+  "title": "La Jugada Intermedia",
+  "summary": "Inserta una amenaza mayor antes de la recaptura obvia",
+  "difficulty": "advanced",
+  "steps": [
+    { "type": "teach",
+      "fen": "r1bqkbnr/ppp2ppp/2np4/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 4",
+      "title": "No Solo Reacciones",
+      "text": "Un zwischenzug ('jugada intermedia', del alemán) es una jugada sorpresa insertada en una secuencia esperada — por lo general un jaque o una amenaza mayor — que cambia la posición antes de la jugada obvia. Es la marca de una fuerte visión táctica." },
+    { "type": "teach",
+      "fen": "r1bqkbnr/ppp2ppp/2np4/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 4",
+      "title": "Patrón de Ejemplo",
+      "text": "Cuando tu rival captura algo tuyo, tu reflejo es recapturar. Pero a veces una jugada intermedia — un jaque en otro lugar, o una amenaza mayor — gana más material. Pregúntate siempre: antes de recapturar, ¿hay algo MEJOR? Incluso un solo jaque intermedio puede ganar la partida." }
+  ]
+}

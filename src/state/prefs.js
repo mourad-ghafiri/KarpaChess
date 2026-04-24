@@ -14,6 +14,9 @@ const DEFAULTS = Object.freeze({
   sound: true,
   animations: true,
 
+  // Language — auto-detected from navigator.language at first boot.
+  lang: 'en',
+
   // AI Coach
   provider: 'builtin',
   anthropicKey: '',  anthropicModel:  'claude-opus-4-7',

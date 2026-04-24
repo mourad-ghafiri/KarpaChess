@@ -1,0 +1,20 @@
+{
+  "id": "rook-pawn-vs-rook",
+  "title": "Tour et pion contre tour",
+  "summary": "La finale la plus courante à tous les niveaux",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "8/8/8/3k4/8/8/4P3/R3K2r w - - 0 1",
+      "title": "Moitié gains, moitié nulles",
+      "text": "La finale la plus fréquente est T+P contre T. Environ la moitié des cas sont nuls, la moitié sont gagnés — et le résultat dépend souvent de la connaissance par cœur de Philidor (nulle) ou Lucena (gain)."
+    },
+    {
+      "type": "teach",
+      "fen": "8/8/8/3k4/8/8/4P3/R3K2r w - - 0 1",
+      "title": "Règles fondamentales",
+      "text": "Règle 1 : la tour du défenseur appartient DERRIÈRE le pion passé (le vôtre ou le leur). Règle 2 : le pion tour (a/h) tend à faire nulle — le roi défenseur atteint souvent le coin. Règle 3 : l'attaquant doit pousser le pion tout en gardant son roi escorté."
+    }
+  ]
+}

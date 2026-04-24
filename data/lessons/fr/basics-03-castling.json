@@ -1,0 +1,30 @@
+{
+  "id": "castling",
+  "title": "Le roque",
+  "summary": "Déplacez le roi et la tour en un seul coup",
+  "difficulty": "beginner",
+  "steps": [
+    { "type": "teach",
+      "fen": "r3k2r/pppq1ppp/2n1pn2/3p4/3P4/2N1PN2/PPPQ1PPP/R3K2R w KQkq - 0 1",
+      "title": "Qu'est-ce que le roque ?",
+      "text": "Le roque est le seul coup aux échecs où DEUX pièces bougent en même temps : votre roi et l'une de vos tours. C'est le moyen le plus rapide de mettre le roi à l'abri ET d'activer une tour. Vous pouvez roquer côté roi (petit roque) ou côté dame (grand roque)." },
+    { "type": "teach",
+      "fen": "r3k2r/pppq1ppp/2n1pn2/3p4/3P4/2N1PN2/PPPQ1PPP/R3K2R w KQkq - 0 1",
+      "title": "Les règles",
+      "text": "Pour roquer : (1) ni le roi ni la tour concernée n'ont bougé, (2) aucune pièce entre eux, (3) le roi n'est pas en échec, et (4) le roi ne traverse pas et n'atterrit pas sur une case attaquée." },
+    { "type": "play",
+      "fen": "r3k2r/pppq1ppp/2n1pn2/3p4/3P4/2N1PN2/PPPQ1PPP/R3K2R w KQkq - 0 1",
+      "prompt": "Roquez côté roi (petit roque).",
+      "targetSan": ["O-O"],
+      "hint": "Dans la plupart des interfaces d'échecs, il suffit de déplacer le roi de deux cases vers la tour." },
+    { "type": "play",
+      "fen": "r3k2r/pppq1ppp/2n1pn2/3p4/3P4/2N1PN2/PPPQ1PPP/R3K2R b KQkq - 0 1",
+      "prompt": "Maintenant, les Noirs roquent côté dame (grand roque).",
+      "targetSan": ["O-O-O"],
+      "hint": "Déplacez le roi de deux cases vers la tour de la colonne a." },
+    { "type": "teach",
+      "fen": "2kr3r/pppq1ppp/2n1pn2/3p4/3P4/2N1PN2/PPPQ1PPP/R4RK1 w - - 0 1",
+      "title": "Terminé !",
+      "text": "Les deux rois sont en sécurité et les tours de la colonne a sont connectées avec l'autre tour. Roquer tôt est l'une des habitudes les plus importantes aux échecs — visez à le faire avant le coup 10 dans la plupart des parties." }
+  ]
+}

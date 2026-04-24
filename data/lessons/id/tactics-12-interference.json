@@ -1,0 +1,20 @@
+{
+  "id": "interference",
+  "title": "Interferensi",
+  "summary": "Blokir garis pertahanan musuh",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "4k3/8/8/8/8/8/8/4K3 w - - 0 1",
+      "title": "Sang Pemblokir",
+      "text": "Taktik interferensi bekerja ketika bidak musuh mempertahankan kotak kunci di sepanjang garis — Anda menempatkan bidak Anda sendiri untuk memblokir pertahanan itu. Sering menentukan di babak tengah."
+    },
+    {
+      "type": "teach",
+      "fen": "4k3/8/8/8/8/8/8/4K3 w - - 0 1",
+      "title": "Novotny dan Plachutta",
+      "text": "Dua pola interferensi klasik: Novotny (mengorbankan di persimpangan dua garis, memaksa satu pembela memblokir yang lain) dan Plachutta (ide yang sama tetapi dengan bidak yang bergerak serupa). Taktik geometris yang indah."
+    }
+  ]
+}

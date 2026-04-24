@@ -1,0 +1,26 @@
+{
+  "id": "pawn-structure",
+  "title": "兵形",
+  "summary": "兵是国际象棋的灵魂",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "菲利多尔说得对",
+      "text": "18 世纪大师菲利多尔曾说\"兵是国际象棋的灵魂\"——因为兵形决定了哪些子活跃、哪些格弱、该在哪里下棋。与其他棋子不同,兵不能后退。每一步推进都是永久的。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "兵的弱点",
+      "text": "要学会识别:孤立兵(相邻线没有友兵——难以防守)、叠兵(同线两个兵——无法相互防守)、落后兵(卡在邻兵后面——永久目标),以及通路兵(前进中无法阻挡)。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "兵形决定计划",
+      "text": "兵形告诉你该攻哪里。卡罗-卡恩棋手在后翼进攻,王翼印度棋手在王翼进攻——不是出于选择,而是因为他们的兵允许如此。先读懂兵形,再制定计划。"
+    }
+  ]
+}

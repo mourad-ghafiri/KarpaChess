@@ -1,0 +1,24 @@
+{
+  "id": "queen-mate",
+  "title": "Rey y Dama contra Rey",
+  "summary": "El mate más importante que debes aprender",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "4k3/8/4K3/4Q3/8/8/8/8 w - - 0 1",
+      "title": "Mate Clásico",
+      "text": "Con rey y dama contra rey solo, lleva al rey enemigo hacia el borde y luego da mate. La dama controla un muro — tu rey impide la huida."
+    },
+    {
+      "type": "play",
+      "fen": "4k3/8/4K3/4Q3/8/8/8/8 w - - 0 1",
+      "prompt": "Da jaque mate en una jugada.",
+      "targetSan": [
+        "Qb8#",
+        "Qh8#"
+      ],
+      "hint": "Corta la octava fila — el rey enemigo no tiene a dónde huir."
+    }
+  ]
+}

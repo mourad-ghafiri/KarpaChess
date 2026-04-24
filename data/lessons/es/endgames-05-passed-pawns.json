@@ -1,0 +1,21 @@
+{
+  "id": "passed-pawns",
+  "title": "Peones Pasados",
+  "summary": "El motor de las victorias en el final",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "4k3/8/8/8/4P3/8/8/4K3 w - - 0 1",
+      "title": "¿Qué es un Peón Pasado?",
+      "text": "Un peón pasado no tiene peón enemigo delante ni en las columnas adyacentes — nada puede impedir su promoción salvo una pieza. Los peones pasados son activos enormes en el final. La frase 'un peón pasado debe ser empujado' es un dicho de Nimzowitsch por una razón." },
+    { "type": "play",
+      "fen": "4k3/8/8/8/4P3/8/8/4K3 w - - 0 1",
+      "prompt": "Avanza el peón pasado.",
+      "targetSan": ["e5"],
+      "hint": "e5 — un paso más cerca de la promoción." },
+    { "type": "teach",
+      "fen": "4k3/8/8/4P3/8/8/8/4K3 b - - 0 1",
+      "title": "¡Apóyalo!",
+      "text": "Un peón pasado solitario aún necesita ayuda. Sin un rey que lo escolte, una sola pieza enemiga puede detenerlo. Activa tu rey para apoyar el avance — y crea una nueva dama." }
+  ]
+}

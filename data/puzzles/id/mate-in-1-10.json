@@ -1,0 +1,8 @@
+{
+  "id": "mate-in-1-10",
+  "fen": "7k/5K1p/8/8/8/8/8/6R1 w - - 0 1",
+  "solution": [
+    "Rg8#"
+  ],
+  "hint": "Serang kolom raja — ia terkurung oleh raja Anda dan pionnya sendiri."
+}

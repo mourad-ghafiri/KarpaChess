@@ -1,0 +1,20 @@
+{
+  "id": "space-advantage",
+  "title": "スペースの優位",
+  "summary": "マスが多いほど選択肢も多い",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/3PP3/8/PPP2PPP/RNBQKBNR b KQkq d3 0 2",
+      "title": "スペースとは?",
+      "text": "スペースとは、自分の駒が届けるマスの数のこと、とくに敵陣側での話です。スペースが多い側は駒の機動力と協調性で勝ります。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/3PP3/8/PPP2PPP/RNBQKBNR b KQkq d3 0 2",
+      "title": "スペースを活かす",
+      "text": "スペースが多いときは交換を避けましょう(窮屈な相手には余裕が必要です)。じわじわ圧力をかけ、脅しを積み上げ、盤上で駒を移動させ、そして決定打を。"
+    }
+  ]
+}

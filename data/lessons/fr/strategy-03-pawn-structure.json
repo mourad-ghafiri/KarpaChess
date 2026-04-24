@@ -1,0 +1,20 @@
+{
+  "id": "pawn-structure",
+  "title": "Structure de pions",
+  "summary": "Les pions sont l'âme des échecs",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Philidor avait raison",
+      "text": "Le maître du XVIIIe siècle Philidor disait 'les pions sont l'âme des échecs' — parce que la structure de pions détermine quelles pièces sont actives, quelles cases sont faibles, et où jouer. Contrairement aux pièces, les pions ne reculent pas. Chaque poussée est permanente." },
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Faiblesses de pions",
+      "text": "Apprenez à repérer : les pions isolés (pas de pion sur les colonnes adjacentes — difficiles à défendre), les pions doublés (deux sur la même colonne — ne peuvent se défendre mutuellement), les pions arriérés (coincés derrière leurs voisins — une cible permanente), et les pions passés (inarrêtables en avançant)." },
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "La structure façonne le plan",
+      "text": "La structure de pions vous dit OÙ attaquer. Les joueurs de Caro-Kann attaquent à l'aile dame, ceux de l'est-indienne à l'aile roi — non par choix, mais parce que c'est là que leurs pions le permettent. Lisez les pions, puis élaborez le plan." }
+  ]
+}

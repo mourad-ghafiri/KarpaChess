@@ -1,0 +1,47 @@
+{
+  "id": "sicilian",
+  "title": "الدفاع الصقلي",
+  "summary": "أحدّ ردود الأسود على 1.e4",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "الردّ الأحدّ",
+      "text": "عندما يلعب الأبيض 1.e4، أكثر ردود الأسود قتالية هو 1...c5 — الدفاع الصقلي. لا يتنازل الأسود عن شيء في المركز ويُعدّ هجمة مضادّة على جهة الوزير. إنه أكثر الدفاعات شعبية في كل مستوى."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "العب أكثر النقلات الأولى مبدئية للأبيض.",
+      "targetSan": [
+        "e4"
+      ],
+      "hint": "1.e4 — افتتاح بيدق الملك الكلاسيكي."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+      "prompt": "يلعب الأسود الصقلي — ادفع بيدق c.",
+      "targetSan": [
+        "c5"
+      ],
+      "hint": "1...c5 يقاتل على d4 دون سدّ عمود c."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "الردّ الكلاسيكي للأبيض: طوِّر الحصان.",
+      "targetSan": [
+        "Nf3"
+      ],
+      "hint": "2.Nf3 يُعدّ d4، الصقلي المفتوح."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
+      "title": "لماذا الصقلي؟",
+      "text": "على عكس ...e5 الذي يُمثّل نقلة الأبيض، يخلق ...c5 لعباً غير متناظر. يهاجم الأبيض على جهة الملك؛ ويهاجم الأسود مضاداً على جهة الوزير. المباريات حادة وحاسمة — الفوز، لا التعادل، هو الشائع."
+    }
+  ]
+}

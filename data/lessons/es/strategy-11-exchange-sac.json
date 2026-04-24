@@ -1,0 +1,20 @@
+{
+  "id": "exchange-sacrifice",
+  "title": "El Sacrificio de Calidad",
+  "summary": "Entregar una torre por una pieza menor",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "Entregar la Torre",
+      "text": "Un sacrificio de calidad (torre por pieza menor) es uno de los conceptos más avanzados. Petrosian fue su virtuoso — sacrificaba \"la calidad\" (torre por alfil/caballo) por ventajas posicionales a largo plazo."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "Cuándo Funciona",
+      "text": "Los buenos sacrificios de calidad requieren: (1) la estructura resultante te favorece a largo plazo, (2) tu pieza menor es fuerte (puesto avanzado, pareja de alfiles), (3) la torre enemiga que queda no tiene buena columna. El Rxc3 de Petrosian es el ejemplo clásico."
+    }
+  ]
+}

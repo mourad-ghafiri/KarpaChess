@@ -1,0 +1,20 @@
+{
+  "id": "outposts",
+  "title": "アウトポスト",
+  "summary": "敵のポーンに届かないマス",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "夢のマス",
+      "text": "アウトポストは、敵陣側の、敵のポーンが攻撃できないマスのことです。ナイトやビショップがそこに到達すると、実質的に動かせません。黒のポーンチェーンの前にあるd5やe5のナイトは、エンドゲームを支配します。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/pppp1ppp/5n2/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+      "title": "作り方",
+      "text": "アウトポストは相手がポーン構造を弱めたときに生まれます。フランクポーンを突いたり、ぎこちない駒取りをしたりが典型です。相手が望んでいる交換を急いで受けないこと。将来のアウトポストの圧力を軽減しようとしているかもしれません。"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "queen-vs-pawn",
+  "title": "Dama contra Peón Avanzado",
+  "summary": "La famosa carrera — normalmente gana la dama",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "8/8/8/8/8/1K6/1p6/1k5Q w - - 0 1",
+      "title": "La Técnica del Zig-Zag",
+      "text": "Cuando una dama se enfrenta a un peón a un paso de promocionar, la dama gana SI puede dar jaques en zig-zag para forzar al rey enemigo delante de su propio peón. Cada vez que el rey bloquea, la dama gana un tempo para acercar a su propio rey."
+    },
+    {
+      "type": "teach",
+      "fen": "8/8/8/8/8/1K6/1p6/1k5Q w - - 0 1",
+      "title": "Las Excepciones",
+      "text": "La dama NO logra ganar contra: (a) un peón alfil en la séptima (trucos de ahogado), (b) un peón torre en la séptima (igual). Contra peones caballo o centrales, la dama siempre gana."
+    }
+  ]
+}

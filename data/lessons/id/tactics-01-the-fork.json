@@ -1,0 +1,38 @@
+{
+  "id": "the-fork",
+  "title": "Garpu",
+  "summary": "Serang dua bidak sekaligus",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "8/8/2k5/3q4/8/8/2N1K3/8 w - - 0 1",
+      "title": "Garpu Kerajaan",
+      "text": "Garpu menyerang dua bidak dalam satu langkah. Kuda sangat ahli dalam hal ini — ia melompat dengan cara yang tidak bisa diblokir bidak lain. Di sini, satu langkah kuda menyerang baik raja MAUPUN menteri."
+    },
+    {
+      "type": "play",
+      "fen": "8/8/2k5/3q4/8/8/2N1K3/8 w - - 0 1",
+      "prompt": "Mainkan kuda untuk menggarpu raja dan menteri.",
+      "targetSan": [
+        "Nb4+"
+      ],
+      "hint": "Nb4 menyerang baik c6 maupun d5."
+    },
+    {
+      "type": "teach",
+      "fen": "4k3/8/8/4n3/8/8/8/Q3K3 w - - 0 1",
+      "title": "Garpu Menteri",
+      "text": "Menteri bisa menggarpu juga — terutama dengan skak. Ketika lawan HARUS merespons skak, Anda mendapatkan langkah gratis untuk merebut material di tempat lain."
+    },
+    {
+      "type": "play",
+      "fen": "4k3/8/8/4n3/8/8/8/Q3K3 w - - 0 1",
+      "prompt": "Tangkap kuda dengan skak.",
+      "targetSan": [
+        "Qxe5+"
+      ],
+      "hint": "Menteri membidik e5."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "pawn-structure",
+  "title": "Struktur Pion",
+  "summary": "Pion adalah jiwa catur",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Philidor Benar",
+      "text": "Master abad ke-18 Philidor berkata 'pion adalah jiwa catur' — karena struktur pion menentukan bidak mana yang aktif, kotak mana yang lemah, dan di mana bermain. Berbeda dari bidak, pion tidak bisa mundur. Setiap dorongan bersifat permanen." },
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Kelemahan Pion",
+      "text": "Belajar mengenali: pion terisolasi (tidak ada pion di kolom sebelah — sulit dipertahankan), pion ganda (dua di kolom sama — tidak bisa saling melindungi), pion mundur (terjebak di belakang tetangganya — sasaran permanen), dan pion lewat (tak terbendung maju)." },
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Struktur Membentuk Rencana",
+      "text": "Struktur pion memberi tahu Anda DI MANA harus menyerang. Pemain Caro-Kann menyerang di sisi menteri, pemain King's Indian di sisi raja — bukan karena pilihan, tetapi karena di situlah pion mereka mengizinkan. Baca pionnya, lalu buat rencana." }
+  ]
+}

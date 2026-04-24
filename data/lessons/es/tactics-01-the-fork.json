@@ -1,0 +1,38 @@
+{
+  "id": "the-fork",
+  "title": "El Doble (Horquilla)",
+  "summary": "Ataca dos piezas a la vez",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "8/8/2k5/3q4/8/8/2N1K3/8 w - - 0 1",
+      "title": "Doble Real",
+      "text": "Un doble ataca dos piezas en una sola jugada. El caballo es especialmente bueno en ello — salta de una forma que ninguna pieza puede bloquear. Aquí, una jugada de caballo ataca al rey Y a la dama."
+    },
+    {
+      "type": "play",
+      "fen": "8/8/2k5/3q4/8/8/2N1K3/8 w - - 0 1",
+      "prompt": "Juega el caballo para dar un doble al rey y a la dama.",
+      "targetSan": [
+        "Nb4+"
+      ],
+      "hint": "Nb4 ataca c6 y d5 a la vez."
+    },
+    {
+      "type": "teach",
+      "fen": "4k3/8/8/4n3/8/8/8/Q3K3 w - - 0 1",
+      "title": "Doble de Dama",
+      "text": "Las damas también pueden dar dobles — especialmente con jaque. Cuando el rival DEBE responder al jaque, tú ganas un tempo gratuito para apropiarte de material en otra parte."
+    },
+    {
+      "type": "play",
+      "fen": "4k3/8/8/4n3/8/8/8/Q3K3 w - - 0 1",
+      "prompt": "Captura el caballo con jaque.",
+      "targetSan": [
+        "Qxe5+"
+      ],
+      "hint": "La dama se fija en e5."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "good-bad-pieces",
+  "title": "Bonnes et mauvaises pièces",
+  "summary": "L'activité compte plus que le nombre brut de pièces",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Tous les fous ne se valent pas",
+      "text": "Un fou bloqué par ses propres pions de la même couleur est un 'mauvais fou' — à l'étroit et inefficace. Un fou avec des diagonales ouvertes est un 'bon fou' — puissance de feu à longue portée. C'est vrai pour chaque pièce : ce qu'elle fait importe plus que ce qu'elle est." },
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Améliorez votre pire pièce",
+      "text": "Un principe utile du grand maître Makagonov : 'à chaque coup, améliorez votre pièce la plus mal placée.' Avant d'attaquer, assurez-vous que vos pièces les plus lentes font quelque chose. Les coups calmes qui améliorent la coordination gagnent souvent les parties." }
+  ]
+}

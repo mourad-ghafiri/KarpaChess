@@ -1,0 +1,29 @@
+{
+  "id": "kings-pawn-family",
+  "title": "1.e4——王前兵开局",
+  "summary": "主要的 1.e4 回应概览",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+      "title": "浪漫派开局",
+      "text": "1.e4 为后和象打开线路,并用兵争夺中心。它尖锐、讲战术,是国际象棋史上最流行的第一步。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+      "title": "黑方主要回应",
+      "text": "黑方有几种严肃的选择:1...e5(古典、对称)、1...c5(西西里,非对称)、1...e6(法国)、1...c6(卡罗-卡恩)、1...d5(斯堪的纳维亚)。各自通向截然不同的棋局。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+      "prompt": "用古典回应迎击 1.e4。",
+      "targetSan": [
+        "e5"
+      ],
+      "hint": "1...e5 同样占据中心。"
+    }
+  ]
+}

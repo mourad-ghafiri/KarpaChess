@@ -1,0 +1,20 @@
+{
+  "id": "open-files",
+  "title": "Colonnes ouvertes",
+  "summary": "Des voies d'invasion pour vos tours",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r3k2r/ppp2ppp/8/8/8/8/PPP2PPP/R3K2R w KQkq - 0 1",
+      "title": "Pourquoi les tours adorent les colonnes ouvertes",
+      "text": "Les tours sont redoutables sur les colonnes ouvertes (sans pions) ou semi-ouvertes (sans pion à soi). Contrôler une colonne ouverte décide souvent des parties en milieu de jeu — surtout une menant au roi ennemi."
+    },
+    {
+      "type": "teach",
+      "fen": "r3k2r/ppp2ppp/8/8/8/8/PPP2PPP/R3K2R w KQkq - 0 1",
+      "title": "Doublement et la 7e rangée",
+      "text": "Le meilleur contrôle de colonne est des tours DOUBLÉES (les deux tours sur la même colonne). De là, pénétrer jusqu'à la 7e rangée — \"cochons sur la 7e\" — où elles attaquent les pions et piègent le roi ennemi."
+    }
+  ]
+}

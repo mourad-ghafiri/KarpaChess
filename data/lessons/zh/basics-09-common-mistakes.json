@@ -1,0 +1,26 @@
+{
+  "id": "common-mistakes",
+  "title": "初学者常犯的错误",
+  "summary": "避开每个初学者都会陷入的陷阱",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "五大错误",
+      "text": "每个初学者都会犯这些错误:(1) 开局中同一个子连走两次,(2) 忘记王车易位,(3) 过早出后,(4) 不加思索地走\"自然着\",(5) 没有计划地走棋。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/3PP3/8/PPP2PPP/RNBQKBNR b KQkq d3 0 2",
+      "title": "不要见兵就吃",
+      "text": "不是每次吃子都是好的。有时吃兵会浪费时间——你再次走同一个子,对手却在出子。问自己:\"这个兵值一步先手吗?\""
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "留意对手的威胁",
+      "text": "一半的失败局面来自忽视对手。当对方走子时,始终问:\"这步棋攻击了什么?\" 如果你看不到,很可能就是没注意到。"
+    }
+  ]
+}

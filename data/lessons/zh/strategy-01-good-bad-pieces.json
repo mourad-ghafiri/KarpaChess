@@ -1,0 +1,20 @@
+{
+  "id": "good-bad-pieces",
+  "title": "好子与坏子",
+  "summary": "活跃度比原始子力数更重要",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "并非所有象都一样",
+      "text": "被自己同色兵挡住的象是\"坏象\"——拥挤且无效。拥有开放对角线的象是\"好象\"——长距离的火力。每个棋子都是如此:它的作用比它的类型更重要。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "改善你最差的子",
+      "text": "来自特级大师马卡戈诺夫的实用原则:\"每步棋都改善你位置最差的子力。\" 进攻前,确保你最慢的子做了点什么。为改善子力协调而下的平静着法常常赢下棋局。"
+    }
+  ]
+}

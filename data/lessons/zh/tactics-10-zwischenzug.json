@@ -1,0 +1,20 @@
+{
+  "id": "zwischenzug",
+  "title": "中间着法",
+  "summary": "在显然的回吃之前插入更强的威胁",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bqkbnr/ppp2ppp/2np4/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 4",
+      "title": "不要只反应",
+      "text": "中间着法(zwischenzug,来自德文,意为\"中间的一步\")是在预期序列中插入的意外着法——通常是将军或更大的威胁——在显然的应着之前改变局面。这是强大战术眼光的标志。"
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqkbnr/ppp2ppp/2np4/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 4",
+      "title": "例子模式",
+      "text": "当对手吃你的子时,反射是回吃。但有时中间着法——别处的将军或更大的威胁——能赢下更多子力。始终考虑:回吃之前,有没有更好的着法?即使只插一个将军也能赢下整局。"
+    }
+  ]
+}

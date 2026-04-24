@@ -1,0 +1,20 @@
+{
+  "id": "lucena-position",
+  "title": "Position de Lucena",
+  "summary": "La technique gagnante dans les finales de tours",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "3K4/3P1k2/8/8/8/8/1R6/6r1 w - - 0 1",
+      "title": "Construire un pont",
+      "text": "La position de Lucena est le pendant de Philidor — la technique GAGNANTE quand le roi du camp fort a atteint l'avant du pion. La technique du \"pont\" utilise la tour pour protéger le roi des échecs."
+    },
+    {
+      "type": "teach",
+      "fen": "3K4/3P1k2/8/8/8/8/1R6/6r1 w - - 0 1",
+      "title": "Le pont",
+      "text": "Méthode : placez votre tour sur la 4e rangée. Quand la tour ennemie donne échec sur le côté, votre tour s'interpose — construisant le \"pont\" que votre roi traverse. Associées à Philidor, ces deux positions couvrent la plupart des finales de tours."
+    }
+  ]
+}

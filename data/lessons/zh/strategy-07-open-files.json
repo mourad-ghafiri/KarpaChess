@@ -1,0 +1,20 @@
+{
+  "id": "open-files",
+  "title": "开放线",
+  "summary": "车的入侵通道",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r3k2r/ppp2ppp/8/8/8/8/PPP2PPP/R3K2R w KQkq - 0 1",
+      "title": "车为何爱开放线",
+      "text": "车在开放线(没有兵)或半开放线(没有己方兵)上威力无比。控制开放线常常决定中局胜负——尤其是通向敌王的那一条。"
+    },
+    {
+      "type": "teach",
+      "fen": "r3k2r/ppp2ppp/8/8/8/8/PPP2PPP/R3K2R w KQkq - 0 1",
+      "title": "叠车与第七横线",
+      "text": "最佳的线路控制是叠车(两车在同一线)。由此渗透到第七横线——\"第七横线上的猪\"——那里它们吃兵并困住敌王。"
+    }
+  ]
+}

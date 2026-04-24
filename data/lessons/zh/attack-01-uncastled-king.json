@@ -1,0 +1,20 @@
+{
+  "id": "uncastled-king",
+  "title": "攻击未易位的王",
+  "summary": "中路的王就是活靶子",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 0 4",
+      "title": "为什么中路的王会死",
+      "text": "卡在中路的王两侧都暴露在攻击之下。如果对手拖延易位,就打开局面——用兵的突破撬开 e 线,用弃子把王拖出来。速度至关重要。"
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 0 4",
+      "title": "攻击秘诀",
+      "text": "打开对准王的直线。用兵弃子炸开路线。把所有子力投入进攻。不要计较子力——王死了你就赢了,无论子力多少。莫菲是这方面的大师。"
+    }
+  ]
+}

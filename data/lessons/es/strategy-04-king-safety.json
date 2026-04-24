@@ -1,0 +1,21 @@
+{
+  "id": "king-safety",
+  "title": "Seguridad del Rey",
+  "summary": "Un rey seguro gana partidas",
+  "difficulty": "beginner",
+  "steps": [
+    { "type": "teach",
+      "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQK2R w KQkq - 0 1",
+      "title": "Guárdalo Bien",
+      "text": "Los peores enemigos del rey son las columnas y diagonales abiertas que llevan hacia él. El enroque lo saca del centro y lo mete en una fortaleza de peones. Mantén esa fortaleza intacta — no te apresures a empujar los peones del lado enrocado sin una razón concreta." },
+    { "type": "play",
+      "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQK2R w KQkq - 0 1",
+      "prompt": "Enroca tu rey a un lugar seguro.",
+      "targetSan": ["O-O"],
+      "hint": "Enroque corto — la elección más común." },
+    { "type": "teach",
+      "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 b kq - 1 1",
+      "title": "Después del Enroque",
+      "text": "¡No has terminado! Mantén peones al frente: f2, g2, h2. El caballo en f3 defiende h2. No juegues g3 o h3 salvo que sea necesario — cada movimiento de peón cerca de tu rey crea una debilidad para después." }
+  ]
+}

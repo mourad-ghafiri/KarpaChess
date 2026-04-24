@@ -1,0 +1,20 @@
+{
+  "id": "bishop-pair",
+  "title": "La paire de fous",
+  "summary": "Deux fous valent plus que vous ne le pensez",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Pourquoi deux fous ?",
+      "text": "Deux fous couvrent à eux deux les 64 cases — un foncé, un clair. Une paire de fous vaut environ 0,5 pion de plus qu'un fou + cavalier ou deux cavaliers. Cet avantage s'amplifie dans les positions ouvertes."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Quand échanger",
+      "text": "Si vous avez la paire de fous : ouvrez la position, échangez les PIONS et non les pièces, évitez de permettre un avant-poste de cavalier. Si vous AVEZ cédé la paire de fous : fermez la position, créez des chaînes de pions, battez-vous pour des avant-postes de cavalier."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "kings-indian-advanced",
+  "title": "Defensa India de Rey",
+  "summary": "Contraataque hipermoderno — la elección del luchador",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqk2r/ppppppbp/5np1/8/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 4 5",
+      "title": "Deja que Construyan el Centro",
+      "text": "La India de Rey (1.d4 Nf6 2.c4 g6) es la máxima defensa hipermoderna. Las Negras dejan que las Blancas construyan un enorme centro de peones y luego lo golpean con ...e5 o ...c5. Famosa por generar feroces ataques de flanco de rey — el arma predilecta de Kasparov."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2N2N2/PP3PPP/R1BQKB1R w KQ - 0 6",
+      "title": "La Línea Principal Clásica",
+      "text": "Tras la Línea Principal Clásica, las Blancas tienen un centro enorme. El plan de las Negras: empujar ...e5, cerrar el centro con bloqueo ...d4 o ...f5, y luego lanzar los peones del flanco de rey. Ambos bandos atacan simultáneamente en flancos opuestos — ajedrez a toda máquina."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqk2r/ppppppbp/5np1/8/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 4 5",
+      "title": "Por Qué es Difícil",
+      "text": "La India de Rey exige un cálculo preciso — un movimiento de peón equivocado y tu flanco de rey se desploma. Pero si amas los desequilibrios dinámicos y los ataques al rey, no hay nada mejor."
+    }
+  ]
+}

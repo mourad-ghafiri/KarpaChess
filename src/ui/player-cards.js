@@ -7,9 +7,10 @@
  *   • click the avatar → upload a photo (downscaled + persisted per match)
  * Photos fall back to the classic ♔/♚ glyph when none is set.
  */
-import { EVENTS, DIFFICULTY_NAMES, MODE_IDS } from '../core/constants.js';
+import { EVENTS, MODE_IDS } from '../core/constants.js';
 import { ClockService } from '../services/clock.js';
 import { imageFileToDataUrl } from '../core/dom.js';
+import { i18n } from '../core/i18n.js';
 
 export class PlayerCardsView {
   constructor(els, gameState, prefs, modeRegistry, commentatorState, bus) {
@@ -28,6 +29,7 @@ export class PlayerCardsView {
     bus.on(EVENTS.COMMENTATOR_MATCH_LOADED,   () => this.render());
     bus.on(EVENTS.COMMENTATOR_NAVIGATED,      () => this.render());
     bus.on(EVENTS.COMMENTATOR_PLAYER_UPDATED, () => this.render());
+    bus.on(EVENTS.I18N_CHANGED, () => this.render());
     this.render();
   }
 
@@ -88,12 +90,12 @@ export class PlayerCardsView {
     if (bucket.remaining != null) {
       el.textContent = formatSeconds(bucket.remaining);
       el.classList.toggle('low', bucket.remaining < 30);
-      el.title = `${formatSeconds(bucket.elapsed)} used`;
+      el.title = i18n.t('game.clock.timeUsedLong', { time: formatSeconds(bucket.elapsed) });
     } else {
       // %emt only — show cumulative time used instead
       el.textContent = formatSeconds(bucket.elapsed);
       el.classList.remove('low');
-      el.title = 'time used';
+      el.title = i18n.t('game.clock.timeUsedLong', { time: formatSeconds(bucket.elapsed) });
     }
   }
 
@@ -139,7 +141,7 @@ export class PlayerCardsView {
   #name(color) {
     if (this.#isCommentator()) {
       const p = this.commentatorState.players[color] || {};
-      return p.name && p.name.trim() ? p.name : (color === 'w' ? 'White' : 'Black');
+      return p.name && p.name.trim() ? p.name : i18n.side(color);
     }
     const mode = this.modeRegistry.get(this.gameState.mode);
     return mode.playerCardName(color, this.gameState);
@@ -147,10 +149,16 @@ export class PlayerCardsView {
 
   #meta(color) {
     if (this.#isCommentator()) {
-      return color === 'w' ? 'White' : 'Black';
+      return i18n.side(color);
     }
     const mode = this.modeRegistry.get(this.gameState.mode);
-    return mode.playerCardMeta(color, this.gameState, this.prefs, DIFFICULTY_NAMES);
+    const difficultyNames = {
+      1: i18n.t('game.difficulty.1'),
+      2: i18n.t('game.difficulty.2'),
+      3: i18n.t('game.difficulty.3'),
+      4: i18n.t('game.difficulty.4')
+    };
+    return mode.playerCardMeta(color, this.gameState, this.prefs, difficultyNames);
   }
 
   // ------ inline editing (commentator only) ------
@@ -213,7 +221,7 @@ export class PlayerCardsView {
         const dataUrl = await imageFileToDataUrl(f, 192);
         this.commentatorState.setPlayer(color, { photoDataUrl: dataUrl });
       } catch (err) {
-        this.bus.emit(EVENTS.TOAST, { message: 'Could not load that image.', kind: 'warn' });
+        this.bus.emit(EVENTS.TOAST, { message: i18n.t('ui.toast.imgLoadFail'), kind: 'warn' });
       }
     };
     input.click();

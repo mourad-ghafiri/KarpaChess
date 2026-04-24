@@ -1,0 +1,29 @@
+{
+  "id": "kings-pawn-family",
+  "title": "1.e4 — Le pion roi",
+  "summary": "Vue d'ensemble de toutes les réponses majeures à 1.e4",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+      "title": "L'ouverture romantique",
+      "text": "1.e4 ouvre des lignes pour la dame et le fou et se bat pour le centre avec un pion. C'est tranchant, tactique, et le premier coup le plus populaire de l'histoire des échecs."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+      "title": "Principales réponses des Noirs",
+      "text": "Les Noirs ont plusieurs réponses sérieuses : 1...e5 (classique, symétrique), 1...c5 (sicilienne, asymétrique), 1...e6 (française), 1...c6 (Caro-Kann), 1...d5 (scandinave). Chacune mène à un jeu distinct."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+      "prompt": "Répondez à 1.e4 par la réponse classique.",
+      "targetSan": [
+        "e5"
+      ],
+      "hint": "1...e5 reflète la prétention des Blancs sur le centre."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "opening-traps",
+  "title": "Pièges d'ouverture courants",
+  "summary": "Reconnaître (et éviter) les gaffes classiques",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "rnbqkbnr/ppp2ppp/8/3pp3/4P3/2N5/PPPP1PPP/R1BQKBNR w KQkq - 0 3",
+      "title": "Le mat du berger",
+      "text": "Le piège le plus célèbre : sortir dame et fou tôt pour attaquer f7. Si les Noirs ne défendent pas soigneusement, l'échec et mat arrive en quatre coups. Après 1.e4 e5 2.Bc4 Nc6 3.Qh5 — si les Noirs jouent un coup naturel comme 3...Nf6?? — la partie peut se terminer par 4.Qxf7#." },
+    { "type": "teach",
+      "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 0 4",
+      "title": "La punition",
+      "text": "Contre un adversaire préparé, cela se pare facilement par 3...g6 ou 3...Qe7, défendant f7. Connaître le piège vous permet à la fois de l'éviter côté Noirs et de punir le jeu imprudent côté Blancs." },
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPPBPPP/RNBQK2R w KQkq - 0 3",
+      "title": "Développer, pas foncer",
+      "text": "La plupart des 'pièges' reposent sur le fait que l'adversaire enfreint les principes de base — roi au centre, tomber dans une fourchette, ou affaiblir une case clé comme f2/f7. Développez calmement et surveillez les tactiques à chaque coup." }
+  ]
+}

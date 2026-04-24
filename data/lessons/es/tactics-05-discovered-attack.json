@@ -1,0 +1,27 @@
+{
+  "id": "discovered-attack",
+  "title": "Ataque Descubierto",
+  "summary": "Una pieza se mueve — otra ataca",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "4k3/8/8/8/4N3/8/8/4R2K w - - 0 1",
+      "title": "El Desenmascarado",
+      "text": "Un ataque descubierto sucede cuando mueves una de tus piezas y revelas un ataque de otra detrás de ella. Cuando el ataque revelado es un jaque Y la pieza movida también da jaque, se llama jaque doble — la táctica más devastadora del ajedrez."
+    },
+    {
+      "type": "play",
+      "fen": "4k3/8/8/8/4N3/8/8/4R2K w - - 0 1",
+      "prompt": "Mueve el caballo para desenmascarar la torre — y que además el caballo ATAQUE al rey.",
+      "targetSan": ["Nd6+"],
+      "hint": "Nd6 ataca e8 Y descubre la torre. ¡Jaque doble!"
+    },
+    {
+      "type": "teach",
+      "fen": "4k3/8/3N4/8/8/8/8/4R2K w - - 0 1",
+      "title": "Por Qué es Letal",
+      "text": "Contra un jaque doble, el rey DEBE moverse — no puedes bloquear dos ataques con una pieza, y capturar una deja la otra. Los jaques dobles están entre los patrones de mate más rápidos del ajedrez."
+    }
+  ]
+}

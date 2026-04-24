@@ -1,0 +1,47 @@
+{
+  "id": "ruy-lopez-basics",
+  "title": "Ruy Lopez",
+  "summary": "Pembukaan serius tertua dalam catur",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Spanyol",
+      "text": "Dinamai sesuai pastor Spanyol abad ke-16, Ruy Lopez (atau \"Spanyol\") menekan pion e5 melalui kuda c6. Mengarah ke babak tengah yang kaya dan bernuansa. Setiap juara dunia dari Steinitz hingga Carlsen pernah memainkannya."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "Mainkan 1.e4",
+      "targetSan": [
+        "e4"
+      ],
+      "hint": "Pion raja dua kotak."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "Kembangkan kuda raja: 2.Nf3",
+      "targetSan": [
+        "Nf3"
+      ],
+      "hint": "Menyerang e5, mengembangkan bidak."
+    },
+    {
+      "type": "play",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+      "prompt": "Langkah yang menentukan: 3.Bb5",
+      "targetSan": [
+        "Bb5"
+      ],
+      "hint": "Mengikat kuda secara tidak langsung, mengancam menggerogoti e5."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+      "title": "Ide Utama",
+      "text": "Gajah sebenarnya tidak langsung memenangkan e5 (setelah 3...a6 4.Bxc6 dxc6, pion e Hitam tetap terlindungi). Ancaman SEBENARNYA adalah mengganggu struktur Hitam dan mencekiknya secara posisional. Catur klasik pada puncaknya."
+    }
+  ]
+}

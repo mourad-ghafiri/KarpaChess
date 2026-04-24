@@ -1,0 +1,55 @@
+{
+  "id": "check-and-mate",
+  "title": "Jaque y Jaque Mate",
+  "summary": "Comprende el objetivo de cada partida",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "4k3/8/4K3/4Q3/8/8/8/8 w - - 0 1",
+      "title": "El Objetivo",
+      "text": "Ganas al ajedrez dando jaque mate al rey contrario — atacándolo de tal forma que no pueda escapar. Aquí tu dama y tu rey se acercan. Acabemos con esto."
+    },
+    {
+      "type": "play",
+      "fen": "4k3/8/4K3/4Q3/8/8/8/8 w - - 0 1",
+      "prompt": "Da jaque mate en una jugada.",
+      "targetSan": [
+        "Qb8#",
+        "Qh8#"
+      ],
+      "hint": "Llega a la 8ª fila — el rey no tiene escape."
+    },
+    {
+      "type": "teach",
+      "fen": "3k4/8/3K4/3Q4/8/8/8/8 w - - 0 1",
+      "title": "Otro Ángulo",
+      "text": "Misma idea, diferente posición. La última fila está madura."
+    },
+    {
+      "type": "play",
+      "fen": "3k4/8/3K4/3Q4/8/8/8/8 w - - 0 1",
+      "prompt": "Encuentra el jaque mate.",
+      "targetSan": [
+        "Qa8#",
+        "Qd7"
+      ],
+      "hint": "Corta la 8ª fila desde el lado. Qa8#."
+    },
+    {
+      "type": "teach",
+      "fen": "6k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
+      "title": "Mate de la Última Fila",
+      "text": "Cuando un rey queda atrapado detrás de sus propios peones en la última fila, una torre o dama en esa fila puede dar mate. Este es uno de los patrones más comunes en ajedrez."
+    },
+    {
+      "type": "play",
+      "fen": "6k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
+      "prompt": "Da mate en la última fila.",
+      "targetSan": [
+        "Ra8#"
+      ],
+      "hint": "Los peones del rey son su muro — pero también su prisión."
+    }
+  ]
+}

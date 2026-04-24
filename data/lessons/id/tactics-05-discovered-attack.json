@@ -1,0 +1,27 @@
+{
+  "id": "discovered-attack",
+  "title": "Serangan Terbuka",
+  "summary": "Satu bidak pindah — bidak lain menyerang",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "4k3/8/8/8/4N3/8/8/4R2K w - - 0 1",
+      "title": "Membuka Tabir",
+      "text": "Serangan terbuka terjadi ketika Anda menggerakkan salah satu bidak Anda dan mengungkap serangan dari bidak lain di belakangnya. Ketika serangan yang terungkap adalah skak DAN bidak yang bergerak juga memberi skak, itu disebut skak ganda — taktik paling menghancurkan dalam catur."
+    },
+    {
+      "type": "play",
+      "fen": "4k3/8/8/8/4N3/8/8/4R2K w - - 0 1",
+      "prompt": "Gerakkan kuda untuk mengekspos benteng — lebih baik lagi, buat kuda JUGA menyerang raja.",
+      "targetSan": ["Nd6+"],
+      "hint": "Nd6 menyerang e8 DAN mengungkap benteng. Skak ganda!"
+    },
+    {
+      "type": "teach",
+      "fen": "4k3/8/3N4/8/8/8/8/4R2K w - - 0 1",
+      "title": "Mengapa Mematikan",
+      "text": "Terhadap skak ganda, raja HARUS bergerak — Anda tidak bisa memblokir dua serangan dengan satu bidak, dan menangkap salah satu menyisakan yang lain. Skak ganda adalah di antara pola skakmat tercepat dalam catur."
+    }
+  ]
+}

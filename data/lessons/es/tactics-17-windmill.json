@@ -1,0 +1,20 @@
+{
+  "id": "windmill",
+  "title": "El Molino",
+  "summary": "Secuencia devastadora de jaques descubiertos",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1b1k2r/pp3ppp/1qn1p3/3pn3/8/1P2PN2/PB1N1PPP/R2QKB1R w KQkq - 0 1",
+      "title": "El Patrón del Molino",
+      "text": "El molino es una secuencia de jaques descubiertos que te permite capturar pieza tras pieza. El ejemplo más famoso es Torre contra Lasker, 1925 — el alfil y la torre de Torre se combinaron para cosechar el ejército de Lasker."
+    },
+    {
+      "type": "teach",
+      "fen": "r1b1k2r/pp3ppp/1qn1p3/3pn3/8/1P2PN2/PB1N1PPP/R2QKB1R w KQkq - 0 1",
+      "title": "Cómo Funciona",
+      "text": "Montaje clave: tu torre/dama da jaque, mueves un alfil/caballo fuera y lo devuelves (jaque descubierto cada vez), embolsando una pieza enemiga indefensa en cada ciclo. El rey enemigo no puede parar — está en jaque a cada jugada."
+    }
+  ]
+}

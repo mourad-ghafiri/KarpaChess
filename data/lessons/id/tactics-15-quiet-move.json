@@ -1,0 +1,20 @@
+{
+  "id": "quiet-move",
+  "title": "Langkah Tenang",
+  "summary": "Langkah yang membunuh tanpa skak",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "Langkah Tersulit untuk Dilihat",
+      "text": "Amatir melihat skak dan penangkapan dengan mudah. Master melihat langkah TENANG — langkah yang tidak menyerang apa-apa secara langsung tetapi menciptakan ancaman yang tak terbendung. Ini paling sulit dilihat karena tidak \"berisik\"."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "Pelatihan",
+      "text": "Ketika Anda yakin telah menemukan kemenangan, selalu tanyakan: \"Apakah ada langkah TENANG yang lebih baik?\" Kadang mundur dengan benteng atau gajah menciptakan ancaman yang menghancurkan. Latih diri Anda untuk mempertimbangkannya."
+    }
+  ]
+}

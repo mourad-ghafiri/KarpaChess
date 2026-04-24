@@ -1,0 +1,20 @@
+{
+  "id": "trapping-pieces",
+  "title": "Piéger des pièces",
+  "summary": "Couper une voie d'évasion",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "8/8/3k4/3q4/8/8/8/K3RR2 w - - 0 1",
+      "title": "Nulle part où aller",
+      "text": "Les pièces enfoncées en territoire ennemi sont vulnérables. Si vous pouvez couper toutes les cases d'évasion, vous gagnez la pièce gratuitement. Les dames, cavaliers et fous se piègent particulièrement facilement au bord."
+    },
+    {
+      "type": "teach",
+      "fen": "8/8/8/8/6Q1/8/r7/K1R5 w - - 0 1",
+      "title": "Cavaliers au bord",
+      "text": "Un cavalier au bord est sombre — et souvent condamné. Poussez les pions vers lui, bloquez ses cases avec vos pièces, et le cavalier n'a nulle part où aller. \"Cavalier au bord, avenir incertain\" — Tarrasch."
+    }
+  ]
+}

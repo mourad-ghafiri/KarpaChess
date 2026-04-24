@@ -1,0 +1,64 @@
+{
+  "id": "opening-principles",
+  "title": "Les trois principes",
+  "summary": "Centre, développement, sécurité du roi",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Les trois lois",
+      "text": "Toute ouverture solide repose sur trois piliers : (1) contrôler le centre, (2) développer vos pièces rapidement, (3) mettre votre roi en sécurité. Pratiquons les trois."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "Commencez par pousser un pion central. Jouez e4 ou d4.",
+      "targetSan": [
+        "e4",
+        "d4"
+      ],
+      "hint": "Les pions centraux réclament l'espace et ouvrent des lignes pour vos pièces."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "title": "Développez maintenant",
+      "text": "Les pions d'abord — puis les pièces. Les cavaliers avant les fous. Les cavaliers vers le centre (f3, c3) attaquent chacun quatre cases centrales."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "Développez un cavalier vers le centre.",
+      "targetSan": [
+        "Nf3",
+        "Nc3"
+      ],
+      "hint": "Nf3 et Nc3 touchent tous deux quatre cases centrales."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+      "title": "Les fous ensuite",
+      "text": "Avec les deux cavaliers sortis, développez les fous sur des cases actives. Bc4 vise la case faible f7 — le point le plus vulnérable dans le camp noir en ouverture."
+    },
+    {
+      "type": "play",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+      "prompt": "Développez le fou de cases claires sur une case active.",
+      "targetSan": [
+        "Bc4",
+        "Bb5",
+        "Bd3",
+        "Be2"
+      ],
+      "hint": "Bc4 est le choix classique — droit sur f7."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+      "title": "Sécurité du roi",
+      "text": "Deux pièces sorties de chaque côté est un bon moment pour roquer. Le roque met le roi dans un coin et relie vos tours. Faites-le avant de lancer des attaques."
+    }
+  ]
+}

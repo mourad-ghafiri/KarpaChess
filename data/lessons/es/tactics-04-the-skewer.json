@@ -1,0 +1,27 @@
+{
+  "id": "the-skewer",
+  "title": "La Enfilada",
+  "summary": "Como una clavada — pero al revés",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "8/8/3q4/8/8/3k4/8/R6K w - - 0 1",
+      "title": "La Enfilada",
+      "text": "La enfilada es la imagen en espejo de la clavada. Atacas una pieza valiosa que DEBE moverse — y al hacerlo, queda expuesta una pieza menos valiosa detrás de ella. A menudo el rey es la pieza enfilada: debe salir del jaque, abandonando lo que tenía detrás."
+    },
+    {
+      "type": "play",
+      "fen": "8/8/3q4/8/8/3k4/8/R6K w - - 0 1",
+      "prompt": "Lleva tu torre a la columna d para enfilar rey y dama.",
+      "targetSan": ["Rd1+"],
+      "hint": "Rd1 da jaque — la dama será la siguiente."
+    },
+    {
+      "type": "teach",
+      "fen": "8/8/8/3q4/8/3k4/8/3R3K w - - 0 1",
+      "title": "Recoge el Premio",
+      "text": "Tras Rd1+, el rey debe moverse. La dama se pierde en la siguiente jugada. Por eso las enfiladas son tan potentes en columnas y diagonales abiertas — incluso una torre bien situada puede derribar a una dama."
+    }
+  ]
+}

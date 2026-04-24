@@ -1,0 +1,69 @@
+{
+  "id": "how-pieces-move",
+  "title": "Comment les pièces se déplacent",
+  "summary": "Découvrez chaque pièce de l'échiquier",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Bienvenue",
+      "text": "Les échecs se jouent sur 64 cases avec 16 pièces de chaque côté. Les Blancs jouent toujours en premier. Vous allez rencontrer chaque pièce tour à tour — le pion, le cavalier, le fou, la tour, la dame et le roi."
+    },
+    {
+      "type": "teach",
+      "fen": "8/8/8/8/8/8/4P3/4K3 w - - 0 1",
+      "title": "Le pion",
+      "text": "Les pions avancent d'une case à la fois — ou de deux lors de leur tout premier coup. Ils capturent en diagonale. Un pion qui atteint l'autre côté de l'échiquier promeut en n'importe quelle pièce de votre choix. Petit, mais décisif."
+    },
+    {
+      "type": "play",
+      "fen": "8/8/8/8/8/8/4P3/4K3 w - - 0 1",
+      "prompt": "Poussez le pion de deux cases pour revendiquer le centre.",
+      "targetSan": [
+        "e4"
+      ],
+      "hint": "Lors de son premier coup, un pion peut avancer de deux cases. Essayez e4."
+    },
+    {
+      "type": "teach",
+      "fen": "8/8/8/8/8/8/8/4K2N w - - 0 1",
+      "title": "Le cavalier",
+      "text": "Les cavaliers bondissent en L — deux cases dans un sens, puis une à angle droit. C'est la seule pièce qui peut sauter par-dessus les autres. Difficile à voir venir, mortel au bon endroit."
+    },
+    {
+      "type": "play",
+      "fen": "8/8/8/8/8/8/8/4K2N w - - 0 1",
+      "prompt": "Développez le cavalier vers le centre. Jouez Nf3 ou Ng3.",
+      "targetSan": [
+        "Nf2",
+        "Ng3"
+      ],
+      "hint": "Le cavalier en h1 peut atteindre f2 ou g3."
+    },
+    {
+      "type": "teach",
+      "fen": "8/8/8/8/8/8/8/2B1K3 w - - 0 1",
+      "title": "Le fou",
+      "text": "Les fous glissent le long des diagonales aussi loin qu'ils le souhaitent. Chaque fou reste sur une seule couleur pour toujours — l'un contrôle les cases claires, l'autre les cases foncées. Ils adorent les positions ouvertes."
+    },
+    {
+      "type": "teach",
+      "fen": "8/8/8/8/8/8/8/R3K3 w - - 0 1",
+      "title": "La tour",
+      "text": "Les tours se déplacent en lignes droites — le long des rangées et des colonnes. Elles deviennent des monstres en finale et adorent les colonnes ouvertes."
+    },
+    {
+      "type": "teach",
+      "fen": "8/8/8/8/8/8/8/3QK3 w - - 0 1",
+      "title": "La dame",
+      "text": "La dame combine la tour et le fou — se déplaçant sur n'importe quelle distance le long des rangées, colonnes ou diagonales. C'est la pièce la plus puissante. Ne la sortez pas trop tôt ; elle peut être chassée."
+    },
+    {
+      "type": "teach",
+      "fen": "8/8/8/8/8/8/8/4K3 w - - 0 1",
+      "title": "Le roi",
+      "text": "Le roi avance d'une case dans n'importe quelle direction. Protégez-le à tout prix — s'il est mat, la partie se termine. En finale, activez-le : il vaut environ trois pions à l'attaque."
+    }
+  ]
+}

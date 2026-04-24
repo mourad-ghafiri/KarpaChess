@@ -1,0 +1,25 @@
+{
+  "id": "en-passant",
+  "title": "En Passant",
+  "summary": "La captura de peón que la mayoría nunca aprende",
+  "difficulty": "beginner",
+  "steps": [
+    { "type": "teach",
+      "fen": "4k3/3p4/8/4P3/8/8/8/4K3 w - - 0 1",
+      "title": "Una Regla Astuta",
+      "text": "Cuando los peones avanzan dos casillas desde su fila inicial, a veces pueden ser capturados por un peón enemigo 'al paso'. Esto se llama en passant — en francés significa 'al pasar'. Solo funciona en la jugada inmediatamente siguiente." },
+    { "type": "teach",
+      "fen": "rnbqkbnr/ppp1p1pp/8/3pPp2/8/8/PPPP1PPP/RNBQKBNR w KQkq f6 0 3",
+      "title": "La Oportunidad",
+      "text": "Las Negras acaban de jugar ...f5, saltando dos casillas más allá del peón blanco de e5. El peón blanco podría haber capturado en f6 si el peón negro solo se hubiera movido una casilla. En passant dice: aún puedes hacerlo — solo en este turno." },
+    { "type": "play",
+      "fen": "rnbqkbnr/ppp1p1pp/8/3pPp2/8/8/PPPP1PPP/RNBQKBNR w KQkq f6 0 3",
+      "prompt": "Captura el peón de f5 al paso.",
+      "targetSan": ["exf6"],
+      "hint": "La jugada es exf6 — tu peón captura como si el peón f estuviera en f6." },
+    { "type": "teach",
+      "fen": "rnbqkbnr/ppp1p1pp/5P2/3p4/8/8/PPPP1PPP/RNBQKBNR b KQkq - 0 3",
+      "title": "Regla de Un Solo Disparo",
+      "text": "DEBES usar en passant en la jugada inmediatamente siguiente o perderás el derecho. Es una de las reglas más olvidadas — ahora ya la conoces." }
+  ]
+}

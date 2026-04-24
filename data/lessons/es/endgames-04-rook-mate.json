@@ -1,0 +1,21 @@
+{
+  "id": "rook-mate",
+  "title": "R + T contra R",
+  "summary": "Lleva al rey al borde y da mate",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "7k/8/5K2/8/8/8/8/6R1 w - - 0 1",
+      "title": "La Técnica",
+      "text": "Rey y torre contra rey es siempre ganado para el bando fuerte. La técnica: usa la torre para cortar al rey enemigo, luego camina con tu rey al lado para empujarlo al borde. Finalmente, da mate en la última fila." },
+    { "type": "teach",
+      "fen": "7k/5K1p/8/8/8/8/8/6R1 w - - 0 1",
+      "title": "La Red de Mate",
+      "text": "Cuando el rey enemigo está clavado al borde y el rey opuesto impide cualquier huida, tu torre se desliza para el mate. Este es el patrón — memorízalo." },
+    { "type": "play",
+      "fen": "7k/5K1p/8/8/8/8/8/6R1 w - - 0 1",
+      "prompt": "Da jaque mate.",
+      "targetSan": ["Rg8#"],
+      "hint": "El propio peón del rey es su muro de prisión." }
+  ]
+}

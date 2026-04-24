@@ -1,0 +1,47 @@
+{
+  "id": "ruy-lopez-basics",
+  "title": "西班牙开局",
+  "summary": "国际象棋中最古老的严肃开局",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "西班牙开局",
+      "text": "以 16 世纪一位西班牙神父命名,西班牙开局(Ruy Lopez)通过 c6 的马向 e5 兵施压。它通向丰富、微妙的中局。从斯坦尼茨到卡尔森,每位世界冠军都下过它。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "走 1.e4",
+      "targetSan": [
+        "e4"
+      ],
+      "hint": "王前兵推两格。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "出王翼的马:2.Nf3",
+      "targetSan": [
+        "Nf3"
+      ],
+      "hint": "攻击 e5,同时出子。"
+    },
+    {
+      "type": "play",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+      "prompt": "标志性着法:3.Bb5",
+      "targetSan": [
+        "Bb5"
+      ],
+      "hint": "间接牵制马,威胁拆除 e5 的支撑。"
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+      "title": "主要思想",
+      "text": "象并不真的立刻赢下 e5(在 3...a6 4.Bxc6 dxc6 之后,黑方的 e 兵仍有防守)。真正的威胁是破坏黑方的结构并在阵地上压制他。古典国际象棋的极致。"
+    }
+  ]
+}

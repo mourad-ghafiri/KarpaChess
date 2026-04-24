@@ -1,0 +1,20 @@
+{
+  "id": "rook-lift",
+  "title": "L'élévation de tour",
+  "summary": "Amener une tour à l'attaque via la 3e rangée",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQR1K1 w - - 0 1",
+      "title": "Élever et balancer",
+      "text": "Une élévation de tour est la manœuvre Re1-e3-g3 (ou h3) — la tour monte jusqu'à la troisième rangée, puis se balance pour attaquer le roi ennemi. Motif classique : Re3, Qh5 avec feu d'artifice côté roi."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQR1K1 w - - 0 1",
+      "title": "Quand l'utiliser",
+      "text": "Les élévations de tour fonctionnent quand : la position est semi-fermée (la tour ne peut pas utiliser les colonnes directement), le roi ennemi est roqué, et vous avez déjà des pièces proches. Fonctionne particulièrement bien combiné avec des poussées du pion h."
+    }
+  ]
+}

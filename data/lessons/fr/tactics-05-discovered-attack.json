@@ -1,0 +1,27 @@
+{
+  "id": "discovered-attack",
+  "title": "Attaque à la découverte",
+  "summary": "Une pièce bouge — une autre attaque",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "4k3/8/8/8/4N3/8/8/4R2K w - - 0 1",
+      "title": "Le démasquage",
+      "text": "Une attaque à la découverte se produit quand vous déplacez l'une de vos pièces et révélez une attaque d'une autre pièce derrière elle. Quand l'attaque révélée est un échec ET que la pièce déplacée donne aussi échec, on parle de double échec — la tactique la plus dévastatrice des échecs."
+    },
+    {
+      "type": "play",
+      "fen": "4k3/8/8/8/4N3/8/8/4R2K w - - 0 1",
+      "prompt": "Déplacez le cavalier pour exposer la tour — mieux, que le cavalier attaque AUSSI le roi.",
+      "targetSan": ["Nd6+"],
+      "hint": "Nd6 attaque e8 ET dévoile la tour. Double échec !"
+    },
+    {
+      "type": "teach",
+      "fen": "4k3/8/3N4/8/8/8/8/4R2K w - - 0 1",
+      "title": "Pourquoi c'est mortel",
+      "text": "Contre un double échec, le roi DOIT bouger — on ne peut pas bloquer deux attaques avec une seule pièce, et en capturer une laisse l'autre. Les doubles échecs sont parmi les motifs de mat les plus rapides des échecs."
+    }
+  ]
+}

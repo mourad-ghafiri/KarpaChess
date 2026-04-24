@@ -1,0 +1,26 @@
+{
+  "id": "kings-indian-advanced",
+  "title": "Défense est-indienne",
+  "summary": "Contre-attaque hypermoderne — le choix du combattant",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqk2r/ppppppbp/5np1/8/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 4 5",
+      "title": "Laissez-les construire le centre",
+      "text": "La défense est-indienne (1.d4 Nf6 2.c4 g6) est la défense hypermoderne ultime. Les Noirs laissent les Blancs bâtir un énorme centre de pions, puis le frappent avec ...e5 ou ...c5. Célèbre pour produire de féroces attaques à l'aile roi — l'arme favorite de Kasparov."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2N2N2/PP3PPP/R1BQKB1R w KQ - 0 6",
+      "title": "La variante classique principale",
+      "text": "Après la variante classique principale, les Blancs ont un énorme centre. Le plan des Noirs : pousser ...e5, fermer le centre avec un blocus ...d4 ou ...f5, puis lancer les pions côté roi. Les deux camps attaquent simultanément sur des ailes opposées — les échecs à plein régime."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqk2r/ppppppbp/5np1/8/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 4 5",
+      "title": "Pourquoi c'est difficile",
+      "text": "L'est-indienne exige un calcul précis — un mauvais coup de pion et votre aile roi s'effondre. Mais si vous aimez les déséquilibres dynamiques et les attaques contre le roi, il n'y a rien de mieux."
+    }
+  ]
+}

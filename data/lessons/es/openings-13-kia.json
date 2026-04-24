@@ -1,0 +1,38 @@
+{
+  "id": "kings-indian-attack",
+  "title": "Ataque India de Rey",
+  "summary": "India de Rey al revés — un sistema con Blancas",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Un Arma Flexible",
+      "text": "El Ataque India de Rey (KIA) es la Defensa India de Rey jugada con Blancas. Fianqueta el alfil de rey, enroca rápido y luego expande con e4/e5. Usada por Bobby Fischer con efecto letal."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "Comienza con 1.Nf3",
+      "targetSan": [
+        "Nf3"
+      ],
+      "hint": "Primera jugada flexible."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/8/5N2/PPPPPPPP/RNBQKB1R w KQkq - 0 2",
+      "prompt": "Ahora fianqueta: 2.g3",
+      "targetSan": [
+        "g3"
+      ],
+      "hint": "Prepara la larga diagonal del alfil."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/8/5NP1/PPPPPP1P/RNBQKB1R b KQkq - 0 2",
+      "title": "Estructura KIA",
+      "text": "Luego: Bg2, 0-0, d3, Nbd2, e4. Obtendrás una fortaleza sólida en el flanco de rey y un resorte comprimido listo para e5. Ideal si quieres UNA apertura contra todo."
+    }
+  ]
+}

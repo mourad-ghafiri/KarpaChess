@@ -1,0 +1,55 @@
+{
+  "id": "check-and-mate",
+  "title": "Échec & échec et mat",
+  "summary": "Comprenez l'objectif de chaque partie",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "4k3/8/4K3/4Q3/8/8/8/8 w - - 0 1",
+      "title": "L'objectif",
+      "text": "On gagne aux échecs en mettant échec et mat le roi adverse — en l'attaquant sans qu'il puisse s'échapper. Ici, votre dame et votre roi se referment sur lui. Concluons."
+    },
+    {
+      "type": "play",
+      "fen": "4k3/8/4K3/4Q3/8/8/8/8 w - - 0 1",
+      "prompt": "Délivrez l'échec et mat en un coup.",
+      "targetSan": [
+        "Qb8#",
+        "Qh8#"
+      ],
+      "hint": "Frappez la 8e rangée — le roi n'a pas d'échappatoire."
+    },
+    {
+      "type": "teach",
+      "fen": "3k4/8/3K4/3Q4/8/8/8/8 w - - 0 1",
+      "title": "Angle différent",
+      "text": "Même idée, position différente. La dernière rangée est mûre pour le mat."
+    },
+    {
+      "type": "play",
+      "fen": "3k4/8/3K4/3Q4/8/8/8/8 w - - 0 1",
+      "prompt": "Trouvez l'échec et mat.",
+      "targetSan": [
+        "Qa8#",
+        "Qd7"
+      ],
+      "hint": "Coupez la 8e rangée sur le côté. Qa8#."
+    },
+    {
+      "type": "teach",
+      "fen": "6k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
+      "title": "Mat du couloir",
+      "text": "Quand un roi est piégé derrière ses propres pions sur la dernière rangée, une tour ou une dame sur cette rangée peut donner mat. C'est l'un des schémas les plus fréquents aux échecs."
+    },
+    {
+      "type": "play",
+      "fen": "6k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
+      "prompt": "Délivrez le mat du couloir.",
+      "targetSan": [
+        "Ra8#"
+      ],
+      "hint": "Les pions du roi sont son mur — mais aussi sa prison."
+    }
+  ]
+}

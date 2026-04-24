@@ -1,0 +1,20 @@
+{
+  "id": "greek-gift",
+  "title": "グリークギフト(Bxh7+)",
+  "summary": "キャスリング済みキングへの古典的ビショップ犠牲",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2BPP3/2N2N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "パターン",
+      "text": "「グリークギフト」はh7でのビショップ犠牲です。Bxh7+ Kxh7 Ng5+ Kg8(またはKg6) Qh5 — こうして攻撃が突破します。ただに見えて破滅を内包しているのでこの名です。"
+    },
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2BPP3/2N2N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "チェックリスト",
+      "text": "グリークギフトが成立するのは、(1)黒のナイトがNg5を塞ぐf6にいないこと、(2)クイーンがすぐh5に届くこと、(3)黒のどの駒も介在できないこと。これらが揃えば、たいてい決定的です。揃わなければ、ただビショップを失います。"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "queens-gambit",
+  "title": "Gambit Menteri",
+  "summary": "Tawarkan pion untuk menguasai pusat",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Pion Menteri Klasik",
+      "text": "Gambit Menteri dimulai 1.d4 d5 2.c4. Putih menawarkan pion c. Jika Hitam mengambil, pusat ditinggalkan. Jika Hitam menolak (paling umum di level master), Putih mempertahankan kendali pusat yang kuat." },
+    { "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "Buka dengan pion menteri.",
+      "targetSan": ["d4"],
+      "hint": "1.d4 — dorongan pusat klasik." },
+    { "type": "play",
+      "fen": "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "Sekarang tawarkan gambitnya.",
+      "targetSan": ["c4"],
+      "hint": "2.c4 — serang pion d5 dengan pion sayap." },
+    { "type": "teach",
+      "fen": "rnbqkbnr/ppp1pppp/8/3p4/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2",
+      "title": "Tolak atau Terima?",
+      "text": "Jika Hitam menerima (2...dxc4), Putih biasanya menutup pion dengan cepat. Jika Hitam menolak (2...e6, 2...c6, 2...Nf6), permainan menjadi pertempuran posisional untuk kotak-kotak pusat. Bagaimanapun, Putih mendapatkan inisiatif yang kuat." }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "trapping-pieces",
+  "title": "Atrapar Piezas",
+  "summary": "Corta toda ruta de escape",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "8/8/3k4/3q4/8/8/8/K3RR2 w - - 0 1",
+      "title": "Sin Escape",
+      "text": "Las piezas profundas en territorio enemigo son vulnerables. Si puedes cortar cada casilla de escape, ganas la pieza gratis. Damas, caballos y alfiles son particularmente fáciles de atrapar en el borde."
+    },
+    {
+      "type": "teach",
+      "fen": "8/8/8/8/6Q1/8/r7/K1R5 w - - 0 1",
+      "title": "Caballos en el Borde",
+      "text": "Caballo en el borde, sombrío — y a menudo condenado. Empuja peones hacia él, bloquea sus casillas con tus piezas, y el caballo no tendrá a dónde ir. \"Caballo al borde, porvenir pobre\" — Tarrasch."
+    }
+  ]
+}

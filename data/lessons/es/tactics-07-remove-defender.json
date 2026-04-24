@@ -1,0 +1,21 @@
+{
+  "id": "remove-the-defender",
+  "title": "Eliminar al Defensor",
+  "summary": "Quita la pieza que mantiene unida su posición",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "5rk1/R4ppp/8/8/8/8/5PPP/6K1 w - - 0 1",
+      "title": "El Defensor Clave",
+      "text": "Muchas tácticas fallan porque una sola pieza enemiga lo defiende todo. La solución: eliminarla o cambiarla. Aquí la torre negra de f8 defiende la última fila. Si las Blancas toman el peón de f7, la torre queda desviada y el rey, desnudo." },
+    { "type": "play",
+      "fen": "5rk1/R4ppp/8/8/8/8/5PPP/6K1 w - - 0 1",
+      "prompt": "Toma el peón de f7 — obliga a las Negras a reaccionar.",
+      "targetSan": ["Rxf7"],
+      "hint": "Rxf7 elimina al defensor de la última fila." },
+    { "type": "teach",
+      "fen": "5rk1/5Rpp/8/8/8/8/5PPP/6K1 b - - 0 1",
+      "title": "Lo Que Sigue",
+      "text": "Ahora las Negras deben lidiar con la torre en f7. Si cambian con ...Rxf7, la última fila sigue débil. Pregúntate siempre: '¿Qué mantiene unida su posición?' La respuesta suele ser una pieza específica." }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "najdorf-sicilian",
+  "title": "Sicilienne Najdorf",
+  "summary": "L'ouverture la plus tranchante des échecs modernes",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/1p2pppp/p2p1n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6",
+      "title": "Le favori de Fischer",
+      "text": "La sicilienne Najdorf (5...a6) est considérée comme l'ouverture la plus tranchante et la plus théorique des échecs. Kasparov, Fischer et Carlsen l'ont tous jouée au plus haut niveau. Le coup ...a6 a de nombreux buts : empêcher les clouages Bb5+, préparer ...e5 ou ...b5, et créer de la flexibilité."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/1p2pppp/p2p1n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6",
+      "title": "Variantes principales",
+      "text": "Les Blancs ont de nombreux choix ambitieux : 6.Be3 (attaque anglaise — attaques mutuelles), 6.Bg5 (classique pion empoisonné), 6.Bc4 (Fischer-Sozin), 6.Be2 (style Scheveningue). Chacun mène à une bataille distincte et fortement analysée. Préparez une théorie profonde ou évitez."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/1p2pppp/p2p1n2/6B1/3NP3/2N5/PPP2PPP/R2QKB1R b KQkq - 1 6",
+      "title": "Le pion empoisonné",
+      "text": "La célèbre ligne 6.Bg5 e6 7.f4 Qb6!? invite les Blancs à défendre le pion b2. La dame noire part en raid avide pendant que les Blancs construisent une énorme attaque. Pas pour les âmes sensibles — l'une des variantes les plus analysées de tous les échecs."
+    }
+  ]
+}

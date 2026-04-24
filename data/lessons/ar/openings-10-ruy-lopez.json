@@ -1,0 +1,47 @@
+{
+  "id": "ruy-lopez-basics",
+  "title": "روي لوپيز",
+  "summary": "أقدم افتتاح جادّ في الشطرنج",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "الإسباني",
+      "text": "سُمّي باسم قسّ إسباني من القرن السادس عشر، وروي لوپيز (أو «الإسباني») يضغط على بيدق e5 عبر حصان c6. يقود إلى أوساط مباريات غنية ودقيقة. كل بطل عالم من ستاينيتس إلى كارلسن لعبه."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "العب 1.e4",
+      "targetSan": [
+        "e4"
+      ],
+      "hint": "بيدق الملك مربعان."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "طوِّر حصان الملك: 2.Nf3",
+      "targetSan": [
+        "Nf3"
+      ],
+      "hint": "يهاجم e5 ويُطوّر قطعة."
+    },
+    {
+      "type": "play",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+      "prompt": "النقلة المميزة: 3.Bb5",
+      "targetSan": [
+        "Bb5"
+      ],
+      "hint": "يُقيّد الحصان بشكل غير مباشر، ويهدّد تقويض e5."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+      "title": "الأفكار الرئيسية",
+      "text": "لا يربح الفيل فعلاً e5 فوراً (بعد 3...a6 4.Bxc6 dxc6، بيدق e للأسود لا يزال محمياً). التهديد الحقيقي هو تفكيك تركيبة الأسود والضغط عليه وضعياً. الشطرنج الكلاسيكي في أبهى صوره."
+    }
+  ]
+}

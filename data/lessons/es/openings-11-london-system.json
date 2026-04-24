@@ -1,0 +1,38 @@
+{
+  "id": "london-system",
+  "title": "El Sistema Londres",
+  "summary": "El sistema universal — la misma estructura, siempre",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "¿Por Qué el Londres?",
+      "text": "El Sistema Londres es una apertura \"universal\" — las Blancas montan el mismo esquema sin importar la respuesta de las Negras. Ideal para principiantes: menos teoría, patrones más fiables."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "1.d4",
+      "targetSan": [
+        "d4"
+      ],
+      "hint": "Peón dama dos casillas."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2",
+      "prompt": "Desarrolla el alfil de casillas oscuras: 2.Bf4",
+      "targetSan": [
+        "Bf4"
+      ],
+      "hint": "El alfil sale ANTES de e3 para no quedar bloqueado por sus propios peones."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/pppppppp/5n2/8/3P1B2/8/PPP1PPPP/RNBQKBNR b KQkq - 2 2",
+      "title": "La Estructura Completa",
+      "text": "La receta completa del Londres: d4, Bf4, Nf3, e3, c3, Nbd2, Bd3, 0-0. Sólida, casi simétrica, difícil de romper. Magnus Carlsen la ha usado en matches por el campeonato mundial."
+    }
+  ]
+}

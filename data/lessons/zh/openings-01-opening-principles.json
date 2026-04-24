@@ -1,0 +1,64 @@
+{
+  "id": "opening-principles",
+  "title": "开局三原则",
+  "summary": "中心、出子、王的安全",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "三大法则",
+      "text": "每一个强大的开局都建立在三根支柱上:(1) 控制中心,(2) 快速出动子力,(3) 保证王的安全。让我们一起来练习这三点。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "先推进一个中心兵。走 e4 或 d4。",
+      "targetSan": [
+        "e4",
+        "d4"
+      ],
+      "hint": "中心兵占据空间并为子力打开线路。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "title": "现在开始出子",
+      "text": "先动兵,再出子。先马后象。马走向中心(f3、c3),每匹马都能攻击四个中心格。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "把马出到中心方向。",
+      "targetSan": [
+        "Nf3",
+        "Nc3"
+      ],
+      "hint": "Nf3 和 Nc3 都能攻击四个中心格。"
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+      "title": "接下来是象",
+      "text": "两匹马出动后,再把象走到积极的位置。Bc4 瞄准薄弱的 f7 格——开局中黑方阵营里最脆弱的点。"
+    },
+    {
+      "type": "play",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+      "prompt": "把白格象走到积极位置。",
+      "targetSan": [
+        "Bc4",
+        "Bb5",
+        "Bd3",
+        "Be2"
+      ],
+      "hint": "Bc4 是古典选择——直指 f7。"
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+      "title": "王的安全",
+      "text": "两边各出动两个子之后,是王车易位的好时机。易位可以把王送到角落,并联通两个车。在发动进攻之前完成易位。"
+    }
+  ]
+}

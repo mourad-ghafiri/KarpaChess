@@ -1,0 +1,26 @@
+{
+  "id": "catalan-advanced",
+  "title": "カタロニアン",
+  "summary": "初手から効くポジショナルな締め上げ",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "ロングダイアゴナルの武器",
+      "text": "カタロニアン(1.d4 Nf6 2.c4 e6 3.g3)はクイーンズギャンビットの構造とフィアンケットビショップを組み合わせます。白はわずかだが持続的な優位を得る、粘り強く技巧的なチェスです。クラムニクのお気に入りです。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/pppp1ppp/4pn2/8/2PP4/6P1/PP2PP1P/RNBQKBNR b KQkq - 0 3",
+      "title": "なぜフィアンケット?",
+      "text": "g2のビショップはa8-h1のダイアゴナルに長期的な圧力をかけます。黒が...dxc4(オープンカタロニアン)と取ると、白はしばしばポーンを差し出して圧力を維持します。純粋な技術です。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/pppp1ppp/4pn2/8/2PP4/6P1/PP2PP1P/RNBQKBNR b KQkq - 0 3",
+      "title": "カタロニアンの理想形",
+      "text": "白の理想。Bg2にロングダイアゴナルが開き、ナイトはd2とf3、ルーク連結、強い中央ポーン。黒は正確に指さなければ締め上げられます。マグヌス・カールセンはカタロニアンで相手を粉にすり潰します。"
+    }
+  ]
+}

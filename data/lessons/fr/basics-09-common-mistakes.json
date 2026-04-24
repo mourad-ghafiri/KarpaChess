@@ -1,0 +1,26 @@
+{
+  "id": "common-mistakes",
+  "title": "Erreurs courantes du débutant",
+  "summary": "Évitez les pièges dans lesquels tout débutant tombe",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Les cinq grandes",
+      "text": "Chaque débutant commet ces erreurs : (1) bouger la même pièce deux fois dans l'ouverture, (2) oublier de roquer, (3) sortir la dame trop tôt, (4) jouer des coups « automatiques » sans vérifier, (5) jouer sans plan."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/3PP3/8/PPP2PPP/RNBQKBNR b KQkq d3 0 2",
+      "title": "Ne prenez pas tous les pions",
+      "text": "Toute prise n'est pas bonne. Parfois, prendre un pion fait perdre du temps — votre adversaire se développe pendant que vous bougez la même pièce à nouveau. Demandez : « Ce pion vaut-il un tempo ? »"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Surveillez les menaces de l'adversaire",
+      "text": "La moitié des positions perdantes vient du fait d'ignorer l'adversaire. Quand il joue, demandez toujours : « Qu'est-ce que ce coup attaque ? » Si vous ne le voyez pas, vous l'avez probablement manqué."
+    }
+  ]
+}

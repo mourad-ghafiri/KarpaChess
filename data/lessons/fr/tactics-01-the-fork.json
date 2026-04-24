@@ -1,0 +1,38 @@
+{
+  "id": "the-fork",
+  "title": "La fourchette",
+  "summary": "Attaquer deux pièces en même temps",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "8/8/2k5/3q4/8/8/2N1K3/8 w - - 0 1",
+      "title": "Fourchette royale",
+      "text": "Une fourchette attaque deux pièces en un seul coup. Le cavalier y est particulièrement doué — il saute d'une façon qu'aucune pièce ne peut bloquer. Ici, un seul coup de cavalier attaque à la fois le roi ET la dame."
+    },
+    {
+      "type": "play",
+      "fen": "8/8/2k5/3q4/8/8/2N1K3/8 w - - 0 1",
+      "prompt": "Jouez le cavalier pour fourcher le roi et la dame.",
+      "targetSan": [
+        "Nb4+"
+      ],
+      "hint": "Nb4 attaque à la fois c6 et d5."
+    },
+    {
+      "type": "teach",
+      "fen": "4k3/8/8/4n3/8/8/8/Q3K3 w - - 0 1",
+      "title": "Fourchette de dame",
+      "text": "Les dames peuvent fourcher aussi — surtout avec échec. Quand l'adversaire DOIT répondre à l'échec, vous obtenez un coup gratuit pour prendre du matériel ailleurs."
+    },
+    {
+      "type": "play",
+      "fen": "4k3/8/8/4n3/8/8/8/Q3K3 w - - 0 1",
+      "prompt": "Capturez le cavalier avec échec.",
+      "targetSan": [
+        "Qxe5+"
+      ],
+      "hint": "La dame fond sur e5."
+    }
+  ]
+}

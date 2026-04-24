@@ -1,0 +1,21 @@
+{
+  "id": "overloading",
+  "title": "Surcharge",
+  "summary": "Une pièce qui fait deux tâches en ratera une",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "4k3/4q3/8/8/8/8/4R3/4K3 w - - 0 1",
+      "title": "Trop de travail",
+      "text": "Une pièce surchargée défend (ou attaque) plus qu'elle ne peut gérer. Le cas classique : une pièce défend deux cases. Quand vous en attaquez une, l'autre tombe. Ici la dame noire défend le roi — elle ne peut pas bouger sans perdre sur Rxe7+." },
+    { "type": "play",
+      "fen": "4k3/4q3/8/8/8/8/4R3/4K3 w - - 0 1",
+      "prompt": "Capturez la dame clouée.",
+      "targetSan": ["Rxe7+"],
+      "hint": "La double fonction de la dame (défendre le roi ET sa case) la condamne." },
+    { "type": "teach",
+      "fen": "4k3/4R3/8/8/8/8/8/4K3 b - - 0 1",
+      "title": "Repérer les surcharges",
+      "text": "Cherchez les pièces qui défendent plusieurs choses — des pions se défendant mutuellement plus une pièce, ou un cavalier tenant une colonne tout en bloquant un pion passé. Quand vous en trouvez une, attaquez l'une de ses tâches." }
+  ]
+}

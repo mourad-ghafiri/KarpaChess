@@ -1,0 +1,20 @@
+{
+  "id": "draws",
+  "title": "Ahogado y Tablas",
+  "summary": "Medio punto a veces es una victoria",
+  "difficulty": "beginner",
+  "steps": [
+    { "type": "teach",
+      "fen": "7k/8/6K1/8/8/8/8/8 w - - 0 1",
+      "title": "Ahogado",
+      "text": "El ahogado ocurre cuando el bando que tiene que mover NO tiene jugadas legales pero su rey NO está en jaque. Son tablas. Cuidado: cuando tengas una ventaja abrumadora, ten cuidado de no ahogar al rey enemigo — ¡tira la victoria!" },
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Otras Formas de Hacer Tablas",
+      "text": "Además del ahogado: (1) triple repetición — misma posición alcanzada tres veces; (2) regla de las 50 jugadas — 50 jugadas sin captura ni movimiento de peón; (3) material insuficiente — p.ej. dos reyes solos, o rey + caballo contra rey; (4) ambos jugadores acordando tablas." },
+    { "type": "teach",
+      "fen": "4k3/4q3/8/8/8/8/8/4K3 w - - 0 1",
+      "title": "Evitando Accidentes",
+      "text": "¡Incluso cuando estés perdiendo obviamente, el ahogado puede salvarte! Verifica siempre: ¿tiene mi oponente una jugada legal? Si no, y no está en jaque, son tablas. Por eso la técnica del final importa — incluso con R+D contra R, un juego descuidado puede ahogar." }
+  ]
+}

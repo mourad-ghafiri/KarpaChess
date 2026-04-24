@@ -1,0 +1,20 @@
+{
+  "id": "exchange-sacrifice",
+  "title": "Le sacrifice de qualité",
+  "summary": "Céder une tour contre une pièce mineure",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "Céder la tour",
+      "text": "Un sacrifice de qualité (tour contre pièce mineure) est l'un des concepts les plus avancés. Petrosian en était le virtuose — sacrifiant \"la qualité\" (tour contre fou/cavalier) pour des avantages positionnels à long terme."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "Quand ça marche",
+      "text": "Les bons sacrifices de qualité exigent : (1) la structure résultante vous favorise à long terme, (2) votre pièce mineure est forte (avant-poste, paire de fous), (3) la tour restante de votre adversaire n'a pas de bonne colonne. Le Rxc3 de Petrosian est l'exemple classique."
+    }
+  ]
+}

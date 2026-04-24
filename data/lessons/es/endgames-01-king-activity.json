@@ -1,0 +1,24 @@
+{
+  "id": "king-activity",
+  "title": "Activa Tu Rey",
+  "summary": "En el final, tu rey lucha",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "4k3/8/8/4K3/4P3/8/8/8 w - - 0 1",
+      "title": "El Poder del Rey",
+      "text": "En el medio juego el rey se esconde. En el final sale a luchar. Aquí tu rey debe escoltar a su peón hasta la promoción. La técnica importa."
+    },
+    {
+      "type": "play",
+      "fen": "4k3/8/8/4K3/4P3/8/8/8 w - - 0 1",
+      "prompt": "Avanza tu rey — toma la oposición.",
+      "targetSan": [
+        "Kd6",
+        "Kf6"
+      ],
+      "hint": "Kd6 o Kf6 — ambas toman la oposición."
+    }
+  ]
+}

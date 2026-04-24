@@ -6,6 +6,8 @@
  * If an API call fails, the caller gets both the error message and a built-in
  * fallback answer, so the coach chat never leaves the user empty-handed.
  */
+import { i18n } from '../core/i18n.js';
+
 export class CoachService {
   /**
    * @param {ProviderRegistry} registry
@@ -21,10 +23,10 @@ export class CoachService {
   /** Look up current provider description for the status bar. */
   describeCurrent() {
     const id = this.prefs.get('provider');
-    if (id === 'builtin') return { name: this.builtin.name, modelSuffix: '' };
+    if (id === 'builtin') return { name: i18n.t('coach.builtin.name'), modelSuffix: '' };
     const p = this.registry.get(id);
-    if (!p) return { name: id, modelSuffix: ' · unknown' };
-    if (p.needsKey && !p.getKey()) return { name: p.name, modelSuffix: ' · missing API key' };
+    if (!p) return { name: id, modelSuffix: ' · ' + i18n.t('coach.status.unknown') };
+    if (p.needsKey && !p.getKey()) return { name: p.name, modelSuffix: ' · ' + i18n.t('coach.status.missingKey') };
     const model = p.getModel();
     return { name: p.name, modelSuffix: model ? ` · ${model}` : '' };
   }
@@ -39,7 +41,11 @@ export class CoachService {
     try {
       return await provider.ask(question, ctx);
     } catch (err) {
-      return `**${provider.name} request failed.** ${err.message}\n\nFalling back to built-in coach:\n\n${this.builtin.ask(question, ctx)}`;
+      return i18n.t('coach.fallbackPrefix', {
+        provider: provider.name,
+        error: err.message,
+        fallback: this.builtin.ask(question, ctx)
+      });
     }
   }
 }

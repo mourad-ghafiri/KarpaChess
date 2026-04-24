@@ -1,0 +1,8 @@
+{
+  "id": "back-rank-12",
+  "fen": "5rk1/5ppp/8/8/8/8/PPQ4P/6K1 w - - 0 1",
+  "solution": [
+    "Qc8"
+  ],
+  "hint": "Qxf8を狙い、守り駒をそらす。"
+}

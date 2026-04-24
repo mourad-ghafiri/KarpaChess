@@ -1,0 +1,47 @@
+{
+  "id": "sicilian",
+  "title": "西西里防御",
+  "summary": "黑方对 1.e4 最尖锐的回应",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "最尖锐的回应",
+      "text": "当白方走 1.e4 时,黑方最有斗志的回应是 1...c5——西西里防御。黑方在中心毫不退让,并准备后翼的反击。它是各个水平最流行的防御。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "走白方最合原则的第一步。",
+      "targetSan": [
+        "e4"
+      ],
+      "hint": "1.e4——古典的王前兵开局。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+      "prompt": "黑方走西西里——推进 c 兵。",
+      "targetSan": [
+        "c5"
+      ],
+      "hint": "1...c5 争夺 d4,且不封闭 c 线。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "白方的古典应法:出马。",
+      "targetSan": [
+        "Nf3"
+      ],
+      "hint": "2.Nf3 为 d4 做准备,进入开放西西里。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
+      "title": "为什么选西西里?",
+      "text": "与对称的 ...e5 不同,...c5 创造不对称的局面。白方在王翼进攻,黑方在后翼反击。棋局尖锐而有决定性——胜负分明,和棋少见。"
+    }
+  ]
+}

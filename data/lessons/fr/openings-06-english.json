@@ -1,0 +1,21 @@
+{
+  "id": "english",
+  "title": "L'ouverture anglaise",
+  "summary": "Jeu d'aile flexible",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Contrôler le centre depuis les ailes",
+      "text": "L'anglaise (1.c4) est une ouverture flexible défendue par les meilleurs joueurs. Au lieu de se précipiter à pousser d4, les Blancs la préparent avec le soutien du pion c et développent d'abord les pièces. Les parties transposent souvent en gambit de la dame ou en structures indiennes." },
+    { "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "Jouez l'ouverture anglaise.",
+      "targetSan": ["c4"],
+      "hint": "1.c4 — l'anglaise." },
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/2P5/8/PP1PPPPP/RNBQKBNR b KQkq - 0 1",
+      "title": "Suites flexibles",
+      "text": "Selon la réponse des Noirs, les Blancs peuvent jouer d4 (transposant au gambit de la dame), Nc3 + g3 (positionnel, style Botvinnik) ou e3 (flexible). L'anglaise est un excellent choix si vous n'aimez pas mémoriser la théorie tranchante." }
+  ]
+}

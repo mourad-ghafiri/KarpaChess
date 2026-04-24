@@ -1,0 +1,21 @@
+{
+  "id": "opposition",
+  "title": "Oposición",
+  "summary": "El concepto más importante del final",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "4k3/8/4K3/8/8/8/8/8 w - - 0 1",
+      "title": "Frente a Frente",
+      "text": "Dos reyes se enfrentan con una casilla entre ellos. El bando que NO mueve tiene la oposición — el otro rey debe apartarse. En finales de rey y peón, tener la oposición suele decidir la partida." },
+    { "type": "teach",
+      "fen": "4k3/8/4K3/4P3/8/8/8/8 w - - 0 1",
+      "title": "Con un Peón",
+      "text": "Aquí las Blancas tienen un peón de más y quieren promocionarlo. Para ganar, el rey blanco debe PRECEDER al peón con la oposición. La regla: 'rey delante, peón detrás.'" },
+    { "type": "play",
+      "fen": "4k3/8/4K3/4P3/8/8/8/8 w - - 0 1",
+      "prompt": "Avanza para tomar la oposición.",
+      "targetSan": ["Kd6", "Kf6"],
+      "hint": "Kd6 o Kf6 reclaman la oposición y ganan." }
+  ]
+}

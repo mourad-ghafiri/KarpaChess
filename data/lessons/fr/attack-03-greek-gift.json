@@ -1,0 +1,20 @@
+{
+  "id": "greek-gift",
+  "title": "Le cadeau grec (Fxh7+)",
+  "summary": "Sacrifice classique du fou contre le roi roqué",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2BPP3/2N2N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "Le motif",
+      "text": "Le \"cadeau grec\" est un sacrifice du fou en h7 : Bxh7+ Kxh7 Ng5+ Kg8 (ou Kg6) Qh5 — et l'attaque perce. Nommé ainsi car il paraît gratuit mais porte la destruction."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2BPP3/2N2N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "La liste de vérification",
+      "text": "Le cadeau grec fonctionne quand : (1) les Noirs ont un cavalier qui n'est PAS en f6 bloquant Ng5, (2) la dame peut rapidement atteindre h5, (3) aucune pièce noire ne peut interférer. Si ces conditions tiennent, c'est généralement décisif. Sinon, vous perdez juste un fou."
+    }
+  ]
+}

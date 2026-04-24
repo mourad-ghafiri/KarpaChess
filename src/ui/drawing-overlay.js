@@ -17,18 +17,19 @@
  * Coordinate system: 0..8 board-units matching the SVG viewBox.
  */
 import { EVENTS, DRAW_COLORS } from '../core/constants.js';
+import { i18n } from '../core/i18n.js';
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
 
 const TOOLS = [
-  { id: 'select', label: 'Select', icon: '⬚' },
-  { id: 'eraser', label: 'Erase',  icon: '✕' },
-  { id: 'arrow',  label: 'Arrow',  icon: '➤' },
-  { id: 'line',   label: 'Line',   icon: '╱' },
-  { id: 'rect',   label: 'Box',    icon: '▭' },
-  { id: 'circle', label: 'Circle', icon: '◯' },
-  { id: 'pen',    label: 'Pen',    icon: '✎' },
-  { id: 'text',   label: 'Text',   icon: 'T' }
+  { id: 'select', key: 'select', icon: '⬚' },
+  { id: 'eraser', key: 'erase',  icon: '✕' },
+  { id: 'arrow',  key: 'arrow',  icon: '➤' },
+  { id: 'line',   key: 'line',   icon: '╱' },
+  { id: 'rect',   key: 'box',    icon: '▭' },
+  { id: 'circle', key: 'circle', icon: '◯' },
+  { id: 'pen',    key: 'pen',    icon: '✎' },
+  { id: 'text',   key: 'text',   icon: 'T' }
 ];
 
 const HANDLE_SIZE = 0.22;   // in board-units
@@ -96,12 +97,13 @@ export class DrawingOverlay {
     const tools = document.createElement('div');
     tools.className = 'draw-tools';
     for (const t of TOOLS) {
+      const label = i18n.t('commentator.drawTools.' + t.key);
       const b = document.createElement('button');
       b.className = 'draw-tool';
       b.type = 'button';
       b.dataset.tool = t.id;
-      b.title = t.label;
-      b.innerHTML = `<span class="draw-icon">${t.icon}</span><span class="draw-label">${t.label}</span>`;
+      b.title = label;
+      b.innerHTML = `<span class="draw-icon">${t.icon}</span><span class="draw-label">${label}</span>`;
       b.addEventListener('click', () => this.#setTool(t.id));
       tools.appendChild(b);
     }
@@ -130,7 +132,7 @@ export class DrawingOverlay {
     stroke.className = 'draw-width';
     stroke.min = '0.03'; stroke.max = '0.24'; stroke.step = '0.01';
     stroke.value = this.stroke;
-    stroke.title = 'Stroke width';
+    stroke.title = i18n.t('commentator.drawTools.strokeWidth');
     stroke.addEventListener('input', (e) => {
       this.stroke = parseFloat(e.target.value);
       if (this.selectedIdx != null) this.#updateSelected(s => { s.stroke = this.stroke; });
@@ -140,7 +142,7 @@ export class DrawingOverlay {
     const delBtn = document.createElement('button');
     delBtn.type = 'button';
     delBtn.className = 'draw-iconbtn';
-    delBtn.title = 'Delete selected (Del)';
+    delBtn.title = i18n.t('commentator.drawTools.deleteSelected');
     delBtn.textContent = '🗑';
     delBtn.addEventListener('click', () => this.#deleteSelected());
     styleRow.appendChild(delBtn);
@@ -148,7 +150,7 @@ export class DrawingOverlay {
     const clearBtn = document.createElement('button');
     clearBtn.type = 'button';
     clearBtn.className = 'draw-iconbtn draw-iconbtn-warn';
-    clearBtn.title = 'Clear all shapes on this move';
+    clearBtn.title = i18n.t('commentator.drawTools.clearAll');
     clearBtn.textContent = '⌫';
     clearBtn.addEventListener('click', () => this.#clearAll());
     styleRow.appendChild(clearBtn);
@@ -348,7 +350,7 @@ export class DrawingOverlay {
     input.type = 'text';
     input.className = 'draw-text-editor';
     input.value = initialText;
-    input.placeholder = 'Type…';
+    input.placeholder = i18n.t('ui.placeholder.drawText');
     input.style.left = px + 'px';
     input.style.top  = py + 'px';
     input.style.color = this.color;

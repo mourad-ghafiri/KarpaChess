@@ -1,0 +1,26 @@
+{
+  "id": "nimzo-indian-advanced",
+  "title": "Défense nimzo-indienne",
+  "summary": "Chef-d'œuvre stratégique — clouer et contrôler",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqk2r/pppp1ppp/4pn2/8/1bPP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 3 4",
+      "title": "Le clouage Bb4",
+      "text": "La nimzo-indienne (1.d4 Nf6 2.c4 e6 3.Nc3 Bb4) cloue le cavalier c3 et menace de doubler les pions blancs avec ...Bxc3+. Nommée d'après Aron Nimzowitsch, le père des échecs hypermodernes."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqk2r/pppp1ppp/4pn2/8/1bPP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 3 4",
+      "title": "Deux lignes principales",
+      "text": "Les Blancs choisissent : 4.Qc2 (éviter les doublements, développer naturellement), 4.e3 (Rubinstein — construction classique), ou 4.f3 (Kmoch — ambitieux). Chacun mène à des milieux de partie très étudiés où les Noirs jouent pour exploiter les pions c doublés."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqk2r/pppp1ppp/2n1pn2/8/1bPP4/2N1P3/PP3PPP/R1BQKBNR w KQkq - 2 5",
+      "title": "Profondeur stratégique",
+      "text": "La nimzo est l'une des ouvertures les plus riches stratégiquement. Les Noirs sacrifient souvent la paire de fous pour doubler les pions blancs, pariant que la structure de pions endommagée l'emporte sur l'avantage des fous. Échecs positionnels classiques."
+    }
+  ]
+}

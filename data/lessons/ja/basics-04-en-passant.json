@@ -1,0 +1,25 @@
+{
+  "id": "en-passant",
+  "title": "アンパッサン",
+  "summary": "多くのプレイヤーが知らないポーンの取り方",
+  "difficulty": "beginner",
+  "steps": [
+    { "type": "teach",
+      "fen": "4k3/3p4/8/4P3/8/8/8/4K3 w - - 0 1",
+      "title": "隠れたルール",
+      "text": "ポーンが初期位置から2マス進んだとき、敵のポーンが「通過中に」取れることがあります。これをアンパッサン(フランス語で「通過中に」)と呼びます。次の一手でしか使えません。" },
+    { "type": "teach",
+      "fen": "rnbqkbnr/ppp1p1pp/8/3pPp2/8/8/PPPP1PPP/RNBQKBNR w KQkq f6 0 3",
+      "title": "チャンス",
+      "text": "黒が...f5と指し、白のe5ポーンを2マス追い越しました。もし黒のポーンが1マスだけ進んでいたら、白のポーンはf6で取れました。アンパッサンのルールでは、この手番に限り取ることができます。" },
+    { "type": "play",
+      "fen": "rnbqkbnr/ppp1p1pp/8/3pPp2/8/8/PPPP1PPP/RNBQKBNR w KQkq f6 0 3",
+      "prompt": "f5のポーンをアンパッサンで取りましょう。",
+      "targetSan": ["exf6"],
+      "hint": "手はexf6です。あなたのポーンはfポーンがf6にいるかのように取ります。" },
+    { "type": "teach",
+      "fen": "rnbqkbnr/ppp1p1pp/5P2/3p4/8/8/PPPP1PPP/RNBQKBNR b KQkq - 0 3",
+      "title": "一度きりのルール",
+      "text": "アンパッサンは次の手番に必ず使わなければ権利を失います。最も忘れられがちなルールの一つですが、これで覚えましたね。" }
+  ]
+}

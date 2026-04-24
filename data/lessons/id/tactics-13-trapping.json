@@ -1,0 +1,20 @@
+{
+  "id": "trapping-pieces",
+  "title": "Menjebak Bidak",
+  "summary": "Potong jalur pelarian",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "8/8/3k4/3q4/8/8/8/K3RR2 w - - 0 1",
+      "title": "Tidak Ada Tempat Pergi",
+      "text": "Bidak yang masuk jauh ke wilayah musuh rentan. Jika Anda bisa memotong setiap kotak pelariannya, Anda menang bidak secara gratis. Menteri, kuda, dan gajah sangat mudah dijebak di tepi."
+    },
+    {
+      "type": "teach",
+      "fen": "8/8/8/8/6Q1/8/r7/K1R5 w - - 0 1",
+      "title": "Kuda di Tepi",
+      "text": "Kuda di tepi itu redup — dan sering terdoom. Dorong pion ke arahnya, blokir kotaknya dengan bidak Anda, dan kuda tidak punya tempat melarikan diri. \"Kuda di tepi, masa depan suram\" — Tarrasch."
+    }
+  ]
+}

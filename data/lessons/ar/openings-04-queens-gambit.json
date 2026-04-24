@@ -1,0 +1,38 @@
+{
+  "id": "queens-gambit",
+  "title": "مناورة الوزير",
+  "summary": "اعرض بيدقاً للسيطرة على المركز",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "بيدق الوزير الكلاسيكي",
+      "text": "تبدأ مناورة الوزير بـ 1.d4 d5 2.c4. يعرض الأبيض بيدق c. إذا أخذه الأسود، هجر المركز. إذا رفض (الأكثر شيوعاً في مستوى المعلّمين)، يحتفظ الأبيض بسيطرة مركزية قوية."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "افتتح ببيدق الوزير.",
+      "targetSan": [
+        "d4"
+      ],
+      "hint": "1.d4 — الدفع المركزي الكلاسيكي."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "الآن اعرض المناورة.",
+      "targetSan": [
+        "c4"
+      ],
+      "hint": "2.c4 — هاجم بيدق d5 ببيدق جانبي."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/ppp1pppp/8/3p4/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2",
+      "title": "الرفض أم القبول؟",
+      "text": "إذا قبل الأسود (2...dxc4)، يستعيد الأبيض البيدق بسرعة عادة. إذا رفض (2...e6، 2...c6، 2...Nf6)، تصبح المباراة معركة وضعية على المربعات المركزية. في كلا الحالتين، يحصل الأبيض على مبادرة قوية."
+    }
+  ]
+}

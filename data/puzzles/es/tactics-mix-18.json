@@ -1,0 +1,8 @@
+{
+  "id": "tactics-mix-18",
+  "fen": "rnbqkbnr/ppp2ppp/8/3pp3/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
+  "solution": [
+    "dxe5"
+  ],
+  "hint": "Captura central."
+}

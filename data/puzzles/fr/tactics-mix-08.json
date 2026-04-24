@@ -1,0 +1,8 @@
+{
+  "id": "tactics-mix-08",
+  "fen": "4k3/8/8/8/8/8/P7/4K3 w - - 0 1",
+  "solution": [
+    "a4"
+  ],
+  "hint": "Avancez vers la promotion."
+}

@@ -1,0 +1,21 @@
+{
+  "id": "overloading",
+  "title": "Sobrecarga",
+  "summary": "Una pieza con dos tareas fallará en una",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "4k3/4q3/8/8/8/8/4R3/4K3 w - - 0 1",
+      "title": "Demasiado Trabajo",
+      "text": "Una pieza sobrecargada está defendiendo (o atacando) más de lo que puede manejar. El caso clásico: una pieza defiende dos casillas. Cuando atacas una, la otra cae. Aquí la dama negra defiende al rey — no puede moverse sin perder ante Rxe7+." },
+    { "type": "play",
+      "fen": "4k3/4q3/8/8/8/8/4R3/4K3 w - - 0 1",
+      "prompt": "Captura la dama clavada.",
+      "targetSan": ["Rxe7+"],
+      "hint": "La doble tarea de la dama (defender al rey Y a su casilla) implica su caída." },
+    { "type": "teach",
+      "fen": "4k3/4R3/8/8/8/8/8/4K3 b - - 0 1",
+      "title": "Detectar Sobrecargas",
+      "text": "Busca piezas que defienden varias cosas — peones que se defienden entre sí y una pieza, o un caballo que retiene una columna mientras bloquea un peón pasado. Cuando encuentres una, ataca una de sus tareas." }
+  ]
+}

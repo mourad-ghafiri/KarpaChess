@@ -1,0 +1,20 @@
+{
+  "id": "opposite-castles",
+  "title": "Ataques con Enroques Opuestos",
+  "summary": "Carrera hacia el rey enemigo con peones",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bqk2r/ppp2ppp/2npbn2/4p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 b kq - 0 6",
+      "title": "La Tormenta de Peones",
+      "text": "Cuando enrocas corto y tu oponente enroca largo, puedes atacar con peones SIN debilitar a tu propio rey. Empuja h4, g4, Nf5, h5, hxg6 — el ataque es una tormenta de peones."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqk2r/ppp2ppp/2npbn2/4p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 b kq - 0 6",
+      "title": "La Velocidad Cuenta",
+      "text": "El enroque en flancos opuestos crea una carrera: ambos bandos atacan al rey del otro. Quien abre líneas primero generalmente gana. Cuenta los tiempos — cada jugada importa. \"El enroque opuesto significa mate en 20 jugadas — para alguien.\""
+    }
+  ]
+}

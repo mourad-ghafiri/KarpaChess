@@ -1,0 +1,26 @@
+{
+  "id": "thinking-process",
+  "title": "如何思考",
+  "summary": "每步棋的简单三步思考流程",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "三个问题",
+      "text": "每走一步之前,请按这个清单自问:(1) 对手在威胁什么?(2) 我有什么将军、吃子和威胁?(3) 如果我走这步候选,对方最好的应着是什么?回答完三个问题,再出手。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "漏着检查",
+      "text": "在落子之前,停一下问自己:\"我走完这步之后,我的哪个子被攻击?对手能否将军?能否白吃什么?\" 这五秒钟的检查能避免大多数漏着。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "候选着法",
+      "text": "强手不只计算一个着法——他们考虑 2-3 个候选并进行比较。选择能出子、改善位置或制造威胁的着法。尽早排除看起来随机的着法。"
+    }
+  ]
+}

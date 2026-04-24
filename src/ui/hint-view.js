@@ -6,7 +6,7 @@
  * whenever a real move is played or the user pressed New Game / Undo.
  */
 import * as Chess from '../engine/chess.js';
-import { PIECE_NAME_LOWER } from '../core/constants.js';
+import { i18n } from '../core/i18n.js';
 
 export class HintView {
   constructor({ cardEl, moveEl, textEl, arrowEl, arrowLineEl, playBtn, closeBtn }, gameState, boardView, bus) {
@@ -26,8 +26,8 @@ export class HintView {
 
   /** Compute + display the hint for the current position. */
   show() {
-    this.moveEl.textContent = '…';
-    this.textEl.textContent = 'Looking a few moves ahead…';
+    this.moveEl.textContent = i18n.t('hint.loading');
+    this.textEl.textContent = i18n.t('hint.loadingSub');
     this.cardEl.hidden = false;
 
     // Defer the search one frame so the UI repaints first.
@@ -82,22 +82,25 @@ export class HintView {
   }
 
   #describe(move, san) {
-    const nm = (p) => PIECE_NAME_LOWER[p] || 'piece';
-    if (san.includes('#')) return 'Delivers <b>checkmate</b>. End it!';
-    if (move.castling) return `Castles ${move.castling === 'k' ? 'kingside' : 'queenside'} — tucks the king behind a wall of pawns.`;
-    if (move.promotion) return `Pushes to the last rank and promotes to a <b>${nm(move.promotion)}</b>.`;
+    const piece = i18n.piece(move.piece);
+    if (san.includes('#')) return i18n.t('hint.checkmate');
+    if (move.castling) {
+      const dir = i18n.t(move.castling === 'k' ? 'chess.direction.kingside' : 'chess.direction.queenside');
+      return i18n.t('hint.castle', { dir });
+    }
+    if (move.promotion) return i18n.t('hint.promote', { piece: i18n.piece(move.promotion) });
     const parts = [];
     if (move.captured) {
-      parts.push(`Wins material: your <b>${nm(move.piece)}</b> captures the <b>${nm(move.captured)}</b>.`);
+      parts.push(i18n.t('hint.capture', { piece, target: i18n.piece(move.captured) }));
     } else {
       const to = Chess.squareName(move.to[0], move.to[1]);
-      if (move.piece === 'n' || move.piece === 'b') parts.push(`Develops your <b>${nm(move.piece)}</b> to <b>${to}</b>, improving activity and eyeing the center.`);
-      else if (move.piece === 'p') parts.push(`Advances your <b>pawn</b> to <b>${to}</b>, claiming space.`);
-      else if (move.piece === 'r') parts.push(`Activates your <b>rook</b> on <b>${to}</b> — open files love rooks.`);
-      else if (move.piece === 'q') parts.push(`Brings the <b>queen</b> to <b>${to}</b> with purpose.`);
-      else parts.push(`Moves your <b>${nm(move.piece)}</b> to <b>${to}</b>.`);
+      if (move.piece === 'n' || move.piece === 'b') parts.push(i18n.t('hint.develop', { piece, square: to }));
+      else if (move.piece === 'p') parts.push(i18n.t('hint.pawn', { square: to }));
+      else if (move.piece === 'r') parts.push(i18n.t('hint.rook', { square: to }));
+      else if (move.piece === 'q') parts.push(i18n.t('hint.queen', { square: to }));
+      else parts.push(i18n.t('hint.quiet', { piece, square: to }));
     }
-    if (san.endsWith('+')) parts.push('Also gives <b>check</b>.');
+    if (san.endsWith('+')) parts.push(i18n.t('hint.checkSuffix').trim());
     return parts.join(' ');
   }
 

@@ -1,0 +1,8 @@
+{
+  "id": "tactics-mix-07",
+  "fen": "r4rk1/1pp2ppp/p1np4/4p3/2B1P3/2Pq1N2/PP2QPPP/R2R2K1 b - - 0 1",
+  "solution": [
+    "Qxd1+"
+  ],
+  "hint": "افرض التبادل للوصول إلى نهاية رابحة."
+}

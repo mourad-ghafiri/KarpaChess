@@ -1,0 +1,20 @@
+{
+  "id": "rook-pawn-vs-rook",
+  "title": "Benteng dan Pion vs Benteng",
+  "summary": "Babak akhir paling umum di setiap level",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "8/8/8/3k4/8/8/4P3/R3K2r w - - 0 1",
+      "title": "Setengah Menang, Setengah Remis",
+      "text": "Babak akhir yang paling sering muncul adalah R+B vs R. Sekitar setengah kasus remis, setengah menang — dan hasilnya sering bergantung pada apakah Anda hafal Philidor (remis) atau Lucena (menang)."
+    },
+    {
+      "type": "teach",
+      "fen": "8/8/8/3k4/8/8/4P3/R3K2r w - - 0 1",
+      "title": "Aturan Kunci",
+      "text": "Aturan 1: Benteng pembela berada di BELAKANG pion lewat (milik Anda atau mereka). Aturan 2: Pion benteng (a/h) cenderung remis — raja pembela sering mencapai sudut. Aturan 3: Penyerang harus mendorong pion sambil tetap mengawal rajanya."
+    }
+  ]
+}

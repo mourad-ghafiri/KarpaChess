@@ -1,0 +1,64 @@
+{
+  "id": "opening-principles",
+  "title": "المبادئ الثلاثة",
+  "summary": "المركز، التطوير، أمان الملك",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "القوانين الثلاثة",
+      "text": "كل افتتاح قوي يقوم على ثلاث ركائز: (1) السيطرة على المركز، (2) تطوير القطع بسرعة، (3) تأمين الملك. لنتدرب على الثلاثة."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "ابدأ بدفع بيدق مركزي. العب e4 أو d4.",
+      "targetSan": [
+        "e4",
+        "d4"
+      ],
+      "hint": "البيادق المركزية تطالب بالمساحة وتفتح الخطوط لقطعك."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "title": "الآن طوِّر",
+      "text": "البيادق أولاً — ثم القطع. الأحصنة قبل الفيلة. الأحصنة تخرج نحو المركز (f3، c3) وتهاجم أربعة مربعات مركزية لكل منها."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "طوّر حصاناً نحو المركز.",
+      "targetSan": [
+        "Nf3",
+        "Nc3"
+      ],
+      "hint": "Nf3 و Nc3 كلاهما يضرب أربعة مربعات مركزية."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+      "title": "الفيلة تالياً",
+      "text": "بعد خروج كلا الحصانين، طوِّر الفيلة إلى مربعات فعّالة. Bc4 يستهدف المربع الضعيف f7 — أضعف نقطة في معسكر الأسود في الافتتاح."
+    },
+    {
+      "type": "play",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+      "prompt": "طوّر الفيل ذا المربعات الفاتحة إلى مربع فعّال.",
+      "targetSan": [
+        "Bc4",
+        "Bb5",
+        "Bd3",
+        "Be2"
+      ],
+      "hint": "Bc4 هو الاختيار الكلاسيكي — مباشر نحو f7."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+      "title": "أمان الملك",
+      "text": "خروج قطعتين على كل جانب لحظة مناسبة للتبييت. يُخفي التبييت الملك في الزاوية ويصل قلعتيك. افعله قبل شنّ الهجمات."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "id": "how-pieces-move",
+  "title": "Cómo se Mueven las Piezas",
+  "summary": "Conoce cada pieza del tablero",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Bienvenido",
+      "text": "El ajedrez se juega en 64 casillas con 16 piezas por bando. Las Blancas siempre mueven primero. Conocerás cada pieza por turno — el peón, el caballo, el alfil, la torre, la dama y el rey."
+    },
+    {
+      "type": "teach",
+      "fen": "8/8/8/8/8/8/4P3/4K3 w - - 0 1",
+      "title": "El Peón",
+      "text": "Los peones avanzan una casilla a la vez — o dos en su primer movimiento. Capturan en diagonal. Un peón que llega al lado opuesto promociona a cualquier pieza que elijas. Pequeño, pero decisivo."
+    },
+    {
+      "type": "play",
+      "fen": "8/8/8/8/8/8/4P3/4K3 w - - 0 1",
+      "prompt": "Empuja el peón dos casillas adelante para reclamar el centro.",
+      "targetSan": [
+        "e4"
+      ],
+      "hint": "En su primer movimiento, un peón puede saltar dos casillas. Prueba e4."
+    },
+    {
+      "type": "teach",
+      "fen": "8/8/8/8/8/8/8/4K2N w - - 0 1",
+      "title": "El Caballo",
+      "text": "Los caballos saltan en forma de L — dos casillas en una dirección, luego una en ángulo recto. Son la única pieza que puede saltar sobre otras. Difíciles de ver, mortíferos en el lugar correcto."
+    },
+    {
+      "type": "play",
+      "fen": "8/8/8/8/8/8/8/4K2N w - - 0 1",
+      "prompt": "Desarrolla el caballo hacia el centro. Juega Nf3 o Ng3.",
+      "targetSan": [
+        "Nf2",
+        "Ng3"
+      ],
+      "hint": "El caballo en h1 puede llegar a f2 o g3."
+    },
+    {
+      "type": "teach",
+      "fen": "8/8/8/8/8/8/8/2B1K3 w - - 0 1",
+      "title": "El Alfil",
+      "text": "Los alfiles se deslizan por diagonales todo lo que deseen. Cada alfil permanece en un color para siempre — uno controla casillas claras, el otro oscuras. Aman las posiciones abiertas."
+    },
+    {
+      "type": "teach",
+      "fen": "8/8/8/8/8/8/8/R3K3 w - - 0 1",
+      "title": "La Torre",
+      "text": "Las torres se mueven en líneas rectas — por filas y columnas. Se convierten en monstruos en el final y aman las columnas abiertas."
+    },
+    {
+      "type": "teach",
+      "fen": "8/8/8/8/8/8/8/3QK3 w - - 0 1",
+      "title": "La Dama",
+      "text": "La dama combina torre y alfil — moviéndose cualquier distancia por filas, columnas o diagonales. Es la pieza más poderosa. No la saques demasiado pronto; puede ser perseguida."
+    },
+    {
+      "type": "teach",
+      "fen": "8/8/8/8/8/8/8/4K3 w - - 0 1",
+      "title": "El Rey",
+      "text": "El rey avanza una casilla en cualquier dirección. Protégelo a toda costa — si le dan jaque mate, el juego termina. En el final, actívalo: vale unos tres peones en el ataque."
+    }
+  ]
+}

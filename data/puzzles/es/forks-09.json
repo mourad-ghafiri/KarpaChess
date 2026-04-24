@@ -1,0 +1,8 @@
+{
+  "id": "forks-09",
+  "fen": "4k3/8/8/8/8/3r4/8/2N1K3 w - - 0 1",
+  "solution": [
+    "Nxd3"
+  ],
+  "hint": "El caballo captura la torre."
+}

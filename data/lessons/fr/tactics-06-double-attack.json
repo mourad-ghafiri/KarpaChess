@@ -1,0 +1,21 @@
+{
+  "id": "double-attack",
+  "title": "Attaque double",
+  "summary": "Menacer deux choses à la fois",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "4k3/8/8/3q4/8/4N3/8/4K3 w - - 0 1",
+      "title": "Deux menaces, un coup",
+      "text": "Une attaque double est tout coup qui crée deux menaces simultanées. La fourchette en est un type — la même pièce attaque deux cibles. Mais un coup peut aussi créer deux types DIFFÉRENTS de menace : une menace de mat plus une menace de matériel, par exemple." },
+    { "type": "play",
+      "fen": "4k3/8/8/3q4/8/4N3/8/4K3 w - - 0 1",
+      "prompt": "La dame n'est pas défendue — prenez-la.",
+      "targetSan": ["Nxd5"],
+      "hint": "Le cavalier bondit sur d5 avec une capture." },
+    { "type": "teach",
+      "fen": "4k3/8/8/3N4/8/8/8/4K3 b - - 0 1",
+      "title": "Le principe",
+      "text": "Tout bon coup tactique menace quelque chose de précis. Deux menaces d'un même coup sont souvent décisives car l'adversaire ne peut répondre qu'à l'une d'elles. Entraînez votre œil à compter les menaces — si vous en voyez deux, quelque chose de bon se passe." }
+  ]
+}

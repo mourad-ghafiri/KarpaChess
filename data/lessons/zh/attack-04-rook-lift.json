@@ -1,0 +1,20 @@
+{
+  "id": "rook-lift",
+  "title": "车的抬升",
+  "summary": "通过第三横线把车调到进攻位置",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQR1K1 w - - 0 1",
+      "title": "抬升与横调",
+      "text": "车的抬升是 Re1-e3-g3(或 h3)的调运——车上到第三横线,然后横向调运,攻击敌方的王。经典模式:Re3、Qh5,王翼上演烟花秀。"
+    },
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQR1K1 w - - 0 1",
+      "title": "何时使用",
+      "text": "车的抬升适用于:局面半封闭(车无法直接利用直线)、敌王已经易位、你已有子力在附近。特别适合与 h 兵推进结合使用。"
+    }
+  ]
+}

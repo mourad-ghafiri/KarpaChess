@@ -1,0 +1,26 @@
+{
+  "id": "gruenfeld-advanced",
+  "title": "格林菲尔德防御",
+  "summary": "反击型的超现代体系",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/ppp1pp1p/5np1/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4",
+      "title": "让他们过度扩张",
+      "text": "格林菲尔德防御(1.d4 Nf6 2.c4 g6 3.Nc3 d5)是反击者的梦想。黑方让白方建立庞大中心,然后用后翼子力和兵的突破予以反击。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/ppp1pp1p/5np1/3P4/2P5/2N5/PP2PPPP/R1BQKBNR b KQkq - 0 4",
+      "title": "交换变例",
+      "text": "4.cxd5 Nxd5 5.e4 之后,黑方的马后撤,白方拥有巨大的中心——但黑方威胁用子力摧毁它。这是动态棋的关键考验:静态中心对抗子力活力。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/ppp1pp1p/5np1/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4",
+      "title": "古典格林菲尔德主题",
+      "text": "黑方的计划:g7 翼角布象、以 ...c5 压 d4、易位、...Nc6、...Bg4。g7 的翼角象是关键——其力量辐射到白方阵地,尤其在 ...d4 瓦解之后。"
+    }
+  ]
+}

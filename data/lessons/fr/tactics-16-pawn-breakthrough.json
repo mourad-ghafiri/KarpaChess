@@ -1,0 +1,20 @@
+{
+  "id": "pawn-breakthrough",
+  "title": "Percée de pions",
+  "summary": "Sacrifier des pions pour créer un passé",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "8/1p6/1P6/8/8/8/1K6/1k6 w - - 0 1",
+      "title": "Le motif classique",
+      "text": "En finale, trois pions alignés (par exemple en a5/b5/c5 contre a6/b6/c6) peuvent presque toujours percer par des sacrifices, créant un pion passé inarrêtable. La \"percée\" est un motif d'échecs pur — tout en calcul, sans pièces."
+    },
+    {
+      "type": "teach",
+      "fen": "4k3/p1p2ppp/1p6/P1P2PPP/1P6/8/8/4K3 w - - 0 1",
+      "title": "Au-delà de la finale",
+      "text": "Les percées apparaissent aussi en milieu de partie : un sacrifice de cavalier en f5 ouvrant la colonne f, un sacrifice de tour en a7, une vague de pions contre le roi roqué. Le principe : céder du matériel pour créer une force inarrêtable."
+    }
+  ]
+}

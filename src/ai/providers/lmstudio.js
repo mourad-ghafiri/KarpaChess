@@ -1,5 +1,5 @@
 /** LM Studio — local OpenAI-compatible server. Default port 1234, no auth. */
-import { AIProvider, COACH_SYSTEM, buildContextBlock } from './base.js';
+import { AIProvider } from './base.js';
 
 export class LMStudioProvider extends AIProvider {
   get id() { return 'lmstudio'; }

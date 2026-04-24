@@ -1,0 +1,21 @@
+{
+  "id": "overloading",
+  "title": "Kelebihan Beban",
+  "summary": "Bidak yang melakukan dua tugas akan gagal di salah satunya",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "4k3/4q3/8/8/8/8/4R3/4K3 w - - 0 1",
+      "title": "Terlalu Banyak Kerja",
+      "text": "Bidak yang kelebihan beban adalah yang membela (atau menyerang) lebih dari yang bisa ia tangani. Kasus klasik: satu bidak membela dua kotak. Ketika Anda menyerang salah satu, yang lain jatuh. Di sini menteri Hitam membela raja — dia tidak bisa bergerak tanpa kalah oleh Rxe7+." },
+    { "type": "play",
+      "fen": "4k3/4q3/8/8/8/8/4R3/4K3 w - - 0 1",
+      "prompt": "Tangkap menteri yang terikat.",
+      "targetSan": ["Rxe7+"],
+      "hint": "Tugas ganda menteri (membela raja DAN kotaknya) berarti dia mati." },
+    { "type": "teach",
+      "fen": "4k3/4R3/8/8/8/8/8/4K3 b - - 0 1",
+      "title": "Mengenali Kelebihan Beban",
+      "text": "Cari bidak yang mempertahankan beberapa hal — pion yang saling membela ditambah sebuah bidak, atau kuda yang menahan kolom sambil juga memblokade pion lewat. Ketika Anda menemukan satu, serang salah satu tugasnya." }
+  ]
+}

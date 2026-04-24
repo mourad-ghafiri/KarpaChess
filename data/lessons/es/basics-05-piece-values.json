@@ -1,0 +1,21 @@
+{
+  "id": "piece-values",
+  "title": "Valor de las Piezas",
+  "summary": "Aprende cuánto vale cada pieza",
+  "difficulty": "beginner",
+  "steps": [
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Los Valores Aproximados",
+      "text": "Conocer el valor de las piezas es esencial para hacer cambios. Peón = 1. Caballo = 3. Alfil = 3 (algo más en posiciones abiertas). Torre = 5. Dama = 9. Rey = invaluable. Estos son aproximaciones — el contexto importa — pero son el punto de partida de todo buen cambio." },
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Principios de Cambios",
+      "text": "Cambia piezas de igual valor cuando vayas por delante en material (simplifica a un final ganador). Evita cambios cuando vayas por detrás — mantén piezas en el tablero para crear oportunidades. Sacrificar una pieza de mayor valor por una menor es un 'sacrificio' — a veces vale la pena por un ataque ganador." },
+    { "type": "play",
+      "fen": "rnbqkb1r/pppp1ppp/5n2/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3",
+      "prompt": "¿Qué peón central deberías empujar para reclamar más espacio? Juega uno.",
+      "targetSan": ["d4", "c4"],
+      "hint": "d4 o c4 — ambos refuerzan tu centro." }
+  ]
+}

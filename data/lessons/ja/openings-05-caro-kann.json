@@ -1,0 +1,38 @@
+{
+  "id": "caro-kann",
+  "title": "カロカン",
+  "summary": "1.e4に対する鉄壁の防御",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "堅実で健全",
+      "text": "カロカン(1.e4 c6)は、cポーンの支えで...d5を準備します。フレンチと異なり、白マスのビショップが自由に展開できます。静かで戦略的、崩すのが難しいことで有名です。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+      "prompt": "黒はカロカンのセットアップを指します。",
+      "targetSan": [
+        "c6"
+      ],
+      "hint": "1...c6は...d5を準備します。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "白の主要応手、中央を強化しましょう。",
+      "targetSan": [
+        "d4"
+      ],
+      "hint": "2.d4で中央を完全に確保します。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pp1ppppp/2p5/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2",
+      "title": "ブレイク",
+      "text": "黒は次に2...d5と指し、白の中央に直接挑みます。白は前進(e5)、交換(exd5)、アドヴァンスバリエーションなどを選べます。それぞれ異なるタイプの対局になります。"
+    }
+  ]
+}

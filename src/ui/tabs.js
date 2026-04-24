@@ -24,6 +24,10 @@ export class TabController {
 
     this.#wireDropdown();
     this.#syncCrumbLabel();
+
+    // Resync crumb label on language change — the tab buttons' textContent is
+    // rebound by the I18n binder, so we need to re-copy it into the crumb.
+    bus.on(EVENTS.I18N_CHANGED, () => this.#syncCrumbLabel());
   }
 
   activate(name) {

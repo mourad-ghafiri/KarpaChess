@@ -1,0 +1,41 @@
+{
+  "id": "italian-game",
+  "title": "意大利开局",
+  "summary": "古典、遵循原则,至今仍活跃于顶级赛场",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "意大利开局",
+      "text": "意大利开局始于最合乎原则的第一步:e4。我们将逐步走到 Bc4,瞄准 f7——经典配方。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "走 1. e4 开局",
+      "targetSan": [
+        "e4"
+      ],
+      "hint": "王前兵推两格。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "接着 2. Nf3,攻击 e5 兵。",
+      "targetSan": [
+        "Nf3"
+      ],
+      "hint": "马走到 f3——每位大师的首选。"
+    },
+    {
+      "type": "play",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+      "prompt": "3. Bc4——对 f7 下手。",
+      "targetSan": [
+        "Bc4"
+      ],
+      "hint": "象到 c4,正式进入意大利开局。"
+    }
+  ]
+}

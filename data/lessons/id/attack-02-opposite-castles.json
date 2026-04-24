@@ -1,0 +1,20 @@
+{
+  "id": "opposite-castles",
+  "title": "Serangan Rokade Berlawanan",
+  "summary": "Balapan menuju raja lawan dengan pion",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bqk2r/ppp2ppp/2npbn2/4p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 b kq - 0 6",
+      "title": "Badai Pion",
+      "text": "Ketika Anda rokade ke sisi raja dan lawan rokade ke sisi menteri, Anda bisa menyerang dengan pion TANPA melemahkan raja Anda sendiri. Dorong h4, g4, Nf5, h5, hxg6 — serangannya adalah badai pion."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqk2r/ppp2ppp/2npbn2/4p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 b kq - 0 6",
+      "title": "Kecepatan Itu Penting",
+      "text": "Rokade berlawanan menciptakan balapan: kedua pihak menyerang raja masing-masing. Siapa yang membuka garis lebih dulu biasanya menang. Hitung tempo — setiap langkah berarti. \"Rokade berlawanan berarti skakmat dalam 20 langkah — untuk seseorang.\""
+    }
+  ]
+}

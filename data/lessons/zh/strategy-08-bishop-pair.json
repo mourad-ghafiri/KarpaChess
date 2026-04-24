@@ -1,0 +1,20 @@
+{
+  "id": "bishop-pair",
+  "title": "双象",
+  "summary": "两个象的价值超乎想象",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "为什么双象?",
+      "text": "两个象合起来覆盖全部 64 格——一个深色、一个浅色。双象的价值比\"一象一马\"或\"两马\"大约多 0.5 个兵。此优势在开放局面中会放大。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "何时交换",
+      "text": "如果你拥有双象:打开局面,交换兵而不是棋子,避免让对方的马占据据点。如果你放弃了双象:封闭局面,造兵链,争夺马的据点。"
+    }
+  ]
+}

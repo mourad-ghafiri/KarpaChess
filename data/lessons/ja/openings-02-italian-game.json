@@ -1,0 +1,41 @@
+{
+  "id": "italian-game",
+  "title": "イタリアンゲーム",
+  "summary": "古典的で原則的、今もトップで指される",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "イタリアン",
+      "text": "イタリアンゲームは、もっとも原則的な初手e4から始まります。そしてBc4でf7を狙う、古典的なレシピへと組み立てていきます。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "1. e4で始めましょう。",
+      "targetSan": [
+        "e4"
+      ],
+      "hint": "キングのポーンを2マス突きます。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "次に2. Nf3、e5のポーンを攻めましょう。",
+      "targetSan": [
+        "Nf3"
+      ],
+      "hint": "ナイトをf3へ。どのマスターも選ぶ定番の手です。"
+    },
+    {
+      "type": "play",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+      "prompt": "3. Bc4でf7への圧力を確立しましょう。",
+      "targetSan": [
+        "Bc4"
+      ],
+      "hint": "ビショップをc4に出して、本来のイタリアンゲームへ。"
+    }
+  ]
+}

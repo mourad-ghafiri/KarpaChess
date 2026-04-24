@@ -1,0 +1,26 @@
+{
+  "id": "nimzo-indian-advanced",
+  "title": "Defensa Nimzo-India",
+  "summary": "Obra maestra estratégica — clava y controla",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqk2r/pppp1ppp/4pn2/8/1bPP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 3 4",
+      "title": "La Clavada con Bb4",
+      "text": "La Nimzo-India (1.d4 Nf6 2.c4 e6 3.Nc3 Bb4) clava el caballo de c3 y amenaza con doblar los peones blancos mediante ...Bxc3+. Lleva el nombre de Aron Nimzowitsch, padre del ajedrez hipermoderno."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqk2r/pppp1ppp/4pn2/8/1bPP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 3 4",
+      "title": "Dos Líneas Principales",
+      "text": "Las Blancas eligen: 4.Qc2 (evita peones doblados, desarrollo natural), 4.e3 (Rubinstein — despliegue clásico) o 4.f3 (Kmoch — ambiciosa). Cada una lleva a medios juegos muy estudiados donde las Negras explotan los peones c doblados."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqk2r/pppp1ppp/2n1pn2/8/1bPP4/2N1P3/PP3PPP/R1BQKBNR w KQkq - 2 5",
+      "title": "Profundidad Estratégica",
+      "text": "La Nimzo es una de las aperturas estratégicamente más ricas. Las Negras a menudo sacrifican la pareja de alfiles para doblar los peones blancos, apostando a que la estructura dañada pesa más que la ventaja del alfil. Ajedrez posicional clásico."
+    }
+  ]
+}

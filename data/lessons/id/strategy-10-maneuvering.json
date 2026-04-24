@@ -1,0 +1,20 @@
+{
+  "id": "maneuvering",
+  "title": "Manuver",
+  "summary": "Pengelompokan ulang lambat untuk susunan yang menang",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "Seni Tidak Melakukan Apa-apa",
+      "text": "Dalam posisi tertutup, kemajuan dibuat dengan pengelompokan ulang yang lambat — menggerakkan kuda di jalur berliku (seperti Nc3-e2-g3-f5), merutekan ulang gajah, menggeser menteri. Setiap langkah meningkatkan bidak sedikit demi sedikit."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "Gaya Karpov",
+      "text": "Anatoly Karpov adalah master manuver. Ia akan menghabiskan 30 langkah memperbaiki penempatan bidak tanpa ancaman yang tampak, lalu menyerang dengan ketepatan yang menghancurkan. Pelajari permainannya untuk belajar kesabaran."
+    }
+  ]
+}

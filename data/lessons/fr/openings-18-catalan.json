@@ -1,0 +1,26 @@
+{
+  "id": "catalan-advanced",
+  "title": "La catalane",
+  "summary": "Étranglement positionnel dès le premier coup",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "L'arme de la grande diagonale",
+      "text": "La catalane (1.d4 Nf6 2.c4 e6 3.g3) combine la structure du gambit de la dame avec un fou fianchetto. Les Blancs obtiennent un avantage léger mais persistant — des échecs techniques, d'usure. La favorite de Kramnik."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/pppp1ppp/4pn2/8/2PP4/6P1/PP2PP1P/RNBQKBNR b KQkq - 0 3",
+      "title": "Pourquoi le fianchetto ?",
+      "text": "Le fou en g2 met une pression à long terme sur la diagonale a8-h1. Si les Noirs jouent ...dxc4 (catalane ouverte), les Blancs abandonnent souvent le pion pour une pression continue. Pure technique."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/pppp1ppp/4pn2/8/2PP4/6P1/PP2PP1P/RNBQKBNR b KQkq - 0 3",
+      "title": "Position de rêve catalane",
+      "text": "L'idéal des Blancs : grande diagonale ouverte pour Bg2, cavaliers en d2 et f3, tours reliées, pions centraux forts. Les Noirs doivent jouer précisément ou se faire étrangler. Magnus Carlsen utilise la catalane pour broyer ses adversaires."
+    }
+  ]
+}

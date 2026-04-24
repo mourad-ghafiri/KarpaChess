@@ -1,0 +1,26 @@
+{
+  "id": "thinking-process",
+  "title": "Comment réfléchir",
+  "summary": "Un processus simple en 3 étapes pour chaque coup",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Trois questions",
+      "text": "Avant chaque coup, passez en revue cette liste : (1) Que menace mon adversaire ? (2) Quels sont MES échecs, captures et menaces ? (3) Si je joue mon coup candidat, quelle est la meilleure réponse ? Répondez aux trois, puis jouez."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "La vérification anti-gaffe",
+      "text": "Avant de jouer votre coup, faites une pause et demandez : « Après ce coup, l'une de mes pièces est-elle attaquée ? Mon adversaire peut-il faire échec ? Peut-il capturer quelque chose gratuitement ? » Cette vérification de 5 secondes évite la plupart des gaffes."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Coups candidats",
+      "text": "Les joueurs forts ne calculent pas un seul coup — ils calculent 2 à 3 candidats et comparent. Choisissez des coups qui développent une pièce, améliorent une case ou créent une menace. Rejetez tôt les coups qui semblent aléatoires."
+    }
+  ]
+}

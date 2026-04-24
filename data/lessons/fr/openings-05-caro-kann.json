@@ -1,0 +1,26 @@
+{
+  "id": "caro-kann",
+  "title": "La Caro-Kann",
+  "summary": "Une défense rocheuse contre 1.e4",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Solide et saine",
+      "text": "La Caro-Kann (1.e4 c6) prépare ...d5 avec le soutien du pion c. Contrairement à la française, le fou de cases claires se développe librement. Elle est calme, stratégique, et notoirement difficile à briser." },
+    { "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+      "prompt": "Les Noirs jouent la configuration Caro-Kann.",
+      "targetSan": ["c6"],
+      "hint": "1...c6 prépare ...d5." },
+    { "type": "play",
+      "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "Réponse principale des Blancs : renforcer le centre.",
+      "targetSan": ["d4"],
+      "hint": "2.d4 réclame le centre entier." },
+    { "type": "teach",
+      "fen": "rnbqkbnr/pp1ppppp/2p5/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2",
+      "title": "La rupture",
+      "text": "Les Noirs jouent maintenant 2...d5, défiant directement le centre blanc. Les Blancs peuvent avancer (e5), échanger (exd5) ou passer à la variante d'avance. Chaque choix mène à un type de jeu différent." }
+  ]
+}

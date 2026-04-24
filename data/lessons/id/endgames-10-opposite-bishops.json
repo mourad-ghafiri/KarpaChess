@@ -1,0 +1,20 @@
+{
+  "id": "opposite-bishops",
+  "title": "Gajah Warna Berlawanan",
+  "summary": "Kecenderungan remis dan potensi serangan",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "4k3/8/8/4b3/8/8/8/4KB2 w - - 0 1",
+      "title": "Babak Akhir Remis",
+      "text": "Gajah warna berlawanan (satu di terang, satu di gelap) menciptakan babak akhir yang terkenal cenderung remis. Bahkan 2 pion ekstra sering tidak cukup untuk menang — pihak yang lebih lemah cukup memblokir di warna gajahnya."
+    },
+    {
+      "type": "teach",
+      "fen": "r3k3/8/8/4b3/8/8/8/R3KB2 w - - 0 1",
+      "title": "Pengecualian: Dengan Menteri",
+      "text": "PARADOKS: di BABAK TENGAH, gajah warna berlawanan MENGUNTUNGKAN penyerang. Jika Anda menyerang, gajah Anda tidak memiliki pembela warna yang berlawanan. Banyak serangan brilian mengeksploitasi ketidakseimbangan ini."
+    }
+  ]
+}

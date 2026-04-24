@@ -1,0 +1,26 @@
+{
+  "id": "najdorf-sicilian",
+  "title": "纳多夫西西里",
+  "summary": "现代国际象棋中最尖锐的开局",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/1p2pppp/p2p1n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6",
+      "title": "费舍尔最爱",
+      "text": "纳多夫西西里(5...a6)被认为是国际象棋中最尖锐、理论最庞杂的开局。卡斯帕罗夫、费舍尔、卡尔森都曾在最高水平下过它。...a6 一步用途繁多:防止 Bb5+ 的牵制、为 ...e5 或 ...b5 做准备,并保持灵活性。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/1p2pppp/p2p1n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6",
+      "title": "主要变例",
+      "text": "白方有许多雄心勃勃的选择:6.Be3(英国式攻击——互相对攻)、6.Bg5(古典毒兵变例)、6.Bc4(费舍尔-索津变例)、6.Be2(舍维宁式)。每种都通向独特、深入分析的战斗。要么准备深度理论,要么回避。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/1p2pppp/p2p1n2/6B1/3NP3/2N5/PPP2PPP/R2QKB1R b KQkq - 1 6",
+      "title": "毒兵变例",
+      "text": "著名的变例 6.Bg5 e6 7.f4 Qb6!? 诱使白方防守 b2 兵。黑方的后贪婪出击,而白方展开巨大攻势。此变例不适合胆小者——是国际象棋中分析最深入的变例之一。"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "french-defense-deep",
+  "title": "La Defensa Francesa",
+  "summary": "Una cadena de peones sólida con potencial de contraataque",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+      "title": "Una Filosofía Diferente",
+      "text": "La Francesa (1...e6) cede espacio central pero construye una cadena de peones de granito. Las Negras planean ...d5, ...c5 y ...Nc6 para socavar el centro blanco."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+      "prompt": "1...e6 — esquema francés.",
+      "targetSan": [
+        "e6"
+      ],
+      "hint": "Prepara ...d5 en la jugada 2."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "Las Blancas juegan 2.d4 — reclama el centro.",
+      "targetSan": [
+        "d4"
+      ],
+      "hint": "Construye el gran centro."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/ppp2ppp/4p3/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
+      "title": "El Centro Bloqueado",
+      "text": "Tras 2...d5, las Blancas deben decidir: Avance (e5, ganan espacio pero bloquean el centro), Cambio (exd5, simplifica) o Clásica (Nc3, táctica). La Francesa te enseña a jugar CON y CONTRA cadenas de peones."
+    }
+  ]
+}

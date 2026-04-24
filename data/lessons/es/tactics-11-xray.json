@@ -1,0 +1,20 @@
+{
+  "id": "xray-attack",
+  "title": "Ataque de Rayos X",
+  "summary": "Ataca A TRAVÉS de una pieza",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "3rk3/8/8/8/8/8/3R4/3RK3 w - - 0 1",
+      "title": "Viendo a Través",
+      "text": "Un ataque de rayos X es cuando una pieza ataca A TRAVÉS de una pieza interpuesta — a menudo una pieza propia del rival. Si la pieza interpuesta se mueve, tu ataque aterriza detrás. A diferencia de la clavada, el rayos X suele ganar material o tempo de cualquier modo."
+    },
+    {
+      "type": "teach",
+      "fen": "3rk3/8/8/8/8/8/3R4/3RK3 w - - 0 1",
+      "title": "Ejemplo",
+      "text": "Aquí la torre blanca de d1 ataca por rayos X al rey enemigo a través de las torres de d2 y d8. Tras los cambios en d8, el rey queda clavado o la última fila se derrumba."
+    }
+  ]
+}

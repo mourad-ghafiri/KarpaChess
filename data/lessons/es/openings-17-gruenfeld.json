@@ -1,0 +1,26 @@
+{
+  "id": "gruenfeld-advanced",
+  "title": "Defensa Grünfeld",
+  "summary": "Un sistema hipermoderno de contraataque",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/ppp1pp1p/5np1/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4",
+      "title": "Deja que se Extiendan",
+      "text": "La Grünfeld (1.d4 Nf6 2.c4 g6 3.Nc3 d5) es el sueño del contragolpeador. Las Negras dejan que las Blancas levanten un centro masivo y luego lo atacan con piezas del flanco de dama y rupturas de peón."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/ppp1pp1p/5np1/3P4/2P5/2N5/PP2PPPP/R1BQKBNR b KQkq - 0 4",
+      "title": "La Variante del Cambio",
+      "text": "Tras 4.cxd5 Nxd5 5.e4, el caballo negro retrocede y las Blancas tienen un enorme centro — pero las Negras amenazan con destruirlo mediante piezas. Una prueba clave del ajedrez dinámico: centro estático vs actividad de piezas."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/ppp1pp1p/5np1/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4",
+      "title": "Temas Clásicos de la Grünfeld",
+      "text": "Planes de las Negras: fianqueto en g7, presión sobre d4 con ...c5, enroque, ...Nc6, ...Bg4. El alfil fianquetado en g7 es clave — irradia poder sobre la posición blanca, especialmente tras rupturas de ...d4."
+    }
+  ]
+}

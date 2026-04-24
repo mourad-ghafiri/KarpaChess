@@ -1,0 +1,64 @@
+{
+  "id": "opening-principles",
+  "title": "Tiga Prinsip",
+  "summary": "Pusat, pengembangan, keamanan raja",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Tiga Hukum",
+      "text": "Setiap pembukaan yang kuat berdiri di atas tiga pilar: (1) kuasai pusat, (2) kembangkan bidak dengan cepat, (3) amankan raja Anda. Ayo kita latih ketiganya."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "Mulai dengan mendorong pion tengah. Mainkan e4 atau d4.",
+      "targetSan": [
+        "e4",
+        "d4"
+      ],
+      "hint": "Pion tengah merebut ruang dan membuka garis untuk bidak Anda."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "title": "Sekarang Kembangkan",
+      "text": "Pion dulu — lalu bidak. Kuda sebelum gajah. Kuda keluar ke arah pusat (f3, c3) masing-masing menyerang empat kotak pusat."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "Kembangkan kuda ke arah pusat.",
+      "targetSan": [
+        "Nf3",
+        "Nc3"
+      ],
+      "hint": "Nf3 dan Nc3 sama-sama menyentuh empat kotak pusat."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+      "title": "Gajah Berikutnya",
+      "text": "Dengan kedua kuda sudah keluar, kembangkan gajah ke kotak yang aktif. Bc4 mengincar kotak f7 yang lemah — titik paling rentan di kubu Hitam pada pembukaan."
+    },
+    {
+      "type": "play",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+      "prompt": "Kembangkan gajah kotak terang ke kotak yang aktif.",
+      "targetSan": [
+        "Bc4",
+        "Bb5",
+        "Bd3",
+        "Be2"
+      ],
+      "hint": "Bc4 adalah pilihan klasik — langsung ke f7."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+      "title": "Keamanan Raja",
+      "text": "Dua bidak keluar di setiap sisi adalah saat yang baik untuk rokade. Rokade membawa raja ke sudut dan menghubungkan benteng Anda. Lakukan sebelum melancarkan serangan."
+    }
+  ]
+}

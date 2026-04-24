@@ -8,6 +8,36 @@ export const PIECE_NAME_LOWER = { p: 'pawn', n: 'knight', b: 'bishop', r: 'rook'
 
 export const DIFFICULTY_NAMES = { 1: 'Beginner', 2: 'Casual', 3: 'Club', 4: 'Master' };
 
+/** Supported UI languages. `en` is canonical; everything else is translated. */
+export const SUPPORTED_LANGS = ['en', 'fr', 'es', 'ar', 'zh', 'ru', 'id', 'ja'];
+
+/** Languages that render right-to-left. Applied to <html dir>. */
+export const RTL_LANGS = ['ar'];
+
+/** Native-script label shown in the Settings language dropdown. */
+export const LANG_LABELS = {
+  en: 'English',
+  fr: 'Français',
+  es: 'Español',
+  ar: 'العربية',
+  zh: '中文',
+  ru: 'Русский',
+  id: 'Bahasa Indonesia',
+  ja: '日本語'
+};
+
+/** Emoji flag per language code (used by the topbar language switcher). */
+export const LANG_FLAGS = {
+  en: '🇬🇧',
+  fr: '🇫🇷',
+  es: '🇪🇸',
+  ar: '🇸🇦',
+  zh: '🇨🇳',
+  ru: '🇷🇺',
+  id: '🇮🇩',
+  ja: '🇯🇵'
+};
+
 export const TAB_IDS = {
   LEARN: 'learn',
   PUZZLES: 'puzzles',
@@ -33,6 +63,8 @@ export const DEFAULT_PRACTICE = {
 
 export const EVENTS = {
   PREFS_CHANGED: 'prefs:changed',
+  I18N_CHANGED: 'i18n:changed',                // {lang}
+  CONTENT_RELOADED: 'content:reloaded',        // after ContentLoader re-reads lessons/puzzles
 
   STATE_RESET: 'state:reset',
   STATE_MOVE: 'state:move',

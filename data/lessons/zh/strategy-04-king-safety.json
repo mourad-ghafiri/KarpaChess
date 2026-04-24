@@ -1,0 +1,29 @@
+{
+  "id": "king-safety",
+  "title": "王的安全",
+  "summary": "安全的王才能赢棋",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQK2R w KQkq - 0 1",
+      "title": "把王藏好",
+      "text": "王最大的敌人是通向他的开放线和对角线。易位把他从中心送入兵的堡垒。保持堡垒完整——不要随便推进易位一侧的兵,除非有具体理由。"
+    },
+    {
+      "type": "play",
+      "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQK2R w KQkq - 0 1",
+      "prompt": "易位把王放到安全处。",
+      "targetSan": [
+        "O-O"
+      ],
+      "hint": "短易位——最常见的选择。"
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 b kq - 1 1",
+      "title": "易位之后",
+      "text": "还没结束!把兵留在前面:f2、g2、h2。f3 的马保护 h2。除非必要,不要走 g3 或 h3——王周围每推一个兵都会在日后造成弱点。"
+    }
+  ]
+}

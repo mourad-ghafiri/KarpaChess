@@ -1,0 +1,20 @@
+{
+  "id": "windmill",
+  "title": "Le moulin à vent",
+  "summary": "Séquence dévastatrice d'échecs à la découverte",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1b1k2r/pp3ppp/1qn1p3/3pn3/8/1P2PN2/PB1N1PPP/R2QKB1R w KQkq - 0 1",
+      "title": "Le motif du moulin à vent",
+      "text": "Le moulin à vent est une séquence d'échecs à la découverte qui vous permet de capturer pièce après pièce. L'exemple le plus célèbre est Torre-Lasker, 1925 — le fou et la tour de Torre se sont combinés pour moissonner l'armée de Lasker."
+    },
+    {
+      "type": "teach",
+      "fen": "r1b1k2r/pp3ppp/1qn1p3/3pn3/8/1P2PN2/PB1N1PPP/R2QKB1R w KQkq - 0 1",
+      "title": "Comment ça marche",
+      "text": "Dispositif clé : votre tour/dame donne échec, vous déplacez un fou/cavalier puis le ramenez (échec à la découverte à chaque fois), ramassant une pièce ennemie non défendue à chaque cycle. Le roi ennemi ne peut rien faire — il est en échec à chaque coup."
+    }
+  ]
+}

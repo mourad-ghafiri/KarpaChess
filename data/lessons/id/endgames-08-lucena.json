@@ -1,0 +1,20 @@
+{
+  "id": "lucena-position",
+  "title": "Posisi Lucena",
+  "summary": "Teknik menang di babak akhir benteng",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "3K4/3P1k2/8/8/8/8/1R6/6r1 w - - 0 1",
+      "title": "Membangun Jembatan",
+      "text": "Posisi Lucena adalah pendamping Philidor — teknik MENANG ketika raja pihak yang lebih kuat telah lolos ke depan pion. Teknik \"Jembatan\" menggunakan benteng untuk melindungi raja dari skak."
+    },
+    {
+      "type": "teach",
+      "fen": "3K4/3P1k2/8/8/8/8/1R6/6r1 w - - 0 1",
+      "title": "Jembatan",
+      "text": "Metodenya: letakkan benteng Anda di baris ke-4. Ketika benteng musuh memberi skak dari samping, benteng Anda menghalangi — membangun \"jembatan\" yang dilewati raja Anda. Dipasangkan dengan Philidor, dua posisi ini mencakup sebagian besar babak akhir benteng."
+    }
+  ]
+}

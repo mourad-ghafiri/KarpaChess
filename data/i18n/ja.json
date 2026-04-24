@@ -1,0 +1,746 @@
+{
+  "language": { "name": "日本語", "code": "ja" },
+
+  "ui": {
+    "brand": {
+      "title": "KarpaChess",
+      "tagline": "チェスを学ぼう・すべての一手が教えてくれる"
+    },
+    "nav": {
+      "learn": "学ぶ",
+      "puzzles": "パズル",
+      "practice": "練習",
+      "coach": "AIコーチ",
+      "commentator": "解説者"
+    },
+    "button": {
+      "flip": "反転",
+      "undo": "元に戻す",
+      "hint": "ヒント",
+      "analyze": "解析",
+      "newGame": "新規対局",
+      "playIt": "指してみる",
+      "dismiss": "閉じる",
+      "ask": "質問",
+      "load": "読込",
+      "chooseFile": "ファイルを選択…",
+      "settings": "設定",
+      "close": "閉じる",
+      "back": "戻る",
+      "next": "次へ",
+      "skip": "スキップ",
+      "showHint": "ヒントを表示",
+      "allCategories": "← すべてのカテゴリ",
+      "allLessons": "← すべてのレッスン",
+      "allThemes": "← すべてのテーマ",
+      "exitReview": "← レビュー終了",
+      "resetAll": "進捗とキーをリセット"
+    },
+    "buttonTitle": {
+      "flip": "盤面反転 (F)",
+      "undo": "元に戻す (Ctrl+Z)",
+      "hint": "ヒントを取得 (H)",
+      "analyze": "詳細解析",
+      "newGame": "新規対局 (N)",
+      "settings": "設定",
+      "dismissHint": "ヒントを閉じる",
+      "closeBanner": "閉じる"
+    },
+    "label": {
+      "provider": "プロバイダー",
+      "difficulty": "難易度",
+      "playAs": "使用する側",
+      "timeControl": "持ち時間",
+      "moveHistory": "指し手履歴",
+      "coachWhisper": "コーチの一言",
+      "language": "言語",
+      "boardTheme": "盤面テーマ",
+      "apiKey": "APIキー",
+      "model": "モデル",
+      "serverUrl": "サーバーURL",
+      "customModel": "カスタムモデルID",
+      "customModelTag": "カスタムモデルタグ",
+      "customModelIdentifier": "カスタムモデル識別子"
+    },
+    "placeholder": {
+      "coachAsk": "質問例：「ここでNf3が強いのはなぜ？」",
+      "pgnInput": "PGNまたは指し手リストを貼り付けてください（例：e4 e5 Nf3 Nc6）…",
+      "drawText": "入力…"
+    },
+    "empty": {
+      "moveHistory": "指し手はここに表示されます。",
+      "moveHistoryCommentator": "対局を進めると指し手がここに表示されます。",
+      "moveTree": "対局をインポートして始めましょう。",
+      "insights": "手を進めるとエンジンの評価が表示されます。"
+    },
+    "practiceLede": "コンピューターと対局しましょう。コーチがそっとアドバイスしてくれ、さらに深いアドバイスが欲しいときはいつでもAIコーチに質問できます。",
+    "aria": {
+      "capturedByWhite": "白が取った駒",
+      "capturedByBlack": "黒が取った駒",
+      "chessBoard": "チェス盤",
+      "dismissHint": "ヒントを閉じる"
+    },
+    "section": {
+      "pasteOrUpload": "貼り付け／アップロード",
+      "sampleGames": "サンプル対局",
+      "moveHistory": "指し手履歴"
+    },
+    "toast": {
+      "notYourTurn": "あなたの手番ではありません。",
+      "matchLoaded": "対局を読み込みました。",
+      "pasteFirst": "まずPGNまたは指し手リストを貼り付けてください。",
+      "parseFail": "解析できませんでした：{error}",
+      "imgLoadFail": "画像を読み込めませんでした。",
+      "noReview": "まだレビューする指し手がありません。",
+      "lessonComplete": "レッスン完了！"
+    }
+  },
+
+  "game": {
+    "result": {
+      "checkmate": "チェックメイト！",
+      "stalemate": "ステイルメイト",
+      "draw": "引き分け",
+      "timeout": "時間切れ",
+      "drawRepetition": "引き分け",
+      "drawAgreed": "引き分け"
+    },
+    "resultSub": {
+      "whiteWins": "白の勝ち",
+      "blackWins": "黒の勝ち",
+      "stalemate": "ステイルメイトによる引き分け",
+      "fiftyMove": "50手ルール",
+      "insufficient": "駒数不足",
+      "repetition": "同一局面3回",
+      "agreed": "合意による引き分け",
+      "whiteWinsTime": "時間切れで白の勝ち",
+      "blackWinsTime": "時間切れで黒の勝ち"
+    },
+    "side": {
+      "white": "白",
+      "black": "黒"
+    },
+    "playerDefault": {
+      "top": "黒",
+      "bottom": "あなた",
+      "topMeta": "AI・レベル2",
+      "botMeta": "人間"
+    },
+    "playAsOption": {
+      "white": "白",
+      "random": "ランダム",
+      "black": "黒"
+    },
+    "timeControl": {
+      "unlimited": "無制限",
+      "custom": "{minutes}+{increment}"
+    },
+    "difficulty": {
+      "1": "初心者",
+      "2": "カジュアル",
+      "3": "クラブ",
+      "4": "マスター"
+    },
+    "clock": {
+      "timeUsed": "{seconds}秒使用",
+      "timeUsedLong": "{time}使用"
+    }
+  },
+
+  "chess": {
+    "piece": {
+      "p": "ポーン",
+      "n": "ナイト",
+      "b": "ビショップ",
+      "r": "ルーク",
+      "q": "クイーン",
+      "k": "キング"
+    },
+    "pieceCapital": {
+      "p": "ポーン",
+      "n": "ナイト",
+      "b": "ビショップ",
+      "r": "ルーク",
+      "q": "クイーン",
+      "k": "キング"
+    },
+    "direction": {
+      "kingside": "キングサイド",
+      "queenside": "クイーンサイド"
+    }
+  },
+
+  "classification": {
+    "best":       { "label": "最善手",      "glyph": "★",  "comment": "エンジンのトップ候補です。これ以上の手はありません。" },
+    "good":       { "label": "堅実な手",    "glyph": "✓",  "commentAgree": "エンジンも賛成、堅実な選択です。", "commentAlt": "妥当な続き方です。エンジンはわずかに<b>{best}</b>を好みました。" },
+    "inaccuracy": { "label": "不正確",      "glyph": "?!", "comment": "小さなミス ― <b>{best}</b>の方がやや強かったです。", "commentShort": "小さなミスです。" },
+    "mistake":    { "label": "ミス",        "glyph": "?",  "comment": "ミスです ― <b>{best}</b>の方が明らかに良かったです。", "commentShort": "ミスです。" },
+    "blunder":    { "label": "大悪手",      "glyph": "??", "comment": "大悪手です。<b>{best}</b>が必要でした。", "commentShort": "大悪手です。" },
+    "review": {
+      "good": "最善またはほぼ最善の手。",
+      "ok": "堅実な手。",
+      "inaccuracy": "やや不正確。",
+      "mistake": "ミス。",
+      "blunder": "大悪手。"
+    }
+  },
+
+  "nag": {
+    "1": "好手",
+    "2": "ミス",
+    "3": "妙手",
+    "4": "大悪手",
+    "5": "興味深い手",
+    "6": "疑問手",
+    "10": "互角の局面",
+    "13": "不明瞭な局面",
+    "14": "白がやや優勢",
+    "15": "黒がやや優勢",
+    "16": "白が優勢",
+    "17": "黒が優勢",
+    "18": "白が勝勢",
+    "19": "黒が勝勢"
+  },
+
+  "hint": {
+    "eyebrow": "推奨手",
+    "loading": "…",
+    "loadingSub": "数手先まで読み込み中…",
+    "checkmate": "<b>チェックメイト</b>を決める手。決めましょう！",
+    "castle": "{dir}へキャスリング ― キングをポーンの壁の後ろに隠します。",
+    "promote": "最奥段へ進めて<b>{piece}</b>に昇格します。",
+    "capture": "駒得：あなたの<b>{piece}</b>が<b>{target}</b>を取ります。",
+    "develop": "<b>{piece}</b>を<b>{square}</b>へ展開し、活動性を高めて中央を睨みます。",
+    "pawn": "<b>ポーン</b>を<b>{square}</b>へ進め、スペースを確保します。",
+    "rook": "<b>ルーク</b>を<b>{square}</b>で活用 ― オープンファイルはルークの舞台です。",
+    "queen": "<b>クイーン</b>を<b>{square}</b>へ意味を持って展開します。",
+    "quiet": "<b>{piece}</b>を<b>{square}</b>へ配置を改善します。",
+    "checkSuffix": " さらに<b>チェック</b>もかかります。"
+  },
+
+  "banner": {
+    "reviewBtn": "🔍 対局レビュー",
+    "newGameBtn": "新規対局"
+  },
+
+  "coach": {
+    "greeting": "こんにちは ― あなたのチェスコーチです。局面について何でも聞いてください。アイデア、戦術、プランを説明します。",
+    "thinking": "考え中…",
+    "analyzing": "解析中…",
+    "status": {
+      "unknown": "不明",
+      "missingKey": "APIキー未設定"
+    },
+    "system": "あなたはKarpaChess、明るく熱意ある熟練のチェスコーチです。学習者のために、明快で生き生きとした、励ましのある言葉でアイデアを説明してください。簡潔に：2〜4段落の短い文、または要点をまとめた箇条書きで。主張は現在の局面に根拠を置いてください。指し手にはSAN記法を使ってください。手を推奨する際は、その理由を簡潔に説明してください。盤上にない駒やマスを決して創作しないでください。回答は{language}で行ってください。",
+    "fallbackPrefix": "**{provider}のリクエストに失敗しました。** {error}\n\n組み込みコーチにフォールバックします：\n\n{fallback}",
+    "whisper": {
+      "tip1": "いいですね ― 次はどの駒を動かしますか？",
+      "tip2": "毎手自問しましょう：最も働きの悪い駒を改善できているか？",
+      "tip3": "駒の交換後はフォークや戦術に注意してください。",
+      "tip4": "キングの安全を保ちましょう。まだならキャスリングを。",
+      "tip5": "守られていない駒を探しましょう ― 自分のも相手のも。",
+      "check": "⚠️ <b>{side}</b>はチェックされています！",
+      "capture": "💥 {piece}が{square}で{target}を取りました。評価：{eval}。",
+      "castle": "🏰 きれいなキャスリング！キングの安全は重要です。評価：{eval}。",
+      "promote": "✨ {piece}に昇格！評価：{eval}。",
+      "tipWithEval": "{tip}（{eval}）",
+      "welcome": "ようこそ！一手指してみてください。すぐに洞察をお伝えします。対局が終わったら、指し手のレビューをご提案します。",
+      "newGame": "新規対局！頑張ってください ― 最初の一手をどうぞ。"
+    },
+    "builtin": {
+      "name": "組み込み（オフライン）",
+      "on": "上",
+      "bestMove": {
+        "recommendation": "私のおすすめ：<b>{move}</b>。",
+        "shallow": "深い探索なしでは、検討候補：<b>{move}</b>。",
+        "whyHeader": "<b>ここでこれが理にかなう理由：</b>",
+        "castle": "・キングがまだ中央にあります ― キャスリングが最優先です。",
+        "develop": "・マイナーピースがまだ{squares}にあります ― 展開しましょう。",
+        "center": "・中央4マスにポーンがありません ― 中央のポーンプッシュは価値があります。",
+        "loose": "・相手に<b>{pieceWord}</b>があります：{list}。これを取る方法を探しましょう。",
+        "oppKing": "・相手のキングは<b>{score}</b>です ― 攻撃手がよく効きます。",
+        "ownKing": "・あなたのキングが攻撃されています ― まず守りを考えましょう。",
+        "passedEnd": "・<b>{pawnWord}</b>が{squares}にあります ― 進めましょう！",
+        "activeKing": "・キングを活用しましょう ― エンドゲームでは戦う駒です。",
+        "aheadBehind": "・あなたは{n}ポイント{state}です ― {advice}。",
+        "ahead": "リード",
+        "behind": "ビハインド",
+        "adviceAhead": "駒を交換し、ポーンを残しましょう",
+        "adviceBehind": "複雑化を図りましょう",
+        "evalSuffix": "_評価：{eval}_"
+      },
+      "loosePieces": {
+        "singular": "守られていない駒",
+        "plural": "守られていない駒"
+      },
+      "passedPawns": {
+        "singular": "パスポーン",
+        "plural": "パスポーン"
+      },
+      "tactics": {
+        "header": "<b>{side}のための戦術スキャン</b>",
+        "loose": "相手には守られていない{pieceWord}が{n}個あります：{list}。",
+        "undefendedSingle": "駒",
+        "undefendedPlural": "駒",
+        "defended": "相手の駒は守られているようです。難しい戦術 ― ピン、デコイ、クリアランス手を探しましょう。",
+        "exposedKing": "相手のキングは<b>{score}</b>です（{notes}） ― 詰みのパターンが潜んでいるかもしれません。",
+        "openLines": "オープンライン",
+        "queenTarget": "相手のクイーンが<b>{square}</b>にいます ― 軽い手段で攻撃してテンポを稼げますか？",
+        "engineSuggests": "エンジンの提案は<b>{move}</b>です ― この手は上記のパターンに当てはまりますか？",
+        "footer": "_毎手、次の3点を見抜く眼を鍛えましょう：守られていない駒、露出したキング、働き過ぎの守り駒。_"
+      },
+      "plan": {
+        "header": "<b>{side}のプラン</b> _（{phase}）_",
+        "developMinors": "残りのマイナー{pieceWord}を{squares}から展開しましょう。",
+        "minorSingular": "ピース",
+        "minorPlural": "ピース",
+        "castle": "キャスリング ― まずキングの安全を。",
+        "queenEarly": "注意 ― マイナーピースの展開前にクイーンが動きました。追い回されないようにしましょう。",
+        "centerPawn": "中央4マス（d4/e4/d5/e5）にポーンを置きましょう。",
+        "kingDanger": "キングが危険です ― 攻撃する前に守りを固めましょう。",
+        "oppositeWings": "両者キャスリングしました ― 反対側にキャスリングしたなら、ポーンで反対のウィングを攻撃しましょう。",
+        "pushPassed": "{squares}の{pawnWord}を進めましょう。",
+        "passedPawnSingular": "パスポーン",
+        "passedPawnPlural": "パスポーン",
+        "isolated": "{squares}の{pawnWord}に注意 ― 活動性で弱点を補いましょう。",
+        "isolatedSingular": "孤立ポーン",
+        "isolatedPlural": "孤立ポーン",
+        "improveWorst": "最も働きの悪い駒を改善しましょう。毎手、どれか一つの駒を良くするべきです。",
+        "racePassed": "{squares}の{pawnWord}を昇格へ向けて競争させましょう。",
+        "raceSingular": "パスポーン",
+        "racePlural": "パスポーン",
+        "activateKing": "キングを活用しましょう ― アクションの中に歩き出させてください。",
+        "aheadTrade": "{n}ポイント優勢です ― 駒を交換（ポーンではなく）して、勝ちエンドゲームへ単純化しましょう。",
+        "behindKeep": "{n}ポイント劣勢です ― 駒を盤上に残し、反撃を作り、交換を避けましょう。",
+        "fewPawns": "残りポーンが少ないです ― オポジション、ツークツワンク、キーマスを意識しましょう。"
+      },
+      "lastMove": {
+        "none": "まだ指し手がありません ― 中央ポーン（e4またはd4）かナイトの手（Nf3）から始めましょう。",
+        "capture": "駒を取った",
+        "check": "チェックをかけた",
+        "checkmate": "チェックメイトを決めた",
+        "castleKingside": "キングサイドへキャスリングした",
+        "castleQueenside": "クイーンサイドへキャスリングした",
+        "promote": "ポーンを昇格させた",
+        "line": "<b>{san}</b> ― {anns}。",
+        "quiet": "<b>{san}</b> ― 静かな位置的な手。",
+        "evalLine": "現在の評価：{eval}。",
+        "topChoice": "エンジンの今後のトップ候補：<b>{move}</b>。"
+      },
+      "opening": {
+        "noneHeader": "<b>古典的な初手：</b>",
+        "noneE4": "<b>1.e4</b> ― クイーンとビショップのラインを開き、中央を争います。鋭い戦術的な展開になります。",
+        "noneD4": "<b>1.d4</b> ― 中央を主張し、c4（クイーンズ・ギャンビット）を準備します。戦略的・位置的。",
+        "noneNf3": "<b>1.Nf3</b> ― 柔軟、プランの開示を遅らせます。しばしば他の定跡へ移行します。",
+        "noneC4": "<b>1.c4</b> ― イングリッシュ。フランクから中央を攻撃する超近代的スタイル。",
+        "nonePick": "一つを選び、100回指して、その秘密を学びましょう。",
+        "known": "<b>{name}</b>\n\n{tip}\n\n_指された手：{moves}_",
+        "unknownHeader": "{n}{moveWord}指されましたが、まだ明確な定跡との一致はありません。3原則を守りましょう：",
+        "moveSingular": "手",
+        "movePlural": "手",
+        "unknownP1": "・ポーンまたはピースで中央を支配する",
+        "unknownP2": "・クイーンを動かす前にすべてのマイナーピースを展開する",
+        "unknownP3": "・攻撃を開始する前にキャスリングする"
+      },
+      "endgame": {
+        "header": "<b>エンドゲームの要点</b>",
+        "activateKing": "・<b>キングを活用</b> ― エンドゲームでは約3ポーン分の価値があります。中央へ歩かせましょう。",
+        "passed": "・<b>パスポーン</b>は金です。白は{w}個、黒は{b}個持っています。",
+        "none": "なし",
+        "opposition": "・<b>オポジション</b>がキング＆ポーンエンドゲームを決めます ― 手番ではない側がキーマスを勝ち取ることが多いです。",
+        "rookRule": "・<b>ルークエンディング</b>のルール：ルークはパスポーン（自分のも相手のも）の後ろに置くべし。",
+        "tradePieces": "・勝っているときはポーンではなく駒を交換。負けているときは駒を残し、戦術を探しましょう。"
+      },
+      "evaluation": {
+        "header": "<b>局面評価</b> _（{phase}、{side}の手番）_",
+        "material": "・<b>駒の価値：</b>白{w}対黒{b}{diff}",
+        "equalSuffix": "（互角）",
+        "diffSuffix": " ― {side}が+{n}",
+        "engine": "・<b>エンジン：</b>{eval}",
+        "whiteKing": "・<b>白キング：</b>{score}{notes}",
+        "blackKing": "・<b>黒キング：</b>{score}{notes}",
+        "notesFmt": "（{notes}）",
+        "pawnWeaknessesWhite": "・<b>白ポーンの問題点：</b>{list}",
+        "pawnWeaknessesBlack": "・<b>黒ポーンの問題点：</b>{list}",
+        "isolatedPrefix": "{sq}で孤立",
+        "doubledPrefix": "{file}で二重",
+        "passedWhite": "・<b>白の{pawnWord}：</b>{squares}",
+        "passedBlack": "・<b>黒の{pawnWord}：</b>{squares}",
+        "passedSingular": "パスポーン",
+        "passedPlural": "パスポーン",
+        "topMove": "・<b>エンジンのトップ手：</b><b>{move}</b>"
+      },
+      "kingSafety": {
+        "header": "<b>キングの安全</b>",
+        "line": "・<b>{side}キング</b>（{who}）：{score}{castled}。{notes}",
+        "you": "あなた",
+        "opponent": "相手",
+        "castledSuffix": " ― キャスリング済み",
+        "noConcerns": "直近の懸念はありません。",
+        "footer": "自分のキングが露出している場合：まず守る。相手のキングが露出している場合：チェック、ルークリフト、クイーン侵入を探しましょう。"
+      },
+      "pawns": {
+        "header": "<b>ポーンストラクチャー</b>",
+        "side": "<b>{side}</b>（ポーン{n}個）",
+        "isolated": "・孤立：{squares} ― 守りにくいですが、活動的な場合もあります。",
+        "doubled": "・{files}で二重 ― 互いを守れず、長期的な弱点になりがちです。",
+        "passed": "・<b>パス：</b>{squares} ― 駒の支援で進めましょう！",
+        "clean": "・クリーンなストラクチャー ― 目立つ弱点もパスポーンもありません。"
+      },
+      "development": {
+        "header": "<b>駒の展開</b>",
+        "white": "・白：4つ中{n}つのマイナーピースを展開{castled}{home}",
+        "black": "・黒：4つ中{n}つのマイナーピースを展開{castled}{home}",
+        "castledSuffix": "、キャスリング済み ✓",
+        "homeSuffix": " ― まだホーム：{squares}",
+        "openingNote": "オープニングでは、毎手が（1）駒の展開、（2）中央支配、（3）キングの安全向上のいずれかであるべきです。そうでない手は疑ってかかりましょう。"
+      },
+      "improvement": {
+        "header": "<b>最も働きの悪い駒を改善する</b>",
+        "intro": "自分の駒を一つずつ見て自問しましょう：「この駒は何をしているか？」毎手の目標は、最も活動の少ない駒に意味のある仕事を与えることです。",
+        "commonHeader": "<b>よくある働きの悪い駒：</b>",
+        "bishop": "・自分のポーンの後ろにいるビショップ ― 回り道するか交換しましょう。",
+        "knight": "・端にあるナイト（h3、a6など） ― d4/e4/d5/e5に中央化しましょう。",
+        "rook": "・オープンファイルのない初期マスのルーク ― ファイルを見つけて侵入しましょう。",
+        "queen": "・早く出過ぎて露出したクイーン ― まず安全な位置に戻しましょう。",
+        "kingMid": "・10手を過ぎても中央にあるキング ― 即キャスリングしましょう。"
+      },
+      "summary": {
+        "header": "<b>局面スナップショット</b> ― _{pulse}_",
+        "pulseMaterial": "{side}が駒で{sign}{n}",
+        "pulseMaterialEven": "駒は互角",
+        "pulsePhase": "{phase}フェーズ",
+        "pulseToMove": "{side}の手番",
+        "material": "・<b>駒：</b>白{w}・黒{b}{diff}",
+        "diff": "（{sign}{n}）",
+        "equal": "（互角）",
+        "kings": "・<b>キング：</b>白{wScore}{wCastled}、黒{bScore}{bCastled}",
+        "castledGlyph": " ✓",
+        "eval": "・<b>評価：</b>{eval}",
+        "engineSuggests": "・<b>エンジンの提案：</b><b>{move}</b>",
+        "target": "・<b>標的：</b>相手の守られていない{list}",
+        "menu": "質問してみましょう：<b>最善手・戦術・プラン・キングの安全・ポーン・展開・評価</b>"
+      },
+      "phase": {
+        "opening": "オープニング",
+        "middlegame": "ミドルゲーム",
+        "endgame": "エンドゲーム"
+      },
+      "kingScore": {
+        "safe": "安全",
+        "exposed": "露出",
+        "danger": "危険",
+        "shelter": "避難",
+        "waiting": "待機",
+        "active": "活動的",
+        "unknown": "不明"
+      },
+      "kingNote": {
+        "tuckedCorner": "まだ隅に隠れています ― 中央化しましょう",
+        "startingSquare": "初期マスのキング ― 歩き出させましょう",
+        "activeOn": "{square}で活動的なキング",
+        "wanderingOn": "{square}を彷徨うキング",
+        "centerAfter8": "8手を過ぎてもキングが中央にいます",
+        "thinShield": "薄いポーンの盾（{count}/3）",
+        "enemyHeavy": "敵の重駒がキングのファイルに",
+        "fullShield": "完全なポーンの盾でキャスリング済み"
+      },
+      "eval": {
+        "unclear": "不明瞭",
+        "balanced": "均衡（{pawns}）",
+        "better": "{sign}{pawns} ― <b>{side}</b>が優勢"
+      }
+    },
+    "openingNames": {
+      "ruyLopez": "ルイ・ロペス",
+      "ruyLopezMorphy": "ルイ・ロペス ― モーフィ・ディフェンス",
+      "italianGame": "イタリアン・ゲーム",
+      "italianGiuocoPiano": "イタリアン・ゲーム ― ジョコ・ピアノ",
+      "italianTwoKnights": "イタリアン・ゲーム ― トゥー・ナイツ",
+      "petroff": "ペトロフ・ディフェンス",
+      "scotchGame": "スコッチ・ゲーム",
+      "viennaGame": "ウィーン・ゲーム",
+      "kingsGambit": "キングズ・ギャンビット",
+      "openGame": "オープン・ゲーム",
+      "kingsPawnGame": "キングズ・ポーン・ゲーム",
+      "sicilian": "シシリアン・ディフェンス",
+      "sicilianNajdorf": "シシリアン ― ナイドルフ系",
+      "sicilianOpenNc6": "シシリアン ― オープン...Nc6",
+      "sicilianTaimanovKan": "シシリアン ― タイマノフ／カーン",
+      "sicilianClosed": "シシリアン ― クローズド",
+      "french": "フレンチ・ディフェンス",
+      "caroKann": "カロ・カン・ディフェンス",
+      "scandinavian": "スカンジナビアン・ディフェンス",
+      "pirc": "ピルツ・ディフェンス",
+      "modern": "モダン・ディフェンス",
+      "alekhine": "アリョーヒン・ディフェンス",
+      "queensGambit": "クイーンズ・ギャンビット",
+      "queensGambitDeclined": "クイーンズ・ギャンビット・ディクライン",
+      "queensGambitAccepted": "クイーンズ・ギャンビット・アクセプテッド",
+      "slav": "スラヴ・ディフェンス",
+      "londonSetup": "ロンドン・システムのセットアップ",
+      "london": "ロンドン・システム",
+      "kingsIndian": "キングズ・インディアン・ディフェンス",
+      "nimzoIndian": "ニムゾ・インディアン",
+      "queensIndian": "クイーンズ・インディアン系",
+      "benoni": "ベノニ・ディフェンス",
+      "indianGame": "インディアン・ゲーム",
+      "dutch": "ダッチ・ディフェンス",
+      "english": "イングリッシュ・オープニング",
+      "reti": "レティ・オープニング",
+      "retiKia": "レティ／KIAセットアップ",
+      "retiSetup": "レティ・セットアップ",
+      "larsen": "ラーセンズ・オープニング",
+      "sokolsky": "ソコルスキー／ポーリッシュ",
+      "benko": "ベンコー・オープニング"
+    },
+    "openingTips": {
+      "ruyLopez": "チェスで最も古い本格的な定跡。Bb5がナイトをピンし、黒は通常...a6で決断を迫ります。Ba4の後、長い戦略的な戦いが展開します。",
+      "ruyLopezMorphy": "黒の主流応手。白は通常メインライン（Ba4 Nf6 0-0）かエクスチェンジ・バリエーション（Bxc6）を選びます。豊かな古典的チェスが待っています。",
+      "italianGame": "Bc4は黒陣の最弱点f7を狙います。ナイトをf3／c3へ展開し、キングサイドへキャスリングし、d3／d4のブレイクを狙いましょう。",
+      "italianGiuocoPiano": "「静かなゲーム」 ― 両ビショップが相手キングの弱点を睨みます。古典的セットアップ：展開、キャスリング、そしてd4を進めます。",
+      "italianTwoKnights": "鋭い展開！白はフライド・リバー（Ng5）または静かなd4ブレイクを試せます。黒は戦術的な激流を乗り切る必要があります。",
+      "petroff": "非常に堅実な対称的防御。黒は白を真似て自然に展開します ― ハイレベルでは引き分け傾向で有名です。",
+      "scotchGame": "白がd4で早期に中央を開きます。両者ともに活動的なプレーが期待でき、ルイほど理論的ではありません。",
+      "viennaGame": "Nf3より先にNc3を展開し、fポーンを攻撃の可能性（後のf4）のために自由にしておきます。",
+      "kingsGambit": "ロマン時代の犠牲！白は迅速な展開とf7への攻撃のためにfポーンを差し出します。稀ですがスリリング。",
+      "openGame": "最高の古典チェス。原則的で中央中心のプレーが期待できます。",
+      "kingsPawnGame": "両者がポーンで中央スペースを主張。鋭く直接的なチェスが待っています。",
+      "sicilian": "1.e4への最も人気のある応手。非対称 ― 白はキングサイド、黒はクイーンサイドで反撃。鋭く決定的な対局。",
+      "sicilianNajdorf": "究極の戦闘的定跡。全ての手が理論に満ちています。ダイナミックで非対称なプレーに備えましょう。",
+      "sicilianOpenNc6": "クラシカル・シシリアン。白のキングサイド攻撃と黒のクイーンサイド反撃の競争が期待できます。",
+      "sicilianTaimanovKan": "柔軟、モダンなシシリアン。黒は...a6、...b5の展開の選択肢を残します。",
+      "sicilianClosed": "白はNc3でオープン・シシリアンを避けます。よりゆっくりと位置的なゲーム。戦術好きには向きません。",
+      "french": "黒は花崗岩のようなポーン鎖を築きます。白マスビショップを解放するため...c5や...f6のブレイクを狙いましょう。",
+      "caroKann": "堅実で柔軟。次は...d5が来て、中央で完全な反撃が可能になります。",
+      "scandinavian": "黒は即座にe4ポーンを攻撃。Nc3の後、クイーンが追い回されます ― 配置に気をつけましょう。",
+      "pirc": "ハイパーモダン。黒は白に大きな中央を築かせ、ポーンブレイクで攻撃します。",
+      "modern": "ピルツに似ていますが、より柔軟。黒はセットアップの確定を遅らせます。",
+      "alekhine": "挑発的！黒は白のポーンを前進させ、そこを攻撃します。鋭く型破り。",
+      "queensGambit": "cポーンを差し出して黒のdポーンを逸らし、中央を支配します。古典的、原則的、トップクラス。",
+      "queensGambitDeclined": "黒はポーンを拒否し、堅固な構造を築きます。位置的定跡の典型。",
+      "queensGambitAccepted": "黒はポーンを取り、活動的な駒のプレーのため返すことを計画します。",
+      "slav": "...c6でd5ポーンを支えます。堅実で、崩しにくく、c8のビショップを生かし続けます。",
+      "londonSetup": "白の万能システム ― Bf4と安定した展開。理論が少なく、信頼性の高い成績。",
+      "london": "堅実で学びやすい。d4を主張、Bf4を展開、Nf3、Nbd2、c3、e3。安定した基盤。",
+      "kingsIndian": "ハイパーモダンの古典。白に巨大な中央を築かせ、...e5や...c5で破壊します。キングサイド攻撃は伝説的。",
+      "nimzoIndian": "黒はBb4でナイトをピンし、cファイルで白のポーンを二重化します。戦略的で高級なチェス。",
+      "queensIndian": "堅実、フィアンケット基盤のセットアップ。引き分けのチャンスのためマスターレベルで人気。",
+      "benoni": "鋭く、非対称、戦術的。黒は活動性のために中央を放棄します。",
+      "indianGame": "ハイパーモダンな応手。白のプランを見てから態度を決めます。",
+      "dutch": "黒は...f5でe4を争います。鋭く両刃。キングの安全に注意！",
+      "english": "柔軟なフランク定跡。しばしばクイーンズ・ギャンビットやキングズ・インディアンの構造に移行します。黒が準備しにくい定跡。",
+      "reti": "ハイパーモダン ― フランクから中央を攻撃。位置的プレーが好きなら最高。",
+      "retiKia": "柔軟 ― キングズ・インディアン・アタックや他のクローズド・セットアップに移行可能。",
+      "retiSetup": "静かな柔軟性。しばしば他定跡へ移行します。",
+      "larsen": "クイーンズビショップを早くフィアンケット。珍しいが健全。",
+      "sokolsky": "Bb2のフィアンケットにb4を加えます。変則 ― 相手の不意を突きましょう！",
+      "benko": "静かなフィアンケット・システム。柔軟、低理論、位置的。",
+      "generic": "アイデアに集中しましょう ― 駒の配置、ポーンブレイク、典型的なエンドゲーム。"
+    }
+  },
+
+  "settings": {
+    "title": "設定",
+    "board": "盤面",
+    "boardTheme": "盤面テーマ",
+    "theme": {
+      "royal": "ロイヤル",
+      "emerald": "エメラルド",
+      "midnight": "ストーン",
+      "rose": "ローズ",
+      "ice": "アイス"
+    },
+    "toggle": {
+      "coords": "座標を表示",
+      "legal": "合法手をハイライト",
+      "last": "最後の手をハイライト",
+      "sound": "サウンド",
+      "animations": "アニメーション"
+    },
+    "language": "言語",
+    "languageSection": "言語",
+    "aiCoach": "AIコーチ",
+    "aiNote": "キーはブラウザにローカル保存されます。呼び出しはブラウザからプロバイダーへ直接送信されます。",
+    "dangerZone": "危険な操作",
+    "resetBtn": "進捗とキーをリセット",
+    "resetConfirm": "すべての進捗、キー、設定をリセットしますか？",
+    "provider": {
+      "builtin": "組み込み（オフライン・ヒューリスティック）",
+      "anthropic": "Anthropic（Claude）",
+      "openai": "OpenAI（GPT）",
+      "openrouter": "OpenRouter（100以上のモデル）",
+      "mistral": "Mistral AI",
+      "deepseek": "DeepSeek",
+      "xai": "xAI（Grok）",
+      "qwen": "Qwen（Alibaba）",
+      "glm": "GLM（Zhipu）",
+      "minimax": "MiniMax",
+      "ollama": "Ollama",
+      "lmstudio": "LM Studio",
+      "groupCloud": "クラウドAPI",
+      "groupLocal": "ローカル／セルフホスト",
+      "customOption": "カスタム…"
+    },
+    "providerNote": {
+      "builtin": "設定は不要です ― 組み込みコーチはローカルヒューリスティックと組み込みエンジンを使って完全オフラインで動作します。",
+      "lmstudio": "LM Studioでモデルを読み込み、ローカルサーバーを起動します。以下のプリセットから選択するか、LM Studioのサーバーページに表示される正確なモデル識別子を入力してください。",
+      "openrouter": "一つのキーで、Anthropic、OpenAI、Meta、Mistral、DeepSeek、xAI、Googleなど100以上のモデル。",
+      "glm": "Zhipu AIのGLMモデル。デフォルトのエンドポイントは中国リージョン ― 必要に応じてプロキシに切り替えてください。"
+    }
+  },
+
+  "commentator": {
+    "title": "解説スタジオ",
+    "importLede": "PGNを貼り付け、ファイルをドロップするか、下のサンプル対局を選んで解説を始めましょう。",
+    "pasteOrUpload": "貼り付け／アップロード",
+    "sampleGames": "サンプル対局",
+    "close": "この対局を閉じてインポートに戻る",
+    "confirmClose": "この対局を閉じてインポートに戻りますか？",
+    "moves": "指し手",
+    "movesHint": "クリックで表示・配信に配慮して非表示",
+    "badgesShow": "盤上にエンジンアイコンを表示",
+    "badgesHide": "盤上のエンジンアイコンを非表示",
+    "firstMove": "最初の手（Home）",
+    "prevMove": "前へ（←）",
+    "nextMove": "次へ（→）",
+    "lastMove": "最後（End）",
+    "mainLine": "メインラインに戻る（↑）",
+    "mainLineShort": "↩ メイン",
+    "startPos": "初期局面。▶をクリックするか→を押して対局を進めましょう。",
+    "enginePrefers": "エンジンは<b>{move}</b>を好みます",
+    "engineAgrees": "エンジンも同意：トップ候補",
+    "eval": "評価<b>{score}</b>",
+    "sidePlayed": "{side}は<b>{san}</b>を指しました",
+    "enginePrefersLabel": "エンジン推奨",
+    "engineAgreesLabel": "エンジン同意",
+    "topChoiceShort": "トップ候補",
+    "evalLabel": "評価",
+    "noMatch": "対局が読み込まれていません。",
+    "untitled": "無題",
+    "ply": "{total}手中{n}手目",
+    "variation": "（変化）",
+    "act": {
+      "captures": "{piece}を取る",
+      "castleK": "キングサイドへキャスリング",
+      "castleQ": "クイーンサイドへキャスリング",
+      "promotes": "{piece}へ昇格",
+      "check": "チェックをかける",
+      "checkmate": "チェックメイトを決める",
+      "and": "かつ",
+      "leadIn": "一手{tactics}。"
+    },
+    "drawTools": {
+      "select": "選択",
+      "erase": "消去",
+      "arrow": "矢印",
+      "line": "線",
+      "box": "四角",
+      "circle": "円",
+      "pen": "ペン",
+      "text": "テキスト",
+      "strokeWidth": "線幅",
+      "deleteSelected": "選択を削除（Del）",
+      "clearAll": "この手のすべての図形をクリア"
+    }
+  },
+
+  "learn": {
+    "title": "チェスを学ぶ",
+    "lede": "大きなテーマを横断する導かれたレッスン。カテゴリをタップして始めましょう。",
+    "noData": "レッスンを読み込み中… これが続く場合は、アプリがサーブされていること（file://で開いていないこと）を確認してください。",
+    "successDefault": "その通りです。",
+    "failDefault": "惜しい。もう一度試してみましょう。",
+    "play": "手を指す",
+    "next": "次へ →",
+    "finish": "終了",
+    "completedHeader": "レッスン完了",
+    "completedBody": "{title}を終えました。次に進みますか？",
+    "backToLessons": "レッスン一覧へ戻る",
+    "categoryCount": "{done}/{total}"
+  },
+
+  "puzzles": {
+    "title": "パズル",
+    "lede": "練習するテーマを選びましょう。各セットは一つのパターンを教えます。",
+    "prompt": "最善手を見つけてください。",
+    "counter": "パズル{total}問中{n}問目",
+    "correct": "✅ 正解！",
+    "wrong": "❌ この手ではありません。もう一度試してみましょう。",
+    "solved": "解けました！",
+    "solvedCelebrate": "✅ 解けました ― お見事！",
+    "noData": "パズルを読み込み中…",
+    "turnLabel": "{side}の手番。",
+    "themeCount": "{n}問のパズル",
+    "themeCompleteHeader": "🏆 テーマ完了。",
+    "themeCompleteBody": "{theme}のすべてのパズルを解きました。"
+  },
+
+  "coachTab": {
+    "title": "AIコーチ",
+    "providerLabel": "プロバイダー",
+    "builtin": "組み込み",
+    "changeInSettings": "設定で変更",
+    "chip": {
+      "best": "最善手は？",
+      "tactics": "戦術は？",
+      "explain": "直前の手を解説",
+      "plans": "プラン"
+    },
+    "chipQuery": {
+      "best": "この局面での最善手は何ですか？",
+      "tactics": "ここにはどのような戦術モチーフがありますか？",
+      "explain": "私の直前の手を説明してください。",
+      "plans": "両者のプランは何ですか？"
+    },
+    "analyzeQuestion": "現在の局面を解析してください。",
+    "analyzePrompt": "この局面について明快な解析をお願いします：重要な特徴、脅威、候補手、そして理由付きの推奨手。"
+  },
+
+  "promotion": {
+    "title": "ポーンを昇格"
+  },
+
+  "review": {
+    "title": "対局レビュー",
+    "analyzing": "解析中…",
+    "progress": "{total}手中{i}手目を解析中…",
+    "engineTopChoice": "エンジンのトップ候補：<b>{san}</b>",
+    "enginePreferred": "エンジンは{best}を好みました。",
+    "badge": {
+      "good": "最善",
+      "ok": "良",
+      "inaccuracy": "不正確",
+      "mistake": "ミス",
+      "blunder": "大悪手"
+    },
+    "tally": {
+      "best": "最善",
+      "inaccurate": "不正確",
+      "mistake": "ミス",
+      "blunder": "大悪手"
+    }
+  },
+
+  "lessons": {
+    "categories": {
+      "basics":   { "name": "基礎",       "description": "すべてのチェスプレイヤーが知るべき基本。" },
+      "openings": { "name": "オープニング", "description": "すべての対局を目的を持って始めましょう。" },
+      "tactics":  { "name": "戦術",       "description": "駒と対局を勝ち取るパターン。" },
+      "endgames": { "name": "エンドゲーム", "description": "勝ち局面を仕留め、負け局面を救う。" },
+      "strategy": { "name": "戦略",       "description": "単なる手ではなく、プランで考える。" },
+      "attack":   { "name": "攻撃",       "description": "詰み攻撃とキング狩り。" }
+    }
+  },
+
+  "puzzleThemes": {
+    "mate-in-1":    { "name": "1手詰め",        "description": "決め手を見つけて ― 一手でチェックメイトを決めましょう。" },
+    "mate-in-2":    { "name": "2手詰め",        "description": "2手強制詰み。一手先を読みましょう。" },
+    "forks":        { "name": "フォーク",       "description": "2つの駒を同時に攻撃して駒得しましょう。" },
+    "pins-skewers": { "name": "ピン＆スキュア", "description": "敵の駒を並べ、後ろのものを取りましょう。" },
+    "back-rank":    { "name": "バックランク",   "description": "自ポーンの後ろに閉じ込められたキングを突きましょう。" },
+    "tactics-mix":  { "name": "戦術ミックス",   "description": "様々な戦術パターン ― 最善手を見つけましょう。" },
+    "discovered":   { "name": "発見攻撃",       "description": "一つの駒を動かし、別の駒を解き放ちましょう。" },
+    "endgame":      { "name": "エンドゲーム技法", "description": "勝ちエンドゲームをきれいに仕留めましょう。" }
+    }
+  }

@@ -1,14 +1,22 @@
 /**
  * Loads the lessons/ and puzzles/ manifests + every referenced file in parallel.
- * One bad file is logged and dropped; the rest still work.
+ * Content is language-scoped: lesson/puzzle JSON bodies live under
+ * `data/lessons/<lang>/...` and `data/puzzles/<lang>/...`. The two `index.json`
+ * files at the root stay language-agnostic — they only list ids + filenames.
+ *
+ * If a localized file is missing or malformed, we fall back to the English
+ * source for that one file. This lets partial translations ship without
+ * breaking the lesson/puzzle list.
  */
 export class ContentLoader {
   constructor() {
     this.lessons = null;
     this.puzzles = null;
+    this.lang = 'en';
   }
 
-  async loadAll() {
+  async loadAll(lang) {
+    this.lang = lang || 'en';
     const [lessons, puzzles] = await Promise.all([this.#loadLessons(), this.#loadPuzzles()]);
     this.lessons = lessons;
     this.puzzles = puzzles;
@@ -21,9 +29,19 @@ export class ContentLoader {
       if (!r.ok) throw new Error(`HTTP ${r.status}`);
       return await r.json();
     } catch (e) {
-      console.warn(`Could not load ${path}: ${e.message}. If you opened index.html via file://, serve it instead (\`python3 -m http.server\`).`);
       return null;
     }
+  }
+
+  /**
+   * Fetch the localized version, falling back to English on miss.
+   * Index files at the data root are language-agnostic.
+   */
+  async #loadLocalized(category, file) {
+    const localized = await this.#loadJson(`data/${category}/${this.lang}/${file}`);
+    if (localized) return localized;
+    if (this.lang === 'en') return null;
+    return await this.#loadJson(`data/${category}/en/${file}`);
   }
 
   async #loadLessons() {
@@ -32,11 +50,12 @@ export class ContentLoader {
     const out = { version: index.version || 1, categories: [] };
     for (const cat of index.categories || []) {
       const files = cat.lessons || [];
-      const lessons = await Promise.all(files.map(f => this.#loadJson(`data/lessons/${f}`)));
+      const lessons = await Promise.all(files.map(f => this.#loadLocalized('lessons', f)));
       const clean = lessons.filter(l => l && l.id && Array.isArray(l.steps));
       out.categories.push({
-        id: cat.id, name: cat.name, icon: cat.icon,
-        description: cat.description, lessons: clean
+        id: cat.id,
+        icon: cat.icon,
+        lessons: clean
       });
     }
     return out;
@@ -48,11 +67,12 @@ export class ContentLoader {
     const out = { version: index.version || 1, themes: [] };
     for (const th of index.themes || []) {
       const files = th.puzzles || [];
-      const puzzles = await Promise.all(files.map(f => this.#loadJson(`data/puzzles/${f}`)));
+      const puzzles = await Promise.all(files.map(f => this.#loadLocalized('puzzles', f)));
       const clean = puzzles.filter(p => p && p.fen && Array.isArray(p.solution));
       out.themes.push({
-        id: th.id, name: th.name, icon: th.icon,
-        description: th.description, difficulty: th.difficulty,
+        id: th.id,
+        icon: th.icon,
+        difficulty: th.difficulty,
         puzzles: clean
       });
     }

@@ -1,0 +1,20 @@
+{
+  "id": "prophylaxis",
+  "title": "Prophylaxie",
+  "summary": "Empêcher avant d'attaquer",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "L'idée de Nimzowitsch",
+      "text": "La prophylaxie (de Nimzowitsch) : jouer un coup qui EMPÊCHE ce que l'adversaire veut faire. Avant votre propre plan, neutralisez le sien. Karpov en était le maître moderne — il jouait des coups \"de rien\" qui tuaient silencieusement chaque espoir."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "Comment la repérer",
+      "text": "Avant votre coup, demandez : \"Si c'était au tour de l'adversaire, quel serait son meilleur coup ?\" Puis empêchez-le. Un coup prophylactique n'attaque pas — il refuse des possibilités."
+    }
+  ]
+}

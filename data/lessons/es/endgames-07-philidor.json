@@ -1,0 +1,20 @@
+{
+  "id": "philidor-position",
+  "title": "Posición de Philidor",
+  "summary": "Técnica defensiva en finales de torre",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "2k5/2p5/8/2K5/R7/8/8/r7 w - - 0 1",
+      "title": "La Fortaleza de Tablas",
+      "text": "La Posición de Philidor es una técnica DEFENSIVA en finales de torre. Cuando el rey del bando fuerte está dos filas delante del peón, la torre del defensor va a la tercera fila desde su lado. Impide que el rey avance."
+    },
+    {
+      "type": "teach",
+      "fen": "2k5/2p5/8/2K5/R7/8/8/r7 w - - 0 1",
+      "title": "La Defensa de la Tercera Fila",
+      "text": "La torre negra en la tercera fila corta al rey blanco. Una vez que las Blancas empujan el peón, la torre negra pivota detrás para dar jaque desde el otro lado. Esta es la técnica de tablas más importante en finales de torre."
+    }
+  ]
+}

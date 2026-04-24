@@ -1,0 +1,24 @@
+{
+  "id": "king-activity",
+  "title": "Aktifkan Raja Anda",
+  "summary": "Di babak akhir, raja Anda bertarung",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "4k3/8/8/4K3/4P3/8/8/8 w - - 0 1",
+      "title": "Kekuatan Raja",
+      "text": "Di babak tengah, raja bersembunyi. Di babak akhir dia keluar bertarung. Di sini raja Anda harus mengawal pionnya ke promosi. Teknik itu penting."
+    },
+    {
+      "type": "play",
+      "fen": "4k3/8/8/4K3/4P3/8/8/8 w - - 0 1",
+      "prompt": "Dorong raja Anda maju — ambil oposisi.",
+      "targetSan": [
+        "Kd6",
+        "Kf6"
+      ],
+      "hint": "Kd6 atau Kf6 — keduanya merebut oposisi."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "greek-gift",
+  "title": "Hadiah Yunani (Bxh7+)",
+  "summary": "Pengorbanan gajah klasik terhadap raja yang sudah rokade",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2BPP3/2N2N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "Polanya",
+      "text": "\"Hadiah Yunani\" adalah pengorbanan gajah di h7: Bxh7+ Kxh7 Ng5+ Kg8 (atau Kg6) Qh5 — dan serangan menembus. Dinamai demikian karena terlihat gratis tetapi membawa kehancuran."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2BPP3/2N2N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "Daftar Periksa",
+      "text": "Hadiah Yunani berhasil ketika: (1) Hitam memiliki kuda yang TIDAK di f6 untuk memblokir Ng5, (2) menteri dapat mencapai h5 dengan cepat, (3) tidak ada bidak Hitam yang bisa ikut campur. Jika semua terpenuhi, biasanya menentukan. Jika tidak, Anda hanya kehilangan gajah."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "queens-gambit",
+  "title": "后翼弃兵",
+  "summary": "弃一个兵以控制中心",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "古典后翼兵开局",
+      "text": "后翼弃兵始于 1.d4 d5 2.c4。白方献出 c 兵。如果黑方接受,就放弃了中心。如果黑方拒绝接受(大师级最常见),白方保持强大的中心控制。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "用后前兵开局。",
+      "targetSan": [
+        "d4"
+      ],
+      "hint": "1.d4——古典中心突击。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "现在献上弃兵。",
+      "targetSan": [
+        "c4"
+      ],
+      "hint": "2.c4——用侧翼兵攻击 d5 兵。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/ppp1pppp/8/3p4/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2",
+      "title": "拒绝还是接受?",
+      "text": "如果黑方接受(2...dxc4),白方通常很快能把兵追回来。如果黑方拒绝(2...e6、2...c6、2...Nf6),棋局就变为争夺中心格的局面之战。无论哪种,白方都获得强大的主动权。"
+    }
+  ]
+}

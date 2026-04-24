@@ -1,0 +1,41 @@
+{
+  "id": "italian-game",
+  "title": "Permainan Italia",
+  "summary": "Klasik, berprinsip, masih dimainkan di puncak",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Italia",
+      "text": "Permainan Italia dimulai dengan langkah pertama paling berprinsip: e4. Kita akan membangun hingga Bc4, mengincar f7, resep klasik."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "Buka dengan 1. e4",
+      "targetSan": [
+        "e4"
+      ],
+      "hint": "Dorong pion raja dua kotak."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "Sekarang 2. Nf3, menyerang pion e5.",
+      "targetSan": [
+        "Nf3"
+      ],
+      "hint": "Kuda ke f3 — pilihan andalan setiap master."
+    },
+    {
+      "type": "play",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+      "prompt": "3. Bc4 — klaim hak Anda di f7.",
+      "targetSan": [
+        "Bc4"
+      ],
+      "hint": "Gajah ke c4 memasuki Permainan Italia sebenarnya."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "outposts",
+  "title": "Avant-postes",
+  "summary": "Des cases qu'aucun pion ennemi ne peut toucher",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "La case de rêve",
+      "text": "Un avant-poste est une case dans la moitié adverse de l'échiquier qu'aucun pion ennemi ne peut attaquer. Quand un cavalier ou un fou s'y pose, il est pratiquement inamovible. Un cavalier en d5 ou e5 devant la chaîne de pions noire est un dominateur de finale." },
+    { "type": "teach",
+      "fen": "rnbqkb1r/pppp1ppp/5n2/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+      "title": "Comment les créer",
+      "text": "Les avant-postes apparaissent quand l'adversaire affaiblit sa structure de pions — souvent en poussant un pion d'aile ou en jouant une capture maladroite. Ne vous précipitez jamais pour échanger une pièce que votre adversaire veut échanger — il essaie peut-être de soulager la pression d'un futur avant-poste." }
+  ]
+}

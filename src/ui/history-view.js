@@ -8,6 +8,7 @@
  */
 import { EVENTS, MODE_IDS } from '../core/constants.js';
 import { escapeHtml } from '../core/dom.js';
+import { i18n } from '../core/i18n.js';
 
 export class HistoryView {
   constructor(rootEl, gameState, commentatorState, bus) {
@@ -17,6 +18,7 @@ export class HistoryView {
     bus.on(EVENTS.STATE_CHANGED, () => this.render());
     bus.on(EVENTS.COMMENTATOR_MATCH_LOADED, () => this.render());
     bus.on(EVENTS.COMMENTATOR_NAVIGATED,    () => this.render());
+    bus.on(EVENTS.I18N_CHANGED, () => this.render());
     this.render();
   }
 
@@ -31,7 +33,7 @@ export class HistoryView {
   #renderPractice() {
     const history = this.gameState.getHistory();
     if (history.length === 0) {
-      this.root.innerHTML = '<div class="history-empty">Your moves will appear here.</div>';
+      this.root.innerHTML = `<div class="history-empty">${escapeHtml(i18n.t('ui.empty.moveHistory'))}</div>`;
       return;
     }
     let html = '';
@@ -52,7 +54,7 @@ export class HistoryView {
     // replay, not a full spoiler of the game.
     const moves = this.commentatorState.path.slice(1); // skip root
     if (moves.length === 0) {
-      this.root.innerHTML = '<div class="history-empty">Moves appear here as you step through the game.</div>';
+      this.root.innerHTML = `<div class="history-empty">${escapeHtml(i18n.t('ui.empty.moveHistoryCommentator'))}</div>`;
       return;
     }
     const currentId = this.commentatorState.currentNode()?.id || null;

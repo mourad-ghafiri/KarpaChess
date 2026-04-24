@@ -1,0 +1,20 @@
+{
+  "id": "exchange-sacrifice",
+  "title": "兑换弃子",
+  "summary": "以车换轻子",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "送出车",
+      "text": "兑换弃子(车换轻子)是最高级的概念之一。彼得罗相是这方面的大师——以弃\"兑换\"(车换象/马)换取长期的阵地优势。"
+    },
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "何时奏效",
+      "text": "成功的兑换弃子需要:(1) 所得结构长期对你有利,(2) 你的轻子强(据点、双象),(3) 对手剩下的车没有好的线路。彼得罗相的 Rxc3 是经典范例。"
+    }
+  ]
+}

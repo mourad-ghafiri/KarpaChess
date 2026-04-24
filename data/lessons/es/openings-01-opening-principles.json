@@ -1,0 +1,64 @@
+{
+  "id": "opening-principles",
+  "title": "Los Tres Principios",
+  "summary": "Centro, desarrollo, seguridad del rey",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Las Tres Leyes",
+      "text": "Toda apertura sólida se basa en tres pilares: (1) controlar el centro, (2) desarrollar las piezas rápidamente, (3) poner al rey a salvo. Practiquemos los tres."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "Comienza empujando un peón central. Juega e4 o d4.",
+      "targetSan": [
+        "e4",
+        "d4"
+      ],
+      "hint": "Los peones centrales reclaman espacio y abren líneas para tus piezas."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "title": "Ahora Desarrolla",
+      "text": "Peones primero — luego piezas. Caballos antes que alfiles. Los caballos salen hacia el centro (f3, c3) y atacan cuatro casillas centrales cada uno."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "Desarrolla un caballo hacia el centro.",
+      "targetSan": [
+        "Nf3",
+        "Nc3"
+      ],
+      "hint": "Nf3 y Nc3 atacan cuatro casillas centrales cada uno."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+      "title": "Los Alfiles Después",
+      "text": "Con ambos caballos desarrollados, desarrolla los alfiles a casillas activas. Bc4 apunta a la débil casilla f7 — el punto más vulnerable del campo negro en la apertura."
+    },
+    {
+      "type": "play",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+      "prompt": "Desarrolla el alfil de casillas claras a una posición activa.",
+      "targetSan": [
+        "Bc4",
+        "Bb5",
+        "Bd3",
+        "Be2"
+      ],
+      "hint": "Bc4 es la elección clásica — directo a f7."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+      "title": "Seguridad del Rey",
+      "text": "Dos piezas desarrolladas por cada lado es un buen momento para enrocar. El enroque lleva al rey a una esquina y conecta tus torres. Hazlo antes de lanzar ataques."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "queen-mate",
+  "title": "Raja & Menteri vs Raja",
+  "summary": "Skakmat paling penting untuk dipelajari",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "4k3/8/4K3/4Q3/8/8/8/8 w - - 0 1",
+      "title": "Skakmat Klasik",
+      "text": "Dengan raja dan menteri melawan raja telanjang, giring raja lawan ke tepi, lalu skakmat. Menteri menguasai dinding — raja Anda mencegah pelarian."
+    },
+    {
+      "type": "play",
+      "fen": "4k3/8/4K3/4Q3/8/8/8/8 w - - 0 1",
+      "prompt": "Lakukan skakmat dalam satu langkah.",
+      "targetSan": [
+        "Qb8#",
+        "Qh8#"
+      ],
+      "hint": "Potong baris ke-8 — raja lawan tidak punya tempat melarikan diri."
+    }
+  ]
+}

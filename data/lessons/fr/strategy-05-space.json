@@ -1,0 +1,20 @@
+{
+  "id": "space-advantage",
+  "title": "Avantage d'espace",
+  "summary": "Plus de cases, plus d'options",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/3PP3/8/PPP2PPP/RNBQKBNR b KQkq d3 0 2",
+      "title": "Qu'est-ce que l'espace ?",
+      "text": "L'espace est le nombre de cases que vos pièces peuvent atteindre — surtout dans la moitié adverse de l'échiquier. Le camp avec plus d'espace a plus de mobilité et une coordination plus facile."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/3PP3/8/PPP2PPP/RNBQKBNR b KQkq d3 0 2",
+      "title": "Exploiter l'espace",
+      "text": "Quand vous avez plus d'espace : ÉVITEZ les échanges (votre adversaire à l'étroit a besoin de place). PRESSEZ lentement — construisez des menaces, déplacez les pièces à travers l'échiquier, puis frappez."
+    }
+  ]
+}

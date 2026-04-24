@@ -1,0 +1,38 @@
+{
+  "id": "french-defense-deep",
+  "title": "Pertahanan French",
+  "summary": "Rantai pion kokoh dengan potensi serangan balik",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+      "title": "Filosofi yang Berbeda",
+      "text": "French (1...e6) menyerahkan ruang pusat tetapi membangun rantai pion seperti granit. Hitam merencanakan ...d5, ...c5, dan ...Nc6 untuk menggerogoti pusat Putih."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+      "prompt": "1...e6 — susunan French.",
+      "targetSan": [
+        "e6"
+      ],
+      "hint": "Menyiapkan ...d5 pada langkah kedua."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "Putih memainkan 2.d4 — klaim pusat.",
+      "targetSan": [
+        "d4"
+      ],
+      "hint": "Bangun pusat besar."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/ppp2ppp/4p3/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
+      "title": "Pusat Terkunci",
+      "text": "Setelah 2...d5, Putih harus memutuskan: Maju (e5, merebut ruang tetapi mengunci pusat), Tukar (exd5, menyederhanakan), atau Klasik (Nc3, taktis). French mengajarkan Anda bermain DENGAN dan MELAWAN rantai pion."
+    }
+  ]
+}

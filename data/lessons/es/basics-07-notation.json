@@ -1,0 +1,44 @@
+{
+  "id": "notation",
+  "title": "Leyendo la Notación Ajedrecística",
+  "summary": "Decodifica cualquier jugada en notación algebraica",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "El Sistema",
+      "text": "La notación algebraica describe cada jugada de forma única. Las columnas son letras a–h, las filas son números 1–8. La primera fila de las Blancas es 1, la de las Negras es 8. Una casilla es columna+fila: e4, d5, h8."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Letras de las Piezas",
+      "text": "Las piezas son K (Rey), Q (Dama), R (Torre), B (Alfil), N (Caballo). Los peones no tienen letra — \"e4\" solo significa un peón a e4. Las capturas usan \"x\": Nxe5 significa el caballo captura en e5."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Símbolos Especiales",
+      "text": "\"+\" significa jaque. \"#\" significa jaque mate. \"O-O\" es enroque corto, \"O-O-O\" es enroque largo. \"=\" marca promoción: e8=Q (el peón promociona a dama). Cuando dos piezas pudieran moverse a la misma casilla, se añade la columna o fila de origen: Nbd2 o R1e1."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "Juega 1.e4 — empuja el peón de rey.",
+      "targetSan": [
+        "e4"
+      ],
+      "hint": "Solo selecciona el peón en e2 y muévelo a e4."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "Ahora juega 2.Nf3.",
+      "targetSan": [
+        "Nf3"
+      ],
+      "hint": "El caballo de g1 salta a f3."
+    }
+  ]
+}

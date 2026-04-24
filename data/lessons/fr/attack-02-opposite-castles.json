@@ -1,0 +1,20 @@
+{
+  "id": "opposite-castles",
+  "title": "Attaques avec roques opposés",
+  "summary": "Course aux pions vers le roi ennemi",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bqk2r/ppp2ppp/2npbn2/4p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 b kq - 0 6",
+      "title": "La tempête de pions",
+      "text": "Quand vous roquez du côté roi et que votre adversaire roque du côté dame, vous pouvez attaquer avec les pions SANS affaiblir votre propre roi. Poussez h4, g4, Nf5, h5, hxg6 — l'attaque est une tempête de pions."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqk2r/ppp2ppp/2npbn2/4p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 b kq - 0 6",
+      "title": "La vitesse compte",
+      "text": "Les roques opposés créent une course : les deux camps attaquent le roi adverse. Celui qui ouvre les lignes en premier gagne généralement. Comptez les tempos — chaque coup compte. \"Roques opposés, c'est mat en 20 coups — pour quelqu'un.\""
+    }
+  ]
+}

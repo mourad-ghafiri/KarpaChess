@@ -1,0 +1,20 @@
+{
+  "id": "xray-attack",
+  "title": "Serangan Sinar-X",
+  "summary": "Serang MELALUI sebuah bidak",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "3rk3/8/8/8/8/8/3R4/3RK3 w - - 0 1",
+      "title": "Melihat Tembus",
+      "text": "Serangan sinar-X adalah ketika bidak menyerang MELALUI bidak yang menghalangi — sering bidak milik musuh sendiri. Jika bidak yang menghalangi pindah, serangan Anda mendarat di belakangnya. Berbeda dari ikatan, sinar-X biasanya menang atau mendapat tempo bagaimanapun juga."
+    },
+    {
+      "type": "teach",
+      "fen": "3rk3/8/8/8/8/8/3R4/3RK3 w - - 0 1",
+      "title": "Contoh",
+      "text": "Di sini benteng d1 Putih menyinari raja musuh melalui benteng d2 dan d8. Setelah pertukaran di d8, raja terikat atau baris belakang runtuh."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "the-skewer",
+  "title": "Tusukan",
+  "summary": "Seperti ikatan — tetapi terbalik",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "8/8/3q4/8/8/3k4/8/R6K w - - 0 1",
+      "title": "Tusukan",
+      "text": "Tusukan adalah cerminan ikatan. Anda menyerang bidak berharga yang HARUS bergerak — dan ketika ia bergerak, bidak yang kurang berharga di belakangnya terekspos. Paling sering raja adalah bidak yang tertusuk: ia harus keluar dari skak, meninggalkan apa pun yang ada di belakangnya."
+    },
+    {
+      "type": "play",
+      "fen": "8/8/3q4/8/8/3k4/8/R6K w - - 0 1",
+      "prompt": "Bawa benteng Anda ke kolom d untuk menusuk raja dan menteri.",
+      "targetSan": ["Rd1+"],
+      "hint": "Rd1 memberi skak — menteri akan jadi sasaran berikutnya."
+    },
+    {
+      "type": "teach",
+      "fen": "8/8/8/3q4/8/3k4/8/3R3K w - - 0 1",
+      "title": "Ambil Hadiahnya",
+      "text": "Setelah Rd1+, raja harus bergerak. Menteri hilang di langkah berikutnya. Inilah mengapa tusukan sangat kuat di kolom dan diagonal terbuka — bahkan benteng yang ditempatkan dengan baik dapat menjatuhkan menteri."
+    }
+  ]
+}

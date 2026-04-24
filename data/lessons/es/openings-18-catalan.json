@@ -1,0 +1,26 @@
+{
+  "id": "catalan-advanced",
+  "title": "La Catalana",
+  "summary": "Presión posicional desde la primera jugada",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "El Arma de la Larga Diagonal",
+      "text": "La Catalana (1.d4 Nf6 2.c4 e6 3.g3) combina la estructura del Gambito de Dama con un alfil fianquetado. Las Blancas obtienen una ventaja leve pero persistente — ajedrez técnico de desgaste. La favorita de Kramnik."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/pppp1ppp/4pn2/8/2PP4/6P1/PP2PP1P/RNBQKBNR b KQkq - 0 3",
+      "title": "¿Por Qué el Fianqueto?",
+      "text": "El alfil en g2 ejerce presión a largo plazo sobre la diagonal a8-h1. Si las Negras juegan ...dxc4 (Catalana Abierta), las Blancas a menudo entregan el peón a cambio de presión continua. Técnica pura."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/pppp1ppp/4pn2/8/2PP4/6P1/PP2PP1P/RNBQKBNR b KQkq - 0 3",
+      "title": "Posición Ideal Catalana",
+      "text": "El ideal blanco: diagonal larga abierta para el Bg2, caballos en d2 y f3, torres conectadas, peones centrales fuertes. Las Negras deben jugar con precisión o serán estranguladas. Magnus Carlsen usa la Catalana para triturar a sus rivales."
+    }
+  ]
+}

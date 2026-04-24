@@ -1,0 +1,38 @@
+{
+  "id": "kings-indian-attack",
+  "title": "王翼印度式攻击",
+  "summary": "反过来的王翼印度——白方体系",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "灵活的武器",
+      "text": "王翼印度式攻击(KIA)是白方下的王翼印度防御。把王翼象置于翼角、快速易位,然后以 e4/e5 扩张。鲍比·费舍尔曾以此大获成功。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "从 1.Nf3 开始",
+      "targetSan": [
+        "Nf3"
+      ],
+      "hint": "灵活的第一步。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/8/5N2/PPPPPPPP/RNBQKB1R w KQkq - 0 2",
+      "prompt": "现在做翼角准备:2.g3",
+      "targetSan": [
+        "g3"
+      ],
+      "hint": "为象的长对角线做准备。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/8/5NP1/PPPPPP1P/RNBQKB1R b KQkq - 0 2",
+      "title": "KIA 结构",
+      "text": "接下来:Bg2、0-0、d3、Nbd2、e4。你会得到稳固的王翼堡垒和一根随时可以 e5 蹦发的弹簧。如果你希望用一个开局应对所有对手,这是理想选择。"
+    }
+  ]
+}

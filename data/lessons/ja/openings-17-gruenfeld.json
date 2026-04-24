@@ -1,0 +1,26 @@
+{
+  "id": "gruenfeld-advanced",
+  "title": "グリュンフェルドディフェンス",
+  "summary": "カウンターパンチ型のハイパーモダンシステム",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/ppp1pp1p/5np1/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4",
+      "title": "伸びきらせよ",
+      "text": "グリュンフェルド(1.d4 Nf6 2.c4 g6 3.Nc3 d5)はカウンターパンチャーの夢です。黒は白に巨大な中央を築かせ、クイーンサイドの駒とポーンブレイクで攻撃します。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/ppp1pp1p/5np1/3P4/2P5/2N5/PP2PPPP/R1BQKBNR b KQkq - 0 4",
+      "title": "エクスチェンジバリエーション",
+      "text": "4.cxd5 Nxd5 5.e4の後、黒のナイトは下がり、白は巨大な中央を持ちますが、黒は駒でこれを崩す脅しを作ります。ダイナミックなチェスの核心的な試金石です。静的な中央対駒の活動性の戦い。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/ppp1pp1p/5np1/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4",
+      "title": "古典的グリュンフェルドのテーマ",
+      "text": "黒の計画。g7にフィアンケット、...c5でd4に圧力、キャスリング、...Nc6、...Bg4。g7のフィアンケットビショップが鍵で、白の陣営に力を放ち、特に...d4突破の後に威力を発揮します。"
+    }
+  ]
+}

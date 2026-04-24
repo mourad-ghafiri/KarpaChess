@@ -1,0 +1,26 @@
+{
+  "id": "thinking-process",
+  "title": "考え方",
+  "summary": "すべての一手のためのシンプルな3ステップ",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "3つの質問",
+      "text": "一手指す前に、次のチェックリストを通しましょう。(1)相手は何を狙っているか?(2)自分のチェック、駒取り、脅しは何か?(3)自分の候補手を指したら、相手の最善の応手は何か?3つに答えてから指しましょう。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "ブランダーチェック",
+      "text": "指す直前に、一度立ち止まって自問しましょう。「この手を指した後、自分の駒はどれか攻撃されていないか?相手はチェックをかけられないか?ただで取れる駒はないか?」この5秒のチェックで、ほとんどのブランダーは防げます。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "候補手",
+      "text": "強いプレイヤーは一手だけ読むのではなく、2〜3の候補手を比較します。駒を展開する、マスを改善する、脅しを作るといった手を選びましょう。一見ランダムに見える手は早めに却下します。"
+    }
+  ]
+}

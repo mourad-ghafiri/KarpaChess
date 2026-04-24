@@ -1,0 +1,20 @@
+{
+  "id": "weak-squares",
+  "title": "Casillas y Colores Débiles",
+  "summary": "Casillas que tu rival no puede defender",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "Los Agujeros",
+      "text": "Una casilla débil es aquella que tu rival no puede defender con un peón. Suele ser el resultado de un empuje descuidado. Si un caballo aterriza ahí y no puede ser expulsado, se convierte en un punto fuerte inamovible."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "Complejos de Color",
+      "text": "Más profundos que las casillas individuales son los \"complejos de color\" — grupos de casillas de UN color sistemáticamente débiles. Si los peones de tu rival están todos en casillas claras, sus casillas oscuras son débiles. Tus piezas de casillas oscuras se vuelven monstruos."
+    }
+  ]
+}

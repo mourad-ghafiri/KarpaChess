@@ -1,0 +1,44 @@
+{
+  "id": "notation",
+  "title": "读懂国际象棋记谱法",
+  "summary": "用代数记谱法解读任何走法",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "记谱体系",
+      "text": "代数记谱法唯一地描述每一步棋。竖线(列)用字母 a–h 表示,横线(行)用数字 1–8 表示。白方的第一横线是 1,黑方的第一横线是 8。一个格子由列加行组成:e4、d5、h8。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "棋子字母",
+      "text": "棋子用 K(王)、Q(后)、R(车)、B(象)、N(马)表示。兵没有字母——单独的 \"e4\" 表示一个兵走到 e4。吃子用 \"x\":Nxe5 表示马在 e5 吃子。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "特殊符号",
+      "text": "\"+\" 表示将军。\"#\" 表示将死。\"O-O\" 是短易位,\"O-O-O\" 是长易位。\"=\" 表示升变:e8=Q(兵升变为后)。当两个棋子都能走到同一格时,要加上起始列或行:Nbd2 或 R1e1。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "走 1.e4 —— 推进王前兵。",
+      "targetSan": [
+        "e4"
+      ],
+      "hint": "选中 e2 的兵,把它移到 e4。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "现在走 2.Nf3。",
+      "targetSan": [
+        "Nf3"
+      ],
+      "hint": "g1 的马跳到 f3。"
+    }
+  ]
+}

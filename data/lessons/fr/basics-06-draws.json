@@ -1,0 +1,20 @@
+{
+  "id": "draws",
+  "title": "Pat & nulles",
+  "summary": "Un demi-point est parfois une victoire",
+  "difficulty": "beginner",
+  "steps": [
+    { "type": "teach",
+      "fen": "7k/8/6K1/8/8/8/8/8 w - - 0 1",
+      "title": "Le pat",
+      "text": "Le pat se produit lorsque le camp au trait n'a AUCUN coup légal mais que son roi N'EST PAS en échec. C'est une partie nulle. Attention : quand vous avez un avantage écrasant, prenez garde à ne pas faire pat le roi adverse — cela jette la victoire !" },
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Autres moyens de faire nulle",
+      "text": "En plus du pat : (1) triple répétition — même position atteinte trois fois ; (2) règle des 50 coups — 50 coups sans prise ni poussée de pion ; (3) matériel insuffisant — par ex. deux rois seuls, ou roi + cavalier contre roi ; (4) les deux joueurs s'accordant sur la nulle." },
+    { "type": "teach",
+      "fen": "4k3/4q3/8/8/8/8/8/4K3 w - - 0 1",
+      "title": "Éviter les accidents",
+      "text": "Même quand vous êtes manifestement perdant, le pat peut vous sauver ! Vérifiez toujours : mon adversaire a-t-il un coup légal ? Sinon, et s'il n'est pas en échec, c'est nulle. C'est pourquoi la technique de finale compte — même avec R+D contre R, un jeu négligent peut faire pat." }
+  ]
+}

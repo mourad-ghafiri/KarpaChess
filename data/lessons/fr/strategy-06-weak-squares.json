@@ -1,0 +1,20 @@
+{
+  "id": "weak-squares",
+  "title": "Cases faibles et couleurs",
+  "summary": "Des cases que votre adversaire ne peut pas défendre",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "Les trous",
+      "text": "Une case faible est une case que votre adversaire ne peut pas défendre avec un pion. Généralement le résultat d'une poussée de pion imprudente. Si un cavalier s'y pose et ne peut être chassé, il devient un point fort inamovible."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "Complexes de couleurs",
+      "text": "Plus profonds que des cases individuelles, les \"complexes de couleurs\" sont des groupes de cases d'UNE couleur systématiquement faibles. Si tous les pions de votre adversaire sont sur cases claires, ses cases foncées sont faibles. Vos pièces de cases foncées deviennent des monstres."
+    }
+  ]
+}

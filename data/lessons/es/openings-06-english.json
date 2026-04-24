@@ -1,0 +1,21 @@
+{
+  "id": "english",
+  "title": "La Apertura Inglesa",
+  "summary": "Juego de flanco flexible",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Controlar el Centro desde los Flancos",
+      "text": "La Inglesa (1.c4) es una apertura flexible preferida por los mejores jugadores. En lugar de apresurar d4, las Blancas la preparan con el apoyo del peón c y desarrollan primero las piezas. Las partidas a menudo transponen al Gambito de Dama o a estructuras indias." },
+    { "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "Juega la Apertura Inglesa.",
+      "targetSan": ["c4"],
+      "hint": "1.c4 — la Inglesa." },
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/2P5/8/PP1PPPPP/RNBQKBNR b KQkq - 0 1",
+      "title": "Continuaciones Flexibles",
+      "text": "Según la respuesta de las Negras, las Blancas pueden jugar d4 (transponiendo al Gambito de Dama), Nc3 + g3 (estilo posicional Botvinnik) o e3 (flexible). La Inglesa es una excelente elección si no te gusta memorizar teoría afilada." }
+  ]
+}

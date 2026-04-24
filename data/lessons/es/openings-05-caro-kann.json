@@ -1,0 +1,26 @@
+{
+  "id": "caro-kann",
+  "title": "La Caro-Kann",
+  "summary": "Una defensa sólida como una roca contra 1.e4",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Sólida y Firme",
+      "text": "La Caro-Kann (1.e4 c6) prepara ...d5 con el apoyo del peón c. A diferencia de la Francesa, el alfil de casillas claras se desarrolla libremente. Es tranquila, estratégica y famosamente difícil de quebrar." },
+    { "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+      "prompt": "Las Negras juegan la estructura Caro-Kann.",
+      "targetSan": ["c6"],
+      "hint": "1...c6 prepara ...d5." },
+    { "type": "play",
+      "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "Respuesta principal de las Blancas: refuerza el centro.",
+      "targetSan": ["d4"],
+      "hint": "2.d4 reclama el centro completo." },
+    { "type": "teach",
+      "fen": "rnbqkbnr/pp1ppppp/2p5/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2",
+      "title": "La Ruptura",
+      "text": "Las Negras juegan ahora 2...d5, desafiando directamente el centro blanco. Las Blancas pueden avanzar (e5), cambiar (exd5) o entrar en la Variante del Avance. Cada una conduce a un tipo distinto de partida." }
+  ]
+}

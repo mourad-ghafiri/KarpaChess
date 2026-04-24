@@ -1,0 +1,20 @@
+{
+  "id": "maneuvering",
+  "title": "Manœuvre",
+  "summary": "Lent regroupement vers une configuration gagnante",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "L'art de ne rien faire",
+      "text": "Dans les positions fermées, le progrès se fait par regroupement lent — déplacer les cavaliers sur des trajets sinueux (comme Nc3-e2-g3-f5), reconduire les fous, déplacer les dames. Chaque coup améliore une pièce d'une fraction."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "La manière de Karpov",
+      "text": "Anatoli Karpov était le maître de la manœuvre. Il passait 30 coups à améliorer le placement des pièces sans menaces apparentes, puis frappait avec une précision écrasante. Étudiez ses parties pour apprendre la patience."
+    }
+  ]
+}

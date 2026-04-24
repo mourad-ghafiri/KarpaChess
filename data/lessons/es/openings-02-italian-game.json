@@ -1,0 +1,41 @@
+{
+  "id": "italian-game",
+  "title": "La Apertura Italiana",
+  "summary": "Clásica, principista, aún jugada al más alto nivel",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "La Italiana",
+      "text": "La Apertura Italiana comienza con la jugada más principista: e4. Vamos a llegar a Bc4, apuntando a f7, la receta clásica."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "Abre con 1. e4",
+      "targetSan": [
+        "e4"
+      ],
+      "hint": "Empuja el peón rey dos casillas."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "Ahora 2. Nf3, atacando el peón de e5.",
+      "targetSan": [
+        "Nf3"
+      ],
+      "hint": "Caballo a f3 — la jugada predilecta de todo maestro."
+    },
+    {
+      "type": "play",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+      "prompt": "3. Bc4 — reclama tu objetivo en f7.",
+      "targetSan": [
+        "Bc4"
+      ],
+      "hint": "Alfil a c4 entra en la Apertura Italiana propiamente dicha."
+    }
+  ]
+}

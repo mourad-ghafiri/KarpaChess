@@ -1,0 +1,20 @@
+{
+  "id": "minor-piece-endings",
+  "title": "Finales de Alfil contra Caballo",
+  "summary": "¿Qué pieza menor es mejor?",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "4k3/8/8/8/8/3N4/8/4K3 w - - 0 1",
+      "title": "Posición Abierta vs Cerrada",
+      "text": "En posiciones ABIERTAS con peones en ambos flancos, el alfil suele ser mejor — sus largas diagonales llegan a todas partes. En posiciones CERRADAS con peones fijos, el caballo suele ser mejor — puede saltar por encima."
+    },
+    {
+      "type": "teach",
+      "fen": "4k3/8/8/8/8/4B3/8/4K3 w - - 0 1",
+      "title": "El Dictamen de Fischer",
+      "text": "Bobby Fischer dijo célebremente \"el alfil es más fuerte\" — pero solo en posiciones simplificadas. La verdad: conoce qué tipo de posición favorece a cada pieza, y apunta a cambiar hacia la que favorezca a TU pieza."
+    }
+  ]
+}

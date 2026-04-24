@@ -1,0 +1,41 @@
+{
+  "id": "italian-game",
+  "title": "La partie italienne",
+  "summary": "Classique, fondée sur les principes, toujours jouée au sommet",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "L'italienne",
+      "text": "La partie italienne commence par le premier coup le plus orthodoxe : e4. Nous construirons jusqu'à Bc4, visant f7, la recette classique."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "Ouvrez avec 1. e4",
+      "targetSan": [
+        "e4"
+      ],
+      "hint": "Poussez le pion roi de deux cases."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "Maintenant 2. Nf3, attaquant le pion e5.",
+      "targetSan": [
+        "Nf3"
+      ],
+      "hint": "Cavalier en f3 — le coup favori de tout maître."
+    },
+    {
+      "type": "play",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+      "prompt": "3. Bc4 — affirmez votre prétention sur f7.",
+      "targetSan": [
+        "Bc4"
+      ],
+      "hint": "Fou en c4 entre dans la partie italienne proprement dite."
+    }
+  ]
+}

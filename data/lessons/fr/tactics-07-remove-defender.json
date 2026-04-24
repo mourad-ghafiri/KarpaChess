@@ -1,0 +1,21 @@
+{
+  "id": "remove-the-defender",
+  "title": "Éliminer le défenseur",
+  "summary": "Éliminer la pièce qui tient leur position",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "5rk1/R4ppp/8/8/8/8/5PPP/6K1 w - - 0 1",
+      "title": "Le défenseur clé",
+      "text": "Beaucoup de tactiques échouent parce qu'une seule pièce ennemie défend tout. La solution : l'éliminer ou l'échanger. Ici la tour noire en f8 défend la dernière rangée. Si les Blancs prennent le pion f7, la tour est détournée et le roi est nu." },
+    { "type": "play",
+      "fen": "5rk1/R4ppp/8/8/8/8/5PPP/6K1 w - - 0 1",
+      "prompt": "Prenez le pion f7 — cela force les Noirs à réagir.",
+      "targetSan": ["Rxf7"],
+      "hint": "Rxf7 élimine le défenseur de la dernière rangée." },
+    { "type": "teach",
+      "fen": "5rk1/5Rpp/8/8/8/8/5PPP/6K1 b - - 0 1",
+      "title": "Ce qui suit",
+      "text": "Les Noirs doivent maintenant gérer la tour en f7. S'ils échangent avec ...Rxf7, la dernière rangée reste faible. Demandez-vous toujours : 'Qu'est-ce qui tient leur position ensemble ?' La réponse est généralement une pièce précise." }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "kings-indian-attack",
+  "title": "Attaque est-indienne",
+  "summary": "Est-indienne inversée — un système blanc",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Une arme flexible",
+      "text": "L'attaque est-indienne (KIA) est la défense est-indienne jouée par les Blancs. Fianchettez le fou roi, roquez rapidement, puis étendez avec e4/e5. Utilisée par Bobby Fischer avec un effet dévastateur."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "Commencez par 1.Nf3",
+      "targetSan": [
+        "Nf3"
+      ],
+      "hint": "Premier coup flexible."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/8/5N2/PPPPPPPP/RNBQKB1R w KQkq - 0 2",
+      "prompt": "Maintenant fianchetto : 2.g3",
+      "targetSan": [
+        "g3"
+      ],
+      "hint": "Préparez la grande diagonale du fou."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/8/5NP1/PPPPPP1P/RNBQKB1R b KQkq - 0 2",
+      "title": "Structure KIA",
+      "text": "Ensuite : Bg2, 0-0, d3, Nbd2, e4. Vous obtiendrez une forteresse solide côté roi et un ressort prêt à bondir pour e5. Idéal si vous voulez UNE ouverture contre tout."
+    }
+  ]
+}

@@ -18,16 +18,21 @@ import * as Chess from '../engine/chess.js';
 import { EVENTS, MODE_IDS } from '../core/constants.js';
 import { $, escapeHtml } from '../core/dom.js';
 import { COMMENTATOR_SAMPLES } from './commentator-samples.js';
+import { i18n } from '../core/i18n.js';
 
 const ANALYSIS_DEPTH = 2;
 
-const CLASSIFICATION_META = {
-  best:       { glyph: '★',  label: 'Best move',   tone: 'good' },
-  good:       { glyph: '✓',  label: 'Solid',        tone: 'good' },
-  inaccuracy: { glyph: '?!', label: 'Inaccuracy',   tone: 'warn' },
-  mistake:    { glyph: '?',  label: 'Mistake',      tone: 'bad'  },
-  blunder:    { glyph: '??', label: 'Blunder',      tone: 'bad'  }
+const CLASSIFICATION_TONE = {
+  best: 'good', good: 'good', inaccuracy: 'warn', mistake: 'bad', blunder: 'bad'
 };
+
+function classificationMeta(key) {
+  return {
+    glyph: i18n.t('classification.' + key + '.glyph'),
+    label: i18n.t('classification.' + key + '.label'),
+    tone:  CLASSIFICATION_TONE[key] || 'good'
+  };
+}
 
 function classificationFor(delta) {
   if (delta < 20)   return 'best';
@@ -110,7 +115,7 @@ export class CommentatorController {
     const ta = $('#cm-import-text');
     $('#cm-parse-btn')?.addEventListener('click', () => {
       const text = ta.value.trim();
-      if (!text) { this.#toast('Paste PGN or a move list first.', 'warn'); return; }
+      if (!text) { this.#toast(i18n.t('ui.toast.pasteFirst'), 'warn'); return; }
       this.#importFromText(text);
     });
 
@@ -125,7 +130,7 @@ export class CommentatorController {
     });
 
     $('#cm-new-match')?.addEventListener('click', () => {
-      if (!confirm('Close this match and return to import?')) return;
+      if (!confirm(i18n.t('commentator.confirmClose'))) return;
       this.commentatorState.clear();
       $('#cm-import-text').value = '';
       this.gameState.resetToStart();
@@ -152,9 +157,9 @@ export class CommentatorController {
   #importFromText(text) {
     try {
       this.commentatorState.loadFromPgn(text);
-      this.#toast('Match loaded.', 'good');
+      this.#toast(i18n.t('ui.toast.matchLoaded'), 'good');
     } catch (e) {
-      this.#toast('Could not parse: ' + e.message, 'warn');
+      this.#toast(i18n.t('ui.toast.parseFail', { error: e.message }), 'warn');
     }
   }
 
@@ -185,7 +190,7 @@ export class CommentatorController {
       const on = !!this.prefs.get('commentatorBadges');
       btn.classList.toggle('active', on);
       btn.setAttribute('aria-pressed', on ? 'true' : 'false');
-      btn.title = on ? 'Hide engine icons on board' : 'Show engine icons on board';
+      btn.title = on ? i18n.t('commentator.badgesHide') : i18n.t('commentator.badgesShow');
     };
     sync();
     btn.addEventListener('click', () => {
@@ -225,7 +230,7 @@ export class CommentatorController {
     }
 
     if (cur.classification == null) {
-      this.insightsEl.innerHTML = '<div class="cm-insight-empty">Analysing…</div>';
+      this.insightsEl.innerHTML = `<div class="cm-insight-empty">${escapeHtml(i18n.t('coach.analyzing'))}</div>`;
       // Await a frame so the placeholder paints before the search blocks.
       await new Promise(r => requestAnimationFrame(() => r()));
       this.#analyseNode(cur);
@@ -280,20 +285,18 @@ export class CommentatorController {
   #renderStartingInsight() {
     if (!this.insightsEl) return;
     this.insightsEl.innerHTML = `
-      <div class="cm-insight-empty">Starting position. Click ▶ or press → to step into the game.</div>`;
+      <div class="cm-insight-empty">${escapeHtml(i18n.t('commentator.startPos'))}</div>`;
   }
 
   #paintInsights(node) {
     if (!this.insightsEl) return;
-    const meta = CLASSIFICATION_META[node.classification] || CLASSIFICATION_META.good;
-    const playedBy = node.move.color === 'w' ? 'White' : 'Black';
+    const meta = classificationMeta(node.classification || 'good');
+    const playedBy = i18n.side(node.move.color);
     const playedSan = node.san || '?';
     const bestSan = node.engineBest?.san || null;
     const score = node.engineBest?.score ?? null;
 
-    // Evaluation line (the engineBest.score is in centipawns from the side-
-    // to-move POV at the prev node — white-positive when it's white to move)
-    const turnAtPrev = node.move.color;   // whose move it was at the prev node
+    const turnAtPrev = node.move.color;
     let evalStr = '';
     if (score != null) {
       const white = turnAtPrev === 'w' ? score : -score;
@@ -301,23 +304,22 @@ export class CommentatorController {
       evalStr = `${sign}${(white / 100).toFixed(2)}`;
     }
 
-    // Small natural-language line — no LLM, just templated phrases.
     const commentary = this.#composeCommentary(node, bestSan);
 
     const bestLine = bestSan && !sanEq(bestSan, playedSan)
-      ? `<div class="cm-insight-line"><span class="cm-insight-k">Engine prefers</span><span class="cm-insight-v">${escapeHtml(bestSan)}</span></div>`
-      : `<div class="cm-insight-line"><span class="cm-insight-k">Engine agrees</span><span class="cm-insight-v">top choice</span></div>`;
+      ? `<div class="cm-insight-line"><span class="cm-insight-k">${escapeHtml(i18n.t('commentator.enginePrefersLabel'))}</span><span class="cm-insight-v">${escapeHtml(bestSan)}</span></div>`
+      : `<div class="cm-insight-line"><span class="cm-insight-k">${escapeHtml(i18n.t('commentator.engineAgreesLabel'))}</span><span class="cm-insight-v">${escapeHtml(i18n.t('commentator.topChoiceShort'))}</span></div>`;
 
     const evalHtml = evalStr
-      ? `<div class="cm-insight-line"><span class="cm-insight-k">Eval</span><span class="cm-insight-v">${evalStr}</span></div>`
+      ? `<div class="cm-insight-line"><span class="cm-insight-k">${escapeHtml(i18n.t('commentator.evalLabel'))}</span><span class="cm-insight-v">${evalStr}</span></div>`
       : '';
 
     this.insightsEl.innerHTML = `
       <div class="cm-insight-head tone-${meta.tone}">
-        <span class="cm-insight-glyph">${meta.glyph}</span>
+        <span class="cm-insight-glyph">${escapeHtml(meta.glyph)}</span>
         <div class="cm-insight-title">
-          <div class="cm-insight-label">${meta.label}</div>
-          <div class="cm-insight-sub">${escapeHtml(playedBy)} played <b>${escapeHtml(playedSan)}</b></div>
+          <div class="cm-insight-label">${escapeHtml(meta.label)}</div>
+          <div class="cm-insight-sub">${i18n.t('commentator.sidePlayed', { side: escapeHtml(playedBy), san: escapeHtml(playedSan) })}</div>
         </div>
       </div>
       <div class="cm-insight-body">
@@ -335,33 +337,37 @@ export class CommentatorController {
     const agreed = bestSan && sanEq(bestSan, playedSan);
 
     const tactics = [];
-    if (move.captured)       tactics.push(`captures a ${pieceName(move.captured)}`);
-    if (move.castling)       tactics.push(move.castling === 'k' ? 'castles kingside' : 'castles queenside');
-    if (move.promotion)      tactics.push(`promotes to a ${pieceName(move.promotion)}`);
-    if (/\+$/.test(playedSan)) tactics.push('gives check');
-    if (/#$/.test(playedSan))  tactics.push('delivers checkmate');
+    if (move.captured)       tactics.push(i18n.t('commentator.act.captures', { piece: i18n.piece(move.captured) }));
+    if (move.castling)       tactics.push(i18n.t(move.castling === 'k' ? 'commentator.act.castleK' : 'commentator.act.castleQ'));
+    if (move.promotion)      tactics.push(i18n.t('commentator.act.promotes', { piece: i18n.piece(move.promotion) }));
+    if (/\+$/.test(playedSan)) tactics.push(i18n.t('commentator.act.check'));
+    if (/#$/.test(playedSan))  tactics.push(i18n.t('commentator.act.checkmate'));
 
-    const lead = tactics.length ? `Move ${tactics.join(' and ')}. ` : '';
+    const lead = tactics.length
+      ? i18n.t('commentator.act.leadIn', { tactics: joinWithAnd(tactics, i18n.t('commentator.act.and')) }) + ' '
+      : '';
 
-    switch (node.classification) {
+    const key = node.classification;
+    const bestTag = bestSan ? `<b>${escapeHtml(bestSan)}</b>` : '';
+    switch (key) {
       case 'best':
-        return escapeHtml(lead) + 'This is the engine\'s top pick — no better move on the board.';
+        return escapeHtml(lead) + i18n.t('classification.best.comment');
       case 'good':
         return escapeHtml(lead) + (agreed
-          ? 'Engine approves — a solid choice.'
-          : `A reasonable continuation. The engine slightly preferred <b>${escapeHtml(bestSan || '')}</b>.`);
+          ? i18n.t('classification.good.commentAgree')
+          : i18n.t('classification.good.commentAlt', { best: bestTag }));
       case 'inaccuracy':
         return escapeHtml(lead) + (bestSan
-          ? `Small slip — <b>${escapeHtml(bestSan)}</b> would have been a touch stronger.`
-          : 'Small slip.');
+          ? i18n.t('classification.inaccuracy.comment', { best: bestTag })
+          : i18n.t('classification.inaccuracy.commentShort'));
       case 'mistake':
         return escapeHtml(lead) + (bestSan
-          ? `A mistake — <b>${escapeHtml(bestSan)}</b> was noticeably better.`
-          : 'A mistake.');
+          ? i18n.t('classification.mistake.comment', { best: bestTag })
+          : i18n.t('classification.mistake.commentShort'));
       case 'blunder':
         return escapeHtml(lead) + (bestSan
-          ? `A blunder. <b>${escapeHtml(bestSan)}</b> was needed.`
-          : 'A blunder.');
+          ? i18n.t('classification.blunder.comment', { best: bestTag })
+          : i18n.t('classification.blunder.commentShort'));
     }
     return '';
   }
@@ -370,8 +376,8 @@ export class CommentatorController {
   #paintBoardBadge(node) {
     if (!this.badgeEl) return;
     if (!this.prefs.get('commentatorBadges')) { this.badgeEl.innerHTML = ''; return; }
-    const meta = CLASSIFICATION_META[node.classification];
-    if (!meta || !node.move) { this.badgeEl.innerHTML = ''; return; }
+    if (!node.classification || !node.move) { this.badgeEl.innerHTML = ''; return; }
+    const meta = classificationMeta(node.classification);
     const [tr, tc] = node.move.to;
     const orient = this.gameState.orientation;
     const vr = orient === 'w' ? tr : 7 - tr;
@@ -432,10 +438,12 @@ export class CommentatorController {
     const meta = this.commentatorState.meta;
     const t = $('#cm-status');
     if (!t) return;
-    if (!this.commentatorState.hasMatch()) { t.textContent = 'No match loaded.'; return; }
-    const header = [meta.White, meta.Black].filter(Boolean).join(' vs ') || 'Untitled';
+    if (!this.commentatorState.hasMatch()) { t.textContent = i18n.t('commentator.noMatch'); return; }
+    const header = [meta.White, meta.Black].filter(Boolean).join(' vs ') || i18n.t('commentator.untitled');
     const location = [meta.Event, meta.Site, meta.Date].filter(x => x && x !== '?').join(' · ');
-    t.innerHTML = `<b>${escapeHtml(header)}</b>${location ? ' — ' + escapeHtml(location) : ''} · ply ${ply}/${total}${off ? ' <span class="cm-off-main">(variation)</span>' : ''}`;
+    const plyStr = i18n.t('commentator.ply', { n: ply, total });
+    const varStr = off ? ` <span class="cm-off-main">${escapeHtml(i18n.t('commentator.variation'))}</span>` : '';
+    t.innerHTML = `<b>${escapeHtml(header)}</b>${location ? ' — ' + escapeHtml(location) : ''} · ${plyStr}${varStr}`;
     $('#cm-nav-exit-var').hidden = !off;
     document.body.classList.toggle('off-main-line', off);
   }
@@ -464,6 +472,9 @@ function sanEq(a, b) {
   return a.replace(/[+#]/g, '') === b.replace(/[+#]/g, '');
 }
 
-function pieceName(ch) {
-  return { p: 'pawn', n: 'knight', b: 'bishop', r: 'rook', q: 'queen', k: 'king' }[ch] || 'piece';
+/** Join ['a', 'b', 'c'] as 'a, b and c' with localized "and" glue. */
+function joinWithAnd(arr, and) {
+  if (arr.length <= 1) return arr.join('');
+  if (arr.length === 2) return arr.join(' ' + and + ' ');
+  return arr.slice(0, -1).join(', ') + ' ' + and + ' ' + arr[arr.length - 1];
 }

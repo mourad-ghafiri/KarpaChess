@@ -1,0 +1,38 @@
+{
+  "id": "french-defense-deep",
+  "title": "La défense française",
+  "summary": "Une chaîne de pions solide avec du potentiel de contre-attaque",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+      "title": "Une philosophie différente",
+      "text": "La française (1...e6) concède de l'espace central mais construit une chaîne de pions granitique. Les Noirs prévoient ...d5, ...c5 et ...Nc6 pour saper le centre blanc."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+      "prompt": "1...e6 — mise en place française.",
+      "targetSan": [
+        "e6"
+      ],
+      "hint": "Prépare ...d5 au coup 2."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "Les Blancs jouent 2.d4 — réclament le centre.",
+      "targetSan": [
+        "d4"
+      ],
+      "hint": "Construisez le grand centre."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/ppp2ppp/4p3/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
+      "title": "Le centre bloqué",
+      "text": "Après 2...d5, les Blancs doivent choisir : avance (e5, gagner de l'espace mais bloquer le centre), échange (exd5, simplifier) ou classique (Nc3, tactique). La française apprend à jouer AVEC et CONTRE les chaînes de pions."
+    }
+  ]
+}

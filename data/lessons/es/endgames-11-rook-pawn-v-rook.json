@@ -1,0 +1,20 @@
+{
+  "id": "rook-pawn-vs-rook",
+  "title": "Torre y Peón contra Torre",
+  "summary": "El final más común en todos los niveles",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "8/8/8/3k4/8/8/4P3/R3K2r w - - 0 1",
+      "title": "Mitad Ganados, Mitad Tablas",
+      "text": "El final más frecuente es T+P vs T. Aproximadamente la mitad de los casos son tablas y la otra mitad ganados — y el resultado a menudo depende de conocer Philidor (tablas) o Lucena (ganado) de memoria."
+    },
+    {
+      "type": "teach",
+      "fen": "8/8/8/3k4/8/8/4P3/R3K2r w - - 0 1",
+      "title": "Reglas Clave",
+      "text": "Regla 1: La torre del defensor va DETRÁS del peón pasado (tuyo o del rival). Regla 2: Peón torre (a/h) tiende a tablas — el rey defensor suele alcanzar la esquina. Regla 3: El atacante debe empujar el peón manteniendo a su rey escoltándolo."
+    }
+  ]
+}

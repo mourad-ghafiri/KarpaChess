@@ -1,0 +1,20 @@
+{
+  "id": "queen-vs-pawn",
+  "title": "Dame contre pion avancé",
+  "summary": "La fameuse course — la dame gagne généralement",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "8/8/8/8/8/1K6/1p6/1k5Q w - - 0 1",
+      "title": "La technique en zigzag",
+      "text": "Quand une dame affronte un pion à un pas de la promotion, la dame gagne SI elle peut zigzaguer avec des échecs pour forcer le roi ennemi devant son propre pion. Chaque fois que le roi bloque, la dame gagne un tempo pour rapprocher son roi."
+    },
+    {
+      "type": "teach",
+      "fen": "8/8/8/8/8/1K6/1p6/1k5Q w - - 0 1",
+      "title": "Les exceptions",
+      "text": "La dame ÉCHOUE contre : (a) un pion fou sur la 7e (astuces de pat), (b) un pion tour sur la 7e (pareil). Contre un pion cavalier ou pion central, la dame gagne toujours."
+    }
+  ]
+}

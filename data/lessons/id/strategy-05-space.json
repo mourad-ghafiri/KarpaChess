@@ -1,0 +1,20 @@
+{
+  "id": "space-advantage",
+  "title": "Keunggulan Ruang",
+  "summary": "Lebih banyak kotak, lebih banyak pilihan",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/3PP3/8/PPP2PPP/RNBQKBNR b KQkq d3 0 2",
+      "title": "Apa Itu Ruang?",
+      "text": "Ruang adalah jumlah kotak yang bisa dicapai bidak Anda — terutama di paruh papan lawan. Pihak dengan ruang lebih banyak memiliki mobilitas bidak yang lebih besar dan koordinasi yang lebih mudah."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/3PP3/8/PPP2PPP/RNBQKBNR b KQkq d3 0 2",
+      "title": "Mengeksploitasi Ruang",
+      "text": "Ketika Anda memiliki ruang lebih: HINDARI pertukaran (lawan Anda yang terjepit butuh ruang). TEKAN perlahan — bangun ancaman, geser bidak menyeberang papan, lalu serang."
+    }
+  ]
+}

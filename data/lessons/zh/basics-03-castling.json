@@ -1,0 +1,30 @@
+{
+  "id": "castling",
+  "title": "王车易位",
+  "summary": "一步之内移动王和车",
+  "difficulty": "beginner",
+  "steps": [
+    { "type": "teach",
+      "fen": "r3k2r/pppq1ppp/2n1pn2/3p4/3P4/2N1PN2/PPPQ1PPP/R3K2R w KQkq - 0 1",
+      "title": "什么是王车易位？",
+      "text": "王车易位是国际象棋中唯一两枚棋子同时移动的走法：你的王和一个车。它是将王送入安全地带并激活车的最快方式。你可以进行短易位（王翼）或长易位（后翼）。" },
+    { "type": "teach",
+      "fen": "r3k2r/pppq1ppp/2n1pn2/3p4/3P4/2N1PN2/PPPQ1PPP/R3K2R w KQkq - 0 1",
+      "title": "规则",
+      "text": "要进行王车易位：（1）王和那个车都未曾移动,（2）它们之间没有其他棋子,（3）王未被将军,（4）王既不经过也不落在被攻击的格子上。" },
+    { "type": "play",
+      "fen": "r3k2r/pppq1ppp/2n1pn2/3p4/3P4/2N1PN2/PPPQ1PPP/R3K2R w KQkq - 0 1",
+      "prompt": "进行王翼（短）易位。",
+      "targetSan": ["O-O"],
+      "hint": "在大多数国际象棋界面中,只需将王向车方向移动两格即可。" },
+    { "type": "play",
+      "fen": "r3k2r/pppq1ppp/2n1pn2/3p4/3P4/2N1PN2/PPPQ1PPP/R3K2R b KQkq - 0 1",
+      "prompt": "现在黑方进行后翼（长）易位。",
+      "targetSan": ["O-O-O"],
+      "hint": "将王向a线车方向移动两格。" },
+    { "type": "teach",
+      "fen": "2kr3r/pppq1ppp/2n1pn2/3p4/3P4/2N1PN2/PPPQ1PPP/R4RK1 w - - 0 1",
+      "title": "完成！",
+      "text": "双方的王都安全了,两方a线上的车也都与另一个车相连。尽早易位是国际象棋中最重要的习惯之一——多数对局中目标是第10步之前完成。" }
+  ]
+}

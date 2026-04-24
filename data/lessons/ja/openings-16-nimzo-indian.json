@@ -1,0 +1,26 @@
+{
+  "id": "nimzo-indian-advanced",
+  "title": "ニムゾインディアンディフェンス",
+  "summary": "戦略の傑作 — ピンと支配",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqk2r/pppp1ppp/4pn2/8/1bPP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 3 4",
+      "title": "Bb4のピン",
+      "text": "ニムゾインディアン(1.d4 Nf6 2.c4 e6 3.Nc3 Bb4)はc3のナイトをピンし、...Bxc3+で白のポーンを重ねる脅しを作ります。ハイパーモダンチェスの父、アーロン・ニムゾヴィッチにちなんで命名されました。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqk2r/pppp1ppp/4pn2/8/1bPP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 3 4",
+      "title": "2つのメインライン",
+      "text": "白の選択肢。4.Qc2(ポーン重複を避け、自然に展開)、4.e3(ルビンシュタイン — 古典的な組み立て)、4.f3(クモッホ — 意欲的)。いずれも深く研究されたミドルゲームで、黒は重ねられたcポーンを活用しようとします。"
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqk2r/pppp1ppp/2n1pn2/8/1bPP4/2N1P3/PP3PPP/R1BQKBNR w KQkq - 2 5",
+      "title": "戦略的な奥行き",
+      "text": "ニムゾは戦略的にもっとも豊かなオープニングの一つです。黒はしばしばビショップペアを犠牲に白のポーンを重ね、ポーン構造の傷がビショップ優位を上回ると賭けます。古典的なポジショナルチェスです。"
+    }
+  ]
+}

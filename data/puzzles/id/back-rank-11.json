@@ -1,0 +1,8 @@
+{
+  "id": "back-rank-11",
+  "fen": "4r1k1/5ppp/8/8/8/8/8/3R2K1 w - - 0 1",
+  "solution": [
+    "Rd8"
+  ],
+  "hint": "Gandakan di baris ke-8 — mengancam skakmat pada langkah berikutnya."
+}

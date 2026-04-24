@@ -1,0 +1,20 @@
+{
+  "id": "demolition",
+  "title": "Penghancuran Pertahanan",
+  "summary": "Ledakkan posisi musuh",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "Pengorbanan yang Meretakkan Kulit",
+      "text": "Kadang satu-satunya cara mencapai raja adalah menembus perisai pion. Hadiah Yunani (Bxh7+), pengorbanan Nxf7, dan pengorbanan pertukaran di c3/c6 adalah pola penghancuran klasik."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "Kapan Menghancurkan",
+      "text": "Pengorbanan berhasil ketika: (1) Anda memiliki bidak penyerang yang siap menindaklanjuti, (2) raja musuh tidak memiliki kotak pelarian, (3) pembela tidak bisa membawa bala bantuan tepat waktu. Hitung 4-6 langkah ke depan sebelum berkomitmen."
+    }
+  ]
+}

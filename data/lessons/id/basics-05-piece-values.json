@@ -1,0 +1,21 @@
+{
+  "id": "piece-values",
+  "title": "Nilai Bidak",
+  "summary": "Pelajari nilai setiap bidak",
+  "difficulty": "beginner",
+  "steps": [
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Nilai Perkiraan",
+      "text": "Mengetahui nilai bidak penting untuk melakukan pertukaran. Pion = 1. Kuda = 3. Gajah = 3 (sedikit lebih di posisi terbuka). Benteng = 5. Menteri = 9. Raja = tak ternilai. Ini perkiraan — konteks penting — tetapi menjadi titik awal dari setiap pertukaran yang baik." },
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Prinsip Pertukaran",
+      "text": "Tukar bidak bernilai sama ketika unggul material (menyederhanakan ke babak akhir yang menang). Hindari pertukaran ketika tertinggal — pertahankan bidak di papan untuk menciptakan peluang. Mengorbankan bidak bernilai lebih tinggi untuk yang lebih rendah adalah 'pengorbanan' — kadang sepadan untuk serangan yang menang." },
+    { "type": "play",
+      "fen": "rnbqkb1r/pppp1ppp/5n2/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3",
+      "prompt": "Pion pusat mana yang harus Anda dorong untuk menguasai lebih banyak ruang? Mainkan satu.",
+      "targetSan": ["d4", "c4"],
+      "hint": "d4 atau c4 — keduanya memperkuat pusat Anda." }
+  ]
+}

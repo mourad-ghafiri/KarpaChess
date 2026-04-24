@@ -1,0 +1,23 @@
+{
+  "id": "the-pin",
+  "title": "Le clouage",
+  "summary": "Fixer une pièce — elle ne peut pas bouger",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "3k4/8/3q4/8/8/8/3R4/3K4 w - - 0 1",
+      "title": "Clouage absolu",
+      "text": "Quand une pièce est clouée contre son roi, elle ne peut pas bouger légalement — bouger exposerait le roi à l'échec. Ici la dame noire est clouée sur la colonne d. Elle est figée."
+    },
+    {
+      "type": "play",
+      "fen": "3k4/8/3q4/8/8/8/3R4/3K4 w - - 0 1",
+      "prompt": "Capturez la dame clouée.",
+      "targetSan": [
+        "Rxd6+"
+      ],
+      "hint": "Elle ne peut pas bouger. Prenez-la."
+    }
+  ]
+}

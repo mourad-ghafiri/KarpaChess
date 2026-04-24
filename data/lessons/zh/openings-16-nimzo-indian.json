@@ -1,0 +1,26 @@
+{
+  "id": "nimzo-indian-advanced",
+  "title": "尼姆佐印度防御",
+  "summary": "战略杰作——牵制与控制",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqk2r/pppp1ppp/4pn2/8/1bPP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 3 4",
+      "title": "Bb4 牵制",
+      "text": "尼姆佐印度防御(1.d4 Nf6 2.c4 e6 3.Nc3 Bb4)牵制 c3 的马,并威胁用 ...Bxc3+ 使白方叠兵。取名自亚伦·尼姆佐维奇——超现代派的创始人。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqk2r/pppp1ppp/4pn2/8/1bPP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 3 4",
+      "title": "两条主变",
+      "text": "白方选择:4.Qc2(避免叠兵,自然出子)、4.e3(鲁宾斯坦——古典式布阵),或 4.f3(Kmoch——雄心勃勃)。每条主变都通往研究深入的中局,黑方力图利用重叠的 c 兵。"
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqk2r/pppp1ppp/2n1pn2/8/1bPP4/2N1P3/PP3PPP/R1BQKBNR w KQkq - 2 5",
+      "title": "战略深度",
+      "text": "尼姆佐印度是战略内涵最丰富的开局之一。黑方常以牺牲双象为代价使白方叠兵,赌损坏的兵形能抵消双象优势。这是古典的阵地战。"
+    }
+  ]
+}

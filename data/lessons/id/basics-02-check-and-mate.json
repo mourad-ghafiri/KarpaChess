@@ -1,0 +1,55 @@
+{
+  "id": "check-and-mate",
+  "title": "Skak & Skakmat",
+  "summary": "Pahami tujuan setiap permainan",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "4k3/8/4K3/4Q3/8/8/8/8 w - - 0 1",
+      "title": "Tujuan",
+      "text": "Anda memenangkan catur dengan menskakmat raja lawan — menyerangnya sedemikian rupa sehingga dia tidak bisa melarikan diri. Di sini menteri dan raja Anda mendekat. Mari kita akhiri."
+    },
+    {
+      "type": "play",
+      "fen": "4k3/8/4K3/4Q3/8/8/8/8 w - - 0 1",
+      "prompt": "Berikan skakmat dalam satu langkah.",
+      "targetSan": [
+        "Qb8#",
+        "Qh8#"
+      ],
+      "hint": "Serang baris ke-8 — raja tidak punya tempat melarikan diri."
+    },
+    {
+      "type": "teach",
+      "fen": "3k4/8/3K4/3Q4/8/8/8/8 w - - 0 1",
+      "title": "Sudut Berbeda",
+      "text": "Ide yang sama, posisi berbeda. Baris belakang sudah matang."
+    },
+    {
+      "type": "play",
+      "fen": "3k4/8/3K4/3Q4/8/8/8/8 w - - 0 1",
+      "prompt": "Temukan skakmat.",
+      "targetSan": [
+        "Qa8#",
+        "Qd7"
+      ],
+      "hint": "Potong baris ke-8 dari samping. Qa8#."
+    },
+    {
+      "type": "teach",
+      "fen": "6k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
+      "title": "Skakmat Baris Belakang",
+      "text": "Ketika seorang raja terjebak di belakang pion-pionnya sendiri di baris belakang, benteng atau menteri di baris tersebut dapat memberikan skakmat. Ini salah satu pola paling umum dalam catur."
+    },
+    {
+      "type": "play",
+      "fen": "6k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
+      "prompt": "Berikan skakmat baris belakang.",
+      "targetSan": [
+        "Ra8#"
+      ],
+      "hint": "Pion-pion raja adalah temboknya — tetapi juga penjaranya."
+    }
+  ]
+}

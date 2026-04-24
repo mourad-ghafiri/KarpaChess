@@ -1,0 +1,26 @@
+{
+  "id": "common-mistakes",
+  "title": "初心者が陥りやすいミス",
+  "summary": "すべての初心者がはまる落とし穴を避けよう",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "5大ミス",
+      "text": "すべての初心者はこうしたミスをします。(1)オープニングで同じ駒を2度動かす、(2)キャスリングを忘れる、(3)クイーンを早く出しすぎる、(4)確認せずに「自動的に」指す、(5)計画なしに指す。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/3PP3/8/PPP2PPP/RNBQKBNR b KQkq d3 0 2",
+      "title": "すべてのポーンに飛びつかない",
+      "text": "すべての駒取りが良いとは限りません。ポーン一つを取るのに手損することもあります。相手は展開を進め、あなたは同じ駒をもう一度動かすことに。自問しましょう。「このポーンは一手分の価値があるか?」"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "相手の脅しに注意",
+      "text": "負け局面の半分は相手を見ていないことから生まれます。相手が動くたびに必ず自問しましょう。「この手は何を攻撃しているか?」見えないときは、たいてい見落としているのです。"
+    }
+  ]
+}

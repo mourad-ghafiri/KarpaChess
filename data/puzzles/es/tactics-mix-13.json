@@ -1,0 +1,8 @@
+{
+  "id": "tactics-mix-13",
+  "fen": "8/5ppp/8/8/8/8/5PPP/R3K3 w Q - 0 1",
+  "solution": [
+    "O-O-O"
+  ],
+  "hint": "Enroca para conectar las torres."
+}

@@ -6,10 +6,10 @@
   <meta name="theme-color" content="#f3ecd9" />
   <title>KarpaChess — Learn. Play. Master.</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <link rel="stylesheet" href="styles.css?v=r4" />
+  <link rel="stylesheet" href="styles.css?v=r6" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Noto+Sans+Arabic:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
   <div class="bg-layer">
@@ -30,8 +30,8 @@
         </svg>
       </div>
       <div class="brand-text">
-        <div class="brand-title">KarpaChess</div>
-        <div class="brand-sub">Learn Chess · Every Move Teaches</div>
+        <div class="brand-title" data-i18n="ui.brand.title">KarpaChess</div>
+        <div class="brand-sub" data-i18n="ui.brand.tagline">Learn Chess · Every Move Teaches</div>
       </div>
     </div>
 
@@ -43,16 +43,25 @@
         </svg>
       </button>
       <nav class="nav-tabs" id="nav-tabs" role="tablist">
-        <button class="tab" data-tab="learn" role="tab">Learn</button>
-        <button class="tab" data-tab="puzzles" role="tab">Puzzles</button>
-        <button class="tab active" data-tab="practice" role="tab">Practice</button>
-        <button class="tab" data-tab="coach" role="tab">AI Coach</button>
-        <button class="tab" data-tab="commentator" role="tab">Commentator</button>
+        <button class="tab" data-tab="learn" role="tab" data-i18n="ui.nav.learn">Learn</button>
+        <button class="tab" data-tab="puzzles" role="tab" data-i18n="ui.nav.puzzles">Puzzles</button>
+        <button class="tab active" data-tab="practice" role="tab" data-i18n="ui.nav.practice">Practice</button>
+        <button class="tab" data-tab="coach" role="tab" data-i18n="ui.nav.coach">AI Coach</button>
+        <button class="tab" data-tab="commentator" role="tab" data-i18n="ui.nav.commentator">Commentator</button>
       </nav>
     </div>
 
     <div class="top-actions">
-      <button class="icon-btn" id="btn-settings" title="Settings" aria-label="Settings">
+      <div class="lang-switcher" id="lang-switcher">
+        <button class="icon-btn lang-toggle" id="btn-lang" type="button"
+                aria-haspopup="menu" aria-expanded="false"
+                data-i18n-title="ui.label.language" data-i18n-aria-label="ui.label.language"
+                title="Language" aria-label="Language">
+          <span class="lang-flag" id="lang-flag-current">🇬🇧</span>
+        </button>
+        <div class="lang-menu" id="lang-menu" role="menu" hidden></div>
+      </div>
+      <button class="icon-btn" id="btn-settings" data-i18n-title="ui.buttonTitle.settings" data-i18n-aria-label="ui.button.settings" title="Settings" aria-label="Settings">
         <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 8a4 4 0 100 8 4 4 0 000-8zm8.94 4a7.94 7.94 0 00-.14-1.49l2.11-1.65-2-3.46-2.49.84a8 8 0 00-2.58-1.49L15.5 2h-4l-.34 2.75a8 8 0 00-2.58 1.49L6.09 5.4l-2 3.46L6.2 10.5A7.94 7.94 0 006.06 12c0 .51.05 1 .14 1.49L4.09 15.14l2 3.46 2.49-.84a8 8 0 002.58 1.49L11.5 22h4l.34-2.75a8 8 0 002.58-1.49l2.49.84 2-3.46-2.11-1.65c.09-.49.14-.98.14-1.49z"/></svg>
       </button>
     </div>
@@ -65,26 +74,26 @@
       <div class="player-card" id="player-top">
         <div class="avatar">♛</div>
         <div class="player-info">
-          <div class="player-name">Black</div>
-          <div class="player-meta"><span id="player-top-mode">AI · Level 2</span></div>
+          <div class="player-name" data-i18n="game.playerDefault.top">Black</div>
+          <div class="player-meta"><span id="player-top-mode" data-i18n="game.playerDefault.topMeta">AI · Level 2</span></div>
         </div>
         <div class="timer" id="timer-top">10:00</div>
       </div>
 
-      <div class="captured-row" id="captured-top" aria-label="Pieces captured by white"></div>
+      <div class="captured-row" id="captured-top" data-i18n-aria-label="ui.aria.capturedByWhite" aria-label="Pieces captured by white"></div>
 
-      <div class="section-title">Move History</div>
+      <div class="section-title" data-i18n="ui.section.moveHistory">Move History</div>
       <div class="move-history" id="move-history">
-        <div class="history-empty">Your moves will appear here.</div>
+        <div class="history-empty" data-i18n="ui.empty.moveHistory">Your moves will appear here.</div>
       </div>
 
-      <div class="captured-row" id="captured-bottom" aria-label="Pieces captured by black"></div>
+      <div class="captured-row" id="captured-bottom" data-i18n-aria-label="ui.aria.capturedByBlack" aria-label="Pieces captured by black"></div>
 
       <div class="player-card" id="player-bottom">
         <div class="avatar">♕</div>
         <div class="player-info">
-          <div class="player-name">You</div>
-          <div class="player-meta"><span id="player-bottom-mode">Human</span></div>
+          <div class="player-name" data-i18n="game.playerDefault.bottom">You</div>
+          <div class="player-meta"><span id="player-bottom-mode" data-i18n="game.playerDefault.botMeta">Human</span></div>
         </div>
         <div class="timer" id="timer-bottom">10:00</div>
       </div>
@@ -92,13 +101,13 @@
 
     <!-- ============ CENTER: BOARD ============ -->
     <section class="board-area">
-      <div class="board-frame glass">
+      <div class="board-frame glass" dir="ltr">
         <div class="board-with-ranks">
           <div class="rank-labels" id="rank-labels-left"></div>
           <div class="board-column">
             <div class="file-labels" id="file-labels-top"></div>
             <div class="board-holder">
-              <div id="board" class="board" role="grid" aria-label="Chess board"></div>
+              <div id="board" class="board" role="grid" data-i18n-aria-label="ui.aria.chessBoard" aria-label="Chess board"></div>
               <svg class="hint-arrow" id="hint-arrow" viewBox="0 0 8 8" preserveAspectRatio="none" hidden aria-hidden="true">
                 <defs>
                   <marker id="hint-arrow-head" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse">
@@ -117,13 +126,13 @@
 
         <div class="board-overlay" id="board-overlay"></div>
         <div class="game-banner" id="game-banner" hidden>
-          <button class="banner-close icon-btn" id="banner-close" type="button" aria-label="Dismiss">✕</button>
+          <button class="banner-close icon-btn" id="banner-close" type="button" data-i18n-aria-label="ui.buttonTitle.closeBanner" aria-label="Dismiss">✕</button>
           <div class="banner-icon" id="banner-icon">🏆</div>
           <div class="banner-title" id="banner-title">Checkmate</div>
           <div class="banner-sub" id="banner-sub">White wins</div>
           <div class="banner-actions">
-            <button class="btn primary" id="banner-review" type="button">🔍 Review Match</button>
-            <button class="btn ghost" id="banner-new" type="button">New Game</button>
+            <button class="btn primary" id="banner-review" type="button" data-i18n="banner.reviewBtn">🔍 Review Match</button>
+            <button class="btn ghost" id="banner-new" type="button" data-i18n="banner.newGameBtn">New Game</button>
           </div>
         </div>
       </div>
@@ -135,36 +144,36 @@
           </svg>
         </div>
         <div class="hint-body">
-          <div class="hint-eyebrow">Suggested move</div>
+          <div class="hint-eyebrow" data-i18n="hint.eyebrow">Suggested move</div>
           <div class="hint-move" id="hint-move">—</div>
           <div class="hint-text" id="hint-text">Thinking...</div>
         </div>
         <div class="hint-actions">
-          <button class="btn primary" id="btn-play-hint" type="button">Play it</button>
-          <button class="btn ghost" id="btn-close-hint" type="button" aria-label="Dismiss hint">Dismiss</button>
+          <button class="btn primary" id="btn-play-hint" type="button" data-i18n="ui.button.playIt">Play it</button>
+          <button class="btn ghost" id="btn-close-hint" type="button" data-i18n-aria-label="ui.aria.dismissHint" data-i18n="ui.button.dismiss" aria-label="Dismiss hint">Dismiss</button>
         </div>
       </div>
 
       <div class="board-controls">
-        <button class="btn ghost" id="btn-flip" title="Flip board (F)">
+        <button class="btn ghost" id="btn-flip" data-i18n-title="ui.buttonTitle.flip" title="Flip board (F)">
           <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M7 4v6H3l5 5 5-5h-4V4H7zm10 16v-6h4l-5-5-5 5h4v6h2z"/></svg>
-          Flip
+          <span data-i18n="ui.button.flip">Flip</span>
         </button>
-        <button class="btn ghost" id="btn-undo" title="Undo (Ctrl+Z)">
+        <button class="btn ghost" id="btn-undo" data-i18n-title="ui.buttonTitle.undo" title="Undo (Ctrl+Z)">
           <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 5V2L5 9l7 7v-3c4 0 7 2 8 5 0-6-4-11-8-13z"/></svg>
-          Undo
+          <span data-i18n="ui.button.undo">Undo</span>
         </button>
-        <button class="btn ghost" id="btn-hint" title="Get a hint (H)">
+        <button class="btn ghost" id="btn-hint" data-i18n-title="ui.buttonTitle.hint" title="Get a hint (H)">
           <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 2a7 7 0 00-4 12.74V17a2 2 0 002 2h4a2 2 0 002-2v-2.26A7 7 0 0012 2zm-2 20h4v-1h-4v1z"/></svg>
-          Hint
+          <span data-i18n="ui.button.hint">Hint</span>
         </button>
-        <button class="btn accent" id="btn-analyze" title="Deep analysis">
+        <button class="btn accent" id="btn-analyze" data-i18n-title="ui.buttonTitle.analyze" title="Deep analysis">
           <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M9 3v18l6-9z"/></svg>
-          Analyze
+          <span data-i18n="ui.button.analyze">Analyze</span>
         </button>
-        <button class="btn primary" id="btn-new" title="New game (N)">
+        <button class="btn primary" id="btn-new" data-i18n-title="ui.buttonTitle.newGame" title="New game (N)">
           <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" fill="none"/></svg>
-          New Game
+          <span data-i18n="ui.button.newGame">New Game</span>
         </button>
       </div>
 
@@ -178,18 +187,18 @@
       <!-- LEARN — step-by-step guided lessons -->
       <div class="tab-panel" data-panel="learn">
         <div class="learn-view-categories" id="learn-categories">
-          <h3 class="panel-title">Learn Chess</h3>
-          <p class="panel-lede">Guided lessons across the big topics. Tap a category to dive in.</p>
+          <h3 class="panel-title" data-i18n="learn.title">Learn Chess</h3>
+          <p class="panel-lede" data-i18n="learn.lede">Guided lessons across the big topics. Tap a category to dive in.</p>
           <div id="category-list" class="category-list"></div>
         </div>
         <div class="learn-view-lessons" id="learn-lessons" hidden>
-          <button class="back-link" id="learn-back-to-cats" type="button">← All categories</button>
+          <button class="back-link" id="learn-back-to-cats" type="button" data-i18n="ui.button.allCategories">← All categories</button>
           <h3 class="panel-title" id="learn-cat-title">Category</h3>
           <p class="panel-lede" id="learn-cat-desc"></p>
           <div id="learn-lesson-list" class="lesson-list"></div>
         </div>
         <div class="learn-view-steps" id="learn-steps" hidden>
-          <button class="back-link" id="learn-back-to-lessons" type="button">← All lessons</button>
+          <button class="back-link" id="learn-back-to-lessons" type="button" data-i18n="ui.button.allLessons">← All lessons</button>
           <h3 class="panel-title" id="learn-lesson-title">Lesson</h3>
           <div class="progress-bar"><div class="progress-fill" id="learn-progress"></div></div>
           <div class="step-content" id="learn-step-content"></div>
@@ -201,22 +210,22 @@
       <!-- PUZZLES — themed sets, step-by-step -->
       <div class="tab-panel" data-panel="puzzles">
         <div class="puzzle-view-themes" id="puzzle-themes-view">
-          <h3 class="panel-title">Puzzles</h3>
-          <p class="panel-lede">Pick a theme to practice. Each set teaches one pattern.</p>
+          <h3 class="panel-title" data-i18n="puzzles.title">Puzzles</h3>
+          <p class="panel-lede" data-i18n="puzzles.lede">Pick a theme to practice. Each set teaches one pattern.</p>
           <div id="theme-list" class="theme-list"></div>
         </div>
         <div class="puzzle-view-set" id="puzzle-set-view" hidden>
-          <button class="back-link" id="puzzle-back-to-themes" type="button">← All themes</button>
+          <button class="back-link" id="puzzle-back-to-themes" type="button" data-i18n="ui.button.allThemes">← All themes</button>
           <h3 class="panel-title" id="puzzle-theme-title">Theme</h3>
           <p class="panel-lede" id="puzzle-theme-desc"></p>
           <div class="progress-bar"><div class="progress-fill" id="puzzle-progress"></div></div>
           <div class="puzzle-counter" id="puzzle-counter">Puzzle 1 of 5</div>
-          <div class="puzzle-prompt" id="puzzle-prompt">Find the best move.</div>
+          <div class="puzzle-prompt" id="puzzle-prompt" data-i18n="puzzles.prompt">Find the best move.</div>
           <div class="puzzle-feedback" id="puzzle-feedback"></div>
           <div class="puzzle-actions">
-            <button class="btn ghost" id="btn-puzzle-hint">Show Hint</button>
-            <button class="btn ghost" id="btn-puzzle-skip">Skip</button>
-            <button class="btn primary" id="btn-puzzle-next" hidden>Next →</button>
+            <button class="btn ghost" id="btn-puzzle-hint" data-i18n="ui.button.showHint">Show Hint</button>
+            <button class="btn ghost" id="btn-puzzle-skip" data-i18n="ui.button.skip">Skip</button>
+            <button class="btn primary" id="btn-puzzle-next" hidden data-i18n="ui.button.next">Next →</button>
           </div>
         </div>
       </div>
@@ -226,32 +235,32 @@
 
         <!-- Default practice controls -->
         <div class="practice-view" id="practice-view-standard">
-          <h3 class="panel-title">Practice</h3>
-          <p class="panel-lede">Play against the computer. The coach whispers tips as you go, and you can always ask the AI Coach for deeper help.</p>
+          <h3 class="panel-title" data-i18n="ui.nav.practice">Practice</h3>
+          <p class="panel-lede" data-i18n="ui.practiceLede">Play against the computer. The coach whispers tips as you go, and you can always ask the AI Coach for deeper help.</p>
 
           <div class="field">
-            <label>Difficulty</label>
+            <label data-i18n="ui.label.difficulty">Difficulty</label>
             <div class="difficulty">
-              <button class="diff-pill active" data-diff="1">Beginner</button>
-              <button class="diff-pill" data-diff="2">Casual</button>
-              <button class="diff-pill" data-diff="3">Club</button>
-              <button class="diff-pill" data-diff="4">Master</button>
+              <button class="diff-pill active" data-diff="1" data-i18n="game.difficulty.1">Beginner</button>
+              <button class="diff-pill" data-diff="2" data-i18n="game.difficulty.2">Casual</button>
+              <button class="diff-pill" data-diff="3" data-i18n="game.difficulty.3">Club</button>
+              <button class="diff-pill" data-diff="4" data-i18n="game.difficulty.4">Master</button>
             </div>
           </div>
 
           <div class="field">
-            <label>Play as</label>
+            <label data-i18n="ui.label.playAs">Play as</label>
             <div class="segmented">
-              <button class="seg active" data-color="w">White</button>
-              <button class="seg" data-color="random">Random</button>
-              <button class="seg" data-color="b">Black</button>
+              <button class="seg active" data-color="w" data-i18n="game.playAsOption.white">White</button>
+              <button class="seg" data-color="random" data-i18n="game.playAsOption.random">Random</button>
+              <button class="seg" data-color="b" data-i18n="game.playAsOption.black">Black</button>
             </div>
           </div>
 
           <div class="field">
-            <label>Time Control</label>
+            <label data-i18n="ui.label.timeControl">Time Control</label>
             <div class="segmented">
-              <button class="seg active" data-tc="none">Unlimited</button>
+              <button class="seg active" data-tc="none" data-i18n="game.timeControl.unlimited">Unlimited</button>
               <button class="seg" data-tc="10+0">10+0</button>
               <button class="seg" data-tc="15+10">15+10</button>
               <button class="seg" data-tc="3+2">3+2</button>
@@ -260,9 +269,9 @@
 
           <div class="divider"></div>
 
-          <h4 class="panel-title">Coach Whisper</h4>
+          <h4 class="panel-title" data-i18n="ui.label.coachWhisper">Coach Whisper</h4>
           <div class="coach-whisper" id="coach-whisper">
-            <div class="whisper-bubble">
+            <div class="whisper-bubble" data-i18n="coach.whisper.welcome">
               Welcome! Make a move and I'll share a quick insight. When the game ends I'll offer to review your moves.
             </div>
           </div>
@@ -270,11 +279,11 @@
 
         <!-- Review view (shown only while actively reviewing) -->
         <div class="practice-view" id="practice-view-review" hidden>
-          <button class="back-link" id="review-exit" type="button">← Exit review</button>
-          <h3 class="panel-title">Match Review</h3>
+          <button class="back-link" id="review-exit" type="button" data-i18n="ui.button.exitReview">← Exit review</button>
+          <h3 class="panel-title" data-i18n="review.title">Match Review</h3>
           <div class="review-running" id="review-running" hidden>
             <div class="progress-bar"><div class="progress-fill" id="review-progress-fill"></div></div>
-            <div class="review-progress-text" id="review-progress-text">Analyzing…</div>
+            <div class="review-progress-text" id="review-progress-text" data-i18n="review.analyzing">Analyzing…</div>
           </div>
           <div class="review-done" id="review-done" hidden>
             <div class="review-stats" id="review-stats"></div>
@@ -286,45 +295,45 @@
 
       <!-- AI COACH -->
       <div class="tab-panel" data-panel="coach">
-        <h3 class="panel-title">AI Coach</h3>
+        <h3 class="panel-title" data-i18n="coachTab.title">AI Coach</h3>
         <div class="coach-status" id="coach-status">
-          <span class="coach-status-label">Provider</span>
-          <span class="coach-status-value" id="coach-status-value">Built-in</span>
-          <button class="coach-status-link" id="coach-status-change" type="button">Change in Settings</button>
+          <span class="coach-status-label" data-i18n="coachTab.providerLabel">Provider</span>
+          <span class="coach-status-value" id="coach-status-value" data-i18n="coachTab.builtin">Built-in</span>
+          <button class="coach-status-link" id="coach-status-change" type="button" data-i18n="coachTab.changeInSettings">Change in Settings</button>
         </div>
         <div class="coach-chat" id="coach-chat"></div>
         <form class="coach-input" id="coach-form" action="javascript:void(0);" onsubmit="return false;">
-          <input type="text" id="coach-text" placeholder="Ask: 'Why is Nf3 strong here?'" autocomplete="off" />
-          <button class="btn primary" type="button" id="coach-send">Ask</button>
+          <input type="text" id="coach-text" data-i18n-placeholder="ui.placeholder.coachAsk" placeholder="Ask: 'Why is Nf3 strong here?'" autocomplete="off" />
+          <button class="btn primary" type="button" id="coach-send" data-i18n="ui.button.ask">Ask</button>
         </form>
         <div class="coach-suggestions">
-          <button class="sug" data-q="What's the best move in this position?">Best move?</button>
-          <button class="sug" data-q="What tactical motifs exist here?">Tactics?</button>
-          <button class="sug" data-q="Explain my last move.">Explain last</button>
-          <button class="sug" data-q="What's the plan for both sides?">Plans</button>
+          <button class="sug" data-chip="best" data-i18n="coachTab.chip.best">Best move?</button>
+          <button class="sug" data-chip="tactics" data-i18n="coachTab.chip.tactics">Tactics?</button>
+          <button class="sug" data-chip="explain" data-i18n="coachTab.chip.explain">Explain last</button>
+          <button class="sug" data-chip="plans" data-i18n="coachTab.chip.plans">Plans</button>
         </div>
       </div>
 
       <!-- COMMENTATOR — match studio -->
       <div class="tab-panel" data-panel="commentator">
-        <h3 class="panel-title">Commentator Studio</h3>
+        <h3 class="panel-title" data-i18n="commentator.title">Commentator Studio</h3>
 
         <!-- Import view: visible when no match is loaded -->
         <div class="cm-import-view" id="cm-import-view">
-          <p class="panel-lede">Paste a PGN, drop a file, or pick a sample game below to start commenting.</p>
+          <p class="panel-lede" data-i18n="commentator.importLede">Paste a PGN, drop a file, or pick a sample game below to start commenting.</p>
 
           <div class="cm-section">
-            <div class="section-title">Paste or upload</div>
-            <textarea id="cm-import-text" placeholder="Paste PGN or a move list (e.g. e4 e5 Nf3 Nc6)…" rows="6"></textarea>
+            <div class="section-title" data-i18n="commentator.pasteOrUpload">Paste or upload</div>
+            <textarea id="cm-import-text" data-i18n-placeholder="ui.placeholder.pgnInput" placeholder="Paste PGN or a move list (e.g. e4 e5 Nf3 Nc6)…" rows="6"></textarea>
             <div class="cm-import-actions">
-              <button class="btn primary" id="cm-parse-btn" type="button">Load</button>
-              <button class="btn ghost"   id="cm-file-btn"  type="button">Choose file…</button>
+              <button class="btn primary" id="cm-parse-btn" type="button" data-i18n="ui.button.load">Load</button>
+              <button class="btn ghost"   id="cm-file-btn"  type="button" data-i18n="ui.button.chooseFile">Choose file…</button>
               <input type="file" id="cm-file" accept=".pgn,.txt" hidden />
             </div>
           </div>
 
           <div class="cm-section">
-            <div class="section-title">Sample games</div>
+            <div class="section-title" data-i18n="commentator.sampleGames">Sample games</div>
             <div id="cm-samples" class="cm-samples"></div>
           </div>
         </div>
@@ -335,13 +344,13 @@
 
           <!-- Navigation -->
           <div class="cm-nav-row">
-            <button class="icon-btn" id="cm-new-match"   type="button" title="Close this match and return to import">✕</button>
-            <button class="icon-btn" id="cm-nav-first"   type="button" title="First move (Home)">⏮</button>
-            <button class="icon-btn" id="cm-nav-prev"    type="button" title="Previous (←)">◀</button>
-            <button class="icon-btn" id="cm-nav-next"    type="button" title="Next (→)">▶</button>
-            <button class="icon-btn" id="cm-nav-last"    type="button" title="Last (End)">⏭</button>
-            <button class="btn ghost" id="cm-nav-exit-var" type="button" hidden title="Return to main line (↑)">↩ main</button>
-            <button class="icon-btn cm-badges-toggle" id="cm-badges-toggle" type="button" title="Show engine icons on board" aria-pressed="false">
+            <button class="icon-btn" id="cm-new-match"   type="button" data-i18n-title="commentator.close" title="Close this match and return to import">✕</button>
+            <button class="icon-btn" id="cm-nav-first"   type="button" data-i18n-title="commentator.firstMove" title="First move (Home)">⏮</button>
+            <button class="icon-btn" id="cm-nav-prev"    type="button" data-i18n-title="commentator.prevMove" title="Previous (←)">◀</button>
+            <button class="icon-btn" id="cm-nav-next"    type="button" data-i18n-title="commentator.nextMove" title="Next (→)">▶</button>
+            <button class="icon-btn" id="cm-nav-last"    type="button" data-i18n-title="commentator.lastMove" title="Last (End)">⏭</button>
+            <button class="btn ghost" id="cm-nav-exit-var" type="button" hidden data-i18n-title="commentator.mainLine" data-i18n="commentator.mainLineShort" title="Return to main line (↑)">↩ main</button>
+            <button class="icon-btn cm-badges-toggle" id="cm-badges-toggle" type="button" data-i18n-title="commentator.badgesShow" title="Show engine icons on board" aria-pressed="false">
               <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
                 <path class="cm-eye-open"  fill="currentColor" d="M12 5c-7 0-11 7-11 7s4 7 11 7 11-7 11-7-4-7-11-7zm0 12a5 5 0 110-10 5 5 0 010 10zm0-8a3 3 0 100 6 3 3 0 000-6z"/>
                 <path class="cm-eye-slash" fill="currentColor" d="M3 4.3l1.3-1.3 17 17-1.3 1.3-3.1-3.1A12.4 12.4 0 0112 19C5 19 1 12 1 12a20.6 20.6 0 015-5.7L3 4.3zm6.8 6.8l3 3a2 2 0 01-3-3zM12 5a12.4 12.4 0 016.8 2l-2.1 2.1A5 5 0 009.9 12L7.1 9.2A12.4 12.4 0 0112 5z"/>
@@ -351,18 +360,18 @@
 
           <!-- Live insights — populated by the engine as you navigate -->
           <div class="cm-insights" id="cm-insights">
-            <div class="cm-insight-empty">Step through the moves to see the engine's take.</div>
+            <div class="cm-insight-empty" data-i18n="ui.empty.insights">Step through the moves to see the engine's take.</div>
           </div>
 
           <!-- Move tree — collapsed by default so you don't expose the
                game to watchers while commentating -->
           <details class="cm-moves-details">
             <summary>
-              <span>Moves</span>
-              <span class="cm-moves-hint muted small">click to show · hides for stream-safe viewing</span>
+              <span data-i18n="commentator.moves">Moves</span>
+              <span class="cm-moves-hint muted small" data-i18n="commentator.movesHint">click to show · hides for stream-safe viewing</span>
             </summary>
             <div id="cm-move-tree" class="cm-move-tree">
-              <div class="history-empty">Import a game to begin.</div>
+              <div class="history-empty" data-i18n="ui.empty.moveTree">Import a game to begin.</div>
             </div>
           </details>
         </div>
@@ -375,120 +384,129 @@
   <div class="modal-backdrop" id="settings-modal" hidden>
     <div class="modal glass">
       <div class="modal-head">
-        <h2>Settings</h2>
-        <button class="icon-btn" id="btn-close-settings" aria-label="Close">✕</button>
+        <h2 data-i18n="settings.title">Settings</h2>
+        <button class="icon-btn" id="btn-close-settings" data-i18n-aria-label="ui.button.close" aria-label="Close">✕</button>
       </div>
       <div class="modal-body">
+
         <div class="settings-section">
-          <h3>Board</h3>
+          <h3 data-i18n="settings.languageSection">Language</h3>
           <div class="field">
-            <label>Board theme</label>
+            <label data-i18n="settings.language">Language</label>
+            <select class="select" id="sel-language"></select>
+          </div>
+        </div>
+
+        <div class="settings-section">
+          <h3 data-i18n="settings.board">Board</h3>
+          <div class="field">
+            <label data-i18n="settings.boardTheme">Board theme</label>
             <div class="theme-grid">
-              <button class="theme-swatch" data-theme="royal" style="--a:#f0d9b5;--b:#b58863" title="Royal"></button>
-              <button class="theme-swatch active" data-theme="emerald" style="--a:#ebe1bf;--b:#6e8c52" title="Emerald"></button>
-              <button class="theme-swatch" data-theme="midnight" style="--a:#dee3e6;--b:#8ca2ad" title="Stone"></button>
-              <button class="theme-swatch" data-theme="rose" style="--a:#f1dadf;--b:#a14b6c" title="Rose"></button>
-              <button class="theme-swatch" data-theme="ice" style="--a:#e8f0f5;--b:#6794c9" title="Ice"></button>
+              <button class="theme-swatch" data-theme="royal" style="--a:#f0d9b5;--b:#b58863" data-i18n-title="settings.theme.royal" title="Royal"></button>
+              <button class="theme-swatch active" data-theme="emerald" style="--a:#ebe1bf;--b:#6e8c52" data-i18n-title="settings.theme.emerald" title="Emerald"></button>
+              <button class="theme-swatch" data-theme="midnight" style="--a:#dee3e6;--b:#8ca2ad" data-i18n-title="settings.theme.midnight" title="Stone"></button>
+              <button class="theme-swatch" data-theme="rose" style="--a:#f1dadf;--b:#a14b6c" data-i18n-title="settings.theme.rose" title="Rose"></button>
+              <button class="theme-swatch" data-theme="ice" style="--a:#e8f0f5;--b:#6794c9" data-i18n-title="settings.theme.ice" title="Ice"></button>
             </div>
           </div>
           <div class="field-row">
             <label class="switch">
-              <input type="checkbox" id="opt-coords" checked /><span>Show coordinates</span>
+              <input type="checkbox" id="opt-coords" checked /><span data-i18n="settings.toggle.coords">Show coordinates</span>
             </label>
             <label class="switch">
-              <input type="checkbox" id="opt-legal" checked /><span>Highlight legal moves</span>
+              <input type="checkbox" id="opt-legal" checked /><span data-i18n="settings.toggle.legal">Highlight legal moves</span>
             </label>
             <label class="switch">
-              <input type="checkbox" id="opt-last" checked /><span>Highlight last move</span>
+              <input type="checkbox" id="opt-last" checked /><span data-i18n="settings.toggle.last">Highlight last move</span>
             </label>
             <label class="switch">
-              <input type="checkbox" id="opt-sound" checked /><span>Sound</span>
+              <input type="checkbox" id="opt-sound" checked /><span data-i18n="settings.toggle.sound">Sound</span>
             </label>
             <label class="switch">
-              <input type="checkbox" id="opt-anim" checked /><span>Animations</span>
+              <input type="checkbox" id="opt-anim" checked /><span data-i18n="settings.toggle.animations">Animations</span>
             </label>
           </div>
         </div>
 
         <div class="settings-section">
-          <h3>AI Coach</h3>
-          <p class="muted small">Keys are stored locally in your browser. Calls go from your browser directly to the provider.</p>
+          <h3 data-i18n="settings.aiCoach">AI Coach</h3>
+          <p class="muted small" data-i18n="settings.aiNote">Keys are stored locally in your browser. Calls go from your browser directly to the provider.</p>
 
           <div class="field">
-            <label>Provider</label>
+            <label data-i18n="ui.label.provider">Provider</label>
             <select class="select" id="sel-provider">
-              <option value="builtin">Built-in (offline heuristics)</option>
-              <optgroup label="Cloud APIs">
-                <option value="anthropic">Anthropic (Claude)</option>
-                <option value="openai">OpenAI (GPT)</option>
-                <option value="openrouter">OpenRouter (100+ models)</option>
-                <option value="mistral">Mistral AI</option>
-                <option value="deepseek">DeepSeek</option>
-                <option value="xai">xAI (Grok)</option>
-                <option value="qwen">Qwen (Alibaba)</option>
-                <option value="glm">GLM (Zhipu)</option>
-                <option value="minimax">MiniMax</option>
+              <option value="builtin" data-i18n="settings.provider.builtin">Built-in (offline heuristics)</option>
+              <optgroup label="Cloud APIs" data-i18n-label="settings.provider.groupCloud">
+                <option value="anthropic" data-i18n="settings.provider.anthropic">Anthropic (Claude)</option>
+                <option value="openai" data-i18n="settings.provider.openai">OpenAI (GPT)</option>
+                <option value="openrouter" data-i18n="settings.provider.openrouter">OpenRouter (100+ models)</option>
+                <option value="mistral" data-i18n="settings.provider.mistral">Mistral AI</option>
+                <option value="deepseek" data-i18n="settings.provider.deepseek">DeepSeek</option>
+                <option value="xai" data-i18n="settings.provider.xai">xAI (Grok)</option>
+                <option value="qwen" data-i18n="settings.provider.qwen">Qwen (Alibaba)</option>
+                <option value="glm" data-i18n="settings.provider.glm">GLM (Zhipu)</option>
+                <option value="minimax" data-i18n="settings.provider.minimax">MiniMax</option>
               </optgroup>
-              <optgroup label="Local / self-hosted">
-                <option value="ollama">Ollama</option>
-                <option value="lmstudio">LM Studio</option>
+              <optgroup label="Local / self-hosted" data-i18n-label="settings.provider.groupLocal">
+                <option value="ollama" data-i18n="settings.provider.ollama">Ollama</option>
+                <option value="lmstudio" data-i18n="settings.provider.lmstudio">LM Studio</option>
               </optgroup>
             </select>
           </div>
 
           <div class="provider-config" data-provider="builtin">
-            <div class="provider-note">No configuration needed — the built-in coach runs fully offline using local heuristics and the built-in engine.</div>
+            <div class="provider-note" data-i18n="settings.providerNote.builtin">No configuration needed — the built-in coach runs fully offline using local heuristics and the built-in engine.</div>
           </div>
 
           <div class="provider-config" data-provider="anthropic" hidden>
             <div class="field">
-              <label>API Key</label>
+              <label data-i18n="ui.label.apiKey">API Key</label>
               <input type="password" id="key-anthropic" placeholder="sk-ant-..." />
             </div>
             <div class="field">
-              <label>Model</label>
+              <label data-i18n="ui.label.model">Model</label>
               <select class="select" id="sel-model-anthropic">
                 <option value="claude-opus-4-7">claude-opus-4-7</option>
                 <option value="claude-sonnet-4-6">claude-sonnet-4-6</option>
                 <option value="claude-haiku-4-5-20251001">claude-haiku-4-5</option>
-                <option value="__custom__">Custom…</option>
+                <option value="__custom__" data-i18n="settings.provider.customOption">Custom…</option>
               </select>
             </div>
             <div class="field provider-custom" data-for="anthropic" hidden>
-              <label>Custom model ID</label>
+              <label data-i18n="ui.label.customModel">Custom model ID</label>
               <input type="text" id="custom-model-anthropic" placeholder="e.g. claude-3-5-sonnet-20241022" />
             </div>
           </div>
 
           <div class="provider-config" data-provider="openai" hidden>
             <div class="field">
-              <label>API Key</label>
+              <label data-i18n="ui.label.apiKey">API Key</label>
               <input type="password" id="key-openai" placeholder="sk-..." />
             </div>
             <div class="field">
-              <label>Model</label>
+              <label data-i18n="ui.label.model">Model</label>
               <select class="select" id="sel-model-openai">
                 <option value="gpt-4o">gpt-4o</option>
                 <option value="gpt-4o-mini">gpt-4o-mini</option>
                 <option value="gpt-4-turbo">gpt-4-turbo</option>
                 <option value="o1-preview">o1-preview</option>
                 <option value="o1-mini">o1-mini</option>
-                <option value="__custom__">Custom…</option>
+                <option value="__custom__" data-i18n="settings.provider.customOption">Custom…</option>
               </select>
             </div>
             <div class="field provider-custom" data-for="openai" hidden>
-              <label>Custom model ID</label>
+              <label data-i18n="ui.label.customModel">Custom model ID</label>
               <input type="text" id="custom-model-openai" placeholder="e.g. gpt-4.1" />
             </div>
           </div>
 
           <div class="provider-config" data-provider="ollama" hidden>
             <div class="field">
-              <label>Server URL</label>
+              <label data-i18n="ui.label.serverUrl">Server URL</label>
               <input type="text" id="url-ollama" value="http://localhost:11434" placeholder="http://localhost:11434" />
             </div>
             <div class="field">
-              <label>Model</label>
+              <label data-i18n="ui.label.model">Model</label>
               <select class="select" id="sel-model-ollama">
                 <option value="llama3.1">llama3.1</option>
                 <option value="llama3.2">llama3.2</option>
@@ -497,23 +515,23 @@
                 <option value="gemma2">gemma2</option>
                 <option value="phi3">phi3</option>
                 <option value="codellama">codellama</option>
-                <option value="__custom__">Custom…</option>
+                <option value="__custom__" data-i18n="settings.provider.customOption">Custom…</option>
               </select>
             </div>
             <div class="field provider-custom" data-for="ollama" hidden>
-              <label>Custom model tag</label>
+              <label data-i18n="ui.label.customModelTag">Custom model tag</label>
               <input type="text" id="custom-model-ollama" placeholder="e.g. mistral-nemo:12b" />
             </div>
           </div>
 
           <div class="provider-config" data-provider="lmstudio" hidden>
-            <div class="provider-note">Load a model in LM Studio and start its local server. Pick one of the presets below, or type the exact model identifier LM Studio shows on its server page.</div>
+            <div class="provider-note" data-i18n="settings.providerNote.lmstudio">Load a model in LM Studio and start its local server. Pick one of the presets below, or type the exact model identifier LM Studio shows on its server page.</div>
             <div class="field">
-              <label>Server URL</label>
+              <label data-i18n="ui.label.serverUrl">Server URL</label>
               <input type="text" id="url-lmstudio" value="http://localhost:1234/v1" placeholder="http://localhost:1234/v1" />
             </div>
             <div class="field">
-              <label>Model</label>
+              <label data-i18n="ui.label.model">Model</label>
               <select class="select" id="sel-model-lmstudio">
                 <option value="llama-3.3-70b-instruct">llama-3.3-70b-instruct</option>
                 <option value="qwen2.5-7b-instruct">qwen2.5-7b-instruct</option>
@@ -522,23 +540,23 @@
                 <option value="gemma-2-9b-it">gemma-2-9b-it</option>
                 <option value="phi-4">phi-4</option>
                 <option value="deepseek-r1-distill-llama-8b">deepseek-r1-distill-llama-8b</option>
-                <option value="__custom__">Custom…</option>
+                <option value="__custom__" data-i18n="settings.provider.customOption">Custom…</option>
               </select>
             </div>
             <div class="field provider-custom" data-for="lmstudio" hidden>
-              <label>Custom model identifier</label>
+              <label data-i18n="ui.label.customModelIdentifier">Custom model identifier</label>
               <input type="text" id="custom-model-lmstudio" placeholder="the exact model ID from LM Studio's server tab" />
             </div>
           </div>
 
           <div class="provider-config" data-provider="openrouter" hidden>
-            <div class="provider-note">One key, 100+ models from Anthropic, OpenAI, Meta, Mistral, DeepSeek, xAI, Google, and more.</div>
+            <div class="provider-note" data-i18n="settings.providerNote.openrouter">One key, 100+ models from Anthropic, OpenAI, Meta, Mistral, DeepSeek, xAI, Google, and more.</div>
             <div class="field">
-              <label>API Key</label>
+              <label data-i18n="ui.label.apiKey">API Key</label>
               <input type="password" id="key-openrouter" placeholder="sk-or-v1-..." />
             </div>
             <div class="field">
-              <label>Model</label>
+              <label data-i18n="ui.label.model">Model</label>
               <select class="select" id="sel-model-openrouter">
                 <option value="anthropic/claude-opus-4-7">anthropic/claude-opus-4-7</option>
                 <option value="anthropic/claude-sonnet-4-6">anthropic/claude-sonnet-4-6</option>
@@ -550,22 +568,22 @@
                 <option value="deepseek/deepseek-chat">deepseek/deepseek-chat</option>
                 <option value="deepseek/deepseek-r1">deepseek/deepseek-r1</option>
                 <option value="x-ai/grok-2-1212">x-ai/grok-2-1212</option>
-                <option value="__custom__">Custom…</option>
+                <option value="__custom__" data-i18n="settings.provider.customOption">Custom…</option>
               </select>
             </div>
             <div class="field provider-custom" data-for="openrouter" hidden>
-              <label>Custom model ID</label>
+              <label data-i18n="ui.label.customModel">Custom model ID</label>
               <input type="text" id="custom-model-openrouter" placeholder="e.g. qwen/qwen-2.5-72b-instruct" />
             </div>
           </div>
 
           <div class="provider-config" data-provider="mistral" hidden>
             <div class="field">
-              <label>API Key</label>
+              <label data-i18n="ui.label.apiKey">API Key</label>
               <input type="password" id="key-mistral" placeholder="..." />
             </div>
             <div class="field">
-              <label>Model</label>
+              <label data-i18n="ui.label.model">Model</label>
               <select class="select" id="sel-model-mistral">
                 <option value="mistral-large-latest">mistral-large-latest</option>
                 <option value="mistral-medium-latest">mistral-medium-latest</option>
@@ -573,138 +591,138 @@
                 <option value="codestral-latest">codestral-latest</option>
                 <option value="open-mistral-nemo">open-mistral-nemo</option>
                 <option value="pixtral-large-latest">pixtral-large-latest</option>
-                <option value="__custom__">Custom…</option>
+                <option value="__custom__" data-i18n="settings.provider.customOption">Custom…</option>
               </select>
             </div>
             <div class="field provider-custom" data-for="mistral" hidden>
-              <label>Custom model ID</label>
+              <label data-i18n="ui.label.customModel">Custom model ID</label>
               <input type="text" id="custom-model-mistral" placeholder="e.g. ministral-8b-latest" />
             </div>
           </div>
 
           <div class="provider-config" data-provider="deepseek" hidden>
             <div class="field">
-              <label>API Key</label>
+              <label data-i18n="ui.label.apiKey">API Key</label>
               <input type="password" id="key-deepseek" placeholder="sk-..." />
             </div>
             <div class="field">
-              <label>Model</label>
+              <label data-i18n="ui.label.model">Model</label>
               <select class="select" id="sel-model-deepseek">
                 <option value="deepseek-chat">deepseek-chat</option>
                 <option value="deepseek-reasoner">deepseek-reasoner</option>
                 <option value="deepseek-coder">deepseek-coder</option>
-                <option value="__custom__">Custom…</option>
+                <option value="__custom__" data-i18n="settings.provider.customOption">Custom…</option>
               </select>
             </div>
             <div class="field provider-custom" data-for="deepseek" hidden>
-              <label>Custom model ID</label>
+              <label data-i18n="ui.label.customModel">Custom model ID</label>
               <input type="text" id="custom-model-deepseek" placeholder="e.g. deepseek-v3" />
             </div>
           </div>
 
           <div class="provider-config" data-provider="xai" hidden>
             <div class="field">
-              <label>API Key</label>
+              <label data-i18n="ui.label.apiKey">API Key</label>
               <input type="password" id="key-xai" placeholder="xai-..." />
             </div>
             <div class="field">
-              <label>Model</label>
+              <label data-i18n="ui.label.model">Model</label>
               <select class="select" id="sel-model-xai">
                 <option value="grok-2-latest">grok-2-latest</option>
                 <option value="grok-2-1212">grok-2-1212</option>
                 <option value="grok-2-vision-1212">grok-2-vision-1212</option>
                 <option value="grok-beta">grok-beta</option>
-                <option value="__custom__">Custom…</option>
+                <option value="__custom__" data-i18n="settings.provider.customOption">Custom…</option>
               </select>
             </div>
             <div class="field provider-custom" data-for="xai" hidden>
-              <label>Custom model ID</label>
+              <label data-i18n="ui.label.customModel">Custom model ID</label>
               <input type="text" id="custom-model-xai" placeholder="e.g. grok-3" />
             </div>
           </div>
 
           <div class="provider-config" data-provider="qwen" hidden>
             <div class="field">
-              <label>Server URL</label>
+              <label data-i18n="ui.label.serverUrl">Server URL</label>
               <input type="text" id="url-qwen" value="https://dashscope-intl.aliyuncs.com/compatible-mode/v1" placeholder="https://dashscope-intl.aliyuncs.com/compatible-mode/v1" />
             </div>
             <div class="field">
-              <label>API Key</label>
+              <label data-i18n="ui.label.apiKey">API Key</label>
               <input type="password" id="key-qwen" placeholder="sk-..." />
             </div>
             <div class="field">
-              <label>Model</label>
+              <label data-i18n="ui.label.model">Model</label>
               <select class="select" id="sel-model-qwen">
                 <option value="qwen-max-latest">qwen-max-latest</option>
                 <option value="qwen-plus-latest">qwen-plus-latest</option>
                 <option value="qwen-turbo-latest">qwen-turbo-latest</option>
                 <option value="qwen2.5-72b-instruct">qwen2.5-72b-instruct</option>
                 <option value="qwen2.5-coder-32b-instruct">qwen2.5-coder-32b-instruct</option>
-                <option value="__custom__">Custom…</option>
+                <option value="__custom__" data-i18n="settings.provider.customOption">Custom…</option>
               </select>
             </div>
             <div class="field provider-custom" data-for="qwen" hidden>
-              <label>Custom model ID</label>
+              <label data-i18n="ui.label.customModel">Custom model ID</label>
               <input type="text" id="custom-model-qwen" placeholder="e.g. qwen3-max" />
             </div>
           </div>
 
           <div class="provider-config" data-provider="glm" hidden>
-            <div class="provider-note">Zhipu AI's GLM models. The default endpoint is the China region — swap to a proxy if needed.</div>
+            <div class="provider-note" data-i18n="settings.providerNote.glm">Zhipu AI's GLM models. The default endpoint is the China region — swap to a proxy if needed.</div>
             <div class="field">
-              <label>Server URL</label>
+              <label data-i18n="ui.label.serverUrl">Server URL</label>
               <input type="text" id="url-glm" value="https://open.bigmodel.cn/api/paas/v4" placeholder="https://open.bigmodel.cn/api/paas/v4" />
             </div>
             <div class="field">
-              <label>API Key</label>
+              <label data-i18n="ui.label.apiKey">API Key</label>
               <input type="password" id="key-glm" placeholder="..." />
             </div>
             <div class="field">
-              <label>Model</label>
+              <label data-i18n="ui.label.model">Model</label>
               <select class="select" id="sel-model-glm">
                 <option value="glm-4-plus">glm-4-plus</option>
                 <option value="glm-4-0520">glm-4-0520</option>
                 <option value="glm-4-long">glm-4-long</option>
                 <option value="glm-4-air">glm-4-air</option>
                 <option value="glm-4-flash">glm-4-flash</option>
-                <option value="__custom__">Custom…</option>
+                <option value="__custom__" data-i18n="settings.provider.customOption">Custom…</option>
               </select>
             </div>
             <div class="field provider-custom" data-for="glm" hidden>
-              <label>Custom model ID</label>
+              <label data-i18n="ui.label.customModel">Custom model ID</label>
               <input type="text" id="custom-model-glm" placeholder="e.g. glm-4.5" />
             </div>
           </div>
 
           <div class="provider-config" data-provider="minimax" hidden>
             <div class="field">
-              <label>Server URL</label>
+              <label data-i18n="ui.label.serverUrl">Server URL</label>
               <input type="text" id="url-minimax" value="https://api.minimaxi.chat/v1" placeholder="https://api.minimaxi.chat/v1" />
             </div>
             <div class="field">
-              <label>API Key</label>
+              <label data-i18n="ui.label.apiKey">API Key</label>
               <input type="password" id="key-minimax" placeholder="eyJhbGc..." />
             </div>
             <div class="field">
-              <label>Model</label>
+              <label data-i18n="ui.label.model">Model</label>
               <select class="select" id="sel-model-minimax">
                 <option value="MiniMax-Text-01">MiniMax-Text-01</option>
                 <option value="abab6.5s-chat">abab6.5s-chat</option>
                 <option value="abab6.5-chat">abab6.5-chat</option>
                 <option value="abab6-chat">abab6-chat</option>
-                <option value="__custom__">Custom…</option>
+                <option value="__custom__" data-i18n="settings.provider.customOption">Custom…</option>
               </select>
             </div>
             <div class="field provider-custom" data-for="minimax" hidden>
-              <label>Custom model ID</label>
+              <label data-i18n="ui.label.customModel">Custom model ID</label>
               <input type="text" id="custom-model-minimax" placeholder="e.g. MiniMax-M1" />
             </div>
           </div>
         </div>
 
         <div class="settings-section">
-          <h3>Danger zone</h3>
-          <button class="btn ghost danger" id="btn-reset-all">Reset progress & keys</button>
+          <h3 data-i18n="settings.dangerZone">Danger zone</h3>
+          <button class="btn ghost danger" id="btn-reset-all" data-i18n="settings.resetBtn">Reset progress & keys</button>
         </div>
       </div>
     </div>
@@ -713,7 +731,7 @@
   <!-- ============ PROMOTION MODAL ============ -->
   <div class="modal-backdrop small" id="promotion-modal" hidden>
     <div class="promotion glass">
-      <div class="promotion-title">Promote pawn</div>
+      <div class="promotion-title" data-i18n="promotion.title">Promote pawn</div>
       <div class="promotion-choices" id="promotion-choices"></div>
     </div>
   </div>

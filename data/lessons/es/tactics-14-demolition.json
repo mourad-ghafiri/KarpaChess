@@ -1,0 +1,20 @@
+{
+  "id": "demolition",
+  "title": "Demolición de la Defensa",
+  "summary": "Hacer saltar la posición enemiga",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "Sacrificios que Rompen la Coraza",
+      "text": "A veces la única manera de llegar al rey es volar el escudo de peones. El Regalo Griego (Bxh7+), los sacrificios Nxf7 y los sacrificios de calidad en c3/c6 son todos patrones clásicos de demolición."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "Cuándo Demoler",
+      "text": "El sacrificio funciona cuando: (1) tienes piezas atacantes listas para continuar, (2) el rey enemigo no tiene casillas de escape, (3) el defensor no puede traer refuerzos a tiempo. Calcula 4-6 jugadas de profundidad antes de lanzarte."
+    }
+  ]
+}

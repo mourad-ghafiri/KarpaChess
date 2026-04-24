@@ -1,0 +1,38 @@
+{
+  "id": "queens-gambit",
+  "title": "クイーンズギャンビット",
+  "summary": "ポーンを差し出して中央を支配する",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "古典的なクイーンのポーン",
+      "text": "クイーンズギャンビットは1.d4 d5 2.c4で始まります。白はcポーンを差し出します。黒が取れば中央を放棄したことになり、断れば(マスターレベルではこちらが多数)、白は強い中央支配を維持します。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "クイーンのポーンで始めましょう。",
+      "targetSan": [
+        "d4"
+      ],
+      "hint": "1.d4、古典的な中央突破。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "ギャンビットを差し出しましょう。",
+      "targetSan": [
+        "c4"
+      ],
+      "hint": "2.c4、フランクのポーンでd5を攻撃します。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/ppp1pppp/8/3p4/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2",
+      "title": "断るか受けるか?",
+      "text": "黒が受ければ(2...dxc4)、白はたいていすぐにポーンを取り戻します。黒が断れば(2...e6、2...c6、2...Nf6)、中央マスを巡る局所的な戦いになります。いずれにせよ白は強いイニシアチブを得ます。"
+    }
+  ]
+}

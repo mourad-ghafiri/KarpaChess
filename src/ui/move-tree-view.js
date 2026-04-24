@@ -3,14 +3,14 @@
  * classification icons + comments. Clicking a move jumps to that node.
  */
 import { EVENTS } from '../core/constants.js';
+import { i18n } from '../core/i18n.js';
 
-const CLASS_ICON = {
-  best:       { glyph: '★', title: 'Best' },
-  good:       { glyph: '✓', title: 'Good' },
-  inaccuracy: { glyph: '?!', title: 'Inaccuracy' },
-  mistake:    { glyph: '?',  title: 'Mistake' },
-  blunder:    { glyph: '??', title: 'Blunder' }
-};
+function classIcon(key) {
+  return {
+    glyph: i18n.t('classification.' + key + '.glyph'),
+    title: i18n.t('classification.' + key + '.label')
+  };
+}
 
 export class MoveTreeView {
   constructor(rootEl, commentatorState, bus) {
@@ -20,12 +20,13 @@ export class MoveTreeView {
 
     bus.on(EVENTS.COMMENTATOR_MATCH_LOADED, () => this.render());
     bus.on(EVENTS.COMMENTATOR_NAVIGATED,    () => this.render());
+    bus.on(EVENTS.I18N_CHANGED, () => this.render());
   }
 
   render() {
     const root = this.state.root;
     if (!root) {
-      this.root.innerHTML = '<div class="history-empty">Import a game to begin.</div>';
+      this.root.innerHTML = `<div class="history-empty">${escapeHtml(i18n.t('ui.empty.moveTree'))}</div>`;
       return;
     }
 
@@ -74,8 +75,8 @@ export class MoveTreeView {
       if (cur.id === currentId) chip.classList.add('active');
       if (cur.classification) chip.classList.add('cls-' + cur.classification);
       chip.dataset.nodeId = cur.id;
-      const icon = cur.classification && CLASS_ICON[cur.classification];
-      chip.innerHTML = (icon ? `<span class="mt-cls" title="${icon.title}">${icon.glyph}</span>` : '') + escapeHtml(cur.san);
+      const icon = cur.classification ? classIcon(cur.classification) : null;
+      chip.innerHTML = (icon ? `<span class="mt-cls" title="${escapeHtml(icon.title)}">${escapeHtml(icon.glyph)}</span>` : '') + escapeHtml(cur.san);
       chip.addEventListener('click', () => this.state.jumpTo(cur.id));
       container.appendChild(chip);
 

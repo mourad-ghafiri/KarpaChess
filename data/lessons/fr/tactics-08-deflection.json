@@ -1,0 +1,21 @@
+{
+  "id": "deflection",
+  "title": "Déviation",
+  "summary": "Forcer une pièce à aller là où elle ne devrait pas",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "4r1k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
+      "title": "L'appât",
+      "text": "La déviation consiste à forcer une pièce ennemie hors d'une case clé ou d'un rôle défensif. Souvent avec un échec ou une capture alléchante. La pièce ne peut pas refuser, et son départ ouvre une ligne gagnante." },
+    { "type": "play",
+      "fen": "4r1k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
+      "prompt": "Envahissez avec la tour. Que se passe-t-il si les Noirs échangent ?",
+      "targetSan": ["Ra8"],
+      "hint": "Ra8 met la pression sur la tour en e8 — un échange simplifie la partie." },
+    { "type": "teach",
+      "fen": "R3r1k1/5ppp/8/8/8/8/5PPP/6K1 b - - 0 1",
+      "title": "Échange forcé",
+      "text": "Les Noirs échangeront probablement (Rxa8 ou Rb8). Après l'échange, la simplification favorise le camp actif. La leçon : la pression force des décisions — et les décisions sous pression tournent généralement mal." }
+  ]
+}

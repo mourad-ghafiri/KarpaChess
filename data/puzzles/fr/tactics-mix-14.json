@@ -1,0 +1,8 @@
+{
+  "id": "tactics-mix-14",
+  "fen": "4k3/8/8/3P4/8/8/8/4K3 w - - 0 1",
+  "solution": [
+    "d6"
+  ],
+  "hint": "Poussez le pion — restreignez le roi."
+}

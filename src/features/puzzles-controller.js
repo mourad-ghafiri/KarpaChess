@@ -6,6 +6,7 @@ import * as Chess from '../engine/chess.js';
 import { $ } from '../core/dom.js';
 import { MODE_IDS } from '../core/constants.js';
 import { normalizeSan } from '../engine/chess.js';
+import { i18n } from '../core/i18n.js';
 
 export class PuzzlesController {
   constructor({ gameState, content, puzzleState, sound, particles, practice }) {
@@ -40,20 +41,22 @@ export class PuzzlesController {
     list.innerHTML = '';
     const data = this.content.puzzles;
     if (!data) {
-      list.innerHTML = '<div class="review-empty">Puzzles are loading…</div>';
+      list.innerHTML = `<div class="review-empty">${esc(i18n.t('puzzles.noData'))}</div>`;
       return;
     }
     for (const theme of data.themes) {
+      const name = i18n.t(`puzzleThemes.${theme.id}.name`);
+      const desc = i18n.t(`puzzleThemes.${theme.id}.description`);
       const btn = document.createElement('button');
       btn.type = 'button';
       btn.className = 'theme-card';
       btn.innerHTML = `
         <div class="theme-icon">${theme.icon || '⚡'}</div>
         <div>
-          <div class="theme-title">${esc(theme.name)}</div>
-          <div class="theme-desc">${esc(theme.description || '')}</div>
+          <div class="theme-title">${esc(name)}</div>
+          <div class="theme-desc">${esc(desc)}</div>
         </div>
-        <div class="theme-count">${theme.puzzles.length} puzzles</div>`;
+        <div class="theme-count">${i18n.t('puzzles.themeCount', { n: theme.puzzles.length })}</div>`;
       btn.addEventListener('click', () => this.#startTheme(theme.id));
       list.appendChild(btn);
     }
@@ -86,13 +89,13 @@ export class PuzzlesController {
     if (!theme) { this.puzzleState.goToThemes(); this.render(); return; }
     const puzzle = theme.puzzles[this.puzzleState.puzzleIdx];
     if (!puzzle) return;
-    $('#puzzle-theme-title').textContent = theme.name;
-    $('#puzzle-theme-desc').textContent = theme.description || '';
+    $('#puzzle-theme-title').textContent = i18n.t(`puzzleThemes.${theme.id}.name`);
+    $('#puzzle-theme-desc').textContent = i18n.t(`puzzleThemes.${theme.id}.description`);
     const total = theme.puzzles.length;
-    $('#puzzle-counter').textContent = `Puzzle ${this.puzzleState.puzzleIdx + 1} of ${total}`;
+    $('#puzzle-counter').textContent = i18n.t('puzzles.counter', { n: this.puzzleState.puzzleIdx + 1, total });
     $('#puzzle-progress').style.width = ((this.puzzleState.puzzleIdx) / total * 100) + '%';
-    const turnLabel = this.gameState.getTurn() === 'w' ? 'White' : 'Black';
-    $('#puzzle-prompt').innerHTML = `<b>${turnLabel} to move.</b> Find the best move.`;
+    const turnLabel = i18n.side(this.gameState.getTurn());
+    $('#puzzle-prompt').innerHTML = `<b>${esc(i18n.t('puzzles.turnLabel', { side: turnLabel }))}</b> ${esc(i18n.t('puzzles.prompt'))}`;
   }
 
   /** Called by PuzzleMode.onMove. */
@@ -108,7 +111,7 @@ export class PuzzlesController {
       this.puzzleState.advanceSolution();
       this.sound.good();
       if (this.puzzleState.solutionIdx >= puzzle.solution.length) {
-        $('#puzzle-feedback').textContent = '✅ Solved — great job!';
+        $('#puzzle-feedback').textContent = i18n.t('puzzles.solvedCelebrate');
         $('#puzzle-feedback').className = 'puzzle-feedback good';
         $('#puzzle-progress').style.width = ((this.puzzleState.puzzleIdx + 1) / theme.puzzles.length * 100) + '%';
         $('#btn-puzzle-next').hidden = false;
@@ -123,7 +126,7 @@ export class PuzzlesController {
         }, 450);
       }
     } else {
-      $('#puzzle-feedback').textContent = '❌ Not this move. Try again.';
+      $('#puzzle-feedback').textContent = i18n.t('puzzles.wrong');
       $('#puzzle-feedback').className = 'puzzle-feedback bad';
       this.sound.bad();
       setTimeout(() => {
@@ -140,7 +143,8 @@ export class PuzzlesController {
     const theme = this.#currentTheme();
     if (!theme) return;
     if (this.puzzleState.puzzleIdx + 1 >= theme.puzzles.length) {
-      $('#puzzle-prompt').innerHTML = `<b>🏆 Theme complete.</b> You've finished all puzzles in <b>${esc(theme.name)}</b>.`;
+      const themeName = i18n.t(`puzzleThemes.${theme.id}.name`);
+      $('#puzzle-prompt').innerHTML = `<b>${esc(i18n.t('puzzles.themeCompleteHeader'))}</b> ${esc(i18n.t('puzzles.themeCompleteBody', { theme: themeName }))}`;
       $('#puzzle-feedback').textContent = '';
       $('#puzzle-progress').style.width = '100%';
       $('#btn-puzzle-next').hidden = true;

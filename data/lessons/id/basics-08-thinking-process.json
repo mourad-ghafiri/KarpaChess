@@ -1,0 +1,26 @@
+{
+  "id": "thinking-process",
+  "title": "Cara Berpikir",
+  "summary": "Proses 3 langkah sederhana untuk setiap gerakan",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Tiga Pertanyaan",
+      "text": "Sebelum setiap langkah, jalankan daftar periksa ini: (1) Apa yang sedang diancam lawan saya? (2) Apa SKAK, penangkapan, dan ancaman saya? (3) Jika saya memainkan kandidat saya, apa jawaban terbaiknya? Jawab ketiganya, lalu bergerak."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Pemeriksaan Blunder",
+      "text": "Sebelum Anda memainkan langkah Anda, berhenti sejenak dan tanya: \"Setelah saya melakukan langkah ini, apakah ada bidak saya yang diserang? Bisakah lawan saya memberikan skak? Bisakah mereka menangkap sesuatu secara gratis?\" Pemeriksaan 5 detik ini menyelamatkan sebagian besar blunder."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Langkah Kandidat",
+      "text": "Pemain kuat tidak menghitung satu langkah — mereka menghitung 2-3 kandidat dan membandingkan. Pilih langkah yang mengembangkan bidak, memperbaiki kotak, atau menciptakan ancaman. Tolak langkah-langkah yang terlihat acak sejak dini."
+    }
+  ]
+}

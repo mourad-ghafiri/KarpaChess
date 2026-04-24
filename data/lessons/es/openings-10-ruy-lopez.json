@@ -1,0 +1,47 @@
+{
+  "id": "ruy-lopez-basics",
+  "title": "La Ruy López",
+  "summary": "La apertura seria más antigua del ajedrez",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "La Española",
+      "text": "Llamada así por un sacerdote español del siglo XVI, la Ruy López (o \"Española\") presiona el peón e5 a través del caballo de c6. Conduce a medios juegos ricos y matizados. Todo campeón del mundo, de Steinitz a Carlsen, la ha jugado."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "Juega 1.e4",
+      "targetSan": [
+        "e4"
+      ],
+      "hint": "Peón rey dos casillas."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "Desarrolla el caballo de rey: 2.Nf3",
+      "targetSan": [
+        "Nf3"
+      ],
+      "hint": "Ataca e5, desarrolla una pieza."
+    },
+    {
+      "type": "play",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+      "prompt": "La jugada característica: 3.Bb5",
+      "targetSan": [
+        "Bb5"
+      ],
+      "hint": "Clava indirectamente el caballo, amenaza socavar e5."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+      "title": "Ideas Principales",
+      "text": "El alfil no gana realmente e5 de inmediato (tras 3...a6 4.Bxc6 dxc6, el peón e de las Negras sigue defendido). La AMENAZA real es romper la estructura negra y oprimirla posicionalmente. Ajedrez clásico en su máxima expresión."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "ruy-lopez-basics",
+  "title": "ルイロペス",
+  "summary": "チェスでもっとも古い本格的オープニング",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "スパニッシュ",
+      "text": "16世紀スペインの聖職者の名を冠するルイロペス(別名「スパニッシュ」)は、c6のナイトを介してe5のポーンに圧力をかけます。豊かで微妙なミドルゲームへと導きます。シュタイニッツからカールセンまで、すべての世界チャンピオンが指してきました。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "1.e4を指しましょう。",
+      "targetSan": [
+        "e4"
+      ],
+      "hint": "キングのポーンを2マス。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+      "prompt": "キングのナイトを展開しましょう。2.Nf3。",
+      "targetSan": [
+        "Nf3"
+      ],
+      "hint": "e5を攻撃しつつ、駒を展開します。"
+    },
+    {
+      "type": "play",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+      "prompt": "決定的な一手、3.Bb5。",
+      "targetSan": [
+        "Bb5"
+      ],
+      "hint": "ナイトを間接的にピンし、e5を揺さぶる脅しです。"
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+      "title": "主な狙い",
+      "text": "ビショップは即e5を取るわけではありません(3...a6 4.Bxc6 dxc6の後、黒のeポーンはまだ守られています)。真の狙いは黒の構造を崩し、ポジショナルに締め上げることです。古典的チェスの最高峰です。"
+    }
+  ]
+}

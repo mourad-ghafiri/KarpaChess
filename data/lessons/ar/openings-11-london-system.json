@@ -1,0 +1,38 @@
+{
+  "id": "london-system",
+  "title": "نظام لندن",
+  "summary": "النظام الشامل — الترتيب نفسه في كل مرة",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "لماذا تلعب لندن؟",
+      "text": "نظام لندن افتتاح «شامل» — يلعب الأبيض الترتيب نفسه بغضّ النظر عن ردّ الأسود. رائع للمبتدئين: نظرية أقل، أنماط أكثر موثوقية."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "1.d4",
+      "targetSan": [
+        "d4"
+      ],
+      "hint": "بيدق الوزير مربعان."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2",
+      "prompt": "طوِّر الفيل ذا المربعات الداكنة: 2.Bf4",
+      "targetSan": [
+        "Bf4"
+      ],
+      "hint": "الفيل يخرج قبل e3، كي لا تسدّه بيادقه."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/pppppppp/5n2/8/3P1B2/8/PPP1PPPP/RNBQKBNR b KQkq - 2 2",
+      "title": "الترتيب الكامل",
+      "text": "الوصفة الكاملة للندن: d4، Bf4، Nf3، e3، c3، Nbd2، Bd3، 0-0. صلب، شبه متناظر، صعب الاختراق. استخدمه ماغنوس كارلسن في مباريات بطولة العالم."
+    }
+  ]
+}

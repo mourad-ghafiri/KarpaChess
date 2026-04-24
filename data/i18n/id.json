@@ -1,0 +1,746 @@
+{
+  "language": { "name": "Bahasa Indonesia", "code": "id" },
+
+  "ui": {
+    "brand": {
+      "title": "KarpaChess",
+      "tagline": "Belajar Catur · Setiap Langkah Mengajarkan"
+    },
+    "nav": {
+      "learn": "Belajar",
+      "puzzles": "Teka-teki",
+      "practice": "Latihan",
+      "coach": "Pelatih AI",
+      "commentator": "Komentator"
+    },
+    "button": {
+      "flip": "Balik",
+      "undo": "Batalkan",
+      "hint": "Petunjuk",
+      "analyze": "Analisis",
+      "newGame": "Permainan Baru",
+      "playIt": "Mainkan",
+      "dismiss": "Tutup",
+      "ask": "Tanya",
+      "load": "Muat",
+      "chooseFile": "Pilih berkas…",
+      "settings": "Pengaturan",
+      "close": "Tutup",
+      "back": "Kembali",
+      "next": "Berikutnya",
+      "skip": "Lewati",
+      "showHint": "Tampilkan Petunjuk",
+      "allCategories": "← Semua kategori",
+      "allLessons": "← Semua pelajaran",
+      "allThemes": "← Semua tema",
+      "exitReview": "← Keluar dari tinjauan",
+      "resetAll": "Atur ulang progres & kunci"
+    },
+    "buttonTitle": {
+      "flip": "Balik papan (F)",
+      "undo": "Batalkan (Ctrl+Z)",
+      "hint": "Dapatkan petunjuk (H)",
+      "analyze": "Analisis mendalam",
+      "newGame": "Permainan baru (N)",
+      "settings": "Pengaturan",
+      "dismissHint": "Tutup petunjuk",
+      "closeBanner": "Tutup"
+    },
+    "label": {
+      "provider": "Penyedia",
+      "difficulty": "Tingkat Kesulitan",
+      "playAs": "Bermain sebagai",
+      "timeControl": "Kontrol Waktu",
+      "moveHistory": "Riwayat Langkah",
+      "coachWhisper": "Bisikan Pelatih",
+      "language": "Bahasa",
+      "boardTheme": "Tema papan",
+      "apiKey": "Kunci API",
+      "model": "Model",
+      "serverUrl": "URL Server",
+      "customModel": "ID model kustom",
+      "customModelTag": "Tag model kustom",
+      "customModelIdentifier": "Pengenal model kustom"
+    },
+    "placeholder": {
+      "coachAsk": "Tanyakan: 'Mengapa Nf3 kuat di sini?'",
+      "pgnInput": "Tempel PGN atau daftar langkah (mis. e4 e5 Nf3 Nc6)…",
+      "drawText": "Ketik…"
+    },
+    "empty": {
+      "moveHistory": "Langkah-langkah Anda akan muncul di sini.",
+      "moveHistoryCommentator": "Langkah-langkah muncul di sini saat Anda menelusuri permainan.",
+      "moveTree": "Impor permainan untuk memulai.",
+      "insights": "Telusuri langkah-langkah untuk melihat pendapat mesin."
+    },
+    "practiceLede": "Bermainlah melawan komputer. Pelatih membisikkan tips saat Anda bermain, dan Anda selalu dapat meminta bantuan lebih mendalam dari Pelatih AI.",
+    "aria": {
+      "capturedByWhite": "Buah catur yang ditangkap oleh putih",
+      "capturedByBlack": "Buah catur yang ditangkap oleh hitam",
+      "chessBoard": "Papan catur",
+      "dismissHint": "Tutup petunjuk"
+    },
+    "section": {
+      "pasteOrUpload": "Tempel atau unggah",
+      "sampleGames": "Contoh permainan",
+      "moveHistory": "Riwayat Langkah"
+    },
+    "toast": {
+      "notYourTurn": "Bukan giliran Anda.",
+      "matchLoaded": "Pertandingan dimuat.",
+      "pasteFirst": "Tempel PGN atau daftar langkah terlebih dahulu.",
+      "parseFail": "Tidak dapat mengurai: {error}",
+      "imgLoadFail": "Tidak dapat memuat gambar itu.",
+      "noReview": "Belum ada langkah untuk ditinjau.",
+      "lessonComplete": "Pelajaran selesai!"
+    }
+  },
+
+  "game": {
+    "result": {
+      "checkmate": "Sekakmat!",
+      "stalemate": "Remis (pat)",
+      "draw": "Remis",
+      "timeout": "Waktu habis",
+      "drawRepetition": "Remis",
+      "drawAgreed": "Remis"
+    },
+    "resultSub": {
+      "whiteWins": "Putih menang",
+      "blackWins": "Hitam menang",
+      "stalemate": "Remis karena pat",
+      "fiftyMove": "Aturan 50 langkah",
+      "insufficient": "Materi tidak cukup",
+      "repetition": "Pengulangan tiga kali",
+      "agreed": "Remis disepakati",
+      "whiteWinsTime": "Putih menang berdasarkan waktu",
+      "blackWinsTime": "Hitam menang berdasarkan waktu"
+    },
+    "side": {
+      "white": "Putih",
+      "black": "Hitam"
+    },
+    "playerDefault": {
+      "top": "Hitam",
+      "bottom": "Anda",
+      "topMeta": "AI · Level 2",
+      "botMeta": "Manusia"
+    },
+    "playAsOption": {
+      "white": "Putih",
+      "random": "Acak",
+      "black": "Hitam"
+    },
+    "timeControl": {
+      "unlimited": "Tanpa batas",
+      "custom": "{minutes}+{increment}"
+    },
+    "difficulty": {
+      "1": "Pemula",
+      "2": "Santai",
+      "3": "Klub",
+      "4": "Master"
+    },
+    "clock": {
+      "timeUsed": "{seconds}d terpakai",
+      "timeUsedLong": "{time} terpakai"
+    }
+  },
+
+  "chess": {
+    "piece": {
+      "p": "pion",
+      "n": "kuda",
+      "b": "gajah",
+      "r": "benteng",
+      "q": "menteri",
+      "k": "raja"
+    },
+    "pieceCapital": {
+      "p": "Pion",
+      "n": "Kuda",
+      "b": "Gajah",
+      "r": "Benteng",
+      "q": "Menteri",
+      "k": "Raja"
+    },
+    "direction": {
+      "kingside": "sayap raja",
+      "queenside": "sayap menteri"
+    }
+  },
+
+  "classification": {
+    "best":       { "label": "Langkah terbaik",  "glyph": "★",  "comment": "Ini adalah pilihan utama mesin — tidak ada langkah yang lebih baik di papan." },
+    "good":       { "label": "Mantap",      "glyph": "✓",  "commentAgree": "Mesin menyetujui — pilihan yang mantap.", "commentAlt": "Kelanjutan yang wajar. Mesin sedikit lebih memilih <b>{best}</b>." },
+    "inaccuracy": { "label": "Ketidakakuratan", "glyph": "?!", "comment": "Kesalahan kecil — <b>{best}</b> akan sedikit lebih kuat.", "commentShort": "Kesalahan kecil." },
+    "mistake":    { "label": "Kesalahan",    "glyph": "?",  "comment": "Sebuah kesalahan — <b>{best}</b> jauh lebih baik.", "commentShort": "Sebuah kesalahan." },
+    "blunder":    { "label": "Blunder",    "glyph": "??", "comment": "Sebuah blunder. <b>{best}</b> dibutuhkan.", "commentShort": "Sebuah blunder." },
+    "review": {
+      "good": "Langkah terbaik atau hampir terbaik.",
+      "ok": "Langkah yang mantap.",
+      "inaccuracy": "Sedikit tidak akurat.",
+      "mistake": "Sebuah kesalahan.",
+      "blunder": "Blunder."
+    }
+  },
+
+  "nag": {
+    "1": "Langkah bagus",
+    "2": "Kesalahan",
+    "3": "Langkah brilian",
+    "4": "Blunder",
+    "5": "Langkah menarik",
+    "6": "Langkah meragukan",
+    "10": "Posisi seimbang",
+    "13": "Posisi tidak jelas",
+    "14": "Putih sedikit lebih baik",
+    "15": "Hitam sedikit lebih baik",
+    "16": "Putih lebih baik",
+    "17": "Hitam lebih baik",
+    "18": "Putih menang",
+    "19": "Hitam menang"
+  },
+
+  "hint": {
+    "eyebrow": "Langkah yang disarankan",
+    "loading": "…",
+    "loadingSub": "Memikirkan beberapa langkah ke depan…",
+    "checkmate": "Memberikan <b>sekakmat</b>. Akhiri!",
+    "castle": "Rokade {dir} — menyembunyikan raja di balik dinding pion.",
+    "promote": "Mendorong ke baris terakhir dan promosi menjadi <b>{piece}</b>.",
+    "capture": "Memenangkan materi: <b>{piece}</b> Anda menangkap <b>{target}</b>.",
+    "develop": "Mengembangkan <b>{piece}</b> Anda ke <b>{square}</b>, meningkatkan aktivitas dan mengincar pusat.",
+    "pawn": "Memajukan <b>pion</b> Anda ke <b>{square}</b>, merebut ruang.",
+    "rook": "Mengaktifkan <b>benteng</b> Anda di <b>{square}</b> — jalur terbuka disukai benteng.",
+    "queen": "Membawa <b>menteri</b> ke <b>{square}</b> dengan tujuan.",
+    "quiet": "Memperbaiki <b>{piece}</b> Anda ke <b>{square}</b>.",
+    "checkSuffix": " Juga memberikan <b>sekak</b>."
+  },
+
+  "banner": {
+    "reviewBtn": "🔍 Tinjau Pertandingan",
+    "newGameBtn": "Permainan Baru"
+  },
+
+  "coach": {
+    "greeting": "Hai — saya pelatih catur Anda. Tanyakan apa pun tentang posisi. Saya menjelaskan ide, taktik, dan rencana.",
+    "thinking": "Berpikir…",
+    "analyzing": "Menganalisis…",
+    "status": {
+      "unknown": "tidak diketahui",
+      "missingKey": "kunci API tidak ada"
+    },
+    "system": "Anda adalah KarpaChess, pelatih catur ahli yang ceria. Jelaskan ide dengan bahasa yang jelas, hidup, dan menyemangati bagi pelajar. Ringkas: 2–4 paragraf pendek, atau daftar berpoin yang padat. Dasarkan klaim pada posisi saat ini. Gunakan SAN untuk langkah. Saat merekomendasikan langkah, jelaskan secara singkat MENGAPA. Jangan pernah mengarang buah atau kotak yang tidak ada. Balas dalam {language}.",
+    "fallbackPrefix": "**Permintaan {provider} gagal.** {error}\n\nKembali ke pelatih bawaan:\n\n{fallback}",
+    "whisper": {
+      "tip1": "Bagus — sekarang bagaimana dengan buah berikutnya?",
+      "tip2": "Setiap langkah, tanyakan: apakah saya memperbaiki buah terburuk saya?",
+      "tip3": "Perhatikan fork dan taktik setelah setiap pertukaran.",
+      "tip4": "Jaga keamanan raja Anda. Rokade jika belum.",
+      "tip5": "Carilah buah tanpa pembela — milik Anda dan lawan.",
+      "check": "⚠️ <b>{side}</b> dalam keadaan sekak!",
+      "capture": "💥 {piece} mengambil {target} di {square}. Eval: {eval}.",
+      "castle": "🏰 Rokade bagus! Keamanan raja itu penting. Eval: {eval}.",
+      "promote": "✨ Dipromosikan menjadi {piece}! Eval: {eval}.",
+      "tipWithEval": "{tip} ({eval})",
+      "welcome": "Selamat datang! Buat langkah dan saya akan berbagi wawasan singkat. Saat permainan berakhir saya akan menawarkan untuk meninjau langkah Anda.",
+      "newGame": "Permainan baru! Semoga berhasil — buat langkah pertama."
+    },
+    "builtin": {
+      "name": "Bawaan (luring)",
+      "on": "di",
+      "bestMove": {
+        "recommendation": "Rekomendasi saya: <b>{move}</b>.",
+        "shallow": "Tanpa pencarian lebih dalam, pertimbangkan: <b>{move}</b>.",
+        "whyHeader": "<b>Mengapa ini masuk akal di sini:</b>",
+        "castle": "• Raja masih di tengah — rokade adalah prioritas utama.",
+        "develop": "• Buah ringan masih di {squares} — kembangkan mereka.",
+        "center": "• Tidak ada pion di empat kotak pusat — dorongan pion pusat sangat berharga.",
+        "loose": "• Lawan memiliki <b>{pieceWord}</b>: {list}. Cari cara untuk memenangkannya.",
+        "oppKing": "• Raja lawan <b>{score}</b> — langkah menyerang sering berhasil.",
+        "ownKing": "• Raja Anda sedang diserang — pertimbangkan pertahanan terlebih dahulu.",
+        "passedEnd": "• Anda memiliki <b>{pawnWord}</b> di {squares} — dorong mereka!",
+        "activeKing": "• Aktifkan raja Anda — di akhir permainan, dia adalah buah yang berjuang.",
+        "aheadBehind": "• Anda {state} {n} poin — {advice}.",
+        "ahead": "unggul",
+        "behind": "tertinggal",
+        "adviceAhead": "tukar buah, simpan pion",
+        "adviceBehind": "ciptakan komplikasi",
+        "evalSuffix": "_Eval: {eval}_"
+      },
+      "loosePieces": {
+        "singular": "buah lepas",
+        "plural": "buah-buah lepas"
+      },
+      "passedPawns": {
+        "singular": "pion bebas",
+        "plural": "pion-pion bebas"
+      },
+      "tactics": {
+        "header": "<b>Pemindaian taktis untuk {side}</b>",
+        "loose": "Lawan memiliki {n} {pieceWord} tanpa pembela: {list}.",
+        "undefendedSingle": "buah",
+        "undefendedPlural": "buah-buah",
+        "defended": "Buah lawan tampak terlindungi. Taktik lebih sulit — carilah jepitan, umpan, atau langkah pembersihan.",
+        "exposedKing": "Raja mereka <b>{score}</b> ({notes}) — pola matsemat mungkin mengintai.",
+        "openLines": "jalur terbuka",
+        "queenTarget": "Menteri mereka di <b>{square}</b> — dapatkah Anda menyerangnya dengan murah untuk mendapatkan tempo?",
+        "engineSuggests": "Mesin menyarankan <b>{move}</b> — apakah langkah itu cocok dengan salah satu pola di atas?",
+        "footer": "_Latih mata Anda untuk melihat tiga hal ini setiap langkah: buah lepas, raja terbuka, pembela yang kewalahan._"
+      },
+      "plan": {
+        "header": "<b>Rencana untuk {side}</b> _({phase})_",
+        "developMinors": "Kembangkan {pieceWord} ringan yang tersisa dari {squares}.",
+        "minorSingular": "buah",
+        "minorPlural": "buah-buah",
+        "castle": "Rokade — keamanan raja dulu.",
+        "queenEarly": "Hati-hati — menteri bergerak sebelum semua buah ringan dikembangkan. Jangan biarkan dia dikejar.",
+        "centerPawn": "Tempatkan pion di empat kotak pusat (d4/e4/d5/e5).",
+        "kingDanger": "Raja Anda dalam bahaya — tingkatkan pertahanan sebelum menyerang.",
+        "oppositeWings": "Anda berdua telah rokade — serang sayap berlawanan dengan pion jika rokade di sisi berlawanan.",
+        "pushPassed": "Dorong {pawnWord} Anda di {squares}.",
+        "passedPawnSingular": "pion bebas",
+        "passedPawnPlural": "pion-pion bebas",
+        "isolated": "Perhatikan {pawnWord} Anda di {squares} — aktivitas mengimbangi kelemahan.",
+        "isolatedSingular": "pion terisolasi",
+        "isolatedPlural": "pion-pion terisolasi",
+        "improveWorst": "Perbaiki buah terburuk Anda. Setiap langkah harus membuat salah satu buah Anda lebih baik.",
+        "racePassed": "Pacu {pawnWord} Anda di {squares} menuju promosi.",
+        "raceSingular": "pion bebas",
+        "racePlural": "pion-pion bebas",
+        "activateKing": "Aktifkan raja Anda — bawa dia ke tengah aksi.",
+        "aheadTrade": "Anda unggul {n} poin — tukar buah (bukan pion) untuk menyederhanakan ke akhir permainan yang menang.",
+        "behindKeep": "Anda tertinggal {n} poin — pertahankan buah di papan, ciptakan permainan balik, hindari pertukaran.",
+        "fewPawns": "Pion tersisa sedikit — pikirkan oposisi, zugzwang, dan kotak kunci."
+      },
+      "lastMove": {
+        "none": "Belum ada langkah yang dimainkan — mulailah dengan pion pusat (e4 atau d4) atau langkah kuda (Nf3).",
+        "capture": "menangkap materi",
+        "check": "memberikan sekak",
+        "checkmate": "memberikan sekakmat",
+        "castleKingside": "rokade sayap raja",
+        "castleQueenside": "rokade sayap menteri",
+        "promote": "mempromosikan pion",
+        "line": "<b>{san}</b> — {anns}.",
+        "quiet": "<b>{san}</b> — langkah posisional yang tenang.",
+        "evalLine": "Eval sekarang: {eval}. ",
+        "topChoice": "Pilihan utama mesin ke depan: <b>{move}</b>."
+      },
+      "opening": {
+        "noneHeader": "<b>Langkah pertama klasik:</b>",
+        "noneE4": "<b>1.e4</b> — membuka jalur untuk menteri dan gajah, memperebutkan pusat. Mengarah ke permainan taktis yang tajam.",
+        "noneD4": "<b>1.d4</b> — merebut pusat, menyiapkan c4 (Gambit Menteri). Strategis, posisional.",
+        "noneNf3": "<b>1.Nf3</b> — fleksibel, menunda pengungkapan rencana Anda. Sering berubah bentuk.",
+        "noneC4": "<b>1.c4</b> — Inggris. Serangan sayap pada pusat, gaya hipermodern.",
+        "nonePick": "Pilih satu, mainkan seratus kali, dan pelajari rahasianya.",
+        "known": "<b>{name}</b>\n\n{tip}\n\n_Langkah yang dimainkan: {moves}_",
+        "unknownHeader": "{n} {moveWord} dimainkan — belum ada pembukaan yang cocok dengan jelas. Patuhi tiga prinsip:",
+        "moveSingular": "langkah",
+        "movePlural": "langkah",
+        "unknownP1": "• Kendalikan pusat dengan pion atau buah",
+        "unknownP2": "• Kembangkan setiap buah ringan sebelum menggerakkan menteri",
+        "unknownP3": "• Rokade sebelum melancarkan serangan"
+      },
+      "endgame": {
+        "header": "<b>Dasar-dasar akhir permainan</b>",
+        "activateKing": "• <b>Aktifkan raja Anda</b> — di akhir permainan, nilainya sekitar tiga pion. Bawa dia ke tengah.",
+        "passed": "• <b>Pion bebas</b> adalah emas. Putih memiliki {w}; Hitam memiliki {b}.",
+        "none": "tidak ada",
+        "opposition": "• <b>Oposisi</b> menentukan akhir permainan raja-dan-pion — pihak yang tidak berjalan sering memenangkan kotak kunci.",
+        "rookRule": "• <b>Akhir permainan benteng</b> mengikuti aturan: benteng berada di BELAKANG pion bebas (milik Anda atau mereka).",
+        "tradePieces": "• Saat menang, tukar buah bukan pion. Saat kalah, pertahankan buah dan cari taktik."
+      },
+      "evaluation": {
+        "header": "<b>Penilaian posisi</b> _({phase}, {side} giliran)_",
+        "material": "• <b>Materi:</b> Putih {w} vs Hitam {b}{diff}",
+        "equalSuffix": " (seimbang)",
+        "diffSuffix": " — {side} +{n}",
+        "engine": "• <b>Mesin:</b> {eval}",
+        "whiteKing": "• <b>Raja putih:</b> {score}{notes}",
+        "blackKing": "• <b>Raja hitam:</b> {score}{notes}",
+        "notesFmt": " ({notes})",
+        "pawnWeaknessesWhite": "• <b>Masalah pion putih:</b> {list}",
+        "pawnWeaknessesBlack": "• <b>Masalah pion hitam:</b> {list}",
+        "isolatedPrefix": "terisolasi {sq}",
+        "doubledPrefix": "ganda di {file}",
+        "passedWhite": "• <b>Putih {pawnWord}:</b> {squares}",
+        "passedBlack": "• <b>Hitam {pawnWord}:</b> {squares}",
+        "passedSingular": "pion bebas",
+        "passedPlural": "pion-pion bebas",
+        "topMove": "• <b>Langkah utama mesin:</b> <b>{move}</b>"
+      },
+      "kingSafety": {
+        "header": "<b>Keamanan Raja</b>",
+        "line": "• <b>Raja {side}</b> ({who}): {score}{castled}. {notes}",
+        "you": "Anda",
+        "opponent": "lawan",
+        "castledSuffix": " — rokade",
+        "noConcerns": "Tidak ada kekhawatiran mendesak.",
+        "footer": "Jika raja Anda terbuka: pertahankan dulu. Jika raja lawan terbuka: carilah sekak, angkatan benteng, dan infiltrasi menteri."
+      },
+      "pawns": {
+        "header": "<b>Struktur Pion</b>",
+        "side": "<b>{side}</b> ({n} pion)",
+        "isolated": "• Terisolasi: {squares} — sulit dipertahankan, tetapi sering aktif.",
+        "doubled": "• Ganda di {files} — tidak bisa saling melindungi, sering kali kelemahan jangka panjang.",
+        "passed": "• <b>Bebas:</b> {squares} — dorong dengan dukungan buah!",
+        "clean": "• Struktur bersih — tidak ada kelemahan atau pion bebas yang mencolok."
+      },
+      "development": {
+        "header": "<b>Pengembangan</b>",
+        "white": "• Putih: {n}/4 buah ringan dikembangkan{castled}{home}",
+        "black": "• Hitam: {n}/4 buah ringan dikembangkan{castled}{home}",
+        "castledSuffix": ", rokade ✓",
+        "homeSuffix": " — masih di rumah: {squares}",
+        "openingNote": "Di pembukaan, setiap langkah harus (1) mengembangkan buah, (2) mengendalikan pusat, atau (3) meningkatkan keamanan raja. Langkah yang tidak melakukan salah satu dari ini patut dicurigai."
+      },
+      "improvement": {
+        "header": "<b>Perbaiki buah terburuk Anda</b>",
+        "intro": "Lihat setiap buah Anda dan tanyakan: \"Apa yang dilakukan ini?\" Tujuan Anda setiap langkah adalah memberi buah yang paling tidak aktif pekerjaan yang berarti.",
+        "commonHeader": "<b>Buah terburuk yang umum:</b>",
+        "bishop": "• Gajah di belakang pionnya sendiri — arahkan ulang atau tukar.",
+        "knight": "• Kuda di pinggir (h3, a6 dll.) — pusatkan ke d4/e4/d5/e5.",
+        "rook": "• Benteng di kotak awalnya tanpa jalur terbuka — temukan satu dan menyerbu.",
+        "queen": "• Menteri terlalu awal dan terbuka — bawa dia kembali ke tempat aman dulu.",
+        "kingMid": "• Raja masih di tengah setelah langkah ke-10 — rokade segera."
+      },
+      "summary": {
+        "header": "<b>Potret posisi</b> — _{pulse}_",
+        "pulseMaterial": "materi {sign}{n} untuk {side}",
+        "pulseMaterialEven": "materi seimbang",
+        "pulsePhase": "fase {phase}",
+        "pulseToMove": "{side} giliran",
+        "material": "• <b>Materi:</b> P {w} · H {b}{diff}",
+        "diff": " ({sign}{n})",
+        "equal": " (seimbang)",
+        "kings": "• <b>Raja:</b> Putih {wScore}{wCastled}, Hitam {bScore}{bCastled}",
+        "castledGlyph": " ✓",
+        "eval": "• <b>Eval:</b> {eval}",
+        "engineSuggests": "• <b>Mesin menyarankan:</b> <b>{move}</b>",
+        "target": "• <b>Sasaran:</b> buah lepas lawan {list}",
+        "menu": "Tanya saya: <b>langkah terbaik · taktik · rencana · keamanan raja · pion · pengembangan · evaluasi</b>"
+      },
+      "phase": {
+        "opening": "pembukaan",
+        "middlegame": "tengah permainan",
+        "endgame": "akhir permainan"
+      },
+      "kingScore": {
+        "safe": "aman",
+        "exposed": "terbuka",
+        "danger": "bahaya",
+        "shelter": "berlindung",
+        "waiting": "menunggu",
+        "active": "aktif",
+        "unknown": "tidak diketahui"
+      },
+      "kingNote": {
+        "tuckedCorner": "masih terselip di pojok — pusatkan dia",
+        "startingSquare": "raja di kotak awalnya — bawa dia keluar",
+        "activeOn": "raja aktif di {square}",
+        "wanderingOn": "raja berkeliaran di {square}",
+        "centerAfter8": "raja masih di tengah setelah langkah ke-8",
+        "thinShield": "perisai pion tipis ({count}/3)",
+        "enemyHeavy": "buah berat musuh di jalur raja",
+        "fullShield": "rokade dengan perisai pion lengkap"
+      },
+      "eval": {
+        "unclear": "tidak jelas",
+        "balanced": "seimbang ({pawns})",
+        "better": "{sign}{pawns} — <b>{side}</b> lebih baik"
+      }
+    },
+    "openingNames": {
+      "ruyLopez": "Ruy López",
+      "ruyLopezMorphy": "Ruy López — Pertahanan Morphy",
+      "italianGame": "Permainan Italia",
+      "italianGiuocoPiano": "Permainan Italia — Giuoco Piano",
+      "italianTwoKnights": "Permainan Italia — Dua Kuda",
+      "petroff": "Pertahanan Petroff",
+      "scotchGame": "Permainan Skotlandia",
+      "viennaGame": "Permainan Wina",
+      "kingsGambit": "Gambit Raja",
+      "openGame": "Permainan Terbuka",
+      "kingsPawnGame": "Permainan Pion Raja",
+      "sicilian": "Pertahanan Sisilia",
+      "sicilianNajdorf": "Sisilia — Kompleks Najdorf",
+      "sicilianOpenNc6": "Sisilia — Terbuka dengan ...Nc6",
+      "sicilianTaimanovKan": "Sisilia — Taimanov/Kan",
+      "sicilianClosed": "Sisilia — Tertutup",
+      "french": "Pertahanan Prancis",
+      "caroKann": "Pertahanan Caro-Kann",
+      "scandinavian": "Pertahanan Skandinavia",
+      "pirc": "Pertahanan Pirc",
+      "modern": "Pertahanan Modern",
+      "alekhine": "Pertahanan Alekhine",
+      "queensGambit": "Gambit Menteri",
+      "queensGambitDeclined": "Gambit Menteri Ditolak",
+      "queensGambitAccepted": "Gambit Menteri Diterima",
+      "slav": "Pertahanan Slav",
+      "londonSetup": "Penataan Sistem London",
+      "london": "Sistem London",
+      "kingsIndian": "Pertahanan India Raja",
+      "nimzoIndian": "Nimzo-Indian",
+      "queensIndian": "Kompleks India Menteri",
+      "benoni": "Pertahanan Benoni",
+      "indianGame": "Permainan India",
+      "dutch": "Pertahanan Belanda",
+      "english": "Pembukaan Inggris",
+      "reti": "Pembukaan Réti",
+      "retiKia": "Penataan Réti / KIA",
+      "retiSetup": "Penataan Réti",
+      "larsen": "Pembukaan Larsen",
+      "sokolsky": "Sokolsky / Polandia",
+      "benko": "Pembukaan Benko"
+    },
+    "openingTips": {
+      "ruyLopez": "Pembukaan serius tertua dalam catur. Bb5 menjepit kuda — Hitam biasanya memainkan ...a6 untuk memaksa keputusan. Setelah Ba4, permainan berkembang menjadi pertempuran strategis yang panjang.",
+      "ruyLopezMorphy": "Respons utama Hitam. Putih biasanya memilih antara Jalur Utama (Ba4 Nf6 0-0) dan Variasi Pertukaran (Bxc6). Catur klasik yang kaya menanti.",
+      "italianGame": "Bc4 mengincar f7 — titik terlemah di kubu Hitam. Kembangkan kuda ke f3/c3, rokade sayap raja, dan cari terobosan d3/d4.",
+      "italianGiuocoPiano": "\"Permainan tenang\" — kedua gajah menunjuk ke kotak lemah masing-masing raja. Penataan klasik: kembangkan, rokade, lalu dorong d4.",
+      "italianTwoKnights": "Permainan tajam! Putih bisa mencoba Fried Liver (Ng5) atau terobosan d4 yang lebih tenang. Hitam harus menavigasi beberapa perairan taktis.",
+      "petroff": "Pertahanan simetris yang sangat solid. Hitam meniru Putih dan berkembang secara alami — terkenal karena kecenderungannya remis di level tinggi.",
+      "scotchGame": "Putih membuka pusat lebih awal dengan d4. Permainan aktif untuk kedua sisi, kurang teoretis dibanding Ruy.",
+      "viennaGame": "Mengembangkan Nc3 sebelum Nf3, menjaga pion-f bebas untuk kemungkinan serangan (f4 nanti).",
+      "kingsGambit": "Pengorbanan era romantis! Putih menawarkan pion-f untuk pengembangan cepat dan serangan ke f7. Langka tapi mendebarkan.",
+      "openGame": "Catur klasik dalam wujud terbaiknya. Harapkan permainan berbasis prinsip dan pusat.",
+      "kingsPawnGame": "Kedua sisi mengklaim ruang pusat dengan pion. Catur yang tajam dan langsung menanti.",
+      "sicilian": "Jawaban paling populer untuk 1.e4. Asimetris — Putih menyerang di sayap raja, Hitam menyerang balik di sayap menteri. Permainan tajam dan menentukan.",
+      "sicilianNajdorf": "Pembukaan bertarung terbaik. Setiap langkah kaya teori. Bersiaplah untuk permainan dinamis dan tidak seimbang.",
+      "sicilianOpenNc6": "Sisilia klasik. Harapkan perlombaan antara serangan sayap raja Putih dan serangan balik sayap menteri Hitam.",
+      "sicilianTaimanovKan": "Sisilia modern yang fleksibel. Hitam menjaga opsi terbuka untuk ekspansi ...a6, ...b5.",
+      "sicilianClosed": "Putih menghindari Sisilia Terbuka dengan Nc3. Permainan lebih lambat, lebih posisional. Hindari jika Anda menyukai taktik.",
+      "french": "Hitam membangun rantai pion seperti granit. Cari terobosan ...c5 atau ...f6 untuk membebaskan gajah kotak terang.",
+      "caroKann": "Solid dan fleksibel. ...d5 akan datang berikutnya dengan permainan balik pusat penuh.",
+      "scandinavian": "Hitam menyerang pion e4 dengan segera. Setelah Nc3 menteri dikejar — hati-hati dengan penempatannya.",
+      "pirc": "Hipermodern. Hitam mengundang Putih untuk membangun pusat besar, lalu menyerangnya dengan terobosan pion.",
+      "modern": "Mirip dengan Pirc tetapi lebih fleksibel. Hitam menunda berkomitmen pada penataan.",
+      "alekhine": "Provokatif! Hitam memancing pion Putih maju, lalu menyerangnya. Tajam dan tidak konvensional.",
+      "queensGambit": "Menawarkan pion-c untuk mengalihkan pion-d Hitam dan mendominasi pusat. Klasik, berprinsip, kelas utama.",
+      "queensGambitDeclined": "Hitam menolak pion dan membangun struktur yang solid. Pembukaan posisional yang paling khas.",
+      "queensGambitAccepted": "Hitam mengambil pion, berencana mengembalikannya untuk permainan buah yang aktif.",
+      "slav": "Mendukung pion d5 dengan ...c6. Solid, sulit diruntuhkan, menjaga gajah di c8 tetap hidup.",
+      "londonSetup": "Sistem universal Putih — Bf4 dan pengembangan stabil. Lebih sedikit teori, hasil yang andal.",
+      "london": "Solid dan mudah dipelajari. Klaim d4, kembangkan Bf4, mainkan Nf3, Nbd2, c3, e3. Fondasi yang stabil.",
+      "kingsIndian": "Klasik hipermodern. Biarkan Putih membangun pusat besar, lalu hancurkan dengan ...e5 atau ...c5. Serangan sayap raja legendaris.",
+      "nimzoIndian": "Hitam menjepit kuda dengan Bb4 dan bermain untuk menggandakan pion Putih di jalur-c. Catur strategis, kelas tinggi.",
+      "queensIndian": "Penataan berbasis fianchetto yang solid. Populer di level master karena peluang remisnya.",
+      "benoni": "Tajam, tidak seimbang, taktis. Hitam menyerahkan pusat untuk aktivitas.",
+      "indianGame": "Respons hipermodern. Tunggu untuk melihat rencana Putih sebelum berkomitmen.",
+      "dutch": "Hitam memainkan ...f5 untuk memperebutkan e4. Tajam, bermata dua. Hati-hati dengan keamanan raja!",
+      "english": "Pembukaan sayap yang fleksibel. Sering berubah bentuk menjadi struktur Gambit Menteri atau India Raja. Sulit bagi Hitam untuk bersiap melawannya.",
+      "reti": "Hipermodern — serang pusat dari sayap. Bagus jika Anda menyukai permainan posisional.",
+      "retiKia": "Fleksibel — dapat berubah bentuk menjadi Serangan India Raja atau penataan tertutup lainnya.",
+      "retiSetup": "Fleksibilitas yang tenang. Sering berubah bentuk.",
+      "larsen": "Fianchetto gajah menteri lebih awal. Tidak biasa tetapi sehat.",
+      "sokolsky": "Fianchetto Bb2 dengan b4 dilempar. Di luar kebiasaan — tangkap lawan Anda tanpa persiapan!",
+      "benko": "Sistem fianchetto yang tenang. Fleksibel, teori rendah, posisional.",
+      "generic": "Fokus pada ide — penempatan buah, terobosan pion, akhir permainan khas."
+    }
+  },
+
+  "settings": {
+    "title": "Pengaturan",
+    "board": "Papan",
+    "boardTheme": "Tema papan",
+    "theme": {
+      "royal": "Kerajaan",
+      "emerald": "Zamrud",
+      "midnight": "Batu",
+      "rose": "Mawar",
+      "ice": "Es"
+    },
+    "toggle": {
+      "coords": "Tampilkan koordinat",
+      "legal": "Sorot langkah sah",
+      "last": "Sorot langkah terakhir",
+      "sound": "Suara",
+      "animations": "Animasi"
+    },
+    "language": "Bahasa",
+    "languageSection": "Bahasa",
+    "aiCoach": "Pelatih AI",
+    "aiNote": "Kunci disimpan secara lokal di peramban Anda. Panggilan dilakukan dari peramban Anda langsung ke penyedia.",
+    "dangerZone": "Zona berbahaya",
+    "resetBtn": "Atur ulang progres & kunci",
+    "resetConfirm": "Atur ulang semua progres, kunci, dan pengaturan?",
+    "provider": {
+      "builtin": "Bawaan (heuristik luring)",
+      "anthropic": "Anthropic (Claude)",
+      "openai": "OpenAI (GPT)",
+      "openrouter": "OpenRouter (100+ model)",
+      "mistral": "Mistral AI",
+      "deepseek": "DeepSeek",
+      "xai": "xAI (Grok)",
+      "qwen": "Qwen (Alibaba)",
+      "glm": "GLM (Zhipu)",
+      "minimax": "MiniMax",
+      "ollama": "Ollama",
+      "lmstudio": "LM Studio",
+      "groupCloud": "API Cloud",
+      "groupLocal": "Lokal / di-hosting sendiri",
+      "customOption": "Kustom…"
+    },
+    "providerNote": {
+      "builtin": "Tidak perlu konfigurasi — pelatih bawaan berjalan sepenuhnya luring menggunakan heuristik lokal dan mesin bawaan.",
+      "lmstudio": "Muat model di LM Studio dan jalankan server lokalnya. Pilih salah satu preset di bawah, atau ketik pengenal model persis yang ditampilkan LM Studio di halaman servernya.",
+      "openrouter": "Satu kunci, 100+ model dari Anthropic, OpenAI, Meta, Mistral, DeepSeek, xAI, Google, dan lainnya.",
+      "glm": "Model GLM dari Zhipu AI. Endpoint default adalah wilayah Cina — ganti ke proxy jika diperlukan."
+    }
+  },
+
+  "commentator": {
+    "title": "Studio Komentator",
+    "importLede": "Tempel PGN, jatuhkan berkas, atau pilih contoh permainan di bawah untuk mulai memberi komentar.",
+    "pasteOrUpload": "Tempel atau unggah",
+    "sampleGames": "Contoh permainan",
+    "close": "Tutup pertandingan ini dan kembali ke impor",
+    "confirmClose": "Tutup pertandingan ini dan kembali ke impor?",
+    "moves": "Langkah",
+    "movesHint": "klik untuk menampilkan · disembunyikan untuk tampilan ramah-stream",
+    "badgesShow": "Tampilkan ikon mesin di papan",
+    "badgesHide": "Sembunyikan ikon mesin di papan",
+    "firstMove": "Langkah pertama (Home)",
+    "prevMove": "Sebelumnya (←)",
+    "nextMove": "Berikutnya (→)",
+    "lastMove": "Terakhir (End)",
+    "mainLine": "Kembali ke jalur utama (↑)",
+    "mainLineShort": "↩ utama",
+    "startPos": "Posisi awal. Klik ▶ atau tekan → untuk masuk ke permainan.",
+    "enginePrefers": "Mesin memilih <b>{move}</b>",
+    "engineAgrees": "Mesin setuju: pilihan utama",
+    "eval": "Eval <b>{score}</b>",
+    "sidePlayed": "{side} memainkan <b>{san}</b>",
+    "enginePrefersLabel": "Mesin memilih",
+    "engineAgreesLabel": "Mesin setuju",
+    "topChoiceShort": "pilihan utama",
+    "evalLabel": "Eval",
+    "noMatch": "Tidak ada pertandingan dimuat.",
+    "untitled": "Tanpa judul",
+    "ply": "ply {n}/{total}",
+    "variation": "(variasi)",
+    "act": {
+      "captures": "menangkap {piece}",
+      "castleK": "rokade sayap raja",
+      "castleQ": "rokade sayap menteri",
+      "promotes": "promosi menjadi {piece}",
+      "check": "memberikan sekak",
+      "checkmate": "memberikan sekakmat",
+      "and": "dan",
+      "leadIn": "Langkah {tactics}."
+    },
+    "drawTools": {
+      "select": "Pilih",
+      "erase": "Hapus",
+      "arrow": "Panah",
+      "line": "Garis",
+      "box": "Kotak",
+      "circle": "Lingkaran",
+      "pen": "Pena",
+      "text": "Teks",
+      "strokeWidth": "Lebar garis",
+      "deleteSelected": "Hapus yang dipilih (Del)",
+      "clearAll": "Bersihkan semua bentuk pada langkah ini"
+    }
+  },
+
+  "learn": {
+    "title": "Belajar Catur",
+    "lede": "Pelajaran terpandu di seluruh topik besar. Ketuk kategori untuk menyelami.",
+    "noData": "Pelajaran sedang dimuat… Jika ini berlanjut, pastikan aplikasi disajikan (bukan dibuka via file://).",
+    "successDefault": "Tepat sekali.",
+    "failDefault": "Belum tepat. Coba lagi.",
+    "play": "Mainkan langkah",
+    "next": "Berikutnya →",
+    "finish": "Selesai",
+    "completedHeader": "Pelajaran selesai",
+    "completedBody": "Anda menyelesaikan {title}. Siap untuk yang berikutnya?",
+    "backToLessons": "Kembali ke pelajaran",
+    "categoryCount": "{done}/{total}"
+  },
+
+  "puzzles": {
+    "title": "Teka-teki",
+    "lede": "Pilih tema untuk berlatih. Setiap set mengajarkan satu pola.",
+    "prompt": "Temukan langkah terbaik.",
+    "counter": "Teka-teki {n} dari {total}",
+    "correct": "✅ Benar!",
+    "wrong": "❌ Bukan langkah ini. Coba lagi.",
+    "solved": "Terpecahkan!",
+    "solvedCelebrate": "✅ Terpecahkan — kerja bagus!",
+    "noData": "Teka-teki sedang dimuat…",
+    "turnLabel": "Giliran {side}.",
+    "themeCount": "{n} teka-teki",
+    "themeCompleteHeader": "🏆 Tema selesai.",
+    "themeCompleteBody": "Anda telah menyelesaikan semua teka-teki dalam {theme}."
+  },
+
+  "coachTab": {
+    "title": "Pelatih AI",
+    "providerLabel": "Penyedia",
+    "builtin": "Bawaan",
+    "changeInSettings": "Ubah di Pengaturan",
+    "chip": {
+      "best": "Langkah terbaik?",
+      "tactics": "Taktik?",
+      "explain": "Jelaskan terakhir",
+      "plans": "Rencana"
+    },
+    "chipQuery": {
+      "best": "Apa langkah terbaik di posisi ini?",
+      "tactics": "Motif taktis apa yang ada di sini?",
+      "explain": "Jelaskan langkah terakhir saya.",
+      "plans": "Apa rencana untuk kedua belah pihak?"
+    },
+    "analyzeQuestion": "Analisis posisi saat ini.",
+    "analyzePrompt": "Berikan analisis yang jelas tentang posisi ini: fitur kunci, ancaman, langkah kandidat, dan rekomendasi dengan alasannya."
+  },
+
+  "promotion": {
+    "title": "Promosikan pion"
+  },
+
+  "review": {
+    "title": "Tinjauan Pertandingan",
+    "analyzing": "Menganalisis…",
+    "progress": "Menganalisis langkah {i} dari {total}…",
+    "engineTopChoice": "Pilihan utama mesin: <b>{san}</b>",
+    "enginePreferred": "Mesin memilih {best}.",
+    "badge": {
+      "good": "Terbaik",
+      "ok": "Ok",
+      "inaccuracy": "Tidak akurat",
+      "mistake": "Kesalahan",
+      "blunder": "Blunder"
+    },
+    "tally": {
+      "best": "Terbaik",
+      "inaccurate": "Tidak akurat",
+      "mistake": "Kesalahan",
+      "blunder": "Blunder"
+    }
+  },
+
+  "lessons": {
+    "categories": {
+      "basics":   { "name": "Dasar-dasar",   "description": "Fundamental yang harus diketahui setiap pemain catur." },
+      "openings": { "name": "Pembukaan", "description": "Mulailah setiap permainan dengan tujuan." },
+      "tactics":  { "name": "Taktik",  "description": "Pola yang memenangkan materi dan permainan." },
+      "endgames": { "name": "Akhir Permainan", "description": "Ubah posisi menang; selamatkan yang kalah." },
+      "strategy": { "name": "Strategi", "description": "Berpikir dalam rencana, bukan hanya langkah." },
+      "attack":   { "name": "Serangan",   "description": "Serangan matsemat dan perburuan raja." }
+    }
+  },
+
+  "puzzleThemes": {
+    "mate-in-1":    { "name": "Mat dalam 1",          "description": "Temukan pukulan mematikan — berikan sekakmat dalam satu langkah." },
+    "mate-in-2":    { "name": "Mat dalam 2",          "description": "Matsemat paksa dua langkah. Berpikirlah satu langkah ke depan." },
+    "forks":        { "name": "Garpu",              "description": "Serang dua buah sekaligus dan menangkan materi." },
+    "pins-skewers": { "name": "Jepitan & Tusukan",     "description": "Barisan buah musuh dan menangkan yang di belakang." },
+    "back-rank":    { "name": "Baris Belakang",          "description": "Manfaatkan raja yang terperangkap di belakang pionnya sendiri." },
+    "tactics-mix":  { "name": "Taktik Campuran",      "description": "Berbagai pola taktis — temukan langkah terbaik." },
+    "discovered":   { "name": "Serangan Tersingkap", "description": "Gerakkan satu buah, lepaskan yang lain." },
+    "endgame":      { "name": "Teknik Akhir Permainan", "description": "Ubah akhir permainan yang menang dengan bersih." }
+  }
+}

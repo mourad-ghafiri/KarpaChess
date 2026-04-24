@@ -1,0 +1,26 @@
+{
+  "id": "gruenfeld-advanced",
+  "title": "Défense Grünfeld",
+  "summary": "Un système hypermoderne de contre-attaque",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/ppp1pp1p/5np1/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4",
+      "title": "Laissez-les se surextendre",
+      "text": "La Grünfeld (1.d4 Nf6 2.c4 g6 3.Nc3 d5) est le rêve du contre-attaquant. Les Noirs laissent les Blancs bâtir un centre massif puis l'attaquent avec les pièces d'aile dame et les ruptures de pions."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/ppp1pp1p/5np1/3P4/2P5/2N5/PP2PPPP/R1BQKBNR b KQkq - 0 4",
+      "title": "La variante d'échange",
+      "text": "Après 4.cxd5 Nxd5 5.e4, le cavalier noir recule et les Blancs ont un énorme centre — mais les Noirs menacent de le détruire avec les pièces. Un test clé des échecs dynamiques : centre statique contre activité des pièces."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/ppp1pp1p/5np1/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4",
+      "title": "Thèmes classiques de la Grünfeld",
+      "text": "Plans des Noirs : fianchetto en g7, pression sur d4 avec ...c5, roque, ...Nc6, ...Bg4. Le fou fianchetto en g7 est la clé — il rayonne de puissance dans la position blanche, surtout après les effondrements ...d4."
+    }
+  ]
+}

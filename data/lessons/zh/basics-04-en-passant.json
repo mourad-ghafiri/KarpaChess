@@ -1,0 +1,25 @@
+{
+  "id": "en-passant",
+  "title": "吃过路兵",
+  "summary": "多数棋手从未学过的吃兵规则",
+  "difficulty": "beginner",
+  "steps": [
+    { "type": "teach",
+      "fen": "4k3/3p4/8/4P3/8/8/8/4K3 w - - 0 1",
+      "title": "一条隐秘规则",
+      "text": "当兵从起始线向前推进两格时,有时可被敌方兵以“经过”方式吃掉。这称为吃过路兵（en passant）——法语意为“经过时”。只在紧接的下一步有效。" },
+    { "type": "teach",
+      "fen": "rnbqkbnr/ppp1p1pp/8/3pPp2/8/8/PPPP1PPP/RNBQKBNR w KQkq f6 0 3",
+      "title": "机会",
+      "text": "黑方刚走了 ...f5,越过白方e5兵两格。如果黑兵只走一格,白兵本可以在f6吃掉它。吃过路兵规则说：你仍然可以——但只能这一回合。" },
+    { "type": "play",
+      "fen": "rnbqkbnr/ppp1p1pp/8/3pPp2/8/8/PPPP1PPP/RNBQKBNR w KQkq f6 0 3",
+      "prompt": "吃掉f5的兵（吃过路兵）。",
+      "targetSan": ["exf6"],
+      "hint": "走法是 exf6——你的兵吃掉f线兵,好像它在f6一样。" },
+    { "type": "teach",
+      "fen": "rnbqkbnr/ppp1p1pp/5P2/3p4/8/8/PPPP1PPP/RNBQKBNR b KQkq - 0 3",
+      "title": "仅限一次机会",
+      "text": "你必须在紧接的下一步使用吃过路兵,否则失去这个权利。这是最容易被遗忘的规则之一——现在你知道了。" }
+  ]
+}

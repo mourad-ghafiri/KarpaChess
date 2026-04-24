@@ -1,0 +1,26 @@
+{
+  "id": "najdorf-sicilian",
+  "title": "Sisilia Najdorf",
+  "summary": "Pembukaan paling tajam dalam catur modern",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/1p2pppp/p2p1n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6",
+      "title": "Favorit Fischer",
+      "text": "Sisilia Najdorf (5...a6) dianggap sebagai pembukaan paling tajam dan paling teoritis dalam catur. Kasparov, Fischer, dan Carlsen semua telah memainkannya di level tertinggi. Langkah ...a6 memiliki banyak tujuan: mencegah ikatan Bb5+, menyiapkan ...e5 atau ...b5, dan menciptakan fleksibilitas."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/1p2pppp/p2p1n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6",
+      "title": "Variasi Utama",
+      "text": "Putih memiliki banyak pilihan ambisius: 6.Be3 (Serangan Inggris — saling menyerang), 6.Bg5 (pion beracun klasik), 6.Bc4 (Fischer-Sozin), 6.Be2 (gaya Scheveningen). Masing-masing mengarah ke pertempuran berbeda yang sangat dianalisis. Siapkan teori mendalam atau hindari."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/1p2pppp/p2p1n2/6B1/3NP3/2N5/PPP2PPP/R2QKB1R b KQkq - 1 6",
+      "title": "Pion Beracun",
+      "text": "Variasi terkenal 6.Bg5 e6 7.f4 Qb6!? mengundang Putih untuk mempertahankan pion b2. Menteri Hitam melakukan serangan rakus sementara Putih membangun serangan besar. Bukan untuk yang lemah hati — salah satu variasi paling banyak dianalisis di seluruh catur."
+    }
+  ]
+}

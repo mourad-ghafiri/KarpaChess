@@ -10,8 +10,9 @@
  * go through GameState, and sound/particles/toast happen via services.
  */
 import * as Chess from '../engine/chess.js';
-import { EVENTS, MODE_IDS, DIFFICULTY_NAMES } from '../core/constants.js';
+import { EVENTS, MODE_IDS } from '../core/constants.js';
 import { $, $$ } from '../core/dom.js';
+import { i18n } from '../core/i18n.js';
 
 export class PracticeController {
   constructor({ gameState, boardView, clock, bus, prefs, modals, promotion, hint,
@@ -162,19 +163,19 @@ export class PracticeController {
     let icon = '🏁', title = '', sub = '';
 
     if (status.result === 'checkmate') {
-      title = 'Checkmate!';
-      sub = (status.winner === 'w' ? 'White' : 'Black') + ' wins';
+      title = i18n.t('game.result.checkmate');
+      sub = i18n.t(status.winner === 'w' ? 'game.resultSub.whiteWins' : 'game.resultSub.blackWins');
       if (userWon)      { icon = '🏆'; this.sound.win(); this.particles.fireworks(); }
       else if (userLost) { icon = '🫡'; this.sound.lose(); }
     } else if (status.result === 'stalemate') {
-      icon = '🤝'; title = 'Stalemate'; sub = 'Draw by stalemate'; this.sound.bad();
+      icon = '🤝'; title = i18n.t('game.result.stalemate'); sub = i18n.t('game.resultSub.stalemate'); this.sound.bad();
     } else if (status.result === 'draw-50') {
-      icon = '🤝'; title = 'Draw'; sub = '50-move rule';
+      icon = '🤝'; title = i18n.t('game.result.draw'); sub = i18n.t('game.resultSub.fiftyMove');
     } else if (status.result === 'draw-material') {
-      icon = '🤝'; title = 'Draw'; sub = 'Insufficient material';
+      icon = '🤝'; title = i18n.t('game.result.draw'); sub = i18n.t('game.resultSub.insufficient');
     } else if (status.result === 'time') {
-      icon = '⏱'; title = 'Time out';
-      sub = (status.winner === 'w' ? 'White' : 'Black') + ' wins on time';
+      icon = '⏱'; title = i18n.t('game.result.timeout');
+      sub = i18n.t(status.winner === 'w' ? 'game.resultSub.whiteWinsTime' : 'game.resultSub.blackWinsTime');
     }
 
     const shown = this.banner.show({ icon, title, sub });
@@ -199,7 +200,7 @@ export class PracticeController {
     this.gameState.setPlayAs(this.prefs.get('playAs'));
     this.banner.hide();
     this.hint.dismiss();
-    this.coachWhisper.reset('New game! Good luck — make the first move.');
+    this.coachWhisper.reset(i18n.t('coach.whisper.newGame'));
     this.clock.setControl(this.prefs.get('timeControl'));
     // If user plays Black, engine moves first.
     if (this.gameState.playAs === 'b') setTimeout(() => this.#engineMove(), 500);
@@ -253,7 +254,7 @@ export class PracticeController {
     $('#btn-hint').addEventListener('click', () => {
       const mode = this.modeRegistry.get(this.gameState.mode);
       if (!mode || !mode.canUserMove(this.gameState, this.gameState.getTurn())) {
-        this.bus.emit(EVENTS.TOAST, { message: 'Not your turn.', kind: 'info' });
+        this.bus.emit(EVENTS.TOAST, { message: i18n.t('ui.toast.notYourTurn'), kind: 'info' });
         return;
       }
       this.hint.show();

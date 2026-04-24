@@ -1,0 +1,38 @@
+{
+  "id": "back-rank-mate",
+  "title": "Mate de la Última Fila",
+  "summary": "Explota al rey atrapado tras sus propios peones",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "6k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
+      "title": "El Patrón Clásico",
+      "text": "Un rey enrocado suele estar seguro — salvo que sus casillas de escape estén bloqueadas por sus propios peones. Una torre o dama en la octava fila se vuelve imparable."
+    },
+    {
+      "type": "play",
+      "fen": "6k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
+      "prompt": "Da mate en la última fila.",
+      "targetSan": [
+        "Ra8#"
+      ],
+      "hint": "El muro de peones es también un muro de prisión."
+    },
+    {
+      "type": "teach",
+      "fen": "3r2k1/5ppp/8/8/8/8/5PPP/3R2K1 w - - 0 1",
+      "title": "Cambiar y Dar Mate",
+      "text": "Cuando ambos bandos tienen debilidad en la última fila, gana el que golpea primero. Cambia al defensor para despejar el camino."
+    },
+    {
+      "type": "play",
+      "fen": "3r2k1/5ppp/8/8/8/8/5PPP/3R2K1 w - - 0 1",
+      "prompt": "Cambia torres y da mate.",
+      "targetSan": [
+        "Rxd8#"
+      ],
+      "hint": "Tras el cambio, las Negras no tienen defensor."
+    }
+  ]
+}

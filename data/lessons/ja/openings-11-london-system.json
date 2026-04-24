@@ -1,0 +1,38 @@
+{
+  "id": "london-system",
+  "title": "ロンドンシステム",
+  "summary": "万能システム — 毎回同じセットアップ",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "なぜロンドン?",
+      "text": "ロンドンシステムは「万能」オープニングです。白は黒の応手にかかわらず同じセットアップを指します。初心者に最適で、定跡が少なく、頼れるパターンが多いのが特徴です。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "1.d4。",
+      "targetSan": [
+        "d4"
+      ],
+      "hint": "クイーンのポーンを2マス。"
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2",
+      "prompt": "黒マスのビショップを展開しましょう。2.Bf4。",
+      "targetSan": [
+        "Bf4"
+      ],
+      "hint": "ビショップはe3の前に出します。そうすれば自分のポーンに塞がれません。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/pppppppp/5n2/8/3P1B2/8/PPP1PPPP/RNBQKBNR b KQkq - 2 2",
+      "title": "完成形",
+      "text": "ロンドンの完成レシピは d4、Bf4、Nf3、e3、c3、Nbd2、Bd3、0-0。堅実でほぼ対称、崩すのが難しい。マグヌス・カールセンも世界選手権で使用しています。"
+    }
+  ]
+}

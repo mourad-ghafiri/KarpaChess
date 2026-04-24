@@ -1,0 +1,30 @@
+{
+  "id": "castling",
+  "title": "Enroque",
+  "summary": "Mueve rey y torre en un solo paso",
+  "difficulty": "beginner",
+  "steps": [
+    { "type": "teach",
+      "fen": "r3k2r/pppq1ppp/2n1pn2/3p4/3P4/2N1PN2/PPPQ1PPP/R3K2R w KQkq - 0 1",
+      "title": "¿Qué es el Enroque?",
+      "text": "El enroque es la única jugada en el ajedrez donde DOS piezas se mueven a la vez: tu rey y una torre. Es la forma más rápida de poner al rey a salvo Y activar una torre. Puedes enrocar al flanco de rey (corto) o al flanco de dama (largo)." },
+    { "type": "teach",
+      "fen": "r3k2r/pppq1ppp/2n1pn2/3p4/3P4/2N1PN2/PPPQ1PPP/R3K2R w KQkq - 0 1",
+      "title": "Las Reglas",
+      "text": "Para enrocar: (1) ni el rey ni esa torre se han movido, (2) no hay piezas entre ellos, (3) el rey no está en jaque, y (4) el rey no pasa por ni llega a una casilla atacada." },
+    { "type": "play",
+      "fen": "r3k2r/pppq1ppp/2n1pn2/3p4/3P4/2N1PN2/PPPQ1PPP/R3K2R w KQkq - 0 1",
+      "prompt": "Enroca corto (enroque al flanco de rey).",
+      "targetSan": ["O-O"],
+      "hint": "En la mayoría de las interfaces de ajedrez solo mueves el rey dos casillas hacia la torre." },
+    { "type": "play",
+      "fen": "r3k2r/pppq1ppp/2n1pn2/3p4/3P4/2N1PN2/PPPQ1PPP/R3K2R b KQkq - 0 1",
+      "prompt": "Ahora las Negras enrocan largo (enroque al flanco de dama).",
+      "targetSan": ["O-O-O"],
+      "hint": "Mueve el rey dos casillas hacia la torre de la columna a." },
+    { "type": "teach",
+      "fen": "2kr3r/pppq1ppp/2n1pn2/3p4/3P4/2N1PN2/PPPQ1PPP/R4RK1 w - - 0 1",
+      "title": "¡Listo!",
+      "text": "Ambos reyes están seguros y ambas torres de la columna a están conectadas con la otra torre. Enrocar temprano es uno de los hábitos más importantes en ajedrez — procura hacerlo en la jugada 10 en la mayoría de las partidas." }
+  ]
+}

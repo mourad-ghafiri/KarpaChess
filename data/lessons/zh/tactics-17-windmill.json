@@ -1,0 +1,20 @@
+{
+  "id": "windmill",
+  "title": "风车战术",
+  "summary": "具毁灭性的连续闪将组合",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1b1k2r/pp3ppp/1qn1p3/3pn3/8/1P2PN2/PB1N1PPP/R2QKB1R w KQkq - 0 1",
+      "title": "风车模式",
+      "text": "风车是一连串闪将,让你可以一个接一个地吃子。最著名的例子是 1925 年托雷对拉斯克——托雷的象和车联手收割了拉斯克的全军。"
+    },
+    {
+      "type": "teach",
+      "fen": "r1b1k2r/pp3ppp/1qn1p3/3pn3/8/1P2PN2/PB1N1PPP/R2QKB1R w KQkq - 0 1",
+      "title": "如何运作",
+      "text": "关键设置:你的车或后将军,你的象或马出去再回来(每次都是闪将),每一轮都吃掉一个无防守的敌子。敌王无法阻止——他每步都在被将。"
+    }
+  ]
+}

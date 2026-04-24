@@ -1,0 +1,27 @@
+{
+  "id": "the-skewer",
+  "title": "L'enfilade",
+  "summary": "Comme un clouage — mais à l'envers",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "8/8/3q4/8/8/3k4/8/R6K w - - 0 1",
+      "title": "L'enfilade",
+      "text": "Une enfilade est l'image miroir d'un clouage. Vous attaquez une pièce de valeur qui DOIT bouger — et quand elle le fait, une pièce de moindre valeur derrière elle est exposée. Le plus souvent, le roi est la pièce enfilée : il doit sortir de l'échec, abandonnant ce qui était derrière lui."
+    },
+    {
+      "type": "play",
+      "fen": "8/8/3q4/8/8/3k4/8/R6K w - - 0 1",
+      "prompt": "Amenez votre tour sur la colonne d pour enfiler roi et dame.",
+      "targetSan": ["Rd1+"],
+      "hint": "Rd1 donne échec — la dame sera la suivante."
+    },
+    {
+      "type": "teach",
+      "fen": "8/8/8/3q4/8/3k4/8/3R3K w - - 0 1",
+      "title": "Ramassez le prix",
+      "text": "Après Rd1+, le roi doit bouger. La dame est perdue au coup suivant. Voilà pourquoi les enfilades sont si puissantes sur les colonnes et diagonales ouvertes — même une tour bien placée peut abattre une dame."
+    }
+  ]
+}

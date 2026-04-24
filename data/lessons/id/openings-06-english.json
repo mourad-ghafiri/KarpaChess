@@ -1,0 +1,21 @@
+{
+  "id": "english",
+  "title": "Pembukaan Inggris",
+  "summary": "Permainan sayap yang fleksibel",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Kuasai Pusat dari Sayap",
+      "text": "Pembukaan Inggris (1.c4) adalah pembukaan fleksibel yang dijuarai pemain top. Alih-alih bergegas mendorong d4, Putih menyiapkannya dengan dukungan pion c dan mengembangkan bidak lebih dulu. Permainan sering beralih ke Gambit Menteri atau struktur Indian." },
+    { "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "Mainkan Pembukaan Inggris.",
+      "targetSan": ["c4"],
+      "hint": "1.c4 — Pembukaan Inggris." },
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/2P5/8/PP1PPPPP/RNBQKBNR b KQkq - 0 1",
+      "title": "Lanjutan Fleksibel",
+      "text": "Tergantung balasan Hitam, Putih dapat bermain d4 (beralih ke Gambit Menteri), Nc3 + g3 (gaya Botvinnik posisional), atau e3 (fleksibel). Pembukaan Inggris pilihan bagus jika Anda tidak suka menghafal teori tajam." }
+  ]
+}

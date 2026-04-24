@@ -1,0 +1,10 @@
+{
+  "id": "forks-01",
+  "fen": "8/8/2k5/3q4/8/8/2N1K3/8 w - - 0 1",
+  "solution": [
+    "Nb4+",
+    "Kb6",
+    "Nxd5"
+  ],
+  "hint": "Une fourchette royale attaque à la fois le roi et la dame."
+}

@@ -1,0 +1,38 @@
+{
+  "id": "back-rank-mate",
+  "title": "底线杀",
+  "summary": "利用被兵困在底线的王",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "6k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
+      "title": "经典模式",
+      "text": "易位后的王通常是安全的——除非他的逃跑格被自己的兵挡死。此时第 8 横线上的车或后就不可阻挡。"
+    },
+    {
+      "type": "play",
+      "fen": "6k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
+      "prompt": "送上底线杀。",
+      "targetSan": [
+        "Ra8#"
+      ],
+      "hint": "兵墙同时也是囚墙。"
+    },
+    {
+      "type": "teach",
+      "fen": "3r2k1/5ppp/8/8/8/8/5PPP/3R2K1 w - - 0 1",
+      "title": "交换并杀王",
+      "text": "当双方都有底线弱点时,先出手的一方获胜。兑掉防守者以清理道路。"
+    },
+    {
+      "type": "play",
+      "fen": "3r2k1/5ppp/8/8/8/8/5PPP/3R2K1 w - - 0 1",
+      "prompt": "车交换后将死。",
+      "targetSan": [
+        "Rxd8#"
+      ],
+      "hint": "交换后,黑方已无防守者。"
+    }
+  ]
+}

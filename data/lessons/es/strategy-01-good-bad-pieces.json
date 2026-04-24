@@ -1,0 +1,16 @@
+{
+  "id": "good-bad-pieces",
+  "title": "Piezas Buenas y Malas",
+  "summary": "La actividad importa más que el conteo bruto de piezas",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "No Todos los Alfiles son Iguales",
+      "text": "Un alfil bloqueado por sus propios peones en el mismo color es un 'alfil malo' — estrecho e ineficaz. Un alfil con diagonales abiertas es un 'alfil bueno' — potencia de largo alcance. Lo mismo vale para cada pieza: lo que hace importa más que lo que es." },
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Mejora tu Peor Pieza",
+      "text": "Un principio útil del gran maestro Makagonov: 'cada jugada, mejora tu pieza peor colocada'. Antes de atacar, asegúrate de que tus piezas más lentas estén haciendo algo. Las jugadas tranquilas que mejoran la coordinación de piezas ganan partidas con frecuencia." }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "opposite-castles",
+  "title": "異側キャスリングの攻撃",
+  "summary": "ポーンで敵キングめがけて走れ",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bqk2r/ppp2ppp/2npbn2/4p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 b kq - 0 6",
+      "title": "ポーンストーム",
+      "text": "あなたがキングサイドに、相手がクイーンサイドにキャスリングしたとき、自分のキングを弱めずにポーンで攻撃できます。h4、g4、Nf5、h5、hxg6と突き進む、ポーンストームの攻撃です。"
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqk2r/ppp2ppp/2npbn2/4p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 b kq - 0 6",
+      "title": "速さが肝心",
+      "text": "異側キャスリングは競走を生みます。両者が互いのキングを攻撃します。先にラインを開けた方が勝つのが常です。テンポを数えましょう、一手一手が肝心です。「異側キャスリングは20手以内のメイトを意味する — どちらかへの」。"
+    }
+  ]
+}

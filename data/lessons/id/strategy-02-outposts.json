@@ -1,0 +1,16 @@
+{
+  "id": "outposts",
+  "title": "Pos Terdepan",
+  "summary": "Kotak yang tidak bisa disentuh pion musuh",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Kotak Impian",
+      "text": "Pos terdepan adalah kotak di paruh papan lawan yang tidak bisa diserang pion musuh. Ketika kuda atau gajah mendarat di sana, ia praktis tidak dapat digerakkan. Kuda di d5 atau e5 di depan rantai pion Hitam adalah penguasa babak akhir." },
+    { "type": "teach",
+      "fen": "rnbqkb1r/pppp1ppp/5n2/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+      "title": "Cara Menciptakannya",
+      "text": "Pos terdepan muncul ketika lawan melemahkan struktur pionnya — sering dengan mendorong pion sayap atau melakukan tangkapan yang janggal. Jangan terburu-buru menukar bidak yang lawan ingin tukar — mungkin mereka mencoba meredakan tekanan dari pos terdepan di masa depan." }
+  ]
+}

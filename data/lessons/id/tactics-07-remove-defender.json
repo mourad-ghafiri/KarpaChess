@@ -1,0 +1,21 @@
+{
+  "id": "remove-the-defender",
+  "title": "Singkirkan Pembela",
+  "summary": "Hilangkan bidak yang menyatukan posisi mereka",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "5rk1/R4ppp/8/8/8/8/5PPP/6K1 w - - 0 1",
+      "title": "Pembela Kunci",
+      "text": "Banyak taktik gagal karena satu bidak musuh mempertahankan segalanya. Solusinya: singkirkan atau tukar. Di sini benteng Hitam di f8 mempertahankan baris belakang. Jika Putih mengambil pion f7, benteng dialihkan dan raja telanjang." },
+    { "type": "play",
+      "fen": "5rk1/R4ppp/8/8/8/8/5PPP/6K1 w - - 0 1",
+      "prompt": "Ambil pion f7 — itu memaksa Hitam untuk bereaksi.",
+      "targetSan": ["Rxf7"],
+      "hint": "Rxf7 menyingkirkan pembela baris belakang." },
+    { "type": "teach",
+      "fen": "5rk1/5Rpp/8/8/8/8/5PPP/6K1 b - - 0 1",
+      "title": "Yang Terjadi Setelahnya",
+      "text": "Sekarang Hitam harus menangani benteng di f7. Jika Hitam menukar dengan ...Rxf7, baris belakang masih lemah. Selalu tanyakan: 'Apa yang menyatukan posisi mereka?' Jawabannya biasanya satu bidak spesifik." }
+  ]
+}

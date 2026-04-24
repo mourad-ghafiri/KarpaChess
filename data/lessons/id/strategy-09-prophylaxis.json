@@ -1,0 +1,20 @@
+{
+  "id": "prophylaxis",
+  "title": "Profilaksis",
+  "summary": "Cegah sebelum menyerang",
+  "difficulty": "advanced",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "Ide Nimzowitsch",
+      "text": "Profilaksis (dari Nimzowitsch): buat langkah yang MENCEGAH apa yang ingin dilakukan lawan. Sebelum rencana Anda sendiri, netralkan rencana mereka. Karpov adalah sang master modern — ia memainkan langkah \"kosong\" yang diam-diam membunuh setiap harapan."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "Cara Mengenalinya",
+      "text": "Sebelum langkah Anda, tanyakan: \"Jika ini giliran lawan, apa langkah terbaik mereka?\" Lalu cegah itu. Langkah profilaksis tidak menyerang — ia menolak kemungkinan."
+    }
+  ]
+}

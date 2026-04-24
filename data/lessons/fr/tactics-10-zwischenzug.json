@@ -1,0 +1,16 @@
+{
+  "id": "zwischenzug",
+  "title": "Le coup intermédiaire",
+  "summary": "Insérer une menace plus forte avant la reprise évidente",
+  "difficulty": "advanced",
+  "steps": [
+    { "type": "teach",
+      "fen": "r1bqkbnr/ppp2ppp/2np4/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 4",
+      "title": "Ne réagissez pas juste",
+      "text": "Un zwischenzug ('coup intermédiaire', de l'allemand) est un coup surprenant inséré dans une séquence attendue — généralement un échec ou une menace plus grande — qui modifie la position avant que le coup évident ne soit joué. C'est la marque d'une forte vision tactique." },
+    { "type": "teach",
+      "fen": "r1bqkbnr/ppp2ppp/2np4/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 4",
+      "title": "Exemple de motif",
+      "text": "Quand votre adversaire capture quelque chose à vous, votre réflexe est de reprendre. Mais parfois un zwischenzug — un échec ailleurs, ou une menace plus grande — gagne plus de matériel. Demandez-vous toujours : avant de reprendre, y a-t-il quelque chose de MIEUX ? Même un seul échec intermédiaire peut gagner la partie." }
+  ]
+}

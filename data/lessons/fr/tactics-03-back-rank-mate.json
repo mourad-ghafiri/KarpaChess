@@ -1,0 +1,38 @@
+{
+  "id": "back-rank-mate",
+  "title": "Mat du couloir",
+  "summary": "Exploiter le roi piégé derrière ses pions",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "6k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
+      "title": "Le motif classique",
+      "text": "Un roi roqué est généralement en sécurité — sauf si ses cases d'évasion sont bloquées par ses propres pions. Une tour ou une dame sur la 8e rangée devient inarrêtable."
+    },
+    {
+      "type": "play",
+      "fen": "6k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
+      "prompt": "Donnez le mat du couloir.",
+      "targetSan": [
+        "Ra8#"
+      ],
+      "hint": "Le mur de pions est aussi le mur de la prison."
+    },
+    {
+      "type": "teach",
+      "fen": "3r2k1/5ppp/8/8/8/8/5PPP/3R2K1 w - - 0 1",
+      "title": "Échange et mat",
+      "text": "Quand les deux camps ont une faiblesse sur la dernière rangée, celui qui frappe en premier gagne. Échangez le défenseur pour dégager la voie."
+    },
+    {
+      "type": "play",
+      "fen": "3r2k1/5ppp/8/8/8/8/5PPP/3R2K1 w - - 0 1",
+      "prompt": "Échangez les tours pour mater.",
+      "targetSan": [
+        "Rxd8#"
+      ],
+      "hint": "Après l'échange, les Noirs n'ont plus de défenseur."
+    }
+  ]
+}

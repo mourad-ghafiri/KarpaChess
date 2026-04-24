@@ -1,0 +1,20 @@
+{
+  "id": "lucena-position",
+  "title": "Posición de Lucena",
+  "summary": "La técnica ganadora en finales de torre",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "3K4/3P1k2/8/8/8/8/1R6/6r1 w - - 0 1",
+      "title": "Construyendo un Puente",
+      "text": "La Posición de Lucena es la compañera de Philidor — la técnica GANADORA cuando el rey del bando fuerte ha escapado delante del peón. La técnica del \"Puente\" usa la torre para resguardar al rey de los jaques."
+    },
+    {
+      "type": "teach",
+      "fen": "3K4/3P1k2/8/8/8/8/1R6/6r1 w - - 0 1",
+      "title": "El Puente",
+      "text": "Método: coloca tu torre en la cuarta fila. Cuando la torre enemiga dé jaque desde el lado, tu torre se interpone — construyendo el \"puente\" por el cual tu rey cruza. Junto con Philidor, estas dos posiciones cubren la mayoría de los finales de torre."
+    }
+  ]
+}

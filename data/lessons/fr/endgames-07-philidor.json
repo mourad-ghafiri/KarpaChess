@@ -1,0 +1,20 @@
+{
+  "id": "philidor-position",
+  "title": "Position de Philidor",
+  "summary": "Technique défensive dans les finales de tours",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "2k5/2p5/8/2K5/R7/8/8/r7 w - - 0 1",
+      "title": "La forteresse de nulle",
+      "text": "La position de Philidor est une technique DÉFENSIVE dans les finales de tours. Quand le roi du camp fort est deux rangées devant le pion, la tour du défenseur va sur la troisième rangée du côté du pion. Empêche le roi d'avancer."
+    },
+    {
+      "type": "teach",
+      "fen": "2k5/2p5/8/2K5/R7/8/8/r7 w - - 0 1",
+      "title": "La défense de la 3e rangée",
+      "text": "La tour noire sur la 3e rangée coupe le roi blanc. Une fois que les Blancs poussent le pion, la tour noire bascule derrière pour donner échec de l'autre côté. C'est la technique de nulle la plus importante dans les finales de tours."
+    }
+  ]
+}

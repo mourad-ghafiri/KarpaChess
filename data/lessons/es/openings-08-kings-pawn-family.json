@@ -1,0 +1,29 @@
+{
+  "id": "kings-pawn-family",
+  "title": "1.e4 — El Peón Rey",
+  "summary": "Panorama de toda respuesta mayor a 1.e4",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+      "title": "La Apertura Romántica",
+      "text": "1.e4 abre líneas para la dama y el alfil y lucha por el centro con un peón. Es aguda, táctica y la primera jugada más popular de la historia del ajedrez."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+      "title": "Respuestas Principales de las Negras",
+      "text": "Las Negras tienen varias respuestas serias: 1...e5 (clásica, simétrica), 1...c5 (Siciliana, asimétrica), 1...e6 (Francesa), 1...c6 (Caro-Kann), 1...d5 (Escandinava). Cada una lleva a una partida distinta."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+      "prompt": "Responde a 1.e4 con la jugada clásica.",
+      "targetSan": [
+        "e5"
+      ],
+      "hint": "1...e5 refleja la reivindicación del centro por las Blancas."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "demolition",
+  "title": "破坏防线",
+  "summary": "炸开对方的阵地",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "炸开外壳的弃子",
+      "text": "有时到达对方王的唯一办法就是炸开兵的护盾。希腊式献礼(Bxh7+)、Nxf7 弃子,以及在 c3/c6 的兑换弃子都是经典的破坏模式。"
+    },
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
+      "title": "何时破坏",
+      "text": "弃子奏效的条件:(1) 你有进攻子力可以跟进,(2) 敌王没有逃跑格,(3) 防守方来不及支援。落子前计算 4-6 步深度。"
+    }
+  ]
+}

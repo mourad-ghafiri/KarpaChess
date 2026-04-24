@@ -1,0 +1,29 @@
+{
+  "id": "remove-the-defender",
+  "title": "排除防守者",
+  "summary": "拿掉维系对方阵地的那个子",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "5rk1/R4ppp/8/8/8/8/5PPP/6K1 w - - 0 1",
+      "title": "关键的防守者",
+      "text": "许多战术失败是因为对方一个子守着一切。办法是:移走或换掉它。这里黑方 f8 的车防守底线。如果白方吃 f7 兵,车就被调离,王就裸露了。"
+    },
+    {
+      "type": "play",
+      "fen": "5rk1/R4ppp/8/8/8/8/5PPP/6K1 w - - 0 1",
+      "prompt": "吃 f7 兵——迫使黑方应付。",
+      "targetSan": [
+        "Rxf7"
+      ],
+      "hint": "Rxf7 排除了底线防守者。"
+    },
+    {
+      "type": "teach",
+      "fen": "5rk1/5Rpp/8/8/8/8/5PPP/6K1 b - - 0 1",
+      "title": "接下来会怎样",
+      "text": "现在黑方必须应对 f7 的车。如果黑方 ...Rxf7 交换,底线依旧薄弱。始终要问:\"是什么维系着他们的阵地?\" 答案通常是某一个具体的子。"
+    }
+  ]
+}

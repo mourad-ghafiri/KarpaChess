@@ -1,0 +1,38 @@
+{
+  "id": "london-system",
+  "title": "Le système de Londres",
+  "summary": "Le système universel — même mise en place, à chaque fois",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Pourquoi jouer Londres ?",
+      "text": "Le système de Londres est une ouverture \"universelle\" — les Blancs jouent la même mise en place quelle que soit la réponse des Noirs. Idéal pour les débutants : moins de théorie, des motifs plus fiables."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "1.d4",
+      "targetSan": [
+        "d4"
+      ],
+      "hint": "Pion dame de deux cases."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2",
+      "prompt": "Développez le fou de cases foncées : 2.Bf4",
+      "targetSan": [
+        "Bf4"
+      ],
+      "hint": "Le fou sort AVANT e3, pour ne pas être bloqué par ses propres pions."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkb1r/pppppppp/5n2/8/3P1B2/8/PPP1PPPP/RNBQKBNR b KQkq - 2 2",
+      "title": "Le dispositif complet",
+      "text": "La recette complète de Londres : d4, Bf4, Nf3, e3, c3, Nbd2, Bd3, 0-0. Solide, quasi symétrique, difficile à briser. Magnus Carlsen l'a utilisée dans les matchs du championnat du monde."
+    }
+  ]
+}

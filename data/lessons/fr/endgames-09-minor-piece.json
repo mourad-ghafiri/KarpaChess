@@ -1,0 +1,20 @@
+{
+  "id": "minor-piece-endings",
+  "title": "Finales fou contre cavalier",
+  "summary": "Quelle pièce mineure est la meilleure ?",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "4k3/8/8/8/8/3N4/8/4K3 w - - 0 1",
+      "title": "Position ouverte ou fermée",
+      "text": "Dans les positions OUVERTES avec des pions sur les deux ailes, le fou est généralement meilleur — ses longues diagonales atteignent partout. Dans les positions FERMÉES avec des pions fixés, le cavalier est généralement meilleur — il peut sauter par-dessus."
+    },
+    {
+      "type": "teach",
+      "fen": "4k3/8/8/8/8/4B3/8/4K3 w - - 0 1",
+      "title": "Le dicton de Fischer",
+      "text": "Bobby Fischer disait célèbrement que \"le fou est plus fort\" — mais seulement dans les positions simplifiées. La vérité : sachez quel type de position favorise chaque pièce, et cherchez à échanger vers celle qui favorise VOTRE pièce."
+    }
+  ]
+}

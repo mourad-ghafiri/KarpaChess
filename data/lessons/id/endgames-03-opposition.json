@@ -1,0 +1,21 @@
+{
+  "id": "opposition",
+  "title": "Oposisi",
+  "summary": "Konsep babak akhir yang paling penting",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "4k3/8/4K3/8/8/8/8/8 w - - 0 1",
+      "title": "Berhadapan",
+      "text": "Dua raja saling berhadapan dengan satu kotak di antara mereka. Pihak yang TIDAK bergerak memiliki oposisi — raja lainnya harus menyingkir. Dalam babak akhir raja-dan-pion, memiliki oposisi sering menentukan permainan." },
+    { "type": "teach",
+      "fen": "4k3/8/4K3/4P3/8/8/8/8 w - - 0 1",
+      "title": "Dengan Pion",
+      "text": "Di sini Putih memiliki pion ekstra dan ingin mempromosikannya. Untuk menang, raja Putih harus MENDAHULUI pion dengan oposisi. Aturannya: 'raja di depan, pion di belakang.'" },
+    { "type": "play",
+      "fen": "4k3/8/4K3/4P3/8/8/8/8 w - - 0 1",
+      "prompt": "Melangkah untuk mengambil oposisi.",
+      "targetSan": ["Kd6", "Kf6"],
+      "hint": "Kd6 atau Kf6 keduanya merebut oposisi dan menang." }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "kings-indian-attack",
+  "title": "Serangan King's Indian",
+  "summary": "King's Indian terbalik — sistem untuk Putih",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Senjata yang Fleksibel",
+      "text": "Serangan King's Indian (KIA) adalah Pertahanan King's Indian yang dimainkan oleh Putih. Fianchetto gajah raja, rokade cepat, lalu ekspansi dengan e4/e5. Digunakan Bobby Fischer dengan efek mematikan."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "prompt": "Mulai dengan 1.Nf3",
+      "targetSan": [
+        "Nf3"
+      ],
+      "hint": "Langkah pertama yang fleksibel."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/8/5N2/PPPPPPPP/RNBQKB1R w KQkq - 0 2",
+      "prompt": "Sekarang fianchetto: 2.g3",
+      "targetSan": [
+        "g3"
+      ],
+      "hint": "Siapkan diagonal panjang untuk gajah."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/8/5NP1/PPPPPP1P/RNBQKB1R b KQkq - 0 2",
+      "title": "Struktur KIA",
+      "text": "Selanjutnya: Bg2, 0-0, d3, Nbd2, e4. Anda akan mendapatkan benteng sisi raja yang kokoh dan pegas yang siap meledak dengan e5. Ideal jika Anda ingin SATU pembukaan melawan segalanya."
+    }
+  ]
+}

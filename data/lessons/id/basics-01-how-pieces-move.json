@@ -1,0 +1,69 @@
+{
+  "id": "how-pieces-move",
+  "title": "Bagaimana Bidak Bergerak",
+  "summary": "Kenali setiap bidak di papan",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+      "title": "Selamat Datang",
+      "text": "Catur dimainkan di 64 kotak dengan 16 bidak per sisi. Putih selalu jalan lebih dulu. Anda akan mengenal setiap bidak satu per satu — pion, kuda, gajah, benteng, menteri, dan raja."
+    },
+    {
+      "type": "teach",
+      "fen": "8/8/8/8/8/8/4P3/4K3 w - - 0 1",
+      "title": "Pion",
+      "text": "Pion melangkah maju satu kotak setiap kali — atau dua kotak pada langkah pertamanya. Mereka memakan secara diagonal. Pion yang mencapai sisi seberang dipromosikan menjadi bidak apa pun yang Anda pilih. Kecil, tetapi menentukan."
+    },
+    {
+      "type": "play",
+      "fen": "8/8/8/8/8/8/4P3/4K3 w - - 0 1",
+      "prompt": "Dorong pion dua kotak ke depan untuk menguasai pusat.",
+      "targetSan": [
+        "e4"
+      ],
+      "hint": "Pada langkah pertamanya, pion boleh lompat dua kotak. Coba e4."
+    },
+    {
+      "type": "teach",
+      "fen": "8/8/8/8/8/8/8/4K2N w - - 0 1",
+      "title": "Kuda",
+      "text": "Kuda melompat dalam bentuk huruf L — dua kotak ke satu arah, lalu satu kotak ke arah sudut siku-siku. Mereka satu-satunya bidak yang bisa melompati bidak lain. Sulit dilihat, mematikan di tempat yang tepat."
+    },
+    {
+      "type": "play",
+      "fen": "8/8/8/8/8/8/8/4K2N w - - 0 1",
+      "prompt": "Kembangkan kuda ke arah pusat. Mainkan Nf3 atau Ng3.",
+      "targetSan": [
+        "Nf2",
+        "Ng3"
+      ],
+      "hint": "Kuda di h1 bisa mencapai f2 atau g3."
+    },
+    {
+      "type": "teach",
+      "fen": "8/8/8/8/8/8/8/2B1K3 w - - 0 1",
+      "title": "Gajah",
+      "text": "Gajah meluncur di sepanjang diagonal sejauh yang mereka inginkan. Setiap gajah tetap pada satu warna selamanya — satu menguasai kotak terang, yang lain kotak gelap. Mereka menyukai posisi terbuka."
+    },
+    {
+      "type": "teach",
+      "fen": "8/8/8/8/8/8/8/R3K3 w - - 0 1",
+      "title": "Benteng",
+      "text": "Benteng bergerak dalam garis lurus — sepanjang baris dan kolom. Mereka menjadi monster di babak akhir dan menyukai kolom terbuka."
+    },
+    {
+      "type": "teach",
+      "fen": "8/8/8/8/8/8/8/3QK3 w - - 0 1",
+      "title": "Menteri",
+      "text": "Menteri menggabungkan benteng dan gajah — bergerak sejauh apa pun sepanjang baris, kolom, atau diagonal. Dia adalah bidak paling kuat. Jangan keluarkan terlalu awal; dia bisa dikejar."
+    },
+    {
+      "type": "teach",
+      "fen": "8/8/8/8/8/8/8/4K3 w - - 0 1",
+      "title": "Raja",
+      "text": "Raja melangkah satu kotak ke arah mana pun. Lindungi dia dengan segala cara — jika dia diskakmat, permainan berakhir. Di babak akhir, aktifkan dia: dia bernilai sekitar tiga pion dalam serangan."
+    }
+  ]
+}

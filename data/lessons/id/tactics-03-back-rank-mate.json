@@ -1,0 +1,38 @@
+{
+  "id": "back-rank-mate",
+  "title": "Skakmat Baris Belakang",
+  "summary": "Eksploitasi raja yang terjebak di belakang pionnya",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "6k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
+      "title": "Pola Klasik",
+      "text": "Raja yang sudah rokade biasanya aman — kecuali kotak pelariannya diblokir oleh pionnya sendiri. Benteng atau menteri di baris ke-8 menjadi tak terbendung."
+    },
+    {
+      "type": "play",
+      "fen": "6k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
+      "prompt": "Lakukan skakmat baris belakang.",
+      "targetSan": [
+        "Ra8#"
+      ],
+      "hint": "Dinding pion juga merupakan dinding penjara."
+    },
+    {
+      "type": "teach",
+      "fen": "3r2k1/5ppp/8/8/8/8/5PPP/3R2K1 w - - 0 1",
+      "title": "Tukar & Skakmat",
+      "text": "Ketika kedua belah pihak memiliki kelemahan baris belakang, yang menyerang lebih dulu menang. Tukar pembelanya untuk membersihkan jalan."
+    },
+    {
+      "type": "play",
+      "fen": "3r2k1/5ppp/8/8/8/8/5PPP/3R2K1 w - - 0 1",
+      "prompt": "Tukar benteng menjadi skakmat.",
+      "targetSan": [
+        "Rxd8#"
+      ],
+      "hint": "Setelah pertukaran, Hitam tidak memiliki pembela yang tersisa."
+    }
+  ]
+}

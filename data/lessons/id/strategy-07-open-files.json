@@ -1,0 +1,20 @@
+{
+  "id": "open-files",
+  "title": "Kolom Terbuka",
+  "summary": "Jalur invasi untuk benteng Anda",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r3k2r/ppp2ppp/8/8/8/8/PPP2PPP/R3K2R w KQkq - 0 1",
+      "title": "Mengapa Benteng Suka Kolom Terbuka",
+      "text": "Benteng menakutkan di kolom terbuka (tanpa pion) atau kolom setengah terbuka (tanpa pion SENDIRI). Menguasai kolom terbuka sering menentukan permainan di babak tengah — terutama yang mengarah ke raja lawan."
+    },
+    {
+      "type": "teach",
+      "fen": "r3k2r/ppp2ppp/8/8/8/8/PPP2PPP/R3K2R w KQkq - 0 1",
+      "title": "Menggandakan & Baris ke-7",
+      "text": "Penguasaan kolom terbaik adalah benteng yang DIGANDAKAN (kedua benteng di kolom yang sama). Dari sana, tembus ke baris ke-7 — \"babi di baris ke-7\" — di mana mereka menyerang pion dan menjebak raja lawan."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "queens-pawn-family",
+  "title": "1.d4 — بيدق الوزير",
+  "summary": "فهم أنظمة 1.d4",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
+      "title": "الدفع الوضعي",
+      "text": "يطالب 1.d4 بالمركز ويُعدّ لـ c4. المباريات أكثر وضعيةً من 1.e4 — معارك استراتيجية بطيئة حول تركيبات البيادق والمعاقل."
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
+      "title": "الردود الرئيسية",
+      "text": "خيارات الأسود: 1...d5 (كلاسيكي، يقود إلى مناورة الوزير)، 1...Nf6 (الدفاعات الهندية — ما بعد الحداثة)، 1...f5 (الهولندي)، 1...e6 (مرن). الدفاعات الهندية خيار المعلّمين الحديث."
+    },
+    {
+      "type": "play",
+      "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
+      "prompt": "العب 1...d5 الكلاسيكي — أدلِ بمطالبتك.",
+      "targetSan": [
+        "d5"
+      ],
+      "hint": "1...d5 يُمثّل نقلة الأبيض. كلاسيكي، صلب، محترم."
+    }
+  ]
+}

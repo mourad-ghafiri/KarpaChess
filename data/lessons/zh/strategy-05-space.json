@@ -1,0 +1,20 @@
+{
+  "id": "space-advantage",
+  "title": "空间优势",
+  "summary": "更多格子,更多选择",
+  "difficulty": "beginner",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/3PP3/8/PPP2PPP/RNBQKBNR b KQkq d3 0 2",
+      "title": "什么是空间?",
+      "text": "空间是你的子力能到达的格子数——尤其是对方半边棋盘上的格子。空间更大的一方拥有更多的子力机动性和更容易的协调。"
+    },
+    {
+      "type": "teach",
+      "fen": "rnbqkbnr/pppp1ppp/8/4p3/3PP3/8/PPP2PPP/RNBQKBNR b KQkq d3 0 2",
+      "title": "利用空间",
+      "text": "当你占有更多空间时:避免交换(拥挤的对手需要空间)。缓慢施压——制造威胁、把子力横跨调度,再出击。"
+    }
+  ]
+}

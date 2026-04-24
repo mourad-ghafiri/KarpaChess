@@ -1,0 +1,20 @@
+{
+  "id": "rook-lift",
+  "title": "ルークリフト",
+  "summary": "3ランク目経由でルークを攻撃に参加させる",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQR1K1 w - - 0 1",
+      "title": "上げて振る",
+      "text": "ルークリフトはRe1-e3-g3(またはh3)のマニューバです。ルークが3ランク目に上がり、そこから横に振って敵キングを攻めます。古典的パターンは、Re3とQh5でキングサイド花火。"
+    },
+    {
+      "type": "teach",
+      "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQR1K1 w - - 0 1",
+      "title": "使いどころ",
+      "text": "ルークリフトが効くのは、半閉鎖局面(ルークが直接ファイルを使えない)、敵キングがキャスリング済み、近くに味方の駒がすでに揃っているときです。hポーンの突きと組み合わせると特に効果的です。"
+    }
+  ]
+}

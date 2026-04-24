@@ -1,0 +1,20 @@
+{
+  "id": "uncastled-king",
+  "title": "Atacando al Rey sin Enrocar",
+  "summary": "Un rey en el centro es un objetivo",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 0 4",
+      "title": "Por Qué Mueren los Reyes Centralizados",
+      "text": "Un rey atrapado en el centro está expuesto a ataques desde ambos lados. Si tu oponente retrasa el enroque, abre la posición — destapa la columna e con rupturas de peones, arranca al rey con sacrificios. La velocidad es esencial."
+    },
+    {
+      "type": "teach",
+      "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 0 4",
+      "title": "La Receta",
+      "text": "Columnas abiertas apuntando al rey. Sacrifica peones para abrir líneas. Lleva todas las piezas al ataque. No te preocupes por el material — ganas cuando muere el rey, sin importar el conteo de piezas. Morphy fue el maestro."
+    }
+  ]
+}

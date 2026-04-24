@@ -1,0 +1,21 @@
+{
+  "id": "rook-mate",
+  "title": "R + T contre R",
+  "summary": "Conduire le roi au bord et donner mat",
+  "difficulty": "intermediate",
+  "steps": [
+    { "type": "teach",
+      "fen": "7k/8/5K2/8/8/8/8/6R1 w - - 0 1",
+      "title": "La technique",
+      "text": "Roi et tour contre roi est toujours une victoire pour le camp fort. La technique : utiliser la tour pour couper le roi ennemi, puis avancer votre roi à ses côtés pour le pousser vers le bord. Enfin, donner mat sur la dernière rangée." },
+    { "type": "teach",
+      "fen": "7k/5K1p/8/8/8/8/8/6R1 w - - 0 1",
+      "title": "Le filet de mat",
+      "text": "Quand le roi ennemi est coincé contre le bord et que le roi adverse empêche toute évasion, votre tour s'avance pour le mat. Le motif est celui-ci — mémorisez-le." },
+    { "type": "play",
+      "fen": "7k/5K1p/8/8/8/8/8/6R1 w - - 0 1",
+      "prompt": "Donnez échec et mat.",
+      "targetSan": ["Rg8#"],
+      "hint": "Le propre pion du roi est le mur de sa prison." }
+  ]
+}

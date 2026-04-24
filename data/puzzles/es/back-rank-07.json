@@ -1,0 +1,8 @@
+{
+  "id": "back-rank-07",
+  "fen": "r5k1/5ppp/8/8/8/8/8/R5K1 w - - 0 1",
+  "solution": [
+    "Rxa8#"
+  ],
+  "hint": "Cambia las torres y conserva el mate."
+}

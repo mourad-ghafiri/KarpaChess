@@ -1,0 +1,20 @@
+{
+  "id": "xray-attack",
+  "title": "Attaque aux rayons X",
+  "summary": "Attaquer À TRAVERS une pièce",
+  "difficulty": "intermediate",
+  "steps": [
+    {
+      "type": "teach",
+      "fen": "3rk3/8/8/8/8/8/3R4/3RK3 w - - 0 1",
+      "title": "Voir à travers",
+      "text": "Une attaque aux rayons X est quand une pièce attaque À TRAVERS une pièce intermédiaire — souvent la propre pièce de l'ennemi. Si la pièce intermédiaire bouge, votre attaque atterrit derrière elle. Contrairement à un clouage, l'attaque aux rayons X gagne ou gagne un tempo dans tous les cas."
+    },
+    {
+      "type": "teach",
+      "fen": "3rk3/8/8/8/8/8/3R4/3RK3 w - - 0 1",
+      "title": "Exemple",
+      "text": "Ici la tour blanche en d1 vise le roi ennemi à travers les tours d2 et d8 (rayon X). Après les échanges en d8, le roi est cloué ou la dernière rangée s'effondre."
+    }
+  ]
+}
