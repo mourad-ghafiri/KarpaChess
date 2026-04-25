@@ -2,7 +2,10 @@
   "id": "mate-in-1-16",
   "fen": "6k1/5Q2/5K2/8/8/8/8/8 w - - 0 1",
   "solution": [
-    "Qf8+"
+    "Qg7#"
   ],
-  "hint": "Menteri melangkah maju — dukungan raja menyegelnya."
+  "title": "Ciuman Geser Samping",
+  "setup": "Menteri Anda di **f7** dan raja di **f6** membentuk tim erat — tetapi mendarat di {{f8}} adalah jebakan pat.",
+  "hint": "Jangan ambil lajur yang jelas — geser satu petak ke samping ke petak yang sudah dijaga raja Anda.",
+  "explanation": "## Idenya\n\nSkakmat sudut **kiss-of-death**. Pergi ke {{f8}} hanya memberi skak dengan pelarian; langkah benar adalah turun *di samping* raja, di petak yang dijaga raja Anda.\n\nMainkan {{Qg7#}}.\n\nMengapa raja terjebak?\n\n- Menteri di g7 menyerang g8 langsung (skak)\n- {{h8}} — dikuasai menteri di g7 (diagonal)\n- {{h7}} — dikuasai menteri di g7 (baris)\n- {{Kxg7}} ilegal — raja Anda di **f6** menjaga g7\n- Tidak ada yang bisa menghalangi: menteri bersebelahan\n\n> **Pelajaran:** Saat Anda punya menteri + raja yang menskakmat, hitung petak pelarian untuk *setiap* kandidat langkah. Petak yang benar sering kali yang *dijaga raja Anda*, bukan yang memberi skak dari jauh."
 }

@@ -4,5 +4,8 @@
   "solution": [
     "Rxa8#"
   ],
-  "hint": "Cambia las torres llegando al mate — el muro de peones también es la prisión."
+  "title": "Torres fuera, mate dentro",
+  "setup": "Posición simétrica con torres frente a frente en la columna a. El rey negro no tiene aire.",
+  "hint": "Cambia las torres. El muro de peones del negro también es su prisión.",
+  "explanation": "## La idea\n\n{{Rxa8#}} es un **cambio que da mate** — la forma más simple y hermosa de ejecución de pasillo.\n\n### Jugada a jugada\n\n1. La torre blanca captura la torre negra en a8.\n2. Las negras no tienen pieza para recapturar (el rey en g8 está lejos; ningún otro defensor en la octava fila).\n3. El rey está en jaque por la torre blanca en a8 a lo largo de toda la última fila.\n4. **Sin escape:** g7-h7 son peones propios, h8 / f8 están atacadas por la torre blanca, y no queda nada con que capturar o interponerse.\n\n### Lo que las negras debieron haber hecho antes\n\n- Empujar {{h6}} o {{g6}} hace tiempo para dar aire al rey.\n- Mantener una pieza (caballo, alfil, dama) defendiendo la última fila.\n- Evitar cambios de torre en columnas abiertas cuando el rey no tiene luft.\n\n> Dos ejércitos de igual fuerza + un tiempo extra de estructura de peones = un ejército gana. El mate de pasillo es el precio del luft descuidado."
 }

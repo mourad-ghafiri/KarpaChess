@@ -4,5 +4,8 @@
   "solution": [
     "Rxd6"
   ],
-  "hint": "Captura el peón — próxima jugada, la dama."
+  "title": "Cómete primero el peón clavado",
+  "setup": "Un peón negro en d6 y una dama en d7 están apilados delante de su rey — y la torre blanca tiene hambre.",
+  "hint": "No agarres primero la pieza más grande. Mordisquea desde la base de la pila.",
+  "explanation": "## La idea\n\nEsta es una **clavada en cadena**: el peón negro en d6 está clavado por la torre blanca en d5 (no puede moverse porque la dama en d7 está detrás... más precisamente, capturarlo gana un peón gratis porque nada defiende d6).\n\nLas blancas juegan {{Rxd6}}, devorando el peón.\n\n- El peón en d6 no tenía defensor: la dama en d7 no puede capturar hacia atrás por la columna, y nada más lo cubre.\n- Tras {{Rxd6}}, la torre mira ahora directamente a la dama en d7, ¡que está a su vez clavada por la torre contra el rey en d8!\n- Si las negras juegan algo distinto a {{Qxd6}}, las blancas jugarán {{Rxd7+}} en la siguiente jugada y ganarán la dama. Así que las negras deben cambiar: {{Qxd6}}, y las blancas terminan con un peón de ventaja.\n\n## Patrón a memorizar\n\n> Cuando dos piezas enemigas están apiladas en una línea, **toma la de delante primero**. La pieza de detrás sigue clavada y no puede rescatarla.\n\nGanancia de material lenta y metódica — la forma paciente de ganar posiciones clavadas."
 }

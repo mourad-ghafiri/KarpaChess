@@ -4,5 +4,8 @@
   "solution": [
     "Ra8#"
   ],
-  "hint": "Perhatikan baris belakang — tidak ada kotak pelarian."
+  "title": "Fondasi Baris Belakang",
+  "setup": "Raja Hitam bersembunyi di balik **f7**, **g7**, dan **h7** — bidak yang kini menjadi tembok.",
+  "hint": "Baris ke-8 terbuka lebar dan bidak Hitam tidak menciptakan jendela pelarian di {{h6}} atau {{g6}}.",
+  "explanation": "## Idenya\n\nIni adalah **skakmat baris belakang** contoh. Benteng meluncur ke pojok dan raja tidak bisa lolos karena bidaknya sendiri menutup setiap kotak pelarian.\n\nMain {{Ra8#}}.\n\nMengapa raja terjebak?\n\n- {{f7}}, {{g7}}, {{h7}} — semua diblokir bidak Hitam sendiri\n- {{f8}} dan {{h8}} — keduanya dikuasai benteng di a8\n- Tidak ada bidak yang bisa masuk di antara a8 dan g8\n\n> **Inti:** Harga keamanan adalah satu tempo — satu langkah bidak (h6, g6, atau f6) membuka lubang udara dan mencegah bencana ini. Latih mata Anda mengenali pola ini di setiap partai."
 }

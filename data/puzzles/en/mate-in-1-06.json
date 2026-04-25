@@ -4,5 +4,8 @@
   "solution": [
     "Qa8#"
   ],
-  "hint": "Cut off the 8th rank while your king covers all escape squares."
+  "title": "King's Opposition Mate",
+  "setup": "Your kings stand in **opposition** on the d-file — the perfect cage for a queen to seal.",
+  "hint": "Slide the queen along the back rank — your king already covers {{c7}}, {{d7}} and {{e7}}.",
+  "explanation": "## The Idea\n\nThis is the bedrock **K+Q vs K mate**. The two kings face off in opposition, and the queen swings around to mate on the back rank.\n\nPlay {{Qa8#}}.\n\nWhy is the king stuck?\n\n- {{c8}} and {{e8}} — covered by the queen on a8 (8th rank)\n- {{c7}}, {{d7}}, {{e7}} — all controlled by your own king on **d6**\n- The queen is far away, and nothing can block on the empty 8th rank\n\n> **Takeaway:** When converting a queen-and-king endgame, place your king *one square diagonally* from the enemy king (opposition + a knight's move) and let the queen rake the back rank. Always double-check for stalemate before committing."
 }

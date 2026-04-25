@@ -8,16 +8,16 @@
       "type": "teach",
       "fen": "3k4/8/3q4/8/8/8/3R4/3K4 w - - 0 1",
       "title": "Absolute Pin",
-      "text": "When a piece is pinned against its king, it cannot legally move — moving would expose the king to check. Here the black queen is pinned along the d-file. She's frozen."
+      "text": "A **pin** is when an enemy piece sits between your attacker and a *more valuable* enemy piece behind it. The piece in front is glued to its square — moving would expose what's behind.\n\n## The geometry\n\nA pin needs three things on the same line — a file, a rank, or a diagonal:\n\n1. Your **long-range attacker** ({{Rd2}}, queen, or bishop).\n2. The **pinned piece** in the middle.\n3. A **more valuable target** behind it.\n\nOnly rooks, bishops, and queens can pin — they move in straight lines. Knights, pawns, and kings cannot.\n\n## Two flavors\n\n- **Absolute pin** — the piece behind is the **king**. Moving the front piece would be illegal.\n- **Relative pin** — the piece behind is just very valuable (e.g. a queen). The front piece *can* move, but it would lose material.\n\n## How to spot pins in your games\n\n1. Look at every long-range attacker you own.\n2. Trace its lines through the position.\n3. Mark any line that contains *two* enemy pieces with the more valuable one in the back.\n4. If you see one, ask: *can I attack the pinned piece with another attacker?* A pinned piece cannot run — it's a target.\n\nIn this position the rook on d2 pins Black's queen on d6 against the king on d8. The queen is frozen — and we have a free shot.\n\n> A pinned piece is not a piece. It is a target."
     },
     {
       "type": "play",
       "fen": "3k4/8/3q4/8/8/8/3R4/3K4 w - - 0 1",
-      "prompt": "Capture the pinned queen.",
+      "prompt": "Take the pinned queen with **{{Rxd6+}}** — she cannot move out of the way.",
       "targetSan": [
         "Rxd6+"
       ],
-      "hint": "She can't move. Just take her."
+      "hint": "The queen is glued to the d-file. She is not defending herself; she is *being* the target."
     }
   ]
 }

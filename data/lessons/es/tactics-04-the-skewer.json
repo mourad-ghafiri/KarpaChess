@@ -1,27 +1,29 @@
 {
   "id": "the-skewer",
-  "title": "La Enfilada",
+  "title": "El Espeto",
   "summary": "Como una clavada — pero al revés",
   "difficulty": "intermediate",
   "steps": [
     {
       "type": "teach",
       "fen": "8/8/3q4/8/8/3k4/8/R6K w - - 0 1",
-      "title": "La Enfilada",
-      "text": "La enfilada es la imagen en espejo de la clavada. Atacas una pieza valiosa que DEBE moverse — y al hacerlo, queda expuesta una pieza menos valiosa detrás de ella. A menudo el rey es la pieza enfilada: debe salir del jaque, abandonando lo que tenía detrás."
+      "title": "El Espeto",
+      "text": "Un **espeto** (o enfilada) es la imagen en espejo de la clavada. Atacas la pieza *más valiosa* delante; cuando se aparta, te quedas con la pieza *menos valiosa* detrás.\n\n## La geometría\n\nUn espeto necesita la misma línea recta que una clavada — columna, fila o diagonal — pero el orden de los objetivos está **invertido**:\n\n1. Tu **atacante de largo alcance** ({{Ra1}}, dama, alfil).\n2. La **pieza valiosa** delante (a menudo el rey).\n3. Una **pieza menos valiosa** detrás de ella en la misma línea.\n\nCuando la pieza delantera se mueve (y debe — sobre todo bajo jaque), la de detrás cae.\n\n## Clavada vs. espeto de un vistazo\n\n- **Clavada:** pieza pequeña delante, pieza grande detrás. La pequeña queda *congelada*.\n- **Espeto:** pieza grande delante, pieza pequeña detrás. La grande *huye* y la pequeña es capturada.\n\n## Cómo detectarlo\n\n1. Busca cualquier línea que pase por el rey o la dama enemigos.\n2. Comprueba qué hay en esa línea *detrás* del objetivo valioso.\n3. Si hay una pieza menos valiosa allí, busca cómo atacar por esa línea — normalmente con un jaque.\n4. Calcula la recaptura: ¿está defendida la casilla del espeto?\n\nAquí el rey está en d3 y la dama detrás en d6. {{Rd1+}} golpea al rey por la columna d; el rey debe moverse y la dama cae.\n\n> Un espeto es lo que ocurre cuando la pieza valiosa es demasiado valiente para esconderse tras una más pequeña."
     },
     {
       "type": "play",
       "fen": "8/8/3q4/8/8/3k4/8/R6K w - - 0 1",
-      "prompt": "Lleva tu torre a la columna d para enfilar rey y dama.",
-      "targetSan": ["Rd1+"],
-      "hint": "Rd1 da jaque — la dama será la siguiente."
+      "prompt": "Espeta rey y dama en la columna d con **{{Rd1+}}**.",
+      "targetSan": [
+        "Rd1+"
+      ],
+      "hint": "¿Qué hay en la columna d detrás del rey? Un jaque lo obliga a apartarse."
     },
     {
       "type": "teach",
-      "fen": "8/8/8/3q4/8/3k4/8/3R3K w - - 0 1",
+      "fen": "8/8/8/3q4/8/3k4/8/3R3K b - - 0 1",
       "title": "Recoge el Premio",
-      "text": "Tras Rd1+, el rey debe moverse. La dama se pierde en la siguiente jugada. Por eso las enfiladas son tan potentes en columnas y diagonales abiertas — incluso una torre bien situada puede derribar a una dama."
+      "text": "Tras {{Rd1+}}, el rey está en jaque y **debe** salir de la columna d — no hay pieza para bloquear y la torre no puede ser capturada.\n\n## Lo que sigue\n\n- El rey camina a **e3**, **c3**, **e2** o **c2** — cualquier casilla fuera de la columna d.\n- La dama en d6 queda expuesta a {{Rxd5}} o, según la casilla a la que vaya el rey, simplemente se pierde en la siguiente jugada.\n- Las blancas ganan la dama por nada.\n\n## Por qué los espetos son tan letales\n\n- Casi siempre vienen **con jaque**, así que la respuesta es forzada.\n- Las columnas abiertas y las diagonales largas son las autopistas. Cambia piezas para despejarlas.\n- Incluso una humilde torre puede tumbar a una dama si la alineación es la correcta.\n\n> La clavada congela; el espeto persigue. De cualquier manera, alguien muere en la línea."
     }
   ]
 }

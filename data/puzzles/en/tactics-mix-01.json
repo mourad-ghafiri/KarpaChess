@@ -5,5 +5,8 @@
     "Bxf7+",
     "Kxf7"
   ],
-  "hint": "Sacrifice to drag the king out."
+  "title": "The Fried Liver Setup",
+  "setup": "An Italian-style position where the **bishop on c4** points straight at Black's most vulnerable square — **f7**.",
+  "hint": "When the f7-square is defended only by the king, sacrifice the bishop to drag the monarch into the open.",
+  "explanation": "## The Idea\n\nThis is the famous **f7 sacrifice** — a thematic blow that exploits Black's weakest square. In the starting position, f7 is defended only by the black king, so a piece landing there forces the king to recapture and step into a draft.\n\nWhite plays {{Bxf7+}}, sacrificing the bishop.\n\n- {{Kxf7}} is the only legal response: there is no other defender of f7, no piece can interpose on a one-square attack, and the king must address the check.\n- After the trade, White has given up a bishop (3) for a pawn (1) — a temporary deficit of two points.\n\n## Why It's Worth It\n\nThe king is now stranded on f7, far from safety. In real games this leads to the **Fried Liver Attack** (with Ng5 and Nxf7) or various king hunts where the displaced king proves fatal.\n\n> When Black's king is the *only* defender of f7, look for a sacrifice — even one that loses material on the board. The exposed king is often worth more than a piece.\n\nThis is the original \"draw the king out\" pattern, and it appears in beginner games for centuries to come."
 }

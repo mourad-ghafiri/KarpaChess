@@ -4,5 +4,8 @@
   "solution": [
     "Nxd3"
   ],
-  "hint": "Knight captures the rook."
+  "title": "The Free Rook",
+  "setup": "Black's rook has wandered into a square defended by no one — and a knight is one leap away.",
+  "hint": "Count the defenders of {{d3}} — there are none. The knight does its job.",
+  "explanation": "## The Idea\n\nBefore looking for fancy combinations, check whether something is simply **hanging**. Here, the rook on d3 has no Black defender, and a White knight on c1 attacks it directly via the L-shape c1 → d3.\n\n- {{Nxd3}} captures the rook for a knight that wasn't doing much anyway.\n- Trade value: rook (5) for knight (3) = **+2 material**.\n\n### The lesson\n\n1. Always start by scanning for **hanging pieces** on both sides.\n2. Compare attackers vs defenders square by square.\n3. If your piece reaches an undefended enemy piece, take it — *unless* the recapture is a worse problem.\n\nHere there is no recapture: Black's king on e8 is far from d3, and there is no other Black piece on the board.\n\n> A rook for a knight is one of the cleanest material wins in chess. Never leave the easy ones on the table."
 }

@@ -4,5 +4,8 @@
   "solution": [
     "d6"
   ],
-  "hint": "Empuja el peón — restringe al rey."
+  "title": "Restringe al rey",
+  "setup": "Un peón pasado en **d5** marcha hacia la coronación, con el rey negro mirando desde e8.",
+  "hint": "Empuja el peón a una casilla a la que el rey no pueda entrar. La restricción gana finales.",
+  "explanation": "## La idea\n\nEsta es una técnica de **restricción del rey** — una idea crítica en finales de peones. Empujando el peón hacia adelante, las blancas le niegan al rey negro casillas clave.\n\nLas blancas juegan {{d6}}.\n\n## Lo que controla el peón\n\nUn peón en d6 ataca las casillas **c7** y **e7**. El rey negro en e8 ya no puede pisar legalmente e7 — esa casilla está atacada.\n\nEl rey negro se ve forzado a retirarse o moverse: {{Kd7}} (bloqueando el peón), {{Kf7}}, {{Kf8}} o {{Kd8}}.\n\n## ¿Por qué d6 (y no avanzar más despacio)?\n\nEn esta posición el rey blanco está atrás en e1, así que el peón no puede coronar solo — necesita la ayuda del rey. **Pero** avanzar primero el peón restringe al rey negro y crea tiempo para que el rey blanco marche por el tablero.\n\n## Patrón a memorizar\n\n> En finales de **R+P contra R**, el peón no siempre va más rápido empujando. A veces va más rápido **restringiendo** — negando al rey enemigo casillas clave para que tu rey pueda flanquear.\n\nEsta es la idea detrás de la **oposición**, el **flanqueo** y el famoso **cuadrado del peón** — bloques de construcción de todo final de peones."
 }

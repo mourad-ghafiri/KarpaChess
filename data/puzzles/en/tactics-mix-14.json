@@ -4,5 +4,8 @@
   "solution": [
     "d6"
   ],
-  "hint": "Push the pawn — restrict the king."
+  "title": "Restrict the King",
+  "setup": "A passed pawn on **d5** marches toward promotion, with the black king watching from e8.",
+  "hint": "Push the pawn to a square the king cannot enter. Restriction wins endgames.",
+  "explanation": "## The Idea\n\nThis is a **king restriction** technique — a critical idea in pawn endings. By pushing the pawn forward, White denies the black king key squares.\n\nWhite plays {{d6}}.\n\n## What the Pawn Controls\n\nA pawn on d6 attacks the squares **c7** and **e7**. The black king on e8 now cannot legally step to e7 — that square is attacked.\n\nBlack's king is forced to retreat or shuffle: {{Kd7}} (blockading the pawn), {{Kf7}}, {{Kf8}}, or {{Kd8}}.\n\n## Why d6 (Not d-Push Slower)?\n\nIn this position the white king is far back on e1, so the pawn cannot promote on its own — it needs the king's help. **But** advancing the pawn first restricts the black king and creates time for the white king to march up the board.\n\n## Pattern to Memorize\n\n> In **K+P vs K** endings, the pawn doesn't always go fastest by pushing. Sometimes it goes fastest by **restricting** — denying the enemy king key squares so your king can outflank.\n\nThis is the idea behind **opposition**, **outflanking**, and the famous **square of the pawn** — building blocks of every pawn endgame."
 }

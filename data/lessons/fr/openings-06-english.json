@@ -1,21 +1,29 @@
 {
   "id": "english",
   "title": "L'ouverture anglaise",
-  "summary": "Jeu d'aile flexible",
+  "summary": "Un jeu de flanc flexible",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "Contrôler le centre depuis les ailes",
-      "text": "L'anglaise (1.c4) est une ouverture flexible défendue par les meilleurs joueurs. Au lieu de se précipiter à pousser d4, les Blancs la préparent avec le soutien du pion c et développent d'abord les pièces. Les parties transposent souvent en gambit de la dame ou en structures indiennes." },
-    { "type": "play",
+      "text": "L'**ouverture anglaise** ({{c4}}) est le choix des connaisseurs — un système flexible et hypermoderne plébiscité par des champions du monde comme Botvinnik, Kasparov, Carlsen et Caruana.\n\nAu lieu de pousser des pions au centre, les Blancs préparent un **contrôle progressif** avec le pion c, développent d'abord les pièces, puis décident de la structure selon le jeu noir.\n\n## Ce que veut chaque camp\n\n- **Plan blanc :** jouer {{c4}} d'abord, puis {{Nc3}} et {{Nf3}}, fianchetter le fou roi avec {{g3}} et {{Bg2}}, et roquer. Le centre se dispute par d3 ou d4 *plus tard*.\n- **Plan noir :** traiter l'anglaise comme un gambit dame refusé, ou contre-attaquer en symétrie avec **...c5**. La réplique la plus audacieuse est **1...e5** (une *sicilienne inversée*) qui peut mener à un jeu sauvage.\n- **Structure de pions :** souvent des formes de type *anglaise / Hérisson* — pions noirs en a6, b6, d6, e6, tandis que les Blancs s'étendent à long terme par c4-d4-e4.\n\n## Une ligne modèle\n\n{{c4}} {{e5}} {{Nc3}} {{Nf6}} {{g3}} **d5** {{cxd5}} **Nxd5** {{Bg2}}. Les Blancs sont prêts pour un long broyage positionnel, le fou de la grande diagonale pointé sur l'aile dame noire.\n\n## Pourquoi elle plaît aux maîtres\n\nL'anglaise transpose dans d'autres ouvertures *seulement quand les Blancs le veulent*. En jouant **1.c4**, vous pouvez choisir plus tard de basculer vers un gambit dame, une indienne ou une structure anglaise pure — la flexibilité est immense.\n\n> Du contrôle sans engagement. L'anglaise gagne par la patience."
+    },
+    {
+      "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "prompt": "Jouez l'ouverture anglaise.",
-      "targetSan": ["c4"],
-      "hint": "1.c4 — l'anglaise." },
-    { "type": "teach",
+      "prompt": "Ouvrez avec l'anglaise — jouez **{{c4}}**.",
+      "targetSan": [
+        "c4"
+      ],
+      "hint": "1.c4 défie la case d5 noire depuis le flanc et garde les pions e et d souples pour plus tard."
+    },
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/2P5/8/PP1PPPPP/RNBQKBNR b KQkq - 0 1",
       "title": "Suites flexibles",
-      "text": "Selon la réponse des Noirs, les Blancs peuvent jouer d4 (transposant au gambit de la dame), Nc3 + g3 (positionnel, style Botvinnik) ou e3 (flexible). L'anglaise est un excellent choix si vous n'aimez pas mémoriser la théorie tranchante." }
+      "text": "Ce qui rend 1.c4 puissant, c'est la palette de plans que les Blancs gardent en réserve.\n\n## Quatre grands dispositifs blancs\n\n- **Anglaise symétrique** — les Blancs jouent {{Nc3}}, {{g3}}, {{Bg2}}, {{Nf3}}, **0-0**, puis choisissent entre {{d4}} (transposition vers le gambit dame) ou un jeu de manœuvres tranquille.\n- **Système Botvinnik** — pions en c4-d3-e4, cavaliers en c3 et e2, fou en g2. Pare-balles et flexible.\n- **Sicilienne inversée** — si les Noirs jouent 1...e5, les Blancs obtiennent essentiellement une sicilienne *avec un tempo en plus*. Tranchant et gratifiant.\n- **Attaque Mikenas** — 1.c4 Nf6 2.Nc3 e6 3.e4 !? — direct et agressif, comme une 1.e4 différée.\n\n## Transpositions courantes\n\n- Après **1.c4 e5 2.Nc3 Nf6 3.Nf3 Nc6** — un *tabia* de sicilienne inversée.\n- Après **1.c4 c5 2.Nf3 Nf6 3.Nc3** — une *anglaise symétrique* qui se dirige vers le Hérisson.\n- Après **1.c4 e6 2.Nc3 d5** — les Blancs peuvent jouer d4 et arriver à un *gambit dame refusé* à leurs conditions.\n\n> Si la mémorisation de théorie forcée vous rebute, l'anglaise vous offre un système. Si vous aimez la stratégie profonde, elle vous offre une vie d'étude."
+    }
   ]
 }

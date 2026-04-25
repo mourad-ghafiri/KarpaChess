@@ -4,5 +4,8 @@
   "solution": [
     "Qa8#"
   ],
-  "hint": "Menteri menguasai baris ke-8, kuda menjaga g6."
+  "title": "Jaring Menteri + Kuda",
+  "setup": "Kuda Anda di **f6** menghentikan raja mencapai {{g8}}, raja Anda di **h6** mengunci {{g7}}, dan pion **h7** menutup pelarian ketiga.",
+  "hint": "Kirim menteri di sepanjang baris belakang — kuda di **f6** menutup {{g8}}.",
+  "explanation": "## Idenya\n\nSebuah **jaring skakmat menteri + kuda** dengan bantuan pion raja sendiri. Menteri memberi skakmat dari sudut, sementara kuda dan raja sudah mengunci sisa kotak.\n\nMainkan {{Qa8#}}.\n\nMengapa raja terjebak?\n\n- Menteri di a8 menyerang h8 di sepanjang baris ke-8 (skak)\n- {{g8}} — dikuasai kuda di **f6**\n- {{g7}} — dikuasai raja Anda di **h6**\n- {{h7}} — diblokir pion Hitam sendiri\n- Tidak ada yang bisa menghalangi di baris ke-8 yang kosong antara a8 dan h8\n\n> **Pelajaran:** Kuda satu langkah dari sudut adalah *penjaga senyap* — ia menutup petak pelarian baris kedua yang tidak bisa dijangkau menteri dalam satu langkah. Setiap kali Anda punya menteri + kuda + raja dekat sudut lawan, cari pola ini."
 }

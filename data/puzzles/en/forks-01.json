@@ -6,5 +6,8 @@
     "Kb6",
     "Nxd5"
   ],
-  "hint": "A royal fork attacks both king and queen."
+  "title": "The Royal Fork",
+  "setup": "Black's king on c6 and queen on d5 sit just one knight-leap apart — the classic family-fork distance.",
+  "hint": "Find the knight square that hits **both** the king and the queen at once. The leap to {{b4}} touches c6 and d5.",
+  "explanation": "## The Idea\n\nThis is the **royal fork** — a knight check that simultaneously attacks the queen. Black's king and queen are exactly a knight-leap apart: from {{b4}} the knight reaches c6 (the king) and d5 (the queen) on the same move.\n\nAfter {{Nb4+}} Black has no good answer:\n\n- **Capture?** The king on c6 cannot reach b4 (two squares away), and the queen on d5 cannot reach b4 either — d5 to b4 is a knight pattern, not a queen move.\n- **Block?** A knight check can never be blocked.\n- **Run?** Every legal king square (Kb5, Kb6, Kc7, Kd6, Kd7) abandons the queen.\n\nSo Black plays {{Kb6}} (or any king move) and White scoops the queen with {{Nxd5}}.\n\n## Pattern to Memorize\n\n> Whenever the enemy king and queen are exactly **two squares apart on a diagonal**, look for the knight square between them — that's where the fork lives."
 }

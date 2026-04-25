@@ -4,5 +4,8 @@
   "solution": [
     "Rxd8#"
   ],
-  "hint": "Échangez les tours — le roi noir n'a aucune échappatoire."
+  "title": "L'Échange Scellé",
+  "setup": "Les deux rois sont blottis derrière leurs pions. Les deux tours se font face sur la colonne d. Celui qui frappe le premier survit.",
+  "hint": "Échangez les tours — le roi noir n'a **aucune case d'air** et l'échange verrouille la dernière rangée.",
+  "explanation": "## L'Idée\n\nC'est le **mat du couloir** dans sa forme la plus pure. L'échange {{Rxd8#}} met fin à la partie sur-le-champ :\n\n1. La tour blanche capture la tour noire en d8.\n2. Le roi noir en g8 n'a aucune échappatoire :\n   - **f8, e8, h8** — toutes contrôlées par la tour blanche en d8.\n   - **f7, g7, h7** — bloquées par les propres pions noirs.\n3. Aucune pièce ne peut capturer la tour blanche en d8, et rien ne peut s'interposer — la tour donne échec juste à côté de la prison du roi.\n\n### Pourquoi la position est perdue pour les Noirs\n\nLe roi noir **étouffe**. Ses propres pions en f7-g7-h7 forment un mur qui protège des attaques frontales mais tue toute échappatoire sur la 8e rangée. Un seul tempo de *luft* (un coup de pion comme {{h6}} ou {{g6}}) aurait évité tout ce motif.\n\n### Schéma à mémoriser\n\n- Roi en g8/g1 + pions en f7-g7-h7 + aucun défenseur sur la dernière rangée = **mat du couloir dans l'air.**\n- Chaque fois que votre tour atteint la 8e/1re rangée sans pièce ennemie pour la garder, cherchez les échanges de type `Rxd8#`.\n\n> Le *« luft »* — un coup de pion pour donner de l'air au roi — est l'assurance la plus simple aux échecs. Un tempo. Une protection à vie."
 }

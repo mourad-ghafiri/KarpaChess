@@ -1,8 +1,11 @@
 {
   "id": "forks-07",
-  "fen": "3rk3/8/8/2N5/8/8/8/4K3 w - - 0 1",
+  "fen": "3r1k2/8/8/2N5/8/8/8/4K3 w - - 0 1",
   "solution": [
-    "Ne6"
+    "Ne6+"
   ],
-  "hint": "Horquilla a torre y rey."
+  "title": "La horquilla real",
+  "setup": "El rey y la torre negros están en la 8ª fila a solo dos casillas de distancia — el objetivo perfecto para un salto de caballo.",
+  "hint": "Encuentra una casilla en la que el caballo ataque **a la vez** al rey en f8 y a la torre en d8.",
+  "explanation": "## La idea\n\nEsta es una **horquilla de caballo** de manual. Desde c5, una sola casilla golpea ambas piezas negras con una L:\n\n- {{Ne6+}} ataca **f8** (el rey) y **d8** (la torre) simultáneamente.\n- El jaque es forzante — las negras tienen que responder antes que cualquier otra cosa.\n\n### Por qué las negras no tienen defensa\n\n1. **¿Capturar el caballo?** El rey en f8 no puede llegar a e6 en un paso (los reyes se mueven una casilla). Ninguna otra pieza negra está al alcance.\n2. **¿Bloquear el jaque?** Los caballos saltan — los jaques de caballo no se pueden bloquear.\n3. **¿Mover el rey?** El rey debe huir (Ke7, Ke8, Kg8, Kf7…). La torre se queda en d8, indefensa.\n\nTras la huida del rey, {{Nxd8}} se cobra la torre. Las blancas ganan **torre por caballo** — un canje material limpio de +2.\n\n> Cuando veas un rey y una torre a dos casillas de distancia, busca la casilla del caballo que toca ambas."
 }

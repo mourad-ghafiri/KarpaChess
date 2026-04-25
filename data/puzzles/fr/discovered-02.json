@@ -4,5 +4,8 @@
   "solution": [
     "Nc7+"
   ],
-  "hint": "Échec à la découverte — le cavalier attaque aussi."
+  "title": "Échec Double sur la Colonne E",
+  "setup": "Le cavalier est **directement devant** la tour, et tous deux partagent la colonne e avec le roi noir — une batterie classique prête à tirer.",
+  "hint": "Trouvez la case du cavalier qui attaque **aussi** le roi. Quand deux pièces font échec à la fois, l'interposition est impossible.",
+  "explanation": "## L'Idée\n\nCette position est l'image la plus pure d'un échec à la découverte. La tour en e1 est le **découvreur** ; le cavalier en e6 est le **mobile**. Tout saut légal du cavalier découvre la tour et donne échec.\n\nMais un coup de cavalier est bien plus fort que les autres : {{Nc7+}}. Depuis c7, le cavalier lui-même attaque **aussi** e8.\n\n## Pourquoi l'Échec Double est Spécial\n\nQuand deux pièces font échec au roi sur le même coup, le défenseur :\n\n- Ne peut pas s'interposer, car aucune case ne stoppe les deux attaquants.\n- Ne peut pas capturer les deux pièces en un coup.\n- **Doit** bouger le roi.\n\nDonc après {{Nc7+}}, les Noirs sont forcés de marcher le roi en d7 ou f7, où il est mal placé pour le reste de la partie. Le cavalier en c7 a en plus atterri sur un avant-poste solide, lorgnant a8 et e8.\n\n## Et Si Vous Choisissiez la Mauvaise Case ?\n\nUn coup comme Nd4+ donne aussi un échec à la découverte par la tour, mais le cavalier ne presse plus le voisinage du roi. Les Noirs jouent Kd7 ou Kf7 et votre attaque s'évapore. La règle générale : **avec l'échec à la découverte, préférez la case qui rejoint l'attaque**."
 }

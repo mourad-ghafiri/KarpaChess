@@ -1,69 +1,69 @@
 {
   "id": "how-pieces-move",
   "title": "Comment les pièces se déplacent",
-  "summary": "Découvrez chaque pièce de l'échiquier",
+  "summary": "Faites connaissance avec chaque pièce de l'échiquier",
   "difficulty": "beginner",
   "steps": [
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "Bienvenue",
-      "text": "Les échecs se jouent sur 64 cases avec 16 pièces de chaque côté. Les Blancs jouent toujours en premier. Vous allez rencontrer chaque pièce tour à tour — le pion, le cavalier, le fou, la tour, la dame et le roi."
+      "text": "Soixante-quatre cases, trente-deux pièces, une infinité d'histoires. Voilà les échecs.\n\nL'échiquier que vous voyez est la position de départ de toutes les parties jamais jouées par Capablanca, Fischer, Kasparov ou Carlsen. Les Blancs commencent toujours, puis les Noirs, en alternance, jusqu'à ce qu'un roi soit mat, que les joueurs s'accordent sur la nulle, ou que le temps soit écoulé.\n\n## Ce que vous allez apprendre\n\n- Comment chacun des **six types de pièces** se déplace et capture\n- Pourquoi certaines pièces sont plus fortes que d'autres\n- Le vocabulaire que vous emploierez pour le reste de votre vie d'échiquéen\n\nN'essayez pas de tout mémoriser. Chaque pièce a une ou deux règles simples — quelques coups suffisent et les schémas deviennent une mémoire musculaire.\n\n> Les pièces sont les personnages d'une histoire. Apprenez d'abord comment chacune marche, avant de leur demander de danser."
     },
     {
       "type": "teach",
       "fen": "8/8/8/8/8/8/4P3/4K3 w - - 0 1",
       "title": "Le pion",
-      "text": "Les pions avancent d'une case à la fois — ou de deux lors de leur tout premier coup. Ils capturent en diagonale. Un pion qui atteint l'autre côté de l'échiquier promeut en n'importe quelle pièce de votre choix. Petit, mais décisif."
+      "text": "L'humble pion — *l'âme des échecs*, disait le maître Philidor.\n\nLe pion est la seule pièce qui **se déplace et capture différemment**. Il avance d'une case à la fois, jamais de côté, jamais en arrière. Lors de son tout premier coup, il a la faculté de bondir de deux cases — une seule étincelle d'énergie avant sa longue carrière paisible.\n\n## Trois choses qu'un pion peut faire\n\n- **Avancer** d'une case, à condition que la case soit vide\n- **Bondir de deux cases** depuis sa rangée de départ — bien utile dans l'ouverture\n- **Capturer en diagonale**, une case en avant, en prenant une pièce ennemie\n\nEt une récompense magique l'attend : un pion qui atteint l'autre extrémité **promeut** en n'importe quelle pièce de votre choix (la dame est la favorite). Un fantassin devient une dame. Voilà le rêve.\n\nPar exemple, depuis sa case de départ, le pion e peut jouer {{e3}} ou {{e4}}.\n\n> Les pions ne reviennent jamais en arrière — choisissez leur chemin avec soin."
     },
     {
       "type": "play",
       "fen": "8/8/8/8/8/8/4P3/4K3 w - - 0 1",
-      "prompt": "Poussez le pion de deux cases pour revendiquer le centre.",
+      "prompt": "Poussez le pion e de deux cases pour revendiquer le centre avec **{{e4}}**.",
       "targetSan": [
         "e4"
       ],
-      "hint": "Lors de son premier coup, un pion peut avancer de deux cases. Essayez e4."
+      "hint": "Lors de son tout premier coup, un pion peut bondir de deux cases. Le centre est un excellent point de chute."
     },
     {
       "type": "teach",
       "fen": "8/8/8/8/8/8/8/4K2N w - - 0 1",
       "title": "Le cavalier",
-      "text": "Les cavaliers bondissent en L — deux cases dans un sens, puis une à angle droit. C'est la seule pièce qui peut sauter par-dessus les autres. Difficile à voir venir, mortel au bon endroit."
+      "text": "Le cavalier est le farceur de l'échiquier.\n\nContrairement aux autres pièces, le cavalier ne se déplace **pas** en ligne droite. Il bondit en **L** : deux cases dans une direction (rangée ou colonne), puis une case perpendiculaire. Depuis une case centrale, un cavalier atteint jusqu'à huit cases — comme les pétales d'une fleur.\n\n## Ce qui rend les cavaliers spéciaux\n\n- **Ils sautent.** Aucune autre pièce ne peut franchir des pièces amies ou ennemies — les cavaliers les survolent.\n- **Ils adorent le centre.** Un cavalier au bord ne contrôle que deux ou trois cases ; au centre, il en couvre huit.\n- **Lents mais dévastateurs.** Un cavalier peut mettre quatre coups à traverser l'échiquier, mais sur un bon avant-poste, c'est un monstre.\n\nDepuis h1, le cavalier peut sauter en {{Nf2}} ou en {{Ng3}}. Observez le L — comptez deux cases dans une direction, une dans l'autre.\n\n> Un cavalier au bord est un cavalier mort. Un cavalier au centre est une énigme."
     },
     {
       "type": "play",
       "fen": "8/8/8/8/8/8/8/4K2N w - - 0 1",
-      "prompt": "Développez le cavalier vers le centre. Jouez Nf3 ou Ng3.",
+      "prompt": "Développez le cavalier vers l'action. Essayez **{{Nf2}}** ou **{{Ng3}}** — deux sauts en L depuis h1.",
       "targetSan": [
         "Nf2",
         "Ng3"
       ],
-      "hint": "Le cavalier en h1 peut atteindre f2 ou g3."
+      "hint": "Deux cases dans une direction, puis une case perpendiculaire. Depuis h1, où cela mène-t-il ?"
     },
     {
       "type": "teach",
       "fen": "8/8/8/8/8/8/8/2B1K3 w - - 0 1",
       "title": "Le fou",
-      "text": "Les fous glissent le long des diagonales aussi loin qu'ils le souhaitent. Chaque fou reste sur une seule couleur pour toujours — l'un contrôle les cases claires, l'autre les cases foncées. Ils adorent les positions ouvertes."
+      "text": "Les fous sont les aristocrates des diagonales. Ils glissent aussi loin qu'ils le veulent le long des lignes obliques de l'échiquier — mais sur **une seule couleur, à jamais**.\n\nLe fou que vous voyez ici vit sur les cases sombres ; sa partenaire (quand elle le rejoindra) vivra sur les cases claires. Ensemble, ils couvrent tout l'échiquier. Séparés, chacun garde la moitié du monde dans l'ombre.\n\n## Les fondamentaux du fou\n\n- **Longue portée, mais bloquée par les pièces.** Le rayon d'un fou s'arrête à la première pièce sur son chemin.\n- **Les positions ouvertes sont son paradis.** Peu de pions et le fou peut s'étirer.\n- **Les deux fous ensemble** forment la *paire de fous* et sont légèrement plus forts qu'une paire de cavaliers.\n\nDepuis c1, ce fou peut filer en {{Bd2}}, {{Be3}}, {{Bf4}}, jusqu'en {{Bh6}} si rien ne le bloque.\n\n> Un fou est un sniper longue portée. Donnez-lui des lignes ouvertes et il dominera."
     },
     {
       "type": "teach",
       "fen": "8/8/8/8/8/8/8/R3K3 w - - 0 1",
       "title": "La tour",
-      "text": "Les tours se déplacent en lignes droites — le long des rangées et des colonnes. Elles deviennent des monstres en finale et adorent les colonnes ouvertes."
+      "text": "Les tours sont l'infanterie lourde — lignes droites et force brute.\n\nUne tour se déplace de n'importe quel nombre de cases le long des **rangées** ou des **colonnes**. Comme le fou, son rayon s'arrête à la première pièce. Contrairement au fou, elle peut changer de couleur et atteindre, à terme, chaque case du plateau.\n\n## Ce que les tours adorent\n\n- **Les colonnes ouvertes.** Une colonne sans pion est l'autoroute de la tour.\n- **La 7e rangée** (ou la 2e du côté de l'adversaire). C'est là que les tours moissonnent les pions et harcèlent le roi.\n- **Les finales.** L'échiquier vidé, les tours deviennent inarrêtables.\n\nLa tour a une autre astuce : le **roque** — l'unique moment où le roi et la tour bougent ensemble, dans le même coup. Nous y reviendrons dans une leçon dédiée.\n\n> Sortez les tours tard. Elles se développent lentement, mais en finale, ce sont elles qui règnent."
     },
     {
       "type": "teach",
       "fen": "8/8/8/8/8/8/8/3QK3 w - - 0 1",
       "title": "La dame",
-      "text": "La dame combine la tour et le fou — se déplaçant sur n'importe quelle distance le long des rangées, colonnes ou diagonales. C'est la pièce la plus puissante. Ne la sortez pas trop tôt ; elle peut être chassée."
+      "text": "La dame est la pièce la plus puissante de l'échiquier — et de loin.\n\nElle se déplace comme une **tour et un fou réunis** : autant de cases que voulu le long des rangées, des colonnes OU des diagonales. Depuis une case centrale, elle peut attaquer 27 cases d'un coup. Aucune autre pièce n'en approche.\n\n## Une mise en garde\n\n- **Ne la sortez pas trop tôt.** Chaque fois qu'elle est attaquée, elle doit reculer — et vous perdez un tempo.\n- **Échangez avec prudence.** Perdre la dame contre moins, c'est en général perdre la partie.\n- **Dans l'attaque, c'est elle qui orchestre.** Associez-la à un cavalier ou un fou et des combinaisons dévastatrices apparaissent.\n\nUne dame en d1 peut s'écouler vers {{Qd5}}, partir en {{Qa4}} ou frapper en {{Qh5}} — bloquée seulement par une autre pièce.\n\n> La puissance est patiente. Développez d'abord vos pièces mineures ; la dame entre dans la danse plus tard."
     },
     {
       "type": "teach",
       "fen": "8/8/8/8/8/8/8/4K3 w - - 0 1",
       "title": "Le roi",
-      "text": "Le roi avance d'une case dans n'importe quelle direction. Protégez-le à tout prix — s'il est mat, la partie se termine. En finale, activez-le : il vaut environ trois pions à l'attaque."
+      "text": "Le roi est le cœur de toute position. Perdez-le et la partie est terminée.\n\nLe roi avance modestement d'**une seule case dans n'importe quelle direction** : devant, derrière, sur le côté, ou en diagonale. Portée modeste, mais il porte toute la partie sur ses épaules. Il ne peut jamais entrer sur une case attaquée par une pièce ennemie — ce serait illégal, car marcher dans l'échec mettrait fin à la partie.\n\n## Deux phases, deux rôles\n\n- **Ouverture et milieu de partie :** *cachez-le.* Roquez dès que possible. Le roi a sa place dans un coin, derrière un mur de pions.\n- **Finale :** *activez-le.* Les dames échangées et le danger réduit, le roi devient une pièce combattante valant à peu près trois pions.\n\nCe basculement — du repli à la charge — est l'une des idées les plus profondes du jeu d'échecs.\n\n> Protégez votre roi comme si votre vie en dépendait. Aux échecs, c'est précisément le cas."
     }
   ]
 }

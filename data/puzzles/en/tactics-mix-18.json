@@ -4,5 +4,8 @@
   "solution": [
     "dxe5"
   ],
-  "hint": "Central capture."
+  "title": "Open the Center",
+  "setup": "Both sides have pushed their **d-** and **e-pawns**. Now it's time for a clean central swap.",
+  "hint": "When two pairs of pawns are locked in the center, the side that captures first opens lines for their pieces.",
+  "explanation": "## The Idea\n\nThis is a foundational **central exchange** in opening play. Both sides have pushed central pawns, and tension has built up. White is to move and decides to **release the tension** with a capture.\n\nWhite plays {{dxe5}}.\n\n## What This Does\n\n- White's d-pawn captures Black's e-pawn.\n- The **d-file** is now half-open for White (no white pawn left there).\n- The **e-file** still has both d-pawn (Black's) and e-pawn (White's) — wait, after the capture, Black has a d-pawn on d5 still, and White has only the e-pawn on e4 (no longer e5; it was captured).\n\nActually let's re-trace the trade carefully:\n- White d4 captures e5 → White pawn now on e5, Black's e5 pawn is gone.\n- The d-file no longer has a white pawn — it's **half-open** for White's queen and rook.\n\n## Black's Recapture Options\n\nBlack will likely play {{dxe4}}, recapturing in the center and continuing the symmetric trade. After {{dxe4}}, both d-files are now half-open and the position is roughly equal.\n\n## Pattern to Memorize\n\n> Don't leave central pawn tension unresolved forever. **Capturing first** often decides which side gets the better lines for their pieces.\n\nThis simple opening idea is the ancestor of all **open games** and **Open Sicilian** structures: trade central pawns, fill the open files with rooks, fight on the lines you've created."
 }

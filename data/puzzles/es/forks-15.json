@@ -4,5 +4,8 @@
   "solution": [
     "Nxb7"
   ],
-  "hint": "Gana la dama con el caballo."
+  "title": "Atrapa la dama",
+  "setup": "La dama negra ha vagado a b7, y el caballo blanco en c5 está justo al lado.",
+  "hint": "Desde c5, cuenta las ocho casillas del caballo. Una de ellas aterriza sobre la dama.",
+  "explanation": "## La idea\n\nEsta es la táctica más simple del ajedrez: una pieza está colgada, tómala. Desde c5, el caballo alcanza {{b7}} con -1 columna +2 filas:\n\n- {{Nxb7}} — el caballo captura la dama.\n- Cambio material: caballo por dama = **+6**, totalmente ganador.\n\n### Por qué no hay recaptura\n\n1. El rey negro en e8 está demasiado lejos de b7 para recapturar (los reyes se mueven una casilla).\n2. No quedan otras piezas negras en el tablero.\n3. El caballo escapa a salvo con la dama en el bolsillo.\n\n### Lección\n\nAntes de buscar combinaciones, pregúntate siempre:\n\n- *¿Hay alguna pieza enemiga indefensa?*\n- *¿Tengo una pieza que la alcance?*\n\nLa mitad de las \"tácticas\" son en realidad patrones de pieza colgada detectados rápido.\n\n> La grandeza en ajedrez empieza por no perderse las piezas gratis."
 }

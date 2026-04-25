@@ -4,5 +4,8 @@
   "solution": [
     "Qxf7#"
   ],
-  "hint": "La dame dispose d'une diagonale dégagée. Remarquez que f7 n'est défendu que par le roi."
+  "title": "L'Attaque du Berger",
+  "setup": "La dame blanche en **h5** et le fou en **c4** fixent tous deux la case la plus faible du camp noir.",
+  "hint": "Les deux pièces visent {{f7}} — seul le roi la défend.",
+  "explanation": "## L'Idée\n\nC'est le coup final classique du **mat du Berger**. La dame et le fou ont construit une batterie contre {{f7}}, la seule case de la position d'ouverture noire gardée uniquement par le roi.\n\nJouez {{Qxf7#}}. La dame capture le pion et donne échec, défendue par le fou en **c4**.\n\nPourquoi le roi est-il piégé ?\n\n- {{e7}} — bloquée par le propre pion noir\n- {{e8}} et {{d8}} — couvertes par la dame elle-même depuis f7\n- Capturer la dame avec {{Kxf7}} est illégal car le fou en **c4** contrôle f7\n- Aucune pièce ne peut s'interposer : f7 est adjacente au roi\n\n> **À retenir :** Vérifiez toujours si f7 (ou f2 pour les Noirs) n'est défendu que par le roi avant de développer. Une batterie dame + fou sur la diagonale a2-g8 est l'un des plus vieux pièges des échecs."
 }

@@ -4,5 +4,8 @@
   "solution": [
     "a4"
   ],
-  "hint": "Avanza tu peón pasado."
+  "title": "Carrera de peones con apoyo del rey",
+  "setup": "El rey blanco ya está en **e6** — apoyando fuertemente cualquier empuje. El peón a solo necesita un empujón inicial.",
+  "hint": "Cuando tu rey está activo y el peón está lejos de coronar, empuja el peón — el rey está en posición de escoltarlo más tarde.",
+  "explanation": "## La idea\n\nEste es un problema fundamental de **final de rey y peón**. Las blancas tienen una gran ventaja: el rey ya está avanzado a **e6**, mientras que el peón está en a2. El plan es simple — **correr el peón a la coronación**.\n\nLas blancas juegan {{a4}} (el empuje inicial de dos casillas, más rápido que {{a3}}).\n\n## ¿Por qué a4 sobre a3?\n\n- {{a4}} ahorra un tempo: el peón salta a a4 en una jugada en vez de tomar dos jugadas para alcanzar la misma casilla vía {{a3}} y luego {{a4}}.\n- Este tempo es crucial en las carreras: cuanto más cerca esté el peón de coronar, más difícil le será al rey negro atraparlo.\n\n## El aprieto de las negras\n\nEl rey negro en **e8** debe correr todo el camino hasta **a8** para atrapar el peón — son siete jugadas de rey. El peón necesita cinco jugadas para coronar ({{a4}}, {{a5}}, {{a6}}, {{a7}}, {{a8=Q}}). Incluso sin apoyo del rey blanco, el peón ganaría la carrera cómodamente.\n\nPero aquí, el rey blanco en e6 ya está dentro del **cuadrado del peón** respecto al camino del rey negro — puede interferir o apoyar según sea necesario.\n\n## Patrón a memorizar\n\n> Las **carreras de peones** se ganan contando tempos. Empuja siempre dos casillas en la primera jugada cuando el peón está en su fila inicial — ese tempo gratis a menudo decide todo.\n\nLa **regla del cuadrado del peón**: imagina un cuadrado con el peón en una esquina y la casilla de coronación en la diagonal. Si el rey enemigo está fuera de ese cuadrado, el peón corona."
 }

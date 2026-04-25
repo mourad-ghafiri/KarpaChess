@@ -4,13 +4,17 @@
   "summary": "Inserta una amenaza mayor antes de la recaptura obvia",
   "difficulty": "advanced",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "r1bqkbnr/ppp2ppp/2np4/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 4",
-      "title": "No Solo Reacciones",
-      "text": "Un zwischenzug ('jugada intermedia', del alemán) es una jugada sorpresa insertada en una secuencia esperada — por lo general un jaque o una amenaza mayor — que cambia la posición antes de la jugada obvia. Es la marca de una fuerte visión táctica." },
-    { "type": "teach",
+      "title": "No Te Limites a Reaccionar",
+      "text": "**Zwischenzug** (alemán para *jugada intermedia*) es una jugada forzada deslizada dentro de un intercambio esperado. El rival espera que recaptures; en lugar de eso, juegas un jaque, una captura o una amenaza mayor *primero* — y *después* recapturas, a menudo con intereses.\n\n## El detonante visual\n\nUn zwischenzug suele aparecer cuando:\n\n- Ocurre una captura y se espera una recaptura.\n- La recaptura sería \"normal\" pero la posición tiene otro recurso **forzado** — un jaque, una captura mayor o una amenaza de mate.\n- La pieza del rival que acaba de capturar está *ella misma* suelta, atacable o clavada.\n\n## La geometría\n\nEs menos cuestión de geometría y más de **tempo**. Gastas una jugada en algo más urgente antes de retomar el cambio. El rival debe responder al jaque o amenaza; *luego* completas el intercambio con la posición a tu favor.\n\n## Cómo detectarla\n\n1. Cuando el rival capture, baja el ritmo. No recaptures en piloto automático.\n2. Busca **jaques**, **capturas** y **amenazas mayores** que existan *antes* de la recaptura.\n3. Calcula: tras tu zwischenzug y la respuesta forzada, ¿puedo aún recapturar o hacer algo mejor?\n4. Compara las dos líneas en paralelo. Si la jugada insertada gana material o posición, juégala.\n\n> Los jugadores fuertes preguntan, *\"¿Qué es lo más forzado?\"* Los más débiles preguntan, *\"¿Qué se espera?\"*"
+    },
+    {
+      "type": "teach",
       "fen": "r1bqkbnr/ppp2ppp/2np4/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 4",
-      "title": "Patrón de Ejemplo",
-      "text": "Cuando tu rival captura algo tuyo, tu reflejo es recapturar. Pero a veces una jugada intermedia — un jaque en otro lugar, o una amenaza mayor — gana más material. Pregúntate siempre: antes de recapturar, ¿hay algo MEJOR? Incluso un solo jaque intermedio puede ganar la partida." }
+      "title": "Un Ejemplo Práctico",
+      "text": "Imagina un cambio típico en la apertura o el medio juego: acaban de capturarte y te gustaría recapturar. Antes de hacerlo, repasa una rápida verificación de zwischenzug.\n\n## El árbol de decisión\n\n1. **¿Hay un jaque?** Un jaque obliga al rival y es la candidata de máxima prioridad.\n2. **¿Está colgando el que captura?** La pieza que acaba de tomar la tuya puede estar indefensa en su nueva casilla.\n3. **¿Hay una captura mayor?** Tal vez una dama enemiga está suelta a dos jugadas de distancia.\n4. **¿Hay una amenaza de mate?** Una jugada silenciosa que amenaza mate también es un zwischenzug válido.\n\n## Una línea modelo\n\nEn muchas aperturas verás algo como {{Bxc6}} bxc6, donde las negras recapturan porque es lo normal. Pero en algunas posiciones la respuesta fuerte **no** es bxc6 — en su lugar las negras juegan un zwischenzug como {{Qd4}} o {{Bb4+}} golpeando primero al rey blanco, *luego* resuelven el cambio de alfil con la posición mejorada.\n\n> Antes de recapturar, hazte una pregunta más. Los maestros siempre lo hacen."
+    }
   ]
 }

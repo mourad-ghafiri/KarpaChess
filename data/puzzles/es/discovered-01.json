@@ -4,5 +4,8 @@
   "solution": [
     "Nd6+"
   ],
-  "hint": "Mueve el caballo — la torre ataca a través."
+  "title": "El caballo da el paso, la torre golpea",
+  "setup": "La torre blanca está detrás del caballo en la **columna e** abierta, con el rey negro mirando directamente a ambas piezas.",
+  "hint": "El caballo es lo único que se interpone entre tu torre y el rey enemigo — muévelo con jaque.",
+  "explanation": "## La idea\n\nUn ataque descubierto siempre tiene dos protagonistas: la **pieza que mueve** (la de delante) y la **pieza que descubre** (la de atrás). Aquí el caballo de e4 es la pieza que mueve y la torre de e1 es la que descubre. Mientras el caballo siga en la columna e, la torre no hace nada.\n\n## Por qué funciona {{Nd6+}}\n\nEl caballo abandona la columna e con tempo. Dos cosas suceden en el mismo instante:\n\n- La torre de e1 ahora ve hasta e8 y da jaque.\n- El caballo ha aterrizado en **d6**, donde además ataca la única casilla de huida del rey, **f7**, y vuelve a apuntar a e8.\n\nEl rey negro recibe jaque de una pieza que no puede capturar (la torre está lejos y defendida), y no puede interponer en la columna e porque no hay nada en medio. La única respuesta legal es apartarse, tras lo cual el caballo en d6 queda excelentemente colocado.\n\n## Por qué nada más es tan bueno\n\nSi el caballo va a una casilla que **no** apunta también a la huida del rey (por ejemplo una retirada pasiva), las negras simplemente llevan el rey a f7 o d7 y el jaque descubierto pierde gran parte de su mordida. La lección: cuando lances un jaque descubierto, intenta colocar la pieza que mueve en una casilla que sume al ataque."
 }

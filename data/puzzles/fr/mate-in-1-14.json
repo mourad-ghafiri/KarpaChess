@@ -1,8 +1,11 @@
 {
   "id": "mate-in-1-14",
-  "fen": "3R4/8/8/8/8/k7/8/2K5 w - - 0 1",
+  "fen": "7R/8/8/8/8/1K6/8/k7 w - - 0 1",
   "solution": [
-    "Rd3+"
+    "Rh1#"
   ],
-  "hint": "Coupez le roi solitaire sur la 3e rangée."
+  "title": "Le Bord du Monde",
+  "setup": "Le roi noir est coincé dans le coin **a1** ; votre roi en **b3** tient les cases de fuite {{a2}} et {{b2}}.",
+  "hint": "Posez la tour sur la **1re rangée** — chaque fuite est déjà couverte par votre roi.",
+  "explanation": "## L'Idée\n\nUn **mat R+T contre R dans le coin** dépouillé. Le roi blanc a fait le dur travail de couper les cases de fuite ; la tour donne juste le coup fatal.\n\nJouez {{Rh1#}}.\n\nPourquoi le roi est-il piégé ?\n\n- {{b1}} — couverte par la tour en h1 (1re rangée)\n- {{a2}} — couverte par votre roi en **b3**\n- {{b2}} — couverte par votre roi en **b3**\n- Le roi ne peut capturer la tour : a1 à h1 est bien trop loin\n- Rien ne peut s'interposer : la 1re rangée est vide\n\n> **À retenir :** En R+T contre R, la tour mate à *distance sûre* une fois le roi chassé au bord. Votre propre roi doit contrôler les cases de fuite une rangée devant le roi piégé."
 }

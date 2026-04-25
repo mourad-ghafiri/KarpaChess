@@ -4,5 +4,8 @@
   "solution": [
     "Ra8#"
   ],
-  "hint": "Benteng bergabung dengan raja dan pion untuk skakmat."
+  "title": "Sumbat Pion",
+  "setup": "Pion di **d7** menyumbat pelarian raja di lajur, dan raja Anda di **d6** menahan diagonal-diagonal.",
+  "hint": "Sapu benteng ke baris ke-8 — pion **d7** membekukan raja di **d8**.",
+  "explanation": "## Idenya\n\nSebuah **skakmat benteng + pion** yang manis. Pion d7 tidak memberi skak — namun ia menghentikan raja Hitam berlari ke d7 atau bahkan menangkap pembela raja Anda.\n\nMainkan {{Ra8#}}.\n\nMengapa raja terjebak?\n\n- {{c8}} dan {{e8}} — dikuasai benteng di a8\n- {{c7}}, {{e7}} — dikuasai raja Anda di **d6**\n- {{d7}} — diblokir pion Anda sendiri (dan dijaga raja Anda)\n- {{Kxd7}} ilegal karena raja Anda di **d6** menjaga d7\n- Tidak ada yang bisa menghalangi di baris ke-8 yang kosong\n\n> **Pelajaran:** Bahkan *pion sederhana* dapat menjadi faktor penentu dalam jaring skakmat. Saat melakukan promosi dekat raja lawan, jangan selalu terburu-buru ke menteri — kadang pion itu sendiri adalah penyumbat paling berguna."
 }

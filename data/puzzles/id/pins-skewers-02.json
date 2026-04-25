@@ -4,5 +4,8 @@
   "solution": [
     "Bxh1"
   ],
-  "hint": "Benteng tidak terlindungi di diagonal panjang."
+  "title": "Sapuan Diagonal Panjang",
+  "setup": "Gajah putih di **f3** menyorot diagonal panjang **a8-h1** ke benteng hitam yang tidak terlindungi.",
+  "hint": "Cari buah yang tidak terlindungi di diagonal gajah Anda — pengumpul jarak jauh.",
+  "explanation": "## Idenya\n\nIni adalah pola sederhana namun penting: **buah tidak terlindungi (loose piece)** di diagonal panjang. Gajah di f3 melihat sampai h1, tempat benteng hitam terdampar tanpa pembela teman di dekatnya.\n\nPutih memainkan {{Bxh1}} dan langsung membawa pulang benteng.\n\n- Raja hitam di d5, terlalu jauh untuk merebut kembali.\n- Tidak ada buah hitam yang menjaga h1.\n- Benteng tidak bisa pindah **sebelum** langkah Putih — Putih punya giliran.\n\n## Pola untuk Diingat\n\n> Loose Pieces Drop Off — aturan **LPDO**.\n\nSebelum setiap langkah, pindai garis terbuka gajah dan benteng Anda untuk buah lawan tanpa pembela. Mereka adalah material gratis yang menunggu untuk dikumpulkan."
 }

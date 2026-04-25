@@ -6,5 +6,8 @@
     "Kb6",
     "Nxd5"
   ],
-  "hint": "Un horquilla real ataca al rey y a la dama."
+  "title": "La horquilla real",
+  "setup": "El rey negro en c6 y la dama en d5 están a un solo salto de caballo de distancia — la distancia clásica de la horquilla familiar.",
+  "hint": "Encuentra la casilla del caballo que toque **a la vez** al rey y a la dama. El salto a {{b4}} alcanza c6 y d5.",
+  "explanation": "## La idea\n\nEsta es la **horquilla real** — un jaque de caballo que ataca simultáneamente a la dama. El rey y la dama negros están a exactamente un salto de caballo: desde {{b4}} el caballo alcanza c6 (el rey) y d5 (la dama) en la misma jugada.\n\nTras {{Nb4+}} las negras no tienen buena respuesta:\n\n- **¿Capturar?** El rey en c6 no puede llegar a b4 (está a dos casillas), y la dama en d5 tampoco puede llegar a b4 — d5 a b4 es un patrón de caballo, no un movimiento de dama.\n- **¿Interponer?** Un jaque de caballo no se puede bloquear nunca.\n- **¿Huir?** Cada casilla legal del rey (Kb5, Kb6, Kc7, Kd6, Kd7) abandona a la dama.\n\nAsí que las negras juegan {{Kb6}} (o cualquier movimiento del rey) y las blancas se llevan la dama con {{Nxd5}}.\n\n## Patrón a memorizar\n\n> Cuando el rey y la dama enemigos estén exactamente a **dos casillas en diagonal**, busca la casilla del caballo entre ellos — ahí vive la horquilla."
 }

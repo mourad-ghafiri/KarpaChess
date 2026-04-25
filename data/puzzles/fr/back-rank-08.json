@@ -4,5 +4,8 @@
   "solution": [
     "Rb8#"
   ],
-  "hint": "La tour avance pendant que le roi adverse est enfermé."
+  "title": "Longue Marche, Mat Court",
+  "setup": "Le pion a blanc est resté en arrière, mais la tour b a une voie libre vers la 8e rangée.",
+  "hint": "Faites marcher la tour vers b8. La structure de pions fait le reste.",
+  "explanation": "## L'Idée\n\nLa présence d'un pion blanc supplémentaire en a2 est sans importance — les caractéristiques purement positionnelles (faiblesse de la dernière rangée + roi sans luft) décident la partie. {{Rb8#}} mate aussitôt :\n\n1. La tour arrive sur la 8e rangée avec échec.\n2. Le roi en g8 est scellé par ses propres pions en f7-g7-h7.\n3. Les cases **a8** à **h8** hors de la bulle du roi sont toutes attaquées par la tour.\n4. Rien ne peut reprendre, rien ne peut s'interposer.\n\n### Pourquoi le « matériel supplémentaire » ne sauve pas les Noirs\n\nLa position du roi noir est si faible que le matériel n'a pas d'importance. **Un seul tempo de {{h6}} plus tôt dans la partie aurait évité tout ce schéma**, peu importe combien de pions chaque camp possède.\n\n> Le décompte du matériel passe toujours après la sécurité du roi dans les positions tactiques."
 }

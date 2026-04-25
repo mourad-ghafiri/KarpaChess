@@ -4,5 +4,8 @@
   "solution": [
     "Bd7+"
   ],
-  "hint": "Mueve el alfil con jaque — expón la torre."
+  "title": "El alfil dispara la batería",
+  "setup": "Un alfil y una torre están apilados en la **columna e** delante del rey enemigo — una batería de manual apuntando directo a e8.",
+  "hint": "El alfil bloquea más de lo que defiende — muévelo con jaque y deja que la torre haga el trabajo pesado.",
+  "explanation": "## La idea\n\nCuando dos de tus piezas de largo alcance se alinean una detrás de la otra apuntando al rey enemigo, tienes una **batería**. La pieza de delante es la que mueve; la de atrás es la descubridora. Aquí el alfil en e6 es la que mueve y la torre en e4 es la descubridora.\n\n## Por qué {{Bd7+}} es devastador\n\nEl alfil se desliza a d7 y da jaque por sí mismo a lo largo de la diagonal d7-e8. **En el mismo instante**, al dejar e6, descubre la torre en e4 — que ahora también da jaque al rey por la columna e. Dos piezas están dando jaque al rey negro a la vez.\n\n- Esto es **jaque doble**: interponer es imposible.\n- Capturar el alfil es imposible — no hay pieza negra cerca que llegue a d7.\n- Capturar la torre es imposible — el rey negro no puede llegar a e4.\n- El rey **tiene que** moverse.\n\n## Qué falla sin jaque\n\nUna jugada de alfil silenciosa (digamos, Bb3) también descubriría la torre, pero el jaque de la torre sería único, y las negras simplemente pueden llevar el rey a d7 o f7 — incluso capturar el alfil en algunas líneas. El sentido de {{Bd7+}} es que el alfil **llega con tempo**: al dar jaque por sí mismo, obliga a las negras a manejar dos amenazas con una jugada, lo que las reglas del ajedrez prohíben."
 }

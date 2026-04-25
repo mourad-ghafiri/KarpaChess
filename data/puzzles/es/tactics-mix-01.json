@@ -5,5 +5,8 @@
     "Bxf7+",
     "Kxf7"
   ],
-  "hint": "Sacrifica para arrastrar al rey afuera."
+  "title": "Preparación del Hígado Frito",
+  "setup": "Una posición tipo italiana donde el **alfil en c4** apunta directamente a la casilla más vulnerable de las negras — **f7**.",
+  "hint": "Cuando f7 está defendida solo por el rey, sacrifica el alfil para arrastrar al monarca al descubierto.",
+  "explanation": "## La idea\n\nEste es el famoso **sacrificio en f7** — un golpe temático que explota la casilla más débil de las negras. En la posición inicial, f7 está defendida solo por el rey negro, así que una pieza que aterrice allí fuerza al rey a recapturar y exponerse a la corriente.\n\nLas blancas juegan {{Bxf7+}}, sacrificando el alfil.\n\n- {{Kxf7}} es la única respuesta legal: no hay otro defensor de f7, ninguna pieza puede interponerse en un ataque a una casilla, y el rey debe atender el jaque.\n- Tras el cambio, las blancas han entregado un alfil (3) por un peón (1) — un déficit temporal de dos puntos.\n\n## Por qué vale la pena\n\nEl rey está ahora varado en f7, lejos de la seguridad. En partidas reales esto conduce al **Ataque del Hígado Frito** (con Cg5 y Cxf7) o a varias cacerías de rey donde el rey desplazado resulta fatal.\n\n> Cuando el rey negro es el *único* defensor de f7, busca un sacrificio — incluso uno que pierda material en el tablero. El rey expuesto suele valer más que una pieza.\n\nEste es el patrón original del \"saca al rey\", y aparece en partidas de principiantes desde hace siglos."
 }

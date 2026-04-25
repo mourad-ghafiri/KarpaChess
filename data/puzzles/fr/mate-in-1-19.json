@@ -4,5 +4,8 @@
   "solution": [
     "Qg8#"
   ],
-  "hint": "Deux pièces collaborent — forcez l'échange."
+  "title": "Le Fou Soutient la Dame",
+  "setup": "Le roi noir est piégé en **h7** avec un pion derrière lui en **h6**, et votre fou en **f7** verrouille {{g8}} depuis la diagonale.",
+  "hint": "Posez la dame sur {{g8}} — le fou en **f7** défend sa case d'arrivée.",
+  "explanation": "## L'Idée\n\nUn **baiser de la mort dame + fou**. Le fou en **f7** transforme g8 en case défendue, et la dame s'y sacrifie.\n\nJouez {{Qg8#}}.\n\nPourquoi le roi est-il piégé ?\n\n- La dame en g8 attaque h7 directement (échec diagonal, défendu par le fou)\n- {{Kxg8}} est illégal — le fou en **f7** défend g8\n- {{h8}} — couverte par la dame en g8\n- Le roi est en *échec* ; les seuls coups légaux sont d'échapper à l'échec ; capturer le fou ignore l'échec de la dame\n\n> **À retenir :** Un fou à un coup de la dernière rangée peut soutenir le sacrifice mat de la dame. Quand votre dame et votre fou atteignent tous deux le voisinage du roi, scrutez une case d'arrivée défendue à côté du roi."
 }

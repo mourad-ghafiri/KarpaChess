@@ -4,5 +4,8 @@
   "solution": [
     "Rxd5+"
   ],
-  "hint": "La dame est clouée — prenez-la."
+  "title": "Cloué à distance",
+  "setup": "La dame noire s'est aventurée en **d5** — directement entre son roi en d8 et la tour blanche en d2.",
+  "hint": "La distance n'est pas une défense quand une pièce est clouée. Prenez-la.",
+  "explanation": "## L'idée\n\nLa dame noire semble active au centre, mais elle est en réalité **clouée**. La tour blanche en d2 voit à travers elle jusqu'au roi noir en d8. Elle est paralysée.\n\nLes Blancs jouent {{Rxd5+}}, capturant la dame avec échec.\n\n- Noir n'a qu'une seule réponse légale : {{Kxd5}} ? Non — le roi est en d8, à trois cases. Le roi ne peut atteindre d5 en un coup.\n- Donc Noir doit déplacer le roi hors de l'échec : {{Kc7}}, {{Kc8}}, {{Ke7}}, {{Ke8}}, {{Kd7}} — n'importe laquelle.\n- La tour ne peut pas être capturée. **Blanc gagne la dame gratuitement.**\n\n## Schéma à mémoriser\n\n> Un clouage absolu ignore la distance du roi. Tant que le roi adverse est sur la même ligne, la pièce clouée ne peut pas s'échapper.\n\nC'est même mieux qu'un clouage normal — pas de reprise immédiate, juste un gain de dame net."
 }

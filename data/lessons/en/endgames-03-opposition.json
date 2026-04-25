@@ -4,18 +4,27 @@
   "summary": "The single most important endgame concept",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "4k3/8/4K3/8/8/8/8/8 w - - 0 1",
       "title": "Face to Face",
-      "text": "Two kings face each other with one square between them. The side NOT to move has the opposition — the other king must step aside. In king-and-pawn endings, having the opposition often decides the game." },
-    { "type": "teach",
+      "text": "## What is the opposition?\n\n**Opposition** is the situation where two kings stand on the same file, rank, or diagonal with **exactly one square between them**. The side **NOT** to move is said to *have* the opposition — the other king must give ground.\n\n### Types you must know\n\n- **Direct opposition** — kings one square apart on a file or rank (most common).\n- **Diagonal opposition** — kings one square apart on a diagonal.\n- **Distant opposition** — kings on the same line with **3 or 5** squares between them.\n\nA simple test: if the count of squares between the kings is **even**, the side *to move* loses the opposition.\n\n### Why it matters\n\nIn pure king-and-pawn endings, the opposition decides who can pass and who must retreat. Many drawn-looking positions are won — and many won-looking positions are drawn — purely on this single tempo.\n\n### Common mistakes\n\n- Stepping forward to the wrong square so the *opponent* gets the opposition.\n- Confusing direct with diagonal opposition.\n- Pushing a pawn while you have the opposition — you may give it back for free.\n\n> The side that must move first, must move aside."
+    },
+    {
+      "type": "teach",
       "fen": "4k3/8/4K3/4P3/8/8/8/8 w - - 0 1",
       "title": "With a Pawn",
-      "text": "Here White has an extra pawn and wants to promote it. To win, White's king must PRECEDE the pawn with the opposition. The rule: 'king in front, pawn behind.'" },
-    { "type": "play",
+      "text": "## Opposition with a pawn\n\nNow White owns an extra **pawn on e4** and a king on **e6**. Black's king on **e8** stands in the way of the queening square. To win, White must combine **two ideas**:\n\n1. Keep the king **in front of the pawn**, never behind it.\n2. **Outflank** the enemy king by stepping diagonally to grab a key square.\n\n### Key squares\n\nFor a pawn on the 5th rank or lower, the **key squares** are the three squares **two ranks ahead** of the pawn (here: d6, e6, f6). If your king reaches any one of them with the move, you win regardless of opposition.\n\n### Procedure\n\n1. Step the king diagonally forward: {{Kd6}} or {{Kf6}}.\n2. The black king must give way; follow him along the file.\n3. Push the pawn only when it can advance with the king's protection.\n4. Promote and switch to the K+Q mate.\n\n### Common mistakes\n\n- Pushing {{e5}} first — Black plays Ke7 and you lose all progress.\n- Going Ke6-e7?? — illegal? actually Ke7 walks into check from the king. Don't.\n- Playing Ke4 / Kf4 — the king drifts away from his pawn.\n\n### Model line\n\n{{Kd6}} Kd8 {{e5}} Ke8 {{e6}} Kf8 {{Kd7}} and the pawn queens.\n\n> King in front, pawn behind."
+    },
+    {
+      "type": "play",
       "fen": "4k3/8/4K3/4P3/8/8/8/8 w - - 0 1",
-      "prompt": "Step to take the opposition.",
-      "targetSan": ["Kd6", "Kf6"],
-      "hint": "Kd6 or Kf6 both claim the opposition and win." }
+      "prompt": "Step **diagonally forward** to seize a key square. The principle: *the king leads, the pawn follows*.",
+      "targetSan": [
+        "Kd6",
+        "Kf6"
+      ],
+      "hint": "Both flanks work — step to the **6th rank** and force Black to choose which side to retreat."
+    }
   ]
 }

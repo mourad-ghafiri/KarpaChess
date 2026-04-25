@@ -7,41 +7,41 @@
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "title": "Spanyol",
-      "text": "Dinamai sesuai pastor Spanyol abad ke-16, Ruy Lopez (atau \"Spanyol\") menekan pion e5 melalui kuda c6. Mengarah ke babak tengah yang kaya dan bernuansa. Setiap juara dunia dari Steinitz hingga Carlsen pernah memainkannya."
+      "title": "Sang Spanyol",
+      "text": "Dinamai dari pendeta Spanyol abad ke-16 **Ruy López de Segura**, Ruy Lopez (juga disebut *Spanish Game*) adalah pembukaan serius tertua yang masih dimainkan di level tertinggi catur.\n\nSetiap juara dunia pernah memainkannya — Steinitz, Lasker, Capablanca, Alekhine, Botvinnik, Fischer, Karpov, Kasparov, Carlsen.\n\n## Urutan yang mendefinisikan\n\nGaris kanonis adalah {{e4}} {{e5}} {{Nf3}} {{Nc6}} {{Bb5}}. Gajah memaku kuda c6 ke bidak e5 — tetapi *ancaman* sebenarnya adalah jangka panjang, bukan langsung.\n\n## Apa yang diinginkan setiap pihak\n\n- **Rencana Putih:** mempertahankan tekanan pada e5, berkembang dengan **{{c3}}**, **{{O-O}}**, **{{Re1}}**, **{{d4}}**, lalu meluas di sayap raja atau pusat.\n- **Rencana Hitam:** menantang gajah dengan **...a6** (Pertahanan Morphy), berkembang dengan **...Nf6**, **...Be7**, **0-0**, **...d6**, dan baik mempertahankan bidak e5 (Closed Ruy) atau melepasnya untuk aktivitas buah (Open Ruy).\n- **Struktur bidak:** rantai khas Ruy Lopez — **e4-d3** untuk Putih vs **e5-d6** untuk Hitam, dengan manuver di kedua sayap.\n\n## Mengapa masih relevan\n\nRuy Lopez menciptakan **kedalaman strategis tanpa memaksa taktik**. Itu adalah pendidikan catur lengkap dalam satu pembukaan — struktur bidak, manuver buah, serangan dan pertahanan.\n\n> Setelah Anda memahami Ruy Lopez, Anda memahami catur klasik."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "prompt": "Mainkan 1.e4",
+      "prompt": "Buka dengan bidak raja — mainkan **{{e4}}**.",
       "targetSan": [
         "e4"
       ],
-      "hint": "Pion raja dua kotak."
+      "hint": "1.e4 menegakkan pusat dan menjadi gerbang ke Ruy Lopez."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
-      "prompt": "Kembangkan kuda raja: 2.Nf3",
+      "prompt": "Berkembang dengan **{{Nf3}}** — menyerang e5 dan mempersiapkan rokade.",
       "targetSan": [
         "Nf3"
       ],
-      "hint": "Menyerang e5, mengembangkan bidak."
+      "hint": "Nf3 adalah langkah kuda yang setiap pembukaan klasik mulai — mengembangkan buah DAN menyerang bidak pusat Hitam."
     },
     {
       "type": "play",
       "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
-      "prompt": "Langkah yang menentukan: 3.Bb5",
+      "prompt": "Langkah yang mendefinisikan: mainkan **{{Bb5}}** — gajah maju untuk menekan kuda c6.",
       "targetSan": [
         "Bb5"
       ],
-      "hint": "Mengikat kuda secara tidak langsung, mengancam menggerogoti e5."
+      "hint": "Pakuan Bb5 bersifat *tidak langsung*: ia tidak segera memenangkan bidak e5 (karena ...Bxc6 dxc6 Nxe5 Qd4). Ia hanya menekan perlahan."
     },
     {
       "type": "teach",
       "fen": "r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
       "title": "Ide Utama",
-      "text": "Gajah sebenarnya tidak langsung memenangkan e5 (setelah 3...a6 4.Bxc6 dxc6, pion e Hitam tetap terlindungi). Ancaman SEBENARNYA adalah mengganggu struktur Hitam dan mencekiknya secara posisional. Catur klasik pada puncaknya."
+      "text": "Setelah **3.Bb5**, Anda akan sering melihat pemula berpikir *Saya tinggal makan kudanya!* — dan menemukan bahwa {{Bxc6}} **dxc6** {{Nxe5}} kalah karena **...Qd4!**, menggarpu kuda dan bidak e4. Ruy Lopez **bukan** tentang memenangkan bidak secara langsung.\n\n## Apa yang sebenarnya dicapai pakuan Bb5\n\n- Mengancam **merusak struktur bidak Hitam** jika dan ketika {{Bxc6}} dimainkan.\n- Secara tidak langsung **melemahkan e5** — jika Hitam pernah membiarkan Putih memainkan {{Bxc6}} lalu {{Nxe5}} tanpa trik **...Qd4** tersedia, Putih memenangkan bidak.\n- Membatasi pengembangan Hitam — kuda c6 harus berpikir sebelum bergerak.\n\n## Respons utama Hitam\n\n- **3...a6** (Pertahanan Morphy, sejauh ini paling umum) — menendang gajah, memintanya untuk berkomitmen. Putih mundur dengan **4.Ba4** atau menukar dengan **4.Bxc6**.\n- **3...Nf6** (Pertahanan Berlin) — Vladimir Kramnik menggunakannya untuk mengalahkan Garry Kasparov dalam gelar dunia tahun 2000.\n- **3...d6** (Pertahanan Steinitz) — solid tetapi pasif.\n- **3...Bc5** (Klasik) — berani, mengabaikan pakuan, mempersiapkan ...Nf6 dan 0-0.\n\n## Garis utama model\n\n{{e4}} {{e5}} {{Nf3}} {{Nc6}} {{Bb5}} **a6** **{{Ba4}}** **Nf6** **{{O-O}}** **Be7** **{{Re1}}** **b5** **{{Bb3}}** **d6** **{{c3}}** **0-0** — Closed Ruy klasik.\n\n> Ruy Lopez adalah catur lambat di puncaknya. Buah bergerak, rencana mengkristal, dan satu ketidakakuratan kecil bisa menentukan permainan sepuluh langkah kemudian."
     }
   ]
 }

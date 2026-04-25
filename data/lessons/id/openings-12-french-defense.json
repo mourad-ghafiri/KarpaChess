@@ -1,38 +1,38 @@
 {
   "id": "french-defense-deep",
-  "title": "Pertahanan French",
-  "summary": "Rantai pion kokoh dengan potensi serangan balik",
+  "title": "Pertahanan Prancis",
+  "summary": "Rantai bidak solid dengan potensi balas serang",
   "difficulty": "intermediate",
   "steps": [
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
-      "title": "Filosofi yang Berbeda",
-      "text": "French (1...e6) menyerahkan ruang pusat tetapi membangun rantai pion seperti granit. Hitam merencanakan ...d5, ...c5, dan ...Nc6 untuk menggerogoti pusat Putih."
+      "title": "Filosofi Berbeda",
+      "text": "**Pertahanan Prancis** adalah balasan ahli strategi untuk 1.e4. Dengan **1...e6**, Hitam mengumumkan: *Saya tidak akan bertarung secara simetris. Saya akan membangun dinding, dan di belakangnya saya akan balas serang.*\n\nDinamai dari pertandingan korespondensi abad ke-19 antara London dan Paris (Paris menang), itu adalah pilihan legenda seperti **Botvinnik**, **Petrosian**, **Korchnoi**, dan **Morozevich**.\n\n## Urutan yang mendefinisikan\n\nGaris kanonis adalah {{e4}} {{e6}} {{d4}} {{d5}}. Putih punya pusat lebih besar untuk sementara, tetapi Hitam akan segera menantangnya langsung dengan **...d5**.\n\n## Apa yang diinginkan setiap pihak\n\n- **Rencana Putih:** maju dengan {{e5}} (Variasi Maju), tukar dengan {{exd5}} (Tukaran), atau berkembang dengan {{Nc3}} atau {{Nd2}} (Klasik / Tarrasch). Masing-masing menghasilkan pertarungan berbeda.\n- **Rencana Hitam:** targetkan bidak d4 Putih dengan **...c5**, kembangkan kuda menteri ke **...Nc6**, fianchetto kuda b8 via **...Nd7-...Nb6** di beberapa garis, dan tukar gajah buruk. Balas serang pusat dengan **...f6** jika Putih memainkan e5.\n- **Struktur bidak:** rantai Prancis khas — bidak Putih di d4-e5 vs bidak Hitam di d5-e6, terkunci dalam *rantai bidak tertutup*. Setiap pihak menyerang *pangkal* rantai musuh.\n\n## Paradoks Prancis\n\nMasalah besar: **gajah kotak terang Hitam di c8** terkurung di belakang bidak e6. Memecahkan (atau menerima) *gajah Prancis buruk* adalah tema strategis seluruh pembukaan.\n\n> Prancis tidak pasif. Ia adalah pegas yang melingkar menunggu menyerang."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
-      "prompt": "1...e6 — susunan French.",
+      "prompt": "Mainkan setup Prancis dengan **{{e6}}** — mempersiapkan **...d5** dengan rantai bidak granit.",
       "targetSan": [
         "e6"
       ],
-      "hint": "Menyiapkan ...d5 pada langkah kedua."
+      "hint": "Jangan dorong e5 (itu akan menjadi 1...e5). Sebaliknya, persiapkan ...d5 yang didukung kuda dengan langkah bidak kecil tetapi kokoh."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
-      "prompt": "Putih memainkan 2.d4 — klaim pusat.",
+      "prompt": "Putih mengklaim seluruh pusat dengan **{{d4}}** — membangun duo bidak besar.",
       "targetSan": [
         "d4"
       ],
-      "hint": "Bangun pusat besar."
+      "hint": "Jika Anda tidak memainkan d4, Hitam akan menantang dengan ...d5 lebih dulu. Tegakkan pusat maksimum Anda."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/ppp2ppp/4p3/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
-      "title": "Pusat Terkunci",
-      "text": "Setelah 2...d5, Putih harus memutuskan: Maju (e5, merebut ruang tetapi mengunci pusat), Tukar (exd5, menyederhanakan), atau Klasik (Nc3, taktis). French mengajarkan Anda bermain DENGAN dan MELAWAN rantai pion."
+      "title": "Pusat yang Diblokir",
+      "text": "Setelah **2...d5**, momen kebenaran tiba. Putih harus berkomitmen pada setup, dan masing-masing menciptakan permainan yang berbeda.\n\n## Empat variasi besar\n\n- **Variasi Maju** — **3.e5**. Putih mengunci pusat, mendapat ruang, tetapi gajah c8 hidup setelah **...Bd7-...Bb5** atau via break **...c5**. Hitam merencanakan **...c5**, **...Nc6**, **...Qb6**, **...Nge7**.\n- **Variasi Tukaran** — **3.exd5 exd5**. Simetris dan tenang — secara historis dianggap remis, tetapi Putih bisa bermain untuk keunggulan kecil dengan break c4.\n- **Variasi Klasik** — **3.Nc3 Nf6 4.e5 Nfd7** (atau **4.Bg5**). Putih menjaga opsi terbuka dan Hitam menerima posisi sempit dengan sumber daya defensif kuat.\n- **Variasi Tarrasch** — **3.Nd2**. Putih menghindari pakuan **...Bb4** dan mempersiapkan c3 + Ngf3 + Bd3. Tenang tetapi fleksibel.\n\n## Tarian break-bidak Prancis\n\n- **Putih memainkan {{f4}}-{{f5}}** untuk menantang bidak e6 (pangkal rantai Hitam).\n- **Hitam memainkan {{c5}}** — dan kemudian **...f6** — untuk menantang d4 dan e5 (pangkal rantai Putih).\n\nSiapa pun yang memenangkan lomba rantai-bidak memenangkan middlegame.\n\n> Prancis mengajari Anda berpikir dalam *rantai*, bukan dalam *buah*. Kuasai itu, dan visi posisional Anda berlipat tiga."
     }
   ]
 }

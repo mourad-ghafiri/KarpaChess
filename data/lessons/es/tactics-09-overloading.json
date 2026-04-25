@@ -4,18 +4,26 @@
   "summary": "Una pieza con dos tareas fallará en una",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "4k3/4q3/8/8/8/8/4R3/4K3 w - - 0 1",
       "title": "Demasiado Trabajo",
-      "text": "Una pieza sobrecargada está defendiendo (o atacando) más de lo que puede manejar. El caso clásico: una pieza defiende dos casillas. Cuando atacas una, la otra cae. Aquí la dama negra defiende al rey — no puede moverse sin perder ante Rxe7+." },
-    { "type": "play",
+      "text": "Una pieza **sobrecargada** es aquella con más deberes defensivos de los que puede manejar. Ataca una de sus tareas y fallará en otra.\n\n## La forma clásica\n\nUna pieza enemiga hace dos de estas cosas a la vez:\n\n- Defender una casilla que, si se invade, sería mate.\n- Defender otra pieza que de lo contrario está suelta.\n- Bloquear un jaque mientras también guarda una casilla clave.\n- Sostener una clavada mientras también cubre una casilla de horquilla de caballo.\n\nSi una pieza hace **dos** trabajos, solo necesitas hacerle hacer **tres** para que falle.\n\n## La geometría\n\nNo hay forma — la sobrecarga es contabilidad. Mapea los deberes de cada defensor; encuentra la pieza con dos; ataca una de esas tareas.\n\n## Cómo encontrarla\n\n1. Lista las piezas enemigas que vigilan más cosas.\n2. Por cada una, anota sus deberes — casillas defendidas, piezas protegidas, líneas cubiertas.\n3. Encuentra un ataque que obligue a la pieza a abandonar un deber.\n4. Aprovecha la casilla abandonada.\n\nAquí la dama negra en e7 está sobrecargada: es la única pieza entre la torre en e2 y el rey en e8. Las blancas juegan {{Rxe7+}} — la dama cae porque no puede a la vez quedarse en casa y proteger al rey.\n\n> Las piezas leales también son despedidas cuando hay demasiado trabajo."
+    },
+    {
+      "type": "play",
       "fen": "4k3/4q3/8/8/8/8/4R3/4K3 w - - 0 1",
-      "prompt": "Captura la dama clavada.",
-      "targetSan": ["Rxe7+"],
-      "hint": "La doble tarea de la dama (defender al rey Y a su casilla) implica su caída." },
-    { "type": "teach",
+      "prompt": "Caza la dama sobrecargada con **{{Rxe7+}}** — está protegiendo al rey y no puede moverse.",
+      "targetSan": [
+        "Rxe7+"
+      ],
+      "hint": "La dama cumple dos tareas a la vez. Ataca una y la otra falla."
+    },
+    {
+      "type": "teach",
       "fen": "4k3/4R3/8/8/8/8/8/4K3 b - - 0 1",
       "title": "Detectar Sobrecargas",
-      "text": "Busca piezas que defienden varias cosas — peones que se defienden entre sí y una pieza, o un caballo que retiene una columna mientras bloquea un peón pasado. Cuando encuentres una, ataca una de sus tareas." }
+      "text": "Ahora la torre está en e7, dos peones de ventaja material y un final de rey y peones ganador por delante. La sobrecarga hizo su trabajo.\n\n## Patrones comunes de sobrecarga para memorizar\n\n- Un peón defendiendo a dos piezas (caballo + alfil).\n- Un caballo que bloquea un peón pasado *y* defiende a otra pieza menor.\n- Una dama que sostiene la fila final *y* defiende a un caballo colgante.\n- Una torre que defiende la fila final *y* se opone a una torre enemiga en una columna.\n\n## Una pregunta útil\n\nCada vez que escanees una posición, pregúntate: *¿qué pieza enemiga defiende más de una cosa?* Esa pieza es tu punto débil. Encuentra una jugada que la obligue a elegir y ganarás.\n\n> Las jugadas fuertes no atacan solo piezas. Atacan *responsabilidades*."
+    }
   ]
 }

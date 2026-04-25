@@ -4,5 +4,8 @@
   "solution": [
     "Rxd8#"
   ],
-  "hint": "Échangez les tours — mat du couloir."
+  "title": "Mat Miroir",
+  "setup": "Structures identiques à l'aile-roi, tours sur la même colonne. Celui qui joue le premier mate.",
+  "hint": "Capturez la tour avec échec. Les pions noirs bloquent la fuite de leur propre roi.",
+  "explanation": "## L'Idée\n\nC'est le **mat du couloir** d'école avec un seul coup : {{Rxd8#}}.\n\n### Pourquoi c'est mat instantané\n\n1. La tour blanche capture la tour noire — la tour blanche attaque maintenant toute la 8e rangée.\n2. Le roi noir en g8 n'a que trois cases possibles :\n   - **f8** ✗ — attaquée par la tour.\n   - **h8** ✗ — attaquée par la tour.\n   - **f7, g7, h7** ✗ — toutes bloquées par les propres pions noirs.\n3. Aucune pièce noire ne peut capturer la tour blanche en d8 ; rien ne peut s'interposer.\n\n### La leçon\n\nLa position importe plus que le matériel ici. Chaque camp avait une tour — mais seul un camp avait la *bonne* tour sur la *bonne* colonne. **Tour active sur colonne ouverte bat tour endormie dans le coin.**\n\n> La 8e rangée est l'allée de l'exécuteur. Vérifiez toujours qui la contrôle."
 }

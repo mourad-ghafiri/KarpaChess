@@ -4,5 +4,8 @@
   "solution": [
     "Rxd2+"
   ],
-  "hint": "Enfilade — gagnez la dame."
+  "title": "Dame collée à son roi",
+  "setup": "La dame noire en **d2** s'est égarée devant la tour blanche, son roi derrière elle en d8.",
+  "hint": "Quand une pièce adverse bloque une ligne vers son propre roi, cette pièce est clouée — empilez les attaquants.",
+  "explanation": "## L'idée\n\nMalgré l'évocation parfois d'une « enfilade » ailleurs, il s'agit techniquement d'un **clouage absolu** : la dame noire en d2 se trouve entre la tour blanche en d1 et le roi noir en d8. Elle ne peut pas bouger sans exposer son roi.\n\nLes Blancs jouent {{Rxd2+}}, prenant la dame avec échec.\n\n- {{Kxd2}} ? Le roi est en d8, à six cases — impossible.\n- Noir doit bouger le roi : {{Kc7}}, {{Kc8}}, {{Ke7}}, {{Ke8}}, ou {{Kd7}}. Toute case de fuite convient puisque la tour est sans protection et lointaine.\n- La dame est partie pour rien en retour.\n\n## Schéma à mémoriser\n\n> Géométrie du clouage : **attaquant — cible — défenseur (roi)** sur la même ligne.\n> Géométrie de l'enfilade : **attaquant — roi — cible** sur la même ligne.\n\nIci le roi est *derrière* la dame, donc c'est un clouage. Dans les deux cas, le résultat est le même : matériel gratuit."
 }

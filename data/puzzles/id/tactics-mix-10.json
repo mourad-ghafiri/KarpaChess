@@ -4,5 +4,8 @@
   "solution": [
     "a8=Q+"
   ],
-  "hint": "Promosi dengan skak."
+  "title": "Mahkotai Pion",
+  "setup": "Pion putih telah mencapai **a7** — satu langkah dari menteri baru.",
+  "hint": "Selalu promosi dengan skak kapan pun bisa. Itu menolak pembela langkah gratis.",
+  "explanation": "## Idenya\n\n**Promosi dengan skak** sederhana. Pion di a7 mencapai a8 dan berubah menjadi menteri, sekaligus memberi skak di sepanjang baris kedelapan ke raja di e8.\n\nPutih memainkan {{a8=Q+}}.\n\n## Jawaban Hitam yang Terpaksa\n\nRaja hitam harus menjawab skak. Tanpa pembela di dekatnya, satu-satunya opsi adalah langkah raja:\n\n- {{Kd7}}, {{Ke7}}, {{Kf7}}, {{Kf8}}, {{Kd8}} — semua petak pelarian valid.\n- Raja tidak bisa mencapai a8 untuk menangkap (terlalu jauh).\n- Tidak ada yang bisa menghalangi — Hitam tidak punya buah lain.\n\nPutih muncul dengan menteri plus raja — akhir yang trivial menang.\n\n## Pola untuk Diingat\n\n> Saat promosi, **pilih membuat menteri dengan skak** — itu memaksa lawan bereaksi terhadap langkah Anda dulu.\n\nWaspada terhadap jebakan pat di posisi yang sedikit berbeda: saat raja lawan tidak punya petak legal, menteri tanpa skak bisa secara tidak sengaja menghasilkan remis. Di sini, raja punya banyak ruang bernapas, jadi skak adalah keuntungan murni."
 }

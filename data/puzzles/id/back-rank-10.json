@@ -4,5 +4,8 @@
   "solution": [
     "Rd8+"
   ],
-  "hint": "Benteng ke baris ke-8 — perlindungan pion tidak membantu."
+  "title": "Bidak Tidak Menyelamatkan Raja Ini",
+  "setup": "Hitam sudah memainkan {{g6}} untuk sedikit luft — tetapi raja masih duduk di g8 dan satu-satunya jalan keluar adalah ke pojok.",
+  "hint": "{{Rd8+}} mengusir raja. Jalan keluarnya lebih pendek dari yang dikira Hitam.",
+  "explanation": "## Idenya\n\n{{Rd8+}} menentukan meskipun Hitam sudah menciptakan sedikit ruang dengan {{g6}}. Skak memaksa langkah raja, dan pilihan Hitam bencana:\n\n### Setelah Rd8+\n\n1. **Kh7?** Kalah karena benteng melanjutkan serangan — Putih bergeser ke lajur h dan raja kehabisan kotak.\n2. **Kg7** — raja mencoba berjalan maju, tetapi benteng mengikuti di baris ke-7, mengganggu raja dan bidak.\n\nIntinya: **{{g6}} tidak cukup luft** karena raja masih terpaku di baris ke-8 oleh bidak f7 dan h7-nya sendiri. Gerakan bidak g hanya membantu jika raja benar-benar bisa lolos ke g7 *dengan aman* — yang tidak bisa, karena benteng Putih akan mengikuti di baris ke-7 atau ke-8.\n\n### Pola\n\n- *Setengah luft* (satu bidak digerakkan) lebih buruk daripada tanpa luft, karena memancing raja menuju kematiannya.\n- Luft sejati berarti raja punya kotak pelarian yang **aman**, bukan sekadar kosong.\n\n> Luft berbicara tentang keamanan, bukan sekadar ruang."
 }

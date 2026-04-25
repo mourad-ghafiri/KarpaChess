@@ -4,5 +4,8 @@
   "solution": [
     "Nf6+"
   ],
-  "hint": "Seekor kuda dapat menyerang dua buah sekaligus — temukan kotak yang menyerang raja dan menteri."
+  "title": "Kuda Garpu Para Raja",
+  "setup": "Raja Hitam di e8 dan menteri di d5 keduanya dalam satu lompatan kuda dari f6.",
+  "hint": "Cari kotak yang bisa didarati kuda yang menyerang **kedua** raja dan menteri.",
+  "explanation": "## Idenya\n\n**Garpu keluarga** contoh. Kotak {{f6}} menyentuh e8 (raja) dan d5 (menteri) sekaligus — pola kuda klasik menyerang dua bidak yang dua kotak terpisah dalam bentuk L.\n\nSetelah {{Nf6+}}:\n\n- **Tangkap?** Raja di e8 tidak bersebelahan dengan f6 (dua kotak diagonal), jadi {{Kxf6}} ilegal. Menteri di d5 juga tidak bisa mengambil f6 — d5 ke f6 adalah pola kuda, bukan garis menteri.\n- **Blokir?** Skak kuda tidak pernah bisa diblokir.\n- **Lari?** Raja harus bergerak (Kd7, Kf7, Kd8, Kf8), dan langkah berikutnya Putih main {{Nxd5}}, memenangkan menteri cuma-cuma.\n\n## Pola yang Harus Diingat\n\n> Ketika raja dan menteri musuh **dua kotak terpisah di diagonal** (seperti d5 dan e8), kuda biasanya bisa menggarpu mereka dari kotak di antara."
 }

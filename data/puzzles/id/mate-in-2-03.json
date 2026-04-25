@@ -1,10 +1,13 @@
 {
   "id": "mate-in-2-03",
-  "fen": "8/8/2K5/8/2k5/8/8/R7 w - - 0 1",
+  "fen": "8/8/8/8/8/1K6/8/k5R1 w - - 0 1",
   "solution": [
-    "Ra4+",
-    "Kb3",
-    "Rb4+"
+    "Rg2",
+    "Kb1",
+    "Rg1#"
   ],
-  "hint": "Skak menuntun raja ke tepi."
+  "title": "Himpitan Zugzwang",
+  "setup": "Raja Hitam di sudut **a1**. Raja Anda di **b3** mengunci {{a2}} dan {{b2}} — tetapi Hitam masih punya {{b1}} sebagai pelarian senyap.",
+  "hint": "Jangan skak dulu — buat *langkah menunggu* yang menguasai baris ke-2, memaksa raja ke {{b1}}.",
+  "explanation": "## Idenya\n\nSebuah **mate-in-2 dengan langkah pertama yang tenang**. Triknya adalah skak langsung pada benteng membiarkan raja mencapai **b1** tanpa lanjutan, tetapi *langkah menunggu* menempatkan Hitam dalam **zugzwang** — Hitam terpaksa berjalan menuju skakmat.\n\n**1. {{Rg2}}** — benteng meluncur ke baris ke-2. Ini *bukan* skak, tetapi menguasai seluruh baris ke-2.\n\n**1...{{Kb1}}** — terpaksa. Satu-satunya langkah legal Hitam: {{Ka2}} dan {{Kb2}} diserang raja Anda di **b3**, dan raja tidak bisa tetap di a1 — raja *tidak dalam skak*, tetapi a1 tidak punya petak legal lain selain b1.\n\n**2. {{Rg1#}}** — benteng turun ke baris 1, memberi skakmat.\n\nMengapa raja terjebak setelah langkah 2?\n\n- {{a1}} — dikuasai benteng di g1 (baris 1)\n- {{c1}} — dikuasai benteng di g1 (baris 1)\n- {{a2}} — dikuasai raja Anda di **b3**\n- {{b2}} — dikuasai raja Anda di **b3**\n- {{c2}} — dikuasai raja Anda di **b3**\n- Benteng terlalu jauh untuk {{Kxg1}}\n\n> **Pelajaran:** Tidak setiap skakmat dimulai dengan skak. **Zugzwang** adalah salah satu alat paling indah dalam akhir catur — kadang langkah terkuat adalah *tidak melakukan apa pun yang agresif* dan memaksa lawan ke langkah yang kalah."
 }

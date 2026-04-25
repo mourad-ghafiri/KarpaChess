@@ -4,18 +4,26 @@
   "summary": "El motor de las victorias en el final",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "4k3/8/8/8/4P3/8/8/4K3 w - - 0 1",
       "title": "¿Qué es un Peón Pasado?",
-      "text": "Un peón pasado no tiene peón enemigo delante ni en las columnas adyacentes — nada puede impedir su promoción salvo una pieza. Los peones pasados son activos enormes en el final. La frase 'un peón pasado debe ser empujado' es un dicho de Nimzowitsch por una razón." },
-    { "type": "play",
+      "text": "## Qué hace que un peón sea *pasado*\n\nUn peón está **pasado** cuando:\n\n- No hay peón enemigo en su **propia columna** por delante, **y**\n- No hay peón enemigo en ninguna de las **columnas adyacentes** por delante.\n\nNada salvo piezas enemigas puede impedirle llegar a la 8ª fila — y una pieza terminará por tener que abandonarlo para atender otras tareas. Por eso los peones pasados son el **motor** de las victorias en el final.\n\n### Qué es esta posición\n\nUn único peón blanco en **e4**, dos reyes lejanos, sin defensores en las columnas d o f. El peón está pasado y a cuatro jugadas de coronar. La única pregunta es si el rey blanco puede apoyarlo antes de que el rey negro lo bloquee.\n\n### Cómo USAR un peón pasado\n\n1. Empújalo cuando esté **escoltado** o cuando el rival no pueda alcanzarlo (la *regla del cuadrado*).\n2. **Úsalo como señuelo** — el rey o las piezas enemigas deben abandonar otros objetivos para detenerlo.\n3. **Cambia piezas, no peones** — las posiciones más simples amplifican su poder.\n4. En el flanco más alejado de la acción, un peón pasado *exterior* es aún más fuerte porque aleja al rey rival.\n\n### Errores comunes\n\n- **Empujar demasiado pronto** sin escolta — el rey enemigo lo recoge.\n- **Cambiar el peón equivocado** y quedarte sin peón pasado.\n- Olvidar la **regla del cuadrado**: traza un cuadrado imaginario desde el peón hasta su columna de coronación; si el rey enemigo no puede entrar en ese cuadrado a tiempo, el peón corona sin ayuda.\n\n### Línea modelo\n\n{{e5}} Ke7 {{Kd2}} Kd6 {{Kd3}} — el rey blanco es demasiado lento; el rey negro alcanza al peón y lo gana. La lección es clara: **un peón pasado necesita ayuda**.\n\n> Un peón pasado debe ser empujado — pero solo cuando su rey pueda seguirle el ritmo."
+    },
+    {
+      "type": "play",
       "fen": "4k3/8/8/8/4P3/8/8/4K3 w - - 0 1",
-      "prompt": "Avanza el peón pasado.",
-      "targetSan": ["e5"],
-      "hint": "e5 — un paso más cerca de la promoción." },
-    { "type": "teach",
+      "prompt": "Avanza el peón pasado una casilla. El principio: *los peones pasados ganan espacio en el momento en que los empujas*.",
+      "targetSan": [
+        "e5"
+      ],
+      "hint": "Una casilla hacia adelante por la columna e — comienza la carrera."
+    },
+    {
+      "type": "teach",
       "fen": "4k3/8/8/4P3/8/8/8/4K3 b - - 0 1",
       "title": "¡Apóyalo!",
-      "text": "Un peón pasado solitario aún necesita ayuda. Sin un rey que lo escolte, una sola pieza enemiga puede detenerlo. Activa tu rey para apoyar el avance — y crea una nueva dama." }
+      "text": "## Un peón solo no puede ganar\n\nTras {{e5}}, mueven las negras. Fíjate en la distancia entre el peón en **e5** y su rey en **e1** — cuatro filas. Las negras juegan Ke7 y el peón está **condenado** sin ayuda.\n\n### Qué señales te dicen que escoltes\n\n- El rey enemigo está **más cerca** del peón que el tuyo.\n- Ninguna pieza amiga puede defender la casilla de coronación en una jugada.\n- El rey rival ya cubre la **casilla de coronación**.\n\n### Procedimiento cuando tu peón pasado necesita escolta\n\n1. **Detén el avance** y sube el rey: Kd2, Kd3, Ke4.\n2. Usa la **oposición** para que el rey enemigo no bloquee.\n3. Reanuda el avance solo cuando el peón tenga un rey detrás o al lado.\n4. Usa el peón como **escudo** — protege a tu rey de jaques laterales.\n\n### Errores comunes\n\n- Empujar en cada jugada en piloto automático — *un peón pasado debe ser empujado* es un eslogan, no un plan.\n- Cambiar el camino *activo* del rey por jugadas de rey al azar.\n- Defender al peón con el rey **por detrás** en vez de al lado o delante.\n\n### Continuación modelo\n\n... Ke7 {{Kd2}} Kxe5? — pero si en cambio {{Ke2}} Kf6 {{Kd3}} Kxe5 — el peón cae. Con los reyes tan separados, solo cuando el rey esté más cerca (p. ej. en e3) podrán las blancas avanzar e6 con seguridad.\n\n> Activa al rey antes de empujar al peón."
+    }
   ]
 }

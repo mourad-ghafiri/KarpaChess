@@ -1,8 +1,11 @@
 {
   "id": "mate-in-1-28",
-  "fen": "1k6/pp6/8/8/8/8/8/1K4R1 w - - 0 1",
+  "fen": "1k6/pp6/1P6/8/8/8/8/1K4R1 w - - 0 1",
   "solution": [
-    "Rg8+"
+    "Rg8#"
   ],
-  "hint": "Serbu baris ke-8 — pion-pion menjadi penjaranya."
+  "title": "Skakmat Sumbat Pion",
+  "setup": "Pion Anda di **b6** menyumbat pelarian {{c7}}, sementara pion-pion Hitam sendiri mengunci **lajur a-** dan **b**.",
+  "hint": "Serbu benteng ke baris ke-8 — pion di **b6** menutup {{c7}} dan pion Hitam menahan {{a7}} dan {{b7}}.",
+  "explanation": "## Idenya\n\nSebuah **skakmat baris belakang dengan bantuan pion tenang**. Pion di **b6** tidak memberi skak — tetapi mengontrol c7, satu-satunya petak pelarian yang tidak dijangkau benteng.\n\nMainkan {{Rg8#}}.\n\nMengapa raja terjebak?\n\n- {{a8}}, {{c8}} dan baris ke-8 lainnya — semua disapu benteng di g8\n- {{a7}} — diblokir pion-a Hitam sendiri (dan juga diserang pion Putih b6)\n- {{b7}} — diblokir pion-b Hitam sendiri\n- {{c7}} — dikuasai pion Putih di **b6**\n- Benteng terlalu jauh untuk {{Kxg8}}\n\n> **Pelajaran:** Pion satu petak di depan *lajur pelarian* raja lawan adalah pembantu skakmat tersembunyi. Saat melihat raja terjebak di belakang dua pion, pindai dukungan pion kecil yang menutup petak pelarian ketiga."
 }

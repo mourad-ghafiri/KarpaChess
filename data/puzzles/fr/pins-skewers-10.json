@@ -4,5 +4,8 @@
   "solution": [
     "Rxd7+"
   ],
-  "hint": "Clouez, puis capturez la pièce clouée."
+  "title": "Fou cloué, fou perdu",
+  "setup": "Un fou noir est en **d7**, directement devant son roi et dans la ligne de mire de la tour.",
+  "hint": "Les pièces mineures clouées sont des cibles fixes — capturez-les.",
+  "explanation": "## L'idée\n\nLe fou noir en d7 est en **clouage absolu** sur la colonne d. Les fous peuvent normalement glisser sur les diagonales, mais celui-ci ne peut pas bouger du tout — tout coup de fou mettrait le roi en d8 en échec depuis la tour en d2.\n\nLes Blancs jouent {{Rxd7+}}, raflant le fou.\n\n- {{Kxd7}} est forcé — le roi est la seule pièce qui puisse parer l'échec.\n- Après l'échange, Blanc a échangé la tour contre le fou. Dans une position plus complète, ce serait un **gain de pièce net** ; dans cette miniature, c'est un moment d'enseignement sur la géométrie.\n\n## Schéma à mémoriser\n\n> Le clouage ne se soucie pas du type de pièce qu'il piège. Fous, cavaliers, tours, dames — tous deviennent des statues quand ils sont cloués sur leur roi.\n\nLa magie du clouage, c'est qu'il **annule entièrement la mobilité de la cible**, peu importe comment la pièce se déplace normalement."
 }

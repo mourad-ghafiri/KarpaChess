@@ -4,5 +4,8 @@
   "solution": [
     "Rd8#"
   ],
-  "hint": "Mat du couloir classique."
+  "title": "Le Mur de Pions",
+  "setup": "Le bouclier de pions noirs en **f7**, **g7**, **h7** est intact — mais sans fenêtre d'évasion, c'est une condamnation à mort.",
+  "hint": "Glissez la tour sur la colonne ouverte — les pions {{f7}}-{{g7}}-{{h7}} font tout le travail.",
+  "explanation": "## L'Idée\n\nLe **mat du couloir** dans sa forme la plus pure : une colonne ouverte, une dernière rangée vide, et un bouclier de pions noirs sans aucune fuite.\n\nJouez {{Rd8#}}.\n\nPourquoi le roi est-il piégé ?\n\n- {{f8}} et {{h8}} — couvertes par la tour en d8 (8e rangée)\n- {{f7}}, {{g7}}, {{h7}} — toutes bloquées par les propres pions noirs\n- Rien sur la ligne d8-g8 ne peut s'interposer\n- Le roi ne peut capturer : d8 est loin de g8\n\n> **À retenir :** C'est la position que tout professeur d'échecs utilise au premier jour. La parade est simple — poussez *un* des pions f, g ou h d'une case en avant pour créer une fenêtre d'évasion avant l'arrivée de la tour."
 }

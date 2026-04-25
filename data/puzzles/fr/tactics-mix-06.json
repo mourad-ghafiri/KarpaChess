@@ -1,8 +1,12 @@
 {
   "id": "tactics-mix-06",
-  "fen": "4k3/8/8/8/8/3BN3/8/4K3 w - - 0 1",
+  "fen": "4k3/8/2N5/4q3/B7/8/8/4K3 w - - 0 1",
   "solution": [
-    "Nc4+"
+    "Nxe5+",
+    "Kd8"
   ],
-  "hint": "Le cavalier bouge — que fait le fou ?"
+  "title": "L'échec à la découverte gagne la dame",
+  "setup": "Un cavalier blanc en **c6** se trouve entre le fou blanc en a4 et le roi noir en e8. La dame noire s'est garée en e5 — directement dans le saut du cavalier.",
+  "hint": "Quand votre pièce bouge et révèle un échec depuis la pièce derrière elle — c'est un échec à la découverte. Utilisez-le pour capturer gratuitement.",
+  "explanation": "## L'idée\n\nVoici un **échec à la découverte** combiné à une capture. Le cavalier en c6 bloque le fou en a4 d'un échec sur la diagonale a4-e8. Quand le cavalier bouge, l'échec du fou est **révélé**.\n\nLes Blancs jouent {{Nxe5+}} — le cavalier capture la dame *et* découvre un échec du fou.\n\n## Réponse forcée des Noirs\n\nNoir doit répondre à l'**échec du fou** (pas du cavalier, qui vient de bouger). Coups de roi légaux :\n\n- {{Kd8}} — sûr ; le fou en a4 ne contrôle que la ligne a4-e8, et d8 est hors de cette diagonale.\n- {{Kf8}} — échappe aussi à la diagonale.\n- {{Ke7}} — la diagonale du fou va a4-b5-c6-d7-e8, donc e7 est sûr.\n\nNoir ne peut pas capturer le cavalier en e5 (roi en e8 trop loin) et ne peut pas bloquer l'échec du fou (plus de pièces mineures).\n\n## Schéma à mémoriser\n\n> Échec à la découverte = **deux menaces d'un seul coup**. La pièce qui bouge peut capturer ou menacer n'importe quoi, tandis que le roi doit d'abord parer l'échec de la pièce non bougée.\n\nQuand vous voyez une batterie — votre fou/tour/dame alignée sur le roi adverse avec une de *vos* pièces bloquant — cherchez à déplacer la pièce bloquante vers une case qui gagne du matériel. Le défenseur ne peut pas répondre aux deux attaques."
 }

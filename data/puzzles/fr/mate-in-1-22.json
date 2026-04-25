@@ -4,5 +4,8 @@
   "solution": [
     "Ra1#"
   ],
-  "hint": "Mat du couloir avec soutien du roi."
+  "title": "Étranglement dans le Coin",
+  "setup": "Le roi noir est dans le coin **a8** ; votre roi en **c7** tient {{b7}}, {{b8}} et {{c8}}.",
+  "hint": "Faites pivoter la tour sur la **colonne a** — le coin du roi devient son cercueil.",
+  "explanation": "## L'Idée\n\nUn **mat R+T contre R dans le coin** classique. Le roi blanc est à une case en diagonale du coin — la cage standard — et la tour mate depuis la même colonne.\n\nJouez {{Ra1#}}.\n\nPourquoi le roi est-il piégé ?\n\n- {{a7}} et {{a8}} — toutes deux attaquées par la tour en a1 (échec colonne a)\n- {{b7}}, {{b8}} — couvertes par votre roi en **c7**\n- La tour en a1 est trop loin pour {{Kxa1}}\n- Rien sur la colonne a ne peut s'interposer\n\n> **À retenir :** Une fois votre roi sur la *diagonale d'opposition* (ici c7 vs a8), la tour peut mater depuis n'importe quelle case sûre de la colonne ou rangée du roi piégé."
 }

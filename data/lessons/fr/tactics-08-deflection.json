@@ -1,21 +1,29 @@
 {
   "id": "deflection",
-  "title": "Déviation",
+  "title": "La déviation",
   "summary": "Forcer une pièce à aller là où elle ne devrait pas",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "4r1k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
       "title": "L'appât",
-      "text": "La déviation consiste à forcer une pièce ennemie hors d'une case clé ou d'un rôle défensif. Souvent avec un échec ou une capture alléchante. La pièce ne peut pas refuser, et son départ ouvre une ligne gagnante." },
-    { "type": "play",
+      "text": "La **déviation** consiste à forcer une pièce ennemie *hors* d'une case importante ou d'un rôle. Éliminer le défenseur, c'est retirer la pièce *de l'échiquier* ; la déviation se contente de la *pousser* ailleurs — souvent par une prise ou un échec qu'elle ne peut refuser.\n\n## Le déclencheur visuel\n\nCherchez une pièce qui accomplit un travail défensif crucial — garder une dernière rangée, bloquer un pion, défendre une pièce ou une case de mat. Trouvez maintenant un moyen de la *forcer* à partir.\n\n## La géométrie\n\nLa déviation vit aux carrefours :\n\n- Une pièce occupe une case qui défend la **case A**.\n- Vous attaquez la pièce sur la **case B**, où elle doit aller ou être perdue.\n- Une fois en B, la case A est sans défense.\n\nLe sacrifice ou la menace doit être plus urgent que le devoir défensif — généralement un échec, une prise de dame, ou une fourchette.\n\n## Comment la repérer\n\n1. Trouvez la pièce ennemie qui tient tout en place.\n2. Cherchez les **coups forçants** qui l'attaquent : échecs, grosses prises, menaces de mat.\n3. Après la réponse forcée, évaluez : *la case abandonnée est-elle gagnante pour moi ?*\n\nIci, {{Ra8}} met la pression sur la tour e8 sur la dernière rangée et menace les idées {{Rxe8+}}. Si les Noirs échangent par {{Rxa8}}, la colonne e (et la dernière rangée) s'ouvre.\n\n> La pression est la langue des échecs. Les pièces adverses répondent quand on les y force."
+    },
+    {
+      "type": "play",
       "fen": "4r1k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
-      "prompt": "Envahissez avec la tour. Que se passe-t-il si les Noirs échangent ?",
-      "targetSan": ["Ra8"],
-      "hint": "Ra8 met la pression sur la tour en e8 — un échange simplifie la partie." },
-    { "type": "teach",
+      "prompt": "Mettez la pression avec **{{Ra8}}** — la tour noire est désormais sommée de quitter son poste.",
+      "targetSan": [
+        "Ra8"
+      ],
+      "hint": "Pointez une pièce lourde sur la dernière rangée. Le défenseur doit la traiter."
+    },
+    {
+      "type": "teach",
       "fen": "R3r1k1/5ppp/8/8/8/8/5PPP/6K1 b - - 0 1",
-      "title": "Échange forcé",
-      "text": "Les Noirs échangeront probablement (Rxa8 ou Rb8). Après l'échange, la simplification favorise le camp actif. La leçon : la pression force des décisions — et les décisions sous pression tournent généralement mal." }
+      "title": "L'échange forcé",
+      "text": "Depuis cette position, les Noirs n'ont que des choix inconfortables. La tour en e8 est surchargée — elle défend la dernière rangée *et* fait face à la tour blanche en a8.\n\n## Les tentatives noires\n\n- **{{Rxa8}}** — l'échange, mais qui amène une simplification favorable au camp actif.\n- **{{Rb8}}** — esquive, mais les Blancs pénètrent encore plus loin.\n- **Coup de roi** — abandonne complètement la dernière rangée.\n\n## La leçon\n\nLa déviation n'est que rarement une affaire de gain immédiat de matériel. Il s'agit plutôt de *qui décide de ce qui se passe ensuite*. Quand l'adversaire doit réagir à vos coups, vous contrôlez le tempo de la position.\n\n> La pression force les décisions. Et les décisions sous pression tournent souvent mal."
+    }
   ]
 }

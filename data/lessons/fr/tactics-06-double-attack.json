@@ -1,21 +1,29 @@
 {
   "id": "double-attack",
-  "title": "Attaque double",
+  "title": "L'attaque double",
   "summary": "Menacer deux choses à la fois",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "4k3/8/8/3q4/8/4N3/8/4K3 w - - 0 1",
       "title": "Deux menaces, un coup",
-      "text": "Une attaque double est tout coup qui crée deux menaces simultanées. La fourchette en est un type — la même pièce attaque deux cibles. Mais un coup peut aussi créer deux types DIFFÉRENTS de menace : une menace de mat plus une menace de matériel, par exemple." },
-    { "type": "play",
+      "text": "L'**attaque double** est le terme générique pour tout coup qui crée deux menaces à la fois. La fourchette en est un cas particulier — la même pièce frappe deux cibles — mais une attaque double peut être bien plus subtile.\n\n## Les variantes\n\n- **Attaque double avec une seule pièce** — une fourchette. Un cavalier, deux cibles.\n- **Attaque double avec deux pièces** — votre coup attaque une cible, tandis qu'*une autre* de vos pièces en attaquait déjà une autre, et sa menace devient soudain critique.\n- **Menace + capture** — vous capturez une pièce tout en créant une menace de mat à laquelle l'adversaire doit répondre.\n- **Menace de mat + menace matérielle** — peut-être la plus fréquente dans les parties de maître. L'adversaire doit parer le mat ; le matériel tombe.\n\n## La géométrie\n\nIl n'existe pas de forme unique. L'idée fédératrice est l'*arithmétique forçante* : l'adversaire dispose d'**un coup** pour résoudre **deux problèmes**.\n\n## Comment la trouver\n\n1. Comptez les faiblesses adverses — pièces non défendues, cases lâches, idées de mat.\n2. Listez les coups qui touchent une faiblesse (prises, échecs, menaces).\n3. Pour chacun, demandez : *crée-t-il aussi une seconde menace ?*\n4. Le coup gagnant est celui qui force l'adversaire à choisir quelle maison sauver pendant que l'autre brûle.\n\nIci, la dame en d5 est sans défense. {{Nxd5}} la gagne simplement — une attaque double exemplaire : le cavalier prend une pièce *et* il n'y a aucune contre-menace utile pour les Noirs avec le roi au centre.\n\n> Chaque coup que vous jouez a un *but*. Les coups les plus forts en ont **deux**."
+    },
+    {
+      "type": "play",
       "fen": "4k3/8/8/3q4/8/4N3/8/4K3 w - - 0 1",
-      "prompt": "La dame n'est pas défendue — prenez-la.",
-      "targetSan": ["Nxd5"],
-      "hint": "Le cavalier bondit sur d5 avec une capture." },
-    { "type": "teach",
+      "prompt": "Croquez la dame sans défense avec **{{Nxd5}}** — une attaque double d'école.",
+      "targetSan": [
+        "Nxd5"
+      ],
+      "hint": "Les pièces lâches sont toujours des cibles. Trouvez la case de cavalier qui touche la dame."
+    },
+    {
+      "type": "teach",
       "fen": "4k3/8/8/3N4/8/8/8/4K3 b - - 0 1",
-      "title": "Le principe",
-      "text": "Tout bon coup tactique menace quelque chose de précis. Deux menaces d'un même coup sont souvent décisives car l'adversaire ne peut répondre qu'à l'une d'elles. Entraînez votre œil à compter les menaces — si vous en voyez deux, quelque chose de bon se passe." }
+      "title": "Entraînez l'œil",
+      "text": "Tout joueur tactique fort parcourt la position en comptant les menaces — les siennes comme celles de l'adversaire.\n\n## Une check-list de 30 secondes\n\n1. **Pièces lâches :** quelles pièces ennemies sont sans défense ?\n2. **Pièces alignées :** deux pièces ennemies sur la même rangée, colonne ou diagonale ?\n3. **Exposition du roi :** le roi est-il sur une case échelable avec peu de fuite ?\n4. **Défenseurs surchargés :** une pièce défend-elle deux choses ?\n\nSi une réponse est *oui*, cherchez le coup qui fait éclater **deux** de ces problèmes en même temps.\n\n## Un exercice utile\n\n- Posez une position d'un livre de tactique.\n- Avant de résoudre, listez chaque pièce ennemie sans défense et chaque échec possible.\n- La solution se trouve presque toujours à l'*intersection* de deux menaces.\n\n> Les menaces uniques se parent d'une seule défense. Les menaces doubles gagnent les parties."
+    }
   ]
 }

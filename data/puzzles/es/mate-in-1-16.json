@@ -2,7 +2,10 @@
   "id": "mate-in-1-16",
   "fen": "6k1/5Q2/5K2/8/8/8/8/8 w - - 0 1",
   "solution": [
-    "Qf8+"
+    "Qg7#"
   ],
-  "hint": "La dama avanza — el apoyo del rey lo sella."
+  "title": "Beso lateral",
+  "setup": "Tu dama en **f7** y tu rey en **f6** forman un equipo cerrado — pero aterrizar en {{f8}} sería una trampa de ahogado.",
+  "hint": "No tomes la columna obvia — desliza una casilla al lado, a una casilla que tu rey ya defiende.",
+  "explanation": "## La idea\n\nUn **mate del beso de la muerte en el rincón**. Ir a {{f8}} solo da jaque con escape; la jugada correcta es colocarse *junto al* rey en una casilla que tu rey defiende.\n\nJuega {{Qg7#}}.\n\n¿Por qué está atrapado el rey?\n\n- La dama en g7 ataca g8 directamente (jaque)\n- {{h8}} — cubierta por la dama en g7 (diagonal)\n- {{h7}} — cubierta por la dama en g7 (fila)\n- {{Kxg7}} es ilegal — tu rey en **f6** defiende g7\n- Nada puede interponerse: la dama está adyacente\n\n> **Conclusión:** Cuando tienes mate con dama + rey, cuenta las casillas de escape para *cada* jugada candidata. La casilla correcta suele ser la *defendida por tu rey*, no la que da jaque desde lejos."
 }

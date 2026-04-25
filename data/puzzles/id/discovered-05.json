@@ -4,5 +4,8 @@
   "solution": [
     "Bd7+"
   ],
-  "hint": "Gerakkan gajah dengan skak — paparkan benteng."
+  "title": "Gajah Memicu Baterai",
+  "setup": "Gajah dan benteng tertumpuk di **lajur e** di depan raja musuh — baterai contoh yang dibidik tepat ke e8.",
+  "hint": "Gajah lebih banyak menghalangi daripada menjaga — gerakkan dengan skak, dan biarkan benteng melakukan kerja berat.",
+  "explanation": "## Idenya\n\nKetika dua bidak jarak jauh Anda berbaris satu di belakang yang lain, mengarah ke raja musuh, Anda punya **baterai**. Bidak di depan adalah penggerak; bidak di belakang adalah pembuka. Di sini gajah di e6 penggerak dan benteng di e4 pembuka.\n\n## Mengapa {{Bd7+}} Menghancurkan\n\nGajah meluncur ke d7 dan memberi skak sendiri sepanjang diagonal d7-e8. **Pada saat yang sama**, dengan meninggalkan e6, ia membuka benteng di e4 — yang juga menskak raja sepanjang lajur e. Dua bidak menyerang raja Hitam sekaligus.\n\n- Ini **skak ganda**: memblokir mustahil.\n- Memakan gajah mustahil — tidak ada bidak hitam di dekatnya yang mencapai d7.\n- Memakan benteng mustahil — raja Hitam tidak bisa mencapai e4.\n- Raja **harus** bergerak.\n\n## Apa yang Salah Tanpa Skak\n\nLangkah gajah yang hening (misalnya Bb3) tetap akan membuka benteng, tetapi skak benteng hanya satu, dan Hitam bisa cukup melangkahkan raja ke d7 atau f7 — bahkan memakan gajah dalam beberapa varian. Inti {{Bd7+}} adalah gajah **datang dengan tempo**: dengan menskak sendiri, ia memaksa Hitam menangani dua ancaman dalam satu langkah, yang dilarang aturan catur."
 }

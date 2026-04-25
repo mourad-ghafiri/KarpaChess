@@ -1,16 +1,20 @@
 {
   "id": "zwischenzug",
   "title": "Langkah Sela",
-  "summary": "Sisipkan ancaman yang lebih kuat sebelum penangkapan balik yang jelas",
+  "summary": "Sisipkan ancaman yang lebih kuat sebelum penangkapan kembali yang jelas",
   "difficulty": "advanced",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "r1bqkbnr/ppp2ppp/2np4/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 4",
       "title": "Jangan Sekadar Bereaksi",
-      "text": "Zwischenzug ('langkah sela', dari bahasa Jerman) adalah langkah mengejutkan yang disisipkan ke dalam rangkaian yang diharapkan — biasanya skak atau ancaman yang lebih besar — yang mengubah posisi sebelum langkah yang jelas dimainkan. Ini tanda visi taktis yang kuat." },
-    { "type": "teach",
+      "text": "**Zwischenzug** (bahasa Jerman untuk *langkah sela*) adalah langkah memaksa yang diselipkan ke dalam pertukaran yang diharapkan. Lawan mengharapkan Anda menangkap kembali; sebaliknya, Anda memainkan skak, tangkapan, atau ancaman yang lebih besar *terlebih dahulu* — *baru* menangkap kembali, sering kali dengan keuntungan.\n\n## Pemicu visual\n\nZwischenzug biasanya muncul ketika:\n\n- Sebuah tangkapan terjadi dan penangkapan kembali diharapkan.\n- Penangkapan kembali akan terasa \"normal\" tetapi posisi memiliki sumber daya **memaksa** lain — skak, tangkapan yang lebih besar, atau ancaman mat.\n- Buah lawan yang baru menangkap *itu sendiri* longgar, bisa diserang, atau dipaku.\n\n## Geometrinya\n\nIni kurang tentang geometri dan lebih tentang **tempo**. Anda menghabiskan satu langkah untuk sesuatu yang lebih mendesak sebelum melanjutkan pertukaran. Lawan harus menjawab skak atau ancaman; *lalu* Anda menyelesaikan pertukaran dengan posisi yang berubah ke arah Anda.\n\n## Cara mengenalinya\n\n1. Ketika lawan menangkap, perlambat. Jangan menangkap kembali secara otomatis.\n2. Cari **skak**, **tangkapan**, dan **ancaman besar** yang ada *sebelum* penangkapan kembali.\n3. Hitung: setelah zwischenzug Anda dan jawaban paksa, apakah saya masih bisa menangkap kembali atau melakukan yang lebih baik?\n4. Bandingkan dua jalur berdampingan. Jika langkah yang disisipkan menambah material atau posisi, mainkan.\n\n> Pemain kuat bertanya, *\"Apa yang paling memaksa?\"* Pemain lemah bertanya, *\"Apa yang diharapkan?\"*"
+    },
+    {
+      "type": "teach",
       "fen": "r1bqkbnr/ppp2ppp/2np4/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 4",
-      "title": "Pola Contoh",
-      "text": "Ketika lawan Anda menangkap sesuatu milik Anda, refleks Anda adalah menangkap balik. Tetapi kadang zwischenzug — skak di tempat lain, atau ancaman yang lebih besar — memenangkan lebih banyak material. Selalu pertimbangkan: sebelum saya menangkap balik, apakah ada sesuatu yang LEBIH BAIK? Bahkan satu skak di antaranya bisa memenangkan permainan." }
+      "title": "Contoh Praktis",
+      "text": "Bayangkan pertukaran tipikal dalam pembukaan atau permainan tengah: Anda baru saja ditangkap, dan ingin menangkap kembali. Sebelum melakukannya, lakukan pemeriksaan zwischenzug cepat.\n\n## Pohon keputusan\n\n1. **Adakah skak?** Skak memaksa tangan lawan dan merupakan kandidat prioritas tertinggi.\n2. **Apakah penangkap menggantung?** Buah yang baru menangkap mungkin tak terlindungi di petak barunya.\n3. **Adakah tangkapan yang lebih besar?** Mungkin menteri lawan longgar dua langkah lagi.\n4. **Adakah ancaman mat?** Langkah tenang yang mengancam mat juga adalah zwischenzug yang sah.\n\n## Jalur model\n\nDalam banyak pembukaan Anda akan melihat sesuatu seperti {{Bxc6}} bxc6, di mana Hitam menangkap kembali karena itu normal. Tetapi dalam beberapa posisi jawaban yang kuat **bukan** bxc6 — sebaliknya Hitam memainkan zwischenzug seperti {{Qd4}} atau {{Bb4+}} yang menyerang raja putih terlebih dahulu, *baru* menyelesaikan pertukaran gajah dengan posisi yang membaik.\n\n> Sebelum menangkap kembali, ajukan satu pertanyaan lagi. Para master selalu melakukannya."
+    }
   ]
 }

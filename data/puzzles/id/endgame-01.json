@@ -6,5 +6,8 @@
     "Kd8",
     "e6"
   ],
-  "hint": "Ambil oposisi, lalu dorong."
+  "title": "Pinggirkan, Lalu Dorong",
+  "setup": "Raja dan bidak melawan raja, dengan raja Putih sudah di depan bidaknya — tetapi Hitam memegang **oposisi langsung**.",
+  "hint": "Jangan dorong bidak dulu. **Geser ke samping** raja untuk mematahkan oposisi, lalu maju.",
+  "explanation": "## Prinsip Kunci: Oposisi\n\nDengan raja Hitam tepat di depan raja Anda, mendorong bidak terlalu cepat menyebabkan stalemate atau kehilangan bidak. Idenya yang benar adalah **mengepung**: gerakkan raja ke samping agar raja musuh terpaksa mengalah.\n\n## Rencananya\n\n1. **{{Kd6}}** — Putih melangkah ke sayap menteri, mengancam invasi di d7 atau e7. Hitam dipaksa ke satu-satunya pertahanan, **{{Kd8}}**, mengambil oposisi lagi.\n2. Dengan raja masih saling berhadapan, bidak kini **aman untuk maju**. {{e6}} mencapai kotak yang dijaga raja dan mendorong raja Hitam mundur.\n3. Setelah ...Ke8 (atau ...Kc8) Putih akan main **e7** dan menggiring bidak pulang.\n\n> Ide kunci: dalam K+P vs K, raja berjalan duluan dan bidak menyusul.\n\n## Apa yang Salah Jika Mendorong Terlalu Awal\n\nJika sebaliknya Putih main 1.e6? langsung, Hitam menjawab 1...Kf8! dan setelah 2.Kf6 Ke8 3.e7 posisinya **stalemate** — Hitam tidak punya langkah legal dan partai seri. Pelajarannya: dalam akhir bidak, **raja memimpin dan bidak mengikuti**."
 }

@@ -4,5 +4,8 @@
   "solution": [
     "Bxh1"
   ],
-  "hint": "The rook is undefended on the long diagonal."
+  "title": "Long Diagonal Sweep",
+  "setup": "A white bishop on **f3** stares down the long **a8-h1 diagonal** at an undefended black rook.",
+  "hint": "Look for undefended pieces on your bishop's diagonals — long-range collectors.",
+  "explanation": "## The Idea\n\nThis is a simple but vital pattern: an **undefended (loose) piece** on a long diagonal. The bishop on f3 sees all the way to h1, where the black rook is stranded with no friendly defender nearby.\n\nWhite plays {{Bxh1}} and simply walks off with the rook.\n\n- The black king is on d5, far too distant to recapture.\n- No black piece defends h1.\n- The rook cannot move out of the way **before** white's move — White has the turn.\n\n## Pattern to Memorize\n\n> Loose Pieces Drop Off — the **LPDO** rule.\n\nBefore every move, scan your bishop's and rook's open lines for enemy pieces with no defender. They are free material waiting to be collected."
 }

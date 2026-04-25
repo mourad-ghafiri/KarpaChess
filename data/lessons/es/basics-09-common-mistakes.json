@@ -8,19 +8,19 @@
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "Los Cinco Grandes",
-      "text": "Todo principiante comete estos errores: (1) mover la misma pieza dos veces en la apertura, (2) olvidarse de enrocar, (3) sacar la dama demasiado pronto, (4) hacer jugadas \"automáticas\" sin verificar, (5) jugar sin un plan."
+      "text": "Todo jugador pierde el mismo puñado de partidas como principiante. Sáltate estos errores y te saltarás mil derrotas.\n\n## Los cinco errores clásicos\n\n1. **Mover la misma pieza dos veces en la apertura.** Cada tiempo perdido es una pieza que tu oponente desarrolla gratis.\n2. **Olvidarse de enrocar.** Un rey en el centro invita a las tácticas — incluso medios juegos sólidos se hunden sin un rey refugiado.\n3. **Sacar la dama demasiado pronto.** Las piezas menores la persiguen, y cada retirada es una jugada que no desarrollaste.\n4. **Jugar movimientos automáticos.** Recapturar sin pensar, defender un peón que no estaba atacado, copiar al rival — el piloto automático es fatal.\n5. **Jugar sin un plan.** Una jugada sin propósito es una jugada perdida. Cada movimiento debería mejorar una pieza, amenazar algo o preparar una ruptura.\n\nUn ejemplo clásico: tras **{{e4}} {{e5}} {{Qh5}}?!**, las blancas esperan un ataque rápido. Las negras simplemente juegan **{{Nc6}}** y **{{Nf6}}** — y la dama tiene que retirarse mientras las negras desarrollan con tiempo.\n\n> La apertura es una carrera. Desarrolla, no bailes."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppp1ppp/8/4p3/3PP3/8/PPP2PPP/RNBQKBNR b KQkq d3 0 2",
-      "title": "No Agarres Todos los Peones",
-      "text": "No todas las capturas son buenas. A veces tomar un peón pierde tiempo — tu oponente se desarrolla mientras tú mueves la misma pieza otra vez. Pregunta: \"¿Vale este peón un tiempo?\""
+      "title": "No Captures Cada Peón",
+      "text": "Capturar peones es la trampa más seductora del ajedrez. *¡Es material gratis!* — salvo que, a menudo, no lo es.\n\nEn la posición de arriba, las blancas acaban de jugar la Apertura del Centro con **{{e4}} {{e5}} {{d4}}**. Si las negras se lanzan a tomar con {{exd4}}, las blancas recapturan, desarrollan con tiempo y consiguen una gran ventaja en actividad de piezas.\n\n## Tres preguntas antes de cualquier captura de peón\n\n- **¿Tendré que mover la misma pieza otra vez?** Si sí, pierdes tiempo.\n- **¿Mi oponente desarrollará una pieza con jaque o amenaza al recapturar?** Cada jaque te cuesta otra jugada.\n- **¿Quedará expuesta la cobertura de mi rey o de mi peón de rey?** Un rey débil rara vez vale un solo peón.\n\nUn peón es un punto. **Tres tiempos** de desarrollo también valen aproximadamente un punto. Así que *toda* captura de peón que cueste tres tiempos es un mal negocio.\n\n> Toma peones cuando son gratis, no cuando son cebo."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "title": "Vigila las Amenazas de tu Oponente",
-      "text": "La mitad de las posiciones perdidas vienen de ignorar al oponente. Cuando muevan, pregunta siempre: \"¿Qué ataca esta jugada?\" Si no lo ves, probablemente se te pasó."
+      "title": "Vigila las Amenazas del Rival",
+      "text": "La mitad de las posiciones perdidas vienen de una sola fuente: ignorar lo que acaba de hacer el rival.\n\nCuando tu oponente mueve, tiene un **motivo**. Tal vez ataca una pieza. Tal vez abre una columna. Tal vez libera una casilla para un caballo. Encuentra la razón — *antes* de elegir tu jugada.\n\n## El escaneo de la jugada del rival\n\n- *¿Qué atacó esta jugada?* (¿Algo nuevo bajo fuego?)\n- *¿Qué defendió esta jugada?* (¿Están preparando un seguimiento?)\n- *¿Qué abrió esta jugada?* (¿Una nueva diagonal, columna o fila?)\n- *¿Qué amenazó esta jugada?* (¿Un jaque a la siguiente? ¿Una horquilla?)\n\nSi no puedes responder, mira más tiempo. La amenaza suele estar ahí.\n\n## Un ejemplo del mundo real\n\nSi tu oponente juega **{{Bg5}}**, la amenaza obvia es la clavada sobre tu caballo. La amenaza sutil es doblarte los peones tras **{{Bxf6}}**, o — si has enrocado — abrir líneas hacia tu rey.\n\n> Tu jugada empieza por entender la suya."
     }
   ]
 }

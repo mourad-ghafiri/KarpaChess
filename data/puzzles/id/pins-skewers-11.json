@@ -4,5 +4,8 @@
   "solution": [
     "Rxa7+"
   ],
-  "hint": "Tusuk sate — menteri di depan rajanya."
+  "title": "Adu di Lajur A",
+  "setup": "Benteng Putih menyorot ke **lajur a** ke menteri hitam dan raja yang ditumpuk di atasnya.",
+  "hint": "Saat menteri menutup rajanya sendiri, dia terpaku — bukan sate. Ambil dia.",
+  "explanation": "## Idenya\n\nMeskipun cerita lama menyebutnya \"sate\", secara teknis ini adalah **pakuan absolut**: menteri hitam di a7 melindungi rajanya di a8, jadi dia tidak bisa pindah.\n\n- **Pakuan** = penyerang, target, *raja* (raja di belakang).\n- **Sate** = penyerang, *raja*, target (raja di depan).\n\nDi sini raja di belakang menteri, jadi ini pakuan.\n\nPutih memainkan {{Rxa7+}}, menangkap menteri.\n\n- {{Kxa7}} adalah satu-satunya jawaban legal.\n- Putih menukar benteng (5) dengan menteri (9), net **+4**.\n- Hitam tidak punya pembela di a7 dan tidak ada cara untuk menghalangi.\n\n## Pola untuk Diingat\n\n> Geometri dulu, nama belakangan. Saat Anda melihat **benteng Anda + buah ringan/berat lawan + raja lawan** semua di lajur yang sama, Anda hampir selalu punya taktik.\n\nJangan khawatir apakah secara resmi pakuan atau sate saat itu juga — keduanya menang material."
 }

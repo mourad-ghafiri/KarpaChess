@@ -1,21 +1,30 @@
 {
   "id": "piece-values",
-  "title": "Valeur des pièces",
+  "title": "La valeur des pièces",
   "summary": "Apprenez ce que vaut chaque pièce",
   "difficulty": "beginner",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "Les valeurs approximatives",
-      "text": "Connaître la valeur des pièces est essentiel pour faire des échanges. Pion = 1. Cavalier = 3. Fou = 3 (un peu plus dans les positions ouvertes). Tour = 5. Dame = 9. Roi = inestimable. Ce sont des approximations — le contexte compte — mais c'est le point de départ de chaque bon échange." },
-    { "type": "teach",
+      "text": "Avant de pouvoir échanger des pièces avec sagesse, il faut une idée de ce que chacune *vaut*.\n\nLes pièces n'ont pas d'étiquette officielle, mais des générations d'analyse ont fixé une approximation utile — mesurée en unités de pion.\n\n## L'échelle standard\n\n- **Pion = 1**\n- **Cavalier = 3**\n- **Fou = 3** *(un peu plus en position ouverte ; environ 3,25)*\n- **Tour = 5**\n- **Dame = 9**\n- **Roi = inestimable** *(mais valant environ 4 en force de combat, une fois les dames échangées)*\n\nQuelques rapports utiles :\n\n- Une tour bat une pièce mineure (cavalier ou fou) de 2 unités — c'est ce qu'on appelle *gagner la qualité*.\n- Deux pièces mineures (3 + 3 = 6) battent généralement une tour (5).\n- Trois pièces mineures (9) équivalent grosso modo à une dame — mais les pièces sont en général plus souples.\n\n> Ces chiffres sont une boussole, pas une calculatrice. La position l'emporte sur les points."
+    },
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "title": "Principes d'échange",
-      "text": "Échangez des pièces de valeur égale lorsque vous êtes en avance matérielle (cela simplifie vers une finale gagnante). Évitez les échanges quand vous êtes en retard — gardez des pièces sur l'échiquier pour créer des chances. Sacrifier une pièce de plus grande valeur pour une moindre est un « sacrifice » — parfois cela en vaut la peine pour une attaque gagnante." },
-    { "type": "play",
+      "title": "Les principes d'échange",
+      "text": "Connaître les valeurs, c'est la moitié du chemin. Savoir *quand* échanger, c'est l'autre moitié.\n\n## Trois règles d'or\n\n- **En avantage matériel, échangez des pièces.** Chaque échange vous rapproche d'une finale gagnante et réduit les chances de l'adversaire de trouver une combine.\n- **En retard matériel, gardez les pièces.** Les pièces font naître les énigmes — gardez l'énigme vivante et vos chances aussi.\n- **Un sacrifice est intentionnel.** Donner un cavalier pour un pion ressemble à une gaffe ; si cela mène au mat, c'est de la brillance. Comptez les coups, pas les pièces.\n\n## La position peut renverser les valeurs\n\n- Un *mauvais fou* (bloqué derrière ses propres pions) peut ne valoir qu'un pion ou deux.\n- Un *cavalier fort* sur un avant-poste protégé peut éclipser une tour.\n- *Deux fous* sur un échiquier ouvert sont plus forts que deux cavaliers — c'est la fameuse **paire de fous**.\n\n> Échangez comme un banquier : seulement quand vous y gagnez, en points ou en position."
+    },
+    {
+      "type": "play",
       "fen": "rnbqkb1r/pppp1ppp/5n2/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3",
-      "prompt": "Quel pion central devriez-vous pousser pour gagner plus d'espace ? Jouez-en un.",
-      "targetSan": ["d4", "c4"],
-      "hint": "d4 ou c4 — tous deux renforcent votre centre." }
+      "prompt": "Renforcez votre centre en poussant **{{d4}}** ou **{{c4}}** — les deux gagnent de l'espace et ouvrent des lignes.",
+      "targetSan": [
+        "d4",
+        "c4"
+      ],
+      "hint": "Le centre est la rampe de lancement de toutes les pièces. Deux pions amis côte à côte au milieu, c'est une fondation qui vaut le combat."
+    }
   ]
 }

@@ -4,5 +4,8 @@
   "solution": [
     "Rxe7+"
   ],
-  "hint": "Pinned rook — take it."
+  "title": "Rook Takes the Pinned Rook",
+  "setup": "Both rooks face off on the **e-file**, but the black rook on e7 is pinned against its king on e8.",
+  "hint": "A pinned defender cannot defend — and cannot run.",
+  "explanation": "## The Idea\n\nThe black rook on e7 is in an **absolute pin**. It shields the king on e8 from the white rook on e1, so it cannot move.\n\nWhite plays {{Rxe7+}}, simply taking the rook.\n\n- {{Kxe7}} is the only legal reply — Black has no other piece, and the king must respond to check.\n- After the trade, White has won a rook for a rook... but wait! Look again: White still has a king. So have we just traded equal material? **Yes — but in a real game, this would mean simplifying into a winning king-and-rook vs. king endgame, or in a fuller game, eliminating Black's only defender.**\n\n## Pattern to Memorize\n\n> Pinned pieces are not just immobile — they are also **bad defenders**. If a pinned piece is the only defender of something, that something is effectively undefended.\n\nIn richer positions this idea wins material constantly: you exploit a pinned defender by attacking what it pretends to guard."
 }

@@ -4,5 +4,8 @@
   "solution": [
     "Re8#"
   ],
-  "hint": "Invasion de la tour — remarquez l'élimination finale du défenseur."
+  "title": "Deux Tours, Une Colonne Ouverte",
+  "setup": "Deux tours sur la **1re rangée**, deux pions gardant le coin — un de ces pions est une illusion de sécurité.",
+  "hint": "Prenez la **colonne e** vers la dernière rangée — les pions de coin enferment le roi au lieu de l'aider.",
+  "explanation": "## L'Idée\n\nUn pur **mat du couloir** avec une touche de redondance : la seconde tour en **a1** n'est pas strictement nécessaire, mais elle élimine tout doute que la dernière rangée reste scellée si les Noirs tentent quelque chose.\n\nJouez {{Re8#}}.\n\nPourquoi le roi est-il piégé ?\n\n- {{g8}}, {{f8}} et le reste de la 8e rangée — toutes contrôlées par la tour en e8\n- {{g7}} et {{h7}} — toutes deux bloquées par les propres pions noirs\n- Le roi ne peut capturer : e8 est trop loin de h8\n- Les Noirs n'ont plus de pièces pour s'interposer entre e8 et h8\n\n> **À retenir :** Quand vous avez deux tours et que la dernière rangée ennemie est nue, choisissez *n'importe quelle* colonne qui atterrit sur la rangée — la tour sur la colonne la plus sûre gagne en général. Vérifiez toujours les cases de fuite avant de jouer."
 }

@@ -1,8 +1,11 @@
 {
   "id": "mate-in-1-15",
-  "fen": "4R3/5pk1/6p1/8/8/8/6PP/6K1 w - - 0 1",
+  "fen": "6k1/4Rppp/8/8/1B6/8/6PP/6K1 w - - 0 1",
   "solution": [
-    "Re7"
+    "Re8#"
   ],
-  "hint": "Envahissez la 7e rangée avec échec."
+  "title": "Le Fou Coupe la Fenêtre",
+  "setup": "Votre tour en **e7** est à un pas de la dernière rangée, et le fou en **b4** ratisse la diagonale **a3-f8** — incluant {{f8}}.",
+  "hint": "Glissez la tour sur la 8e rangée — votre fou en **b4** contrôle déjà la case de fuite {{f8}}.",
+  "explanation": "## L'Idée\n\nUn **filet de mat tour + fou**. Le bouclier de pions bloque la fuite habituelle de {{g8}} via h7/g7 ; le fou en **b4** bouche la seule fuite diagonale en {{f8}}.\n\nJouez {{Re8#}}.\n\nPourquoi le roi est-il piégé ?\n\n- {{f8}} — contrôlée par le fou en **b4** (la diagonale b4-c5-d6-e7-f8 — après Re8, e7 est vide)\n- {{h8}} — couverte par la tour en e8 (8e rangée)\n- {{f7}}, {{g7}}, {{h7}} — toutes bloquées par les propres pions noirs\n- Le roi ne peut capturer la tour : e8 est trop loin de g8\n\n> **À retenir :** Un fou pointant sur la grande diagonale est le partenaire parfait d'une tour sur la dernière rangée. Ensemble ils couvrent les deux extrémités de la 8e rangée — la tour d'un côté, le fou tranchant l'autre."
 }

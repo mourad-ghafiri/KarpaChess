@@ -4,5 +4,8 @@
   "solution": [
     "exd5"
   ],
-  "hint": "Captura el peón central — simple pero importante."
+  "title": "Gana el Peón Central",
+  "setup": "Las negras han jugado **...d5**, ofreciendo un cambio de peones en el centro. Las blancas aceptan.",
+  "hint": "Cuando puedes tomar un peón central gratis, casi siempre hazlo.",
+  "explanation": "## La idea\n\nEsta es la **captura central** más fundamental en la apertura del ajedrez. El peón d5 negro está atacado por el peón e4 blanco, pero defendido por... nada en particular.\n\nLas blancas juegan {{exd5}}, ganando el peón d limpiamente.\n\n## Por qué es bueno\n\n- Las blancas tienen ahora un peón en **d5**, dominando el espacio central.\n- El peón e5 negro queda aislado y débil.\n- Material: las blancas tienen un peón de ventaja.\n\nSi las negras juegan {{Nxd5}} o {{Qxd5}} para recapturar, la pieza recapturadora queda expuesta a ataque (por ejemplo, con {{Nc3}} pegándole a la dama).\n\n## Patrón a memorizar\n\n> Un peón central (sobre todo el **peón d o el peón e**) vale más que un peón de ala. Cuando puedas agarrar uno y conservarlo, hazlo.\n\nLas blancas han convertido una captura táctica en una ventaja estratégica — material extra *más* control central."
 }

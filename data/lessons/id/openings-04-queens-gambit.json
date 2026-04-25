@@ -4,23 +4,35 @@
   "summary": "Tawarkan pion untuk menguasai pusat",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "Pion Menteri Klasik",
-      "text": "Gambit Menteri dimulai 1.d4 d5 2.c4. Putih menawarkan pion c. Jika Hitam mengambil, pusat ditinggalkan. Jika Hitam menolak (paling umum di level master), Putih mempertahankan kendali pusat yang kuat." },
-    { "type": "play",
+      "text": "**Gambit Menteri** adalah salah satu pembukaan paling dihormati dalam sejarah catur — sebuah mahakarya posisional yang merupakan pembukaan pilihan di tahun 1920-an dan kembali populer dengan serial Netflix berjudul sama.\n\n## Urutan penentu\n\nGaris kanonik adalah {{d4}} {{d5}} {{c4}}. Putih menawarkan pion-c, bertaruh bahwa jika Hitam menerima, Putih akan memulihkan pion sambil mengontrol pusat.\n\n## Apa yang diinginkan masing-masing pihak\n\n- **Rencana Putih:** terapkan tekanan pusat jangka panjang dengan {{Nf3}}, {{Nc3}}, {{Bf4}} atau {{Bg5}}, dan {{e3}}; rokade pendek; akhirnya eksploitasi mayoritas queenside atau pusat.\n- **Rencana Hitam:** tolak gambit (*Gambit Menteri Ditolak*) dengan **...e6**, **...Nf6**, **...Be7**; atau main *Slav* dengan **...c6**; atau terima (jarang di tingkat atas) dan coba pertahankan pion ekstra.\n- **Struktur pion:** struktur klasik *Carlsbad* atau *Tarrasch* — rantai pion berjalan di sepanjang c-d-e di mana terobosan kecil seperti *serangan minoritas* menentukan permainan.\n\n## Mengapa bukan gambit sebenarnya\n\nGambit Menteri bukan gambit sejati karena Hitam biasanya tidak bisa *menjaga* pion c4 dengan aman. Setelah {{dxc4}}, Putih memulihkannya dengan **{{e4}}** atau **{{Nc3}}** plus **{{e3}}** sambil mendapat tempo.\n\n> Gambit Menteri bukan tentang memenangkan pion. Itu tentang memenangkan pusat."
+    },
+    {
+      "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "prompt": "Buka dengan pion menteri.",
-      "targetSan": ["d4"],
-      "hint": "1.d4 — dorongan pusat klasik." },
-    { "type": "play",
+      "prompt": "Buka dengan pion menteri — mainkan **{{d4}}**.",
+      "targetSan": [
+        "d4"
+      ],
+      "hint": "1.d4 mengklaim pusat dan mempersiapkan terobosan c4 berikutnya."
+    },
+    {
+      "type": "play",
       "fen": "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
-      "prompt": "Sekarang tawarkan gambitnya.",
-      "targetSan": ["c4"],
-      "hint": "2.c4 — serang pion d5 dengan pion sayap." },
-    { "type": "teach",
+      "prompt": "Sekarang tawarkan gambit dengan **{{c4}}** — tantang pion d5 Hitam dari sayap.",
+      "targetSan": [
+        "c4"
+      ],
+      "hint": "Jika Hitam mengambil dengan ...dxc4 Anda akan memulihkan pion dengan mudah dan menguasai pusat. Bagaimanapun Anda menang."
+    },
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/ppp1pppp/8/3p4/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2",
       "title": "Tolak atau Terima?",
-      "text": "Jika Hitam menerima (2...dxc4), Putih biasanya menutup pion dengan cepat. Jika Hitam menolak (2...e6, 2...c6, 2...Nf6), permainan menjadi pertempuran posisional untuk kotak-kotak pusat. Bagaimanapun, Putih mendapatkan inisiatif yang kuat." }
+      "text": "Hitam sekarang punya tiga reaksi utama, masing-masing mendefinisikan *keluarga* pembukaan yang berbeda.\n\n## Tiga respons utama Hitam\n\n- **Gambit Menteri Ditolak (QGD)** — **2...e6**. Solid seperti granit. Hitam menerima gajah kotak terang yang sedikit pasif sebagai imbalan struktur pion yang sangat kokoh.\n- **Pertahanan Slav** — **2...c6**. Hitam mendukung d5 dengan pion-c alih-alih mengunci gajah. Modern, populer, dan kaya secara teoretis.\n- **Gambit Menteri Diterima (QGA)** — **2...dxc4**. Hitam mengambil pion tetapi berencana mengembalikannya. Putih memulihkan dengan {{e3}} atau {{e4}} dan berkembang dengan keunggulan pusat kecil tetapi nyata.\n\nOpsi keempat yang kurang populer adalah **Tarrasch** — **2...e6 3.Nc3 c5** — Hitam mengambil kembali pion yang ditawarkan nanti tetapi bermain untuk aktivitas alih-alih solidnya.\n\nDi tingkat grandmaster, QGD dan Slav dominan. Di tingkat klub, QGA muncul sering karena terlihat menggoda untuk merebut pion.\n\n> Gambit Menteri mengajarkan kesabaran. Bidak muncul perlahan, pusat diperjuangkan kotak demi kotak, dan pemain yang memahami rencana jangka panjang menang."
+    }
   ]
 }

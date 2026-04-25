@@ -4,28 +4,44 @@
   "summary": "Black's sharpest response to 1.e4",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "The Sharpest Reply",
-      "text": "When White plays 1.e4, Black's most combative reply is 1...c5 — the Sicilian Defense. Black concedes nothing in the center and prepares a queenside counter-attack. It's the most popular defense at every level of chess." },
-    { "type": "play",
+      "text": "The **Sicilian Defense** is Black's most-played, most-feared, and most-analyzed answer to **{{e4}}**. It says, in effect: *I'm not interested in symmetry — I want to fight.*\n\n## The opening move\n\nAfter {{e4}} {{c5}}, Black has done something subtle but powerful. Instead of mirroring with ...e5, the c-pawn challenges White's center from the side. It does **not** block the c-file (which is exactly the file Black wants for counterplay).\n\n## What each side wants\n\n- **White's plan:** play {{Nf3}} and {{d4}} to open the position (the *Open Sicilian*), develop pieces aggressively, and build a kingside attack.\n- **Black's plan:** trade the c-pawn for the d-pawn (after **...cxd4**), seize the *half-open c-file*, develop with **...Nc6**, **...d6**, **...Nf6**, **...e6** or **...g6**, and counter-attack on the queenside.\n- **Pawn structure:** wildly asymmetric — Black often has a *backward d-pawn* and pawns at e6+d6, while White has a powerful e4 pawn and aims for f2-f4-f5 storms.\n\n## Why grandmasters love it\n\nThe Sicilian creates **imbalance from move one**. White attacks one wing, Black the other. Decisive games are far more common than draws — and that's why every world champion has had to learn it cold.\n\n> Symmetry is for friendly games. The Sicilian wants a fight."
+    },
+    {
+      "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "prompt": "Play White's most principled first move.",
-      "targetSan": ["e4"],
-      "hint": "1.e4 — the classical king's pawn opening." },
-    { "type": "play",
+      "prompt": "Open with the most principled first move — play **{{e4}}**.",
+      "targetSan": [
+        "e4"
+      ],
+      "hint": "1.e4 is White's classical opening choice — it claims a center square and frees the queen and the f1 bishop."
+    },
+    {
+      "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
-      "prompt": "Black plays the Sicilian — push the c-pawn.",
-      "targetSan": ["c5"],
-      "hint": "1...c5 fights for d4 without blocking the c-file." },
-    { "type": "play",
+      "prompt": "Black plays the Sicilian — push **{{c5}}**, fighting for d4 from the flank.",
+      "targetSan": [
+        "c5"
+      ],
+      "hint": "Don't mirror with ...e5. Instead push the c-pawn — it attacks d4 without blocking the c-file Black wants."
+    },
+    {
+      "type": "play",
       "fen": "rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
-      "prompt": "White's classical reply: develop the knight.",
-      "targetSan": ["Nf3"],
-      "hint": "2.Nf3 prepares d4, the Open Sicilian." },
-    { "type": "teach",
+      "prompt": "White's classical reply: **{{Nf3}}**, preparing **d4** for the Open Sicilian.",
+      "targetSan": [
+        "Nf3"
+      ],
+      "hint": "The knight develops, attacks ...e5 ideas, and clears the way for d2-d4 — the move that defines the Open Sicilian."
+    },
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
       "title": "Why the Sicilian?",
-      "text": "Unlike ...e5 which mirrors White's move, ...c5 creates asymmetric play. White attacks on the kingside; Black counter-attacks on the queenside. Games are sharp and decisive — wins, not draws, are common." }
+      "text": "Now you can see the genius of {{c5}}. Black is poised to play **...d6** or **...e6** and then jump into the half-open c-file with a rook later.\n\n## The four main flavors of Black's setup\n\n- **Najdorf** — {{c5}} {{Nf3}} {{d6}} {{d4}} {{cxd4}} {{Nxd4}} {{Nf6}} {{Nc3}} **a6** — the sharpest, most theoretical of all.\n- **Dragon** — Black fianchettoes with **...g6** and **...Bg7**. Wild attacks on opposite sides.\n- **Sveshnikov** — Black plays ...Nf6 and ...e5, accepting a backward d-pawn for piece activity.\n- **Taimanov / Kan** — flexible setups with ...e6 and ...a6, slower but tough as nails.\n\nWhich flavor you choose says a lot about your style: tactical Najdorf players love calculation; Sveshnikov players love active pieces; Kan players love quiet, strategic squeezes.\n\n> Pick a Sicilian flavor and learn it deeply. The reward is a lifetime of double-edged games."
+    }
   ]
 }

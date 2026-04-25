@@ -4,18 +4,26 @@
   "summary": "Un rey seguro gana partidas",
   "difficulty": "beginner",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQK2R w KQkq - 0 1",
-      "title": "Guárdalo Bien",
-      "text": "Los peores enemigos del rey son las columnas y diagonales abiertas que llevan hacia él. El enroque lo saca del centro y lo mete en una fortaleza de peones. Mantén esa fortaleza intacta — no te apresures a empujar los peones del lado enrocado sin una razón concreta." },
-    { "type": "play",
+      "title": "Ponlo a Buen Recaudo",
+      "text": "## Seguridad del rey — definida\n\nLa **seguridad del rey** es la medida de hasta qué punto tu rey está protegido frente a un **ataque directo**. No es solo \"tener un muro de peones\" — es la combinación de **refugio**, **defensores** y la **ausencia de líneas abiertas** que apunten al rey.\n\n### Qué es esta posición\n\nLa Apertura Italiana: piezas desarrolladas, caballos en c3 y f3, alfiles en c4 y c5, peones centrales bloqueados. Ambos reyes están en **e1** y **e8** — expuestos en el centro, con **dos columnas abiertas (la columna d y cualquier columna semiabierta)** listas para acoger torres enemigas. **Enrocar ya** es la prioridad antes de que las piezas empiecen a aterrizar en casillas débiles.\n\n### Tres pilares de la seguridad\n\n1. **Refugio de peones** — tres peones delante del rey (f2-g2-h2 o a7-b7-c7).\n2. **Defensores cerca** — al menos el caballo en **f3** (o f6) cubriendo casillas críticas como h2/h7.\n3. **Líneas cerradas** — sin columnas abiertas apuntando al rey, sin diagonales que conduzcan hasta él.\n\n### Cómo USAR el concepto\n\n1. **Enroca para la jugada 10** en el 90% de las partidas. A veces antes, raras veces después.\n2. **No empujes peones cerca del rey** salvo que haya una razón táctica concreta.\n3. **Vigila las diagonales** hacia tu rey — un alfil largo o una dama apuntando es un sacrificio futuro.\n4. **Cambia atacantes**, no defensores. Cada pieza que sacas del tablero reduce el poder del atacante y el tuyo.\n\n### Qué señales en la posición te dicen que lo apliques\n\n- El rival ha conservado **ambos alfiles y la dama** con el desarrollo completo — se está cocinando un ataque.\n- Se está preparando una **palanca de peón** como h4-h5 o g4 — frénala antes de que aterrice.\n- Tu rey **sigue en e1 / e8** pasada la jugada 10 — enroca esta jugada.\n\n### Errores comunes\n\n- Retrasar el enroque para **agarrar un peón** en el centro — las columnas abiertas resultantes se tragan al rey.\n- **Empujar g3 o h3** automáticamente — cada movimiento de peón cerca del rey crea un gancho para una ruptura de peón rival.\n- Cambiar un **defensor** (a menudo el caballo de f6 / f3) sin un sustituto igualmente fuerte.\n\n> Enroca pronto, enroca corto, y mantén el muro en pie."
+    },
+    {
+      "type": "play",
       "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQK2R w KQkq - 0 1",
-      "prompt": "Enroca tu rey a un lugar seguro.",
-      "targetSan": ["O-O"],
-      "hint": "Enroque corto — la elección más común." },
-    { "type": "teach",
+      "prompt": "Pon a tu rey a salvo enrocando. El principio: *sal del centro antes de que la posición se abra*.",
+      "targetSan": [
+        "O-O"
+      ],
+      "hint": "Enroque corto — flanco de rey, el refugio más común y rápido."
+    },
+    {
+      "type": "teach",
       "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 b kq - 1 1",
-      "title": "Después del Enroque",
-      "text": "¡No has terminado! Mantén peones al frente: f2, g2, h2. El caballo en f3 defiende h2. No juegues g3 o h3 salvo que sea necesario — cada movimiento de peón cerca de tu rey crea una debilidad para después." }
+      "title": "Después de Enrocar",
+      "text": "## Has enrocado — ¿y ahora qué?\n\nEnrocar por sí solo no es seguridad; es la **jugada inicial** de la seguridad. El trabajo empieza después de que el rey aterrice.\n\n### Mantener la fortaleza\n\n1. **Mantén los peones en casa**: f2-g2-h2 (o a7-b7-c7 para enroque largo). La forma es el muro.\n2. **Mantén un defensor en f3 / f6**: el caballo cubre **h2 / h7** y las casillas de invasión **g5 / g4**. Cambiarlo sin reemplazo es peligroso.\n3. **Mantén una salida en la fila base**: Kh1 / Kh8 puede ser necesario si se amenaza un jaque por la fila base — *luft* con h3 / h6 solo cuando haga falta.\n4. **Cambia atacantes**, no defensores.\n\n### Dos ejemplos visuales en prosa\n\n- Tras **O-O**, las negras juegan ...Bg4 clavando el caballo de f3. El muro blanco es **f2-g2-h2** pero el **defensor de f3 está paralizado**. Las blancas deben deshacer la clavada (h3, y si Bxf3 recapturar con la dama) antes de lanzar nada más.\n- Un rey blanco en g1 con peones f2/g2/h2 está **estructuralmente seguro**, pero si la dama deja d1 para atacar, la **fila base** se vuelve preocupante. Un oportuno **h3** crea *luft* y salva al rey de futuras amenazas Re1.\n\n### Cómo USARLO en tus partidas\n\n1. **Audita tu posición enrocada cada cinco jugadas**. ¿Siguen ahí los peones? ¿Sigue ahí el caballo del flanco f?\n2. Cuando el **rival conserva atacantes**, conserva defensores.\n3. **Abre el centro** solo cuando tu rey esté *más seguro* que el del rival.\n\n### Qué señales te dicen que el muro está fallando\n\n- Una **jugada de peón cerca de tu rey** (g3, h3, f3) — cada una es una debilidad potencial.\n- Un **defensor ha sido cambiado** — recalcula la seguridad desde cero.\n- Una **columna abierta o diagonal larga** conduce a tu rey.\n\n### Errores comunes\n\n- Empujar **h3 o g3** profilácticamente cuando nada atacaba — te debilitaste gratis.\n- **Cambiar damas** cuando tú eras el atacante — las preguntas sobre seguridad del rey desaparecen, pero también tu iniciativa.\n- Olvidar los patrones de **mate de la fila base**. Muchas partidas se pierden en la jugada 30 por una primera fila indefensa.\n\n> Enrocar no es el final de la seguridad del rey — es el principio."
+    }
   ]
 }

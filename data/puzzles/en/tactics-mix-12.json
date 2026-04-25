@@ -1,8 +1,11 @@
 {
   "id": "tactics-mix-12",
-  "fen": "4k3/5ppp/8/8/8/8/5PPP/3QK3 w - - 0 1",
+  "fen": "6k1/5ppp/8/8/8/8/5PPP/3QK3 w - - 0 1",
   "solution": [
-    "Qd8+"
+    "Qd8#"
   ],
-  "hint": "Check the king on its back rank."
+  "title": "Back-Rank Mate",
+  "setup": "The black king on **g8** is hemmed in by its own pawns on f7, g7, h7 — a classic **back-rank** death trap.",
+  "hint": "When the enemy king is locked behind its own pawns on the 8th rank, slide a heavy piece onto the back rank.",
+  "explanation": "## The Idea\n\nThis is the immortal **back-rank mate** — the most common tactical motif in all of chess. Black's king is trapped on the eighth rank by its own pawns, with no escape squares.\n\nWhite plays {{Qd8#}} — the queen slides along the d-file and across to deliver checkmate.\n\n## Why It's Mate\n\nLet's verify Black has **zero** legal responses:\n\n- **King moves**: {{Kg8}} is already where it sits. Adjacent squares: f7 (own pawn), g7 (own pawn), h7 (own pawn), f8 (attacked by queen on d8 along 8th rank), h8 (attacked by queen along 8th rank).\n- **Capture**: {{Kxd8}} — too far, king is on g8.\n- **Block**: nothing to block with — Black has only pawns, none of which reach the d8-g8 line.\n\nNo escape. Mate.\n\n## Pattern to Memorize\n\n> The **back-rank weakness**: a king trapped behind unmoved pawns is one heavy-piece check away from mate.\n\n**Defensive lesson**: in your own games, make a *luft* — push h3 or g3 to give your king an escape square. This single pawn move prevents thousands of back-rank disasters."
 }

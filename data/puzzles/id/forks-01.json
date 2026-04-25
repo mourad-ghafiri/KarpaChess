@@ -6,5 +6,8 @@
     "Kb6",
     "Nxd5"
   ],
-  "hint": "Garpu kerajaan menyerang raja dan menteri sekaligus."
+  "title": "Garpu Kerajaan",
+  "setup": "Raja Hitam di c6 dan menteri di d5 hanya satu lompatan kuda terpisah — jarak garpu keluarga klasik.",
+  "hint": "Cari kotak kuda yang menyerang **kedua** raja dan menteri sekaligus. Lompatan ke {{b4}} menyentuh c6 dan d5.",
+  "explanation": "## Idenya\n\nIni adalah **garpu kerajaan** — skak kuda yang sekaligus menyerang menteri. Raja dan menteri Hitam tepat satu lompatan kuda terpisah: dari {{b4}} kuda mencapai c6 (raja) dan d5 (menteri) dalam langkah yang sama.\n\nSetelah {{Nb4+}}, Hitam tidak punya jawaban baik:\n\n- **Tangkap?** Raja di c6 tidak bisa mencapai b4 (dua kotak jauhnya), dan menteri di d5 juga tidak bisa mencapai b4 — d5 ke b4 adalah pola kuda, bukan langkah menteri.\n- **Blokir?** Skak kuda tidak pernah bisa diblokir.\n- **Lari?** Setiap kotak raja yang legal (Kb5, Kb6, Kc7, Kd6, Kd7) meninggalkan menteri.\n\nJadi Hitam main {{Kb6}} (atau langkah raja apa pun) dan Putih menyabet menteri dengan {{Nxd5}}.\n\n## Pola yang Harus Diingat\n\n> Setiap kali raja dan menteri musuh **dua kotak terpisah di diagonal**, cari kotak kuda di antara mereka — di situlah garpunya berada."
 }

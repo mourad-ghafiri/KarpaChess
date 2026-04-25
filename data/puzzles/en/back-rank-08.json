@@ -4,5 +4,8 @@
   "solution": [
     "Rb8#"
   ],
-  "hint": "Rook steps up while the enemy king is boxed in."
+  "title": "Long Walk, Short Mate",
+  "setup": "White's a-pawn is hanging back, but the b-rook has a clear lane to the 8th rank.",
+  "hint": "Walk the rook to b8. The pawn structure does the rest.",
+  "explanation": "## The Idea\n\nThe presence of an extra White pawn on a2 is irrelevant — pure positional features (back-rank weakness + king without luft) decide the game. {{Rb8#}} is mate at once:\n\n1. The rook arrives on the 8th rank with check.\n2. The king on g8 is sealed by its own pawns on f7-g7-h7.\n3. Squares **a8** through **h8** outside the king's bubble are all attacked by the rook.\n4. Nothing recaptures, nothing blocks.\n\n### Why \"extra material\" doesn't save Black\n\nBlack's king position is so weak that material is meaningless. **A single tempo of {{h6}} earlier in the game would have prevented this entire pattern**, regardless of how many pawns each side has.\n\n> Material counts always come second to king safety in tactical positions."
 }

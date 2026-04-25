@@ -4,5 +4,8 @@
   "solution": [
     "Rxd7+"
   ],
-  "hint": "Pin, then capture the pinned piece."
+  "title": "Bishop Pinned, Bishop Lost",
+  "setup": "A black bishop sits on **d7**, directly in front of its king and directly in the rook's crosshairs.",
+  "hint": "Pinned minor pieces are fixed targets — capture them.",
+  "explanation": "## The Idea\n\nThe black bishop on d7 is in an **absolute pin** along the d-file. Bishops can normally slither away on diagonals, but this one cannot move at all — any bishop move would put the king on d8 in check from the rook on d2.\n\nWhite plays {{Rxd7+}}, snatching the bishop.\n\n- {{Kxd7}} is forced — the king is the only piece that can respond to the check.\n- After the trade, White has exchanged rook for bishop. In a fuller position this would be a **clean piece win**; in this miniature it is a teaching moment about the geometry.\n\n## Pattern to Memorize\n\n> The pin doesn't care what kind of piece it traps. Bishops, knights, rooks, queens — all become statues when pinned to their king.\n\nThe magic of a pin is that it **cancels the target's mobility entirely**, no matter how the piece normally moves."
 }

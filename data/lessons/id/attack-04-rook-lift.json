@@ -1,20 +1,20 @@
 {
   "id": "rook-lift",
   "title": "Angkat Benteng",
-  "summary": "Bawa benteng untuk menyerang lewat baris ke-3",
+  "summary": "Bawa benteng menyerang lewat baris ke-3",
   "difficulty": "intermediate",
   "steps": [
     {
       "type": "teach",
       "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQR1K1 w - - 0 1",
       "title": "Angkat dan Ayun",
-      "text": "Mengangkat benteng adalah manuver Re1-e3-g3 (atau h3) — benteng naik ke baris ketiga, lalu mengayun menyeberang untuk menyerang raja lawan. Pola klasik: Re3, Qh5 dengan kembang api di sisi raja."
+      "text": "**Angkat benteng** adalah salah satu manuver bidak paling agresif dalam catur: benteng meninggalkan baris pertamanya, naik ke **baris ketiga**, dan *mengayun* menyeberang untuk bergabung dalam serangan kingside (atau queenside).\n\n## Kapan ide ini muncul\n\n- Posisi **setengah-tertutup** atau punya struktur pion tetap — benteng tidak bisa langsung memakai kolom.\n- **Raja Anda** sudah rokade dan aman.\n- Raja lawan sudah rokade dan Anda punya **penyerang lain** sudah dekat (menteri, kuda, gajah).\n- Sebuah pion di baris ketiga (misalnya {{d3}}, {{e3}}) memberi ruang untuk benteng masuk.\n\n## Manuver standar\n\nVersi buku teks di kingside terlihat seperti ini:\n\n1. {{Re1}}-{{Re3}} — benteng diangkat ke baris ketiga.\n2. {{Rg3}} atau {{Rh3}} — benteng mengayun ke kotak penyerang kingside.\n3. Dengan menteri di h5 atau kuda di f5, serangan sering menjadi menentukan.\n\n## Cara mempersiapkan\n\n- Pastikan baris ketiga **bersih** (tidak ada pion sahabat menghalangi jalan).\n- Punya **poros pion kingside** (dorongan pion-h, pion-g siap) sehingga benteng yang diangkat bisa menemukan target.\n- Koordinasikan dengan menteri — dia adalah pasangan yang menyelesaikan kebanyakan serangan angkat-benteng.\n\n## Cara mengenali\n\n1. Apakah ada cara mencapai raja lawan *yang tidak butuh kolom terbuka*?\n2. Apakah benteng baris belakang Anda menganggur, tanpa kolom terbuka untuk diklaim?\n3. Apakah bidak penyerang Anda yang lain dekat?\n\nJika ketiganya jawabannya ya, mengangkat adalah langkahnya.\n\n> Benteng di baris ke-3 bukan lagi pembela. Itu rudal."
     },
     {
       "type": "teach",
       "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQR1K1 w - - 0 1",
       "title": "Kapan Menggunakannya",
-      "text": "Mengangkat benteng berhasil ketika: posisi setengah tertutup (benteng tidak bisa langsung memakai kolom), raja lawan sudah rokade, dan Anda sudah punya bidak di dekatnya. Sangat efektif dikombinasikan dengan dorongan pion h."
+      "text": "Mengangkat benteng adalah *senjata posisional* dengan konsekuensi **taktis**. Mereka muncul di banyak permainan menyerang hebat begitu kedua sisi telah rokade dan pusat stabil.\n\n## Kondisi ideal\n\n- **Pusat tertutup atau setengah-tertutup** — kolom-d dan e tidak bisa digunakan.\n- **Raja lawan yang rokade** — kingside atau queenside, benteng yang diangkat bisa mencapai keduanya.\n- **Bidak sahabat di dekat** — benteng adalah satu bidak dalam serangan terkoordinasi, bukan pahlawan tunggal.\n- **Struktur pion** dengan **jalan tol baris-ketiga** — biasanya dicapai oleh pion {{d3}} atau {{e3}}.\n\n## Kombinasi yang harus diingat\n\n- **Angkat + dorongan pion-h** — {{Re3}}, lalu {{h4}}-{{h5}} untuk memecah kingside.\n- **Angkat + ayunan menteri** — {{Re3}}, {{Qh5}}, ancaman skakmat di h7.\n- **Angkat + manuver kuda** — {{Re3}}, {{Nf5}}, menggandakan penyerang di kotak kunci.\n- **Angkat + pengorbanan** — begitu cukup penyerang ditempatkan dekat raja, pengorbanan kuda atau gajah sering memberikan skakmat.\n\n## Garis model\n\nDi banyak babak tengah Italian Game dan Ruy Lopez, Putih memainkan {{Re1}}-{{Re3}}-{{Rg3}} atau {{Re3}}-{{Rh3}}, bergabung dengan menteri di h5 dalam serangan buku teks pada raja yang telah rokade. Ide yang sama muncul di queenside saat Hitam rokade panjang.\n\n## Kesalahan umum\n\n- Mengangkat terlalu awal — sebelum pusat stabil, benteng terbuka untuk terobosan pion {{e5}} atau {{d5}}.\n- Mengangkat *ke dalam* pakuan — waspada gajah lawan di diagonal panjang.\n- Mengangkat dengan **tanpa tindak lanjut** — benteng butuh pasangan. Angkatan tunggal hanyalah benteng yang lambat.\n\n> Benteng yang diangkat dengan teman adalah skakmat. Benteng yang diangkat sendirian hanyalah kayu."
     }
   ]
 }

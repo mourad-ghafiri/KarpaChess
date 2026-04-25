@@ -4,5 +4,8 @@
   "solution": [
     "Re8#"
   ],
-  "hint": "Re8 mates — king has no flight."
+  "title": "Rook Slides to Mate",
+  "setup": "Just two kings and one rook. Sometimes that's all chess is.",
+  "hint": "{{Re8}} arrives with check. The pawn wall is the king's coffin.",
+  "explanation": "## The Idea\n\nWith almost nothing on the board, the back-rank mate motif still finishes the game. {{Re8#}} delivers mate in one:\n\n1. The rook leaves the 2nd rank and arrives at e8 with check.\n2. Black's king on g8 is trapped:\n   - **f8** is attacked by the rook on e8.\n   - **h8** is attacked along the 8th rank.\n   - **f7, g7, h7** are blocked by Black's pawns.\n3. No Black piece can intervene.\n\n### Lesson\n\nThe rook is the **mate-delivering piece** in the most fundamental endgames:\n\n- King + rook vs king is winning.\n- King + rook vs king with a pawn-wall is *immediate*.\n\nWhen the enemy king sits behind a row of unmoved pawns, **always look for the rank-7 invasion**.\n\n> When you have only one piece left, make it the executioner."
 }

@@ -1,20 +1,20 @@
 {
   "id": "demolition",
   "title": "Penghancuran Pertahanan",
-  "summary": "Ledakkan posisi musuh",
+  "summary": "Ledakkan posisi lawan",
   "difficulty": "intermediate",
   "steps": [
     {
       "type": "teach",
       "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
-      "title": "Pengorbanan yang Meretakkan Kulit",
-      "text": "Kadang satu-satunya cara mencapai raja adalah menembus perisai pion. Hadiah Yunani (Bxh7+), pengorbanan Nxf7, dan pengorbanan pertukaran di c3/c6 adalah pola penghancuran klasik."
+      "title": "Pengorbanan yang Meretakkan Cangkang",
+      "text": "Kadang satu-satunya jalan menuju raja lawan menembus tembok bata — perisai bidaknya. Pengorbanan **penghancuran** memecah tembok itu, membuka raja terhadap buah Anda yang lain.\n\n## Pola penghancuran klasik\n\n- **Hadiah Yunani** — {{Bxh7+}} pada raja yang rokade pendek; pengorbanan gajah disusul kuda dan menteri.\n- **Kuda di f7** — {{Nxf7}} menggarpu menteri dan benteng, atau membuka lajur-f.\n- **Kuda di h6 / f5** — mengupas perisai bidak raja dengan skak atau ancaman besar.\n- **Pengorbanan kualitas di c3 / c6** — gaya Sisilia: menukar benteng dengan kuda untuk merusak struktur bidak.\n- **Badai bidak** — mendorong bidak *menuju* raja lawan untuk membuka lajur dan diagonal.\n\n## Pemicu visual\n\n- Raja lawan **rokade** di belakang bidak yang utuh.\n- Anda punya **tumpukan penyerang** dalam dua langkah dari raja (menteri + 1-2 buah ringan).\n- Pembela tidak punya **kuda di f6** yang berguna (atau cerminannya) untuk menutup celah.\n\n## Cara menemukan penghancuran\n\n1. Hitung penyerang dekat raja lawan.\n2. Hitung *pembela* perisai bidaknya.\n3. Jika penyerang >= pembela + 1, cari pengorbanan yang membuka lajur atau diagonal.\n4. Hitung sampai mat atau serangan yang menang — minimal 4-6 langkah.\n\n> Material bisa diganti. Raja lawan yang terbuka lebar tidak bisa dibangun ulang.\n\nDi posisi gaya Italia ini {{Bxh7+}} adalah pembuka Hadiah Yunani buku teks — baca pelajaran berikutnya untuk melihat bagaimana ia berkembang."
     },
     {
       "type": "teach",
       "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
-      "title": "Kapan Menghancurkan",
-      "text": "Pengorbanan berhasil ketika: (1) Anda memiliki bidak penyerang yang siap menindaklanjuti, (2) raja musuh tidak memiliki kotak pelarian, (3) pembela tidak bisa membawa bala bantuan tepat waktu. Hitung 4-6 langkah ke depan sebelum berkomitmen."
+      "title": "Kapan Menghancurkan (dan Kapan Tidak)",
+      "text": "Pengorbanan penghancuran **dihitung**, bukan dimainkan dengan insting. Bakar sebuah buah di posisi yang salah dan Anda hanya akan kalah.\n\n## Tiga prasyarat\n\n1. **Penyerang siap** — menteri Anda dan setidaknya satu buah ringan dapat bergabung dalam serangan dalam dua langkah.\n2. **Pembela tidak ada** — pembela kunci (hampir selalu {{Nf6}} untuk Hitam, {{Nf3}} untuk Putih) hilang atau dipaku.\n3. **Tidak ada permainan balik** — lawan tidak punya serangan yang lebih cepat di raja Anda sendiri.\n\n## Keputusan model\n\nSebelum berkomitmen:\n\n- Hitung langkah-langkah **paksa** lima atau lebih dalam.\n- Di setiap cabang, tanyakan: *apakah saya tetap punya buah penyerang di raja?*\n- Cari **ancaman mat atau perpetual** di dasar pohon kalkulasi.\n\n## Kapan harus mundur\n\n- Menteri Anda jauh dan pengangkatan benteng lambat.\n- Pembela memiliki buah kunci yang tidak bisa Anda singkirkan.\n- Ancaman balik lawan (seperti bidak lewat atau serangan tersembunyi) mendarat lebih dulu.\n\n> Penghancuran yang tidak menyelesaikan raja akan menyelesaikan Anda."
     }
   ]
 }

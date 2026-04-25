@@ -1,21 +1,29 @@
 {
   "id": "rook-mate",
   "title": "R + B vs R",
-  "summary": "Giring raja ke tepi dan lakukan skakmat",
+  "summary": "Giring raja ke tepi dan berikan skakmat",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "7k/8/5K2/8/8/8/8/6R1 w - - 0 1",
       "title": "Tekniknya",
-      "text": "Raja dan benteng melawan raja selalu menang untuk pihak yang lebih kuat. Tekniknya: gunakan benteng untuk memotong raja lawan, lalu jalankan raja Anda di sampingnya untuk menggiringnya ke tepi. Akhirnya, lakukan skakmat di baris belakang." },
-    { "type": "teach",
+      "text": "## R + B vs R — kemenangan buku teks\n\nRaja dan benteng melawan raja telanjang **selalu menang** untuk sisi yang lebih kuat. Tidak ada trik oposisi yang harus dipelajari, tidak ada pengecualian zugzwang — hanya teknik bersih yang bisa Anda ulangi dari posisi awal mana pun dalam **sekitar 16 langkah**.\n\n### Bagaimana babak akhir ini terlihat\n\n- **Benteng + raja** melawan raja telanjang.\n- Papan kosong; semuanya soal koordinasi.\n\n### Konsep kunci: potong dan dorong\n\nBenteng **memotong** baris atau kolom yang tidak bisa dilewati raja lawan. Raja Anda kemudian **mendorong** dia — mengambil oposisi — untuk menyorongnya ke arah dinding itu. Skakmat tiba saat raja sendirian dipaku ke **tepi** tanpa kotak pelarian.\n\n### Prosedur konversi\n\n1. Tempatkan benteng untuk **memotong** raja lawan di baris atau kolom, mempersempit penjaranya.\n2. **Bawa raja Anda** untuk berhadapan dengan raja lawan (oposisi langsung).\n3. Saat raja lawan harus jalan di sepanjang dinding, **ayunkan benteng** ke garis pemotong baru.\n4. Ulangi sampai dia di **tepi**, lalu berikan skakmat dengan pola pemotongan {{Rg8#}}.\n\n### Kesalahan umum\n\n- **Membuat pat** raja sendirian di tepi dengan benteng jauh. Selalu cek bahwa dia punya setidaknya satu kotak *atau* dia dalam skak.\n- Membiarkan kedua raja bersebelahan di kolom yang sama — raja menyerang benteng Anda.\n- Mengembara raja sementara benteng melakukan semua pekerjaan — Anda butuh keduanya.\n\n> Benteng memotong, raja mendorong, lalu skakmat di tepi."
+    },
+    {
+      "type": "teach",
       "fen": "7k/5K1p/8/8/8/8/8/6R1 w - - 0 1",
       "title": "Jaring Skakmat",
-      "text": "Ketika raja lawan terpojok di tepi dan raja penyerang menghentikan segala pelarian, benteng Anda meluncur masuk untuk skakmat. Inilah polanya — hafalkan." },
-    { "type": "play",
+      "text": "## Pola akhir\n\nLihat baik-baik posisi ini. Raja Hitam duduk di **h8**, pionnya sendiri di **h7** memblokir satu-satunya pelarian. Raja Putih di **f7** mengontrol **g7** dan **g8** — setiap kotak pelarian. Benteng Putih di **g1** punya jalur jelas ke **g8**.\n\n### Mengapa ini skakmat paksa\n\n- **g8** — tertutup oleh raja Putih *dan* benteng yang memberikan skakmat.\n- **g7** — tertutup oleh raja Putih di f7.\n- **h7** — diduduki oleh pion Hitam sendiri.\n\nRaja lawan tidak punya tempat lari. Bidak skakmat, benteng, meluncur ke **g8** dengan skak.\n\n### Pola yang harus dihafal\n\n- Raja bertahan di **tepi** (baris ke-8).\n- Raja penyerang **dua kotak jauhnya**, mengontrol pelarian secara diagonal.\n- Benteng memberikan **skakmat di kolom atau baris tepi**.\n\nGambar persis ini — kadang dengan pion bekerja sama, kadang murni — adalah **sidik jari** skakmat R+B vs R. Bakar di benak.\n\n> Begitu Anda melihat sangkarnya, Anda bisa membangunnya dari mana saja."
+    },
+    {
+      "type": "play",
       "fen": "7k/5K1p/8/8/8/8/8/6R1 w - - 0 1",
-      "prompt": "Lakukan skakmat.",
-      "targetSan": ["Rg8#"],
-      "hint": "Pion raja sendiri adalah dinding penjaranya." }
+      "prompt": "Berikan **skakmat** di sepanjang baris belakang. Prinsipnya: *benteng menutup sangkar yang sudah dibangun raja Anda*.",
+      "targetSan": [
+        "Rg8#"
+      ],
+      "hint": "Pion h7 melakukan pekerjaan Anda — geser benteng ke **baris ke-8** dengan skak."
+    }
   ]
 }

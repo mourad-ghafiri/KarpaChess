@@ -4,13 +4,17 @@
   "summary": "Insert a stronger threat before the obvious recapture",
   "difficulty": "advanced",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "r1bqkbnr/ppp2ppp/2np4/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 4",
       "title": "Don't Just React",
-      "text": "A zwischenzug ('in-between move', from German) is a surprising move inserted into an expected sequence — usually a check or a bigger threat — that changes the position before the obvious move is played. It's the mark of strong tactical vision." },
-    { "type": "teach",
+      "text": "**Zwischenzug** (German for *in-between move*) is a forcing move slipped into an expected exchange. The opponent expects you to recapture; instead, you play a check, a capture, or a bigger threat *first* — and *then* recapture, often with interest.\n\n## The visual trigger\n\nA zwischenzug usually appears when:\n\n- A capture happens and a recapture is expected.\n- The recapture would be \"normal\" but the position has another **forcing** resource — a check, a bigger capture, or a mate threat.\n- The opponent's piece that just captured is *itself* loose, attackable, or pinned.\n\n## The geometry\n\nIt is less about geometry and more about **tempo**. You spend one move on something more urgent before resuming the trade. The opponent must answer the check or threat; *then* you complete the trade with the position changed in your favor.\n\n## How to spot it\n\n1. When the opponent captures, slow down. Do not auto-recapture.\n2. Look for **checks**, **captures**, and **major threats** that exist *before* the recapture.\n3. Calculate: after your zwischenzug and the forced reply, can I still recapture or do better?\n4. Compare the two lines side by side. If the inserted move gains material or position, play it.\n\n> Strong players ask, *\"What's most forcing?\"* Weaker players ask, *\"What's expected?\"*"
+    },
+    {
+      "type": "teach",
       "fen": "r1bqkbnr/ppp2ppp/2np4/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 4",
-      "title": "Example Pattern",
-      "text": "When your opponent captures something of yours, your reflex is to recapture. But sometimes a zwischenzug — a check elsewhere, or a bigger threat — wins more material. Always consider: before I recapture, is there something BETTER? Even a single intervening check can win the game." }
+      "title": "A Practical Example",
+      "text": "Imagine a typical exchange in the opening or middlegame: you have just been captured, and you'd like to recapture. Before doing so, run a quick zwischenzug check.\n\n## The decision tree\n\n1. **Is there a check?** A check forces the opponent's hand and is the highest-priority candidate.\n2. **Is the capturer hanging?** The piece that just took yours might be undefended on its new square.\n3. **Is there a bigger capture?** Maybe an enemy queen is loose two moves away.\n4. **Is there a mating threat?** A quiet move that threatens mate is also a valid zwischenzug.\n\n## A model line\n\nIn many openings you will see something like {{Bxc6}} bxc6, where Black recaptures because that is normal. But in some positions the strong reply is **not** bxc6 — instead Black plays a zwischenzug like {{Qd4}} or {{Bb4+}} hitting the white king first, *then* resolves the bishop trade with the position improved.\n\n> Before recapturing, ask one more question. The masters always do."
+    }
   ]
 }

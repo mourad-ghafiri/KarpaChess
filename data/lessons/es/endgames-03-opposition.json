@@ -1,21 +1,30 @@
 {
   "id": "opposition",
-  "title": "Oposición",
+  "title": "La Oposición",
   "summary": "El concepto más importante del final",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "4k3/8/4K3/8/8/8/8/8 w - - 0 1",
-      "title": "Frente a Frente",
-      "text": "Dos reyes se enfrentan con una casilla entre ellos. El bando que NO mueve tiene la oposición — el otro rey debe apartarse. En finales de rey y peón, tener la oposición suele decidir la partida." },
-    { "type": "teach",
+      "title": "Cara a Cara",
+      "text": "## ¿Qué es la oposición?\n\nLa **oposición** es la situación en la que dos reyes están en la misma columna, fila o diagonal con **exactamente una casilla entre ellos**. El bando que **NO** mueve es el que *tiene* la oposición — el otro rey debe ceder terreno.\n\n### Tipos que debes conocer\n\n- **Oposición directa** — reyes a una casilla en una columna o fila (la más común).\n- **Oposición diagonal** — reyes a una casilla en una diagonal.\n- **Oposición a distancia** — reyes en la misma línea con **3 o 5** casillas entre ellos.\n\nUna prueba simple: si el número de casillas entre los reyes es **par**, el que mueve pierde la oposición.\n\n### Por qué importa\n\nEn finales puros de rey y peones, la oposición decide quién puede pasar y quién debe retirarse. Muchas posiciones que parecen tablas son ganadas — y muchas que parecen ganadas son tablas — solo por este único tempo.\n\n### Errores comunes\n\n- Avanzar a la casilla equivocada y dar al *rival* la oposición.\n- Confundir oposición directa con diagonal.\n- Empujar un peón mientras tienes la oposición — puedes regalarla gratis.\n\n> El que mueve primero, debe apartarse."
+    },
+    {
+      "type": "teach",
       "fen": "4k3/8/4K3/4P3/8/8/8/8 w - - 0 1",
       "title": "Con un Peón",
-      "text": "Aquí las Blancas tienen un peón de más y quieren promocionarlo. Para ganar, el rey blanco debe PRECEDER al peón con la oposición. La regla: 'rey delante, peón detrás.'" },
-    { "type": "play",
+      "text": "## Oposición con un peón\n\nAhora las blancas tienen un **peón extra en e4** y el rey en **e6**. El rey negro en **e8** se interpone en la casilla de coronación. Para ganar, las blancas deben combinar **dos ideas**:\n\n1. Mantener al rey **delante del peón**, nunca detrás.\n2. **Flanquear** al rey enemigo dando un paso diagonal para tomar una casilla clave.\n\n### Casillas clave\n\nPara un peón en la 5ª fila o más atrás, las **casillas clave** son las tres casillas **dos filas por delante** del peón (aquí: d6, e6, f6). Si tu rey alcanza cualquiera de ellas con la jugada, ganas independientemente de la oposición.\n\n### Procedimiento\n\n1. Avanza el rey diagonalmente: {{Kd6}} o {{Kf6}}.\n2. El rey negro debe ceder; síguelo por la columna.\n3. Empuja el peón solo cuando pueda avanzar con la protección del rey.\n4. Promociona y pasa al mate de R+D.\n\n### Errores comunes\n\n- Avanzar primero {{e5}} — las negras juegan Ke7 y pierdes todo el progreso.\n- Ke6-e7?? — ¿ilegal? en realidad Ke7 entra en jaque del rey. No lo hagas.\n- Jugar Ke4 / Kf4 — el rey se aleja de su peón.\n\n### Línea modelo\n\n{{Kd6}} Kd8 {{e5}} Ke8 {{e6}} Kf8 {{Kd7}} y el peón corona.\n\n> El rey delante, el peón detrás."
+    },
+    {
+      "type": "play",
       "fen": "4k3/8/4K3/4P3/8/8/8/8 w - - 0 1",
-      "prompt": "Avanza para tomar la oposición.",
-      "targetSan": ["Kd6", "Kf6"],
-      "hint": "Kd6 o Kf6 reclaman la oposición y ganan." }
+      "prompt": "Avanza **diagonalmente** para tomar una casilla clave. El principio: *el rey lidera, el peón sigue*.",
+      "targetSan": [
+        "Kd6",
+        "Kf6"
+      ],
+      "hint": "Ambos flancos sirven — pasa a la **6ª fila** y obliga a las negras a elegir por qué lado retirarse."
+    }
   ]
 }

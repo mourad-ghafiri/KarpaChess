@@ -1,20 +1,20 @@
 {
   "id": "interference",
   "title": "Interferencia",
-  "summary": "Bloquea la línea de defensa del rival",
+  "summary": "Bloquea la línea de defensa enemiga",
   "difficulty": "intermediate",
   "steps": [
     {
       "type": "teach",
       "fen": "4k3/8/8/8/8/8/8/4K3 w - - 0 1",
       "title": "El Bloqueador",
-      "text": "Las tácticas de interferencia funcionan cuando una pieza enemiga defiende una casilla clave a lo largo de una línea — interpones tu propia pieza para bloquear esa defensa. A menudo decisivas en el medio juego."
+      "text": "La **interferencia** (a veces llamada *obstrucción*) es el acto de plantar una pieza *entre* un atacante enemigo y lo que defiende o ataca. La línea queda rota — y ahora la casilla o pieza defendida queda de pronto expuesta.\n\n## El detonante visual\n\nBusca una pieza enemiga — normalmente torre, alfil o dama — defendiendo algo importante a distancia. Ahora pregúntate: *¿puedo plantar una pieza en la línea entre ellos?*\n\nSi sí, incluso sacrificar material puede merecer la pena. La defensa se desvanece en el momento en que se corta la línea.\n\n## La geometría\n\nLa interferencia necesita:\n\n1. Una **pieza enemiga de largo alcance** ejerciendo de defensora.\n2. Una **casilla o pieza objetivo** en el otro extremo de su línea.\n3. Una casilla *intermedia* donde puedas colocar una pieza — normalmente con jaque o amenaza para hacer la jugada forzada.\n\n## Cómo detectarla\n\n1. Encuentra la pieza enemiga que cumple un trabajo defensivo crítico.\n2. Traza su línea defensiva.\n3. Busca una casilla vacía a lo largo de esa línea donde una de tus piezas pueda aterrizar **con una amenaza**.\n4. Tras la interferencia, explota el objetivo desprotegido.\n\n> Un muro construido en la casilla correcta vale una pieza."
     },
     {
       "type": "teach",
       "fen": "4k3/8/8/8/8/8/8/4K3 w - - 0 1",
       "title": "Novotny y Plachutta",
-      "text": "Dos patrones clásicos de interferencia: el Novotny (sacrificar en el cruce de dos líneas, forzando a un defensor a bloquear al otro) y el Plachutta (misma idea pero con piezas de movimiento similar). Hermosas tácticas geométricas."
+      "text": "Dos hermosos patrones de interferencia del mundo de la composición ajedrecística merecen un nombre.\n\n## El Novotny\n\nUna pieza es **sacrificada** en la intersección de dos líneas defensivas enemigas — típicamente una línea de torre y una de alfil que se cruzan en una casilla.\n\n- Si la torre captura, deja de defender su línea.\n- Si el alfil captura, deja de defender *su* línea.\n- De cualquier manera, un defensor se ha ido.\n\n## El Plachutta\n\nLa misma idea, pero los dos defensores son piezas de *movimiento similar* (p. ej. dos torres en una fila y columna, o dos alfiles en diagonales opuestas). La pieza sacrificada aterriza en el punto de cruce, y cualquier torre o alfil que capture **debe abandonar una de sus líneas**.\n\n## Por qué importan estos patrones\n\n- Muestran que el material no es nada al lado de las **líneas de fuerza**.\n- Entrenan tu ojo para ver *intersecciones* — la casilla donde dos líneas enemigas se cruzan suele ser el ladrillo que sostiene el muro.\n- Aunque nunca compongas finales, el patrón del \"sacrificio en la encrucijada\" gana partidas en todos los niveles.\n\n> Las tácticas hermosas rara vez tratan de piezas. Tratan de líneas que *se encuentran*."
     }
   ]
 }

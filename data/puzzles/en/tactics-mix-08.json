@@ -4,5 +4,8 @@
   "solution": [
     "a4"
   ],
-  "hint": "Advance toward promotion."
+  "title": "Push the Passed Pawn",
+  "setup": "A lone white pawn on **a2** with no enemy pawns to stop it — a textbook **passed pawn**.",
+  "hint": "Push fast. Every tempo matters in king-and-pawn endgames.",
+  "explanation": "## The Idea\n\nThis is a fundamental **passed pawn promotion race**. There are no enemy pawns blocking the a-file, so the pawn's only obstacle is the black king — currently on e8, far away.\n\nWhite plays {{a4}} — the **two-square initial advance**, gaining a vital tempo over {{a3}}.\n\n## Why a4 and Not a3?\n\nIn pawn endings, every tempo decides the outcome. The pawn must reach a8 before the black king can catch it. Counting squares:\n\n- After {{a4}}, the pawn needs 4 more moves to promote ({{a5}}, {{a6}}, {{a7}}, {{a8=Q}}).\n- Black's king needs to reach the **promotion square** (a8) or the pawn's path. From e8 to a8 is 4 king moves.\n- It's a footrace — and we just saved a tempo by jumping two squares.\n\n## The Square of the Pawn Rule\n\n> Draw an imaginary square from the pawn to the promotion rank, on the diagonal toward the enemy king. If the king is **outside** the square, the pawn promotes.\n\nLearn this rule cold — it decides hundreds of pawn endings."
 }

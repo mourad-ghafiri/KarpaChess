@@ -4,5 +4,8 @@
   "solution": [
     "a8=Q+"
   ],
-  "hint": "Le pion a est à un pas de la gloire."
+  "title": "Promotion avec échec",
+  "setup": "Un pion blanc est à une case de la gloire en **a7**, avec le roi noir aligné à proximité.",
+  "hint": "Promouvez avec échec chaque fois que possible — ça ne laisse aucun temps à Noir pour réagir.",
+  "explanation": "## L'idée\n\nUne tactique de **promotion** classique. Le pion en a7 atteint la huitième rangée et se transforme en dame, donnant simultanément l'échec sur la 8e rangée.\n\nLes Blancs jouent {{a8=Q+}}.\n\n## Réponse forcée des Noirs\n\nLa nouvelle dame en a8 attaque le roi en e8 le long de la **huitième rangée**. Noir doit bouger le roi (rien à interposer, dame loin des défenseurs côté roi) :\n\n- {{Kd7}}, {{Ke7}}, {{Kf7}}, {{Kf8}}, {{Kd8}} — toute case de fuite convient puisque la dame est seule.\n\n## Pourquoi promouvoir avec échec compte\n\n> Promouvoir avec échec **prive Noir d'un tempo**. Une promotion sans échec peut être contrée par des contre-menaces ; une promotion avec échec force un coup de roi immédiat.\n\nDans les finales, un seul tempo fait souvent la différence entre gagner et annuler. Cherchez toujours les échecs en promouvant — ils valent de l'or."
 }

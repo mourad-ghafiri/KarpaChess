@@ -4,5 +4,8 @@
   "solution": [
     "Rxa7+"
   ],
-  "hint": "Skewer — queen in front of her king."
+  "title": "A-File Showdown",
+  "setup": "White's rook stares up the **a-file** at the black queen and king stacked above her.",
+  "hint": "When the queen blocks her own king, she is pinned — not skewered. Take her.",
+  "explanation": "## The Idea\n\nDespite older lore that calls this a \"skewer,\" this is technically an **absolute pin**: the black queen on a7 shields her king on a8, so she cannot move.\n\n- **Pin** = attacker, target, *king* (king behind).\n- **Skewer** = attacker, *king*, target (king in front).\n\nHere the king is behind the queen, so it is a pin.\n\nWhite plays {{Rxa7+}}, capturing the queen.\n\n- {{Kxa7}} is the only legal reply.\n- White trades rook (5) for queen (9), netting **+4**.\n- Black has no defender on a7 and no way to interpose.\n\n## Pattern to Memorize\n\n> Geometry first, names second. Whenever you see your **rook + enemy minor/major piece + enemy king** all on the same file, you almost always have a tactic.\n\nDon't worry about whether it's officially a pin or a skewer in the moment — both win material."
 }

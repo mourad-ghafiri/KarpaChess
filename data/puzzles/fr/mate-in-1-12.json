@@ -4,5 +4,8 @@
   "solution": [
     "Qxh7#"
   ],
-  "hint": "La dame prend avec le soutien du roi — mat dans le coin."
+  "title": "Prends le Pion, Prends le Roi",
+  "setup": "Votre dame ratisse la 7e rangée et votre roi en **g6** est à un pas de l'action.",
+  "hint": "Capturez le pion {{h7}} — votre roi défend la dame et les Noirs n'ont nulle part où fuir.",
+  "explanation": "## L'Idée\n\nUn **baiser de la mort dans le coin** classique. La dame capture le pion isolé qui défend le roi et atterrit sur une case défendue par votre propre roi.\n\nJouez {{Qxh7#}}.\n\nPourquoi le roi est-il piégé ?\n\n- La dame en h7 attaque h8 directement (échec)\n- {{g8}} — couverte par la dame en h7 (diagonale)\n- {{Kxh7}} est illégal — votre roi en **g6** défend h7\n- Rien ne peut s'interposer : la dame est adjacente au roi\n\n> **À retenir :** Le coin est la case la plus dangereuse pour un roi sans échappatoire. Quand votre dame et votre roi coopèrent à distance deux, chaque case proche est une candidate au mat — surtout après avoir capturé le dernier bouclier du roi."
 }

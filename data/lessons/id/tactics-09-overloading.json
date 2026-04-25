@@ -1,21 +1,29 @@
 {
   "id": "overloading",
   "title": "Kelebihan Beban",
-  "summary": "Bidak yang melakukan dua tugas akan gagal di salah satunya",
+  "summary": "Buah yang melakukan dua pekerjaan akan gagal di salah satunya",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "4k3/4q3/8/8/8/8/4R3/4K3 w - - 0 1",
-      "title": "Terlalu Banyak Kerja",
-      "text": "Bidak yang kelebihan beban adalah yang membela (atau menyerang) lebih dari yang bisa ia tangani. Kasus klasik: satu bidak membela dua kotak. Ketika Anda menyerang salah satu, yang lain jatuh. Di sini menteri Hitam membela raja — dia tidak bisa bergerak tanpa kalah oleh Rxe7+." },
-    { "type": "play",
+      "title": "Terlalu Banyak Pekerjaan",
+      "text": "Buah yang **kelebihan beban** adalah buah yang punya lebih banyak tugas pertahanan daripada yang bisa ia tangani. Serang salah satu pekerjaannya, dan ia gagal di yang lain.\n\n## Bentuk klasik\n\nSatu buah lawan melakukan dua dari hal berikut sekaligus:\n\n- Membela petak yang, jika diserbu, akan menjadi mat.\n- Membela buah lain yang sebenarnya longgar.\n- Memblokir skak sambil juga menjaga petak kunci.\n- Memegang pakuan sambil juga menutupi petak garpu kuda.\n\nJika sebuah buah melakukan **dua** pekerjaan, Anda hanya perlu membuatnya melakukan **tiga** agar gagal.\n\n## Geometrinya\n\nTidak ada bentuk — kelebihan beban adalah pembukuan. Petakan tugas setiap pembela; cari buah dengan dua tugas; serang salah satu tugasnya.\n\n## Cara menemukannya\n\n1. Daftar buah lawan yang menjaga paling banyak hal.\n2. Untuk masing-masing, tulis tugasnya — petak yang dibela, buah yang dilindungi, garis yang ditutupi.\n3. Cari serangan yang memaksanya menjatuhkan satu tugas.\n4. Manfaatkan petak yang ditinggalkan.\n\nDi sini menteri Hitam di e7 kelebihan beban: ia satu-satunya buah di antara benteng di e2 dan raja di e8. Putih memainkan {{Rxe7+}} — menteri jatuh karena ia tidak bisa sekaligus tinggal di rumah dan melindungi raja.\n\n> Buah yang setia tetap dipecat ketika ada terlalu banyak pekerjaan."
+    },
+    {
+      "type": "play",
       "fen": "4k3/4q3/8/8/8/8/4R3/4K3 w - - 0 1",
-      "prompt": "Tangkap menteri yang terikat.",
-      "targetSan": ["Rxe7+"],
-      "hint": "Tugas ganda menteri (membela raja DAN kotaknya) berarti dia mati." },
-    { "type": "teach",
+      "prompt": "Sambar menteri yang kelebihan beban dengan **{{Rxe7+}}** — ia melindungi raja dan tidak bisa pindah.",
+      "targetSan": [
+        "Rxe7+"
+      ],
+      "hint": "Menteri melakukan dua pekerjaan sekaligus. Serang salah satu dan yang lain gagal."
+    },
+    {
+      "type": "teach",
       "fen": "4k3/4R3/8/8/8/8/8/4K3 b - - 0 1",
       "title": "Mengenali Kelebihan Beban",
-      "text": "Cari bidak yang mempertahankan beberapa hal — pion yang saling membela ditambah sebuah bidak, atau kuda yang menahan kolom sambil juga memblokade pion lewat. Ketika Anda menemukan satu, serang salah satu tugasnya." }
+      "text": "Sekarang benteng di e7, unggul dua bidak material dengan akhir partai raja-dan-bidak yang menang di depan. Kelebihan beban telah melakukan tugasnya.\n\n## Pola kelebihan beban umum yang harus dihafal\n\n- Bidak yang membela dua buah (kuda + gajah).\n- Kuda yang memblokir bidak lewat *dan* membela buah ringan lain.\n- Menteri yang menjaga baris belakang *dan* membela kuda yang menggantung.\n- Benteng yang membela baris belakang *dan* berhadapan dengan benteng lawan di lajur.\n\n## Pertanyaan yang berguna\n\nSetiap kali Anda memindai posisi, tanyakan: *buah lawan mana yang membela lebih dari satu hal?* Buah itu adalah titik lemah Anda. Cari langkah yang memaksanya memilih, dan Anda menang.\n\n> Langkah yang kuat tidak hanya menyerang buah. Mereka menyerang *tanggung jawab*."
+    }
   ]
 }

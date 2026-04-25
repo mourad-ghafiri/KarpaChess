@@ -1,20 +1,20 @@
 {
   "id": "windmill",
   "title": "Kincir Angin",
-  "summary": "Rangkaian skak-terbuka yang menghancurkan",
+  "summary": "Rangkaian skak-tersembunyi yang menghancurkan",
   "difficulty": "advanced",
   "steps": [
     {
       "type": "teach",
       "fen": "r1b1k2r/pp3ppp/1qn1p3/3pn3/8/1P2PN2/PB1N1PPP/R2QKB1R w KQkq - 0 1",
       "title": "Pola Kincir Angin",
-      "text": "Kincir angin adalah rangkaian skak-terbuka yang memungkinkan Anda menangkap bidak demi bidak. Contoh paling terkenal adalah Torre vs. Lasker, 1925 — gajah dan benteng Torre bekerja sama untuk memanen pasukan Lasker."
+      "text": "**Kincir angin** adalah siklus tanpa henti dari *skak-tersembunyi* yang memungkinkan Anda merebut buah demi buah sementara raja lawan tidak punya waktu untuk bernapas. Ini salah satu pola paling indah — dan paling mematikan — dalam catur.\n\n## Pemicu visual\n\nKincir angin membutuhkan susunan yang sangat spesifik:\n\n- **Benteng atau menteri** yang memberi skak (atau akan memberi skak) di baris ketujuh atau kedelapan.\n- **Gajah** (atau kadang kuda) yang duduk di petak di mana ia *memberi skak tersembunyi* sekaligus *mundur dengan aman*.\n- Raja lawan dengan **hanya satu atau dua petak pelarian**, sehingga ia harus terus kembali ke tempat yang sama.\n- **Buah lawan yang longgar** sepanjang baris atau diagonal yang dipungut benteng di antara skak.\n\n## Geometrinya\n\nBenteng dan gajah adalah dua batu giling kincir:\n\n1. Gajah keluar dari garis — **skak tersembunyi** dari benteng.\n2. Raja tidak punya pilihan selain pindah ke satu-satunya petak aman.\n3. Gajah **kembali**, menangkap buah dalam perjalanan.\n4. Benteng *menyekak lagi* (atau gajah membuka skak baru).\n5. Ulangi sampai pasukan lawan habis.\n\n## Contoh paling terkenal\n\n**Torre vs. Lasker, Moskow 1925** — gajah di f6 dan benteng di g7 menggiling buah Lasker hingga menjadi debu selama belasan langkah. Cari setelah pelajaran ini; tak terlupakan.\n\n> Kincir angin mengubah hukum catur menjadi penggiling daging."
     },
     {
       "type": "teach",
       "fen": "r1b1k2r/pp3ppp/1qn1p3/3pn3/8/1P2PN2/PB1N1PPP/R2QKB1R w KQkq - 0 1",
-      "title": "Cara Kerjanya",
-      "text": "Persiapan kunci: benteng/menteri Anda memberi skak, Anda memindahkan gajah/kuda keluar dan kembali (skak-terbuka setiap kali), merebut satu bidak musuh yang tidak terlindungi di setiap siklus. Raja musuh tidak bisa menghentikannya — dia dalam skak setiap langkah."
+      "title": "Cara Menyiapkannya",
+      "text": "Kincir angin tidak terjadi karena kebetulan. Mereka *direkayasa*. Begitu Anda tahu resepnya, Anda mulai melihatnya jauh sebelum mereka muncul.\n\n## Bahan-bahan\n\n- **Gajah** ditempatkan di diagonal panjang yang membidik kantong raja lawan.\n- **Benteng (atau menteri)** Anda menerobos ke baris ketujuh atau baris belakang.\n- Raja lawan terpojok dengan petak pelarian terbatas.\n- Buah lawan berbaris di sepanjang baris benteng — sasaran mudah di antara skak.\n\n## Prosedurnya\n\n1. Tempatkan **gajah** di belakang benteng Anda agar memindahkan benteng menghasilkan skak tersembunyi.\n2. Giring raja ke petak tanpa opsi pelarian kecuali kembali ke tempat semula.\n3. Pindahkan benteng *keluar* dari petak skak tersembunyi (menangkap material), skak teratasi.\n4. Pindahkan benteng *kembali* dengan skak lagi.\n5. Lanjutkan sampai posisi memenangkan.\n\n## Cara mengenali *ancaman* kincir angin\n\n- Dua buah jarak jauh Anda berbagi serangan ke raja.\n- Raja hanya punya satu petak aman di antara dua penyerang.\n- Salah satu buah Anda dapat menangkap dan kembali tanpa ditangkap.\n\n> Jika Anda pernah bertanya-tanya mengapa gajah di diagonal panjang menakutkan, kincir angin adalah jawabannya."
     }
   ]
 }

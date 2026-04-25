@@ -4,5 +4,8 @@
   "solution": [
     "Rb8#"
   ],
-  "hint": "Une tour avance tandis que l'autre contrôle la rangée."
+  "title": "Échelle à Deux Tours",
+  "setup": "Les deux tours sont sur la **colonne b**, prêtes à monter l'échelle côte à côte.",
+  "hint": "Une tour donne échec sur la 8e rangée tandis que l'autre garde {{b7}} — pas d'évasion entre les deux.",
+  "explanation": "## L'Idée\n\nC'est le **mat de l'échelle à deux tours** — aussi appelé *l'escalier*. Avec deux tours, on alterne les rangées pour que le roi soit pressé contre le bord sans air.\n\nJouez {{Rb8#}}. La tour b grimpe en **b8** et donne échec sur la 8e rangée.\n\nPourquoi le roi est-il piégé ?\n\n- {{g8}}, {{f8}} et le reste de la 8e rangée — toutes balayées par la nouvelle tour en b8\n- {{g7}} — bloquée par le propre pion noir\n- {{h7}} — bloquée par le propre pion noir\n- La tour basse en **b2** règne toujours sur la colonne b, donc Kxb8 serait illégal de toute façon (et le roi ne peut l'atteindre)\n\n> **À retenir :** Deux tours sont une machine à mat même sans roi. Gardez-les sur des colonnes ou rangées adjacentes et faites-les monter — le roi seul n'a nulle part où courir."
 }

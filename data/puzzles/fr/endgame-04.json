@@ -4,5 +4,8 @@
   "solution": [
     "Kd5"
   ],
-  "hint": "Gagnez du terrain avec le roi."
+  "title": "L'Activité du Roi Gagne",
+  "setup": "Pion en **e3**, votre roi en **e4**, le roi noir en f6 essayant de surveiller la case de promotion.",
+  "hint": "N'allez pas droit devant — **gagnez du terrain** en allant sur une case que le roi ennemi ne peut atteindre.",
+  "explanation": "## Principe Clé : Gagner des Cases avec le Roi\n\nLe roi noir fait son travail : il couvre e5, e6 et e7, ralentissant votre pion. Pour progresser, votre roi doit atteindre la 6e rangée sans s'échanger. Le moyen est d'avancer **en diagonale** vers une case que le roi ennemi ne peut contester.\n\n## Le Plan\n\n1. **{{Kd5}}** — Les Blancs avancent vers l'aile-dame, gagnant une rangée sans jamais se mettre sur une case que les Noirs peuvent contester immédiatement. Les Noirs ne peuvent répondre Kd5 (occupée), Ke5 (attaquée par votre roi) ou Kf5 (attaquée).\n2. La meilleure tentative noire est **...Ke7**, courant défendre. Les Blancs répondent **Kc6** ou **Ke5**, continuant à pousser le roi ennemi tout en gardant le pion en sécurité.\n3. Quand le roi blanc atteint la 6e rangée, le pion marche : **e4, e5, e6** — et le roi dégage la case de promotion.\n\n## Ce Qui Ne Va Pas si Vous Poussez le Pion\n\nSi les Blancs jouent 1.e4? tout de suite, le roi en f6 est bien placé : 1...Ke6! et les Noirs ont sécurisé la **case devant le pion**. De là c'est une forteresse et nulle. Leçon : **avant de pousser, gagnez les cases sur lesquelles votre pion se tiendra**."
 }

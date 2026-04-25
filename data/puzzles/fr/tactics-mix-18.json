@@ -4,5 +4,8 @@
   "solution": [
     "dxe5"
   ],
-  "hint": "Capture centrale."
+  "title": "Ouvrir le centre",
+  "setup": "Les deux camps ont poussé leurs **pions d** et **e**. Il est temps d'un échange central propre.",
+  "hint": "Quand deux paires de pions sont verrouillées au centre, le camp qui capture en premier ouvre des lignes pour ses pièces.",
+  "explanation": "## L'idée\n\nVoici un **échange central** fondateur dans le jeu d'ouverture. Les deux camps ont poussé des pions centraux, et la tension a monté. Blanc a le trait et décide de **relâcher la tension** par une capture.\n\nLes Blancs jouent {{dxe5}}.\n\n## Ce que cela fait\n\n- Le pion d de Blanc capture le pion e de Noir.\n- La **colonne d** est désormais semi-ouverte pour Blanc (plus de pion blanc dessus).\n- La **colonne e** a encore... attendez, après la capture, Noir a encore un pion en d5, et Blanc n'a que le pion e en e4 (plus en e5 ; il a été capturé).\n\nRetraçons l'échange soigneusement :\n- Blanc d4 capture e5 → pion blanc maintenant en e5, le pion e5 noir a disparu.\n- La colonne d n'a plus de pion blanc — elle est **semi-ouverte** pour la dame et la tour blanches.\n\n## Options de reprise des Noirs\n\nNoir jouera probablement {{dxe4}}, reprenant au centre et continuant l'échange symétrique. Après {{dxe4}}, les deux colonnes d sont désormais semi-ouvertes et la position est à peu près égale.\n\n## Schéma à mémoriser\n\n> Ne laissez pas la tension centrale des pions sans résolution éternellement. **Capturer en premier** décide souvent quel camp obtient les meilleures lignes pour ses pièces.\n\nCette simple idée d'ouverture est l'ancêtre de tous les **jeux ouverts** et structures **siciliennes ouvertes** : échanger les pions centraux, remplir les colonnes ouvertes avec des tours, combattre sur les lignes que vous avez créées."
 }

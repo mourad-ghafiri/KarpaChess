@@ -8,23 +8,23 @@
       "type": "teach",
       "fen": "4k3/8/8/8/4P3/8/8/4K3 w - - 0 1",
       "title": "La finale fondamentale",
-      "text": "Tout joueur d'échecs doit connaître R+P contre R sur le bout des doigts. Le résultat dépend d'UNE chose : le camp fort peut-il amener son roi DEVANT le pion avec l'opposition ? Si oui, le pion promeut. Sinon, c'est nulle."
+      "text": "## R + P contre R — tout joueur doit la connaître\n\nPlus de parties sont décidées par **roi et pion contre roi** que par toute autre finale technique. C'est la **finale d'entrée** — toute finale de tour, dame ou pièce mineure finit par se simplifier en l'un de ses motifs.\n\n### À quoi ressemble cette finale\n\n- Un camp a **roi + un seul pion**.\n- L'autre n'a que le **roi**.\n- Un pion central (colonnes b à g) — les pions tour sont un cas particulier.\n\n### Le concept clé : être devant avec l'opposition\n\nTout le résultat tient à une question : **le camp fort peut-il placer son roi DEVANT le pion en gardant l'opposition ?** Si oui — le pion promeut. Sinon — c'est nulle par pat ou parce que le roi défenseur atteint la case de promotion.\n\n### Procédure pour convertir\n\n1. **Menez avec le roi**, jamais avec le pion.\n2. Atteignez une **case clé** (voir page suivante) avec le roi.\n3. **Prenez l'opposition**, puis contournez en diagonale.\n4. Poussez le pion seulement quand le roi a dégagé la voie.\n5. Promouvez et passez au mat R+D.\n\n### Erreurs courantes\n\n- Pousser le pion d'abord — il est capturé ou bloqué.\n- Laisser le roi ennemi atteindre la **case de promotion** — nulle instantanée.\n- Permettre le **pat** avec le pion sur la 7e rangée et votre roi juste derrière sur la 6e devant lui.\n\n> Le roi devant, le pion derrière."
     },
     {
       "type": "teach",
       "fen": "4k3/8/4K3/4P3/8/8/8/8 w - - 0 1",
       "title": "Cases clés",
-      "text": "Pour un pion sur la 5e rangée ou en dessous, les \"cases clés\" sont les trois cases en diagonale devant lui. Si votre roi atteint l'une d'elles, vous gagnez. Apprenez les cases clés pour chaque position de pion."
+      "text": "## Les cases clés gagnent cette finale\n\nPour un pion sur la **2e–5e rangée**, les **cases clés** sont les trois cases **deux rangées devant** le pion. Pour notre pion en **e4**, les clés sont **d6, e6, f6**.\n\nPour un pion sur la **6e rangée**, les cases clés sont simplement les trois cases **directement devant** lui.\n\n### La règle\n\nSi votre roi atteint **n'importe quelle case clé**, vous gagnez — *peu importe l'opposition*. C'est ce qui les rend « clés ».\n\n### Procédure dans cette position\n\nLe roi blanc est **déjà en e6** (une case clé !). Le gain est désormais mécanique :\n\n1. {{Kd6}} ou {{Kf6}} — contournez pour saisir une seconde case clé avec tempo.\n2. Après le recul des Noirs, poussez {{e5}}.\n3. Faites avancer le roi devant le pion jusqu'à la promotion.\n\n### Erreurs courantes\n\n- Avancer le roi en **e7** — il laisse le pion sans protection et entre dans des motifs de pat.\n- Pousser le pion alors que le roi est sur une case clé — vous rendez les cases.\n- Traiter les finales de pion tour (a/h) de la même façon — elles sont généralement nulles même quand la technique semble similaire.\n\n### Ligne modèle\n\n{{Kd6}} Kf7 {{e5}} Ke8 {{Kc7}} et le pion promeut.\n\n> Atteignez une case clé avec le trait et le pion fait dame tout seul."
     },
     {
       "type": "play",
       "fen": "4k3/8/4K3/4P3/8/8/8/8 w - - 0 1",
-      "prompt": "Avancez vers une case clé.",
+      "prompt": "Avancez vers une **seconde case clé** pour contourner le défenseur. Le principe : *le roi d'abord, le pion ensuite*.",
       "targetSan": [
         "Kd6",
         "Kf6"
       ],
-      "hint": "Kd6 ou Kf6 saisissent tous deux l'opposition."
+      "hint": "Deux cases clés sont à un pas en diagonale — choisissez l'aile."
     }
   ]
 }

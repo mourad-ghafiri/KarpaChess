@@ -4,5 +4,8 @@
   "solution": [
     "Ra8"
   ],
-  "hint": "Simplifiez — invasion de la tour en a8."
+  "title": "Clouage sur le Roi",
+  "setup": "La tour noire en e8 défend la dernière rangée. La tour blanche est à une case de poser une pression décisive.",
+  "hint": "Plantez la tour sur la 8e rangée. La prison du roi fera le reste.",
+  "explanation": "## L'Idée\n\n{{Ra8}} est le coup discret mais dévastateur. Il ne mate pas immédiatement, mais il enferme les Noirs dans un **clouage totalement perdant** :\n\n1. La tour blanche arrive en a8, fixant toute la 8e rangée.\n2. La tour noire en e8 est **clouée** — elle ne peut bouger sans exposer le roi à Rxe8#.\n3. Les Blancs menacent {{Rxe8#}} au coup suivant.\n\n### Pourquoi les Noirs n'ont aucune bonne défense\n\n- **Bouger le roi ?** Le roi n'a pas d'air. Kh8 permet toujours Rxe8#. Kg8 est pareil. Le roi ne peut s'évader vers la 7e rangée sans d'abord créer du luft, ce que les Noirs n'ont pas le temps de faire.\n- **Défendre la tour ?** Aucune pièce à portée ne peut renforcer e8.\n- **Contre-menace ?** Les Noirs n'ont que le roi et la tour — il n'y a aucune contre-attaque.\n\n### Schéma à retenir\n\n- Une tour qui arrive avec **le soutien de ses propres forces** sur une dernière rangée ouverte contre un roi sans luft est décisive.\n- Le clouage de la tour noire est le pieu dans le cœur.\n\n> Les coups silencieux tuent souvent plus vite que les bruyants. La menace est plus forte que l'exécution — mais ici, l'exécution est imparable."
 }

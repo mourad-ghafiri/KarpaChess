@@ -1,8 +1,11 @@
 {
   "id": "mate-in-1-27",
-  "fen": "k7/7R/2K5/8/8/8/8/8 w - - 0 1",
+  "fen": "k7/8/1K6/8/8/8/8/7R w - - 0 1",
   "solution": [
-    "Ra7+"
+    "Rh8#"
   ],
-  "hint": "Cut off the a-file and the king dies."
+  "title": "Far-Side Hammer",
+  "setup": "Black's king is wedged in the **a8** corner with your king on **b6** locking the diagonal flight squares.",
+  "hint": "Slide the rook to the 8th rank from far away — your king on **b6** holds {{a7}} and {{b7}}.",
+  "explanation": "## The Idea\n\nAnother **K+R vs K corner mate**, this time with the rook delivering from the far side of the board. The king on b6 is at the *standard cage distance*, controlling the diagonal flight squares.\n\nPlay {{Rh8#}}.\n\nWhy is the king stuck?\n\n- {{b8}} — covered by the rook on h8 (8th rank)\n- {{a7}} — covered by your king on **b6**\n- {{b7}} — covered by your king on **b6**\n- The rook is too far for {{Kxh8}}\n- Nothing can interpose on the 8th rank\n\n> **Takeaway:** When mating with K+R, the rook can deliver from anywhere on the rank or file once the *king cage* is established. Distance doesn't weaken the mate."
 }

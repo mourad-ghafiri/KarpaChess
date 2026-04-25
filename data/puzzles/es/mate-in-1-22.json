@@ -4,5 +4,8 @@
   "solution": [
     "Ra1#"
   ],
-  "hint": "Mate en la última fila con apoyo del rey."
+  "title": "Apretón en el rincón",
+  "setup": "El rey negro está en el rincón **a8**; tu rey en **c7** controla {{b7}}, {{b8}} y {{c8}}.",
+  "hint": "Lleva la torre a la **columna a** — el rincón del rey se convierte en su ataúd.",
+  "explanation": "## La idea\n\nUn clásico **mate de R+T contra R en el rincón**. El rey blanco está una casilla diagonalmente adyacente al rincón — la jaula estándar — y la torre remata desde la misma columna.\n\nJuega {{Ra1#}}.\n\n¿Por qué está atrapado el rey?\n\n- {{a7}} y {{a8}} — ambas atacadas por la torre en a1 (jaque por la columna a)\n- {{b7}}, {{b8}} — cubiertas por tu rey en **c7**\n- La torre en a1 está demasiado lejos para {{Kxa1}}\n- Nada en la columna a puede interponerse\n\n> **Conclusión:** Una vez que tu rey alcanza la *diagonal de oposición* (aquí, c7 contra a8), la torre puede dar mate desde cualquier casilla segura en la columna o fila donde se encuentra el rey atrapado."
 }

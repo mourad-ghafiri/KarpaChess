@@ -1,6 +1,11 @@
 {
   "id": "back-rank-03",
   "fen": "r5k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
-  "solution": ["Rxa8#"],
-  "hint": "Trade rooks into mate — the pawn wall is also the prison."
+  "solution": [
+    "Rxa8#"
+  ],
+  "title": "Rooks Off, Mate On",
+  "setup": "Symmetrical position with rooks staring at each other on the a-file. Black's king has no air.",
+  "hint": "Trade the rooks. Black's pawn wall is also Black's prison.",
+  "explanation": "## The Idea\n\n{{Rxa8#}} is a **trade-into-mate** — the simplest and most beautiful form of back-rank execution.\n\n### Move-by-move\n\n1. White's rook captures Black's rook on a8.\n2. Black has no recapturing piece (the king on g8 is far away; no other defender on the 8th rank).\n3. The king is in check from the white rook on a8 along the entire 8th rank.\n4. **No escape:** g7-h7 are own pawns, h8 / f8 are attacked by the white rook, and there is nothing left to capture or block with.\n\n### What Black should have done earlier\n\n- Pushed {{h6}} or {{g6}} long ago to give the king air.\n- Kept a piece (knight, bishop, queen) defending the back rank.\n- Avoided rook trades on open files when the king has no luft.\n\n> Two armies of equal strength + one extra tempo of pawn structure = one army wins. The back-rank mate is the price of neglected luft."
 }

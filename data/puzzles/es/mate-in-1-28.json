@@ -1,8 +1,11 @@
 {
   "id": "mate-in-1-28",
-  "fen": "1k6/pp6/8/8/8/8/8/1K4R1 w - - 0 1",
+  "fen": "1k6/pp6/1P6/8/8/8/8/1K4R1 w - - 0 1",
   "solution": [
-    "Rg8+"
+    "Rg8#"
   ],
-  "hint": "Invade la octava — los peones son su prisión."
+  "title": "Mate con cuña de peón",
+  "setup": "Tu peón en **b6** tapona el escape de {{c7}}, mientras que los propios peones negros sellan las **columnas a y b**.",
+  "hint": "Lanza la torre a la octava fila — el peón de **b6** sella {{c7}} y los peones negros aguantan {{a7}} y {{b7}}.",
+  "explanation": "## La idea\n\nUn **mate de fila final con la ayuda silenciosa de un peón**. El peón de **b6** no da jaque — pero controla c7, la única casilla de escape que la torre no alcanza.\n\nJuega {{Rg8#}}.\n\n¿Por qué está atrapado el rey?\n\n- {{a8}}, {{c8}} y el resto de la octava fila — todas barridas por la torre en g8\n- {{a7}} — bloqueada por el peón a negro (y también atacada por el peón blanco de b6)\n- {{b7}} — bloqueada por el peón b negro\n- {{c7}} — controlada por el peón blanco en **b6**\n- La torre está demasiado lejos para {{Kxg8}}\n\n> **Conclusión:** Un peón una casilla por delante de la *columna de escape* del rey enemigo es un ayudante de mate oculto. Cuando veas un rey atascado tras dos peones, busca pequeños apoyos de peón que cierren la tercera casilla de escape."
 }

@@ -4,5 +4,8 @@
   "solution": [
     "Qa8#"
   ],
-  "hint": "Queen controls the 8th, knight covers g6."
+  "title": "Queen + Knight Net",
+  "setup": "Your knight on **f6** stops the king from reaching {{g8}}, your king on **h6** locks {{g7}}, and the **h7** pawn blocks the third escape.",
+  "hint": "Send the queen along the back rank — the knight on **f6** seals {{g8}}.",
+  "explanation": "## The Idea\n\nA **queen + knight mating net** with the king's own pawn helping. The queen delivers from the corner, while the knight and king have already locked the rest of the box.\n\nPlay {{Qa8#}}.\n\nWhy is the king stuck?\n\n- The queen on a8 attacks h8 along the 8th rank (check)\n- {{g8}} — controlled by the knight on **f6**\n- {{g7}} — controlled by your king on **h6**\n- {{h7}} — blocked by Black's own pawn (which is also under attack from the king, but mate matters first)\n- Nothing can interpose on the empty 8th rank between a8 and h8\n\n> **Takeaway:** A knight one move from the corner is a *silent guard* — it covers the second-rank escape squares the queen can't reach in one move. Whenever you have queen + knight + king close to the enemy corner, look for this pattern."
 }

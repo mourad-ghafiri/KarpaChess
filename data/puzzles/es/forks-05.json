@@ -4,5 +4,8 @@
   "solution": [
     "Nxd5"
   ],
-  "hint": "El caballo gana la dama."
+  "title": "El caballo se lleva una dama",
+  "setup": "La dama negra está en d5 — exactamente a un salto del caballo blanco de e3, sin defensor a la vista.",
+  "hint": "Desde e3, cuenta las casillas del caballo: un único salto en L aterriza en d5. ¿Está defendida la dama?",
+  "explanation": "## La idea\n\nUna **dama suelta** es el regalo más caro del ajedrez. El caballo en e3 puede pisar d5 en una jugada (e3 → d5 es la L: columna -1, fila +2), y el rey negro en e8 está demasiado lejos para defender.\n\nTras {{Nxd5}}, las blancas suman una dama por una astilla casi inexistente.\n\n## Por qué las negras no tienen defensa\n\n- La dama en d5 no tiene amigo cerca — el rey en e8 está a tres casillas.\n- El caballo en e3 está **defendido** por el rey blanco en e1 (aunque eso no importa aquí, ya que las negras no tienen pieza con la que recapturar).\n- Tras la captura, el caballo blanco se asienta orgulloso en d5 sin necesidad de continuación.\n\n## Patrón a memorizar\n\n> Comprueba siempre el **radio en L del caballo** al mirar piezas enemigas. Si un caballo a una jugada de distancia puede capturar una pieza indefensa, esa es la jugada más fuerte del tablero."
 }

@@ -4,5 +4,8 @@
   "solution": [
     "a4"
   ],
-  "hint": "Avancez votre pion passé."
+  "title": "Course de pion avec soutien du roi",
+  "setup": "Le roi blanc se tient déjà en **e6** — soutenant fortement toute poussée. Le pion a a juste besoin d'un coup d'envoi.",
+  "hint": "Quand votre roi est actif et que le pion est loin de la promotion, poussez le pion — le roi est en position pour l'escorter plus tard.",
+  "explanation": "## L'idée\n\nVoici un problème fondamental de **finale roi-et-pion**. Blanc a un avantage majeur : le roi est déjà avancé en **e6**, tandis que le pion est en a2. Le plan est simple — **faire la course du pion vers la promotion**.\n\nLes Blancs jouent {{a4}} (l'avance initiale de deux cases, plus rapide que {{a3}}).\n\n## Pourquoi a4 plutôt que a3 ?\n\n- {{a4}} économise un tempo : le pion saute en a4 en un coup au lieu de prendre deux coups via {{a3}} puis {{a4}}.\n- Ce tempo est crucial dans les courses : plus le pion est près de promouvoir, plus il est difficile pour le roi noir de le rattraper.\n\n## Le problème des Noirs\n\nLe roi noir en **e8** doit courir tout le long jusqu'à **a8** pour rattraper le pion — soit sept coups de roi. Le pion a besoin de cinq coups pour promouvoir ({{a4}}, {{a5}}, {{a6}}, {{a7}}, {{a8=Q}}). Même sans le soutien du roi blanc, le pion gagnerait la course confortablement.\n\nMais ici, le roi blanc en e6 est *déjà* dans le carré du pion par rapport à la trajectoire du roi noir — il peut interférer ou soutenir au besoin.\n\n## Schéma à mémoriser\n\n> Les **courses de pions** se gagnent en comptant les tempos. Poussez toujours de deux cases au premier coup quand le pion est sur sa case de départ — ce tempo gratuit décide souvent de tout.\n\nLa **règle du carré du pion** : imaginez un carré avec le pion à un coin et la case de promotion sur la diagonale. Si le roi adverse est hors du carré, le pion promeut."
 }

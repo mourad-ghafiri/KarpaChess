@@ -1,26 +1,26 @@
 {
   "id": "kings-indian-advanced",
   "title": "Pertahanan King's Indian",
-  "summary": "Serangan balik hipermodern — pilihan pejuang",
+  "summary": "Balas serangan hipermodern — pilihan petarung",
   "difficulty": "advanced",
   "steps": [
     {
       "type": "teach",
       "fen": "rnbqk2r/ppppppbp/5np1/8/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 4 5",
       "title": "Biarkan Mereka Membangun Pusat",
-      "text": "King's Indian (1.d4 Nf6 2.c4 g6) adalah pertahanan hipermodern terbaik. Hitam membiarkan Putih membangun pusat pion yang besar, lalu menyerangnya dengan ...e5 atau ...c5. Terkenal menghasilkan serangan sisi raja yang ganas — senjata pilihan Kasparov."
+      "text": "**Pertahanan King's Indian** (KID) adalah salah satu pembukaan paling tanpa kompromi yang pernah ditemukan. Hitam berkata: *ambil pusat, bangun apa pun yang kau suka — lalu saksikan saya menghancurkannya*.\n\nIni adalah senjata seumur hidup **Garry Kasparov**, **Bobby Fischer**, **David Bronstein**, dan banyak petarung lainnya. Ketika Anda memainkan King's Indian, Anda tidak bermain untuk remis — Anda bermain untuk menang, bahkan jika berisiko.\n\n## Cara mencapainya\n\nUrutan yang mendefinisikan adalah {{d4}} **{{Nf6}}** {{c4}} **{{g6}}** {{Nc3}} **{{Bg7}}**. Hitam fianchetto gajah raja dan membiarkan Putih membangun pusat besar.\n\n## Apa yang diinginkan setiap pihak\n\n- **Rencana Putih:** lengkapi pusat besar dengan {{e4}}, kembangkan dengan {{Nf3}}, **{{Be2}}** (atau Be3, h3 di Sämisch), rokade pendek, dan baik mengunci pusat untuk serangan sayap menteri atau break dengan **c5/d5**.\n- **Rencana Hitam:** selesaikan pengembangan dengan **...0-0**, **...d6**, **...Nbd7** atau **...Nc6**, dan mainkan dorongan sentral **...e5**. Setelah Putih mengunci dengan **d5**, Hitam meluncurkan badai bidak sayap raja **...f5-f4-f3** sementara Putih menyerang sayap menteri dengan **c5**.\n- **Struktur bidak:** *Mar del Plata King's Indian* — pusat terkunci dengan d5 vs e5, buah didistribusikan ke sayap berlawanan, lomba bidak di kedua sisi.\n\n## Tema khas\n\nDalam middlegame King's Indian klasik, pertanyaannya menjadi: *serangan siapa tiba lebih dulu?* Jika Putih menerobos di sayap menteri, permainan berakhir. Jika longsoran sayap raja Hitam mencapai raja putih, permainan berakhir. Sangat sedikit posisi yang tenang.\n\n> King's Indian: bawa set catur, pulang dengan kisah perang."
     },
     {
       "type": "teach",
       "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2N2N2/PP3PPP/R1BQKB1R w KQ - 0 6",
-      "title": "Variasi Utama Klasik",
-      "text": "Setelah Variasi Utama Klasik, Putih memiliki pusat yang besar. Rencana Hitam: dorong ...e5, kunci pusat dengan ...d4 blokade atau ...f5, lalu luncurkan pion sisi raja. Kedua pihak menyerang bersamaan di sayap yang berlawanan — catur dengan kecepatan penuh."
+      "title": "Garis Utama Klasik",
+      "text": "Setelah {{d4}} {{Nf6}} {{c4}} {{g6}} {{Nc3}} {{Bg7}} {{e4}} **d6** {{Nf3}} **0-0**, Anda telah mencapai **King's Indian Klasik** — salah satu posisi yang paling banyak dianalisis dalam catur.\n\n## Titik percabangan\n\nPutih memilih di antara beberapa sistem utama pada langkah 6:\n\n- **6.Be2** — *Garis Utama Klasik*. Pengembangan tenang. Hitam memainkan **...e5**, dan setelah **7.0-0 Nc6 8.d5 Ne7**, Hitam siap untuk **serangan sayap raja** yang terkenal.\n- **6.h3** — *Sistem Mäkagonov*. Mencegah pakuan ...Bg4, mempersiapkan Be3.\n- **6.f3** — *Variasi Sämisch*. Agresif: Putih mempersiapkan Be3, Qd2, 0-0-0, dan serangan sayap menteri dengan dorongan bidak yang tajam.\n- **6.Bg5** — *Variasi Averbakh*. Paku kuda f6, halangi ...e5.\n- **6.g3** — *Variasi Fianchetto*. Putih juga fianchetto, mengarah ke pertarungan strategis yang panjang.\n\n## Pola Mar del Plata klasik\n\nSetelah **6.Be2 e5 7.0-0 Nc6 8.d5 Ne7 9.Ne1 Nd7 10.Be3 f5 11.f3 f4 12.Bf2 g5** — formasi badai-bidak terkenal. Hitam merencanakan **...g4-g3** untuk membobol raja Putih. Putih merencanakan **c5-c6**, **Rb1**, **b4-b5** untuk membobol sayap menteri Hitam. Semoga penyerang lebih cepat menang.\n\n## Mengapa grandmaster takut padanya\n\nKing's Indian menciptakan **zugzwang ganda pada kecepatan serangan**. Putih *secara objektif lebih baik* di banyak garis — tetapi satu kehilangan tempo mengarah ke skakmat. Itulah mengapa bahkan Kasparov mengatakan ia akhirnya berhenti memainkannya.\n\n> Kedua raja dalam bahaya maut sejak langkah 15. Itu bukan bug — itu fitur."
     },
     {
       "type": "teach",
       "fen": "rnbqk2r/ppppppbp/5np1/8/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 4 5",
-      "title": "Mengapa Ini Sulit",
-      "text": "King's Indian memerlukan kalkulasi yang akurat — satu langkah pion yang salah dan sisi raja Anda runtuh. Tetapi jika Anda mencintai ketidakseimbangan dinamis dan serangan pada raja, tidak ada yang lebih baik."
+      "title": "Mengapa Sulit",
+      "text": "King's Indian adalah salah satu pembukaan yang paling *menuntut* untuk dimainkan dengan baik. Alasannya konkret.\n\n## Apa yang membuatnya sulit untuk Hitam\n\n- **Satu langkah bidak buruk dapat meruntuhkan sayap raja.** Dorong **...f5** pada saat yang salah dan kotak e6 menjadi lubang selamanya.\n- **Pasangan gajah** penting — kehilangan gajah kotak gelap di g7 (jantung posisi) sering menjatuhkan serangan.\n- **Kedalaman kalkulasi.** Lomba Mar del Plata menuntut taktik 10-langkah-dalam di kedua sayap secara bersamaan.\n- **Tidak ada kesempatan kedua.** Jika serangan sayap menteri Putih tiba satu langkah lebih dulu, permainan kalah — tidak ada regrouping lambat seperti di Prancis.\n\n## Apa yang membuatnya menguntungkan\n\n- **Ketidakseimbangan sejak langkah 5.** Tidak ada remis simetris.\n- **Serangan pada raja.** Sedikit pembukaan menghasilkan sebanyak skakmat indah seperti King's Indian.\n- **Kekayaan strategis.** Anda mempelajari break bidak, manuver buah, serangan-dan-pertahanan, semua dalam satu pembukaan.\n\n## Memilih King's Indian untuk diri Anda\n\nJika Anda menyukai **ketidakseimbangan dinamis**, **serangan timbal balik**, dan **risiko terhitung**, King's Indian adalah pembukaan terbaik di planet ini. Jika Anda lebih suka permainan lambat dan teknis, pilih Slav atau Caro-Kann saja.\n\n> King's Indian adalah pembukaan sabuk hitam. Latih keras, bertarung lebih keras."
     }
   ]
 }

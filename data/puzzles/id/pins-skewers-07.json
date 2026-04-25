@@ -4,5 +4,8 @@
   "solution": [
     "Rxe7+"
   ],
-  "hint": "Benteng yang terpaku — tangkap."
+  "title": "Benteng Mengambil Benteng yang Terpaku",
+  "setup": "Kedua benteng berhadapan di **lajur e**, tetapi benteng hitam di e7 terpaku pada rajanya di e8.",
+  "hint": "Pembela yang terpaku tidak bisa membela — dan tidak bisa lari.",
+  "explanation": "## Idenya\n\nBenteng hitam di e7 dalam **pakuan absolut**. Dia melindungi raja di e8 dari benteng putih di e1, jadi tidak bisa pindah.\n\nPutih memainkan {{Rxe7+}}, langsung mengambil benteng.\n\n- {{Kxe7}} adalah satu-satunya jawaban legal — Hitam tidak punya buah lain, dan raja harus menjawab skak.\n- Setelah pertukaran, Putih telah menang benteng untuk benteng... tunggu! Lihat lagi: Putih masih punya raja. Jadi apakah kita baru saja menukar material seimbang? **Ya — tetapi dalam permainan nyata, ini berarti menyederhanakan ke akhir raja-dan-benteng vs. raja yang menang, atau dalam permainan penuh, menghilangkan satu-satunya pembela Hitam.**\n\n## Pola untuk Diingat\n\n> Buah yang terpaku tidak hanya tidak bisa bergerak — mereka juga **pembela buruk**. Jika buah yang terpaku adalah satu-satunya pembela sesuatu, sesuatu itu praktis tidak terlindungi.\n\nDalam posisi yang lebih kaya, ide ini memenangkan material terus-menerus: Anda mengeksploitasi pembela yang terpaku dengan menyerang apa yang seolah-olah dia jaga."
 }

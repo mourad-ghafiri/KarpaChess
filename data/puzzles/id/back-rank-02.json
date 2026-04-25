@@ -4,5 +4,8 @@
   "solution": [
     "Rxf7"
   ],
-  "hint": "Singkirkan dulu pembela baris belakang."
+  "title": "Singkirkan Pembela",
+  "setup": "Benteng Hitam di f8 adalah satu-satunya yang menjaga baris belakang. Singkirkan penjaga itu dan raja jatuh.",
+  "hint": "Raja Hitam hidup karena benteng f8 menjaga baris ke-8. **Singkirkan pembela itu.**",
+  "explanation": "## Idenya\n\nSebelum skakmat baris belakang berhasil, raja Hitam harus kehilangan penjaga terakhirnya. Ini adalah manuver klasik **singkirkan pembela**:\n\n- {{Rxf7}} memakan bidak Hitam di f7 *sekaligus* menyerang benteng Hitam di f8.\n- Setelah jawaban Hitam yang masuk akal (memakan balik atau menggeser benteng), jalan Putih ke baris belakang terbuka lebar.\n\n### Mengapa berhasil\n\n1. Benteng di f8 menjaga seluruh baris ke-8 dari invasi.\n2. Dengan menukar atau mengusir benteng dari lajur f, Putih mematahkan pertahanan.\n3. Bidak g7-h7 tetap mengurung raja — setelah benteng pergi, ancaman skakmat muncul lewat ide **Ra8+**.\n\n### Prosedur\n\n1. Identifikasi **pembela tunggal** di baris belakang raja.\n2. Cari cara memakan, mengalihkan, atau membebani pembela itu.\n3. Eksekusi skakmat baris belakang yang menyusul.\n\n> Sebagian besar kombinasi baris belakang bukan sekali jalan — melainkan *pengelupasan* penjaga terakhir."
 }

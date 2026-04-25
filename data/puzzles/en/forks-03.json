@@ -1,6 +1,11 @@
 {
   "id": "forks-03",
   "fen": "4k3/8/8/3q4/4N3/8/8/4K3 w - - 0 1",
-  "solution": ["Nf6+"],
-  "hint": "A knight can attack two pieces at once — find the square that hits both king and queen."
+  "solution": [
+    "Nf6+"
+  ],
+  "title": "Knight Forks the Royals",
+  "setup": "Black's king on e8 and queen on d5 are both within one knight-jump of f6.",
+  "hint": "Look for a square the knight can land on that hits **both** the king and the queen.",
+  "explanation": "## The Idea\n\nA textbook **family fork**. The square {{f6}} touches e8 (the king) and d5 (the queen) at the same time — the classic knight pattern of attacking two pieces two squares apart in an L-shape.\n\nAfter {{Nf6+}}:\n\n- **Capture?** The king on e8 isn't adjacent to f6 (it's two squares diagonally), so {{Kxf6}} is illegal. The queen on d5 also can't take f6 — d5 to f6 is a knight pattern, not a queen line.\n- **Block?** A knight check is never blockable.\n- **Run?** The king must move (Kd7, Kf7, Kd8, Kf8), and on the next move White plays {{Nxd5}}, winning the queen for nothing.\n\n## Pattern to Memorize\n\n> When the enemy king and queen are **two squares apart on a diagonal** (like d5 and e8 — but mirrored: e8 and d5 are on a knight L), the knight can usually fork them from the square in between."
 }

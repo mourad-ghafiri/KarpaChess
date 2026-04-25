@@ -1,29 +1,29 @@
 {
   "id": "queens-pawn-family",
-  "title": "1.d4 — El Peón Dama",
+  "title": "1.d4 — El peón de dama",
   "summary": "Entendiendo los sistemas con 1.d4",
   "difficulty": "beginner",
   "steps": [
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
-      "title": "El Empuje Posicional",
-      "text": "1.d4 reclama el centro y prepara c4. Las partidas son más posicionales que con 1.e4 — batallas estratégicas lentas sobre estructuras de peones y puestos avanzados."
+      "title": "El empuje posicional",
+      "text": "**{{d4}}** es la prima lenta y estratégica de 1.e4. En lugar de abrir el juego de inmediato, planta una reivindicación central con un peón *defendido por la dama* — una diferencia sutil pero enorme.\n\n## Qué consigue 1.d4\n\n- Reclama la **casilla d4**, que está protegida de forma natural por la dama blanca en d1.\n- Libera al **alfil de casillas oscuras** para desarrollarse por la diagonal c1-h6.\n- Prepara el característico empuje **{{c4}}** — la jugada que define la familia del peón de dama.\n- Suele conducir a partidas **cerradas** y *estratégicas* donde la comprensión posicional supera al cálculo puro.\n\n## Por qué les encanta a los grandes maestros\n\n- Las negras tienen menos formas de tomar la iniciativa.\n- Las blancas pueden transponer entre varios sistemas (Catalana, Gambito de Dama, Inglesa, Trompowsky) según la disposición de las negras.\n- Las opresiones de largo aliento son comunes — perfectas para jugadores técnicos.\n\n> 1.d4 es la combustión lenta. La acción tarda más en llegar — pero dura más tiempo en la partida."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
-      "title": "Respuestas Principales",
-      "text": "Opciones de las Negras: 1...d5 (clásica, conduce al Gambito de Dama), 1...Nf6 (defensas indias — hipermodernas), 1...f5 (Holandesa), 1...e6 (flexible). Las defensas indias son la elección moderna de los grandes maestros."
+      "title": "Respuestas principales",
+      "text": "La elección de las negras en la primera jugada contra 1.d4 divide al mundo del ajedrez en dos grandes campos: los clásicos que juegan **...d5** y los hipermodernos que prefieren **...Nf6**.\n\n## Las respuestas principales\n\n- **1...d5** — *Clásica*. Lleva al Gambito de Dama, la Eslava y la Semieslava. Sólida, principista y rica en teoría.\n- **1...Nf6** — *Defensas indias*. La familia hipermoderna: India de Rey, Nimzoindia, Indobenoni, Grünfeld, Bogoindia. Las negras dejan que las blancas construyan el centro y contraatacan después.\n- **1...f5** — *Defensa holandesa*. Aguda y arriesgada. Las negras juegan a atacar el flanco de rey a costa de debilitar la diagonal del rey.\n- **1...e6** — *flexible*. A menudo transpone al Gambito de Dama Rehusado o a la Francesa.\n- **1...c5** — Familia *Benoni*. Las negras desafían de inmediato en la columna c.\n- **1...d6** — Configuraciones de *India Antigua* o *Moderna*, donde las negras juegan por ...e5 más adelante.\n\n## Eligiendo tu respuesta\n\n- *¿Quieres una fortaleza?* — Eslava o Gambito de Dama Rehusado.\n- *¿Quieres contraatacar?* — India de Rey o Grünfeld.\n- *¿Quieres profundidad estratégica?* — Nimzoindia o Indobenoni.\n- *¿Quieres desequilibrio?* — Benoni u Holandesa.\n\n## Una línea modelo para cada bando\n\nUn Gambito de Dama Rehusado va {{d4}} {{d5}} {{c4}} {{e6}} {{Nc3}} **{{Nf6}}**. Las blancas construyen lentamente hacia {{Nf3}}, {{Bg5}}, {{e3}} y 0-0. Las negras desarrollan con {{Be7}}, {{O-O}}, {{Nbd7}}, **...c6**, **...dxc4**.\n\n> La familia 1.d4 recompensa al estudiante paciente. Elige un sistema con negras, aprende sus planes y mantente firme durante años."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
-      "prompt": "Juega la clásica 1...d5 — reclama tu propio territorio.",
+      "prompt": "Refleja la reivindicación central de las blancas con la clásica **{{d5}}** — sólida, principista, comprobada por el tiempo.",
       "targetSan": [
         "d5"
       ],
-      "hint": "1...d5 refleja a las Blancas. Clásica, sólida, respetada."
+      "hint": "1...d5 planta el peón central propio de las negras y prepara el Gambito de Dama Rehusado o la familia Eslava."
     }
   ]
 }

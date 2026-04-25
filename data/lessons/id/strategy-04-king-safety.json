@@ -4,18 +4,26 @@
   "summary": "Raja yang aman memenangkan permainan",
   "difficulty": "beginner",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQK2R w KQkq - 0 1",
       "title": "Sembunyikan Dia",
-      "text": "Musuh terburuk raja adalah kolom terbuka dan diagonal yang mengarah kepadanya. Rokade membawanya keluar dari pusat ke dalam benteng pion. Jaga benteng itu tetap utuh — jangan terburu-buru mendorong pion sisi rokade kecuali Anda punya alasan konkret." },
-    { "type": "play",
+      "text": "## Keamanan raja — didefinisikan\n\n**Keamanan raja** adalah ukuran seberapa baik raja Anda terlindung dari **serangan langsung**. Itu bukan hanya \"memiliki dinding bidak\" — itu adalah kombinasi **perlindungan**, **pembela**, dan **tidak adanya jalur terbuka** yang mengarah ke raja.\n\n### Apa posisi ini\n\nPembukaan Italia: buah dikembangkan, kuda di c3 dan f3, gajah di c4 dan c5, bidak pusat terkunci. Kedua raja duduk di **e1** dan **e8** — terbuka di tengah, dengan **dua lajur terbuka (lajur d dan lajur setengah terbuka apa pun)** siap menampung benteng musuh. **Rokade sekarang** adalah prioritas sebelum buah mulai mendarat di kotak lemah.\n\n### Tiga pilar keamanan\n\n1. **Perlindungan bidak** — tiga bidak di depan raja (f2-g2-h2 atau a7-b7-c7).\n2. **Pembela di dekatnya** — setidaknya kuda di **f3** (atau f6) menutupi kotak kritis seperti h2/h7.\n3. **Jalur tertutup** — tidak ada lajur terbuka mengarah ke raja, tidak ada diagonal menuju kepadanya.\n\n### Cara MENGGUNAKAN konsep ini\n\n1. **Rokade pada langkah 10** dalam 90% permainan. Kadang lebih awal, jarang lebih lambat.\n2. **Jangan dorong bidak dekat raja** kecuali ada alasan taktis konkret.\n3. **Awasi diagonal** ke raja Anda — gajah atau menteri panjang yang mengarah masuk adalah pengorbanan masa depan.\n4. **Tukar penyerang**, bukan pembela. Setiap buah yang Anda tukar dari papan mengurangi kekuatan penyerang dan Anda.\n\n### Tanda-tanda dalam posisi yang memberi tahu Anda untuk menerapkannya\n\n- Lawan telah mempertahankan **kedua gajah dan menteri** dengan pengembangan selesai — serangan sedang dirancang.\n- **Pengungkit bidak** seperti h4-h5 atau g4 sedang dipersiapkan — tutup sebelum mendarat.\n- Raja Anda **masih di e1 / e8** lewat langkah 10 — rokade langkah ini.\n\n### Kesalahan umum\n\n- Menunda rokade untuk **mengambil bidak** di tengah — lajur terbuka yang dihasilkan menelan raja.\n- **Mendorong g3 atau h3** secara otomatis — setiap langkah bidak dekat raja menciptakan kait untuk break bidak lawan.\n- Menukar **pembela** (sering kuda f6 / f3) tanpa pengganti yang sama kuat.\n\n> Rokade lebih awal, rokade pendek, lalu jaga dindingnya tetap berdiri."
+    },
+    {
+      "type": "play",
       "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQK2R w KQkq - 0 1",
-      "prompt": "Rokade raja Anda ke tempat aman.",
-      "targetSan": ["O-O"],
-      "hint": "Rokade pendek — pilihan paling umum." },
-    { "type": "teach",
+      "prompt": "Rokade raja Anda ke tempat aman. Prinsipnya: *keluar dari tengah sebelum posisi terbuka*.",
+      "targetSan": [
+        "O-O"
+      ],
+      "hint": "Rokade pendek — sayap raja, tempat berlindung paling umum dan paling cepat."
+    },
+    {
+      "type": "teach",
       "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 b kq - 1 1",
       "title": "Setelah Rokade",
-      "text": "Anda belum selesai! Jaga pion di depan: f2, g2, h2. Kuda di f3 mempertahankan h2. Jangan memainkan g3 atau h3 kecuali perlu — setiap langkah pion dekat raja menciptakan kelemahan untuk nanti." }
+      "text": "## Anda telah rokade — sekarang apa?\n\nRokade saja bukan keamanan; itu adalah **langkah pembuka** keamanan. Pekerjaan dimulai setelah raja mendarat.\n\n### Mempertahankan benteng\n\n1. **Jaga bidak tetap di rumah**: f2-g2-h2 (atau a7-b7-c7 untuk sayap menteri). Bentuknya adalah dindingnya.\n2. **Pertahankan pembela di f3 / f6**: kuda menutupi **h2 / h7** dan kotak invasi **g5 / g4**. Menukarnya tanpa pengganti berbahaya.\n3. **Pertahankan jalan keluar baris belakang**: Kh1 / Kh8 mungkin diperlukan jika skak baris belakang diancam — *luft* dengan h3 / h6 hanya bila perlu.\n4. **Tukar penyerang**, bukan pembela.\n\n### Dua contoh visual dalam prosa\n\n- Setelah **O-O**, Hitam memainkan ...Bg4 mempaku kuda f3. Dinding Putih adalah **f2-g2-h2** tetapi **pembela f3 lumpuh**. Putih harus melarutkan pakuan (h3, lalu jika Bxf3 makan balik dengan menteri) sebelum melancarkan apa pun yang lain.\n- Raja Putih di g1 dengan bidak f2/g2/h2 **secara struktural aman**, tetapi jika menteri meninggalkan d1 untuk menyerang, **baris belakang** menjadi kekhawatiran. **h3** tepat waktu menciptakan *luft* dan menyelamatkan raja dari ancaman Re1 di masa depan.\n\n### Cara MENGGUNAKANNYA dalam permainan Anda\n\n1. **Audit posisi rokade Anda setiap lima langkah**. Apakah bidak masih di sana? Apakah kuda-f masih di sana?\n2. Ketika **lawan mempertahankan penyerang**, pertahankan pembela.\n3. **Buka pusat** hanya ketika raja Anda *lebih aman* dari raja lawan.\n\n### Tanda-tanda yang memberi tahu dinding gagal\n\n- **Langkah bidak dekat raja Anda** (g3, h3, f3) — setiap satu adalah potensi kelemahan.\n- **Pembela telah ditukar** — hitung ulang keamanan dari nol.\n- **Lajur terbuka atau diagonal panjang** mengarah ke raja Anda.\n\n### Kesalahan umum\n\n- Mendorong **h3 atau g3** secara profilaksis ketika tidak ada yang menyerang — Anda melemahkan diri secara gratis.\n- **Menukar menteri** ketika Anda penyerang — pertanyaan keamanan raja hilang tetapi inisiatif Anda juga.\n- Lupa pola **skakmat baris belakang**. Banyak permainan kalah pada langkah 30 oleh baris pertama yang tidak dijaga.\n\n> Rokade bukan akhir keamanan raja — itu adalah awalnya."
+    }
   ]
 }

@@ -4,23 +4,35 @@
   "summary": "Pertahanan yang sangat kokoh terhadap 1.e4",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "title": "Kokoh dan Sehat",
-      "text": "Caro-Kann (1.e4 c6) menyiapkan ...d5 dengan dukungan dari pion c. Berbeda dari French, gajah kotak terang berkembang bebas. Tenang, strategis, dan terkenal sulit ditembus." },
-    { "type": "play",
+      "title": "Solid dan Sehat",
+      "text": "**Pertahanan Caro-Kann** adalah pilihan pemain yang ingin *bertahan dari pembukaan* dan mencapai babak tengah yang sehat tanpa menghafal banyak teori. Pertahanan ini telah menjadi andalan juara dunia seperti Capablanca, Karpov, dan Anand.\n\n## Urutan penentu\n\nPembukaan ini berjalan {{e4}} {{c6}}. Dengan **...c6**, Hitam mempersiapkan **...d5** di langkah berikutnya — tetapi tidak seperti French (1...e6), langkah pion-c *tidak* memblokir gajah kotak terang. Setelah ...d5 dan akhirnya pertukaran, gajah Hitam muncul aktif ke f5 atau g4.\n\n## Apa yang diinginkan masing-masing pihak\n\n- **Rencana Putih:** tantang pusat dengan **{{d4}}** dan pilih penataan — *Maju* ({{e5}}), *Pertukaran* ({{exd5}}), *Klasik* ({{Nc3}} atau {{Nd2}} dxe4 Nxe4), atau *Dua Kuda* ({{Nc3}}, {{Nf3}}). Masing-masing mengarah ke babak tengah berbeda.\n- **Rencana Hitam:** main **...d5**, kembangkan gajah c8 *di luar* rantai pion (biasanya ke f5), lalu **...e6**, **...Nd7**, **...Ngf6**, rokade pendek, dan cari keunggulan babak akhir solid.\n- **Struktur pion:** sering menghasilkan *rantai pion Caro-Kann* (e6, d5) atau, setelah pertukaran, struktur simetris bersih di mana Hitam senang mengeruk.\n\n## Mengapa memainkannya\n\nCaro-Kann memberi Hitam **gajah kotak terang yang baik** (keluhan paling umum tentang French diperbaiki) dan kacang keras untuk Putih dipecahkan. Itu menghargai kesabaran dan teknik babak akhir yang sangat baik.\n\n> Caro-Kann adalah catur setara dinding granit. Lambat, mantap, hampir tidak mungkin dipecahkan."
+    },
+    {
+      "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
-      "prompt": "Hitam memainkan susunan Caro-Kann.",
-      "targetSan": ["c6"],
-      "hint": "1...c6 menyiapkan ...d5." },
-    { "type": "play",
+      "prompt": "Hitam memainkan Caro-Kann dengan **{{c6}}** — mempersiapkan **...d5** dengan dukungan pion penuh.",
+      "targetSan": [
+        "c6"
+      ],
+      "hint": "Tidak seperti French (1...e6), langkah ini menjaga gajah kotak terang Hitam tetap bebas. Solid DAN aktif."
+    },
+    {
+      "type": "play",
       "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
-      "prompt": "Balasan utama Putih: perkuat pusat.",
-      "targetSan": ["d4"],
-      "hint": "2.d4 merebut pusat penuh." },
-    { "type": "teach",
+      "prompt": "Balasan utama Putih: rebut pusat penuh dengan **{{d4}}**.",
+      "targetSan": [
+        "d4"
+      ],
+      "hint": "Dengan main d4, Putih membangun pusat besar klasik. Jika Hitam menantang dengan ...d5, posisi menjadi kritis."
+    },
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pp1ppppp/2p5/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2",
       "title": "Terobosan",
-      "text": "Hitam sekarang memainkan 2...d5, menantang pusat Putih langsung. Putih dapat maju (e5), menukar (exd5), atau mendorong ke Variasi Maju. Masing-masing mengarah ke jenis permainan yang berbeda." }
+      "text": "Sekarang Hitam memainkan **...d5** yang direncanakan, langsung menyerang pion e4 Putih. Putih harus memilih bagaimana bereaksi — dan pilihan itu mendefinisikan sisa permainan.\n\n## Empat variasi utama\n\n- **Variasi Maju** — **3.e5**. Putih mendorong melewati, mendapat ruang. Hitam mengeluarkan gajah lewat **...Bf5** sebelum menguncinya.\n- **Variasi Pertukaran** — **3.exd5 cxd5**. Simetris, tenang, memberi Putih keunggulan ruang kecil.\n- **Variasi Klasik (Capablanca)** — **3.Nc3 dxe4 4.Nxe4 Bf5**. Terkenal karena gajah Hitam aktif di f5.\n- **Serangan Panov-Botvinnik** — **3.exd5 cxd5 4.c4!** Putih beralih ke permainan gaya IQP dengan peluang menyerang.\n\nPermainan model berjalan {{e4}} {{c6}} {{d4}} {{d5}} {{Nc3}} **dxe4** {{Nxe4}} **Bf5**. Hitam muncul dengan pasangan gajah sudah dipecah untuk keuntungan Anda dan penataan fleksibel.\n\n> Caro-Kann mengajari Anda bahwa *fleksibilitas memenangkan lebih banyak permainan daripada agresi*."
+    }
   ]
 }

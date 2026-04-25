@@ -4,5 +4,8 @@
   "solution": [
     "Rxd2+"
   ],
-  "hint": "Enfilada — gana la dama."
+  "title": "Dama pegada a su rey",
+  "setup": "La dama negra en **d2** se ha desviado delante de la torre blanca, con su rey detrás en d8.",
+  "hint": "Cuando una pieza enemiga bloquea una línea hacia su propio rey, esa pieza está clavada — apila atacantes.",
+  "explanation": "## La idea\n\nAunque a veces se mencione \"espeto\", esto es técnicamente una **clavada absoluta**: la dama negra en d2 está entre la torre blanca en d1 y el rey negro en d8. No puede moverse sin exponer a su rey.\n\nLas blancas juegan {{Rxd2+}}, tomando la dama con jaque.\n\n- ¿{{Kxd2}}? El rey está en d8, a seis casillas — imposible.\n- Las negras deben mover el rey: {{Kc7}}, {{Kc8}}, {{Ke7}}, {{Ke8}} o {{Kd7}}. Cualquier casilla de escape sirve, ya que la torre está desprotegida y lejos.\n- La dama desaparece sin nada a cambio.\n\n## Patrón a memorizar\n\n> Geometría de clavada: **atacante — objetivo — defensor (rey)** en la misma línea.\n> Geometría de espeto: **atacante — rey — objetivo** en la misma línea.\n\nAquí el rey está *detrás* de la dama, así que es una clavada. De cualquier modo, el resultado es el mismo: material gratis."
 }

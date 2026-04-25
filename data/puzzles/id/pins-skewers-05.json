@@ -4,5 +4,8 @@
   "solution": [
     "Rxe6+"
   ],
-  "hint": "Terpaku di kolom-e."
+  "title": "Pakuan Jarak Jauh Lajur E",
+  "setup": "Benteng putih di **e1** sejajar dengan menteri hitam di **e6** dan raja hitam di **e8** — tiga buah, satu lajur.",
+  "hint": "Jika Anda melihat benteng, buah lawan, dan raja lawan semua di lajur yang sama, cari pakuan.",
+  "explanation": "## Idenya\n\nIni adalah **pakuan absolut** yang membentang di seluruh lajur e. Menteri hitam di e6 tidak bisa legal pindah — melakukannya akan membuat rajanya terkena skak dari benteng putih di e1.\n\nPutih memainkan {{Rxe6+}}, menangkap menteri.\n\n- Benteng di e6 sekarang jauh dari raja hitam, jadi {{Kxe6}} mustahil (raja di e8, dua petak jauhnya).\n- Hitam harus memindahkan raja: {{Kd7}}, {{Kf7}}, {{Kd8}}, {{Kf8}}, atau {{Ke7}} (tetapi {{Ke7}} masih akan diserang benteng — setelah menteri pergi, benteng di e6 menyerang e7 langsung, jadi {{Ke7}} ilegal).\n- Putih selesai dengan menteri lebih.\n\n## Pola untuk Diingat\n\n> Pakuan ideal: penyerang jarak jauh, buah lawan berharga, raja lawan — semua di satu garis, tanpa pembela.\n\nSaat Anda melihat geometri ini, tangkapan hampir selalu langkah yang benar."
 }

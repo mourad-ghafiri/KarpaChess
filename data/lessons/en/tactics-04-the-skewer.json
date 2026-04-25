@@ -8,20 +8,22 @@
       "type": "teach",
       "fen": "8/8/3q4/8/8/3k4/8/R6K w - - 0 1",
       "title": "The Skewer",
-      "text": "A skewer is the mirror image of a pin. You attack a valuable piece that MUST move — and when it does, a less valuable piece behind it is exposed. Most often the king is the skewered piece: he must move out of check, abandoning whatever was behind him."
+      "text": "A **skewer** is the mirror image of a pin. You attack the *more valuable* piece in front; when it moves out of the way, you grab the *less valuable* piece behind it.\n\n## The geometry\n\nA skewer needs the same straight line as a pin — file, rank, or diagonal — but the order of targets is **reversed**:\n\n1. Your **long-range attacker** ({{Ra1}}, queen, bishop).\n2. The **valuable piece** out front (often the king).\n3. A **less valuable piece** behind it on the same line.\n\nWhen the front piece moves (and it must — especially under check), the back piece falls.\n\n## Pin vs. skewer at a glance\n\n- **Pin:** small piece in front, big piece behind. The small piece is *frozen*.\n- **Skewer:** big piece in front, small piece behind. The big piece *flees* and the small piece is captured.\n\n## How to spot it\n\n1. Look for any line through the enemy king or queen.\n2. Check what sits on that line *behind* the valuable target.\n3. If a less valuable piece is back there, find a way to attack on that line — usually a check.\n4. Calculate the recapture: is the skewer square defended?\n\nHere the king is on d3 and the queen sits behind on d6. {{Rd1+}} hits the king on the d-file; the king must move and the queen drops.\n\n> A skewer is what happens when the valuable piece is too brave to hide behind a smaller one."
     },
     {
       "type": "play",
       "fen": "8/8/3q4/8/8/3k4/8/R6K w - - 0 1",
-      "prompt": "Bring your rook to the d-file to skewer king and queen.",
-      "targetSan": ["Rd1+"],
-      "hint": "Rd1 gives check — the queen will be next."
+      "prompt": "Skewer king and queen on the d-file with **{{Rd1+}}**.",
+      "targetSan": [
+        "Rd1+"
+      ],
+      "hint": "What is on the d-file behind the king? A check forces him to step aside."
     },
     {
       "type": "teach",
-      "fen": "8/8/8/3q4/8/3k4/8/3R3K w - - 0 1",
+      "fen": "8/8/8/3q4/8/3k4/8/3R3K b - - 0 1",
       "title": "Collect the Prize",
-      "text": "After Rd1+, the king must move. The queen is lost on the next move. This is why skewers are so powerful on open files and diagonals — even a well-placed rook can topple a queen."
+      "text": "After {{Rd1+}}, the king is in check and **must** step off the d-file — there is no piece to block and the rook cannot be captured.\n\n## What follows\n\n- The king walks to **e3**, **c3**, **e2**, or **c2** — any square not on the d-file.\n- The queen on d6 is now exposed to {{Rxd5}} or, depending on the king's flight square, simply lost on the next move.\n- White wins the queen for nothing.\n\n## Why skewers are so deadly\n\n- They almost always come **with check**, so the response is forced.\n- Open files and long diagonals are the highways. Trade pieces to clear them.\n- Even a humble rook can topple a queen if the alignment is right.\n\n> The pin freezes; the skewer chases. Either way, somebody dies on the line."
     }
   ]
 }

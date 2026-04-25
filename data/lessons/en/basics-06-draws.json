@@ -4,17 +4,23 @@
   "summary": "Half a point is sometimes a win",
   "difficulty": "beginner",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "7k/8/6K1/8/8/8/8/8 w - - 0 1",
       "title": "Stalemate",
-      "text": "Stalemate happens when the side to move has NO legal moves but their king is NOT in check. It's a draw. Beware: when you have an overwhelming advantage, take care not to stalemate the enemy king — it throws away the win!" },
-    { "type": "teach",
+      "text": "Stalemate is the cruelest rule in chess — and the most beautiful, depending on which side you're on.\n\nIt happens when **the side to move has zero legal moves but is NOT in check**. The result? An immediate **draw**, no matter how lopsided the material count.\n\nLook at the diagram: the Black king on h8 has nowhere to go. He can't step to g8 (attacked by your king on g6), can't go to h7 (also attacked), and he isn't in check on h8. If it's Black's turn here, it's stalemate.\n\n## Why stalemate exists\n\n- It rewards careful technique and punishes carelessness.\n- It gives the losing side a fighting chance even in dire positions.\n- It teaches you that *attacking the king isn't enough — you must leave him a legal move until you can mate*.\n\n> Even with king and queen vs lone king, a sloppy move can stalemate. Always give the enemy king at least one legal square — until you can finish him."
+    },
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "Other Ways to Draw",
-      "text": "Besides stalemate: (1) threefold repetition — same position reached three times; (2) 50-move rule — 50 moves without a capture or pawn move; (3) insufficient material — e.g. two kings alone, or king + knight vs king; (4) both players agreeing to a draw." },
-    { "type": "teach",
+      "text": "Stalemate is just one of several paths to a half-point. Knowing them all saves games — and earns them.\n\n## The five main draw types\n\n- **Stalemate** — no legal moves, not in check.\n- **Threefold repetition** — the same position (with the same side to move and the same castling/en-passant rights) appears three times. Either player can claim the draw.\n- **Fifty-move rule** — fifty consecutive moves by both sides without a pawn move or a capture. Either player may claim.\n- **Insufficient material** — neither side has the firepower to mate. King vs king, K + N vs K, or K + B vs K are the classic dead draws.\n- **Agreement** — both players simply agree to halve the point.\n\nTwo more, less common: **dead position** (mate is mathematically impossible for either side) and **timeout vs insufficient material** in online play.\n\n> A draw is half a win. Sometimes it's a victory."
+    },
+    {
+      "type": "teach",
       "fen": "4k3/4q3/8/8/8/8/8/4K3 w - - 0 1",
       "title": "Avoiding Accidents",
-      "text": "Even when you're obviously losing, stalemate can save you! Always check: does my opponent have a legal move? If not, and you're not in check, it's a draw. This is why endgame technique matters — even with K+Q vs K, careless play can stalemate." }
+      "text": "Stalemate is **the** technique you must master before claiming you can checkmate.\n\nIn this position you're losing on material — Black's queen is going to dominate — but if Black plays carelessly, *you* might escape with a stalemate.\n\n## The two-second checklist before every move\n\n1. *Will my opponent have at least one legal move after this?*\n2. *Are any of my opponent's pieces stuck (no legal squares for the king, all pawns blocked, all pieces pinned)?*\n3. *Am I about to take their last mobile piece?*\n\nIf the answer to question 1 is **no** and the king is **not** in check — you've just stalemated. Many a winning position has been thrown away by an overconfident queen move.\n\n## Famous lesson\n\nIn the simplest endgame — King + Queen vs King — the most common stalemate trap is putting the queen one square in front of the cornered king with no escape. Always leave the enemy king a flight square until your king is close enough to deliver mate.\n\n> When you're winning, your job is to stay calm. The win is already there — don't gift it back."
+    }
   ]
 }

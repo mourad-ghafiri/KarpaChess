@@ -4,5 +4,8 @@
   "solution": [
     "exd4"
   ],
-  "hint": "Capturez vers le centre."
+  "title": "Capturer vers le centre",
+  "setup": "Les Blancs ont joué **d4**, offrant un échange de pions. Les Noirs prennent — et s'emparent du centre.",
+  "hint": "Reprenez toujours vers le centre quand vous avez le choix — cela améliore la structure de pions.",
+  "explanation": "## L'idée\n\nVoici une **capture centrale de pion** basique — le coup fondateur duquel naissent le célèbre **Jeu Centre** et de nombreuses positions ouvertes.\n\nLes Noirs jouent {{exd4}}, capturant le pion d avec le pion e.\n\n## Pourquoi cette capture ?\n\n- Le pion noir passe de **e5** (case moins centrale) à **d4** (plus centrale).\n- Le pion central blanc est parti, libérant les pièces noires.\n- Le matériel est désormais égal, mais Noir a amélioré sa structure de pions.\n\n## Et si Noir ne prend pas ?\n\nSi Noir ignore l'offre :\n\n- Blanc pourrait jouer {{dxe5}} au coup suivant, gagnant le pion e.\n- Ou Blanc pourrait jouer {{d5}}, gagnant un coin solide.\n\nDans les deux cas, Noir perd l'influence centrale.\n\n## Schéma à mémoriser\n\n> Quand vous pouvez capturer **vers le centre**, faites-le presque toujours. Les pions centralisés contrôlent plus de cases, soutiennent plus de pièces et créent plus de menaces.\n\nLe simple geste de jouer exd4 ici représente un grand principe : **luttez pour le centre à chaque coup possible.**"
 }

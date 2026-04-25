@@ -7,38 +7,38 @@
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "title": "El Sistema",
-      "text": "La notación algebraica describe cada jugada de forma única. Las columnas son letras a–h, las filas son números 1–8. La primera fila de las Blancas es 1, la de las Negras es 8. Una casilla es columna+fila: e4, d5, h8."
+      "title": "El Sistema de Coordenadas",
+      "text": "El ajedrez tiene su propio idioma — la **notación algebraica** — y una vez que la conoces, puedes leer cualquier partida histórica, seguir cualquier comentario y estudiar cualquier libro.\n\nCada casilla del tablero tiene un nombre único formado por una **letra** y un **número**.\n\n## Cómo se nombran las casillas\n\n- Las **columnas** (que suben por el tablero) son las letras **a–h**, de izquierda a derecha desde el punto de vista de las blancas.\n- Las **filas** son los números **1–8**, comenzando desde la primera fila de las blancas.\n- Combina ambos y cada casilla queda nombrada de forma única — *primero la columna, luego la fila*.\n\nAsí, el rey blanco empieza en **e1**, su dama en **d1**, y la casilla más famosa del ajedrez — esa que el peón blanco suele ocupar primero — es **e4**.\n\nReferencia rápida: a1 es la esquina inferior izquierda desde el lado blanco; h8 es la superior derecha.\n\n> Si puedes nombrar cada casilla sin pensar, ya estás por delante de la mayoría de los aficionados."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "Letras de las Piezas",
-      "text": "Las piezas son K (Rey), Q (Dama), R (Torre), B (Alfil), N (Caballo). Los peones no tienen letra — \"e4\" solo significa un peón a e4. Las capturas usan \"x\": Nxe5 significa el caballo captura en e5."
+      "text": "Cada pieza (excepto el peón) recibe una letra mayúscula.\n\n## El alfabeto de las piezas\n\n- **K** — Rey (King en inglés)\n- **Q** — Dama (Queen)\n- **R** — Torre (Rook)\n- **B** — Alfil (Bishop)\n- **N** — Caballo (`N` porque `K` ya es Rey)\n- *(peón — sin letra)*\n\nUna jugada es simplemente **letra de pieza + casilla de destino**. Así que {{Nf3}} significa *caballo a f3*. Las jugadas de peón omiten la letra — {{e4}} simplemente significa *el peón que puede llegar legalmente a e4*.\n\n## Capturas\n\n- Una **x** entre la pieza y la casilla marca una captura: {{Nxe5}} = *el caballo captura en e5*.\n- Una **captura de peón** usa la columna inicial del peón: {{exd5}} = *el peón de e captura en d5*.\n\n> Los peones son humildes: sin letra, pero usan su columna cuando capturan."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "Símbolos Especiales",
-      "text": "\"+\" significa jaque. \"#\" significa jaque mate. \"O-O\" es enroque corto, \"O-O-O\" es enroque largo. \"=\" marca promoción: e8=Q (el peón promociona a dama). Cuando dos piezas pudieran moverse a la misma casilla, se añade la columna o fila de origen: Nbd2 o R1e1."
+      "text": "Un puñado de marcas extras permite a la notación describir todo lo que puede ocurrir en el tablero.\n\n## La caja de herramientas completa\n\n- **+** — jaque. Ejemplo: {{Bb5+}}.\n- **#** — jaque mate. Ejemplo: {{Qh7#}}.\n- **O-O** — enroque corto (flanco de rey).\n- **O-O-O** — enroque largo (flanco de dama).\n- **=Q** — promoción (a cualquier pieza). Ejemplo: {{e8=Q}} promociona el peón de e a dama en e8.\n- **!** y **?** — marcas del comentarista para jugadas *buenas* y *dudosas*; **!!** brillante, **??** error grave.\n\n## Desambiguación\n\nCuando dos piezas del mismo color podrían moverse a la misma casilla, se añade la columna o fila de la pieza que se mueve:\n\n- {{Nbd2}} — el caballo de la *columna b* va a d2 (cuando el otro caballo también podría).\n- {{R1e1}} — la torre de la *1ª fila* va a e1 (cuando ambas torres comparten la columna e).\n\n> Una vez que puedas leer notación, podrás leer todos los libros de ajedrez de la historia."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "prompt": "Juega 1.e4 — empuja el peón de rey.",
+      "prompt": "Abre con el peón del rey — juega **{{e4}}**, la primera jugada más popular del ajedrez.",
       "targetSan": [
         "e4"
       ],
-      "hint": "Solo selecciona el peón en e2 y muévelo a e4."
+      "hint": "Sin letra de pieza significa que es un peón. Empuja el peón de e dos casillas hasta e4."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
-      "prompt": "Ahora juega 2.Nf3.",
+      "prompt": "Ahora desarrolla un caballo con **{{Nf3}}** — atacando e5 y desarrollando hacia el centro.",
       "targetSan": [
         "Nf3"
       ],
-      "hint": "El caballo de g1 salta a f3."
+      "hint": "La N mayúscula significa caballo. Desde g1, aterriza en f3 con un salto en L."
     }
   ]
 }

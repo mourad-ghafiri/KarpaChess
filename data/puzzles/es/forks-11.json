@@ -4,5 +4,8 @@
   "solution": [
     "Nxd5"
   ],
-  "hint": "Simple caballo toma dama."
+  "title": "Caballo se come dama",
+  "setup": "La dama negra ha pisado una casilla a la que el caballo blanco puede saltar — y ninguna pieza negra la defiende.",
+  "hint": "Cuenta: ¿quién ataca {{d5}}? ¿Quién la defiende?",
+  "explanation": "## La idea\n\nUna dama en una casilla atacada por caballo sin defensor es un **regalo**. La más simple de las tácticas:\n\n- {{Nxd5}} — el caballo de e3 salta a d5 (una de sus ocho casillas en L) y captura la dama.\n- Cambio material: caballo (3) por dama (9) = **+6**, un swing ganador.\n\n### Cómo detectarlo durante una partida\n\n1. Después de que el rival mueva su dama, pregunta: *¿qué pieza menor mía puede saltar o deslizarse a esa casilla?*\n2. Cuenta defensores: si hay cero, captura.\n3. Cuenta defensores otra vez: a veces un defensor oculto (un alfil o torre de largo alcance) hace que la captura pierda material.\n\nAquí, la única pieza negra aparte del rey es la propia dama, y el rey en e8 está demasiado lejos para defender d5.\n\n> Los principiantes cuelgan su dama mucho más a menudo de lo que admiten. Pregúntate siempre: *¿está mi dama en una casilla de caballo?*"
 }

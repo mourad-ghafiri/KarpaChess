@@ -4,18 +4,26 @@
   "summary": "Mesin kemenangan babak akhir",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "4k3/8/8/8/4P3/8/8/4K3 w - - 0 1",
       "title": "Apa Itu Pion Lewat?",
-      "text": "Pion lewat tidak memiliki pion musuh di depannya atau di kolom sebelahnya — tidak ada yang bisa menghentikan promosi kecuali sebuah bidak. Pion lewat adalah aset besar di babak akhir. Ungkapan 'pion lewat harus didorong' adalah ucapan khas Nimzowitsch dengan alasan yang jelas." },
-    { "type": "play",
+      "text": "## Apa yang membuat pion menjadi *lewat*\n\nSebuah pion **lewat** ketika:\n\n- Tidak ada pion lawan berdiri di **kolomnya sendiri** di depannya, **dan**\n- Tidak ada pion lawan berdiri di **kolom bersebelahan** di depannya.\n\nTidak ada selain bidak lawan yang bisa menghentikannya mencapai baris ke-8 — dan bidak akhirnya harus meninggalkannya untuk tugas lain. Itulah sebabnya pion lewat adalah **mesin** kemenangan babak akhir.\n\n### Apa posisi ini\n\nSatu pion Putih di **e4**, dua raja jauh terpisah, tidak ada pembela di kolom-d atau f. Pion lewat dan empat langkah dari promosi. Satu-satunya pertanyaan adalah apakah raja Putih bisa mendukungnya sebelum raja Hitam memblokadenya.\n\n### Cara MENGGUNAKAN pion lewat\n\n1. Dorong pion saat **dikawal** atau saat lawan tidak bisa menangkapnya (*aturan kotak*).\n2. **Gunakan sebagai umpan** — raja atau bidak lawan harus meninggalkan target lain untuk menghentikannya.\n3. **Tukar bidak, bukan pion** — posisi yang lebih sederhana memperkuat kekuatan pion.\n4. Di sayap terjauh dari aksi, pion lewat *luar* bahkan lebih kuat karena menarik raja lawan menjauh.\n\n### Kesalahan umum\n\n- **Mendorong terlalu cepat** tanpa pengawal — pion ditangkap raja lawan.\n- **Menukar pion yang salah** dan meninggalkan diri tanpa pion lewat.\n- Lupa **aturan kotak**: gambar kotak bayangan dari pion ke kolom promosinya; jika raja lawan tidak bisa masuk kotak itu tepat waktu, pion promosi tanpa bantuan.\n\n### Garis model\n\n{{e5}} Ke7 {{Kd2}} Kd6 {{Kd3}} — raja Putih terlalu lambat; raja Hitam menyusul dan pion hilang. Pelajarannya tajam: **pion lewat butuh bantuan**.\n\n> Pion lewat harus didorong — tetapi hanya saat rajanya bisa mengikuti."
+    },
+    {
+      "type": "play",
       "fen": "4k3/8/8/8/4P3/8/8/4K3 w - - 0 1",
-      "prompt": "Majukan pion lewat.",
-      "targetSan": ["e5"],
-      "hint": "e5 — satu langkah lebih dekat ke promosi." },
-    { "type": "teach",
+      "prompt": "Majukan pion lewat satu kotak. Prinsipnya: *pion lewat memperoleh ruang saat Anda mendorongnya*.",
+      "targetSan": [
+        "e5"
+      ],
+      "hint": "Satu kotak ke depan di kolom-e — mulai larinya."
+    },
+    {
+      "type": "teach",
       "fen": "4k3/8/8/4P3/8/8/8/4K3 b - - 0 1",
       "title": "Dukung Dia!",
-      "text": "Pion lewat sendirian tetap butuh bantuan. Tanpa raja mengawalnya, satu bidak musuh bisa menghentikannya. Aktifkan raja Anda untuk mendukung kemajuan — dan ciptakan menteri baru." }
+      "text": "## Pion sendirian tidak bisa menang\n\nSetelah {{e5}}, giliran Hitam jalan. Perhatikan jurang antara pion di **e5** dan rajanya di **e1** — empat baris terpisah. Hitam memainkan Ke7 dan pion **akan mati** tanpa bantuan.\n\n### Tanda-tanda yang memberitahu Anda untuk mengawal\n\n- Raja lawan **lebih dekat** ke pion daripada milik Anda.\n- Tidak ada bidak sahabat yang bisa mempertahankan kotak promosi dalam satu langkah.\n- Raja lawan sudah menutupi **kotak promosi**.\n\n### Prosedur saat pion Anda butuh pengawal\n\n1. **Hentikan dorongan** dan bawa raja: Kd2, Kd3, Ke4.\n2. Gunakan **oposisi** sehingga raja lawan tidak bisa memblokade.\n3. Lanjutkan mendorong hanya saat pion punya raja di belakang atau di sampingnya.\n4. Gunakan pion sebagai **perisai** — ia melindungi raja Anda dari skak menyamping.\n\n### Kesalahan umum\n\n- Mendorong setiap langkah secara otomatis — *pion lewat harus didorong* adalah slogan, bukan rencana.\n- Menukar jalur *aktif* raja Anda dengan langkah raja acak.\n- Mempertahankan pion dengan raja dari **belakang** alih-alih di samping atau di depan.\n\n### Lanjutan model\n\n... Ke7 {{Kd2}} Kxe5? — tetapi jika malah {{Ke2}} Kf6 {{Kd3}} Kxe5 — pion jatuh. Dengan raja sejauh ini terpisah, hanya setelah raja lebih dekat (misalnya di e3) Putih bisa dengan aman mendorong e6.\n\n> Aktifkan raja sebelum mendorong pion."
+    }
   ]
 }

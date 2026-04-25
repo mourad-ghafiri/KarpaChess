@@ -8,19 +8,19 @@
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "The Big Five",
-      "text": "Every beginner makes these mistakes: (1) moving the same piece twice in the opening, (2) forgetting to castle, (3) bringing the queen out too early, (4) making \"automatic\" moves without checking, (5) playing without a plan."
+      "text": "Every player loses the same handful of games as a beginner. Skip these mistakes and you'll skip a thousand losses.\n\n## The five classic blunders\n\n1. **Moving the same piece twice in the opening.** Every tempo wasted is a piece your opponent develops for free.\n2. **Forgetting to castle.** A king in the center invites tactics — even strong middlegames collapse without a tucked-away king.\n3. **Bringing the queen out too early.** She gets chased by minor pieces, and every retreat is a move you didn't develop.\n4. **Playing automatic moves.** Recapturing without thinking, defending a pawn that wasn't attacked, copying the opponent — autopilot is fatal.\n5. **Playing without a plan.** A move with no purpose is a wasted move. Every move should improve a piece, threaten something, or prepare a break.\n\nA classic example: after **{{e4}} {{e5}} {{Qh5}}?!**, White hopes for a quick attack. Black just plays **{{Nc6}}** and **{{Nf6}}** — and the queen has to retreat while Black develops with tempo.\n\n> The opening is a race. Develop, don't dance."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppp1ppp/8/4p3/3PP3/8/PPP2PPP/RNBQKBNR b KQkq d3 0 2",
       "title": "Don't Grab Every Pawn",
-      "text": "Not every capture is good. Sometimes taking a pawn wastes time — your opponent develops while you move the same piece again. Ask: \"Is this pawn worth a tempo?\""
+      "text": "Pawn-grabbing is the most seductive trap in chess. *It's free material!* — except, often, it isn't.\n\nIn the position above, White has just played the Center Game with **{{e4}} {{e5}} {{d4}}**. If Black greedily grabs with {{exd4}}, White recaptures, develops with tempo, and gets a big lead in piece activity.\n\n## Three questions before any pawn snatch\n\n- **Will I have to move the same piece again?** If yes, you're losing tempo.\n- **Will my opponent develop a piece with check or threat while recapturing?** Every check costs you another move.\n- **Will my king or king's pawn cover get exposed?** A weak king is rarely worth a single pawn.\n\nA pawn is one point. **Three tempos** of development is also worth roughly one point. So *every* pawn grab that costs three tempos is a losing trade.\n\n> Take pawns when they're free, not when they're bait."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "Watch Your Opponent's Threats",
-      "text": "Half of losing positions come from ignoring the opponent. When they move, always ask: \"What does this move attack?\" If you can't see it, you probably missed it."
+      "text": "Half of all losing positions come from a single source: ignoring what the opponent just did.\n\nWhen your opponent moves, they have a **reason**. Maybe they're attacking a piece. Maybe they're opening a file. Maybe they're vacating a square for a knight. Find the reason — *before* you choose your own move.\n\n## The opponent's-move scan\n\n- *What did this move attack?* (Anything new under fire?)\n- *What did this move defend?* (Are they preparing a follow-up?)\n- *What did this move open?* (A new diagonal, file, or rank?)\n- *What did this move threaten?* (A check next move? A fork?)\n\nIf you can't answer, look longer. The threat is usually there.\n\n## A real-world example\n\nIf your opponent plays **{{Bg5}}**, the obvious threat is the pin on your knight. The subtle threat is doubling your pawns after **{{Bxf6}}**, or — if you've castled — opening lines toward your king.\n\n> Your move begins by understanding theirs."
     }
   ]
 }

@@ -4,5 +4,8 @@
   "solution": [
     "a4"
   ],
-  "hint": "Advance your passed pawn."
+  "title": "Pawn Race with King Support",
+  "setup": "White's king already stands on **e6** — heavily supporting any push. The a-pawn just needs a starting kick.",
+  "hint": "When your king is active and the pawn is far from promotion, push the pawn — the king is in position to escort it later.",
+  "explanation": "## The Idea\n\nThis is a fundamental **king-and-pawn endgame** problem. White has a major advantage: the king is already advanced to **e6**, while the pawn sits on a2. The plan is simple — **race the pawn to promotion**.\n\nWhite plays {{a4}} (the two-square initial push, faster than {{a3}}).\n\n## Why a4 Over a3?\n\n- {{a4}} saves a tempo: the pawn jumps to a4 in one move instead of taking two moves to reach the same square via {{a3}} then {{a4}}.\n- This tempo is crucial in races: the closer the pawn is to promoting, the harder it is for the black king to catch.\n\n## Black's Predicament\n\nThe black king on **e8** must run all the way to **a8** to catch the pawn — that's seven king moves. The pawn needs five moves to promote ({{a4}}, {{a5}}, {{a6}}, {{a7}}, {{a8=Q}}). Even without support from the white king, the pawn would win the race comfortably.\n\nBut here, the white king on e6 is in the **square of the pawn** *already* with respect to the black king's path — it can interfere or support as needed.\n\n## Pattern to Memorize\n\n> **Pawn races** are won by counting tempos. Always push two squares on the first move when the pawn is on its starting rank — that free tempo often decides everything.\n\nThe **square of the pawn rule**: imagine a square with the pawn on one corner and the promotion square on the diagonal. If the enemy king is outside that square, the pawn promotes."
 }

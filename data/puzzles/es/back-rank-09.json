@@ -4,5 +4,8 @@
   "solution": [
     "Re8#"
   ],
-  "hint": "Te8 da mate — el rey no tiene huida."
+  "title": "La torre se desliza al mate",
+  "setup": "Solo dos reyes y una torre. A veces el ajedrez es solo eso.",
+  "hint": "{{Re8}} llega con jaque. El muro de peones es el ataúd del rey.",
+  "explanation": "## La idea\n\nCon casi nada en el tablero, el motivo del mate de pasillo aún cierra la partida. {{Re8#}} da mate en una:\n\n1. La torre abandona la segunda fila y llega a e8 con jaque.\n2. El rey negro en g8 está atrapado:\n   - **f8** está atacada por la torre en e8.\n   - **h8** está atacada a lo largo de la octava fila.\n   - **f7, g7, h7** están bloqueadas por los peones negros.\n3. Ninguna pieza negra puede intervenir.\n\n### Lección\n\nLa torre es la **pieza ejecutora del mate** en los finales más fundamentales:\n\n- Rey + torre contra rey está ganado.\n- Rey + torre contra rey con un muro de peones es *inmediato*.\n\nCuando el rey enemigo se sienta detrás de una hilera de peones sin mover, **busca siempre la invasión por la séptima/octava fila**.\n\n> Cuando solo te queda una pieza, conviértela en el verdugo."
 }

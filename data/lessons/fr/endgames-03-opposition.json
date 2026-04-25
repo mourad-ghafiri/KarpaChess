@@ -1,21 +1,30 @@
 {
   "id": "opposition",
   "title": "L'opposition",
-  "summary": "Le concept de finale le plus important",
+  "summary": "Le concept le plus important des finales",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "4k3/8/4K3/8/8/8/8/8 w - - 0 1",
       "title": "Face à face",
-      "text": "Deux rois se font face avec une case d'écart. Le camp qui N'A PAS le trait a l'opposition — l'autre roi doit s'écarter. Dans les finales roi et pion, avoir l'opposition décide souvent de la partie." },
-    { "type": "teach",
+      "text": "## Qu'est-ce que l'opposition ?\n\nL'**opposition** est la situation où deux rois se font face sur la même colonne, rangée ou diagonale avec **exactement une case entre eux**. Le camp qui **N'A PAS** le trait *a* l'opposition — l'autre roi doit céder du terrain.\n\n### Les types à connaître\n\n- **Opposition directe** — rois à une case d'écart sur une colonne ou rangée (la plus courante).\n- **Opposition diagonale** — rois à une case d'écart sur une diagonale.\n- **Opposition à distance** — rois sur la même ligne avec **3 ou 5** cases entre eux.\n\nUn test simple : si le nombre de cases entre les rois est **pair**, le camp *au trait* perd l'opposition.\n\n### Pourquoi c'est important\n\nDans les finales pures de roi et pion, l'opposition décide qui peut passer et qui doit reculer. De nombreuses positions semblant nulles sont gagnées — et beaucoup semblant gagnantes sont nulles — purement à cause de ce seul tempo.\n\n### Erreurs courantes\n\n- Avancer le roi sur la mauvaise case et donner l'opposition à *l'adversaire*.\n- Confondre opposition directe et diagonale.\n- Pousser un pion alors que vous avez l'opposition — vous risquez de la rendre gratuitement.\n\n> Le camp qui doit jouer en premier doit s'écarter."
+    },
+    {
+      "type": "teach",
       "fen": "4k3/8/4K3/4P3/8/8/8/8 w - - 0 1",
       "title": "Avec un pion",
-      "text": "Ici, les Blancs ont un pion de plus et veulent le promouvoir. Pour gagner, le roi blanc doit PRÉCÉDER le pion avec l'opposition. La règle : 'roi devant, pion derrière.'" },
-    { "type": "play",
+      "text": "## L'opposition avec un pion\n\nMaintenant les Blancs possèdent un **pion en e4** et un roi en **e6**. Le roi noir en **e8** se tient sur le chemin de la case de promotion. Pour gagner, les Blancs doivent combiner **deux idées** :\n\n1. Garder le roi **devant le pion**, jamais derrière.\n2. **Contourner** le roi adverse en avançant en diagonale pour saisir une case clé.\n\n### Cases clés\n\nPour un pion sur la 5e rangée ou en deçà, les **cases clés** sont les trois cases **deux rangées devant** le pion (ici : d6, e6, f6). Si votre roi atteint l'une d'elles avec le trait, vous gagnez quelle que soit l'opposition.\n\n### Procédure\n\n1. Avancez le roi en diagonale : {{Kd6}} ou {{Kf6}}.\n2. Le roi noir doit céder ; suivez-le sur la colonne.\n3. Poussez le pion seulement quand il peut avancer sous la protection du roi.\n4. Promouvez et passez au mat avec R+D.\n\n### Erreurs courantes\n\n- Pousser {{e5}} d'abord — les Noirs jouent Ke7 et tout le progrès est perdu.\n- Aller Ke6-e7 ?? — illégal en réalité, Ke7 entre dans l'échec du roi. Ne le faites pas.\n- Jouer Ke4 / Kf4 — le roi s'éloigne de son pion.\n\n### Ligne modèle\n\n{{Kd6}} Kd8 {{e5}} Ke8 {{e6}} Kf8 {{Kd7}} et le pion fait dame.\n\n> Le roi devant, le pion derrière."
+    },
+    {
+      "type": "play",
       "fen": "4k3/8/4K3/4P3/8/8/8/8 w - - 0 1",
-      "prompt": "Avancez pour prendre l'opposition.",
-      "targetSan": ["Kd6", "Kf6"],
-      "hint": "Kd6 ou Kf6 réclament l'opposition et gagnent." }
+      "prompt": "Avancez **diagonalement** pour saisir une case clé. Le principe : *le roi mène, le pion suit*.",
+      "targetSan": [
+        "Kd6",
+        "Kf6"
+      ],
+      "hint": "Les deux ailes fonctionnent — montez sur la **6e rangée** et forcez les Noirs à choisir de quel côté reculer."
+    }
   ]
 }

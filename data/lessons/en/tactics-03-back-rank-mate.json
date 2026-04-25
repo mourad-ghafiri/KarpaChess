@@ -8,31 +8,31 @@
       "type": "teach",
       "fen": "6k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
       "title": "The Classic Pattern",
-      "text": "A castled king is usually safe — unless his escape squares are blocked by his own pawns. A rook or queen on the 8th rank becomes unstoppable."
+      "text": "After castling, the king sits behind a wall of pawns. That wall is usually safety — but if the king has no escape squares on the back rank, the same wall becomes a **prison**.\n\n## The visual trigger\n\nLook for these three things on the enemy back rank:\n\n- The **king** sits on a corner square (g8 or h8 for Black).\n- The **pawns** in front of him are still on their starting squares (f7, g7, h7).\n- The eighth rank is otherwise **empty** — no pieces in the way of an invading rook or queen.\n\nWhen those three line up, a single move on the 8th rank can be checkmate.\n\n## The geometry\n\nBack-rank mate is just a **rook or queen check** on a rank where the enemy king has no flight squares. The king cannot capture (the attacker is defended or far away), cannot block (your piece is right next to him), and cannot move (his own pawns block him).\n\n## How to find it\n\n1. Count the enemy king's escape squares on the **back rank** and the **second rank**.\n2. If there are zero or one, look for a way to attack the back rank with a heavy piece.\n3. Count defenders — how many enemy pieces guard the back rank?\n4. Either remove every defender or out-attack them.\n\nHere the rook glides to {{Ra8#}} — checkmate, because the f7/g7/h7 pawn wall has become Black's coffin.\n\n> The pawns that protect the king are the same pawns that trap him."
     },
     {
       "type": "play",
       "fen": "6k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
-      "prompt": "Deliver back-rank mate.",
+      "prompt": "Deliver checkmate on the back rank with **{{Ra8#}}**.",
       "targetSan": [
         "Ra8#"
       ],
-      "hint": "The pawn wall is also a prison wall."
+      "hint": "Where does the king run if you check on the back rank? Count his escape squares first."
     },
     {
       "type": "teach",
       "fen": "3r2k1/5ppp/8/8/8/8/5PPP/3R2K1 w - - 0 1",
       "title": "Trade & Mate",
-      "text": "When both sides have a back-rank weakness, the one who strikes first wins. Trade the defender to clear the way."
+      "text": "Often both sides have a back-rank weakness. Then it's a question of *who strikes first* — and the trick is to **eliminate the defender** before delivering mate.\n\n## The pattern to recognize\n\n- Both kings are stuck on their back rank with the pawn wall intact.\n- Each side has a single rook (or queen) defending its back rank.\n- One side gets to move first.\n\n## Procedure\n\n1. Identify the *defender* of the enemy back rank (almost always a single rook or queen).\n2. Look for a way to **trade** that defender, **deflect** it, or **capture** it.\n3. After the swap, walk in with mate.\n\nHere both rooks face each other on the open d-file. Black's rook is the *only* thing defending d8. Trade it with {{Rxd8#}} — the recapture is impossible because the king has no escape square. The trade *is* mate.\n\n> When two prisoners stand back-to-back, the one who shoots first walks free."
     },
     {
       "type": "play",
       "fen": "3r2k1/5ppp/8/8/8/8/5PPP/3R2K1 w - - 0 1",
-      "prompt": "Trade rooks into mate.",
+      "prompt": "Trade rooks **into** mate with **{{Rxd8#}}**. The exchange is the win.",
       "targetSan": [
         "Rxd8#"
       ],
-      "hint": "After the trade, Black has no defender left."
+      "hint": "Black's rook is the only defender of the back rank. What happens if you take it?"
     }
   ]
 }

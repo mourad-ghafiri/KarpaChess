@@ -4,5 +4,8 @@
   "solution": [
     "Rd8#"
   ],
-  "hint": "La dernière rangée est grande ouverte — infiltrez-vous."
+  "title": "Voie Libre vers le Roi",
+  "setup": "La colonne d est dégagée jusqu'à la 8e rangée, et le bouclier de pions noirs n'a pas de fenêtre d'évasion.",
+  "hint": "Glissez la tour sur la dernière rangée ouverte — le mur {{f7}}, {{g7}}, {{h7}} fait le reste.",
+  "explanation": "## L'Idée\n\nUn **mat du couloir** classique. La colonne d est une autoroute nette et le roi noir suffoque derrière ses propres pions.\n\nJouez {{Rd8#}}.\n\nPourquoi le roi est-il piégé ?\n\n- {{f8}} et le reste de la 8e rangée — couvertes par la tour en d8\n- {{f7}}, {{g7}}, {{h7}} — toutes occupées par les pions noirs\n- Aucune pièce ne peut s'interposer sur la ligne d8-g8\n- Le roi ne peut capturer : d8 est trop loin de g8\n\n> **À retenir :** Chaque fois que vous voyez votre tour et le roi ennemi sur la même dernière rangée avec la colonne ouverte, comptez les cases de fuite avant tout. Un seul coup termine souvent la partie."
 }

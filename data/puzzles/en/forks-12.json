@@ -4,5 +4,8 @@
   "solution": [
     "Nc6"
   ],
-  "hint": "Knight forks with check."
+  "title": "Quiet Fork on the Long Rank",
+  "setup": "Black's king and rook share the back rank with a knight one leap away.",
+  "hint": "Look for the knight square that attacks **both** the rook on a8 and the king's escape squares.",
+  "explanation": "## The Idea\n\nThe knight on e5 has access to the {{c6}} square via the standard L-jump. Once on c6:\n\n- The knight attacks the rook on **a8** along the c6 → a7 / a8 diagonal-of-knight-leaps.\n- The king on e8 has no good way to defend a8 from this distance.\n\n### Why the rook is doomed\n\n1. The rook can only move along its rank or file. To stay protected, it would have to keep its king nearby.\n2. The king on e8 cannot reach a8 in one move.\n3. So the rook must abandon the corner: Ra-anywhere, and {{Nxa8}} or some equivalent capture follows.\n\nThis is a **quiet fork** — no check is given, but the threat (next-move capture) is unstoppable.\n\n> Forks aren't always loud. A silent attack on two undefended pieces is just as deadly."
 }

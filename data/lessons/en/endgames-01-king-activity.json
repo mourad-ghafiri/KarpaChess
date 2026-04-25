@@ -8,17 +8,17 @@
       "type": "teach",
       "fen": "4k3/8/8/4K3/4P3/8/8/8 w - - 0 1",
       "title": "King Power",
-      "text": "In the middlegame the king hides. In the endgame he comes out to fight. Here your king must escort his pawn to promotion. Technique matters."
+      "text": "## The endgame king\n\nIn the **middlegame** the king is a fugitive — castled, hidden, defended by his pawns. In the **endgame**, with most pieces traded off, that timidity becomes a luxury you cannot afford. The king is now a **fighting piece**, roughly worth a strong minor piece, and every winning plan in a simple ending starts with him.\n\n### What this position is\n\n- White king on **e5**, already escorting his pawn from in front.\n- Pawn on **e4**, two squares from the queening lane.\n- Black king on **e8**, blocking the path.\n\nThis is the **K + P vs K** archetype — the most common winning structure in chess.\n\n### The procedure to convert\n\n1. **Lead with the king**, never the pawn. The pawn pushes only when the king has cleared the way.\n2. **Outflank** the enemy king by stepping diagonally forward: {{Kd6}} or {{Kf6}}.\n3. **Take the opposition** — when kings face each other one square apart and your opponent must move, you control the dance.\n4. **Then push the pawn** to claim more space and force a queen.\n\n### Common mistakes\n\n- Pushing {{e5}} too early — the pawn arrives without escort and is blockaded.\n- Stepping back with the king (e.g. Ke4) — you give up tempo and the opposition.\n- Wandering the king sideways without any plan to outflank.\n\n### A model line\n\n{{Kd6}} ... Kd8 {{e5}} ... Ke8 {{Kc7}} — the king has cleared a corridor and the pawn is unstoppable.\n\n> Activate the king before pushing the pawn."
     },
     {
       "type": "play",
       "fen": "4k3/8/8/4K3/4P3/8/8/8 w - - 0 1",
-      "prompt": "Push your king forward — take the opposition.",
+      "prompt": "Step the king diagonally forward to **outflank** the defender. Apply the principle: *king first, pawn later*.",
       "targetSan": [
         "Kd6",
         "Kf6"
       ],
-      "hint": "Kd6 or Kf6 — both seize the opposition."
+      "hint": "Don't touch the pawn yet — clear a lane for it with a diagonal step on the 6th rank."
     }
   ]
 }

@@ -8,17 +8,17 @@
       "type": "teach",
       "fen": "4k3/8/4K3/4Q3/8/8/8/8 w - - 0 1",
       "title": "Mate Clásico",
-      "text": "Con rey y dama contra rey solo, lleva al rey enemigo hacia el borde y luego da mate. La dama controla un muro — tu rey impide la huida."
+      "text": "## R + D contra R — el mate fundamental\n\nEste es el **primer jaque mate que todo jugador debe dominar**. Con rey y dama contra rey solo, el bando con dama siempre gana desde cualquier posición — normalmente en **menos de diez jugadas**.\n\n### Cómo es este final\n\n- Un bando tiene **rey + dama**.\n- El otro solo tiene **rey**.\n- Sin peones, sin piezas menores, sin torres — pura técnica.\n\n### El concepto clave: la caja y el muro\n\nLa dama construye un **muro** invisible que el rey solo no puede cruzar, mientras tu propio rey sube para **apoyar** el golpe final. Lo único que debes evitar es el **ahogado** — ese es el único peligro oculto de este final.\n\n### Procedimiento para convertir\n\n1. Usa la dama para **encoger la caja del rey**, manteniéndote a un salto de caballo cuando puedas.\n2. **Marcha con tu rey** hasta una casilla junto al lugar donde quieras dar mate.\n3. Conduce al rey enemigo al **borde** del tablero.\n4. Da mate con la **dama en el borde**, defendida (directa o remotamente) por tu rey.\n\n### Errores comunes\n\n- Dar jaque con la dama en cada jugada — el rey baila para siempre.\n- Atrapar al rey solo con **cero casillas legales** mientras la dama *no* da jaque — eso es **ahogado** y son tablas.\n- Olvidar subir tu propio rey; la dama por sí sola no puede dar mate.\n\n### Final modelo\n\nDesde la posición mostrada — rey negro en **e8**, rey blanco en **e6**, dama en **e5** — las blancas juegan {{Qb8#}} o {{Qh8#}}: la dama sella la 8ª fila y el rey en e6 cubre d7, e7 y f7.\n\n> La dama corta, el rey atrapa."
     },
     {
       "type": "play",
       "fen": "4k3/8/4K3/4Q3/8/8/8/8 w - - 0 1",
-      "prompt": "Da jaque mate en una jugada.",
+      "prompt": "Da **jaque mate en una**. El rey enemigo está en el borde y tu rey ya apoya — termina el trabajo.",
       "targetSan": [
         "Qb8#",
         "Qh8#"
       ],
-      "hint": "Corta la octava fila — el rey enemigo no tiene a dónde huir."
+      "hint": "Desliza la dama por la **8ª fila** para que toda casilla de escape quede cubierta o atacada."
     }
   ]
 }

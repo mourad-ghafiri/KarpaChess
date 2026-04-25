@@ -4,5 +4,8 @@
   "solution": [
     "Rxa8#"
   ],
-  "hint": "Tukar benteng menjadi skakmat — dinding pion juga menjadi penjaranya."
+  "title": "Benteng Pergi, Skakmat Tiba",
+  "setup": "Posisi simetris dengan benteng saling pandang di lajur a. Raja Hitam tidak punya udara.",
+  "hint": "Tukar benteng. Dinding bidak Hitam juga merupakan penjara Hitam.",
+  "explanation": "## Idenya\n\n{{Rxa8#}} adalah **tukar-jadi-skakmat** — bentuk eksekusi baris belakang yang paling sederhana sekaligus paling indah.\n\n### Langkah demi langkah\n\n1. Benteng Putih memakan benteng Hitam di a8.\n2. Hitam tidak punya pemakan balik (raja di g8 terlalu jauh; tidak ada pembela lain di baris ke-8).\n3. Raja diskak benteng Putih di a8 sepanjang baris ke-8.\n4. **Tidak ada jalan keluar:** g7-h7 adalah bidak sendiri, h8 / f8 diserang benteng Putih, dan tidak ada yang bisa memakan atau memblokir.\n\n### Apa yang seharusnya Hitam lakukan lebih awal\n\n- Mendorong {{h6}} atau {{g6}} sejak lama untuk memberi udara bagi raja.\n- Mempertahankan satu bidak (kuda, gajah, menteri) yang menjaga baris belakang.\n- Menghindari pertukaran benteng di lajur terbuka saat raja tanpa luft.\n\n> Dua pasukan dengan kekuatan setara + satu tempo struktur bidak ekstra = satu pasukan menang. Skakmat baris belakang adalah harga dari luft yang diabaikan."
 }

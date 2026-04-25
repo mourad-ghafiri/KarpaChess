@@ -2,7 +2,11 @@
   "id": "tactics-mix-07",
   "fen": "r4rk1/1pp2ppp/p1np4/4p3/2B1P3/2Pq1N2/PP2QPPP/R2R2K1 b - - 0 1",
   "solution": [
-    "Qxd1+"
+    "Qxe2",
+    "Bxe2"
   ],
-  "hint": "Paksakan pertukaran ke akhir permainan yang menang."
+  "title": "Tukar Menteri untuk Menyelamatkan Hari",
+  "setup": "Menteri hitam di **d3** diserang oleh menteri putih di e2 dan gajah di c4. Dia harus menukar sekarang atau hilang.",
+  "hint": "Saat menteri Anda diserang dua kali dan tidak dijaga sama sekali, tukar dia — jangan menari.",
+  "explanation": "## Idenya\n\nIni adalah **pertukaran terpaksa** — taktik bertahan, bukan kombinasi yang menang. Menteri Hitam diserang **dua** buah putih (menteri e2 dan gajah c4) dan dijaga **nol**. Jika Hitam tidak melakukan apa-apa, Putih memainkan {{Qxd3}} (atau {{Bxd3}}) memenangkan menteri tanpa apa-apa.\n\nSatu-satunya langkah baik adalah **memulai pertukaran sesuai syarat Hitam**: tangkap menteri putih.\n\nHitam memainkan {{Qxe2}}.\n\n## Jawaban Putih yang Terpaksa\n\nPutih harus merebut kembali atau kehilangan menteri tanpa apa-apa:\n\n- {{Bxe2}} — gajah di c4 meluncur ke e2 dan merebut kembali. Ini satu-satunya perebutan kembali legal (tidak ada benteng atau kuda yang mencapai e2 dalam satu langkah).\n\nMaterial setelah debu mengendap: sama. Hitam telah mengubah posisi yang kalah menjadi tengah permainan yang seimbang.\n\n## Pola untuk Diingat\n\n> Saat menteri Anda diserang ganda dan tidak dijaga, pertanyaan berubah dari *\"Bisakah saya menang material?\"* menjadi *\"Bagaimana saya kalah paling sedikit?\"*\n\nPertukaran menteri dengan tangkapan menetralkan serangan dan menyamakan material. Selalu periksa opsi ini sebelum mundur — kadang penukaran paling sederhana adalah sumber daya terbaik."
 }

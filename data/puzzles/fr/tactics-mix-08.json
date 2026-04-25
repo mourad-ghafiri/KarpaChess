@@ -4,5 +4,8 @@
   "solution": [
     "a4"
   ],
-  "hint": "Avancez vers la promotion."
+  "title": "Poussez le pion passé",
+  "setup": "Un pion blanc isolé en **a2** sans aucun pion ennemi pour l'arrêter — un **pion passé** d'école.",
+  "hint": "Poussez vite. Chaque tempo compte dans les finales roi-et-pion.",
+  "explanation": "## L'idée\n\nVoici un problème fondamental de **course de pion passé**. Aucun pion ennemi ne bloque la colonne a, donc le seul obstacle du pion est le roi noir — actuellement en e8, loin.\n\nLes Blancs jouent {{a4}} — l'**avance initiale de deux cases**, gagnant un tempo vital sur {{a3}}.\n\n## Pourquoi a4 et pas a3 ?\n\nDans les finales de pions, chaque tempo décide du résultat. Le pion doit atteindre a8 avant que le roi noir ne le rattrape. Comptons les cases :\n\n- Après {{a4}}, le pion a besoin de 4 coups de plus pour promouvoir ({{a5}}, {{a6}}, {{a7}}, {{a8=Q}}).\n- Le roi noir doit atteindre la **case de promotion** (a8) ou la trajectoire du pion. De e8 à a8, c'est 4 coups de roi.\n- C'est une course — et nous venons d'économiser un tempo en sautant deux cases.\n\n## La règle du carré du pion\n\n> Tracez un carré imaginaire du pion à la rangée de promotion, sur la diagonale vers le roi adverse. Si le roi est **hors** du carré, le pion promeut.\n\nApprenez cette règle par cœur — elle décide des centaines de finales de pions."
 }

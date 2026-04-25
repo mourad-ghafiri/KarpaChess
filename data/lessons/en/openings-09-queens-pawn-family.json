@@ -8,22 +8,22 @@
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
       "title": "The Positional Push",
-      "text": "1.d4 claims the center and prepares c4. Games are more positional than 1.e4 — slow strategic battles over pawn structures and outposts."
+      "text": "**{{d4}}** is the slow, strategic cousin of 1.e4. Instead of opening up immediately, it stakes a center claim with a pawn that's *defended by the queen* — a subtle but huge difference.\n\n## What 1.d4 accomplishes\n\n- Stakes the **d4 square**, which is naturally protected by the white queen on d1.\n- Frees the **dark-squared bishop** to develop along the c1-h6 diagonal.\n- Prepares the trademark **{{c4}}** push — the move that defines the Queen's Pawn family.\n- Tends to lead to **closed**, *strategic* games where positional understanding beats raw calculation.\n\n## Why grandmasters love it\n\n- Black has fewer ways to seize the initiative.\n- White can transpose between several systems (Catalan, Queen's Gambit, English, Trompowsky) based on Black's setup.\n- Long-term squeezes are common — perfect for technical players.\n\n> 1.d4 is the slow burn. The action takes longer to arrive — but lasts further into the game."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
       "title": "Main Responses",
-      "text": "Black's options: 1...d5 (classical, leads to Queen's Gambit), 1...Nf6 (Indian defenses — hypermodern), 1...f5 (Dutch), 1...e6 (flexible). The Indian defenses are the modern grandmaster choice."
+      "text": "Black's choice on move 1 against 1.d4 splits the chess world into two big camps: classical players who play **...d5**, and hypermodern players who prefer **...Nf6**.\n\n## The major replies\n\n- **1...d5** — *Classical*. Leads to the Queen's Gambit, Slav, and Semi-Slav. Solid, principled, and rich in theory.\n- **1...Nf6** — *Indian Defenses*. The hypermodern family: King's Indian, Nimzo-Indian, Queen's Indian, Grünfeld, Bogo-Indian. Black lets White build the center and counterattacks later.\n- **1...f5** — *Dutch Defense*. Sharp and risky. Black plays for kingside attacks at the cost of weakening the king's diagonal.\n- **1...e6** — *flexible*. Often transposes into the Queen's Gambit Declined or French.\n- **1...c5** — *Benoni* family. Black challenges immediately on the c-file.\n- **1...d6** — *Old Indian* or *Modern* setups, where Black plays for ...e5 later.\n\n## Choosing your response\n\n- *Want a fortress?* — Slav or Queen's Gambit Declined.\n- *Want to counter-attack?* — King's Indian or Grünfeld.\n- *Want strategic depth?* — Nimzo-Indian or Queen's Indian.\n- *Want imbalance?* — Benoni or Dutch.\n\n## A model line for each side\n\nA Queen's Gambit Declined goes {{d4}} {{d5}} {{c4}} {{e6}} {{Nc3}} **{{Nf6}}**. White builds slowly toward {{Nf3}}, {{Bg5}}, {{e3}}, and 0-0. Black builds with {{Be7}}, {{O-O}}, {{Nbd7}}, **...c6**, **...dxc4**.\n\n> The 1.d4 family rewards patient students. Pick one Black system, learn its plans, and stand firm for years."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
-      "prompt": "Play the classical 1...d5 — stake your own claim.",
+      "prompt": "Mirror White's center claim with the classical **{{d5}}** — solid, principled, time-tested.",
       "targetSan": [
         "d5"
       ],
-      "hint": "1...d5 mirrors White. Classical, solid, respected."
+      "hint": "1...d5 stakes Black's own central pawn and prepares the Queen's Gambit Declined or Slav family."
     }
   ]
 }

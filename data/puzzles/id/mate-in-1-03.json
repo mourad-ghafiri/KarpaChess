@@ -4,5 +4,8 @@
   "solution": [
     "Rb8#"
   ],
-  "hint": "Satu benteng maju sementara yang lain menguasai baris tersebut."
+  "title": "Tangga Dua Benteng",
+  "setup": "Kedua benteng di **lajur b**, siap mendaki tangga berdampingan.",
+  "hint": "Satu benteng memberi skak di baris ke-8 sementara yang lain menjaga {{b7}} — tidak ada jalan keluar di antara.",
+  "explanation": "## Idenya\n\nIni adalah **skakmat tangga dua benteng** — disebut juga *tangga turun*. Dengan dua benteng, Anda berganti baris agar raja terdesak ke tepi tanpa udara.\n\nMain {{Rb8#}}. Benteng b mendaki ke **b8** dan memberi skak sepanjang baris ke-8.\n\nMengapa raja terjebak?\n\n- {{g8}}, {{f8}} dan sisa baris ke-8 — semua dikuasai benteng baru di b8\n- {{g7}} — diblokir bidak Hitam sendiri\n- {{h7}} — diblokir bidak Hitam sendiri\n- Benteng bawah di **b2** tetap menguasai lajur b, jadi Kxb8 tetap ilegal (walaupun raja juga tidak bisa mencapai)\n\n> **Inti:** Dua benteng adalah mesin skakmat bahkan tanpa raja. Jaga mereka di lajur atau baris bersebelahan dan dorong naik — raja bebas tidak punya tempat lari."
 }

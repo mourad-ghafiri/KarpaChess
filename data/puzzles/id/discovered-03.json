@@ -4,5 +4,8 @@
   "solution": [
     "Nc4+"
   ],
-  "hint": "Kuda bergerak dan diagonal gajah terbuka."
+  "title": "Kuda Membuka Diagonal",
+  "setup": "Gajah di **d7** mengincar raja musuh sepanjang diagonal kotak terang panjang, sementara kuda di e3 siap melompat ke serangan.",
+  "hint": "Pilih kotak kuda yang **juga** menguasai satu-satunya jalan keluar raja — jangan puas dengan pembukaan asal.",
+  "explanation": "## Idenya\n\nDalam serangan terbuka, **penggerak** adalah bidak yang melompat keluar dan **pembuka** adalah bidak jarak jauh di belakangnya. Di sini gajah di d7 adalah pembuka yang dibidik ke e8, dan kuda di e3 adalah penggerak.\n\n## Mengapa {{Nc4+}} Pilihan yang Tepat\n\nHampir semua langkah kuda menjaga gajah tetap mengarah ke e8, tetapi trik skak terbuka yang baik adalah membuat bidak yang bergerak **berguna**. Setelah {{Nc4+}}, kuda mendarat di kotak yang menyerang **d6** — persis kotak yang ingin dituju raja untuk lari.\n\n- Gajah memukul e8.\n- Kuda menutup d6.\n- Satu-satunya langkah legal raja adalah **f8**, tempat ia tertutup ke pojok.\n\n## Apa yang Salah dengan Langkah Lain\n\nNg4+ atau Nf5+ yang ceroboh juga mengungkap gajah, tetapi kuda tidak lagi memperebutkan kotak pelarian raja. Hitam main Kd8 (atau di beberapa kasus memakan gajah) dan serangan menguap. Disiplin yang harus dipelajari: ketika Anda membuka skak, pilih tujuan penggerak agar **menutup jaring**, bukan hanya berisik."
 }

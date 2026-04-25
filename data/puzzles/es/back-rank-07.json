@@ -4,5 +4,8 @@
   "solution": [
     "Rxa8#"
   ],
-  "hint": "Cambia las torres y conserva el mate."
+  "title": "Sin muro de peones, solo mate",
+  "setup": "Los peones blancos han desaparecido, pero el muro de peones del negro sigue intacto — y ese muro es ahora un ataúd.",
+  "hint": "El muro de peones en f7-g7-h7 ayuda a las blancas, no a las negras. Cambia las torres.",
+  "explanation": "## La idea\n\nSin peones blancos, el rey blanco está expuesto — pero la **carrera hacia la última fila es unilateral**: el rey negro no tiene escape, el blanco sí. {{Rxa8#}} es mate en una:\n\n1. La torre blanca captura la torre negra en a8.\n2. Se da jaque desde la octava fila.\n3. El rey negro en g8 está encerrado por f7-g7-h7 (sus propios peones).\n4. Ninguna pieza puede recapturar ni interponerse.\n\n### Detalle curioso\n\nEl rey blanco no tiene cobertura de peones — y aun así no es turno de las negras. **No importa quién esté más expuesto en teoría; importa de quién es el turno en la práctica.** Las blancas mueven primero y terminan la partida.\n\n> El tiempo vale más que los peones cuando la posición es decisiva."
 }

@@ -1,6 +1,6 @@
 {
   "id": "discovered-attack",
-  "title": "Attaque à la découverte",
+  "title": "L'attaque à la découverte",
   "summary": "Une pièce bouge — une autre attaque",
   "difficulty": "intermediate",
   "steps": [
@@ -8,20 +8,22 @@
       "type": "teach",
       "fen": "4k3/8/8/8/4N3/8/8/4R2K w - - 0 1",
       "title": "Le démasquage",
-      "text": "Une attaque à la découverte se produit quand vous déplacez l'une de vos pièces et révélez une attaque d'une autre pièce derrière elle. Quand l'attaque révélée est un échec ET que la pièce déplacée donne aussi échec, on parle de double échec — la tactique la plus dévastatrice des échecs."
+      "text": "Une **attaque à la découverte** est un coup deux-en-un. Vous déplacez l'une de vos pièces, *et la pièce derrière* — qui était bloquée — attaque soudain quelque chose. Vous obtenez deux menaces d'un seul coup.\n\n## Le dispositif\n\n- Une de vos pièces à longue portée (tour, fou, dame) vise une cible ennemie.\n- Une de vos **propres** pièces se tient sur la ligne, la masquant.\n- Cette pièce-bloqueuse peut bouger pour créer sa propre menace — et *découvrir* la ligne en même temps.\n\n## La géométrie\n\nIl vous faut trois choses sur une même ligne : votre attaquant caché, votre propre bloqueur, et la cible ennemie. Le bloqueur est le **percuteur** — quand il s'écarte, le coup part.\n\n## Deux variantes dévastatrices\n\n- **Échec à la découverte** — la pièce dévoilée donne échec pendant que la pièce mobile prend du matériel ailleurs. L'adversaire *doit* parer l'échec, donc la pièce capturée ne peut être défendue à temps.\n- **Double échec** — à la fois la pièce mobile *et* la pièce dévoilée attaquent le roi en même temps. Le roi **doit** bouger ; on ne peut pas intercepter deux échecs avec une seule pièce, et en capturer un laisse l'autre.\n\n## Comment la trouver\n\n1. Identifiez vos pièces à longue portée alignées avec le roi ou la dame adverse.\n2. Vérifiez si une de vos pièces se tient sur la ligne.\n3. Demandez : où ce bloqueur peut-il aller pour *attaquer quelque chose* ?\n4. Choisissez le coup qui crée la plus grande seconde menace — idéalement un échec.\n\nIci, la tour en e1 vise déjà e8. Le cavalier en e4 est le percuteur. {{Nd6+}} attaque le roi avec le cavalier **et** dévoile la tour sur e8 — un double échec.\n\n> Une attaque à la découverte est ce coup unique qui crée deux menaces. Cherchez le percuteur dans votre propre armée."
     },
     {
       "type": "play",
       "fen": "4k3/8/8/8/4N3/8/8/4R2K w - - 0 1",
-      "prompt": "Déplacez le cavalier pour exposer la tour — mieux, que le cavalier attaque AUSSI le roi.",
-      "targetSan": ["Nd6+"],
-      "hint": "Nd6 attaque e8 ET dévoile la tour. Double échec !"
+      "prompt": "Tirez un **double échec** avec **{{Nd6+}}** — le cavalier donne échec, et la tour est dévoilée.",
+      "targetSan": [
+        "Nd6+"
+      ],
+      "hint": "Quelle case de cavalier attaque le roi *et* dégage la colonne e d'un coup ?"
     },
     {
       "type": "teach",
-      "fen": "4k3/8/3N4/8/8/8/8/4R2K w - - 0 1",
-      "title": "Pourquoi c'est mortel",
-      "text": "Contre un double échec, le roi DOIT bouger — on ne peut pas bloquer deux attaques avec une seule pièce, et en capturer une laisse l'autre. Les doubles échecs sont parmi les motifs de mat les plus rapides des échecs."
+      "fen": "4k3/8/3N4/8/8/8/8/4R2K b - - 0 1",
+      "title": "Pourquoi le double échec est mortel",
+      "text": "Face à un échec normal, le défenseur a trois options : prendre l'attaquant, l'intercepter, ou bouger le roi. **Le double échec élimine les deux premières.**\n\n## Pourquoi intercepter et prendre échouent\n\n- Une seule pièce ne peut pas barrer deux lignes d'attaque simultanément.\n- En prendre un des deux laisse l'autre qui donne toujours échec.\n- Reste donc une seule réponse légale : **le roi doit bouger.**\n\n## Conséquences pratiques\n\n- Les doubles échecs sont la base de nombreuses combinaisons de mat célèbres.\n- Même un sacrifice de dame est valable si le double échec qui suit est forçant.\n- Un roi avec peu de cases de fuite et un double échec, c'est en général un roi *mat*.\n\n> Cloue un roi : il reste. Donne-lui échec : il esquive. *Double-l'échec* : il court — et c'est toi qui choisis où."
     }
   ]
 }

@@ -4,5 +4,8 @@
   "solution": [
     "Qh8#"
   ],
-  "hint": "Menteri menguasai baris ke-8."
+  "title": "Penutup Silang Gajah",
+  "setup": "Gajah Anda di **c8** dan raja di **e6** menutup seluruh baris ke-7 — menteri tinggal butuh baris belakang.",
+  "hint": "Geser menteri ke **baris ke-8** — gajah di c8 sudah memaku {{d8}} dan {{f8}}.",
+  "explanation": "## Idenya\n\nSkakmat baris belakang yang indah dengan **menteri + gajah**. Gajah di c8 tidak hanya menutup baris ke-8 — ia mengamankan petak pelarian kunci sementara menteri menyerang dari sudut.\n\nMainkan {{Qh8#}}.\n\nMengapa raja terjebak?\n\n- {{d7}}, {{e7}}, {{f7}} — semua dikuasai raja Anda di **e6**\n- {{f8}} — dikuasai menteri di h8 (baris ke-8)\n- {{d8}} — dikuasai gajah di **c8**\n- Raja tidak bisa menangkap menteri: e8 ke h8 berjarak tiga petak\n- Tidak ada yang bisa menghalangi di baris ke-8 antara h8 dan e8\n\n> **Pelajaran:** Gajah di diagonal panjang yang menyentuh baris belakang adalah buah skakmat yang tenang tapi mematikan. Saat menteri sejajar di baris yang sama, setiap pelarian lenyap."
 }

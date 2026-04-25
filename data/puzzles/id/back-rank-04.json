@@ -4,5 +4,8 @@
   "solution": [
     "Rxd8#"
   ],
-  "hint": "Tukar benteng — skakmat baris belakang."
+  "title": "Skakmat Cermin",
+  "setup": "Struktur sayap raja identik, benteng di lajur yang sama. Yang bergerak duluan memberi skakmat.",
+  "hint": "Makan benteng dengan skak. Bidak Hitam memblokir jalan keluar rajanya sendiri.",
+  "explanation": "## Idenya\n\nIni adalah **skakmat baris belakang** klasik dengan satu langkah: {{Rxd8#}}.\n\n### Mengapa skakmat seketika\n\n1. Benteng Putih memakan benteng Hitam — kini benteng Putih menyerang seluruh baris ke-8.\n2. Raja Hitam di g8 hanya punya tiga kotak langkah-raja:\n   - **f8** ✗ — diserang benteng.\n   - **h8** ✗ — diserang benteng.\n   - **f7, g7, h7** ✗ — semua diblokir bidak Hitam sendiri.\n3. Tidak ada bidak Hitam yang bisa memakan benteng Putih di d8; tidak ada yang bisa memblokir skak.\n\n### Pelajarannya\n\nDi sini posisi lebih penting daripada material. Kedua kubu sama-sama punya satu benteng — tetapi hanya satu kubu yang punya benteng *yang tepat* di lajur *yang tepat*. **Benteng aktif di lajur terbuka mengalahkan benteng tidur di pojok.**\n\n> Baris ke-8 adalah jalur algojo. Selalu periksa siapa yang menguasainya."
 }

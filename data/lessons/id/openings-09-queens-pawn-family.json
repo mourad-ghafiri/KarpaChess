@@ -1,6 +1,6 @@
 {
   "id": "queens-pawn-family",
-  "title": "1.d4 — Pion Menteri",
+  "title": "1.d4 — Bidak Menteri",
   "summary": "Memahami sistem 1.d4",
   "difficulty": "beginner",
   "steps": [
@@ -8,22 +8,22 @@
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
       "title": "Dorongan Posisional",
-      "text": "1.d4 merebut pusat dan menyiapkan c4. Permainan lebih posisional daripada 1.e4 — pertempuran strategis lambat atas struktur pion dan pos terdepan."
+      "text": "**{{d4}}** adalah sepupu yang lambat dan strategis dari 1.e4. Daripada langsung membuka, ia mengklaim pusat dengan bidak yang *dijaga oleh menteri* — perbedaan halus tetapi besar.\n\n## Apa yang dicapai 1.d4\n\n- Mengklaim **kotak d4**, yang secara alami dilindungi oleh menteri putih di d1.\n- Membebaskan **gajah kotak gelap** untuk berkembang sepanjang diagonal c1-h6.\n- Mempersiapkan dorongan khas **{{c4}}** — langkah yang mendefinisikan keluarga Bidak Menteri.\n- Cenderung menghasilkan permainan **tertutup**, *strategis* di mana pemahaman posisional mengalahkan kalkulasi mentah.\n\n## Mengapa para grandmaster menyukainya\n\n- Hitam punya lebih sedikit cara untuk merebut inisiatif.\n- Putih dapat bertransposisi antara beberapa sistem (Catalan, Queen's Gambit, English, Trompowsky) berdasarkan setup Hitam.\n- Tekanan jangka panjang umum — sempurna untuk pemain teknis.\n\n> 1.d4 adalah api yang pelan. Aksinya butuh lebih lama untuk tiba — tetapi bertahan lebih jauh dalam permainan."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
-      "title": "Balasan Utama",
-      "text": "Pilihan Hitam: 1...d5 (klasik, mengarah ke Gambit Menteri), 1...Nf6 (pertahanan Indian — hipermodern), 1...f5 (Belanda), 1...e6 (fleksibel). Pertahanan Indian adalah pilihan grandmaster modern."
+      "title": "Respons Utama",
+      "text": "Pilihan Hitam pada langkah 1 melawan 1.d4 memecah dunia catur menjadi dua kubu besar: pemain klasik yang memainkan **...d5**, dan pemain hipermodern yang lebih suka **...Nf6**.\n\n## Balasan utama\n\n- **1...d5** — *Klasik*. Mengarah ke Queen's Gambit, Slav, dan Semi-Slav. Solid, berprinsip, dan kaya teori.\n- **1...Nf6** — *Pertahanan Indian*. Keluarga hipermodern: King's Indian, Nimzo-Indian, Queen's Indian, Grünfeld, Bogo-Indian. Hitam membiarkan Putih membangun pusat dan membalas serang nanti.\n- **1...f5** — *Pertahanan Belanda*. Tajam dan berisiko. Hitam bermain untuk serangan sayap raja dengan harga melemahkan diagonal raja.\n- **1...e6** — *fleksibel*. Sering bertransposisi ke Queen's Gambit Declined atau Prancis.\n- **1...c5** — keluarga *Benoni*. Hitam langsung menantang di lajur c.\n- **1...d6** — setup *Old Indian* atau *Modern*, di mana Hitam bermain untuk ...e5 nanti.\n\n## Memilih respons Anda\n\n- *Mau benteng?* — Slav atau Queen's Gambit Declined.\n- *Mau balas serang?* — King's Indian atau Grünfeld.\n- *Mau kedalaman strategis?* — Nimzo-Indian atau Queen's Indian.\n- *Mau ketidakseimbangan?* — Benoni atau Belanda.\n\n## Garis model untuk masing-masing pihak\n\nQueen's Gambit Declined: {{d4}} {{d5}} {{c4}} {{e6}} {{Nc3}} **{{Nf6}}**. Putih membangun perlahan menuju {{Nf3}}, {{Bg5}}, {{e3}}, dan 0-0. Hitam membangun dengan {{Be7}}, {{O-O}}, {{Nbd7}}, **...c6**, **...dxc4**.\n\n> Keluarga 1.d4 menghargai siswa yang sabar. Pilih satu sistem Hitam, pelajari rencananya, dan bertahan kokoh selama bertahun-tahun."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
-      "prompt": "Mainkan 1...d5 klasik — klaim hak Anda sendiri.",
+      "prompt": "Cermati klaim pusat Putih dengan klasik **{{d5}}** — solid, berprinsip, teruji waktu.",
       "targetSan": [
         "d5"
       ],
-      "hint": "1...d5 mencerminkan Putih. Klasik, kokoh, dihormati."
+      "hint": "1...d5 menegakkan bidak pusat Hitam sendiri dan mempersiapkan keluarga Queen's Gambit Declined atau Slav."
     }
   ]
 }

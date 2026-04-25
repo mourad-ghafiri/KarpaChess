@@ -8,31 +8,31 @@
       "type": "teach",
       "fen": "8/8/2k5/3q4/8/8/2N1K3/8 w - - 0 1",
       "title": "Garpu Kerajaan",
-      "text": "Garpu menyerang dua bidak dalam satu langkah. Kuda sangat ahli dalam hal ini — ia melompat dengan cara yang tidak bisa diblokir bidak lain. Di sini, satu langkah kuda menyerang baik raja MAUPUN menteri."
+      "text": "**Garpu** adalah satu langkah yang menyerang dua buah lawan sekaligus. Lawan hanya bisa menyelamatkan satu — yang lain tetap menjadi milik Anda.\n\n## Mengapa kuda adalah raja garpu\n\nKuda melompati buah lain, menyerang delapan petak dari pos sentral yang kuat, dan **tidak ada buah yang bisa memblokir skaknya**. Sifat-sifat itu menjadikan kuda sebagai pengarpu paling mematikan dalam catur.\n\n## Geometrinya\n\nKuda di petak *X* mengincar delapan petak yang tersusun seperti sudut dua persegi panjang yang saling mengunci. Jika dua sasaran lawan duduk di salah satu dari delapan petak itu, *X* adalah petak garpu.\n\n- Raja + menteri di pasangan petak kuda = **garpu kerajaan**\n- Raja + benteng = **garpu keluarga**\n- Dua buah tanpa pertahanan = garpu yang menang\n\n## Cara mengenalinya\n\n1. Cari setiap buah lawan yang tidak terlindungi.\n2. Susun petak yang ditempati buah itu *beserta* raja.\n3. Cari petak yang menyentuh dua dari mereka dengan satu lompatan kuda.\n4. Pastikan petak garpu itu sendiri aman (atau keuntungannya lebih besar daripada kerugian).\n\nDi sini kuda putih hanya satu lompatan dari {{Nb4+}}, mengincar baik raja di c6 maupun menteri di d5.\n\n> Jika Anda tidak ingat hal lain tentang taktik, ingatlah ini: *setiap buah tanpa pertahanan adalah garpu yang menunggu untuk terjadi.*"
     },
     {
       "type": "play",
       "fen": "8/8/2k5/3q4/8/8/2N1K3/8 w - - 0 1",
-      "prompt": "Mainkan kuda untuk menggarpu raja dan menteri.",
+      "prompt": "Mainkan **{{Nb4+}}** — kuda menggarpu raja dan menteri dalam satu lompatan.",
       "targetSan": [
         "Nb4+"
       ],
-      "hint": "Nb4 menyerang baik c6 maupun d5."
+      "hint": "Cari satu petak kuda yang menyentuh baik *c6* maupun *d5*."
     },
     {
       "type": "teach",
       "fen": "4k3/8/8/4n3/8/8/8/Q3K3 w - - 0 1",
-      "title": "Garpu Menteri",
-      "text": "Menteri bisa menggarpu juga — terutama dengan skak. Ketika lawan HARUS merespons skak, Anda mendapatkan langkah gratis untuk merebut material di tempat lain."
+      "title": "Garpu Menteri dengan Skak",
+      "text": "Kuda bukan satu-satunya pengarpu. **Menteri** adalah mesin garpu jarak jauh — terutama saat garpu datang dengan skak.\n\n## Mengapa skak penting\n\nSkak adalah respons yang *dipaksa*. Sementara lawan sibuk memindahkan raja (atau memblokir), menteri sudah mengunci pandangannya pada sasaran kedua. Lawan tidak punya tempo untuk mempertahankannya.\n\n- Garpu diagonal + lajur: menteri duduk di petak yang mengincar raja melalui satu sinar dan buah lain melalui sinar lain.\n- Ancaman skakmat + material: langkah yang terlihat tenang namun mengancam baik skakmat maupun buah adalah serangan ganda yang menyamar.\n\n## Cara menemukannya\n\n1. Cari skak yang juga merupakan *tangkapan* atau yang *menyejajarkan* menteri dengan sasaran lain.\n2. Pastikan petak garpu terlindungi atau tidak terjangkau lawan.\n3. Hitung pembersihannya — *bisakah raja melangkah ke petak yang membela buah kedua?*\n\nDi posisi ini, {{Qxe5+}} menangkap kuda **dan** menyerang raja di e8 sepanjang lajur-e. Hitam memindahkan raja, Putih unggul satu kuda.\n\n> Garpu dengan skak bukan pilihan bagi yang bertahan. Itulah yang membuatnya bekerja."
     },
     {
       "type": "play",
       "fen": "4k3/8/8/4n3/8/8/8/Q3K3 w - - 0 1",
-      "prompt": "Tangkap kuda dengan skak.",
+      "prompt": "Tangkap kuda dengan **{{Qxe5+}}** — skak menggarpu raja dan mengantongi buah.",
       "targetSan": [
         "Qxe5+"
       ],
-      "hint": "Menteri membidik e5."
+      "hint": "Tangkapan apa yang juga menyejajarkan menteri dengan raja lawan?"
     }
   ]
 }

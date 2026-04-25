@@ -1,38 +1,38 @@
 {
   "id": "london-system",
   "title": "Le système de Londres",
-  "summary": "Le système universel — même mise en place, à chaque fois",
+  "summary": "Le système universel — même dispositif à chaque fois",
   "difficulty": "intermediate",
   "steps": [
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "Pourquoi jouer Londres ?",
-      "text": "Le système de Londres est une ouverture \"universelle\" — les Blancs jouent la même mise en place quelle que soit la réponse des Noirs. Idéal pour les débutants : moins de théorie, des motifs plus fiables."
+      "text": "Le **système de Londres** est l'équivalent échiquéen d'une recette pare-balles — les Blancs jouent *presque le même dispositif* face à toutes les répliques noires. Moins de mémorisation, plus de jeu.\n\nCes dernières années, il a explosé au plus haut niveau : Magnus Carlsen l'a utilisé en match de championnat du monde, et des grands maîtres de Kramnik à Caruana s'en sont servis comme arme surprise.\n\n## Pourquoi il convient aux débutants\n\n- **Quasi pas de théorie.** Vous jouez les huit mêmes coups quel que soit le dispositif noir.\n- **Structure de pions solide.** Le triangle d4-c3-e3 est dur à fendre.\n- **Fou de cases foncées actif.** Bf4 est l'une des *meilleures* cases pour cette pièce — hors de la chaîne de pions, regard sur l'aile dame.\n- **Plans fiables.** Les idées de milieu de partie se répètent à chaque fois.\n\n## Ce que veut chaque camp\n\n- **Plan blanc :** {{d4}}, {{Bf4}}, {{Nf3}}, {{e3}}, {{c3}}, {{Nbd2}}, {{Bd3}}, **0-0**. Puis expansion par **h2-h3**, **Re1**, et viser **e3-e4** ou une poussée à l'aile dame **a2-a4**.\n- **Plan noir :** jouer **...Nf6**, **...e6** ou **...g6**, **...Be7** ou **...Bd6**, **...c5** ou **...c6**, et défier le centre. Les dispositifs noirs modernes attaquent le pion e3 et la faiblesse en c3.\n- **Structure de pions :** *hybride Slave-Stonewall* — les pions blancs en d4-c3-e3 forment un triangle qui limite les pièces noires.\n\n> Londres, c'est les échecs en pilote automatique. Une fois que vous l'avez jouée dix fois, vous la jouez les yeux fermés."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "prompt": "1.d4",
+      "prompt": "Commencez Londres avec **{{d4}}** — la fondation de tout le système.",
       "targetSan": [
         "d4"
       ],
-      "hint": "Pion dame de deux cases."
+      "hint": "Toute partie de Londres commence par d4. Le fou c1 a maintenant un chemin libre vers f4."
     },
     {
       "type": "play",
       "fen": "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2",
-      "prompt": "Développez le fou de cases foncées : 2.Bf4",
+      "prompt": "Développez le fou de cases foncées avec **{{Bf4}}** *avant* de jouer e3 — c'est la fameuse astuce d'ordre des coups de Londres.",
       "targetSan": [
         "Bf4"
       ],
-      "hint": "Le fou sort AVANT e3, pour ne pas être bloqué par ses propres pions."
+      "hint": "Toujours Bf4 AVANT e3, sinon votre propre pion enferme le fou. Cette astuce d'ordre des coups est le cœur du système."
     },
     {
       "type": "teach",
       "fen": "rnbqkb1r/pppppppp/5n2/8/3P1B2/8/PPP1PPPP/RNBQKBNR b KQkq - 2 2",
       "title": "Le dispositif complet",
-      "text": "La recette complète de Londres : d4, Bf4, Nf3, e3, c3, Nbd2, Bd3, 0-0. Solide, quasi symétrique, difficile à briser. Magnus Carlsen l'a utilisée dans les matchs du championnat du monde."
+      "text": "Après {{d4}} et {{Bf4}}, le reste du système de Londres se met en place presque automatiquement.\n\n## La recette complète\n\n1. **{{d4}}** — pion central.\n2. **{{Bf4}}** — fou sorti avant le pion e.\n3. **{{Nf3}}** — second cavalier sur sa case naturelle.\n4. **{{e3}}** — soutient d4 et libère le fou f1.\n5. **{{c3}}** — solidifie le centre, prévient ...Nb4.\n6. **{{Nbd2}}** — cavalier sur une case souple (pas en c3, où il bloquerait le pion c).\n7. **{{Bd3}}** — fou de cases claires sur sa diagonale naturelle, regard sur h7.\n8. **{{O-O}}** — petit roque.\n\nÀ partir de là, les Blancs s'étendent généralement par **h2-h3** (pour empêcher les clouages ...Bg4), **Re1**, et préparent une rupture **e3-e4** ou une attaque à l'aile roi via **Ne5** et **Qf3**.\n\n## Dispositifs noirs courants face à Londres\n\n- **Dispositif symétrique** : ...d5, ...Nf6, ...Bf5 ou ...Bg4, ...e6, ...Bd6, ...0-0 — un miroir solide.\n- **Dispositif est-indien** : ...Nf6, ...g6, ...Bg7 — fianchetto. Les Noirs jouent ...c5 pour défier le centre.\n- **Défi moderne** : ...c5 immédiat, ...Qb6 fixant le pion b2 — un test acéré de l'ordre des coups de Londres.\n\n## Un schéma d'attaque typique\n\nUne attaque classique de Londres se déroule **Ne5** + **Qf3** + **Bxh7+** — le sacrifice du *cadeau grec*. La structure est calme, mais l'attaque à l'aile roi peut être féroce.\n\n> Choisissez un système. Maîtrisez-le. Londres vous enseigne comment cinq mêmes cases peuvent produire mille milieux de partie différents."
     }
   ]
 }

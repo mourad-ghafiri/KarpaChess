@@ -4,5 +4,8 @@
   "solution": [
     "Qh8#"
   ],
-  "hint": "La dame et le cavalier collaborent à merveille."
+  "title": "Filet Dame et Cavalier",
+  "setup": "Votre cavalier en **f5** et votre roi en **f6** verrouillent la colonne f — la dame n'a plus qu'à entrer.",
+  "hint": "Amenez la dame sur la 8e rangée par la diagonale — le cavalier ombre déjà {{e7}}.",
+  "explanation": "## L'Idée\n\nUne délicieuse **coopération dame et cavalier**. Le cavalier en f5 couvre discrètement {{e7}} et la dame fond sur la 8e rangée.\n\nJouez {{Qh8#}}.\n\nPourquoi le roi est-il piégé ?\n\n- {{e8}} — couverte par la dame le long de la 8e rangée\n- {{g8}} — couverte par la dame le long de la 8e rangée\n- {{e7}} — contrôlée par le cavalier en **f5**\n- {{f7}} — bloquée par le propre pion noir\n- {{g7}} — couverte par la dame en h8 (diagonale)\n- Capture ? Kxh8 est impossible — le roi est en f8, non adjacent\n\n> **À retenir :** Cavaliers et dames se combinent en filets de mat car le cavalier couvre des cases que la dame ne peut atteindre (sauts de cavalier). Scrutez toujours ces motifs de couverture double."
 }

@@ -4,5 +4,8 @@
   "solution": [
     "Bc5"
   ],
-  "hint": "Kembangkan gajah secara aktif."
+  "title": "Cermin Gajah Italia",
+  "setup": "Putih telah memainkan pembukaan Italia, menempatkan gajah di **c4** mengincar f7. Hitam mencerminkan ancaman.",
+  "hint": "Ketika lawan mengembangkan gajah yang menyerang kotak lemah Anda, kembangkan gajah *Anda* yang menyerang kotak lemah mereka.",
+  "explanation": "## Idenya\n\nIni adalah keputusan **pengembangan klasik** dalam Permainan Italia. Gajah Putih di c4 mengincar kotak f7 Hitam. Hitam harus merespons dengan mencerminkan: kembangkan gajah ke **c5**, mengincar kotak lemah simetris Putih — **f2**.\n\nHitam bermain {{Bc5}}.\n\n## Mengapa c5?\n\n- Gajah **aktif**: ia menyerang diagonal panjang a7-g1, termasuk kotak f2 (hanya dijaga raja Putih).\n- Gajah **fleksibel**: tidak menghalangi pengembangan buah lain.\n- Gerakan **simetris**: membalas ancaman Putih dengan ancaman setara adalah ide pembukaan yang matang.\n\n## Apa yang Disiapkan Ini\n\nIni adalah pintu masuk ke jalur **Giuoco Piano** (\"Permainan Tenang\") atau yang lebih agresif **Giuoco Pianissimo**. Kedua sisi memiliki:\n\n- Gajah aktif di diagonal panjang.\n- Kedua kuda dikembangkan.\n- Rokade cepat di jalan.\n\n## Pola yang Harus Diingat\n\n> Kembangkan gajah Anda ke **kotak aktif yang menyerang kelemahan musuh utama** — biasanya f2/f7 di pembukaan.\n\nJangan buang tempo pembukaan untuk gerakan kosmetik. Setiap gerakan pengembangan harus memperbaiki posisi Anda **dan** menekan lawan. Bc5 melakukan keduanya dalam satu kibasan."
 }

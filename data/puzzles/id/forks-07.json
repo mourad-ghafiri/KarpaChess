@@ -1,8 +1,11 @@
 {
   "id": "forks-07",
-  "fen": "3rk3/8/8/2N5/8/8/8/4K3 w - - 0 1",
+  "fen": "3r1k2/8/8/2N5/8/8/8/4K3 w - - 0 1",
   "solution": [
-    "Ne6"
+    "Ne6+"
   ],
-  "hint": "Garpu benteng dan raja."
+  "title": "Garpu Kerajaan",
+  "setup": "Raja dan benteng Hitam berdiri di baris ke-8 hanya dua lajur terpisah — target sempurna untuk lompatan kuda.",
+  "hint": "Cari kotak di mana kuda menyerang **keduanya** raja di f8 dan benteng di d8 sekaligus.",
+  "explanation": "## Idenya\n\nIni adalah **garpu kuda** contoh. Dari c5, hanya satu kotak yang menyerang kedua bidak Hitam dalam satu bentuk L:\n\n- {{Ne6+}} menyerang **f8** (raja) dan **d8** (benteng) bersamaan.\n- Skak memaksa — Hitam harus menjawab sebelum melakukan apa pun.\n\n### Mengapa Hitam tidak punya pertahanan\n\n1. **Tangkap kuda?** Raja di f8 tidak bisa mencapai e6 dalam satu langkah (raja jalan satu kotak). Tidak ada bidak Hitam lain dalam jangkauan.\n2. **Blokir skak?** Kuda melompat — skak kuda tidak bisa diblokir.\n3. **Gerakkan raja?** Raja harus lari (Ke7, Ke8, Kg8, Kf7…). Benteng tetap di d8, tanpa pembela.\n\nSetelah raja bergerak, {{Nxd8}} menyabet benteng. Putih menang **benteng untuk kuda** — pergeseran bersih +2 material.\n\n> Ketika Anda melihat raja dan benteng dua kotak terpisah, cari kotak kuda yang menyentuh keduanya."
 }

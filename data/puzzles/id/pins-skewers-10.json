@@ -4,5 +4,8 @@
   "solution": [
     "Rxd7+"
   ],
-  "hint": "Paku, lalu tangkap buah yang terpaku."
+  "title": "Gajah Terpaku, Gajah Hilang",
+  "setup": "Gajah hitam berada di **d7**, tepat di depan rajanya dan tepat di garis sasaran benteng.",
+  "hint": "Buah-buah ringan yang terpaku adalah target tetap — tangkap mereka.",
+  "explanation": "## Idenya\n\nGajah hitam di d7 dalam **pakuan absolut** sepanjang lajur d. Gajah biasanya bisa meluncur pergi di diagonal, tetapi yang ini tidak bisa pindah sama sekali — langkah gajah apa pun akan membuat raja di d8 terkena skak dari benteng di d2.\n\nPutih memainkan {{Rxd7+}}, menyambar gajah.\n\n- {{Kxd7}} terpaksa — raja adalah satu-satunya buah yang bisa menjawab skak.\n- Setelah pertukaran, Putih telah menukar benteng dengan gajah. Dalam posisi yang lebih penuh ini akan menjadi **kemenangan buah bersih**; di miniatur ini adalah momen pengajaran tentang geometri.\n\n## Pola untuk Diingat\n\n> Pakuan tidak peduli buah jenis apa yang dijebak. Gajah, kuda, benteng, menteri — semua menjadi patung saat terpaku pada rajanya.\n\nKeajaiban pakuan adalah ia **membatalkan mobilitas target sepenuhnya**, tidak peduli bagaimana buah itu biasanya bergerak."
 }

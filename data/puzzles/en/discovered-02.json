@@ -4,5 +4,8 @@
   "solution": [
     "Nc7+"
   ],
-  "hint": "Discovered check — knight attacks too."
+  "title": "Double Check on the E-file",
+  "setup": "The knight sits **directly in front of** the rook, and both share the e-file with the black king — a classic battery just waiting to fire.",
+  "hint": "Find the knight square that **also** attacks the king. When two pieces check at once, blocking is impossible.",
+  "explanation": "## The Idea\n\nThis position is the cleanest possible discovered-check picture. The rook on e1 is the **discoverer**; the knight on e6 is the **mover**. Any legal knight jump uncovers the rook and gives check.\n\nBut one knight move is much stronger than the others: {{Nc7+}}. From c7 the knight itself **also** attacks e8.\n\n## Why Double Check Is Special\n\nWhen two pieces check the king on the same move, the defender:\n\n- Cannot block, because no single square stops both attackers.\n- Cannot capture both pieces in one move.\n- **Must** move the king.\n\nSo after {{Nc7+}} Black is forced to walk the king to d7 or f7, where it is poorly placed for the rest of the game. The knight on c7 has additionally landed on a strong outpost, eyeing a8 and e8.\n\n## What If You Picked the Wrong Square?\n\nA move like Nd4+ also gives discovered check from the rook, but the knight no longer pressures the king's neighbourhood. Black plays Kd7 or Kf7 and your attack fizzles. The rule of thumb: **with discovered check, prefer the square that joins the attack**."
 }

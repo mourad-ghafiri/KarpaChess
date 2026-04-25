@@ -2,7 +2,10 @@
   "id": "mate-in-1-16",
   "fen": "6k1/5Q2/5K2/8/8/8/8/8 w - - 0 1",
   "solution": [
-    "Qf8+"
+    "Qg7#"
   ],
-  "hint": "La dame avance — le soutien du roi conclut l'affaire."
+  "title": "Baiser Latéral",
+  "setup": "Votre dame en **f7** et votre roi en **f6** forment une équipe serrée — mais atterrir en {{f8}} serait un piège de pat.",
+  "hint": "Ne prenez pas la colonne évidente — glissez d'une case sur le côté vers une case que votre roi défend déjà.",
+  "explanation": "## L'Idée\n\nUn **mat baiser de la mort dans le coin**. Aller en {{f8}} ne donne qu'un échec avec une fuite ; le bon coup est de poser la dame *à côté* du roi sur une case défendue par votre roi.\n\nJouez {{Qg7#}}.\n\nPourquoi le roi est-il piégé ?\n\n- La dame en g7 attaque g8 directement (échec)\n- {{h8}} — couverte par la dame en g7 (diagonale)\n- {{h7}} — couverte par la dame en g7 (rangée)\n- {{Kxg7}} est illégal — votre roi en **f6** défend g7\n- Rien ne peut s'interposer : la dame est adjacente\n\n> **À retenir :** Quand vous matez avec dame + roi, comptez les cases de fuite pour *chaque* coup candidat. La bonne case est souvent celle *défendue par votre roi*, pas celle qui donne échec à distance."
 }

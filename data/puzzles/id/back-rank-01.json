@@ -4,5 +4,8 @@
   "solution": [
     "Rxd8#"
   ],
-  "hint": "Tukar benteng — raja Hitam tidak punya tempat lari."
+  "title": "Tukar Mematikan",
+  "setup": "Kedua raja terselip di balik bidak masing-masing. Kedua benteng saling berhadapan di lajur d. Yang menyerang lebih dulu yang menang.",
+  "hint": "Tukar benteng — raja Hitam **tidak punya luft** dan pertukaran ini mengunci baris belakang.",
+  "explanation": "## Idenya\n\nIni adalah **skakmat baris belakang** dalam bentuk paling murni. Pertukaran {{Rxd8#}} mengakhiri permainan seketika:\n\n1. Benteng Putih memakan benteng Hitam di d8.\n2. Raja Hitam di g8 tidak punya jalan keluar:\n   - **f8, e8, h8** — semua dikuasai benteng Putih di d8.\n   - **f7, g7, h7** — diblokir oleh bidak Hitam sendiri.\n3. Tidak ada bidak yang bisa memakan benteng Putih di d8, dan tidak ada cara untuk memblokir — benteng memberikan skak persis di samping penjara raja.\n\n### Mengapa posisi Hitam kalah\n\nRaja Hitam **tercekik**. Bidaknya sendiri di f7-g7-h7 membentuk dinding yang melindungi dari serangan depan tetapi mematikan jalan keluar di baris ke-8. Satu tempo *luft* (gerakan bidak seperti {{h6}} atau {{g6}}) sudah cukup mencegah seluruh motif ini.\n\n### Pola yang harus diingat\n\n- Raja di g8/g1 + bidak di f7-g7-h7 + tanpa pembela di baris belakang = **skakmat baris belakang mengintai.**\n- Kapan pun benteng Anda mencapai baris ke-8/ke-1 tanpa ada bidak musuh yang menjaga, cari pertukaran gaya `Rxd8#`.\n\n> *\"Luft\"* — gerakan bidak untuk memberi udara bagi raja — adalah asuransi paling sederhana dalam catur. Satu tempo. Perlindungan seumur hidup."
 }

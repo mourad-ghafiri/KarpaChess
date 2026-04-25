@@ -4,5 +4,8 @@
   "solution": [
     "Nc6"
   ],
-  "hint": "Kuda menyingkir — benteng menyerang benteng."
+  "title": "Kuda Memenangkan Benteng",
+  "setup": "Kedua kubu punya **benteng dan kuda**, tetapi bidak Putih terkoordinasi di lajur d, sedangkan benteng Hitam berdiri tanpa pembela di a8.",
+  "hint": "Kuda menutupi pandangan benteng ke d8. Pindahkan ke kotak yang **menggarpu** benteng musuh — dan saksikan lajur d terbuka.",
+  "explanation": "## Idenya\n\nTidak setiap serangan terbuka adalah skak. Di sini bidak yang dibuka adalah benteng Putih di d1 — yang sekarang diblokir oleh kudanya sendiri di d4 — dan **target** lompatan kuda adalah benteng Hitam yang lepas di a8.\n\n## Mengapa {{Nc6}} Mematikan\n\nKuda melompat ke **c6** dan melakukan tiga hal sekaligus:\n\n1. Ia langsung menyerang benteng hitam di a8.\n2. Ia menguasai **d8**, sehingga raja tidak bisa lari ke depan.\n3. Lajur d sekarang terbuka lebar — benteng di d1 menatap lurus ke d8, mengunci raja di baris belakang.\n\nHitam harus menyelamatkan benteng (tidak ada pembela baik di dekatnya), tetapi setiap kotak pelarian membuang waktu, dan raja begitu pasif sehingga Putih akan melahap material. Jika Hitam mencoba 1...Rxa-apa pun, kuda Putih memakan benteng pada langkah berikutnya.\n\n## Bagaimana Jika Hitam Main ...Kd8 Atau ...Kd7?\n\nRaja tidak bisa ke d8 — kuda di c6 menutupinya. Tidak bisa ke d7 — kuda yang sama. Tidak bisa ke e7 — kuda lagi. Satu-satunya langkah raja yang legal adalah ke f8 atau f7, meninggalkan benteng. **Bidak yang dibuka** (benteng di d1) adalah yang membuat pelarian raja itu sangat buruk: setiap kotak gelap di lajur d telah menjadi racun."
 }

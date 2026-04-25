@@ -1,23 +1,23 @@
 {
   "id": "the-pin",
   "title": "La Clavada",
-  "summary": "Congela una pieza — no puede moverse",
+  "summary": "Congela una pieza — no puede apartarse",
   "difficulty": "beginner",
   "steps": [
     {
       "type": "teach",
       "fen": "3k4/8/3q4/8/8/8/3R4/3K4 w - - 0 1",
       "title": "Clavada Absoluta",
-      "text": "Cuando una pieza está clavada contra su rey, no puede moverse legalmente — moverla expondría al rey al jaque. Aquí la dama negra está clavada en la columna d. Está congelada."
+      "text": "Una **clavada** ocurre cuando una pieza enemiga se interpone entre tu atacante y otra pieza enemiga *de mayor valor* detrás de ella. La pieza delantera queda pegada a su casilla — moverla expondría lo que hay detrás.\n\n## La geometría\n\nUna clavada necesita tres elementos en la misma línea — una columna, una fila o una diagonal:\n\n1. Tu **atacante de largo alcance** ({{Rd2}}, dama o alfil).\n2. La **pieza clavada** en el medio.\n3. Un **objetivo de mayor valor** detrás.\n\nSolo torres, alfiles y damas pueden clavar — se mueven en líneas rectas. Caballos, peones y reyes no pueden.\n\n## Dos tipos\n\n- **Clavada absoluta** — la pieza de detrás es el **rey**. Mover la pieza delantera sería ilegal.\n- **Clavada relativa** — la pieza de detrás es simplemente muy valiosa (p. ej. una dama). La pieza delantera *puede* moverse, pero perdería material.\n\n## Cómo detectar clavadas en tus partidas\n\n1. Mira cada atacante de largo alcance que tengas.\n2. Traza sus líneas a través de la posición.\n3. Marca cualquier línea que contenga *dos* piezas enemigas con la más valiosa detrás.\n4. Si ves una, pregúntate: *¿puedo atacar la pieza clavada con otro atacante?* Una pieza clavada no puede huir — es un objetivo.\n\nEn esta posición, la torre en d2 clava a la dama negra en d6 contra el rey en d8. La dama está congelada — y nosotros tenemos un disparo libre.\n\n> Una pieza clavada no es una pieza. Es un objetivo."
     },
     {
       "type": "play",
       "fen": "3k4/8/3q4/8/8/8/3R4/3K4 w - - 0 1",
-      "prompt": "Captura la dama clavada.",
+      "prompt": "Toma la dama clavada con **{{Rxd6+}}** — no puede apartarse.",
       "targetSan": [
         "Rxd6+"
       ],
-      "hint": "No puede moverse. Simplemente cómela."
+      "hint": "La dama está pegada a la columna d. No se está defendiendo a sí misma; *es* el objetivo."
     }
   ]
 }

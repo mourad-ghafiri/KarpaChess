@@ -1,8 +1,11 @@
 {
   "id": "mate-in-1-24",
-  "fen": "7k/6pp/6K1/7R/8/8/8/8 w - - 0 1",
+  "fen": "7k/6pp/6K1/7R/8/8/B7/8 w - - 0 1",
   "solution": [
-    "Rxh7+"
+    "Rxh7#"
   ],
-  "hint": "Rook captures the defender."
+  "title": "Bishop on the Long Diagonal",
+  "setup": "Your king on **g6** locks the corner, your bishop on **a2** rakes the **a2-g8** diagonal, and the rook is one square from the kill.",
+  "hint": "Capture the {{h7}} pawn — the bishop on **a2** prevents {{Kg8}}.",
+  "explanation": "## The Idea\n\nA **rook + bishop corner mate**. The bishop's long diagonal denies the king the only escape square — {{g8}} — that the rook and king don't already control.\n\nPlay {{Rxh7#}}.\n\nWhy is the king stuck?\n\n- The rook on h7 attacks h8 directly (file check)\n- {{Kxh7}} — illegal, your king on **g6** defends h7\n- {{g8}} — controlled by the bishop on **a2** (a2-g8 diagonal)\n- {{g7}} — pawn-blocked? actually g7 still has a Black pawn — wait, even if it didn't, your king on **g6** would attack it\n- Nothing can interpose between h7 and h8 (adjacent squares)\n\n> **Takeaway:** A bishop on the long diagonal pointing into the enemy castled position is one of the most fearsome attackers in chess. Even a quiet bishop on a2 or b1 can be the silent partner of a corner mate."
 }

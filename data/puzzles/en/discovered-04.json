@@ -4,5 +4,8 @@
   "solution": [
     "Nc6"
   ],
-  "hint": "Knight moves away — rook hits the rook."
+  "title": "Knight Wins the Rook",
+  "setup": "Both sides have a **rook and a knight**, but White's pieces are coordinated on the d-file while Black's rook stands undefended on a8.",
+  "hint": "The knight blocks your rook's view of d8. Move it to a square that **forks** the enemy rook — and watch the d-file open.",
+  "explanation": "## The Idea\n\nNot every discovered attack is a check. Here the discovered piece is White's rook on d1 — currently blocked by its own knight on d4 — and the **target** of the knight's leap is Black's loose rook on a8.\n\n## Why {{Nc6}} Is Crushing\n\nThe knight jumps to **c6** and accomplishes three things at once:\n\n1. It directly attacks the black rook on a8.\n2. It controls **d8**, so the king cannot run forward.\n3. The d-file is now wide open — the rook on d1 looks straight at d8, locking the king inside the back rank.\n\nBlack must save the rook (it has no good defenders nearby), but every escape square loses time, and the king is so passive that White will simply gobble material. If Black tries 1...Rxa-anything, the white knight captures the rook next move.\n\n## What If Black Plays ...Kd8 Or ...Kd7?\n\nThe king cannot go to d8 — the knight on c6 covers it. It cannot go to d7 — same knight. It cannot go to e7 — knight again. The only legal king move is to f8 or f7, abandoning the rook. The **discovered piece** (the rook on d1) is what makes those king escapes so awful: every dark square on the d-file has become poison."
 }

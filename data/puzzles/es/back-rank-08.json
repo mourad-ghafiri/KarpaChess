@@ -4,5 +4,8 @@
   "solution": [
     "Rb8#"
   ],
-  "hint": "La torre avanza mientras el rey enemigo está encerrado."
+  "title": "Marcha larga, mate corto",
+  "setup": "El peón a blanco se ha quedado atrás, pero la torre de la columna b tiene un carril libre hasta la octava fila.",
+  "hint": "Lleva la torre a b8. La estructura de peones hace el resto.",
+  "explanation": "## La idea\n\nLa presencia de un peón blanco extra en a2 es irrelevante — son las características puramente posicionales (debilidad de la última fila + rey sin luft) las que deciden la partida. {{Rb8#}} es mate de inmediato:\n\n1. La torre llega a la octava fila con jaque.\n2. El rey en g8 está sellado por sus propios peones en f7-g7-h7.\n3. Las casillas de **a8** a **h8** fuera de la burbuja del rey están todas atacadas por la torre.\n4. Nada recaptura, nada se interpone.\n\n### Por qué el \"material extra\" no salva a las negras\n\nLa posición del rey negro es tan débil que el material no significa nada. **Un solo tiempo de {{h6}} en algún momento de la partida habría evitado todo este patrón**, sin importar cuántos peones tenga cada bando.\n\n> El recuento de material siempre va por detrás de la seguridad del rey en posiciones tácticas."
 }

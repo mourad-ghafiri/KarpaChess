@@ -4,13 +4,17 @@
   "summary": "Insérer une menace plus forte avant la reprise évidente",
   "difficulty": "advanced",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "r1bqkbnr/ppp2ppp/2np4/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 4",
-      "title": "Ne réagissez pas juste",
-      "text": "Un zwischenzug ('coup intermédiaire', de l'allemand) est un coup surprenant inséré dans une séquence attendue — généralement un échec ou une menace plus grande — qui modifie la position avant que le coup évident ne soit joué. C'est la marque d'une forte vision tactique." },
-    { "type": "teach",
+      "title": "Ne réagissez pas seulement",
+      "text": "Le **zwischenzug** (allemand pour *coup intermédiaire*) est un coup forçant glissé dans un échange attendu. L'adversaire s'attend à ce que vous repreniez ; à la place, vous jouez un échec, une capture ou une plus grosse menace *d'abord* — et *ensuite* vous reprenez, souvent avec intérêt.\n\n## Le déclencheur visuel\n\nUn zwischenzug apparaît généralement quand :\n\n- Une capture s'est produite et une reprise est attendue.\n- La reprise serait « normale » mais la position a une autre ressource **forçante** — un échec, une plus grosse capture ou une menace de mat.\n- La pièce adverse qui vient de capturer est *elle-même* en l'air, attaquable ou clouée.\n\n## La géométrie\n\nC'est moins une question de géométrie qu'une question de **tempo**. Vous dépensez un coup sur quelque chose de plus urgent avant de reprendre l'échange. L'adversaire doit répondre à l'échec ou à la menace ; *ensuite* vous complétez l'échange avec la position changée en votre faveur.\n\n## Comment le repérer\n\n1. Quand l'adversaire capture, ralentissez. Ne reprenez pas par réflexe.\n2. Cherchez des **échecs**, **captures** et **menaces majeures** qui existent *avant* la reprise.\n3. Calculez : après votre zwischenzug et la réponse forcée, puis-je encore reprendre ou faire mieux ?\n4. Comparez les deux lignes côte à côte. Si le coup inséré gagne du matériel ou de la position, jouez-le.\n\n> Les forts joueurs demandent : *« Quel est le plus forçant ? »* Les plus faibles demandent : *« Qu'attend-on ? »*"
+    },
+    {
+      "type": "teach",
       "fen": "r1bqkbnr/ppp2ppp/2np4/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 4",
-      "title": "Exemple de motif",
-      "text": "Quand votre adversaire capture quelque chose à vous, votre réflexe est de reprendre. Mais parfois un zwischenzug — un échec ailleurs, ou une menace plus grande — gagne plus de matériel. Demandez-vous toujours : avant de reprendre, y a-t-il quelque chose de MIEUX ? Même un seul échec intermédiaire peut gagner la partie." }
+      "title": "Un exemple pratique",
+      "text": "Imaginez un échange typique d'ouverture ou de milieu de partie : vous venez d'être capturé, et vous voulez reprendre. Avant cela, faites une vérification rapide de zwischenzug.\n\n## L'arbre de décision\n\n1. **Y a-t-il un échec ?** Un échec force la main de l'adversaire et est le candidat de plus haute priorité.\n2. **Le captureur est-il en l'air ?** La pièce qui vient de prendre la vôtre peut être non défendue sur sa nouvelle case.\n3. **Y a-t-il une plus grosse capture ?** Peut-être une dame ennemie est-elle en l'air à deux coups.\n4. **Y a-t-il une menace de mat ?** Un coup tranquille qui menace mat est aussi un zwischenzug valide.\n\n## Une ligne modèle\n\nDans de nombreuses ouvertures, vous verrez quelque chose comme {{Bxc6}} bxc6, où les Noirs reprennent parce que c'est normal. Mais dans certaines positions, la forte réponse n'est **pas** bxc6 — à la place, les Noirs jouent un zwischenzug comme {{Qd4}} ou {{Bb4+}} frappant d'abord le roi blanc, *puis* résolvent l'échange du fou avec la position améliorée.\n\n> Avant de reprendre, posez une question de plus. Les maîtres le font toujours."
+    }
   ]
 }

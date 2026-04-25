@@ -1,23 +1,23 @@
 {
   "id": "the-pin",
-  "title": "Ikatan",
-  "summary": "Bekukan bidak — tidak bisa pergi",
+  "title": "Pakuan",
+  "summary": "Bekukan sebuah buah — ia tidak bisa pindah",
   "difficulty": "beginner",
   "steps": [
     {
       "type": "teach",
       "fen": "3k4/8/3q4/8/8/8/3R4/3K4 w - - 0 1",
-      "title": "Ikatan Mutlak",
-      "text": "Ketika bidak terikat pada rajanya, ia tidak bisa bergerak secara legal — bergerak akan membuka raja pada skak. Di sini menteri Hitam terikat di kolom d. Dia beku."
+      "title": "Pakuan Mutlak",
+      "text": "**Pakuan** terjadi ketika sebuah buah lawan duduk di antara penyerang Anda dan buah lawan yang *lebih bernilai* di belakangnya. Buah di depan terpaku di petaknya — bergerak akan membuka apa yang ada di belakang.\n\n## Geometrinya\n\nSebuah pakuan membutuhkan tiga hal pada satu garis — lajur, baris, atau diagonal:\n\n1. **Penyerang jarak jauh** Anda ({{Rd2}}, menteri, atau gajah).\n2. **Buah yang dipaku** di tengah.\n3. **Sasaran yang lebih bernilai** di belakangnya.\n\nHanya benteng, gajah, dan menteri yang bisa memaku — mereka bergerak dalam garis lurus. Kuda, bidak, dan raja tidak bisa.\n\n## Dua jenis\n\n- **Pakuan mutlak** — buah di belakang adalah **raja**. Memindahkan buah depan akan ilegal.\n- **Pakuan relatif** — buah di belakang hanya sangat bernilai (mis. menteri). Buah depan *bisa* bergerak, tetapi akan kehilangan material.\n\n## Cara mengenali pakuan dalam permainan Anda\n\n1. Lihat setiap penyerang jarak jauh yang Anda miliki.\n2. Telusuri garis-garisnya melalui posisi.\n3. Tandai garis mana pun yang berisi *dua* buah lawan dengan yang lebih bernilai di belakang.\n4. Jika Anda melihatnya, tanyakan: *bisakah saya menyerang buah yang dipaku dengan penyerang lain?* Buah yang dipaku tidak bisa lari — ia adalah sasaran.\n\nDi posisi ini benteng di d2 memaku menteri Hitam di d6 ke raja di d8. Menteri membeku — dan kita punya tembakan gratis.\n\n> Buah yang dipaku bukan lagi buah. Ia adalah sasaran."
     },
     {
       "type": "play",
       "fen": "3k4/8/3q4/8/8/8/3R4/3K4 w - - 0 1",
-      "prompt": "Tangkap menteri yang terikat.",
+      "prompt": "Tangkap menteri yang dipaku dengan **{{Rxd6+}}** — ia tidak bisa minggir.",
       "targetSan": [
         "Rxd6+"
       ],
-      "hint": "Dia tidak bisa bergerak. Ambil saja."
+      "hint": "Menteri terpaku pada lajur-d. Ia tidak membela dirinya sendiri; ia *menjadi* sasaran."
     }
   ]
 }

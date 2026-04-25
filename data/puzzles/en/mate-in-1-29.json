@@ -1,8 +1,11 @@
 {
   "id": "mate-in-1-29",
-  "fen": "6k1/6pp/6B1/5K2/8/8/8/8 w - - 0 1",
+  "fen": "7k/5K2/8/6N1/8/8/8/2B5 w - - 0 1",
   "solution": [
-    "Bf7+"
+    "Bb2#"
   ],
-  "hint": "Bishop on the long diagonal — king trapped."
+  "title": "Long Diagonal Spear",
+  "setup": "Your knight on **g5** stings {{h7}}, your king on **f7** locks {{g7}}, {{g8}} and {{f8}} — and the bishop is one move from the **a1-h8** diagonal.",
+  "hint": "Step the bishop onto the **long diagonal** — the king on **h8** has nowhere to run.",
+  "explanation": "## The Idea\n\nA gorgeous **bishop + knight + king mate**. The bishop slides onto the long diagonal and pierces all the way to h8, while the knight and king cover every flight square.\n\nPlay {{Bb2#}}.\n\nWhy is the king stuck?\n\n- The bishop on b2 attacks h8 directly along the **a1-h8 diagonal**\n- {{g7}} — covered by your king on **f7**\n- {{g8}} — covered by your king on **f7**\n- {{h7}} — controlled by the knight on **g5**\n- The bishop is too far for {{Kxb2}}, and nothing can interpose on the long diagonal\n\n> **Takeaway:** The fianchetto-style **a1-h8 diagonal** (or its mirror **h1-a8**) is one of the most lethal mating lanes in chess. When your bishop reaches that diagonal and the king is in the corner with one piece covering h7 — game over."
 }

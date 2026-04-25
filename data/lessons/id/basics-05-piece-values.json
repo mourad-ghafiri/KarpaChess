@@ -4,18 +4,27 @@
   "summary": "Pelajari nilai setiap bidak",
   "difficulty": "beginner",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "Nilai Perkiraan",
-      "text": "Mengetahui nilai bidak penting untuk melakukan pertukaran. Pion = 1. Kuda = 3. Gajah = 3 (sedikit lebih di posisi terbuka). Benteng = 5. Menteri = 9. Raja = tak ternilai. Ini perkiraan — konteks penting — tetapi menjadi titik awal dari setiap pertukaran yang baik." },
-    { "type": "teach",
+      "text": "Sebelum Anda bisa menukar bidak dengan bijak, Anda perlu pengertian kasar tentang berapa *nilai* masing-masing bidak.\n\nBidak catur tidak punya label harga resmi, tetapi generasi analisis telah menyepakati perkiraan yang berguna — diukur dalam satuan pion.\n\n## Skala standar\n\n- **Pion = 1**\n- **Kuda = 3**\n- **Gajah = 3** *(sedikit lebih di posisi terbuka; sekitar 3,25)*\n- **Benteng = 5**\n- **Menteri = 9**\n- **Raja = tak ternilai** *(tetapi bernilai sekitar 4 dalam kekuatan tempur setelah menteri lenyap)*\n\nBeberapa rasio berguna muncul:\n\n- Sebuah benteng mengalahkan bidak ringan (kuda atau gajah) dengan selisih 2 — itu disebut *memenangkan pertukaran*.\n- Dua bidak ringan (3 + 3 = 6) biasanya mengalahkan benteng (5).\n- Tiga bidak ringan (9) kira-kira setara dengan menteri — tetapi bidak biasanya lebih fleksibel.\n\n> Angka-angka ini adalah kompas, bukan kalkulator. Posisi mengalahkan poin."
+    },
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "Prinsip Pertukaran",
-      "text": "Tukar bidak bernilai sama ketika unggul material (menyederhanakan ke babak akhir yang menang). Hindari pertukaran ketika tertinggal — pertahankan bidak di papan untuk menciptakan peluang. Mengorbankan bidak bernilai lebih tinggi untuk yang lebih rendah adalah 'pengorbanan' — kadang sepadan untuk serangan yang menang." },
-    { "type": "play",
+      "text": "Mengetahui nilai adalah separuh cerita. Mengetahui *kapan* menukar adalah separuh lainnya.\n\n## Tiga aturan praktis\n\n- **Saat unggul material, tukar bidak.** Setiap pertukaran membawa Anda lebih dekat ke babak akhir yang menang, dan mengurangi peluang lawan menemukan tipuan.\n- **Saat tertinggal, pertahankan bidak di papan.** Bidak adalah pembuat teka-teki — pertahankan teka-teki tetap hidup dan Anda mempertahankan peluang Anda.\n- **Pengorbanan adalah disengaja.** Memberikan kuda demi pion terlihat seperti blunder; jika berakhir dengan skakmat, itu kebrilianan. Selalu hitung langkah, bukan bidak.\n\n## Posisi bisa membalik nilai\n\n- *Gajah buruk* (terkunci di balik pionnya sendiri) mungkin hanya bernilai satu atau dua pion.\n- *Kuda kuat* di pos terlindung bisa mengalahkan benteng.\n- *Dua gajah* di papan terbuka lebih kuat dari dua kuda — itulah **pasangan gajah** yang terkenal.\n\n> Tukar seperti bankir: hanya saat Anda untung, dalam poin atau dalam posisi."
+    },
+    {
+      "type": "play",
       "fen": "rnbqkb1r/pppp1ppp/5n2/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3",
-      "prompt": "Pion pusat mana yang harus Anda dorong untuk menguasai lebih banyak ruang? Mainkan satu.",
-      "targetSan": ["d4", "c4"],
-      "hint": "d4 atau c4 — keduanya memperkuat pusat Anda." }
+      "prompt": "Perkuat pusat Anda dengan mendorong **{{d4}}** atau **{{c4}}** — keduanya merebut lebih banyak ruang dan membuka jalur.",
+      "targetSan": [
+        "d4",
+        "c4"
+      ],
+      "hint": "Pusat adalah tempat bidak berkembang. Dua pion sahabat berdampingan di tengah adalah fondasi yang layak diperjuangkan."
+    }
   ]
 }

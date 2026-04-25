@@ -8,22 +8,22 @@
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
       "title": "The Romantic Opening",
-      "text": "1.e4 opens lines for the queen and bishop and fights for the center with a pawn. It's sharp, tactical, and the most popular first move in chess history."
+      "text": "**{{e4}}** is the most popular first move in the history of chess. Bobby Fischer called it *best by test*, and he had a point — the move does five things at once.\n\n## What 1.e4 accomplishes\n\n- **Claims a center square** — e4 is one of the four key squares.\n- **Frees the queen** along the d1-h5 diagonal.\n- **Frees the f1 bishop** along the a6-f1 diagonal.\n- **Threatens nothing yet** — but creates instant possibilities.\n- **Sets the tone** — open, tactical games are far more common after 1.e4 than 1.d4.\n\n## What White generally wants\n\n- Get pieces out fast (knights to f3 and c3).\n- Pressure key squares like **f7** and **e5**.\n- Castle short and use the e-file for rook activity.\n\n## Why beginners should try it\n\nGames after 1.e4 tend to be open, with clearer tactics and faster decisions. Practising 1.e4 sharpens your tactical eye in a way that slow d4 systems often don't.\n\n> 1.e4 is the bright morning sun of chess — open lines, lively pieces, real fights."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
       "title": "Black's Main Replies",
-      "text": "Black has several serious answers: 1...e5 (classical, symmetrical), 1...c5 (Sicilian, asymmetric), 1...e6 (French), 1...c6 (Caro-Kann), 1...d5 (Scandinavian). Each leads to a distinct game."
+      "text": "Black has a rich menu of replies to 1.e4 — each defining a different chess universe.\n\n## The big six\n\n- **1...e5** — *Open Games*. Mirroring White's claim. Leads to the Italian, Ruy Lopez, Scotch, King's Gambit, Petroff, and more.\n- **1...c5** — *Sicilian Defense*. The sharpest, most popular fighter's choice. Asymmetric, dynamic, full of theory.\n- **1...e6** — *French Defense*. Solid and strategic. Black builds a pawn chain after **...d5**.\n- **1...c6** — *Caro-Kann Defense*. Quiet and bulletproof. Prepares ...d5 with c-pawn support.\n- **1...d5** — *Scandinavian Defense*. Direct: trade pawns immediately. Easy to learn.\n- **1...Nf6** — *Alekhine's Defense*. Hypermodern provocation. Tempts White's pawns forward to attack them later.\n\n## Less common but legitimate\n\n- **1...d6** — *Pirc / Modern* — letting White build, then striking back.\n- **1...g6** — *Modern Defense* — fianchetto first, decide later.\n- **1...Nc6** — *Nimzowitsch Defense* — quirky but playable.\n\n## How to choose what to play\n\n- *Tactical, want to attack?* — Open Game with 1...e5 or Sicilian Najdorf.\n- *Hate memorizing?* — Caro-Kann or Pirc.\n- *Love positional play?* — French or Caro-Kann.\n\n> Pick one defense and learn it deeply. Five strong systems beats fifty shallow ones."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
-      "prompt": "Meet 1.e4 with the classical reply.",
+      "prompt": "Meet 1.e4 with the classical reply — play **{{e5}}** and stake your own claim in the center.",
       "targetSan": [
         "e5"
       ],
-      "hint": "1...e5 mirrors White's claim on the center."
+      "hint": "1...e5 is the time-honored answer. It mirrors White and opens the same diagonals for your bishop and queen."
     }
   ]
 }

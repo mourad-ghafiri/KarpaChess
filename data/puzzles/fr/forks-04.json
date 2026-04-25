@@ -4,5 +4,8 @@
   "solution": [
     "Nxd5"
   ],
-  "hint": "Le cavalier saute droit sur la tour — tactique simple."
+  "title": "Tour Gratuite en d5",
+  "setup": "La tour noire est seule en d5 — aucun défenseur en vue.",
+  "hint": "Le cavalier atteint d5 en un saut. Quelque chose défend-il la tour ?",
+  "explanation": "## L'Idée\n\nC'est une capture de **pièce détachée** — la tactique la plus simple. Le cavalier en c3 peut bondir en d5 (colonne +1, rangée +2 — un L d'école) et engloutir la tour. La seule pièce noire restante est le roi en e8, à trois cases de d5, qui ne peut la défendre.\n\nAprès {{Nxd5}}, les Blancs gagnent une tour entière pour rien.\n\n## Pourquoi ça Marche\n\n- La tour est **sans défense** — vérifiez toujours si une pièce cible a un gardien avant de la croire libre.\n- Le cavalier en c3 atteint d5 en un coup via le L (c3 → d5).\n- Le roi blanc en e1 n'est pas dans le passage et n'est en aucun danger.\n\n## Schéma à Mémoriser\n\n> Avant chaque coup, scrutez l'échiquier à la recherche de **pièces détachées** — des pièces ennemies sans défenseur. Ce sont des cadeaux à ramasser."
 }

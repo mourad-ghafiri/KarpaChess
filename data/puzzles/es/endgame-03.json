@@ -4,5 +4,8 @@
   "solution": [
     "Kd4"
   ],
-  "hint": "Centraliza antes de empujar."
+  "title": "El rey primero, el peón después",
+  "setup": "Un final simple de rey y peón — tu peón está en **e4**, tu rey justo detrás, y el rey enemigo lejos en e8.",
+  "hint": "Empuja al **rey**, no al peón. El rey tiene que ir delante; el peón solo sigue cuando el camino es seguro.",
+  "explanation": "## Principio clave: el rey es el motor\n\nEn los finales de rey y peón, el bando con el peón de más gana **escoltando** al peón con el rey. Si el peón va solo, el rey defensor lo alcanza y lo bloquea. Tu rey debe llegar a la **6ª fila delante del peón** antes de que el peón se lance.\n\n## El plan\n\n1. **{{Kd4}}** — Las blancas centralizan, en ruta hacia d5 o e5. Ir a f4 también está bien; el principio es caminar hacia la casilla de coronación del peón.\n2. Juegue lo que juegue las negras (...Kd7 o ...Ke7), las blancas siguen con **Kd5** y luego **Kd6 / Ke5 / Kf6** para ganar el control de las casillas alrededor del peón.\n3. Una vez que el rey alcance la 6ª fila por delante del peón, empujas. El peón corona por la fuerza.\n\n> Memoriza esta regla: **rey en la 6ª, peón en la 5ª — ganas**.\n\n## Qué pasa si empujas el peón primero\n\nSi las blancas juegan 1.e5? de inmediato, las negras responden 1...Ke7 y tras 2.Kd4 Ke6 el rey negro bloquea el peón por delante. Las blancas pueden sondear pero nunca rompen, y la partida es tablas. El peón no puede pelear solo — necesita la escolta del rey."
 }

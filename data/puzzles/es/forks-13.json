@@ -4,5 +4,8 @@
   "solution": [
     "Nxb5"
   ],
-  "hint": "El caballo atrapa la dama."
+  "title": "El caballo arranca la dama",
+  "setup": "La dama negra ha aparcado a un salto de caballo del caballo blanco, y no hay nada con que recapturar.",
+  "hint": "Desde {{d4}} el caballo tiene ocho casillas para elegir — una de ellas termina la partida.",
+  "explanation": "## La idea\n\nEl caballo en d4 alcanza **b5** con un salto perfecto en L (-2 columnas, +1 fila). La dama está sola allí:\n\n- {{Nxb5}} — el caballo se traga la dama.\n- Cambio material: caballo (3) por dama (9) = **+6**, decisivo.\n\n### Cómo detectarlo\n\n1. Después de que el rival mueva la dama, escanea las ocho casillas de caballo alrededor de la nueva posición de la dama.\n2. Si uno de *tus* caballos está a un salto de la dama, puede haber táctica.\n3. Verifica que la dama no tenga defensor en esa casilla.\n\nAquí el rey en e8 está lejos y no hay otras piezas negras.\n\n> El caballo es la única pieza que puede atacar a una dama *sin* recibir contragolpe. Esa asimetría es su superpoder."
 }

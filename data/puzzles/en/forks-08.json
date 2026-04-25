@@ -1,8 +1,11 @@
 {
   "id": "forks-08",
-  "fen": "3k4/8/8/8/4Q3/8/8/4K3 w - - 0 1",
+  "fen": "r3k3/8/8/1N6/8/8/8/4K3 w - - 0 1",
   "solution": [
-    "Qe8+"
+    "Nc7+"
   ],
-  "hint": "Check — king must leave the d-file."
+  "title": "Family Fork",
+  "setup": "Black's king sits on e8 with a rook back home on a8 — the classic knight-fork geometry.",
+  "hint": "There is one knight square that attacks **both** the king and the rook at the same time.",
+  "explanation": "## The Idea\n\nThe knight is the only piece that can hit a king and a corner rook at once on the same rank. From b5, the magic square is:\n\n- {{Nc7+}} — checks the king on e8 *and* attacks the rook on a8.\n\n### Why Black loses material\n\n1. The check forces a king move — Black cannot ignore it.\n2. The king can't capture the knight (e8 to c7 is two squares — kings move one).\n3. Knight checks can never be blocked.\n4. After the king runs, {{Nxa8}} grabs the rook for free.\n\nThis is the **family fork** — every beginner should learn the C7-square pattern. Look for it any time the enemy king is on e8 or e1 with a rook in the corner.\n\n> The knight loves the c7 / c2 / f7 / f2 squares — they're called *outposts of doom* for a reason."
 }

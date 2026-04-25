@@ -1,38 +1,38 @@
 {
   "id": "back-rank-mate",
-  "title": "Mat du couloir",
+  "title": "Le mat du couloir",
   "summary": "Exploiter le roi piégé derrière ses pions",
   "difficulty": "beginner",
   "steps": [
     {
       "type": "teach",
       "fen": "6k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
-      "title": "Le motif classique",
-      "text": "Un roi roqué est généralement en sécurité — sauf si ses cases d'évasion sont bloquées par ses propres pions. Une tour ou une dame sur la 8e rangée devient inarrêtable."
+      "title": "Le schéma classique",
+      "text": "Après le roque, le roi se tient derrière un mur de pions. Ce mur est en général une protection — mais si le roi n'a aucune case de fuite sur la dernière rangée, ce même mur devient une **prison**.\n\n## Le déclencheur visuel\n\nCherchez ces trois choses sur la dernière rangée adverse :\n\n- Le **roi** se trouve sur une case de coin (g8 ou h8 pour les Noirs).\n- Les **pions** devant lui sont encore sur leurs cases d'origine (f7, g7, h7).\n- La 8e rangée est par ailleurs **vide** — aucune pièce ne barre la route à une tour ou une dame qui s'infiltre.\n\nQuand ces trois éléments s'alignent, un seul coup sur la 8e rangée peut être mat.\n\n## La géométrie\n\nLe mat du couloir est simplement un **échec de tour ou de dame** sur une rangée où le roi adverse n'a pas de case de fuite. Le roi ne peut pas prendre (l'attaquant est défendu ou trop loin), ne peut pas intercepter (votre pièce est juste à côté de lui), et ne peut pas bouger (ses propres pions le bloquent).\n\n## Comment le trouver\n\n1. Comptez les cases d'évasion du roi adverse sur la **dernière rangée** et la **2e rangée** (depuis son point de vue).\n2. S'il y en a zéro ou une, cherchez un moyen d'attaquer la dernière rangée avec une pièce lourde.\n3. Comptez les défenseurs — combien de pièces ennemies gardent la dernière rangée ?\n4. Soit vous éliminez chaque défenseur, soit vous les surnombre en attaque.\n\nIci, la tour glisse en {{Ra8#}} — échec et mat, car le mur de pions f7/g7/h7 est devenu le cercueil des Noirs.\n\n> Les pions qui protègent le roi sont les mêmes qui le piègent."
     },
     {
       "type": "play",
       "fen": "6k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
-      "prompt": "Donnez le mat du couloir.",
+      "prompt": "Donnez l'échec et mat sur la dernière rangée avec **{{Ra8#}}**.",
       "targetSan": [
         "Ra8#"
       ],
-      "hint": "Le mur de pions est aussi le mur de la prison."
+      "hint": "Où le roi peut-il fuir si vous donnez échec sur la dernière rangée ? Comptez d'abord ses cases d'évasion."
     },
     {
       "type": "teach",
       "fen": "3r2k1/5ppp/8/8/8/8/5PPP/3R2K1 w - - 0 1",
       "title": "Échange et mat",
-      "text": "Quand les deux camps ont une faiblesse sur la dernière rangée, celui qui frappe en premier gagne. Échangez le défenseur pour dégager la voie."
+      "text": "Souvent, les deux camps ont une faiblesse sur la dernière rangée. La question devient alors *qui frappe en premier* — et l'astuce consiste à **éliminer le défenseur** avant de donner mat.\n\n## Le motif à reconnaître\n\n- Les deux rois sont coincés sur leur dernière rangée, le mur de pions intact.\n- Chaque camp a une seule tour (ou dame) défendant sa dernière rangée.\n- Un camp a le trait.\n\n## La procédure\n\n1. Identifiez le *défenseur* de la dernière rangée adverse (presque toujours une seule tour ou dame).\n2. Cherchez à **échanger** ce défenseur, à le **détourner** ou à le **capturer**.\n3. Après l'échange, entrez avec le mat.\n\nIci, les deux tours se font face sur la colonne d ouverte. La tour noire est *l'unique* défense de d8. Échangez-la avec {{Rxd8#}} — la reprise est impossible parce que le roi n'a aucune case de fuite. L'échange *est* le mat.\n\n> Quand deux prisonniers se font dos à dos, celui qui tire en premier sort libre."
     },
     {
       "type": "play",
       "fen": "3r2k1/5ppp/8/8/8/8/5PPP/3R2K1 w - - 0 1",
-      "prompt": "Échangez les tours pour mater.",
+      "prompt": "Échangez les tours **vers** le mat avec **{{Rxd8#}}**. L'échange est la victoire.",
       "targetSan": [
         "Rxd8#"
       ],
-      "hint": "Après l'échange, les Noirs n'ont plus de défenseur."
+      "hint": "La tour noire est l'unique défenseur de la dernière rangée. Que se passe-t-il si vous la prenez ?"
     }
   ]
 }

@@ -4,5 +4,8 @@
   "solution": [
     "g3"
   ],
-  "hint": "Menteri terlalu jauh maju — hukum dia."
+  "title": "Hukum Menteri yang Berkeliaran",
+  "setup": "Hitam telah mengayun dengan **Qh4** dini, berharap untuk ancaman murahan. Pion Putih akan membuatnya membayar.",
+  "hint": "Saat menteri lawan menyembul terlalu dini, tendang dia dengan pion sederhana dan dapatkan tempo gratis.",
+  "explanation": "## Idenya\n\nIni adalah motif **menjebak / mendapatkan tempo**. {{Qh4}} prematur Hitam menempatkan menteri di petak yang terlihat aktif, tetapi tanpa dukungan — dan tepat di samping pion yang akan mengubahnya menjadi buronan.\n\nPutih memainkan {{g3}}, menyerang menteri dengan pion.\n\n## Mengapa Hitam Menderita\n\n- Menteri punya sangat sedikit petak mundur yang baik. {{Qh3}} atau {{Qh5}} tetap aktif tetapi Putih mendapatkan langkah pengembangan gratis.\n- {{Qxe4}}? Tidak mungkin — tidak ada apa-apa untuk diambil di sana.\n- {{Qxh2}} berhadapan dengan {{Rxh2}}, kehilangan menteri untuk benteng.\n\nSetiap langkah yang menteri buang adalah tempo yang Putih gunakan untuk mengembangkan kuda, gajah, dan rokade.\n\n## Pola untuk Diingat\n\n> Jangan keluarkan menteri terlalu dini — dia adalah buah paling berharga, jadi setiap penyerang adalah tempo gratis bagi lawan.\n\nSaat *mereka* melanggar aturan ini, **kejar menteri dengan buah murah**: pion dan buah ringan mendapatkan waktu sementara menteri lari pulang."
 }

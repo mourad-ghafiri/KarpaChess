@@ -4,5 +4,8 @@
   "solution": [
     "Bxc6+"
   ],
-  "hint": "Cambia y daña la estructura de las negras."
+  "title": "Daña la estructura negra",
+  "setup": "El alfil blanco en **b5** clava el caballo en c6 contra — espera, contra nada en particular. Es hora de cambiar.",
+  "hint": "El cambio español: alfil por caballo, doblando los peones c de las negras y creando debilidades a largo plazo.",
+  "explanation": "## La idea\n\nEste es un **cambio español (Ruy López)** de manual. El alfil blanco en b5 se cambia por el caballo negro en c6, con dos beneficios claros.\n\nLas blancas juegan {{Bxc6+}}.\n\n## Con qué recapturan las negras\n\nLas negras deben atender el jaque (el alfil en c6 ataca al rey en e8 por la diagonal a4-e8). Tres respuestas son posibles:\n\n- {{bxc6}} — el peón b captura. **La más común.** Esto **dobla los peones c de las negras** (c7 y c6), creando una debilidad estructural a largo plazo.\n- {{dxc6}} — el peón d captura. Esto abre la columna d pero también dobla los peones c, simplemente menos torpemente.\n- ¿Bloquear? Nada llega limpiamente a d7 (la dama y el alfil están bloqueados).\n\n## Por qué este cambio es estratégico\n\nLos peones doblados son **estructuralmente débiles**:\n\n- No pueden defenderse entre sí (uno está delante del otro).\n- Controlan menos casillas que dos peones adyacentes.\n- Crean **columnas semiabiertas** para las torres del rival.\n\nEl material está igualado (alfil por caballo = 3 por 3), pero las blancas han ganado la batalla *posicional*.\n\n## Patrón a memorizar\n\n> Los cambios que **dañan la estructura de peones del rival** valen tanto como los cambios que ganan material — a veces más.\n\nEsta es el alma del ajedrez estratégico: pequeñas ventajas permanentes acumuladas a lo largo de muchas jugadas."
 }

@@ -4,5 +4,8 @@
   "solution": [
     "Nxd5"
   ],
-  "hint": "Simple prise de la dame par le cavalier."
+  "title": "Le Cavalier Mange la Dame",
+  "setup": "La dame noire est sur une case que le cavalier blanc peut atteindre — et aucune pièce noire ne la défend.",
+  "hint": "Comptez : qui attaque {{d5}} ? Qui la défend ?",
+  "explanation": "## L'Idée\n\nUne dame sur une case attaquée par un cavalier sans défenseur est un **cadeau**. La plus simple des tactiques :\n\n- {{Nxd5}} — le cavalier de e3 saute en d5 (une de ses huit cases en L) et capture la dame.\n- Échange matériel : cavalier (3) contre dame (9) = **+6**, gain décisif.\n\n### Comment la repérer en partie\n\n1. Après que l'adversaire bouge sa dame, demandez-vous : *quelle de mes pièces mineures pourrait sauter ou glisser sur cette case ?*\n2. Comptez les défenseurs : si zéro, prenez.\n3. Recomptez : parfois un défenseur caché (un fou ou une tour de longue portée) fait perdre du matériel.\n\nIci, la seule pièce noire à part le roi est la dame elle-même, et le roi en e8 est trop loin pour défendre d5.\n\n> Les débutants laissent leur dame en prise bien plus souvent qu'ils ne l'admettent. Demandez-vous toujours : *ma dame est-elle sur une case de cavalier ?*"
 }

@@ -1,29 +1,29 @@
 {
   "id": "kings-pawn-family",
   "title": "1.e4 — Le pion roi",
-  "summary": "Vue d'ensemble de toutes les réponses majeures à 1.e4",
+  "summary": "Vue d'ensemble de toutes les grandes répliques à 1.e4",
   "difficulty": "beginner",
   "steps": [
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
       "title": "L'ouverture romantique",
-      "text": "1.e4 ouvre des lignes pour la dame et le fou et se bat pour le centre avec un pion. C'est tranchant, tactique, et le premier coup le plus populaire de l'histoire des échecs."
+      "text": "**{{e4}}** est le premier coup le plus populaire de l'histoire des échecs. Bobby Fischer le qualifiait de *meilleur à l'épreuve* — et il avait raison : ce coup accomplit cinq choses à la fois.\n\n## Ce que 1.e4 réalise\n\n- **Réclame une case centrale** — e4 est l'une des quatre cases-clés.\n- **Libère la dame** sur la diagonale d1-h5.\n- **Libère le fou f1** sur la diagonale a6-f1.\n- **Ne menace rien encore** — mais crée des possibilités instantanées.\n- **Donne le ton** — les parties ouvertes et tactiques sont bien plus fréquentes après 1.e4 qu'après 1.d4.\n\n## Ce que les Blancs veulent en général\n\n- Sortir vite les pièces (cavaliers en f3 et c3).\n- Mettre la pression sur des cases-clés comme **f7** et **e5**.\n- Petit roque, puis utiliser la colonne e pour l'activité des tours.\n\n## Pourquoi les débutants devraient l'essayer\n\nLes parties après 1.e4 sont généralement ouvertes, avec des tactiques plus claires et des décisions plus rapides. S'entraîner sur 1.e4 affûte votre œil tactique d'une manière que les systèmes lents en d4 ne permettent pas toujours.\n\n> 1.e4, c'est le grand soleil du matin échiquéen — lignes ouvertes, pièces vivantes, vrais combats."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
-      "title": "Principales réponses des Noirs",
-      "text": "Les Noirs ont plusieurs réponses sérieuses : 1...e5 (classique, symétrique), 1...c5 (sicilienne, asymétrique), 1...e6 (française), 1...c6 (Caro-Kann), 1...d5 (scandinave). Chacune mène à un jeu distinct."
+      "title": "Les répliques noires",
+      "text": "Les Noirs disposent d'un menu riche face à 1.e4 — chaque option dessine un univers échiquéen différent.\n\n## Le grand six\n\n- **1...e5** — *Parties ouvertes*. Les Noirs reflètent la prétention blanche. Mène à l'italienne, à la Ruy Lopez, à l'écossaise, au gambit du roi, à la Petrov, et plus encore.\n- **1...c5** — *Défense sicilienne*. La plus tranchante, choix des combattants. Asymétrique, dynamique, riche en théorie.\n- **1...e6** — *Défense française*. Solide et stratégique. Les Noirs bâtissent une chaîne de pions après **...d5**.\n- **1...c6** — *Défense Caro-Kann*. Calme et pare-balles. Prépare ...d5 avec le soutien du pion c.\n- **1...d5** — *Défense scandinave*. Directe : on échange tout de suite les pions. Facile à apprendre.\n- **1...Nf6** — *Défense Alekhine*. Provocation hypermoderne. On invite les pions blancs à avancer pour mieux les attaquer ensuite.\n\n## Moins courantes mais légitimes\n\n- **1...d6** — *Pirc / Moderne* — laisser les Blancs construire, puis riposter.\n- **1...g6** — *Défense moderne* — fianchetto d'abord, décision plus tard.\n- **1...Nc6** — *Défense Nimzowitsch* — atypique mais jouable.\n\n## Comment choisir\n\n- *Tactique, envie d'attaquer ?* — Partie ouverte par 1...e5 ou Najdorf.\n- *Vous détestez mémoriser ?* — Caro-Kann ou Pirc.\n- *Vous aimez le jeu positionnel ?* — Française ou Caro-Kann.\n\n> Choisissez une défense et apprenez-la en profondeur. Cinq systèmes solides valent mieux que cinquante survolés."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
-      "prompt": "Répondez à 1.e4 par la réponse classique.",
+      "prompt": "Répondez à 1.e4 par la réplique classique — jouez **{{e5}}** et plantez votre propre étendard au centre.",
       "targetSan": [
         "e5"
       ],
-      "hint": "1...e5 reflète la prétention des Blancs sur le centre."
+      "hint": "1...e5 est la réponse séculaire. Elle copie les Blancs et ouvre les mêmes diagonales pour votre fou et votre dame."
     }
   ]
 }

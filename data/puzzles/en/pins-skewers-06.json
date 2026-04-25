@@ -4,5 +4,8 @@
   "solution": [
     "Rxd2+"
   ],
-  "hint": "Skewer — win the queen."
+  "title": "Queen Glued to Her King",
+  "setup": "The black queen on **d2** has strayed in front of the white rook, with her king behind her on d8.",
+  "hint": "When an enemy piece blocks a line to its own king, that piece is pinned — pile in.",
+  "explanation": "## The Idea\n\nDespite the hint elsewhere mentioning \"skewer,\" this is technically an **absolute pin**: the black queen on d2 stands between the white rook on d1 and the black king on d8. She cannot move without exposing her king.\n\nWhite plays {{Rxd2+}}, taking the queen with check.\n\n- {{Kxd2}}? The king is on d8, six squares away — impossible.\n- Black must move the king: {{Kc7}}, {{Kc8}}, {{Ke7}}, {{Ke8}}, or {{Kd7}}. Any flight square works since the rook is unprotected and far away.\n- The queen is gone for nothing in return.\n\n## Pattern to Memorize\n\n> Pin geometry: **attacker — target — defender (king)** on the same line.\n> Skewer geometry: **attacker — king — target** on the same line.\n\nHere the king is *behind* the queen, so it is a pin. Either way, the result is the same: free material."
 }

@@ -4,5 +4,8 @@
   "solution": [
     "Nxd3"
   ],
-  "hint": "El caballo captura la torre."
+  "title": "La torre gratis",
+  "setup": "La torre negra ha vagado a una casilla que no defiende nadie — y un caballo está a un salto.",
+  "hint": "Cuenta los defensores de {{d3}} — no hay ninguno. El caballo hace su trabajo.",
+  "explanation": "## La idea\n\nAntes de buscar combinaciones rebuscadas, comprueba si algo está simplemente **colgando**. Aquí la torre en d3 no tiene defensor negro, y un caballo blanco en c1 la ataca directamente con la L c1 → d3.\n\n- {{Nxd3}} captura la torre con un caballo que tampoco hacía mucho.\n- Valor del cambio: torre (5) por caballo (3) = **+2 de material**.\n\n### La lección\n\n1. Empieza siempre escaneando **piezas colgadas** en ambos bandos.\n2. Compara atacantes y defensores casilla por casilla.\n3. Si tu pieza alcanza una pieza enemiga indefensa, tómala — *salvo* que la recaptura sea un problema mayor.\n\nAquí no hay recaptura: el rey negro en e8 está lejos de d3, y no queda otra pieza negra en el tablero.\n\n> Una torre por un caballo es una de las ganancias materiales más limpias del ajedrez. Nunca dejes las fáciles sobre la mesa."
 }

@@ -4,5 +4,8 @@
   "solution": [
     "Ra1#"
   ],
-  "hint": "Back-rank mate with king support."
+  "title": "Corner Squeeze",
+  "setup": "Black's king is in the **a8** corner; your king on **c7** holds {{b7}}, {{b8}} and {{c8}}.",
+  "hint": "Swing the rook to the **a-file** — the king's corner becomes his coffin.",
+  "explanation": "## The Idea\n\nA classic **K+R vs K corner mate**. The white king is one square diagonally adjacent to the corner — the standard cage — and the rook delivers from the same file.\n\nPlay {{Ra1#}}.\n\nWhy is the king stuck?\n\n- {{a7}} and {{a8}} — both attacked by the rook on a1 (a-file check)\n- {{b7}}, {{b8}} — covered by your king on **c7**\n- The rook on a1 is too far for {{Kxa1}}\n- Nothing on the a-file can interpose\n\n> **Takeaway:** Once your king reaches the *opposition diagonal* (here, c7 vs a8), the rook can deliver mate from any safe square on the file or rank where the trapped king sits."
 }

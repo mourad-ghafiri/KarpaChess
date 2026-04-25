@@ -4,5 +4,8 @@
   "solution": [
     "Rb8#"
   ],
-  "hint": "Clásico mate de la última fila. Nada bloquea la octava fila."
+  "title": "Martillo de larga distancia",
+  "setup": "Tu torre en **b2** mira hacia arriba por una columna vacía con la última fila abierta de par en par al otro extremo.",
+  "hint": "Sube a la octava fila — el escudo de peones {{f7}}-{{g7}}-{{h7}} sella el destino del rey.",
+  "explanation": "## La idea\n\nUn **mate de pasillo** puro — la torre recorre toda la columna b y convierte la octava fila en una zona mortal.\n\nJuega {{Rb8#}}.\n\n¿Por qué el rey está atrapado?\n\n- {{f8}}, {{h8}} y todas las demás casillas de la octava fila — controladas por la torre en b8\n- {{f7}}, {{g7}}, {{h7}} — todas bloqueadas por los propios peones negros\n- El rey no puede capturar (b8 está lejos) y no hay nada para interponerse\n\n> **Conclusión:** Una torre lejos de la acción puede aún dar mate en una si la última fila está vacía. Escanea siempre las *diagonales largas* (para alfiles/damas) y las *columnas largas* (para torres/damas) antes de mover."
 }

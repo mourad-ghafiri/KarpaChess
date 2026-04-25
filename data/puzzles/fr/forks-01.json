@@ -6,5 +6,8 @@
     "Kb6",
     "Nxd5"
   ],
-  "hint": "Une fourchette royale attaque à la fois le roi et la dame."
+  "title": "La fourchette royale",
+  "setup": "Le roi noir en c6 et la dame en d5 ne sont qu'à un saut de cavalier l'un de l'autre — la distance classique de la fourchette familiale.",
+  "hint": "Trouvez la case de cavalier qui frappe **à la fois** le roi et la dame en même temps. Le saut en {{b4}} touche c6 et d5.",
+  "explanation": "## L'idée\n\nVoici la **fourchette royale** — un échec du cavalier qui attaque simultanément la dame. Le roi et la dame noirs sont exactement à un saut de cavalier l'un de l'autre : depuis {{b4}}, le cavalier atteint c6 (le roi) et d5 (la dame) du même coup.\n\nAprès {{Nb4+}}, les Noirs n'ont aucune bonne réponse :\n\n- **Capturer ?** Le roi en c6 ne peut atteindre b4 (deux cases plus loin), et la dame en d5 ne peut pas non plus atteindre b4 — d5 à b4 est un schéma de cavalier, pas un coup de dame.\n- **Bloquer ?** Un échec de cavalier ne peut jamais être bloqué.\n- **Fuir ?** Toute case légale du roi (Kb5, Kb6, Kc7, Kd6, Kd7) abandonne la dame.\n\nDonc les Noirs jouent {{Kb6}} (ou tout coup de roi) et les Blancs ramassent la dame avec {{Nxd5}}.\n\n## Schéma à mémoriser\n\n> Chaque fois que le roi et la dame adverses sont exactement à **deux cases sur une diagonale**, cherchez la case de cavalier entre eux — c'est là que vit la fourchette."
 }

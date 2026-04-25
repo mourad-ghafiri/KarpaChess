@@ -4,5 +4,8 @@
   "solution": [
     "Kd4"
   ],
-  "hint": "Centralize before pushing."
+  "title": "King First, Pawn Later",
+  "setup": "A simple king-and-pawn ending — your pawn is on **e4**, your king right behind it, and the enemy king far away on e8.",
+  "hint": "Push the **king**, not the pawn. The king has to lead; the pawn only follows when the path is safe.",
+  "explanation": "## Key Principle: The King Is the Engine\n\nIn king-and-pawn endings the side with the extra pawn wins by **escorting** the pawn with the king. If the pawn goes alone, the defending king catches up and blockades it. Your king must arrive on the **6th rank in front of the pawn** before the pawn races forward.\n\n## The Plan\n\n1. **{{Kd4}}** — White centralizes, heading for d5 or e5. Going to f4 is also fine; the principle is to walk toward the pawn's promotion square.\n2. Whatever Black plays (...Kd7 or ...Ke7), White continues with **Kd5** and then **Kd6 / Ke5 / Kf6** to gain control of the squares around the pawn.\n3. Once the king reaches the 6th rank ahead of the pawn, you push. The pawn then promotes by force.\n\n> Memorize this rule: **king on the 6th, pawn on the 5th — you win**.\n\n## What Goes Wrong If You Push the Pawn First\n\nIf White plays 1.e5? immediately, Black replies 1...Ke7 and after 2.Kd4 Ke6 the black king blockades the pawn from in front. White can probe but never break through, and the game is drawn. The pawn cannot fight on its own — it needs the king's escort."
 }

@@ -4,5 +4,8 @@
   "solution": [
     "Qxh7#"
   ],
-  "hint": "Menteri menangkap dengan dukungan raja — skakmat di sudut."
+  "title": "Ambil Pion, Ambil Raja",
+  "setup": "Menteri Anda menyapu baris ke-7 dan raja Anda di **g6** hanya satu langkah dari aksinya.",
+  "hint": "Tangkap pion {{h7}} — raja Anda menjaga menteri dan Hitam tak punya tempat lari.",
+  "explanation": "## Idenya\n\nSebuah **kiss-of-death di sudut** yang klasik. Menteri menangkap satu-satunya pion yang menjaga raja, lalu mendarat di petak yang dijaga raja Anda sendiri.\n\nMainkan {{Qxh7#}}.\n\nMengapa raja terjebak?\n\n- Menteri di h7 menyerang h8 langsung (skak)\n- {{g8}} — dikuasai menteri di h7 (diagonal)\n- {{Kxh7}} ilegal — raja Anda di **g6** menjaga h7\n- Tidak ada yang bisa menghalangi: menteri bersebelahan dengan raja\n\n> **Pelajaran:** Sudut adalah petak paling berbahaya bagi raja tanpa pelarian. Ketika menteri dan raja Anda bekerja sama dengan jarak dua, setiap petak terdekat adalah kandidat skakmat — terutama setelah pion terakhir penjaga ditangkap."
 }

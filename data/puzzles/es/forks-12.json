@@ -4,5 +4,8 @@
   "solution": [
     "Nc6"
   ],
-  "hint": "El caballo hace horquilla con jaque."
+  "title": "Horquilla silenciosa en la fila larga",
+  "setup": "El rey y la torre negros comparten la última fila con un caballo a un salto.",
+  "hint": "Busca la casilla del caballo que ataque **a la vez** la torre en a8 y las casillas de huida del rey.",
+  "explanation": "## La idea\n\nEl caballo en e5 tiene acceso a la casilla {{c6}} con la L estándar. Una vez en c6:\n\n- El caballo ataca la torre en **a8** por la diagonal de saltos c6 → a7 / a8.\n- El rey en e8 no tiene buena manera de defender a8 desde esa distancia.\n\n### Por qué la torre está condenada\n\n1. La torre solo puede moverse por su fila o columna. Para mantenerse protegida, tendría que mantener cerca a su rey.\n2. El rey en e8 no puede llegar a a8 en una jugada.\n3. Así que la torre debe abandonar la esquina: Ra-cualquier-sitio, y sigue {{Nxa8}} o una captura equivalente.\n\nEsta es una **horquilla silenciosa** — no se da jaque, pero la amenaza (captura en la siguiente jugada) es imparable.\n\n> Las horquillas no siempre son ruidosas. Un ataque silencioso sobre dos piezas indefensas es igual de letal."
 }

@@ -7,14 +7,14 @@
     {
       "type": "teach",
       "fen": "8/8/3k4/3q4/8/8/8/K3RR2 w - - 0 1",
-      "title": "Sin Escape",
-      "text": "Las piezas profundas en territorio enemigo son vulnerables. Si puedes cortar cada casilla de escape, ganas la pieza gratis. Damas, caballos y alfiles son particularmente fáciles de atrapar en el borde."
+      "title": "Sin Lugar a Donde Ir",
+      "text": "Una pieza adentrada en territorio enemigo es valiente pero vulnerable. **Atrápala** — controla cada casilla a la que pueda huir — y la ganarás sin gastar material.\n\n## Qué hace que una pieza sea atrapable\n\n- Está **lejos de casa**, sin apoyo amigo.\n- Su **movilidad** es limitada (un caballo en el borde, un alfil bloqueado por peones).\n- Es la pieza más valiosa en su rincón del tablero (a menudo una dama).\n- El **atacante** tiene piezas o peones cercanos que pueden cubrir sus retiradas.\n\n## La geometría\n\nLista cada casilla a la que la pieza atrapada puede moverse. Si puedes atacar una de ellas o bloquear otra con cada una de tus jugadas — sin perder tiempo — la pieza muere casilla a casilla.\n\n## Cómo detectarlo\n\n1. Busca una pieza enemiga en **el lado equivocado del tablero**.\n2. Cuenta las casillas a las que puede ir.\n3. Por cada casilla de escape, encuentra una pieza o peón tuyo que la controle o bloquee.\n4. Acércate con una jugada de tempo (a menudo un jaque o amenaza) para que la trampa se selle antes de que la pieza huya.\n\nAquí la dama negra en d5 está delante de su rey con torres blancas dobladas en las columnas e y f. Las blancas pueden hacer jugadas que sistemáticamente quitan cada casilla a la que la dama puede llegar.\n\n> Una dama lejos de casa no es más que un prisionero caro."
     },
     {
       "type": "teach",
       "fen": "8/8/8/8/6Q1/8/r7/K1R5 w - - 0 1",
-      "title": "Caballos en el Borde",
-      "text": "Caballo en el borde, sombrío — y a menudo condenado. Empuja peones hacia él, bloquea sus casillas con tus piezas, y el caballo no tendrá a dónde ir. \"Caballo al borde, porvenir pobre\" — Tarrasch."
+      "title": "Caballos al Borde y Torres Atrapadas",
+      "text": "Dos de los motivos de atrape más comunes que verás en partidas reales:\n\n## El caballo en el borde\n\nUn caballo en la **columna a** o **columna h** controla solo cuatro casillas en lugar de las ocho habituales. Empújale peones. Bloquea sus retiradas. Trae una pieza junto a él. Fin del juego.\n\n- **a4 + b5** contra un caballo negro en a6 → el caballo no tiene buena casilla.\n- Un alfil en c8 encerrado por sus propios peones, luego atacado por un caballo en a7.\n\n> *\"Un caballo en el borde es triste.\"* — Tarrasch\n\n## La torre atrapada\n\nLas torres metidas hondo en territorio enemigo persiguiendo un peón (a2, h2) suelen quedar atrapadas.\n\n- La torre captura un peón en a2.\n- El rey rival camina a b1.\n- Una pieza (a menudo un alfil o caballo) cubre la casilla de escape.\n- La torre desaparece.\n\n## Cómo encontrar la trampa\n\n1. Identifica la pieza enemiga **lejos de casa**.\n2. Cuenta sus casillas de escape.\n3. Usa **jugadas de tempo** (jaques, amenazas) para llevar atacantes sin dar a la pieza la oportunidad de huir.\n\n> Las piezas aventureras necesitan un dueño aventurero — y un rival distraído."
     }
   ]
 }

@@ -4,18 +4,26 @@
   "summary": "Amenaza dos cosas a la vez",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "4k3/8/8/3q4/8/4N3/8/4K3 w - - 0 1",
       "title": "Dos Amenazas, Una Jugada",
-      "text": "Un doble ataque es cualquier jugada que crea dos amenazas simultáneas. El doble (horquilla) es una forma — la misma pieza ataca dos objetivos. Pero una jugada también puede crear dos tipos DIFERENTES de amenaza: una amenaza de mate más una amenaza material, por ejemplo." },
-    { "type": "play",
+      "text": "Un **doble ataque** es el nombre paraguas para cualquier jugada que crea dos amenazas a la vez. La horquilla es un caso especial — la misma pieza golpea dos objetivos — pero un doble ataque puede ser más sutil que eso.\n\n## Los sabores\n\n- **Doble ataque con la misma pieza** — una horquilla. Un caballo, dos objetivos.\n- **Doble ataque con piezas distintas** — tu jugada ataca un objetivo, mientras *otra* de tus piezas ya atacaba algo más y ahora esa amenaza se vuelve crítica.\n- **Amenaza + captura** — capturas una pieza y a la vez creas una amenaza de mate que el rival debe atender.\n- **Amenaza de mate + amenaza material** — quizá la más común en partidas de maestro. El rival tiene que defender el mate; el material cae.\n\n## La geometría\n\nNo hay una forma única. La idea unificadora es la *aritmética forzada*: el rival tiene **una jugada** para responder a **dos problemas**.\n\n## Cómo encontrarla\n\n1. Cuenta las debilidades enemigas — piezas indefensas, casillas sueltas, ideas de mate.\n2. Lista jugadas que toquen una debilidad (capturas, jaques, amenazas).\n3. Por cada una, pregúntate: *¿también crea una segunda amenaza?*\n4. La jugada ganadora es la que obliga al rival a elegir qué casa salvar mientras la otra arde.\n\nAquí la dama en d5 está indefensa. {{Nxd5}} simplemente la gana — un doble ataque limpio: el caballo toma una pieza *y* las negras no tienen contra-amenaza útil con el rey en el centro.\n\n> Cada jugada que haces tiene un *propósito*. Las jugadas más fuertes tienen **dos**."
+    },
+    {
+      "type": "play",
       "fen": "4k3/8/8/3q4/8/4N3/8/4K3 w - - 0 1",
-      "prompt": "La dama está indefensa — captúrala.",
-      "targetSan": ["Nxd5"],
-      "hint": "El caballo salta a d5 con captura." },
-    { "type": "teach",
+      "prompt": "Engulle la dama indefensa con **{{Nxd5}}** — un doble ataque de manual.",
+      "targetSan": [
+        "Nxd5"
+      ],
+      "hint": "Las piezas sueltas se caen. Encuentra la casilla de caballo que toca la dama."
+    },
+    {
+      "type": "teach",
       "fen": "4k3/8/8/3N4/8/8/8/4K3 b - - 0 1",
-      "title": "El Principio",
-      "text": "Toda buena jugada táctica amenaza algo concreto. Dos amenazas de una jugada suelen ser decisivas porque el rival solo puede responder a una. Entrena tu ojo para contar amenazas — si ves dos, algo bueno está ocurriendo." }
+      "title": "Entrena el Ojo",
+      "text": "Todo jugador táctico fuerte recorre la posición contando amenazas — tanto las suyas como las del rival.\n\n## Lista mental de 30 segundos\n\n1. **Piezas sueltas:** ¿qué piezas enemigas están indefensas?\n2. **Piezas alineadas:** ¿hay dos piezas enemigas en la misma fila, columna o diagonal?\n3. **Exposición del rey:** ¿está el rey en una casilla atacable con escapes limitados?\n4. **Defensores sobrecargados:** ¿hay una pieza guardando dos cosas?\n\nSi alguna respuesta es *sí*, busca la jugada que haga estallar **dos** de esos problemas a la vez.\n\n## Ejercicio útil\n\n- Coloca una posición de un libro de tácticas.\n- Antes de resolver, lista cada pieza enemiga indefensa y cada jaque.\n- La solución casi siempre está en la *intersección* de dos amenazas.\n\n> Las amenazas únicas pierden ante una sola defensa. Las amenazas dobles ganan partidas."
+    }
   ]
 }

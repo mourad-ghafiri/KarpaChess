@@ -8,13 +8,13 @@
       "type": "teach",
       "fen": "3rk3/8/8/8/8/8/3R4/3RK3 w - - 0 1",
       "title": "Voir à travers",
-      "text": "Une attaque aux rayons X est quand une pièce attaque À TRAVERS une pièce intermédiaire — souvent la propre pièce de l'ennemi. Si la pièce intermédiaire bouge, votre attaque atterrit derrière elle. Contrairement à un clouage, l'attaque aux rayons X gagne ou gagne un tempo dans tous les cas."
+      "text": "Une **attaque aux rayons X** est quand l'une de vos pièces à longue portée menace ou défend *à travers* une pièce qui s'interpose. La pièce devant bloque l'attaque immédiate, mais si elle bouge — ou est capturée — le rayon X traverse.\n\n## La géométrie\n\nQuatre éléments sur une même ligne :\n\n1. Votre **tour**, **fou** ou **dame** à un bout.\n2. Votre **propre pièce** (ou parfois celle de l'ennemi) sur le passage.\n3. La ligne continue *au-delà* du bloqueur.\n4. Une cible — généralement un roi, une dame ou un défenseur critique — se trouve à l'autre bout.\n\nContrairement à un clouage (qui fige une pièce) ou à une enfilade (qui en chasse une), le rayon X *voit* simplement *au-delà* de ce qui se trouve au milieu.\n\n## Deux usages du rayon X\n\n- **Rayon X offensif** — votre dame voit le roi ennemi à travers leur propre pièce. Échangez le bloqueur et l'attaque arrive.\n- **Rayon X défensif** — votre tour voit l'une de vos propres pièces, la défendant à travers un autre défenseur. Après les échanges, le rayon X rétablit la garde.\n\n## Comment le repérer\n\n1. Tracez chaque pièce à longue portée que vous avez, y compris au-delà des bloqueurs.\n2. Cherchez un **roi ou une dame** à l'autre bout de l'une de ces lignes.\n3. Planifiez un échange qui élimine le bloqueur.\n4. Une fois la fumée dissipée, le rayon X est soudain une attaque ouverte.\n\nDans cette position, les tours blanches en d1 et d2 s'empilent avec la tour du roi ennemi en d8 sur la colonne d. Après une série d'échanges, la tour *arrière* en d1 voit à travers et se pose sur le roi.\n\n> Un clouage fige. Une enfilade chasse. Un rayon X *attend* — et gagne quand même."
     },
     {
       "type": "teach",
       "fen": "3rk3/8/8/8/8/8/3R4/3RK3 w - - 0 1",
-      "title": "Exemple",
-      "text": "Ici la tour blanche en d1 vise le roi ennemi à travers les tours d2 et d8 (rayon X). Après les échanges en d8, le roi est cloué ou la dernière rangée s'effondre."
+      "title": "Calculer à travers les échanges",
+      "text": "Les rayons X décident souvent qui sort gagnant d'une chaîne de captures sur la même case.\n\n## La procédure\n\n1. Identifiez la colonne, la rangée ou la diagonale où les pièces sont empilées.\n2. Comptez attaquants et défenseurs.\n3. Imaginez les échanges se produisant dans l'ordre, *du moins cher au plus cher*.\n4. Celui qui a le **dernier attaquant** sur la ligne gagne la case.\n\n## Dans cette position\n\nLes Blancs ont *deux* tours sur la colonne d. Les Noirs en ont une. Après une séquence comme {{Rxd8+}} {{Rxd8}} {{Rxd8+}}, les Blancs posent une tour sur la huitième rangée mettant le roi en échec — le rayon X est la raison qui le permet.\n\n> La vision aux rayons X n'est que du comptage patient le long d'une seule ligne."
     }
   ]
 }

@@ -8,13 +8,13 @@
       "type": "teach",
       "fen": "4k3/8/8/8/8/8/8/4K3 w - - 0 1",
       "title": "The Blocker",
-      "text": "Interference tactics work when an enemy piece is defending a key square along a line — you interpose your own piece to block that defense. Often decisive in the middlegame."
+      "text": "**Interference** (sometimes called *obstruction*) is the act of plopping a piece *between* an enemy attacker and what it is defending or attacking. The line is broken — and now the defended square or piece is suddenly exposed.\n\n## The visual trigger\n\nLook for an enemy piece — usually a rook, bishop, or queen — defending something important from a distance. Now ask: *can I plant a piece on the line between them?*\n\nIf yes, even sacrificing material may be worth it. The defense vanishes the moment the line is cut.\n\n## The geometry\n\nInterference needs:\n\n1. An **enemy long-range piece** acting as a defender.\n2. A **target square or piece** at the other end of its line.\n3. A square *in between* where you can place a piece — usually with check or threat to make the move forcing.\n\n## How to spot it\n\n1. Find the enemy piece doing critical defensive work.\n2. Trace its defensive line.\n3. Look for an empty square along that line where one of your pieces can land **with a threat**.\n4. After interference, exploit the unguarded target.\n\n> A wall built in the right square is worth a piece."
     },
     {
       "type": "teach",
       "fen": "4k3/8/8/8/8/8/8/4K3 w - - 0 1",
       "title": "Novotny and Plachutta",
-      "text": "Two classical interference patterns: the Novotny (sacrificing on a crossing of two lines, forcing one defender to block the other) and the Plachutta (same idea but with like-moving pieces). Beautiful geometrical tactics."
+      "text": "Two beautiful interference patterns from the world of chess composition deserve a name.\n\n## The Novotny\n\nA piece is **sacrificed** on the intersection of two enemy defensive lines — typically a rook's line and a bishop's line crossing at one square.\n\n- If the rook captures, it stops defending its line.\n- If the bishop captures, it stops defending *its* line.\n- Either way, one defender is gone.\n\n## The Plachutta\n\nThe same idea, but the two defenders are *like-moving* pieces (e.g. two rooks on a rank and file, or two bishops on opposite diagonals). The sacrificed piece lands on the crossing point, and whichever rook or bishop captures **must abandon one of its lines**.\n\n## Why these patterns matter\n\n- They show that material is meaningless next to **lines of force**.\n- They train your eye to see *intersections* — the square where two enemy lines meet is often the brick that holds the wall together.\n- Even if you never compose endgames, the pattern of \"sacrifice on the crossroad\" wins games at every level.\n\n> Beautiful tactics are rarely about pieces. They are about lines that *meet*."
     }
   ]
 }

@@ -4,5 +4,8 @@
   "solution": [
     "g3"
   ],
-  "hint": "La dame s'est trop avancée — punissez-la."
+  "title": "Punir la dame vagabonde",
+  "setup": "Les Noirs ont sorti une **Qh4** prématurée, espérant des menaces faciles. Les pions blancs vont la lui faire payer.",
+  "hint": "Quand la dame adverse pointe son nez tôt, repoussez-la avec un humble pion et gagnez un tempo gratuit.",
+  "explanation": "## L'idée\n\nVoici un motif de **piège / gain de tempo**. Le {{Qh4}} prématuré des Noirs a placé la dame sur une case d'apparence active, mais sans soutien — et juste à côté d'un pion qui s'apprête à la transformer en fugitive.\n\nLes Blancs jouent {{g3}}, attaquant la dame avec un pion.\n\n## Pourquoi Noir souffre\n\n- La dame a très peu de bonnes cases de retraite. {{Qh3}} ou {{Qh5}} la garde active mais Blanc a gagné un coup de développement gratuit.\n- {{Qxe4}} ? Impossible — il n'y a rien à prendre là-bas.\n- {{Qxh2}} se heurte à {{Rxh2}}, perdant la dame contre une tour.\n\nChaque coup que la dame perd est un tempo que Blanc utilise pour développer cavaliers, fous et roquer.\n\n## Schéma à mémoriser\n\n> Ne sortez pas votre dame trop tôt — c'est la pièce la plus précieuse, donc chaque attaquant est un tempo gratuit pour l'adversaire.\n\nQuand *eux* enfreignent cette règle, **chassez la dame avec des pièces bon marché** : pions et pièces mineures gagnent du temps pendant que la dame court à la maison."
 }

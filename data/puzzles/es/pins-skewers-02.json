@@ -4,5 +4,8 @@
   "solution": [
     "Bxh1"
   ],
-  "hint": "La torre está indefensa en la diagonal larga."
+  "title": "Barrido por la diagonal larga",
+  "setup": "Un alfil blanco en **f3** mira fijamente por la **diagonal a8-h1** larga a una torre negra indefensa.",
+  "hint": "Busca piezas indefensas en las diagonales de tu alfil — coleccionistas a larga distancia.",
+  "explanation": "## La idea\n\nEste es un patrón simple pero vital: una **pieza indefensa (suelta)** en una diagonal larga. El alfil en f3 ve hasta h1, donde la torre negra está varada sin defensor amigo cerca.\n\nLas blancas juegan {{Bxh1}} y simplemente se llevan la torre.\n\n- El rey negro está en d5, demasiado lejos para recapturar.\n- Ninguna pieza negra defiende h1.\n- La torre no puede salir del paso **antes** de la jugada blanca — las blancas tienen el turno.\n\n## Patrón a memorizar\n\n> Las piezas sueltas se caen — la regla **LPDO** (Loose Pieces Drop Off).\n\nAntes de cada jugada, escanea las líneas abiertas de tu alfil y de tu torre buscando piezas enemigas sin defensor. Son material gratis esperando a ser recogido."
 }

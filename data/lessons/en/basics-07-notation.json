@@ -7,38 +7,38 @@
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "title": "The System",
-      "text": "Algebraic notation describes every move uniquely. Files (columns) are letters a–h, ranks (rows) are numbers 1–8. White's first rank is 1, Black's is 8. A square is file+rank: e4, d5, h8."
+      "title": "The Coordinate System",
+      "text": "Chess has its own language — **algebraic notation** — and once you know it, you can read any game from history, follow any commentary, and study any book.\n\nEvery square on the board has a unique name made of a **letter** and a **number**.\n\n## How squares are named\n\n- **Files** (the columns going up the board) are letters **a–h**, left to right from White's point of view.\n- **Ranks** (the rows) are numbers **1–8**, starting from White's first row.\n- Combine the two and every square is uniquely named — *file first, then rank*.\n\nSo White's king starts on **e1**, his queen on **d1**, and the most famous square in chess — the one White's pawn often grabs first — is **e4**.\n\nQuick orienteer: a1 is the bottom-left corner from White's side; h8 is the top-right.\n\n> If you can name every square without thinking, you're already ahead of most casual players."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "Piece Letters",
-      "text": "Pieces are K (King), Q (Queen), R (Rook), B (Bishop), N (Knight). Pawns have no letter — \"e4\" alone means a pawn to e4. Captures use \"x\": Nxe5 means knight captures on e5."
+      "text": "Each piece (except the pawn) gets a single capital letter.\n\n## The piece alphabet\n\n- **K** — King\n- **Q** — Queen\n- **R** — Rook\n- **B** — Bishop\n- **N** — Knight (`N` because `K` is already King)\n- *(pawn — no letter at all)*\n\nA move is just **piece letter + destination square**. So {{Nf3}} means *knight to f3*. Pawn moves skip the letter — {{e4}} simply means *the pawn that can legally reach e4*.\n\n## Captures\n\n- An **x** between piece and square marks a capture: {{Nxe5}} = *knight captures on e5*.\n- A **pawn capture** uses the pawn's starting file: {{exd5}} = *the e-pawn captures on d5*.\n\n> Pawns are humble: no letter, but they get to use their file when they capture."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "Special Symbols",
-      "text": "\"+\" means check. \"#\" means checkmate. \"O-O\" is short castle, \"O-O-O\" is long castle. \"=\" marks promotion: e8=Q (pawn promotes to queen). When two pieces could move to the same square, the starting file or rank is added: Nbd2 or R1e1."
+      "text": "A handful of extra marks let notation describe everything that can happen on the board.\n\n## The full toolkit\n\n- **+** — check. Example: {{Bb5+}}.\n- **#** — checkmate. Example: {{Qh7#}}.\n- **O-O** — kingside (short) castling.\n- **O-O-O** — queenside (long) castling.\n- **=Q** — promotion (any piece). Example: {{e8=Q}} promotes the e-pawn to a queen on e8.\n- **!** and **?** — annotator's marks for *good* and *dubious* moves; **!!** brilliant, **??** blunder.\n\n## Disambiguation\n\nWhen two same-color pieces could move to the same square, you add either the file or rank of the moving piece:\n\n- {{Nbd2}} — the *b-file* knight moves to d2 (when the other knight could too).\n- {{R1e1}} — the rook on the *1st rank* moves to e1 (when both rooks share the e-file).\n\n> Once you can read notation, you can read every chess book in history."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "prompt": "Play 1.e4 — push the king's pawn.",
+      "prompt": "Open with the king's pawn — play **{{e4}}**, the most popular first move in chess.",
       "targetSan": [
         "e4"
       ],
-      "hint": "Just select the pawn on e2 and move it to e4."
+      "hint": "No piece letter means it's a pawn. Push the e-pawn two squares to e4."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
-      "prompt": "Now play 2.Nf3.",
+      "prompt": "Now bring out a knight with **{{Nf3}}** — attacking e5 and developing toward the center.",
       "targetSan": [
         "Nf3"
       ],
-      "hint": "The knight from g1 jumps to f3."
+      "hint": "Capital N means knight. From g1, it lands on f3 in an L-shape."
     }
   ]
 }

@@ -1,8 +1,11 @@
 {
   "id": "forks-08",
-  "fen": "3k4/8/8/8/4Q3/8/8/4K3 w - - 0 1",
+  "fen": "r3k3/8/8/1N6/8/8/8/4K3 w - - 0 1",
   "solution": [
-    "Qe8+"
+    "Nc7+"
   ],
-  "hint": "Jaque — el rey debe abandonar la columna d."
+  "title": "Horquilla familiar",
+  "setup": "El rey negro en e8 con una torre en su casa de a8 — la geometría clásica de la horquilla de caballo.",
+  "hint": "Hay una casilla del caballo que ataca **a la vez** al rey y a la torre.",
+  "explanation": "## La idea\n\nEl caballo es la única pieza capaz de golpear a la vez al rey y a una torre en la esquina sobre la misma fila. Desde b5, la casilla mágica es:\n\n- {{Nc7+}} — da jaque al rey en e8 *y* ataca la torre en a8.\n\n### Por qué las negras pierden material\n\n1. El jaque obliga a mover el rey — las negras no pueden ignorarlo.\n2. El rey no puede capturar el caballo (e8 a c7 son dos casillas — los reyes se mueven una).\n3. Los jaques de caballo no se pueden bloquear nunca.\n4. Tras la huida del rey, {{Nxa8}} se queda con la torre gratis.\n\nEsta es la **horquilla familiar** — todo principiante debería aprender el patrón de la casilla c7. Búscalo cada vez que el rey enemigo esté en e8 o e1 con una torre en la esquina.\n\n> El caballo adora las casillas c7 / c2 / f7 / f2 — las llaman *puestos avanzados de la perdición* por algo."
 }

@@ -7,20 +7,20 @@
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "title": "Tres Preguntas",
-      "text": "Antes de cada jugada, repasa esta lista: (1) ¿Qué está amenazando mi oponente? (2) ¿Cuáles son MIS jaques, capturas y amenazas? (3) Si juego mi candidata, ¿cuál es la mejor respuesta? Responde las tres, luego mueve."
+      "title": "Las Tres Preguntas",
+      "text": "Los jugadores fuertes no se limitan a reaccionar — siguen una pequeña rutina mental en **cada** jugada. Cuanto antes adquieras el hábito, más rápido mejorarás.\n\n## Las tres preguntas\n\n1. **¿Qué amenaza mi oponente?** Mira su última jugada. ¿Atacó una pieza? ¿Abrió una línea? ¿Preparó una táctica?\n2. **¿Cuáles son MIS jaques, capturas y amenazas?** Escanea todo el tablero. Las tácticas viven en las jugadas *forzadas*. Lístalas antes de elegir.\n3. **¿Cuál es la mejor respuesta si juego mi candidata?** Imagina tu jugada en el tablero y luego pregúntate: ¿cómo respondería *yo* con negras?\n\nTres preguntitas. Si te las haces con honestidad, reducen tus errores graves a la mitad.\n\nUn ejemplo rápido: imagina que las blancas acaban de jugar {{Bg5}}, clavando un caballo. Pregunta 1: *¿qué se amenaza?* El caballo no puede moverse sin exponer la dama. Pregunta 2: *¿qué respuestas forzadas tengo?* Tal vez {{h6}} expulsa al alfil. Pregunta 3: *¿qué pasa tras h6?* El alfil se retira o cambia.\n\n> Tres preguntas, un minuto. Los puntos de rating más baratos que ganarás jamás."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "title": "La Verificación de Error",
-      "text": "Antes de jugar tu movimiento, haz una pausa y pregunta: \"Después de hacer esta jugada, ¿alguna de mis piezas está siendo atacada? ¿Puede mi oponente dar jaque? ¿Pueden capturar algo gratis?\" Esta verificación de 5 segundos evita la mayoría de los errores."
+      "title": "La Verificación de Errores",
+      "text": "Casi cada partida perdida contiene un momento en el que jugaste rápido y se te pasó algo obvio. Ese momento es prevenible.\n\n## La verificación de errores en 5 segundos\n\nAntes de que tu mano suelte la pieza, congélate y haz un pequeño escaneo:\n\n- ¿Alguna de **mis piezas** queda colgando de pronto (indefensa, atacada)?\n- ¿Puede mi oponente dar un **jaque** que gane algo?\n- ¿Hay una **captura simple** gratis que acabo de permitir?\n- ¿Acabo de meterme en una **horquilla, clavada o espeto**?\n\nSi la respuesta a las cuatro es *no*, juega la jugada. Si *sí*, busca otra.\n\nEste sencillo ritual no cuesta nada en partidas clásicas y solo segundos en blitz. Atrapa la mayoría de los errores de una jugada — los que persiguen a todo ajedrecista.\n\n> Siéntate sobre tus manos. Mira otra vez. Después juega."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "Jugadas Candidatas",
-      "text": "Los jugadores fuertes no calculan una jugada — calculan 2-3 candidatas y comparan. Elige jugadas que desarrollen una pieza, mejoren una casilla o creen una amenaza. Rechaza jugadas que parezcan aleatorias temprano."
+      "text": "El ajedrez no es elegir *la* jugada — es escoger *entre* jugadas.\n\nLos grandes maestros miran el tablero, identifican **2 o 3 jugadas candidatas**, calculan brevemente cada una y comparan. Los principiantes a menudo calculan una jugada en profundidad y la juegan sin preguntarse jamás *¿había algo mejor?*\n\n## Cómo generar buenas candidatas\n\n- Empieza por **jugadas forzadas**: jaques, capturas y amenazas directas.\n- Añade **jugadas de desarrollo**: trae una pieza inactiva al juego.\n- Añade **profilaxis**: detén el plan del rival antes de que arranque.\n- Descarta rápido: si una jugada pierde material o viola un principio sin razón, fuera de la lista.\n\nLuego compara tus finalistas cara a cara: *¿cuál deja mi posición más fuerte tras la mejor respuesta de mi oponente?*\n\n## Por qué importa\n\n- Evita la visión de túnel (engancharte con la primera jugada que viste).\n- Hace aflorar tácticas — a veces la jugada B es buena precisamente porque la A es buena.\n- Te vuelve un jugador más sereno, porque has descartado alternativas en lugar de adivinar.\n\n> Elige tres, escoge una. Repite durante treinta jugadas. Eso es ajedrez."
     }
   ]
 }

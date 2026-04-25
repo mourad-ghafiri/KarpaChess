@@ -4,5 +4,8 @@
   "solution": [
     "Nc7+"
   ],
-  "hint": "Skak terbuka — kuda juga menyerang."
+  "title": "Skak Ganda di Lajur E",
+  "setup": "Kuda berdiri **tepat di depan** benteng, dan keduanya berbagi lajur e dengan raja Hitam — baterai klasik yang tinggal menembak.",
+  "hint": "Cari kotak kuda yang **juga** menyerang raja. Ketika dua bidak skak sekaligus, memblokir mustahil.",
+  "explanation": "## Idenya\n\nPosisi ini adalah gambaran skak terbuka paling murni. Benteng di e1 adalah **pembuka**; kuda di e6 adalah **penggerak**. Lompatan kuda apa pun yang legal akan membuka benteng dan memberi skak.\n\nNamun satu langkah kuda jauh lebih kuat dari yang lain: {{Nc7+}}. Dari c7, kuda itu sendiri **juga** menyerang e8.\n\n## Mengapa Skak Ganda Istimewa\n\nKetika dua bidak menyerang raja di langkah yang sama, pembela:\n\n- Tidak bisa memblokir, karena tidak ada satu kotak yang menghentikan kedua penyerang.\n- Tidak bisa memakan kedua bidak dalam satu langkah.\n- **Harus** menggerakkan raja.\n\nSetelah {{Nc7+}}, Hitam dipaksa berjalan ke d7 atau f7, di mana ia ditempatkan buruk untuk sisa permainan. Kuda di c7 juga mendarat di pos kuat, mengincar a8 dan e8.\n\n## Bagaimana Jika Anda Memilih Kotak Salah?\n\nLangkah seperti Nd4+ juga memberi skak terbuka dari benteng, tetapi kuda tidak lagi menekan lingkungan raja. Hitam main Kd7 atau Kf7 dan serangan Anda padam. Aturan main: **dengan skak terbuka, pilih kotak yang ikut menyerang**."
 }

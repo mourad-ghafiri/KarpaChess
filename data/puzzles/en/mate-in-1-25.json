@@ -4,5 +4,8 @@
   "solution": [
     "Ra8#"
   ],
-  "hint": "Back-rank mate with king opposition."
+  "title": "Opposition and Sweep",
+  "setup": "Your kings stand in **opposition** on the e-file, and the rook waits on the 7th rank for the kill.",
+  "hint": "Lift the rook to the 8th rank — your king on **e6** holds {{d7}}, {{e7}} and {{f7}}.",
+  "explanation": "## The Idea\n\nThis is the bedrock **K+R vs K mate** position taught in every book. The kings face each other in opposition; the rook delivers from afar.\n\nPlay {{Ra8#}}.\n\nWhy is the king stuck?\n\n- {{d8}} and {{f8}} — covered by the rook on a8 (8th rank)\n- {{d7}}, {{e7}}, {{f7}} — all controlled by your king on **e6**\n- The rook on a8 is too far away for {{Kxa8}}\n- Nothing can interpose on the 8th rank\n\n> **Takeaway:** Memorize this exact pattern: kings in opposition + rook on the same rank = mate. It's the destination of nearly every K+R vs K endgame."
 }

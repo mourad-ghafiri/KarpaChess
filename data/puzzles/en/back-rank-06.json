@@ -4,5 +4,8 @@
   "solution": [
     "Ra8"
   ],
-  "hint": "Simplify — rook invasion on a8."
+  "title": "Pin to the King",
+  "setup": "Black's rook on e8 defends the back rank. White's rook is one square away from delivering decisive pressure.",
+  "hint": "Plant the rook on the 8th rank. The king's prison does the rest.",
+  "explanation": "## The Idea\n\n{{Ra8}} is the quiet but devastating move. It doesn't deliver immediate mate, but it puts Black in a **completely losing pin**:\n\n1. White's rook arrives on a8, fixing the entire 8th rank.\n2. Black's rook on e8 is **pinned** — it cannot move without exposing the king to mate by Rxe8#.\n3. White threatens {{Rxe8#}} next move.\n\n### Why Black has no good defense\n\n- **Move the king?** The king has no air. Kh8 still allows Rxe8#. Kg8 is the same. The king cannot escape to the 7th rank without first creating luft, which Black does not have time to do.\n- **Defend the rook?** No piece in range can reinforce e8.\n- **Counter-threat?** Black has only the king and rook left — there is no counter-attack.\n\n### Pattern to remember\n\n- A rook arriving with **support of its own forces** on an open back rank against a king without luft is decisive.\n- The pin on Black's rook is the stake through the heart.\n\n> Quiet moves often kill faster than loud ones. The threat is stronger than the execution — but here, the execution is unstoppable."
 }

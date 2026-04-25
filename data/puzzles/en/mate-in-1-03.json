@@ -4,5 +4,8 @@
   "solution": [
     "Rb8#"
   ],
-  "hint": "One rook steps up while the other controls the rank."
+  "title": "Two-Rook Ladder",
+  "setup": "Both rooks are on the **b-file**, ready to climb the ladder side by side.",
+  "hint": "One rook delivers check on the 8th rank while the other guards {{b7}} — no escape between them.",
+  "explanation": "## The Idea\n\nThis is the **two-rook ladder mate** — also called the *staircase*. With two rooks, you alternate ranks so the king is squeezed against the edge with no air.\n\nPlay {{Rb8#}}. The b-rook climbs to **b8** and gives check along the 8th rank.\n\nWhy is the king stuck?\n\n- {{g8}}, {{f8}} and the rest of the 8th rank — all swept by the new rook on b8\n- {{g7}} — blocked by Black's own pawn\n- {{h7}} — blocked by Black's own pawn\n- The lower rook on **b2** still rules the b-file, so Kxb8 would be illegal anyway (not that the king could reach)\n\n> **Takeaway:** Two rooks are a mating machine even without a king. Keep them on adjacent files or ranks and march them up — the loose king has nowhere to run."
 }

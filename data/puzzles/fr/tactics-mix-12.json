@@ -1,8 +1,11 @@
 {
   "id": "tactics-mix-12",
-  "fen": "4k3/5ppp/8/8/8/8/5PPP/3QK3 w - - 0 1",
+  "fen": "6k1/5ppp/8/8/8/8/5PPP/3QK3 w - - 0 1",
   "solution": [
-    "Qd8+"
+    "Qd8#"
   ],
-  "hint": "Mettez le roi en échec sur sa dernière rangée."
+  "title": "Mat de la dernière rangée",
+  "setup": "Le roi noir en **g8** est emmuré par ses propres pions en f7, g7, h7 — un piège classique de la **dernière rangée**.",
+  "hint": "Quand le roi adverse est verrouillé derrière ses propres pions sur la 8e rangée, glissez une pièce lourde sur la dernière rangée.",
+  "explanation": "## L'idée\n\nVoici l'immortel **mat de la dernière rangée** — le motif tactique le plus courant de tous les échecs. Le roi noir est piégé sur la huitième rangée par ses propres pions, sans cases de fuite.\n\nLes Blancs jouent {{Qd8#}} — la dame glisse le long de la colonne d et traverse pour livrer le mat.\n\n## Pourquoi c'est mat\n\nVérifions que Noir n'a **aucune** réponse légale :\n\n- **Coups de roi** : {{Kg8}} est déjà occupé. Cases adjacentes : f7 (pion ami), g7 (pion ami), h7 (pion ami), f8 (attaquée par la dame en d8 sur la 8e rangée), h8 (attaquée par la dame sur la 8e rangée).\n- **Capture** : {{Kxd8}} — trop loin, le roi est en g8.\n- **Bloquer** : rien à interposer — Noir n'a que des pions, dont aucun n'atteint la ligne d8-g8.\n\nAucune fuite. Mat.\n\n## Schéma à mémoriser\n\n> La **faiblesse de la dernière rangée** : un roi piégé derrière des pions non bougés est à un seul échec d'une pièce lourde du mat.\n\n**Leçon défensive** : dans vos parties, faites un *luft* — poussez h3 ou g3 pour donner à votre roi une case de fuite. Ce simple coup de pion empêche des milliers de catastrophes sur la dernière rangée."
 }

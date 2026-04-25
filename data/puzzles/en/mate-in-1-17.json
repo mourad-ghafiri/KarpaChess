@@ -4,5 +4,8 @@
   "solution": [
     "Qh8#"
   ],
-  "hint": "Queen takes the 8th rank."
+  "title": "Bishop Cross-Cover",
+  "setup": "Your bishop on **c8** and king on **e6** wall off the entire 7th rank — the queen just needs the back rank.",
+  "hint": "Slide the queen to the **8th rank** — the bishop on c8 already pins down {{d8}} and {{f8}}.",
+  "explanation": "## The Idea\n\nA beautiful **queen + bishop back-rank mate**. The bishop on c8 doesn't just cover the 8th rank — it secures key flight squares while the queen delivers from the corner.\n\nPlay {{Qh8#}}.\n\nWhy is the king stuck?\n\n- {{d7}}, {{e7}}, {{f7}} — all controlled by your king on **e6**\n- {{f8}} — covered by the queen on h8 (8th rank)\n- {{d8}} — covered by the bishop on **c8**\n- The king cannot capture the queen: e8 to h8 is three squares away\n- Nothing can interpose on the 8th rank between h8 and e8 (only the bishop on c8, beyond e8)\n\n> **Takeaway:** A bishop on a long diagonal that touches the back rank is a quiet but lethal mating piece. When the queen lines up on the same rank, every escape vanishes."
 }

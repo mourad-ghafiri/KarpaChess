@@ -4,18 +4,26 @@
   "summary": "Threaten two things at once",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "4k3/8/8/3q4/8/4N3/8/4K3 w - - 0 1",
       "title": "Two Threats, One Move",
-      "text": "A double attack is any move that creates two simultaneous threats. The fork is one kind — the same piece attacks two targets. But a move can also create two DIFFERENT kinds of threat: one mate threat plus a material threat, for example." },
-    { "type": "play",
+      "text": "A **double attack** is the umbrella name for any move that creates two threats at once. The fork is a special case — the same piece hits two targets — but a double attack can be subtler than that.\n\n## The flavors\n\n- **Same-piece double attack** — a fork. One knight, two targets.\n- **Different-piece double attack** — your move attacks one target, while *another* of your pieces was already attacking something else and now its threat becomes critical.\n- **Threat + capture** — you capture a piece while simultaneously creating a mating threat the opponent must address.\n- **Mate threat + material threat** — perhaps the most common in master games. The opponent has to defend mate; the material falls.\n\n## The geometry\n\nThere is no single shape. The unifying idea is *forcing arithmetic*: the opponent has **one move** to answer **two problems**.\n\n## How to find it\n\n1. Count enemy weaknesses — undefended pieces, loose squares, mating ideas.\n2. List moves that touch one weakness (captures, checks, threats).\n3. For each, ask: *does it also create a second threat?*\n4. The winning move is the one that makes the opponent choose which house to save while the other burns.\n\nHere the queen on d5 is undefended. {{Nxd5}} simply wins her — a clean double attack: the knight takes a piece *and* there is no useful counter-threat for Black with the king sitting in the center.\n\n> Every move you play has a *purpose*. The strongest moves have **two**."
+    },
+    {
+      "type": "play",
       "fen": "4k3/8/8/3q4/8/4N3/8/4K3 w - - 0 1",
-      "prompt": "The queen is undefended — grab her.",
-      "targetSan": ["Nxd5"],
-      "hint": "The knight leaps to d5 with a capture." },
-    { "type": "teach",
+      "prompt": "Snap up the unguarded queen with **{{Nxd5}}** — a textbook double attack.",
+      "targetSan": [
+        "Nxd5"
+      ],
+      "hint": "Loose pieces drop off. Find the knight square that touches the queen."
+    },
+    {
+      "type": "teach",
       "fen": "4k3/8/8/3N4/8/8/8/4K3 b - - 0 1",
-      "title": "The Principle",
-      "text": "Every good tactical move threatens something specific. Two threats from one move is often decisive because the opponent can only respond to one of them. Train your eye to count threats — if you see two, something good is happening." }
+      "title": "Train the Eye",
+      "text": "Every strong tactical player walks through the position counting threats — both their own and their opponent's.\n\n## A 30-second checklist\n\n1. **Loose pieces:** which enemy pieces are undefended?\n2. **Lined-up pieces:** any two enemy pieces on the same rank, file, or diagonal?\n3. **King exposure:** is the king on a checkable square with limited escapes?\n4. **Overworked defenders:** is one piece guarding two things?\n\nIf any answer is *yes*, look for the move that makes **two** of these problems erupt at the same time.\n\n## A useful drill\n\n- Set up a position from a tactic book.\n- Before solving, list every undefended enemy piece and every check.\n- The solution is almost always at the *intersection* of two threats.\n\n> Single threats lose to a single defense. Double threats win games."
+    }
   ]
 }

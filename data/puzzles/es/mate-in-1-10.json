@@ -4,5 +4,8 @@
   "solution": [
     "Rg8#"
   ],
-  "hint": "Ataca la columna del rey — está encerrado por tu rey y su propio peón."
+  "title": "Cierra la tapa",
+  "setup": "El rey negro está acuñado en **h8** con el peón **h7** bloqueando la única casilla de huida que la torre aún no cubre.",
+  "hint": "Sube la torre por la columna g — tu rey y el peón negro cierran la tapa.",
+  "explanation": "## La idea\n\nUn **mate de R+T en la esquina** con un pequeño giro: la torre da mate desde la columna *adyacente* en lugar de la misma fila que el rey.\n\nJuega {{Rg8#}}.\n\n¿Por qué el rey está atrapado?\n\n- {{h8}} — la torre en g8 ataca toda la octava fila incluyendo h8\n- {{g7}} — controlada por tu rey en **f7**\n- {{h7}} — bloqueada por el propio peón negro\n- La torre en g8 está defendida por tu rey en f7, así que {{Kxg8}} sería ilegal de todos modos\n\n> **Conclusión:** Cuando el rey enemigo está encerrado por sus propias piezas, no necesitas ser rebuscado. Lleva la torre a una casilla *defendida por tu rey* en la misma fila o columna adyacente al rey atrapado."
 }

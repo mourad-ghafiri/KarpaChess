@@ -4,5 +4,8 @@
   "solution": [
     "a8=Q+"
   ],
-  "hint": "Pion-a hanya selangkah dari kejayaan."
+  "title": "Promosi dengan Skak",
+  "setup": "Pion putih satu petak dari kejayaan di **a7**, dengan raja hitam berbaris di dekatnya.",
+  "hint": "Promosikan dengan skak kapan pun bisa — ini tidak memberi waktu Hitam untuk bereaksi.",
+  "explanation": "## Idenya\n\nTaktik **promosi** klasik. Pion di a7 mencapai baris kedelapan dan berubah menjadi menteri, sekaligus memberi skak di baris ke-8.\n\nPutih memainkan {{a8=Q+}}.\n\n## Jawaban Hitam yang Terpaksa\n\nMenteri baru di a8 menyerang raja di e8 di sepanjang **baris kedelapan**. Hitam harus memindahkan raja (tidak ada buah untuk menghalangi, menteri jauh dari pembela sayap raja):\n\n- {{Kd7}}, {{Ke7}}, {{Kf7}}, {{Kf8}}, {{Kd8}} — petak pelarian apa pun bekerja karena menteri sendirian.\n\n## Mengapa Promosi dengan Skak Penting\n\n> Promosi dengan skak **menolak Hitam tempo**. Promosi tanpa skak bisa dijawab dengan ancaman balasan; promosi yang memberi skak memaksa langkah raja segera.\n\nDalam akhir, satu tempo sering adalah perbedaan antara menang dan remis. Selalu cari skak saat promosi — itu emas."
 }

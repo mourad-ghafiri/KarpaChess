@@ -4,17 +4,23 @@
   "summary": "Kenali (dan hindari) blunder klasik",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/ppp2ppp/8/3pp3/4P3/2N5/PPPP1PPP/R1BQKBNR w KQkq - 0 3",
       "title": "Skakmat Pelajar",
-      "text": "Jebakan paling terkenal: keluarkan menteri dan gajah lebih awal untuk menyerang f7. Jika Hitam tidak bertahan dengan hati-hati, skakmat terjadi dalam empat langkah. Setelah 1.e4 e5 2.Bc4 Nc6 3.Qh5 — jika Hitam memainkan langkah yang terlihat alami seperti 3...Nf6?? — permainan dapat berakhir dengan 4.Qxf7#." },
-    { "type": "teach",
+      "text": "Setiap pemain catur mempelajari **Skakmat Pelajar** cepat atau lambat — biasanya karena seseorang baru saja melepaskannya pada mereka.\n\nResep dasarnya: {{e4}} {{e5}} {{Bc4}} {{Nc6}} {{Qh5}}. Putih telah membawa menteri terburu-buru ke serangan dengan satu tujuan: targetkan **kotak f7**, dijaga hanya oleh raja Hitam. Jika Hitam memainkan langkah ceroboh seperti **3...Nf6??**, Putih menerobos dengan **4.Qxf7#** — skakmat dalam empat langkah.\n\n## Mengapa berhasil?\n\n- **f7** adalah kotak yang unik lemah — hanya raja yang menjaganya.\n- Menteri di h5 menyerang f7; gajah di c4 menyerang f7. Dua penyerang, satu pembela.\n- Langkah kuda yang terlihat alami (seperti ...Nf6) memblokir menteri Hitam dari mencapai pertahanan f7 tanpa menyelesaikan ancaman.\n\n## Cara membantahnya\n\n- **3...g6** mengusir menteri dan mempertahankan — paling langsung.\n- **3...Qe7** mempertahankan f7 dengan menteri, sangat aman.\n- **3...Nf6??** adalah langkah yang kalah — memblokir diagonal, tetapi tidak menangani ancaman.\n\n> Mengetahui jebakan adalah hadiah 100 poin rating. Terjebak sekali mengajari Anda selamanya."
+    },
+    {
+      "type": "teach",
       "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 0 4",
       "title": "Hukumannya",
-      "text": "Terhadap lawan yang siap, ini mudah dilawan dengan 3...g6 atau 3...Qe7, mempertahankan f7. Mengetahui jebakan ini memungkinkan Anda menghindarinya sebagai Hitam dan menghukum permainan ceroboh sebagai Putih." },
-    { "type": "teach",
+      "text": "Melawan lawan yang waspada, Skakmat Pelajar *bukan* senjata yang menang — itu **kalah**. Sortir menteri awal melanggar dua prinsip pembukaan sekaligus:\n\n- Menteri di h5 — terbuka dan mudah dikejar.\n- Putih belum mengembangkan satu bidak lain selain satu gajah.\n\n## Mengapa Skakmat Pelajar gagal di tingkat layak\n\n- Setelah **3...g6** menteri mundur ke **4.Qf3** (masih mengancam f7) — dan Hitam main **4...Nf6** dengan aman. Sekarang Hitam punya *dua bidak dikembangkan* melawan *satu* milik Putih, dan menteri Putih akan dikejar lagi.\n- Setelah **3...Qe7** Hitam tenang, telah menyelamatkan f7, dan bisa main **...Nf6**, **...d6**, **...Bg7**, menyelesaikan pengembangan dengan hati nurani bersih.\n\n## Pelajaran\n\nJika lawan menyerang kotak terlemah Anda dengan satu bidak, Anda biasanya punya langkah pertahanan tenang. **Jangan panik** dan jangan rebut umpan menyerang menteri mereka *jika* itu mengorbankan f7 Anda. Bertahan dulu, lalu mengejar.\n\n> Skakmat Pelajar menghukum kebodohan. Begitu Anda mengetahuinya, Anda menghukumnya."
+    },
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPPBPPP/RNBQK2R w KQkq - 0 3",
       "title": "Kembangkan, Jangan Berlari",
-      "text": "Sebagian besar 'jebakan' mengandalkan lawan yang melanggar prinsip dasar — meninggalkan raja di tengah, berjalan ke dalam garpu, atau melemahkan kotak kunci seperti f2/f7. Kembangkan dengan tenang dan perhatikan taktik setiap langkah." }
+      "text": "Sebagian besar jebakan pembukaan punya satu fitur sama: **korban melanggar prinsip dasar**. Mereka meninggalkan raja di tengah, masuk ke garpu, melemahkan f2/f7, atau menggerakkan bidak yang sama tiga kali sebelum mengembangkan sisanya.\n\n## Keluarga jebakan paling umum\n\n- **Skakmat Légal** — Putih menang setelah pakuan ...Bg4 yang ceroboh: {{e4}} {{e5}} {{Nf3}} {{d6}} {{Bc4}} **Bg4** {{Nc3}} **g6**?? {{Nxe5}}! dan gajah di g4 tidak terjaga — Hitam kehilangan material atau lebih buruk.\n- **Jebakan Pancing** (Ruy Lopez) — Hitam main **...h5** dan **...Ng4** untuk memancing gajah di g5 menangkap, membuka jalur ke arah raja Putih setelah pengorbanan.\n- **Jebakan Bahtera Nuh** (Ruy Lopez) — Setelah gajah Putih berkelana ke b3, Hitam menjebaknya dengan **...c5-c4** jika Putih tidak hati-hati.\n- **Hati Goreng** — Setelah {{e4}} {{e5}} {{Nf3}} {{Nc6}} {{Bc4}} {{Nf6}} **{{Ng5}}** **d5** {{exd5}} **Nxd5**?! {{Nxf7}}!? — Putih korbankan kuda untuk perburuan raja yang ganas.\n\n## Penangkal universal\n\nTerapkan **tiga prinsip pembukaan** setiap langkah:\n\n1. Apakah bidak saya berkembang ke arah pusat?\n2. Apakah raja saya pada jalur untuk rokade?\n3. Apakah saya baru saja membiarkan skak, pemakanan, atau garpu?\n\nIkuti daftar itu dan Anda akan terjebak jauh lebih sedikit jebakan daripada yang Anda pasang sendiri.\n\n> Sebagian besar jebakan hidup di kesalahan *lawan*. Mainkan catur berprinsip dan saksikan mereka jatuh sendiri."
+    }
   ]
 }

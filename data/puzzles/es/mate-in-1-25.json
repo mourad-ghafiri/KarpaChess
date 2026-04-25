@@ -4,5 +4,8 @@
   "solution": [
     "Ra8#"
   ],
-  "hint": "Mate en la última fila con oposición de rey."
+  "title": "Oposición y barrido",
+  "setup": "Tus reyes están en **oposición** en la columna e, y la torre espera en la séptima fila para el remate.",
+  "hint": "Eleva la torre a la octava fila — tu rey en **e6** controla {{d7}}, {{e7}} y {{f7}}.",
+  "explanation": "## La idea\n\nEsta es la posición fundamental del **mate de R+T contra R** que se enseña en todos los libros. Los reyes se enfrentan en oposición; la torre remata desde lejos.\n\nJuega {{Ra8#}}.\n\n¿Por qué está atrapado el rey?\n\n- {{d8}} y {{f8}} — cubiertas por la torre en a8 (octava fila)\n- {{d7}}, {{e7}}, {{f7}} — todas controladas por tu rey en **e6**\n- La torre en a8 está demasiado lejos para {{Kxa8}}\n- Nada puede interponerse en la octava fila\n\n> **Conclusión:** Memoriza este patrón exacto: reyes en oposición + torre en la misma fila = mate. Es el destino de casi todo final de R+T contra R."
 }

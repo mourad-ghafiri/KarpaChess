@@ -1,20 +1,20 @@
 {
   "id": "opposite-castles",
-  "title": "Ataques con Enroques Opuestos",
+  "title": "Ataques con enroques opuestos",
   "summary": "Carrera hacia el rey enemigo con peones",
   "difficulty": "advanced",
   "steps": [
     {
       "type": "teach",
       "fen": "r1bqk2r/ppp2ppp/2npbn2/4p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 b kq - 0 6",
-      "title": "La Tormenta de Peones",
-      "text": "Cuando enrocas corto y tu oponente enroca largo, puedes atacar con peones SIN debilitar a tu propio rey. Empuja h4, g4, Nf5, h5, hxg6 — el ataque es una tormenta de peones."
+      "title": "La tormenta de peones",
+      "text": "Cuando enrocas en **un flanco** y tu rival enroca en el **otro**, las reglas del ataque cambian. Tus peones se convierten en *atacantes*, porque empujarlos no debilita la cobertura de tu propio rey.\n\n## Cuándo aparece esta idea\n\n- Ambos bandos han comprometido sus reyes en flancos opuestos (uno corto, el otro largo).\n- El centro está **cerrado o estable** y ninguno puede romperlo.\n- Cada bando tiene uno o dos peones de más cerca del rey enemigo.\n\n## El plan estándar\n\nCon las blancas enrocadas en el flanco de rey y las negras enrocadas en el flanco de dama, las blancas atacan con **los peones del flanco de dama** ({{a4}}, {{b4}}, {{a5}}). Con los enroques invertidos, empujas los peones del *flanco de rey* ({{h4}}, {{g4}}, {{h5}}, {{g5}}).\n\n## Cómo prepararlo\n\n1. **Identifica la cobertura de peones del rey objetivo.** Los peones que están directamente delante de su posición enrocada son la muralla a romper.\n2. **Empuja primero el peón que se encuentra con un defensor** — el que pueda cambiarse por una pieza enemiga.\n3. **Mantén tus piezas listas** para invadir en cuanto se abra una columna o una diagonal.\n4. **Evita los cambios prematuros** de atacantes — cada pieza menor que entregas es un ladrillo menos en tu ariete.\n\n## Una idea modelo de ataque\n\nContra un rey enrocado corto con peones en f7-g7-h7, el atacante típico del flanco de rey juega:\n\n- {{h4}} preparando la tormenta.\n- {{g4}} añadiendo un segundo peón a la oleada.\n- {{h5}} fijando el peón objetivo o amenazando el cambio.\n- {{hxg6}} o {{g5}} para abrir la columna.\n- Una torre o la dama oscila a {{h1}}-{{h3}} o directamente por la columna abierta.\n\n> *\"Enroques opuestos significa mate en 20 jugadas — para alguien.\"*"
     },
     {
       "type": "teach",
       "fen": "r1bqk2r/ppp2ppp/2npbn2/4p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 b kq - 0 6",
-      "title": "La Velocidad Cuenta",
-      "text": "El enroque en flancos opuestos crea una carrera: ambos bandos atacan al rey del otro. Quien abre líneas primero generalmente gana. Cuenta los tiempos — cada jugada importa. \"El enroque opuesto significa mate en 20 jugadas — para alguien.\""
+      "title": "La velocidad cuenta",
+      "text": "Los enroques opuestos son una **carrera a pie**. Ambos bandos empujan peones hacia el rey enemigo. Quien abra líneas primero suele ganar — a veces por simples tiempos.\n\n## Cómo contar tiempos\n\n1. Cuenta cuántas jugadas necesitas para **abrir** la cobertura de peones del rey enemigo.\n2. Cuenta cuántas jugadas necesita tu *rival* para abrir la **tuya**.\n3. Si vais empatados, gana el bando **que mueve**.\n4. Si vas un tiempo por detrás, necesitas un **sacrificio** para compensar la diferencia.\n\n## Prioridades prácticas\n\n- **No muevas los peones de tu rey** — son tu escudo.\n- **No malgastes jugadas** retirando piezas a menos que estén a punto de perderse.\n- **Cambia los defensores del rival** — especialmente el caballo que protege su posición enrocada.\n- **Lleva todas las piezas pesadas** a la columna o diagonal de ataque.\n\n## Evita estos errores\n\n- Empujar peones delante de *tu propio* rey para \"crear espacio\" — acabas de abrir líneas para el rival.\n- Frenar para tomar un peón lejos de la acción.\n- Sobreproteger a tu rey con una pieza pasiva que debería estar atacando.\n\n## Cómo detectar el momento adecuado\n\n- El caballo defensivo del rival ha sido cambiado.\n- Tu peón h (o peón a) está a una jugada de {{h5}} o {{a5}} y la columna se abrirá.\n- Tu dama o torre ya está sobre o cerca de la columna de ataque.\n\nCuando todo esto se alinea, **golpea ya** — incluso un sacrificio de pieza puede ser correcto.\n\n> En las carreras de enroques opuestos, el atacante más lento es el que recibe mate."
     }
   ]
 }

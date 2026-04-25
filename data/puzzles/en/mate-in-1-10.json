@@ -1,6 +1,11 @@
 {
   "id": "mate-in-1-10",
   "fen": "7k/5K1p/8/8/8/8/8/6R1 w - - 0 1",
-  "solution": ["Rg8#"],
-  "hint": "Attack the king file — he's boxed in by your king and his own pawn."
+  "solution": [
+    "Rg8#"
+  ],
+  "title": "Snap the Lid Shut",
+  "setup": "Black's king is wedged on **h8** with the **h7** pawn blocking the only flight square the rook doesn't already cover.",
+  "hint": "Step the rook up the g-file — your king and Black's pawn close the lid.",
+  "explanation": "## The Idea\n\nA **K+R corner mate** with a tiny twist: the rook delivers from the *adjacent* file rather than the same rank as the king.\n\nPlay {{Rg8#}}.\n\nWhy is the king stuck?\n\n- {{h8}} — the rook on g8 attacks the entire 8th rank including h8\n- {{g7}} — controlled by your king on **f7**\n- {{h7}} — blocked by Black's own pawn\n- The rook on g8 is defended by your king on f7, so {{Kxg8}} is illegal anyway\n\n> **Takeaway:** When the enemy king is boxed by his own pieces, you don't need to be elaborate. Walk the rook to a square *defended by your king* on the same rank or adjacent file as the trapped king."
 }

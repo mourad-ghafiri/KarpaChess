@@ -4,5 +4,8 @@
   "solution": [
     "Kd5"
   ],
-  "hint": "Gana terreno con el rey."
+  "title": "La actividad del rey gana",
+  "setup": "Peón en **e3**, tu rey en **e4**, el rey negro asentado en f6 intentando vigilar la casilla de coronación del peón.",
+  "hint": "No vayas en línea recta — **gana terreno** pasando a una casilla que el rey enemigo no pueda alcanzar.",
+  "explanation": "## Principio clave: ganar casillas con el rey\n\nEl rey negro está haciendo su trabajo: cubre e5, e6 y e7, frenando tu peón. Para progresar, tu rey debe alcanzar la 6ª fila sin cambiarse a sí mismo. La forma de hacerlo es dar un paso **diagonal hacia adelante** a una casilla que el rey enemigo no pueda disputar.\n\n## El plan\n\n1. **{{Kd5}}** — Las blancas avanzan hacia el flanco de dama, ganando una fila sin pisar nunca una casilla que las negras puedan cuestionar de inmediato. Las negras no pueden responder Kd5 (ocupada), Ke5 (atacada por tu rey) ni Kf5 (atacada).\n2. La mejor respuesta negra es **...Ke7**, regresando a defender. Las blancas contestan con **Kc6** o **Ke5**, continuando empujando al rey enemigo mientras mantienen el peón a salvo.\n3. Cuando el rey blanco llega a la 6ª fila, el peón marcha: **e4, e5, e6** — y el rey despeja la casilla de coronación.\n\n## Qué pasa si empujas el peón\n\nSi las blancas juegan 1.e4? enseguida, el rey de f6 queda bien colocado: 1...Ke6! y las negras aseguran la **casilla delante del peón**. Desde ahí es una fortaleza y tablas. La lección: **antes de empujar, gana las casillas sobre las que tu peón se apoyará**."
 }

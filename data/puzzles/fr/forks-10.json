@@ -4,5 +4,8 @@
   "solution": [
     "Rh8+"
   ],
-  "hint": "Échec — que doit abandonner le cavalier noir ?"
+  "title": "Embrocher le Cavalier",
+  "setup": "Le roi noir et le cavalier partagent le coin de l'aile-dame. Un long échec de la tour expose le cavalier derrière.",
+  "hint": "Envoyez la tour sur la 8e rangée avec échec. Le cavalier n'a aucun abri une fois le roi parti.",
+  "explanation": "## L'Idée\n\nC'est une **fourchette de type enfilade** sur la 8e rangée. La tour blanche peut voyager de h1 à h8 sans obstacle :\n\n- {{Rh8+}} donne échec sur la dernière rangée.\n- Le roi noir doit s'écarter de la ligne de la tour.\n\n### Que se passe-t-il pour le cavalier ?\n\n1. Le roi n'a que **a7** comme case de fuite — a8 est attaquée par la tour, b7 laisse le cavalier sans garde, c8 est attaquée.\n2. Après la fuite du roi, le cavalier en c7 n'est plus protégé par son roi.\n3. Les Blancs basculent la tour pour gagner le cavalier (ou le roi est entraîné plus loin de la 2e rangée, exposant plus de faiblesses).\n\nLa solution en un coup trouve l'**échec forçant** — une idée concrète immédiate qui ne laisse pas respirer les Noirs. N'essayez pas de gagner le cavalier directement avec un déploiement discret de tour ; l'échec force les Noirs à réagir et brise la défense du cavalier par le roi.\n\n> Un échec sur la dernière rangée est la langue naturelle de la tour. Parlez-la chaque fois que possible."
 }

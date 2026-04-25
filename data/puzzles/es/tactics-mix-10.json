@@ -4,5 +4,8 @@
   "solution": [
     "a8=Q+"
   ],
-  "hint": "Coronación con jaque."
+  "title": "Corona el peón",
+  "setup": "El peón blanco ha alcanzado **a7** — a un paso de una flamante dama.",
+  "hint": "Corona con jaque siempre que puedas. Niega al defensor un movimiento gratis.",
+  "explanation": "## La idea\n\nUna **coronación con jaque** simple. El peón en a7 alcanza a8 y se transforma en dama, dando simultáneamente jaque por la octava fila al rey en e8.\n\nLas blancas juegan {{a8=Q+}}.\n\n## Respuesta forzada de las negras\n\nEl rey negro debe atender el jaque. Sin defensores cerca, las únicas opciones son jugadas del rey:\n\n- {{Kd7}}, {{Ke7}}, {{Kf7}}, {{Kf8}}, {{Kd8}} — todas las casillas de escape son válidas.\n- El rey no puede alcanzar a8 para capturar (demasiado lejos).\n- Nada puede interponerse — las negras no tienen otras piezas.\n\nLas blancas emergen con una dama más el rey — un final ganado trivialmente.\n\n## Patrón a memorizar\n\n> Al coronar, **prefiere coronar dama con jaque** — fuerza al rival a reaccionar primero a tu jugada.\n\nCuidado con las trampas de ahogado en posiciones ligeramente diferentes: cuando el rey enemigo no tiene casillas legales, una dama sin jaque puede entablar accidentalmente. Aquí, el rey tiene mucho espacio para respirar, así que el jaque es ganancia pura."
 }

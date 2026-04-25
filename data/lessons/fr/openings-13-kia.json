@@ -1,38 +1,38 @@
 {
   "id": "kings-indian-attack",
-  "title": "Attaque est-indienne",
-  "summary": "Est-indienne inversée — un système blanc",
+  "title": "L'attaque est-indienne",
+  "summary": "L'est-indienne inversée — un système des Blancs",
   "difficulty": "intermediate",
   "steps": [
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "Une arme flexible",
-      "text": "L'attaque est-indienne (KIA) est la défense est-indienne jouée par les Blancs. Fianchettez le fou roi, roquez rapidement, puis étendez avec e4/e5. Utilisée par Bobby Fischer avec un effet dévastateur."
+      "text": "L'**attaque est-indienne** (KIA) est la défense est-indienne — *jouée par les Blancs*. Même dispositif, mêmes plans, simplement les couleurs inversées : les Blancs fianchettent le fou roi, petit roque, puis déclenchent une attaque lente et méthodique à l'aile roi.\n\nC'était l'arme secrète de Bobby Fischer quand il voulait éviter la théorie classique. Aujourd'hui encore, des joueurs d'élite comme **Hikaru Nakamura** et **Levon Aronian** la sortent en arme de surprise.\n\n## Une séquence définissante\n\nUn ordre modèle est {{Nf3}} **{{d5}}** {{g3}} **{{Nf6}}** {{Bg2}} **{{c5}}** **{{O-O}}** **{{Nc6}}** {{d3}} **{{e6}}** {{Nbd2}}. La signature, c'est le bloc : **Nf3, g3, Bg2, 0-0, d3, Nbd2, e4** — quasi indépendamment du jeu noir.\n\n## Ce que veut chaque camp\n\n- **Plan blanc :** terminer le fianchetto, puis pousser **{{e4}}** et finalement **{{e5}}**, ouvrant des lignes vers l'aile roi. Les pièces s'empilent : **Re1**, **Nf1-g3**, **h2-h4-h5**, et percée à l'aile roi.\n- **Plan noir :** la traiter comme une française ou une sicilienne — développer solidement, contester l'aile dame (**...b5, ...c5-c4, ...Rb8**), et exploiter la lenteur du dispositif blanc.\n- **Structure de pions :** *structure KIA / française* — pions blancs en d3-e4 contre pions noirs en d5-e6, attaques sur des ailes opposées.\n\n## Pourquoi elle plaît aux maîtres\n\nLa KIA, c'est **un seul système contre tout** — sicilienne, française, Caro-Kann transposent toutes vers des milieux de partie similaires. Vous apprenez un jeu de plans et l'appliquez à vie.\n\n> La KIA est la réponse universelle des échecs. Dispositif lent, attaque tranchante."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "prompt": "Commencez par 1.Nf3",
+      "prompt": "Commencez par le premier coup le plus flexible : **{{Nf3}}**.",
       "targetSan": [
         "Nf3"
       ],
-      "hint": "Premier coup flexible."
+      "hint": "1.Nf3 développe une pièce et garde toutes les options ouvertes. Il peut transposer en Réti, anglaise, catalane ou — comme ici — KIA."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppp1ppp/8/4p3/8/5N2/PPPPPPPP/RNBQKB1R w KQkq - 0 2",
-      "prompt": "Maintenant fianchetto : 2.g3",
+      "prompt": "Commencez le fianchetto avec **{{g3}}** — préparez la grande diagonale du fou.",
       "targetSan": [
         "g3"
       ],
-      "hint": "Préparez la grande diagonale du fou."
+      "hint": "g3 prépare le fianchetto — le fou vivra en g2, regard sur la grande diagonale h1-a8."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppp1ppp/8/4p3/8/5NP1/PPPPPP1P/RNBQKB1R b KQkq - 0 2",
       "title": "Structure KIA",
-      "text": "Ensuite : Bg2, 0-0, d3, Nbd2, e4. Vous obtiendrez une forteresse solide côté roi et un ressort prêt à bondir pour e5. Idéal si vous voulez UNE ouverture contre tout."
+      "text": "Après **{{Nf3}}** et **{{g3}}**, le reste de l'attaque est-indienne s'inscrit dans un sillon familier.\n\n## Le dispositif complet\n\n1. **{{Nf3}}** — développement de cavalier flexible.\n2. **{{g3}}** — préparation du fianchetto.\n3. **{{Bg2}}** — fou sur sa grande diagonale.\n4. **{{O-O}}** — petit roque, roi à l'abri.\n5. **{{d3}}** — soutien central solide.\n6. **{{Nbd2}}** — second cavalier (pas en c3, qui bloquerait le pion c).\n7. **{{e4}}** — *le* coup d'attaque. Le centre s'éveille.\n\nDe là : **Re1**, **Nf1-h2** ou **Nf1-g3**, **h2-h4-h5**, et avalanche à l'aile roi.\n\n## Un plan de jeu modèle\n\nAprès le dispositif noir typique (**...d5, ...Nf6, ...e6, ...c5, ...Nc6, ...Be7**), les Blancs rompent par **e4-e5** chassant le cavalier f6. Puis **Nf1-g3** et **h4-h5** ouvrent des lignes. Combinés à **Qe2** et **Bf4**, l'attaque sur f7/h7 devient mortelle.\n\n## Les principaux atouts de la KIA\n\n- **Une ouverture pour tous.** Sicilienne ? Française ? Caro-Kann ? Vous jouez la KIA contre les trois.\n- **Riche stratégiquement.** Les plans de milieu de partie se répètent, mais la tactique est neuve à chaque partie.\n- **Difficile à réfuter.** Même les adversaires forts doivent rester prudents — les dispositifs noirs naturels tombent dans les plans blancs.\n\n> Si vous voulez une seule arme à vie, apprenez la KIA. Vous ne serez jamais sans réponse."
     }
   ]
 }

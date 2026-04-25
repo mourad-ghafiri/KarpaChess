@@ -6,5 +6,8 @@
     "Kd8",
     "e6"
   ],
-  "hint": "Take opposition, then push."
+  "title": "Outflank, Then Push",
+  "setup": "King and pawn versus king, with the white king already in front of its pawn — but Black holds the **direct opposition**.",
+  "hint": "Don't push the pawn yet. **Side-step** the king to break the opposition first, then drive forward.",
+  "explanation": "## Key Principle: Opposition\n\nWith the black king directly in front of yours, pushing the pawn too soon leads to stalemate or loss of the pawn. The right idea is to **outflank**: move the king sideways so the enemy king has to give way.\n\n## The Plan\n\n1. **{{Kd6}}** — White steps to the queenside, threatening to invade on d7 or e7. Black is forced into the only defence, **{{Kd8}}**, taking the opposition again.\n2. With the kings still facing off, the pawn is now **safe to advance**. {{e6}} reaches a square defended by the king and shoulders the black king back.\n3. After ...Ke8 (or ...Kc8) White will play **e7** and shepherd the pawn home.\n\n> The key idea: in K+P vs K, the king travels first and the pawn comes later.\n\n## What Goes Wrong If You Push Too Early\n\nIf instead White plays an immediate 1.e6?, Black answers 1...Kf8! and after 2.Kf6 Ke8 3.e7 the position is **stalemate** — Black has no legal move and the game is drawn. The lesson: in pawn endings, **the king leads and the pawn follows**."
 }

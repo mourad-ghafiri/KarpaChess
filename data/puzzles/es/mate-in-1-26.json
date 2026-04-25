@@ -4,5 +4,8 @@
   "solution": [
     "Ra8#"
   ],
-  "hint": "La torre se une al rey y al peón para dar mate."
+  "title": "Tapón de peón",
+  "setup": "Un peón en **d7** tapona el escape del rey por la columna, y tu rey en **d6** controla las diagonales.",
+  "hint": "Barre la torre a la octava fila — el peón de **d7** congela al rey en **d8**.",
+  "explanation": "## La idea\n\nUn lindo **mate con torre + peón**. El peón de d7 no da jaque — pero impide que el rey negro huya a d7 o incluso capture al defensor de tu rey.\n\nJuega {{Ra8#}}.\n\n¿Por qué está atrapado el rey?\n\n- {{c8}} y {{e8}} — cubiertas por la torre en a8\n- {{c7}}, {{e7}} — ambas controladas por tu rey en **d6**\n- {{d7}} — bloqueada por tu propio peón (y también defendida por tu rey)\n- {{Kxd7}} sería ilegal igualmente porque tu rey en **d6** defiende d7\n- Nada puede interponerse en la octava fila vacía\n\n> **Conclusión:** Incluso un *humilde peón* puede ser el factor decisivo en una red de mate. Cuando promociones cerca de un rey enemigo, no siempre te apresures a coronar dama — a veces el peón mismo es el bloqueador más útil."
 }

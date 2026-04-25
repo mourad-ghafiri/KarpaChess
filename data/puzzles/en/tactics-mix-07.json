@@ -2,7 +2,11 @@
   "id": "tactics-mix-07",
   "fen": "r4rk1/1pp2ppp/p1np4/4p3/2B1P3/2Pq1N2/PP2QPPP/R2R2K1 b - - 0 1",
   "solution": [
-    "Qxd1+"
+    "Qxe2",
+    "Bxe2"
   ],
-  "hint": "Force the trade into a winning endgame."
+  "title": "Trade Queens to Save the Day",
+  "setup": "Black's queen on **d3** is attacked by both the white queen on e2 and the bishop on c4. She must trade now or be lost.",
+  "hint": "When your queen is attacked twice and defended zero times, swap her off — don't dance.",
+  "explanation": "## The Idea\n\nThis is a **forced trade** — a survival tactic, not a winning combination. Black's queen is attacked by **two** white pieces (queen e2 and bishop c4) and defended by **none**. If Black does nothing, White plays {{Qxd3}} (or {{Bxd3}}) winning the queen for nothing.\n\nThe only good move is to **initiate the trade on Black's terms**: capture the white queen.\n\nBlack plays {{Qxe2}}.\n\n## White's Forced Reply\n\nWhite must recapture or lose the queen for nothing:\n\n- {{Bxe2}} — the bishop on c4 slides to e2 and recaptures. This is the only legal recapture (no rook or knight reaches e2 in one move).\n\nMaterial after the dust settles: equal. Black has converted a losing position into a balanced middlegame.\n\n## Pattern to Memorize\n\n> When your queen is doubly attacked and undefended, the question changes from *\"Can I win material?\"* to *\"How do I lose the least?\"*\n\nA queen trade with capture neutralizes the attack and equalizes material. Always check this option before retreating — sometimes the simplest swap is the best resource."
 }

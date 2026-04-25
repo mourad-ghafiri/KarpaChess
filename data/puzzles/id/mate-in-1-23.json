@@ -4,5 +4,8 @@
   "solution": [
     "Rc8#"
   ],
-  "hint": "Baris ke-8 terbuka lebar."
+  "title": "Palu Lajur Setengah Terbuka",
+  "setup": "Lajur c kosong antara benteng Anda dan baris ke-8, dan pelindung pion Hitam tanpa jendela pelarian.",
+  "hint": "Serbu lajur c yang terbuka — pion {{f7}}-{{g7}}-{{h7}} menjebak raja untuk Anda.",
+  "explanation": "## Idenya\n\nSebuah **skakmat baris belakang lewat lajur setengah terbuka**. Bahkan dengan material ekstra di papan, yang penting hanyalah baris ke-8 yang gundul dan pelindung pion yang terkunci.\n\nMainkan {{Rc8#}}.\n\nMengapa raja terjebak?\n\n- {{f8}}, {{h8}} dan baris ke-8 lainnya — dikuasai benteng di c8\n- {{f7}}, {{g7}}, {{h7}} — semua diblokir pion Hitam sendiri\n- Hitam tidak punya buah yang bisa menghalangi antara c8 dan g8 tepat waktu\n- Raja tidak bisa menangkap: c8 terlalu jauh dari g8\n\n> **Pelajaran:** *Lajur setengah terbuka* (Anda punya pion, lawan tidak) adalah salah satu struktur paling kuat dalam catur. Selalu periksa apakah benteng Anda dapat mengubah lajur itu menjadi skakmat."
 }

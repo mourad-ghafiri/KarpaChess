@@ -4,5 +4,8 @@
   "solution": [
     "Re8+"
   ],
-  "hint": "Winning rook endgame — cut off the king."
+  "title": "Cut the King Off",
+  "setup": "A rook ending where Black's king is tucked into the corner — your rook on e2 is the most active piece and ready to **dominate the back rank**.",
+  "hint": "Active rooks win endgames. Check the king and **cut it off** from the rest of the board before bringing your king up.",
+  "explanation": "## Key Principle: The Active Rook\n\nIn rook endings, the side with the **more active rook** almost always wins or holds. An active rook attacks pawns, restricts the enemy king, or sits behind a passed pawn. A passive rook tied to its own pawns is a near-fatal handicap.\n\n## The Plan\n\n1. **{{Re8+}}** — White seizes the open back rank with check. Black's only legal reply is **{{Kf7}}** (h7 is occupied by the pawn, h8 is also covered by the rook on the 8th rank).\n2. With the rook **dominating the 8th rank**, the black king is shut out of the corner and tied to defending. Now the white king walks up the board: Kg2, Kf3, Kg4, Kf5 — joining the attack with no opposition.\n3. White then targets the weak black pawns on g7 and h7. With the king active and the rook cutting off retreat, the kingside pawns will fall and the h-pawn will eventually promote.\n\n> The mantra: **rook to the 7th or 8th, king up the board, pawns fall like dominoes**.\n\n## What Goes Wrong With a Passive Move\n\nA quiet move like 1.Kf2? is far slower. Black has time to play 1...Kf7 himself, centralizing his king and meeting your invasion on equal terms. The advantage is real but harder to convert. By contrast, 1.Re8+ **forces** the black king into a passive square first — turning a small edge into a winning bind. In rook endings, **don't drift; check, cut off, and invade**."
 }

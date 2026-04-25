@@ -1,26 +1,26 @@
 {
   "id": "gruenfeld-advanced",
-  "title": "Défense Grünfeld",
+  "title": "La défense Grünfeld",
   "summary": "Un système hypermoderne de contre-attaque",
   "difficulty": "advanced",
   "steps": [
     {
       "type": "teach",
       "fen": "rnbqkb1r/ppp1pp1p/5np1/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4",
-      "title": "Laissez-les se surextendre",
-      "text": "La Grünfeld (1.d4 Nf6 2.c4 g6 3.Nc3 d5) est le rêve du contre-attaquant. Les Noirs laissent les Blancs bâtir un centre massif puis l'attaquent avec les pièces d'aile dame et les ruptures de pions."
+      "title": "Laissez-les se surétendre",
+      "text": "La **défense Grünfeld** est le chef-d'œuvre du contre-attaquant — une ouverture hypermoderne où les Noirs *invitent* les Blancs à bâtir un énorme centre, sachant qu'il sera difficile à défendre.\n\nNommée d'après le maître autrichien **Ernst Grünfeld**, qui l'a introduite dans les années 1920, elle a été l'arme préférée de **Bobby Fischer**, **Vladimir Kramnik**, **Garry Kasparov** et **Magnus Carlsen** à divers moments de leur carrière.\n\n## Comment on y arrive\n\nLa séquence définissante est {{d4}} **{{Nf6}}** {{c4}} **{{g6}}** {{Nc3}} **{{d5}}**. L'audacieux **3...d5** est l'âme du système : les Noirs défient directement le pion c blanc tout en préparant le fianchetto.\n\n## Ce que veut chaque camp\n\n- **Plan blanc :** capturer au centre par **{{cxd5}} {{Nxd5}} {{e4}}** (variante d'échange), ou développer tranquillement par {{Nf3}}, {{Bf4}}, {{e3}}, {{Be2}} (système russe) ou {{Bg5}} (système Smyslov). Le but : bâtir et *garder* un grand centre.\n- **Plan noir :** fianchetter le fou roi en **g7**, attaquer le pion d4 par **...c5**, parfois rompre par **...e5**, développer **...Nc6**, **...Bg4**, et prouver que le centre blanc est *surétendu*.\n- **Structure de pions :** déséquilibre caractéristique de la Grünfeld — les Blancs ont des pions centraux en d4 et e4 (variante d'échange), les Noirs ont moins de pions mais une activité de pièces énorme.\n\n## Pourquoi elle est audacieuse\n\nLa Grünfeld concède le **centre** volontairement. Les Noirs parient que les pions blancs deviendront des *cibles* plutôt que des armes. Si les Noirs ont raison, le grand centre blanc s'effondre ; sinon, les Noirs sont écrasés.\n\n> La Grünfeld, c'est du jazz : de l'improvisation sur un thème complexe. Magnifique quand ça marche."
     },
     {
       "type": "teach",
       "fen": "rnbqkb1r/ppp1pp1p/5np1/3P4/2P5/2N5/PP2PPPP/R1BQKBNR b KQkq - 0 4",
       "title": "La variante d'échange",
-      "text": "Après 4.cxd5 Nxd5 5.e4, le cavalier noir recule et les Blancs ont un énorme centre — mais les Noirs menacent de le détruire avec les pièces. Un test clé des échecs dynamiques : centre statique contre activité des pièces."
+      "text": "La réplique la plus fréquente des Blancs est la **variante d'échange** — **4.cxd5 Nxd5 5.e4**. Le cavalier noir recule et le centre blanc dispose désormais de *deux* pions centraux (d4 et e4).\n\n## Pourquoi c'est critique\n\n- Les pions blancs ont l'air intimidants — ils coupent les pièces noires en deux et semblent dominer l'échiquier.\n- Mais ce sont des **pions** — ils peuvent être attaqués. Les pièces, elles, sont mobiles.\n- Plan noir : **...Bg7**, **...c5** (attaquant d4), **...Nc6**, **...Qa5** ou **...Bg4** — assaut total sur le centre.\n\n## La ligne d'échange moderne\n\nUne ligne principale célèbre va **5.e4 Nxc3 6.bxc3 Bg7 7.Nf3 c5 8.Be3 Qa5 9.Qd2 Nc6** — au coup 9, les Noirs sont développés, attaquent le centre et prêts à saper la structure blanche par les ruptures **...cxd4**.\n\n## Ce que dit la structure\n\n- Le **pion d isolé ou les pions c doublés** des Blancs deviennent les cibles à long terme.\n- Le **fou fianchetto noir en g7** domine la grande diagonale — visant **a1, b2, c3, d4** d'un seul tenant.\n- La **rupture c5** est le coup-clé des Noirs — sans elle, la Grünfeld ne fait rien.\n\n## Autres tentatives blanches\n\n- **Système russe** (4.Nf3 Bg7 5.Qb3) — les Blancs pressent d5 avec la dame.\n- **Bg5 / Système Smyslov** — les Blancs développent le fou tôt pour décourager ...c5.\n- **Sämisch / Tartakower** — les Blancs jouent {{f3}} préparant e4.\n\n> La Grünfeld d'échange : les Blancs construisent, les Noirs tirent au sniper."
     },
     {
       "type": "teach",
       "fen": "rnbqkb1r/ppp1pp1p/5np1/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4",
-      "title": "Thèmes classiques de la Grünfeld",
-      "text": "Plans des Noirs : fianchetto en g7, pression sur d4 avec ...c5, roque, ...Nc6, ...Bg4. Le fou fianchetto en g7 est la clé — il rayonne de puissance dans la position blanche, surtout après les effondrements ...d4."
+      "title": "Les thèmes classiques de la Grünfeld",
+      "text": "La Grünfeld a un petit jeu de thèmes stratégiques récurrents. Maîtrisez-les et vous serez à l'aise dans presque tout milieu de partie Grünfeld.\n\n## Le manuel des Noirs\n\n- **Fianchetto en g7.** Le fou est le moteur de toute l'ouverture. *Ne jamais* l'échanger pour moins qu'un cavalier sauf nécessité absolue.\n- **Pression sur d4 avec ...c5.** C'est la rupture-clé. Sans elle, le centre blanc est trop fort.\n- **Petit roque** — au 6e ou 7e coup en général. Le fou fianchetto et le roi roqué forment le triangle défensif.\n- **...Nc6, ...Bg4, ...Qa5.** Les pièces visent les pions centraux et le cavalier c3 (surchargé entre la défense de d4 et e4).\n- **...Rfd8, ...Rac8.** Une fois développées, les tours s'empilent sur les colonnes c et d où se joue la bataille structurelle.\n\n## La course d4-d5\n\nLa question critique dans bien des Grünfeld : *les Noirs forceront-ils d4 à avancer en d5 ?* Si oui, les Noirs pourront attaquer le pion d5 désormais isolé depuis c6 et e6. Sinon, le centre blanc reste intact et la paire de fous plus l'espace pèsent.\n\n## Parties Grünfeld célèbres\n\n- **Botvinnik–Fischer 1962** — Fischer s'est servi de la Grünfeld pour démolir le champion du monde de manière éclatante.\n- **Championnat du monde Kasparov–Karpov 1990** — les victoires répétées de Kasparov en Grünfeld ont changé la théorie principale.\n- **Carlsen–Anand 2014** — la Grünfeld d'Anand fut l'ouverture surprise qui a fait transpirer Carlsen.\n\n> La Grünfeld : petites pièces, grandes idées. La contre-attaque comme art de vivre."
     }
   ]
 }

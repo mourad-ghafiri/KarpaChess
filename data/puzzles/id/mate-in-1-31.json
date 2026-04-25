@@ -2,7 +2,10 @@
   "id": "mate-in-1-31",
   "fen": "5k2/4Q3/5K2/8/8/8/8/8 w - - 0 1",
   "solution": [
-    "Qe8+"
+    "Qf7#"
   ],
-  "hint": "Menteri di baris belakang — tidak ada pelarian."
+  "title": "Ciuman Dorong Lajur",
+  "setup": "Menteri Anda di **e7** dan raja di **f6** membentuk pasangan rapat — tetapi {{e8}} memberi raja jalan kabur.",
+  "hint": "Dorong menteri *naik di lajur* raja — raja Anda menjaga petak pendaratannya.",
+  "explanation": "## Idenya\n\n**Kiss-of-death** lainnya. Pergi ke {{e8}} membiarkan raja kabur karena **f6** tidak menjaga e8 — tetapi menteri satu petak di depan raja Anda, dijaga raja Anda, adalah pembunuhnya.\n\nMainkan {{Qf7#}}.\n\nMengapa raja terjebak?\n\n- Menteri di f7 menyerang f8 langsung (skak lajur)\n- {{e8}} — dikuasai menteri di f7 (diagonal)\n- {{g8}} — dikuasai menteri di f7 (diagonal)\n- {{Kxf7}} ilegal — raja Anda di **f6** menjaga f7\n- Tidak ada yang bisa menghalangi: f7 bersebelahan dengan f8\n\n> **Pelajaran:** Hati-hati dengan *skak menteri spektakuler dari jauh* — sering kali memberi pelarian. Menteri yang menskakmat sering mendarat *di samping* raja lawan di petak yang dijaga raja Anda."
 }

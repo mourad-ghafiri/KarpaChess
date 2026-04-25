@@ -4,18 +4,26 @@
   "summary": "Permainan sayap yang fleksibel",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "title": "Kuasai Pusat dari Sayap",
-      "text": "Pembukaan Inggris (1.c4) adalah pembukaan fleksibel yang dijuarai pemain top. Alih-alih bergegas mendorong d4, Putih menyiapkannya dengan dukungan pion c dan mengembangkan bidak lebih dulu. Permainan sering beralih ke Gambit Menteri atau struktur Indian." },
-    { "type": "play",
+      "title": "Kontrol Pusat dari Sayap",
+      "text": "**Pembukaan Inggris** ({{c4}}) adalah pilihan kenamaan — sistem fleksibel hipermodern yang difavoritkan juara dunia seperti Botvinnik, Kasparov, Carlsen, dan Caruana.\n\nAlih-alih membawa pion ke pusat, Putih mempersiapkan **kontrol bertahap** dengan pion-c, kembangkan bidak dulu, dan putuskan struktur berdasarkan apa yang dilakukan Hitam.\n\n## Apa yang diinginkan masing-masing pihak\n\n- **Rencana Putih:** main {{c4}} dulu, lalu {{Nc3}} dan {{Nf3}}, fianchetto gajah raja dengan {{g3}} dan {{Bg2}}, dan rokade. Pusat diperjuangkan dengan d3 atau d4 *belakangan*.\n- **Rencana Hitam:** perlakukan Inggris seperti Gambit Menteri Ditolak atau lawan balik secara simetris dengan **...c5**. Balasan paling berani adalah **1...e5** (*Sisilia terbalik*), yang bisa mengarah ke permainan liar.\n- **Struktur pion:** sering bentuk *Inggris / Hedgehog* — pion Hitam di a6, b6, d6, e6, sementara Putih ekspansi dengan c4-d4-e4 dalam jangka panjang.\n\n## Garis model\n\n{{c4}} {{e5}} {{Nc3}} {{Nf6}} {{g3}} **d5** {{cxd5}} **Nxd5** {{Bg2}}. Putih siap untuk pengerukan posisional panjang dengan gajah diagonal panjang menunjuk ke queenside Hitam.\n\n## Mengapa ramah grandmaster\n\nInggris bertransposisi ke pembukaan lain *hanya saat Putih ingin*. Jika Anda main **1.c4**, Anda bisa memilih nanti apakah menuju Gambit Menteri, Pertahanan Indian, atau struktur Inggris murni — fleksibilitasnya luar biasa.\n\n> Kontrol tanpa komitmen. Inggris menang dengan kesabaran."
+    },
+    {
+      "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "prompt": "Mainkan Pembukaan Inggris.",
-      "targetSan": ["c4"],
-      "hint": "1.c4 — Pembukaan Inggris." },
-    { "type": "teach",
+      "prompt": "Buka dengan Inggris — mainkan **{{c4}}**.",
+      "targetSan": [
+        "c4"
+      ],
+      "hint": "1.c4 menantang kotak d5 Hitam dari sayap dan menjaga pion-e dan d fleksibel untuk nanti."
+    },
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/2P5/8/PP1PPPPP/RNBQKBNR b KQkq - 0 1",
-      "title": "Lanjutan Fleksibel",
-      "text": "Tergantung balasan Hitam, Putih dapat bermain d4 (beralih ke Gambit Menteri), Nc3 + g3 (gaya Botvinnik posisional), atau e3 (fleksibel). Pembukaan Inggris pilihan bagus jika Anda tidak suka menghafal teori tajam." }
+      "title": "Tindak Lanjut Fleksibel",
+      "text": "Yang kuat tentang 1.c4 adalah menu rencana yang Putih jaga tetap terbuka.\n\n## Empat penataan utama Putih\n\n- **Inggris Simetris** — Putih main {{Nc3}}, {{g3}}, {{Bg2}}, {{Nf3}}, **0-0**, lalu pilih antara {{d4}} (transposisi ke Gambit Menteri) atau manuver tenang.\n- **Sistem Botvinnik** — pion di c4-d3-e4, kuda ke c3 dan e2, gajah ke g2. Antipeluru dan fleksibel.\n- **Sisilia Terbalik** — jika Hitam main 1...e5, Putih pada dasarnya mendapat Sisilia *dengan tempo ekstra*. Tajam dan menguntungkan.\n- **Serangan Mikenas** — 1.c4 Nf6 2.Nc3 e6 3.e4!? — langsung dan agresif, seperti 1.e4 yang ditunda.\n\n## Transposisi umum\n\n- Setelah **1.c4 e5 2.Nc3 Nf6 3.Nf3 Nc6** — tabiya *Sisilia terbalik*.\n- Setelah **1.c4 c5 2.Nf3 Nf6 3.Nc3** — *Inggris Simetris* menuju Hedgehog.\n- Setelah **1.c4 e6 2.Nc3 d5** — Putih bisa main d4 dan mencapai *Gambit Menteri Ditolak* sesuai keinginannya.\n\n> Jika Anda tidak suka menghafal teori paksa, Inggris memberi Anda sistem. Jika Anda menyukai strategi mendalam, ia memberi Anda seumur hidup studi."
+    }
   ]
 }

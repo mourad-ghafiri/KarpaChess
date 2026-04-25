@@ -4,5 +4,8 @@
   "solution": [
     "Rc8#"
   ],
-  "hint": "La 8e rangée est grande ouverte."
+  "title": "Le Marteau de la Colonne Semi-Ouverte",
+  "setup": "La colonne c est vide entre votre tour et la 8e rangée, et le bouclier de pions noirs n'a pas de fenêtre d'évasion.",
+  "hint": "Chargez sur la colonne c ouverte — les pions {{f7}}-{{g7}}-{{h7}} piègent le roi pour vous.",
+  "explanation": "## L'Idée\n\nUn **mat du couloir via une colonne semi-ouverte**. Même avec du matériel supplémentaire sur l'échiquier, tout ce qui compte est la 8e rangée nue et le bouclier de pions verrouillé.\n\nJouez {{Rc8#}}.\n\nPourquoi le roi est-il piégé ?\n\n- {{f8}}, {{h8}} et le reste de la 8e rangée — couvertes par la tour en c8\n- {{f7}}, {{g7}}, {{h7}} — toutes bloquées par les propres pions noirs\n- Les Noirs n'ont aucune pièce qui peut s'interposer entre c8 et g8 à temps\n- Le roi ne peut capturer : c8 est trop loin de g8\n\n> **À retenir :** Une *colonne semi-ouverte* (vous avez un pion, eux non) est l'une des structures les plus puissantes des échecs. Vérifiez toujours si votre tour peut convertir cette colonne en mat."
 }

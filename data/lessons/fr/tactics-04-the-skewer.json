@@ -8,20 +8,22 @@
       "type": "teach",
       "fen": "8/8/3q4/8/8/3k4/8/R6K w - - 0 1",
       "title": "L'enfilade",
-      "text": "Une enfilade est l'image miroir d'un clouage. Vous attaquez une pièce de valeur qui DOIT bouger — et quand elle le fait, une pièce de moindre valeur derrière elle est exposée. Le plus souvent, le roi est la pièce enfilée : il doit sortir de l'échec, abandonnant ce qui était derrière lui."
+      "text": "Une **enfilade** est l'image miroir d'un clouage. Vous attaquez la pièce *la plus précieuse* devant ; quand elle s'écarte, vous attrapez la pièce *moins précieuse* derrière.\n\n## La géométrie\n\nUne enfilade exige la même droite qu'un clouage — colonne, rangée ou diagonale — mais l'ordre des cibles est **inversé** :\n\n1. Votre **attaquant à longue portée** ({{Ra1}}, dame, fou).\n2. La **pièce précieuse** devant (souvent le roi).\n3. Une **pièce moins précieuse** derrière, sur la même ligne.\n\nQuand la pièce de devant bouge (et elle le doit — surtout en échec), la pièce de derrière tombe.\n\n## Clouage contre enfilade en un coup d'œil\n\n- **Clouage :** petite pièce devant, grosse pièce derrière. La petite pièce est *figée*.\n- **Enfilade :** grosse pièce devant, petite pièce derrière. La grosse pièce *fuit* et la petite est capturée.\n\n## Comment la repérer\n\n1. Cherchez une ligne traversant le roi ou la dame adverse.\n2. Vérifiez ce qui se trouve sur cette ligne *derrière* la cible précieuse.\n3. Si une pièce moins précieuse est là, trouvez un moyen d'attaquer sur cette ligne — souvent un échec.\n4. Calculez la reprise : la case d'enfilade est-elle défendue ?\n\nIci, le roi est en d3 et la dame est derrière en d6. {{Rd1+}} frappe le roi sur la colonne d ; le roi doit bouger et la dame tombe.\n\n> Une enfilade, c'est ce qui arrive quand la pièce précieuse est trop fière pour se cacher derrière une plus petite."
     },
     {
       "type": "play",
       "fen": "8/8/3q4/8/8/3k4/8/R6K w - - 0 1",
-      "prompt": "Amenez votre tour sur la colonne d pour enfiler roi et dame.",
-      "targetSan": ["Rd1+"],
-      "hint": "Rd1 donne échec — la dame sera la suivante."
+      "prompt": "Enfilez le roi et la dame sur la colonne d avec **{{Rd1+}}**.",
+      "targetSan": [
+        "Rd1+"
+      ],
+      "hint": "Que se trouve-t-il sur la colonne d derrière le roi ? Un échec le force à s'écarter."
     },
     {
       "type": "teach",
-      "fen": "8/8/8/3q4/8/3k4/8/3R3K w - - 0 1",
-      "title": "Ramassez le prix",
-      "text": "Après Rd1+, le roi doit bouger. La dame est perdue au coup suivant. Voilà pourquoi les enfilades sont si puissantes sur les colonnes et diagonales ouvertes — même une tour bien placée peut abattre une dame."
+      "fen": "8/8/8/3q4/8/3k4/8/3R3K b - - 0 1",
+      "title": "Empochez le butin",
+      "text": "Après {{Rd1+}}, le roi est en échec et **doit** quitter la colonne d — aucune pièce ne peut intercepter et la tour n'est pas prenable.\n\n## La suite\n\n- Le roi va en **e3**, **c3**, **e2** ou **c2** — n'importe quelle case hors de la colonne d.\n- La dame en d6 est désormais exposée à {{Rxd5}} ou, selon la case du roi, simplement perdue au coup suivant.\n- Les Blancs gagnent la dame pour rien.\n\n## Pourquoi les enfilades sont si meurtrières\n\n- Elles arrivent presque toujours **avec échec**, donc la réponse est forcée.\n- Les colonnes ouvertes et les longues diagonales sont leurs autoroutes. Échangez les pièces pour les dégager.\n- Même une humble tour peut renverser une dame si l'alignement est bon.\n\n> Le clouage fige ; l'enfilade chasse. Dans les deux cas, quelqu'un meurt sur la ligne."
     }
   ]
 }

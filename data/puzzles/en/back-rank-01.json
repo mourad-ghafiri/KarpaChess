@@ -4,5 +4,8 @@
   "solution": [
     "Rxd8#"
   ],
-  "hint": "Trade rooks — Black's king has no escape."
+  "title": "The Sealing Trade",
+  "setup": "Both kings are tucked behind their pawns. Both rooks face off on the d-file. Whoever strikes first lives.",
+  "hint": "Trade rooks — Black's king has **no luft** and the trade locks the back rank.",
+  "explanation": "## The Idea\n\nThis is the **back-rank mate** in its purest form. The trade {{Rxd8#}} ends the game on the spot:\n\n1. White's rook captures Black's rook on d8.\n2. Black's king on g8 has no escape:\n   - **f8, e8, h8** — all controlled by the white rook on d8.\n   - **f7, g7, h7** — blocked by Black's own pawns.\n3. There is no piece to capture the white rook on d8, and no way to block — the rook is delivering check from immediately next to the king's prison.\n\n### Why the position is lost for Black\n\nThe Black king is **suffocating**. Its own pawns on f7-g7-h7 form a wall that protects against frontal attack but kills any escape on the 8th rank. A single tempo of *luft* (a pawn move like {{h6}} or {{g6}}) would have prevented this whole motif.\n\n### Pattern to memorize\n\n- King on g8/g1 + pawns on f7-g7-h7 + no defender on the back rank = **back-rank mate is in the air.**\n- Whenever your rook hits the 8th/1st rank with no enemy piece guarding it, look for `Rxd8#` style trades.\n\n> *\"Luft\"* — a pawn move to give the king air — is the simplest insurance in chess. One tempo. Lifelong protection."
 }

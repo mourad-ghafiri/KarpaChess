@@ -1,69 +1,69 @@
 {
   "id": "how-pieces-move",
   "title": "Cómo se Mueven las Piezas",
-  "summary": "Conoce cada pieza del tablero",
+  "summary": "Conoce a cada pieza del tablero",
   "difficulty": "beginner",
   "steps": [
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "Bienvenido",
-      "text": "El ajedrez se juega en 64 casillas con 16 piezas por bando. Las Blancas siempre mueven primero. Conocerás cada pieza por turno — el peón, el caballo, el alfil, la torre, la dama y el rey."
+      "text": "Sesenta y cuatro casillas, treinta y dos piezas, infinitas historias. Eso es el ajedrez.\n\nEl tablero que tienes delante es la posición inicial de cada partida jamás jugada por Capablanca, Fischer, Kasparov y Carlsen. Las blancas siempre mueven primero, luego las negras, alternando hasta que un rey reciba jaque mate, los jugadores acuerden tablas o se acabe el tiempo.\n\n## Lo que aprenderás aquí\n\n- Cómo se mueve y captura cada uno de los **seis tipos de piezas**\n- Por qué algunas piezas son más fuertes que otras\n- El vocabulario que usarás durante toda tu vida ajedrecística\n\nNo intentes memorizarlo todo. Cada pieza tiene una o dos reglas sencillas — una vez que las hayas movido unas cuantas veces, los patrones se vuelven memoria muscular.\n\n> Las piezas son personajes de una historia. Aprende cómo camina cada una antes de pedirles que bailen."
     },
     {
       "type": "teach",
       "fen": "8/8/8/8/8/8/4P3/4K3 w - - 0 1",
       "title": "El Peón",
-      "text": "Los peones avanzan una casilla a la vez — o dos en su primer movimiento. Capturan en diagonal. Un peón que llega al lado opuesto promociona a cualquier pieza que elijas. Pequeño, pero decisivo."
+      "text": "El humilde peón — el alma del ajedrez, decía el maestro Philidor.\n\nUn peón es la única pieza que **se mueve y captura de forma diferente**. Marcha hacia adelante una casilla a la vez, nunca de lado y nunca hacia atrás. En su primer movimiento tiene la opción de saltar dos casillas — un único impulso de energía antes de su larga y lenta carrera.\n\n## Tres cosas que todo peón puede hacer\n\n- **Avanzar** una casilla, solo si esa casilla está vacía\n- **Saltar dos casillas** desde su fila inicial — útil para la apertura\n- **Capturar en diagonal** una casilla hacia adelante, tomando una pieza enemiga\n\nY le aguarda una recompensa mágica: un peón que llega al otro extremo del tablero **promociona** a la pieza que tú elijas (la dama es la favorita). Un soldado de infantería se convierte en dama. Ese es el sueño.\n\nPor ejemplo, desde su casilla inicial, el peón de e puede jugar {{e3}} o {{e4}}.\n\n> Los peones nunca pueden retroceder — elige su camino con cuidado."
     },
     {
       "type": "play",
       "fen": "8/8/8/8/8/8/4P3/4K3 w - - 0 1",
-      "prompt": "Empuja el peón dos casillas adelante para reclamar el centro.",
+      "prompt": "Empuja el peón de e dos casillas para reclamar el centro con **{{e4}}**.",
       "targetSan": [
         "e4"
       ],
-      "hint": "En su primer movimiento, un peón puede saltar dos casillas. Prueba e4."
+      "hint": "En su primer movimiento, un peón puede saltar dos casillas. El centro es un lugar excelente para aterrizar."
     },
     {
       "type": "teach",
       "fen": "8/8/8/8/8/8/8/4K2N w - - 0 1",
       "title": "El Caballo",
-      "text": "Los caballos saltan en forma de L — dos casillas en una dirección, luego una en ángulo recto. Son la única pieza que puede saltar sobre otras. Difíciles de ver, mortíferos en el lugar correcto."
+      "text": "El caballo es el embaucador del tablero.\n\nA diferencia de cualquier otra pieza, el caballo **no** viaja en líneas rectas. Salta en forma de **L**: dos casillas en una dirección (fila o columna), luego una casilla en perpendicular. Desde una casilla central, un caballo alcanza hasta ocho casillas distintas — como pétalos alrededor de una flor.\n\n## Lo que hace especiales a los caballos\n\n- **Saltan.** Ninguna otra pieza puede saltar por encima de piezas amigas o enemigas — los caballos vuelan sobre ellas.\n- **Aman el centro.** Un caballo en el borde ataca solo dos o tres casillas; un caballo en el centro ataca ocho.\n- **Son lentos pero devastadores.** Un caballo puede tardar cuatro movimientos en cruzar el tablero, pero en el puesto avanzado correcto es un monstruo.\n\nDesde h1, el caballo puede saltar a {{Nf2}} o {{Ng3}}. Fíjate cómo funciona la L — cuenta dos casillas en una dirección, una en la otra.\n\n> Un caballo en el borde es triste. Un caballo en el centro es un acertijo."
     },
     {
       "type": "play",
       "fen": "8/8/8/8/8/8/8/4K2N w - - 0 1",
-      "prompt": "Desarrolla el caballo hacia el centro. Juega Nf3 o Ng3.",
+      "prompt": "Desarrolla el caballo hacia la acción. Prueba **{{Nf2}}** o **{{Ng3}}** — ambos son saltos en L desde h1.",
       "targetSan": [
         "Nf2",
         "Ng3"
       ],
-      "hint": "El caballo en h1 puede llegar a f2 o g3."
+      "hint": "Dos casillas en una dirección, luego una casilla en perpendicular. Desde h1, ¿qué casillas alcanza?"
     },
     {
       "type": "teach",
       "fen": "8/8/8/8/8/8/8/2B1K3 w - - 0 1",
       "title": "El Alfil",
-      "text": "Los alfiles se deslizan por diagonales todo lo que deseen. Cada alfil permanece en un color para siempre — uno controla casillas claras, el otro oscuras. Aman las posiciones abiertas."
+      "text": "Los alfiles son los aristócratas de las diagonales. Se deslizan tan lejos como deseen por las líneas inclinadas del tablero — pero solo sobre **un color para siempre**.\n\nEl alfil que ves aquí vive en casillas oscuras; su compañero (cuando aparezca) vivirá en casillas claras. Juntos cubren todo el tablero. Por separado, cada uno tiene la mitad del mundo oculta.\n\n## Fundamentos del alfil\n\n- **Su alcance es largo, pero las piezas lo bloquean.** El rayo del alfil se detiene en la primera pieza de su camino.\n- **Las posiciones abiertas son su paraíso.** Pocos peones significan que el alfil puede estirarse.\n- **Los dos alfiles juntos** se llaman *pareja de alfiles* y son ligeramente más fuertes que un par de caballos.\n\nDesde c1, este alfil puede deslizarse a {{Bd2}}, {{Be3}}, {{Bf4}}, hasta {{Bh6}} si nada le obstruye.\n\n> Un alfil es un francotirador de largo alcance. Dale líneas abiertas y dominará."
     },
     {
       "type": "teach",
       "fen": "8/8/8/8/8/8/8/R3K3 w - - 0 1",
       "title": "La Torre",
-      "text": "Las torres se mueven en líneas rectas — por filas y columnas. Se convierten en monstruos en el final y aman las columnas abiertas."
+      "text": "Las torres son la infantería pesada — líneas rectas y fuerza bruta.\n\nUna torre se mueve cualquier número de casillas por **filas** o **columnas**. Como el alfil, su rayo se detiene en la primera pieza. A diferencia del alfil, puede cambiar de color y alcanzar, con el tiempo, todas las casillas del tablero.\n\n## Lo que aman las torres\n\n- **Columnas abiertas.** Una columna sin peones es la autopista de la torre.\n- **La 7ª fila** (o la 2ª desde el lado del rival). Las torres aquí cosechan peones y acosan al rey.\n- **Los finales.** Con el tablero despejado, las torres se vuelven imparables.\n\nEl otro truco especial de la torre es el **enroque** — el único momento en que un rey y una torre se mueven juntos, en el mismo turno. Lo veremos en su propia lección.\n\n> Saca tarde a las torres. Son lentas para desarrollarse, pero en el final dominan."
     },
     {
       "type": "teach",
       "fen": "8/8/8/8/8/8/8/3QK3 w - - 0 1",
       "title": "La Dama",
-      "text": "La dama combina torre y alfil — moviéndose cualquier distancia por filas, columnas o diagonales. Es la pieza más poderosa. No la saques demasiado pronto; puede ser perseguida."
+      "text": "La dama es la pieza más poderosa del tablero — con diferencia.\n\nSe mueve como **torre y alfil combinados**: cualquier número de casillas por filas, columnas O diagonales. Desde una casilla central, puede atacar 27 casillas a la vez. Ninguna otra pieza se le acerca.\n\n## Una nota de cautela\n\n- **No la saques demasiado pronto.** Cada vez que la atacan, debe retirarse — y pierdes un tiempo.\n- **Cambia con cuidado.** Perder la dama por menos suele significar perder la partida.\n- **En los ataques, ella es la directora de orquesta.** Empareja la con un caballo o alfil y aparecerán combinaciones devastadoras.\n\nUna dama en d1 puede fluir hasta {{Qd5}}, oscilar a {{Qa4}} o golpear por {{Qh5}} — solo bloqueada cuando se topa con una pieza.\n\n> El poder es paciente. Desarrolla primero las piezas menores; la dama se une al baile más tarde."
     },
     {
       "type": "teach",
       "fen": "8/8/8/8/8/8/8/4K3 w - - 0 1",
       "title": "El Rey",
-      "text": "El rey avanza una casilla en cualquier dirección. Protégelo a toda costa — si le dan jaque mate, el juego termina. En el final, actívalo: vale unos tres peones en el ataque."
+      "text": "El rey es el corazón de cada posición. Si lo pierdes, la partida termina.\n\nEl rey camina solo **una casilla en cualquier dirección**: hacia adelante, atrás, a los lados o en diagonal. Alcance modesto, pero lleva toda la partida sobre sus hombros. Nunca puede pisar una casilla atacada por una pieza enemiga — eso sería ilegal, ya que entrar en jaque termina la partida.\n\n## Dos fases, dos roles\n\n- **Apertura y medio juego:** *escóndelo.* Enrócate en cuanto puedas. El rey pertenece a un rincón, detrás de un muro de peones.\n- **Final:** *actívalo.* Con las damas fuera y el peligro reducido, el rey se convierte en una pieza de combate que vale aproximadamente tres peones.\n\nEste cambio — de acobardado a embistiendo — es una de las ideas más profundas del ajedrez.\n\n> Protege a tu rey como si tu vida dependiera de ello. Porque en el ajedrez, sí depende."
     }
   ]
 }

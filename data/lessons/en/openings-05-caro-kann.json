@@ -4,23 +4,35 @@
   "summary": "A rock-solid defense to 1.e4",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "Solid and Sound",
-      "text": "The Caro-Kann (1.e4 c6) prepares ...d5 with support from the c-pawn. Unlike the French, the light-squared bishop develops freely. It's quiet, strategic, and famously difficult to break down." },
-    { "type": "play",
+      "text": "The **Caro-Kann Defense** is the choice of players who want to *survive the opening* and reach a healthy middlegame without memorizing reams of theory. It's been a workhorse for world champions like Capablanca, Karpov, and Anand.\n\n## The defining sequence\n\nThe opening goes {{e4}} {{c6}}. With **...c6**, Black prepares **...d5** the next move — but unlike the French (1...e6), the c-pawn move *doesn't* block the light-squared bishop. After ...d5 and an eventual exchange, Black's bishop emerges actively to f5 or g4.\n\n## What each side wants\n\n- **White's plan:** challenge the center with **{{d4}}** and choose a setup — *Advance* ({{e5}}), *Exchange* ({{exd5}}), *Classical* ({{Nc3}} or {{Nd2}} dxe4 Nxe4), or *Two Knights* ({{Nc3}}, {{Nf3}}). Each leads to a distinct middlegame.\n- **Black's plan:** play **...d5**, develop the c8 bishop *outside* the pawn chain (usually to f5), then **...e6**, **...Nd7**, **...Ngf6**, castle short, and look for a solid endgame edge.\n- **Pawn structure:** often produces a *Caro-Kann pawn chain* (e6, d5) or, after exchanges, a clean symmetric structure where Black is happy to grind.\n\n## Why play it\n\nThe Caro-Kann gives Black **a good light-squared bishop** (its most common complaint about the French is fixed) and a tough nut for White to crack. It rewards patience and excellent endgame technique.\n\n> The Caro-Kann is the chess equivalent of a granite wall. Slow, steady, almost impossible to break."
+    },
+    {
+      "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
-      "prompt": "Black plays the Caro-Kann setup.",
-      "targetSan": ["c6"],
-      "hint": "1...c6 prepares ...d5." },
-    { "type": "play",
+      "prompt": "Black plays the Caro-Kann with **{{c6}}** — preparing **...d5** with full pawn support.",
+      "targetSan": [
+        "c6"
+      ],
+      "hint": "Unlike the French (1...e6), this move keeps Black's light-squared bishop free. Solid AND active."
+    },
+    {
+      "type": "play",
       "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
-      "prompt": "White's main reply: strengthen the center.",
-      "targetSan": ["d4"],
-      "hint": "2.d4 claims the full center." },
-    { "type": "teach",
+      "prompt": "White's main reply: stake the full center with **{{d4}}**.",
+      "targetSan": [
+        "d4"
+      ],
+      "hint": "By playing d4, White builds the classical big center. If Black challenges with ...d5, the position becomes critical."
+    },
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pp1ppppp/2p5/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2",
       "title": "The Break",
-      "text": "Black now plays 2...d5, challenging White's center directly. White can advance (e5), exchange (exd5), or push into the Advance Variation. Each leads to a different type of game." }
+      "text": "Now Black plays the planned **...d5**, hitting White's e4 pawn directly. White must choose how to react — and the choice defines the rest of the game.\n\n## Four main variations\n\n- **Advance Variation** — **3.e5**. White pushes past, gaining space. Black gets the bishop out via **...Bf5** before locking it in.\n- **Exchange Variation** — **3.exd5 cxd5**. Symmetric, calm, gives White a small space edge.\n- **Classical (Capablanca) Variation** — **3.Nc3 dxe4 4.Nxe4 Bf5**. Famous for the active Black bishop on f5.\n- **Panov-Botvinnik Attack** — **3.exd5 cxd5 4.c4!** White transposes into IQP-style play with attacking chances.\n\nA model game runs {{e4}} {{c6}} {{d4}} {{d5}} {{Nc3}} **dxe4** {{Nxe4}} **Bf5**. Black emerges with the bishop pair already broken in your favor and a flexible setup.\n\n> The Caro-Kann teaches you that *flexibility wins more games than aggression*."
+    }
   ]
 }

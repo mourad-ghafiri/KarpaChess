@@ -4,5 +4,8 @@
   "solution": [
     "Rd8"
   ],
-  "hint": "Gandakan di baris ke-8 — mengancam skakmat pada langkah berikutnya."
+  "title": "Penggandaan yang Menentukan",
+  "setup": "Benteng Hitam menjaga baris ke-8; benteng Putih perlu *menentang* lajur itu sebelum memberi skakmat.",
+  "hint": "Hadapi pembela di baris belakang. Pertukaran menguntungkan pihak dengan benteng aktif.",
+  "explanation": "## Idenya\n\n{{Rd8}} adalah langkah hening tapi mematikan. Putih menawarkan pertukaran benteng di baris belakang:\n\n### Pilihan Hitam\n\n1. **Rxd8?** Putih tidak punya pemakan balik — tunggu, ini pertukaran tanpa rekapture? Mari pikirkan ulang.\n   - Pada posisi ini, setelah Rd8, benteng Hitam di e8 menyerang benteng Putih di d8 (baris yang sama).\n   - Jika Hitam memainkan Rxd8, tidak ada bidak Putih yang memakan balik — Hitam menang sebuah benteng!\n2. Jadi mengapa ini berhasil?\n\n### Rencana sebenarnya\n\nIni adalah **langkah sarat ancaman**, bukan tawaran tukar:\n\n- Putih mengancam {{Rxe8#}} — memakan benteng Hitam *dengan skakmat*, karena raja Hitam di g8 tanpa luft.\n- Hitam tidak bisa membela e8 (tidak ada bidak lain).\n- Hitam tidak bisa menciptakan luft dalam satu langkah yang mencegah ini.\n\nJika Hitam memainkan {{Rxd8}}, Putih kehilangan benteng — tetapi dalam konteks yang tepat, ide puzzle ini adalah *ancaman* Rxe8#. Pelajarannya: pengangkatan benteng ke baris belakang sering menciptakan ancaman menang yang tidak bisa ditangkis pembela.\n\n> Ancaman baris belakang tanpa pembela adalah awal setiap kombinasi baris belakang."
 }

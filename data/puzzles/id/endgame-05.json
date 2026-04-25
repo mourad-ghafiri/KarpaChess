@@ -4,5 +4,8 @@
   "solution": [
     "Re8+"
   ],
-  "hint": "Akhir permainan benteng yang menang — potong jalur raja."
+  "title": "Putus Jalur Raja",
+  "setup": "Akhir benteng di mana raja Hitam terselip di pojok — benteng Anda di e2 adalah bidak paling aktif dan siap **mendominasi baris belakang**.",
+  "hint": "Benteng aktif memenangkan akhir permainan. Skak raja dan **putus jalurnya** dari sisa papan sebelum membawa raja Anda maju.",
+  "explanation": "## Prinsip Kunci: Benteng Aktif\n\nDalam akhir benteng, pihak dengan **benteng lebih aktif** hampir selalu menang atau bertahan. Benteng aktif menyerang bidak, membatasi raja musuh, atau duduk di belakang bidak lewat. Benteng pasif yang terikat menjaga bidak sendiri adalah hambatan hampir fatal.\n\n## Rencananya\n\n1. **{{Re8+}}** — Putih merebut baris belakang terbuka dengan skak. Satu-satunya jawaban legal Hitam adalah **{{Kf7}}** (h7 ditempati bidak, h8 juga ditutupi benteng di baris ke-8).\n2. Dengan benteng **mendominasi baris ke-8**, raja Hitam tertutup dari pojok dan terikat membela. Sekarang raja Putih berjalan naik papan: Kg2, Kf3, Kg4, Kf5 — bergabung ke serangan tanpa perlawanan.\n3. Putih lalu menargetkan bidak hitam yang lemah di g7 dan h7. Dengan raja aktif dan benteng memutus jalur mundur, bidak sayap raja akan jatuh dan bidak h akhirnya promosi.\n\n> Mantra: **benteng ke baris ke-7 atau ke-8, raja naik papan, bidak jatuh seperti domino**.\n\n## Apa yang Salah dengan Langkah Pasif\n\nLangkah hening seperti 1.Kf2? jauh lebih lambat. Hitam punya waktu main 1...Kf7 sendiri, memusatkan rajanya dan menemui invasi Anda dalam keadaan setara. Keuntungan ada tapi lebih sulit dikonversi. Sebaliknya, 1.Re8+ **memaksa** raja Hitam ke kotak pasif duluan — mengubah keunggulan kecil menjadi ikatan menang. Dalam akhir benteng, **jangan terombang-ambing; skak, putus, dan invasi**."
 }

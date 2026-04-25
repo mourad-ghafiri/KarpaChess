@@ -4,5 +4,8 @@
   "solution": [
     "Rd8+"
   ],
-  "hint": "Tour sur la 8e rangée — la couverture de pions ne sert à rien."
+  "title": "Les Pions ne Sauvent Pas Ce Roi",
+  "setup": "Les Noirs ont joué {{g6}} pour un peu de luft — mais le roi est en g8 et la seule fuite mène dans un coin.",
+  "hint": "{{Rd8+}} chasse le roi. Le chemin de fuite est plus court que les Noirs ne le pensent.",
+  "explanation": "## L'Idée\n\n{{Rd8+}} est décisif même si les Noirs ont créé un peu d'espace avec {{g6}}. L'échec force un coup de roi, et les options noires sont catastrophiques :\n\n### Après Rd8+\n\n1. **Kh7 ?** Perd contre la tour qui poursuit l'assaut — les Blancs basculent sur la colonne h et le roi manque de cases.\n2. **Kg7** — le roi essaie d'avancer, mais la tour suit sur la 7e rangée, harcelant le roi et les pions.\n\nL'idée clé : **{{g6}} n'était pas suffisant** car le roi est encore cloué sur la 8e rangée par ses propres pions f7 et h7. Le coup de pion g n'a aidé que si le roi pouvait réellement se glisser en g7 *en sécurité* — ce qu'il ne peut pas, car la tour blanche le suivra sur la 7e ou 8e rangée.\n\n### Schéma\n\n- *Demi-luft* (un pion bougé) est pire que pas de luft, car cela tente le roi vers sa mort.\n- Un vrai luft signifie que le roi a une case de fuite **sûre**, pas seulement vide.\n\n> Le luft est une question de sécurité, pas seulement d'espace."
 }

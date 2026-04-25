@@ -1,20 +1,26 @@
 {
   "id": "draws",
   "title": "Ahogado y Tablas",
-  "summary": "Medio punto a veces es una victoria",
+  "summary": "A veces medio punto es una victoria",
   "difficulty": "beginner",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "7k/8/6K1/8/8/8/8/8 w - - 0 1",
       "title": "Ahogado",
-      "text": "El ahogado ocurre cuando el bando que tiene que mover NO tiene jugadas legales pero su rey NO está en jaque. Son tablas. Cuidado: cuando tengas una ventaja abrumadora, ten cuidado de no ahogar al rey enemigo — ¡tira la victoria!" },
-    { "type": "teach",
+      "text": "El ahogado es la regla más cruel del ajedrez — y la más bella, según el lado en el que estés.\n\nOcurre cuando **el bando que mueve no tiene ningún movimiento legal pero NO está en jaque**. ¿El resultado? **Tablas** inmediatas, sin importar cuán desigual sea el material.\n\nMira el diagrama: el rey negro en h8 no tiene a dónde ir. No puede pasar a g8 (atacada por tu rey en g6), ni a h7 (también atacada), y no está en jaque en h8. Si las negras juegan aquí, es ahogado.\n\n## Por qué existe el ahogado\n\n- Premia la técnica cuidadosa y castiga el descuido.\n- Da al bando que pierde una oportunidad incluso en posiciones desesperadas.\n- Te enseña que *atacar al rey no basta — debes dejarle un movimiento legal hasta que puedas darle mate*.\n\n> Incluso con rey y dama contra rey solo, una jugada descuidada puede ahogar. Deja siempre al rey enemigo al menos una casilla legal — hasta que puedas terminarlo."
+    },
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "title": "Otras Formas de Hacer Tablas",
-      "text": "Además del ahogado: (1) triple repetición — misma posición alcanzada tres veces; (2) regla de las 50 jugadas — 50 jugadas sin captura ni movimiento de peón; (3) material insuficiente — p.ej. dos reyes solos, o rey + caballo contra rey; (4) ambos jugadores acordando tablas." },
-    { "type": "teach",
+      "title": "Otras Formas de Tablas",
+      "text": "El ahogado es solo uno de varios caminos hacia el medio punto. Conocerlos todos salva partidas — y las gana.\n\n## Los cinco tipos principales de tablas\n\n- **Ahogado** — sin movimientos legales, sin estar en jaque.\n- **Triple repetición** — la misma posición (con el mismo bando que mueve y los mismos derechos de enroque/al paso) aparece tres veces. Cualquier jugador puede reclamar las tablas.\n- **Regla de las cincuenta jugadas** — cincuenta jugadas consecutivas de ambos bandos sin movimiento de peón ni captura. Cualquiera puede reclamar.\n- **Material insuficiente** — ningún bando tiene fuerza para dar mate. Rey contra rey, R + C contra R, o R + A contra R son las tablas clásicas.\n- **Acuerdo** — ambos jugadores simplemente acuerdan dividir el punto.\n\nDos más, menos comunes: **posición muerta** (el mate es matemáticamente imposible para ambos bandos) y **tiempo agotado contra material insuficiente** en juego en línea.\n\n> Unas tablas son media victoria. A veces son una victoria."
+    },
+    {
+      "type": "teach",
       "fen": "4k3/4q3/8/8/8/8/8/4K3 w - - 0 1",
       "title": "Evitando Accidentes",
-      "text": "¡Incluso cuando estés perdiendo obviamente, el ahogado puede salvarte! Verifica siempre: ¿tiene mi oponente una jugada legal? Si no, y no está en jaque, son tablas. Por eso la técnica del final importa — incluso con R+D contra R, un juego descuidado puede ahogar." }
+      "text": "El ahogado es **la** técnica que debes dominar antes de presumir de saber dar mate.\n\nEn esta posición pierdes en material — la dama negra va a dominar — pero si las negras juegan con descuido, *tú* podrías escapar con un ahogado.\n\n## La lista mental de dos segundos antes de cada jugada\n\n1. *¿Tendrá mi oponente al menos un movimiento legal después de esto?*\n2. *¿Hay alguna pieza de mi oponente atascada (sin casillas legales para el rey, todos los peones bloqueados, todas las piezas clavadas)?*\n3. *¿Estoy a punto de capturar su última pieza con movilidad?*\n\nSi la respuesta a la pregunta 1 es **no** y el rey **no** está en jaque — acabas de ahogar. Más de una posición ganadora se ha tirado por una jugada de dama presuntuosa.\n\n## Lección famosa\n\nEn el final más simple — Rey + Dama contra Rey — la trampa de ahogado más común es poner la dama justo delante del rey acorralado sin darle escape. Deja siempre al rey enemigo una casilla de huida hasta que tu rey esté lo bastante cerca para dar mate.\n\n> Cuando vas ganando, tu trabajo es mantener la calma. La victoria ya está ahí — no la regales."
+    }
   ]
 }

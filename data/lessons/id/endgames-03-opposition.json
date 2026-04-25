@@ -1,21 +1,30 @@
 {
   "id": "opposition",
   "title": "Oposisi",
-  "summary": "Konsep babak akhir yang paling penting",
+  "summary": "Konsep babak akhir paling penting",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "4k3/8/4K3/8/8/8/8/8 w - - 0 1",
       "title": "Berhadapan",
-      "text": "Dua raja saling berhadapan dengan satu kotak di antara mereka. Pihak yang TIDAK bergerak memiliki oposisi — raja lainnya harus menyingkir. Dalam babak akhir raja-dan-pion, memiliki oposisi sering menentukan permainan." },
-    { "type": "teach",
+      "text": "## Apa itu oposisi?\n\n**Oposisi** adalah situasi di mana dua raja berdiri di kolom, baris, atau diagonal yang sama dengan **tepat satu kotak di antaranya**. Sisi yang **TIDAK** giliran jalan dikatakan *memiliki* oposisi — raja yang lain harus mundur.\n\n### Jenis yang harus Anda ketahui\n\n- **Oposisi langsung** — raja-raja terpisah satu kotak di kolom atau baris (paling umum).\n- **Oposisi diagonal** — raja-raja terpisah satu kotak di diagonal.\n- **Oposisi jauh** — raja-raja di garis yang sama dengan **3 atau 5** kotak di antaranya.\n\nTes sederhana: jika hitungan kotak antara raja **genap**, sisi yang *akan jalan* kehilangan oposisi.\n\n### Mengapa penting\n\nDi babak akhir raja-dan-pion murni, oposisi menentukan siapa yang bisa lewat dan siapa yang harus mundur. Banyak posisi yang terlihat remis menang — dan banyak posisi yang terlihat menang remis — murni karena satu tempo ini.\n\n### Kesalahan umum\n\n- Melangkah maju ke kotak yang salah sehingga *lawan* mendapat oposisi.\n- Membingungkan oposisi langsung dengan diagonal.\n- Mendorong pion saat Anda memiliki oposisi — Anda bisa mengembalikannya secara cuma-cuma.\n\n> Sisi yang harus jalan duluan, harus minggir."
+    },
+    {
+      "type": "teach",
       "fen": "4k3/8/4K3/4P3/8/8/8/8 w - - 0 1",
       "title": "Dengan Pion",
-      "text": "Di sini Putih memiliki pion ekstra dan ingin mempromosikannya. Untuk menang, raja Putih harus MENDAHULUI pion dengan oposisi. Aturannya: 'raja di depan, pion di belakang.'" },
-    { "type": "play",
+      "text": "## Oposisi dengan pion\n\nSekarang Putih punya **pion ekstra di e4** dan raja di **e6**. Raja Hitam di **e8** berdiri menghalangi kotak promosi. Untuk menang, Putih harus menggabungkan **dua ide**:\n\n1. Pertahankan raja **di depan pion**, tidak pernah di belakangnya.\n2. **Mengapit** raja lawan dengan melangkah diagonal untuk merebut kotak kunci.\n\n### Kotak kunci\n\nUntuk pion di baris ke-5 atau lebih rendah, **kotak kunci** adalah tiga kotak **dua baris di depan** pion (di sini: d6, e6, f6). Jika raja Anda mencapai salah satunya pada giliran Anda, Anda menang tanpa peduli oposisi.\n\n### Prosedur\n\n1. Langkahkan raja diagonal ke depan: {{Kd6}} atau {{Kf6}}.\n2. Raja Hitam harus minggir; ikuti dia di sepanjang kolom.\n3. Dorong pion hanya saat ia bisa maju dengan perlindungan raja.\n4. Promosikan dan beralih ke skakmat R+M.\n\n### Kesalahan umum\n\n- Mendorong {{e5}} dulu — Hitam memainkan Ke7 dan Anda kehilangan semua kemajuan.\n- Bergerak Ke6-e7?? — ilegal? sebenarnya Ke7 berjalan ke skak dari raja. Jangan.\n- Memainkan Ke4 / Kf4 — raja menjauh dari pionnya.\n\n### Garis model\n\n{{Kd6}} Kd8 {{e5}} Ke8 {{e6}} Kf8 {{Kd7}} dan pion promosi.\n\n> Raja di depan, pion di belakang."
+    },
+    {
+      "type": "play",
       "fen": "4k3/8/4K3/4P3/8/8/8/8 w - - 0 1",
-      "prompt": "Melangkah untuk mengambil oposisi.",
-      "targetSan": ["Kd6", "Kf6"],
-      "hint": "Kd6 atau Kf6 keduanya merebut oposisi dan menang." }
+      "prompt": "Langkahkan **diagonal ke depan** untuk merebut kotak kunci. Prinsipnya: *raja memimpin, pion mengikuti*.",
+      "targetSan": [
+        "Kd6",
+        "Kf6"
+      ],
+      "hint": "Kedua sisi bekerja — langkahkan ke **baris ke-6** dan paksa Hitam memilih sisi mana yang akan mundur."
+    }
   ]
 }

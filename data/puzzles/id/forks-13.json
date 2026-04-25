@@ -4,5 +4,8 @@
   "solution": [
     "Nxb5"
   ],
-  "hint": "Kuda menyambar menteri."
+  "title": "Kuda Mencabut Menteri",
+  "setup": "Menteri Hitam parkir satu lompatan kuda dari kuda Putih, dan tidak ada yang bisa memakan balik.",
+  "hint": "Dari {{d4}} kuda punya delapan kotak pilihan — salah satunya mengakhiri partai.",
+  "explanation": "## Idenya\n\nKuda di d4 mencapai **b5** dengan lompatan bentuk L sempurna (-2 lajur, +1 baris). Menteri duduk sendirian di sana:\n\n- {{Nxb5}} — kuda melahap menteri.\n- Perubahan material: kuda (3) untuk menteri (9) = **+6**, menentukan.\n\n### Cara mengenalinya\n\n1. Setelah lawan menggerakkan menteri, pindai delapan kotak kuda di sekitar posisi menteri baru.\n2. Jika salah satu kuda *Anda* berdiri di lompatan kuda dari menteri, Anda mungkin punya taktik.\n3. Verifikasi menteri tidak punya pembela di kotak itu.\n\nDi sini raja di e8 jauh dan tidak ada bidak Hitam lain.\n\n> Kuda adalah satu-satunya bidak yang bisa menyerang menteri *tanpa* diserang balik. Asimetri itulah kekuatan supernya."
 }

@@ -4,5 +4,8 @@
   "solution": [
     "Qxd4"
   ],
-  "hint": "Está indefensa — recoge la dama."
+  "title": "Dama Gratis, Tómala",
+  "setup": "Dos damas se enfrentan — pero solo una está defendida.",
+  "hint": "Busca siempre piezas colgadas. La táctica más simple es *tomar lo gratis*.",
+  "explanation": "## La idea\n\nEsta es la táctica más básica de **pieza suelta**. La dama negra en d4 está indefensa. La dama blanca en d1 la ataca por la columna d. Las blancas simplemente la toman.\n\nLas blancas juegan {{Qxd4}}.\n\n- El rey negro está en e8, lejos — no hay recaptura posible.\n- Ninguna pieza negra defiende d4.\n- Las blancas ganan una dama por nada.\n\n## Patrón a memorizar\n\n> Antes de cada jugada, busca **piezas enemigas indefensas** en líneas que controlas.\n\nEl GM John Nunn las llamaba *piezas sueltas* — la regla **LPDO** (Loose Pieces Drop Off, las piezas sueltas se caen) es la base de toda la táctica. Domina esto y el resto del ajedrez táctico es solo decoración."
 }

@@ -4,5 +4,8 @@
   "solution": [
     "Qxh7#"
   ],
-  "hint": "Queen takes with king support — corner mate."
+  "title": "Take the Pawn, Take the King",
+  "setup": "Your queen rakes the 7th rank and your king on **g6** is one step from the action.",
+  "hint": "Capture the {{h7}} pawn — your king defends the queen and Black has nowhere to flee.",
+  "explanation": "## The Idea\n\nA classic **corner kiss-of-death**. The queen captures the lone pawn defending the king and lands on a square defended by your own king.\n\nPlay {{Qxh7#}}.\n\nWhy is the king stuck?\n\n- The queen on h7 attacks h8 directly (check)\n- {{g8}} — covered by the queen on h7 (diagonal)\n- {{Kxh7}} is illegal — your king on **g6** defends h7\n- Nothing can block: the queen is adjacent to the king\n\n> **Takeaway:** The corner is the most dangerous square for a king with no escape. When your queen and king cooperate at distance two, every nearby square is a candidate kill — especially after capturing the king's last shield."
 }

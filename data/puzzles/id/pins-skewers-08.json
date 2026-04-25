@@ -4,5 +4,8 @@
   "solution": [
     "Rxd6"
   ],
-  "hint": "Tangkap pionnya — langkah berikutnya menterinya."
+  "title": "Makan Pion Terpaku Dulu",
+  "setup": "Pion hitam di d6 dan menteri di d7 ditumpuk di depan rajanya — dan benteng putih lapar.",
+  "hint": "Jangan ambil buah terbesar dulu. Kunyah dari bawah tumpukan.",
+  "explanation": "## Idenya\n\nIni adalah **rantai pakuan**: pion hitam di d6 terpaku oleh benteng putih di d5 (lebih tepatnya — pion tidak harus tinggal, tetapi menangkapnya menang pion gratis karena tidak ada yang menjaga d6).\n\nPutih memainkan {{Rxd6}}, melahap pion.\n\n- Pion di d6 tidak punya pembela: menteri di d7 tidak bisa menangkap mundur di lajur, dan tidak ada lain yang menutupinya.\n- Setelah {{Rxd6}}, benteng sekarang menyorot langsung ke menteri di d7, yang sendiri terpaku oleh benteng terhadap raja di d8!\n- Jika Hitam memainkan apa pun selain {{Qxd6}}, Putih akan memainkan {{Rxd7+}} langkah berikutnya dan menang menteri. Jadi Hitam harus tukar: {{Qxd6}}, dan Putih akhirnya satu pion lebih.\n\n## Pola untuk Diingat\n\n> Saat dua buah lawan ditumpuk di satu garis, **ambil yang depan dulu**. Buah belakang masih terpaku dan tidak bisa menyelamatkannya.\n\nKeuntungan material yang lambat dan metodis — cara sabar untuk memenangkan posisi terpaku."
 }

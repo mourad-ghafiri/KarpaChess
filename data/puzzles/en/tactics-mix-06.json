@@ -1,8 +1,12 @@
 {
   "id": "tactics-mix-06",
-  "fen": "4k3/8/8/8/8/3BN3/8/4K3 w - - 0 1",
+  "fen": "4k3/8/2N5/4q3/B7/8/8/4K3 w - - 0 1",
   "solution": [
-    "Nc4+"
+    "Nxe5+",
+    "Kd8"
   ],
-  "hint": "The knight moves — what does the bishop do?"
+  "title": "Discovered Check Wins the Queen",
+  "setup": "A white knight on **c6** sits between the white bishop on a4 and the black king on e8. The black queen has parked on e5 — directly in the knight's leap.",
+  "hint": "When your piece moves and reveals a check from the piece behind it — that's discovered check. Use it to capture for free.",
+  "explanation": "## The Idea\n\nThis is a **discovered check** combined with a capture. The knight on c6 is blocking the bishop on a4 from giving check along the a4-e8 diagonal. When the knight moves, the bishop's check is **revealed**.\n\nWhite plays {{Nxe5+}} — the knight captures the queen *and* uncovers a check from the bishop.\n\n## Black's Forced Reply\n\nBlack must respond to the **bishop check** (not the knight, which just moved away). Legal king moves:\n\n- {{Kd8}} — safe; the bishop on a4 only checks along the a4-e8 line, and d8 is off that diagonal.\n- {{Kf8}} — also escapes the diagonal.\n- {{Ke7}} — the bishop's diagonal goes a4-b5-c6-d7-e8, so e7 is safe.\n\nBlack cannot capture the knight on e5 (king on e8 is too far) and cannot block the bishop's check (no minor pieces left).\n\n## Pattern to Memorize\n\n> Discovered check = **two threats from one move**. The moving piece can capture or threaten anything, while the king must address the unmoved piece's check first.\n\nWhenever you see a battery — your bishop/rook/queen lined up on the enemy king with one of *your* pieces blocking — look for a way to move the blocking piece to a square that wins material. The defender cannot answer both attacks."
 }

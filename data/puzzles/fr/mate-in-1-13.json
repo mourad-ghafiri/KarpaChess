@@ -4,5 +4,8 @@
   "solution": [
     "Qxg7#"
   ],
-  "hint": "La dame capture — soutenue par le cavalier."
+  "title": "Étouffement Soutenu par le Cavalier",
+  "setup": "Votre cavalier en **f6** pique {{e8}} et {{h7}} sur le côté, tandis que la dame est juste sous le bouclier de pions.",
+  "hint": "Prenez le pion {{g7}} — votre cavalier défend la dame et scelle toute fuite.",
+  "explanation": "## L'Idée\n\nC'est un **mat à l'étouffée style dame + cavalier**. La dame se sacrifie sur une case défendue à côté du roi, et le cavalier la soutient tout en couvrant les fuites.\n\nJouez {{Qxg7#}}.\n\nPourquoi le roi est-il piégé ?\n\n- La dame en g7 attaque g8 directement (échec)\n- {{f8}} — couverte par la dame en g7 (diagonale)\n- {{h8}} — couverte par la dame en g7 (diagonale)\n- {{Kxg7}} est illégal — le **roi blanc en h6** défend g7\n- Le pion {{h7}} ne peut bouger pour s'interposer : il est adjacent\n\n> **À retenir :** Un sacrifice de dame à côté d'un roi étouffé est le coup le plus bruyant des échecs. Vérifiez toujours si *votre propre roi ou cavalier* défend la case d'arrivée — c'est ce qui transforme un don en achèvement."
 }

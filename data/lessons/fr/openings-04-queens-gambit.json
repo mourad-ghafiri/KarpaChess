@@ -1,26 +1,38 @@
 {
   "id": "queens-gambit",
-  "title": "Le gambit de la dame",
+  "title": "Le gambit dame",
   "summary": "Offrir un pion pour contrôler le centre",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "Le pion dame classique",
-      "text": "Le gambit de la dame commence par 1.d4 d5 2.c4. Les Blancs offrent le pion c. Si les Noirs prennent, le centre est abandonné. S'ils refusent (le plus courant au niveau maître), les Blancs gardent un fort contrôle central." },
-    { "type": "play",
+      "text": "Le **gambit dame** est l'une des ouvertures les plus respectées de l'histoire des échecs — un chef-d'œuvre positionnel qui fut *l'*ouverture phare des années 1920 et qu'a remise en pleine lumière la série Netflix éponyme.\n\n## La séquence définissante\n\nLa ligne canonique est {{d4}} {{d5}} {{c4}}. Les Blancs offrent le pion c, en pariant que si les Noirs acceptent, ils récupéreront le pion tout en contrôlant le centre.\n\n## Ce que veut chaque camp\n\n- **Plan blanc :** exercer une pression centrale durable avec {{Nf3}}, {{Nc3}}, {{Bf4}} ou {{Bg5}} et {{e3}} ; petit roque ; exploiter à terme une majorité à l'aile dame ou au centre.\n- **Plan noir :** refuser le gambit (le *gambit dame refusé*) avec **...e6**, **...Nf6**, **...Be7** ; ou jouer le *Slave* avec **...c6** ; ou accepter (rare au plus haut niveau) en tentant de garder le pion.\n- **Structure de pions :** structures classiques de *Carlsbad* ou de *Tarrasch* — chaînes c-d-e où de petites ruptures comme l'*attaque de minorité* décident de la partie.\n\n## Pourquoi ce n'est pas un vrai gambit\n\nLe gambit dame n'est pas un véritable gambit, car les Noirs ne peuvent généralement pas *garder* en sécurité le pion c4. Après {{dxc4}}, les Blancs le récupèrent avec **{{e4}}** ou **{{Nc3}}** plus **{{e3}}** en gagnant du temps.\n\n> Le gambit dame, ce n'est pas gagner un pion. C'est gagner le centre."
+    },
+    {
+      "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "prompt": "Ouvrez avec le pion dame.",
-      "targetSan": ["d4"],
-      "hint": "1.d4 — poussée centrale classique." },
-    { "type": "play",
+      "prompt": "Ouvrez avec le pion dame — jouez **{{d4}}**.",
+      "targetSan": [
+        "d4"
+      ],
+      "hint": "1.d4 plante un pion central et prépare la rupture caractéristique c4 au coup suivant."
+    },
+    {
+      "type": "play",
       "fen": "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
-      "prompt": "Offrez maintenant le gambit.",
-      "targetSan": ["c4"],
-      "hint": "2.c4 — attaquez le pion d5 avec un pion d'aile." },
-    { "type": "teach",
+      "prompt": "Offrez maintenant le gambit avec **{{c4}}** — défiez le pion d5 noir par le flanc.",
+      "targetSan": [
+        "c4"
+      ],
+      "hint": "Si les Noirs prennent par ...dxc4, vous récupérerez le pion sans peine et tiendrez le centre. Quoi qu'il arrive, vous gagnez."
+    },
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/ppp1pppp/8/3p4/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2",
       "title": "Refuser ou accepter ?",
-      "text": "Si les Noirs acceptent (2...dxc4), les Blancs récupèrent généralement le pion rapidement. Si les Noirs refusent (2...e6, 2...c6, 2...Nf6), la partie devient une bataille positionnelle pour les cases centrales. Dans tous les cas, les Blancs obtiennent une forte initiative." }
+      "text": "Les Noirs ont à présent trois grandes réactions, chacune définissant une *famille* d'ouvertures.\n\n## Les trois grandes réponses noires\n\n- **Gambit dame refusé (QGD)** — **2...e6**. Solide comme du granit. Les Noirs acceptent un fou de cases claires un peu passif en échange d'une structure de pions inébranlable.\n- **Défense slave** — **2...c6**. Les Noirs soutiennent d5 par le pion c plutôt que d'enfermer le fou. Moderne, populaire, théoriquement riche.\n- **Gambit dame accepté (QGA)** — **2...dxc4**. Les Noirs prennent le pion mais comptent le rendre. Les Blancs récupèrent par {{e3}} ou {{e4}} et conservent un petit avantage central bien réel.\n\nUne quatrième option, moins populaire, est le **Tarrasch** — **2...e6 3.Nc3 c5** — où les Noirs reprennent le pion plus tard, mais cherchent l'activité plutôt que la solidité.\n\nAu niveau grand maître, le QGD et le Slave dominent. En club, le QGA apparaît souvent — la tentation de gagner un pion est forte.\n\n> Le gambit dame enseigne la patience. Les pièces sortent lentement, le centre se gagne case par case, et celui qui comprend les plans de longue haleine l'emporte."
+    }
   ]
 }

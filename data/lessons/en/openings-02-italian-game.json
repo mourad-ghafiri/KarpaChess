@@ -8,34 +8,34 @@
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "The Italian",
-      "text": "The Italian Game begins with the most principled first move: e4. We'll build up to Bc4, eyeing f7, the classical recipe."
+      "text": "The Italian Game is one of the **oldest** openings in chess and still — incredibly — one of the most popular at every level, including the top of the world rankings.\n\n## The defining moves\n\nThe canonical sequence is {{e4}} {{e5}} {{Nf3}} {{Nc6}} {{Bc4}}. Three principled moves, three pieces developed, and a bishop pointed at f7 — the weakest square in Black's camp.\n\n## What each side wants\n\n- **White's plan:** finish development with {{Nc3}} (or {{c3}} preparing d4), castle short, and slowly build a kingside attack or push d4 to claim the center.\n- **Black's plan:** mirror with **...Nf6** and **...Bc5** (the Giuoco Piano) or **...Be7** (the quieter Hungarian), castle short, and contest the center with **...d6** or **...d5**.\n- **Pawn structure:** symmetric early, often becoming a closed center after **c3 / d3 / d6**.\n\n## Why it works\n\nThe Italian respects every opening principle: a central pawn, two minor pieces out, the king ready to castle. There's no need for hyper-specific theory — just good moves.\n\n> Classical chess at its purest: pieces out, king safe, fight in the center."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "prompt": "Open with 1. e4",
+      "prompt": "Open with the king's pawn — play **{{e4}}**.",
       "targetSan": [
         "e4"
       ],
-      "hint": "Push the king's pawn two squares."
+      "hint": "The most popular first move in chess history opens lines for both the queen and the f1 bishop."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
-      "prompt": "Now 2. Nf3, attacking the e5 pawn.",
+      "prompt": "Develop with **{{Nf3}}** — a knight that attacks **e5** and prepares castling.",
       "targetSan": [
         "Nf3"
       ],
-      "hint": "Knight to f3 — every master's go-to."
+      "hint": "Two birds with one stone: this move develops a piece AND attacks Black's central pawn."
     },
     {
       "type": "play",
       "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
-      "prompt": "3. Bc4 — stake your claim on f7.",
+      "prompt": "Plant the bishop with **{{Bc4}}** — pointing straight at the f7 square.",
       "targetSan": [
         "Bc4"
       ],
-      "hint": "Bishop to c4 enters the Italian Game proper."
+      "hint": "The most vulnerable square in Black's camp is f7, defended only by the king. A bishop on c4 stares right at it."
     }
   ]
 }

@@ -4,5 +4,8 @@
   "solution": [
     "Nd6+"
   ],
-  "hint": "Déplacez le cavalier — la tour attaque à travers."
+  "title": "Le Cavalier Bouge, la Tour Frappe",
+  "setup": "La tour blanche se trouve derrière le cavalier sur la **colonne e** ouverte, le roi noir fixant directement les deux pièces.",
+  "hint": "Le cavalier est la seule chose entre votre tour et le roi ennemi — déplacez-le avec échec.",
+  "explanation": "## L'Idée\n\nUne attaque à la découverte a toujours deux acteurs : le **mobile** (la pièce devant) et le **découvreur** (la pièce derrière). Ici le cavalier en e4 est le mobile et la tour en e1 est le découvreur. Tant que le cavalier reste sur la colonne e, la tour ne fait rien.\n\n## Pourquoi {{Nd6+}} Marche\n\nLe cavalier quitte la colonne e avec tempo. Deux choses se produisent au même instant :\n\n- La tour en e1 voit jusqu'à e8 et donne échec.\n- Le cavalier a atterri sur **d6**, où il attaque aussi la seule case de fuite du roi, **f7**, et regarde e8 une seconde fois.\n\nLe roi noir est en échec par une pièce qu'il ne peut capturer (la tour est loin et défendue), et il ne peut s'interposer sur la colonne e car rien n'est entre les deux. La seule réponse légale est de s'écarter, après quoi le cavalier en d6 est excellemment placé.\n\n## Pourquoi Rien d'Autre n'est Aussi Bon\n\nSi le cavalier va sur une case qui **ne** poignarde **pas** aussi la fuite du roi (par exemple un retrait passif), les Noirs courent simplement le roi en f7 ou d7 et l'échec à la découverte perd beaucoup de son mordant. Leçon : quand vous déclenchez un échec à la découverte, essayez de poser la pièce mobile sur une case qui ajoute à l'attaque."
 }

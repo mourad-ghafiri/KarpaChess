@@ -6,5 +6,8 @@
     "Kd8",
     "e6"
   ],
-  "hint": "Prenez l'opposition, puis poussez."
+  "title": "Contourner, Puis Pousser",
+  "setup": "Roi et pion contre roi, avec le roi blanc déjà devant son pion — mais les Noirs détiennent l'**opposition directe**.",
+  "hint": "Ne poussez pas encore le pion. **Décalez** le roi sur le côté pour briser l'opposition d'abord, puis avancez.",
+  "explanation": "## Principe Clé : L'Opposition\n\nAvec le roi noir directement devant le vôtre, pousser le pion trop tôt mène au pat ou à la perte du pion. L'idée juste est de **contourner** : déplacer le roi de côté pour que le roi ennemi doive céder.\n\n## Le Plan\n\n1. **{{Kd6}}** — Les Blancs s'écartent vers l'aile-dame, menaçant d'envahir en d7 ou e7. Les Noirs sont forcés à l'unique défense, **{{Kd8}}**, reprenant l'opposition.\n2. Avec les rois encore face à face, le pion peut **avancer en sécurité**. {{e6}} atteint une case défendue par le roi et repousse le roi noir.\n3. Après ...Ke8 (ou ...Kc8), les Blancs joueront **e7** et conduiront le pion à dame.\n\n> L'idée clé : en R+P contre R, le roi voyage d'abord et le pion vient ensuite.\n\n## Ce Qui Ne Va Pas si Vous Poussez Trop Tôt\n\nSi à la place les Blancs jouent immédiatement 1.e6?, les Noirs répondent 1...Kf8! et après 2.Kf6 Ke8 3.e7 la position est **pat** — les Noirs n'ont aucun coup légal et la partie est nulle. Leçon : dans les finales de pions, **le roi mène et le pion suit**."
 }

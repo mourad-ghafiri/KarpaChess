@@ -4,5 +4,8 @@
   "solution": [
     "Rxf7"
   ],
-  "hint": "Éliminez d'abord le défenseur de la dernière rangée."
+  "title": "Éliminer le Défenseur",
+  "setup": "La tour noire en f8 est la seule chose qui garde la dernière rangée. Arrachez les soutiens et le roi tombe.",
+  "hint": "Le roi noir survit parce que la tour en f8 couvre la 8e rangée. **Éliminez ce défenseur.**",
+  "explanation": "## L'Idée\n\nAvant que le mat du couloir ne fonctionne, le roi noir doit perdre son dernier gardien. C'est la manœuvre classique de **l'élimination du défenseur** :\n\n- {{Rxf7}} capture le pion noir en f7 *et* attaque la tour noire en f8.\n- Après l'unique réponse sensée des Noirs (recapture ou déplacement de la tour), le chemin vers la dernière rangée est grand ouvert.\n\n### Pourquoi ça marche\n\n1. La tour en f8 défendait toute la 8e rangée contre une invasion.\n2. En échangeant ou en chassant la tour de la colonne f, les Blancs brisent la défense.\n3. Les pions en g7-h7 emprisonnent toujours le roi — une fois la tour partie, des menaces de mat apparaissent avec **Ra8+**.\n\n### Procédure\n\n1. Identifier le **défenseur unique** de la dernière rangée du roi.\n2. Trouver un moyen de capturer, dévier ou surcharger ce défenseur.\n3. Exécuter le mat du couloir qui suit.\n\n> La plupart des combinaisons sur la dernière rangée ne sont pas un seul coup — elles sont un *épluchage* du dernier gardien."
 }

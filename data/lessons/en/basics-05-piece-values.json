@@ -4,18 +4,27 @@
   "summary": "Learn what every piece is worth",
   "difficulty": "beginner",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "The Approximate Values",
-      "text": "Knowing piece value is essential for making trades. Pawn = 1. Knight = 3. Bishop = 3 (slightly more in open positions). Rook = 5. Queen = 9. King = priceless. These are approximations — context matters — but they're the starting point of every good trade." },
-    { "type": "teach",
+      "text": "Before you can trade pieces wisely, you need a rough sense of what each one is *worth*.\n\nChess pieces don't have an official price tag, but generations of analysis have settled on a useful approximation — measured in pawn units.\n\n## The standard scale\n\n- **Pawn = 1**\n- **Knight = 3**\n- **Bishop = 3** *(slightly more in open positions; about 3.25)*\n- **Rook = 5**\n- **Queen = 9**\n- **King = priceless** *(but worth about 4 in fighting strength once the queens come off)*\n\nA few useful ratios pop out:\n\n- A rook beats a minor piece (knight or bishop) by 2 — that's called *winning the exchange*.\n- Two minor pieces (3 + 3 = 6) usually beat a rook (5).\n- Three minor pieces (9) roughly equal a queen — but the pieces are usually more flexible.\n\n> These numbers are a compass, not a calculator. Position trumps points."
+    },
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "Trading Principles",
-      "text": "Trade equal-value pieces when ahead in material (simplifies to a winning endgame). Avoid trades when behind — keep pieces on the board to create chances. Sacrificing a piece of higher value for a lesser one is a 'sacrifice' — sometimes worth it for a winning attack." },
-    { "type": "play",
+      "text": "Knowing values is half the story. Knowing *when* to trade is the other half.\n\n## Three rules of thumb\n\n- **When you're ahead in material, trade pieces.** Each trade brings you closer to a winning endgame, and reduces your opponent's chances of finding swindles.\n- **When you're behind, keep pieces on the board.** Pieces are puzzle-makers — keep the puzzle alive and you keep your chances.\n- **A sacrifice is intentional.** Giving up a knight for a pawn looks like a blunder; if it leads to mate, it's brilliance. Always count moves, not pieces.\n\n## Position can flip the values\n\n- A *bad bishop* (locked behind its own pawns) might be worth a pawn or two.\n- A *strong knight* on a protected outpost can outshine a rook.\n- *Two bishops* on an open board are stronger than two knights — that's the famous **bishop pair**.\n\n> Trade like a banker: only when you profit, in points or in position."
+    },
+    {
+      "type": "play",
       "fen": "rnbqkb1r/pppp1ppp/5n2/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3",
-      "prompt": "Which central pawn should you push to claim more space? Play one.",
-      "targetSan": ["d4", "c4"],
-      "hint": "d4 or c4 — both reinforce your center." }
+      "prompt": "Reinforce your center by pushing **{{d4}}** or **{{c4}}** — both stake more space and open lines.",
+      "targetSan": [
+        "d4",
+        "c4"
+      ],
+      "hint": "The center is where pieces unfold. Two friendly pawns abreast in the middle is a foundation worth fighting for."
+    }
   ]
 }

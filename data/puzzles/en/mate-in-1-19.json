@@ -4,5 +4,8 @@
   "solution": [
     "Qg8#"
   ],
-  "hint": "Two pieces work together — force the exchange."
+  "title": "Bishop Backs the Queen",
+  "setup": "Black's king is trapped on **h7** with a pawn behind him on **h6**, and your bishop on **f7** locks down {{g8}} from the diagonal.",
+  "hint": "Drop the queen onto {{g8}} — the bishop on **f7** defends her landing square.",
+  "explanation": "## The Idea\n\nA **queen + bishop kiss-of-death**. The bishop on **f7** turns g8 into a defended square, and the queen sacrifices into it.\n\nPlay {{Qg8#}}.\n\nWhy is the king stuck?\n\n- The queen on g8 attacks h7 directly (diagonal check, defended by the bishop)\n- {{Kxg8}} is illegal — the bishop on **f7** defends g8\n- {{h8}} — covered by the queen on g8\n- {{Kxf7}} — wait, the king is in *check*, so the only legal moves are to escape the check; capturing the bishop ignores the queen's check\n- {{g6}} — pawn on **h6**? actually black has nothing on g6... but the queen on g8 doesn't attack g6 (file? yes, g8-g6 file). So even if g6 were free, queen covers it\n\n> **Takeaway:** A bishop one move away from the back rank can support the queen's mating sacrifice. Whenever your queen and bishop both reach the king's neighbourhood, scan for a defended landing square next to the king."
 }

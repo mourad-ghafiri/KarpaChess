@@ -1,8 +1,11 @@
 {
   "id": "mate-in-1-28",
-  "fen": "1k6/pp6/8/8/8/8/8/1K4R1 w - - 0 1",
+  "fen": "1k6/pp6/1P6/8/8/8/8/1K4R1 w - - 0 1",
   "solution": [
-    "Rg8+"
+    "Rg8#"
   ],
-  "hint": "Envahissez la 8e — les pions lui servent de prison."
+  "title": "Mat avec coin de pion",
+  "setup": "Votre pion en **b6** bouche la fuite en {{c7}}, tandis que les pions noirs eux-mêmes verrouillent les colonnes **a** et **b**.",
+  "hint": "Lancez la tour sur la 8e rangée — le pion en **b6** scelle {{c7}} et les pions noirs tiennent {{a7}} et {{b7}}.",
+  "explanation": "## L'idée\n\nUn **mat de la dernière rangée avec assistance d'un pion silencieux**. Le pion en **b6** ne donne pas l'échec — mais il contrôle c7, la seule case de fuite que la tour n'atteint pas.\n\nJouez {{Rg8#}}.\n\nPourquoi le roi est-il bloqué ?\n\n- {{a8}}, {{c8}} et le reste de la 8e rangée — tous balayés par la tour en g8\n- {{a7}} — bloquée par le pion noir en a7 (et également attaquée par le pion blanc en b6)\n- {{b7}} — bloquée par le pion noir en b7\n- {{c7}} — contrôlée par le pion blanc en **b6**\n- La tour est trop loin pour {{Kxg8}}\n\n> **À retenir :** un pion une case devant la *colonne de fuite* du roi adverse est un assistant de mat caché. Quand vous repérez un roi coincé derrière deux pions, cherchez les petits soutiens de pion qui ferment la troisième case de fuite."
 }

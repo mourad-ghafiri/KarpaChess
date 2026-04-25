@@ -4,5 +4,8 @@
   "solution": [
     "dxe5"
   ],
-  "hint": "Captura central."
+  "title": "Abre el centro",
+  "setup": "Ambos lados han empujado sus peones **d y e**. Ahora es momento de un cambio central limpio.",
+  "hint": "Cuando dos pares de peones están bloqueados en el centro, el bando que captura primero abre líneas para sus piezas.",
+  "explanation": "## La idea\n\nEste es un **cambio central** fundamental en el juego de aperturas. Ambos lados han empujado peones centrales, y se ha acumulado tensión. Las blancas están al turno y deciden **liberar la tensión** con una captura.\n\nLas blancas juegan {{dxe5}}.\n\n## Lo que esto hace\n\n- El peón d blanco captura el peón e negro.\n- La **columna d** ahora está semiabierta para las blancas (no queda peón blanco allí).\n- La **columna e** todavía tiene tanto el peón d (de las negras) como el peón e (de las blancas) — espera, tras la captura, las negras todavía tienen un peón d en d5, y las blancas solo tienen el peón e en e4 (ya no en e5; fue capturado).\n\nDe hecho retrocedamos el cambio cuidadosamente:\n- El d4 blanco captura e5 → peón blanco ahora en e5, el peón e5 de las negras desaparecido.\n- La columna d ya no tiene un peón blanco — está **semiabierta** para la dama y la torre blancas.\n\n## Opciones de recaptura de las negras\n\nLas negras probablemente jugarán {{dxe4}}, recapturando en el centro y continuando el cambio simétrico. Tras {{dxe4}}, ambas columnas d están ahora semiabiertas y la posición es aproximadamente igual.\n\n## Patrón a memorizar\n\n> No dejes la tensión central de peones sin resolver para siempre. **Capturar primero** suele decidir qué bando obtiene las mejores líneas para sus piezas.\n\nEsta simple idea de apertura es el ancestro de todos los **juegos abiertos** y las estructuras de la **siciliana abierta**: cambia peones centrales, llena las columnas abiertas con torres, lucha en las líneas que has creado."
 }

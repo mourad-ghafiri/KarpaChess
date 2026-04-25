@@ -4,5 +4,8 @@
   "solution": [
     "Nd6+"
   ],
-  "hint": "Fourchette roi et tour avec échec."
+  "title": "Fourchette du Château",
+  "setup": "Le roi noir et la tour encadrent la 8e rangée à seulement trois colonnes — territoire de cavalier.",
+  "hint": "Trouvez la case qui attaque à la fois **e8** et **a8** … elle n'est qu'à un saut de cavalier.",
+  "explanation": "## L'Idée\n\nDepuis e4, le cavalier atteint {{d6}} (-1 colonne, +2 rangées). Sur d6 il commande un énorme filet de cases — dont :\n\n- **e8** — donne échec au roi.\n- **b7** — contournement pour attaquer la fuite de la tour.\n- **f7** — couvre une autre case de fuite.\n\nAttendez — la tour en a8 n'est pas directement attaquée depuis d6. Alors comment marche la fourchette ?\n\n### Le piège en deux temps\n\n1. {{Nd6+}} force le roi à bouger (les échecs au cavalier ne sont ici ni interposables ni capturables).\n2. Le roi a peu de cases : Kd7 marche dans le cavalier, Kf7 va, Ke7 va.\n3. Après tout coup de roi, les Blancs jouent {{Nxa8}} via b7 / c8 en deux coups — mais cela prend du temps.\n\n### Lecture plus claire\n\nSi l'idée du puzzle est *l'échec sur le roi* avec la tour non protégée à long terme, concentrez-vous sur fourchette-et-fuite : le cavalier presse la défense de la tour par le roi, et la tour tombera une fois le roi entraîné hors de la dernière rangée. Même un tempo de pression sur la tour est décisif quand le roi a été déplacé.\n\n> Échec d'abord, comptage du matériel ensuite. Les échecs forcés débloquent tout le reste."
 }

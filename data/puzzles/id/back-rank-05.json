@@ -4,5 +4,8 @@
   "solution": [
     "Rb8#"
   ],
-  "hint": "Jalankan benteng ke baris ke-8."
+  "title": "Pawai Benteng Tunggal",
+  "setup": "Raja Hitam terkunci di balik bidaknya dan satu-satunya bidak Putih yang aktif adalah benteng — itu sudah cukup.",
+  "hint": "Cukup jalan benteng ke baris belakang.",
+  "explanation": "## Idenya\n\nTanpa pertukaran, tanpa pengorbanan — benteng cukup berjalan ke targetnya. {{Rb8#}} adalah skakmat seketika:\n\n1. Benteng tiba di baris ke-8 dengan skak.\n2. Raja Hitam di g8 dikurung bidaknya sendiri di f7-g7-h7.\n3. Kotak **f8** dan **h8** keduanya dikuasai benteng di b8.\n4. Tidak ada yang bisa memblokir (tidak ada bidak Hitam di baris ke-8 selain raja); tidak ada yang bisa memakan (raja di g8 tidak bisa mencapai b8 dalam satu langkah).\n\n### Mengapa ini sangat umum\n\nDalam banyak partai nyata, benteng pembela sedang ditukar, membela, atau jauh — meninggalkan baris belakang terbuka lebar. Benteng musuh yang berjalan tidak perlu bertarung atau berkorban; ia cukup masuk.\n\n### Pola\n\n- Baris belakang terbuka + raja tanpa luft = satu benteng bisa skakmat dari mana saja di baris ke-8.\n\n> Skakmat paling sederhana dalam catur: satu benteng, satu baris, satu klik."
 }

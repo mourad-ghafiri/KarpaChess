@@ -4,5 +4,8 @@
   "solution": [
     "Rb8#"
   ],
-  "hint": "Walk the rook to the 8th."
+  "title": "March of the Lone Rook",
+  "setup": "Black's king is locked behind its pawns and the only White piece active is the rook — that's all you need.",
+  "hint": "Just walk the rook to the back rank.",
+  "explanation": "## The Idea\n\nNo trades, no sacrifices — the rook simply travels to its target. {{Rb8#}} is checkmate immediately:\n\n1. The rook arrives on the 8th rank with check.\n2. Black's king on g8 is hemmed in by its own pawns on f7-g7-h7.\n3. Squares **f8** and **h8** are both controlled by the rook on b8.\n4. Nothing can block (no Black piece on the 8th rank besides the king); nothing can capture (king on g8 cannot reach b8 in one step).\n\n### Why this is so common\n\nIn many real games, the defender's rooks are trading, defending, or far away — leaving the back rank wide open. A traveling enemy rook does not need to fight or sacrifice; it simply walks in.\n\n### Pattern\n\n- Open back rank + king without luft = a single rook delivers mate from anywhere on the 8th rank.\n\n> The simplest mate in chess: one rook, one rank, one click."
 }

@@ -4,5 +4,8 @@
   "solution": [
     "Rb8#"
   ],
-  "hint": "Classic back-rank mate. Nothing blocks the 8th rank."
+  "title": "Long-Distance Hammer",
+  "setup": "Your rook on **b2** is staring up an empty file with the back rank wide open at the other end.",
+  "hint": "Climb to the 8th rank — the {{f7}}-{{g7}}-{{h7}} pawn shield seals the king's fate.",
+  "explanation": "## The Idea\n\nA pure **back-rank mate** — the rook travels the length of the b-file and then turns the 8th rank into a kill zone.\n\nPlay {{Rb8#}}.\n\nWhy is the king stuck?\n\n- {{f8}}, {{h8}} and every other 8th-rank square — all controlled by the rook on b8\n- {{f7}}, {{g7}}, {{h7}} — all blocked by Black's own pawns\n- The king cannot capture (b8 is far away) and there is nothing to interpose\n\n> **Takeaway:** A rook far from the action can still deliver mate in one if the back rank is bare. Always scan for *long diagonals* (for bishops/queens) and *long files* (for rooks/queens) before moving."
 }

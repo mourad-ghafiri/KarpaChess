@@ -4,5 +4,8 @@
   "solution": [
     "Qxf7#"
   ],
-  "hint": "The queen has a clear diagonal. Notice f7 is defended only by the king."
+  "title": "Scholar's Strike",
+  "setup": "White's queen on **h5** and bishop on **c4** both stare at the weakest square in Black's camp.",
+  "hint": "Both pieces aim at {{f7}} — only the king defends it.",
+  "explanation": "## The Idea\n\nThis is the classic **Scholar's Mate** finishing move. The queen and bishop have built a battery against {{f7}}, the only square in Black's opening position guarded solely by the king.\n\nPlay {{Qxf7#}}. The queen captures the pawn and gives check, defended by the bishop on **c4**.\n\nWhy is the king stuck?\n\n- {{e7}} — blocked by Black's own pawn\n- {{e8}} and {{d8}} — covered by the queen herself from f7\n- Capturing the queen with {{Kxf7}} is illegal because the bishop on **c4** controls f7\n- No piece can interpose: f7 is adjacent to the king\n\n> **Takeaway:** Always check whether f7 (or f2 for Black) is defended only by the king before developing. A queen + bishop battery on the a2-g8 diagonal is one of the oldest tricks in chess."
 }

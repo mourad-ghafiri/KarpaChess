@@ -4,5 +4,8 @@
   "solution": [
     "exd4"
   ],
-  "hint": "Capture toward the center."
+  "title": "Capture Toward the Center",
+  "setup": "White has played **d4**, offering a pawn trade. Black takes — and grabs the center.",
+  "hint": "Always recapture toward the center when you have a choice — it improves pawn structure.",
+  "explanation": "## The Idea\n\nThis is a basic **central pawn capture** — the foundational move from which the famous **Center Game** and many open positions arise.\n\nBlack plays {{exd4}}, capturing the d-pawn with the e-pawn.\n\n## Why This Capture?\n\n- The black pawn moves from **e5** (a less central square) to **d4** (more central).\n- White's central pawn is gone, freeing Black's pieces.\n- Material is now even, but Black has improved pawn structure.\n\n## What If Black Doesn't Take?\n\nIf Black ignores the offer:\n\n- White could play {{dxe5}} on the next move, winning the e-pawn.\n- Or White could play {{d5}}, gaining a strong wedge.\n\nEither way Black loses central influence.\n\n## Pattern to Memorize\n\n> When you can capture **toward the center**, almost always do so. Centralized pawns control more squares, support more pieces, and create more threats.\n\nThe simple act of playing exd4 here represents a major principle: **fight for the center with every move you can.**"
 }

@@ -1,10 +1,13 @@
 {
   "id": "mate-in-2-02",
-  "fen": "7k/8/6K1/6Q1/8/8/8/8 w - - 0 1",
+  "fen": "Q7/8/8/8/8/6K1/8/7k w - - 0 1",
   "solution": [
-    "Qh5+",
-    "Kg8",
-    "Qh8+"
+    "Qh8+",
+    "Kg1",
+    "Qa1#"
   ],
-  "hint": "Skak untuk memaksa raja, lalu skakmat."
+  "title": "Jebakan Diagonal Panjang",
+  "setup": "Raja Hitam terjepit di sudut **h1**; raja Anda di **g3** menahan {{g2}} dan {{h2}}, menyisakan hanya **g1** sebagai pelarian.",
+  "hint": "Paksa raja ke {{g1}} dengan skak jarak jauh, lalu sapu dia dengan diagonal **a1-h8**.",
+  "explanation": "## Idenya\n\nSebuah **mate-in-2 K+Q vs K** bergaya di sudut. Menteri memutus pelarian raja, lalu memberi skakmat dari sudut *seberang*.\n\n**1. {{Qh8+}}** — menteri mendarat di lajur h, memberi skak jarak jauh. Raja Hitam harus pindah.\n\n**1...{{Kg1}}** — terpaksa. {{Kg2}} ilegal (raja Anda di **g3** menyerang g2), {{Kh2}} ilegal (raja Anda menyerang h2), dan {{Kxh8}} mustahil (terlalu jauh).\n\n**2. {{Qa1#}}** — menteri mengayun turun melalui diagonal panjang **h8-a1** untuk skakmat.\n\nMengapa raja terjebak setelah langkah 2?\n\n- {{b1}} dan baris 1 lainnya — dikuasai menteri di a1\n- {{f1}} — juga dikuasai menteri di a1 (baris 1)\n- {{h2}} — dikuasai raja Anda di **g3**\n- {{g2}} — dikuasai raja Anda di **g3**\n- Menteri jauh, jadi {{Kxa1}} mustahil\n\n> **Pelajaran:** Diagonal panjang adalah jalan tol menteri. Saat menskakmat di sudut, cari *pola dua sudut* — skak dari satu sudut untuk memaksa raja, lalu skakmat dari sudut seberang melalui diagonal panjang."
 }

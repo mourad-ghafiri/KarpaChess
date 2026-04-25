@@ -4,18 +4,26 @@
   "summary": "Quita la pieza que mantiene unida su posición",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "5rk1/R4ppp/8/8/8/8/5PPP/6K1 w - - 0 1",
       "title": "El Defensor Clave",
-      "text": "Muchas tácticas fallan porque una sola pieza enemiga lo defiende todo. La solución: eliminarla o cambiarla. Aquí la torre negra de f8 defiende la última fila. Si las Blancas toman el peón de f7, la torre queda desviada y el rey, desnudo." },
-    { "type": "play",
+      "text": "La mayoría de las posiciones se sostienen por **una** pieza. Quítala y el resto se desmorona. Esta táctica se llama *eliminar al defensor* (o a veces *eliminar al guardián*).\n\n## Qué buscar\n\n- Una debilidad en la fila final defendida por **una** torre.\n- Un peón que defiende un caballo, o un caballo que defiende una casilla clave.\n- Una dama atada a labores defensivas en torno al rey.\n\nSi puedes capturar, cambiar o ahuyentar a esa única pieza, toda la estructura cae.\n\n## La geometría\n\nMapea los **defensores** de cada casilla clave enemiga. Para un mate del pasillo, la fila final es la casilla clave; el defensor es la pieza que la controla. Para un caballo colgante, el defensor es el peón o la pieza que lo protege.\n\n## Cómo encontrarlo\n\n1. Encuentra la **amenaza** que querrías poder jugar — normalmente un mate o una captura ganadora.\n2. Identifica la **única pieza** que evita esa amenaza.\n3. Busca la forma de **eliminar** esa pieza: cápturala (incluso a un coste material), cámbiala o oblígala a otra parte.\n4. Verifica que el *seguimiento* siga funcionando tras la recaptura.\n\nAquí {{Rxf7}} demuele al defensor en f7. La torre negra de f8 guardaba la fila final; si las negras recapturan con {{Rxf7}}, la torre queda *fuera* de la fila final y las blancas pueden irrumpir en la siguiente jugada.\n\n> Un defensor eliminado es un objetivo desenmascarado."
+    },
+    {
+      "type": "play",
       "fen": "5rk1/R4ppp/8/8/8/8/5PPP/6K1 w - - 0 1",
-      "prompt": "Toma el peón de f7 — obliga a las Negras a reaccionar.",
-      "targetSan": ["Rxf7"],
-      "hint": "Rxf7 elimina al defensor de la última fila." },
-    { "type": "teach",
+      "prompt": "Aplasta el peón de f7 con **{{Rxf7}}** — y observa cómo se desmorona la fila final.",
+      "targetSan": [
+        "Rxf7"
+      ],
+      "hint": "¿Qué pieza guarda la fila final negra? ¿Qué ocurre si la obligas a moverse?"
+    },
+    {
+      "type": "teach",
       "fen": "5rk1/5Rpp/8/8/8/8/5PPP/6K1 b - - 0 1",
       "title": "Lo Que Sigue",
-      "text": "Ahora las Negras deben lidiar con la torre en f7. Si cambian con ...Rxf7, la última fila sigue débil. Pregúntate siempre: '¿Qué mantiene unida su posición?' La respuesta suele ser una pieza específica." }
+      "text": "Tras {{Rxf7}}, las negras deben reaccionar. Cualquiera que sea la elección, su estructura ya se ha resquebrajado.\n\n## Las opciones negras\n\n- **{{Rxf7}}** — saca la torre de la fila final. La siguiente idea blanca es invadir la octava con piezas pesadas.\n- **El rey se mueve** — deja a las blancas un peón extra en lo profundo del campo negro con piezas activas.\n- **Ignorarlo** — las blancas ganan más material con {{Rxg7+}}.\n\n## La conclusión\n\nHazte siempre la misma pregunta diagnóstica:\n\n> *¿Qué única pieza enemiga me impide ganar?*\n\nLuego vuelca tu atención en eliminarla — por captura, por cambio, por desviación o con una jugada de tempo que la aleje."
+    }
   ]
 }

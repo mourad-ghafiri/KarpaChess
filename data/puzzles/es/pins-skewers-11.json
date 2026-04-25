@@ -4,5 +4,8 @@
   "solution": [
     "Rxa7+"
   ],
-  "hint": "Enfilada — la dama delante de su rey."
+  "title": "Duelo en la columna a",
+  "setup": "La torre blanca mira hacia arriba por la **columna a** a la dama negra y al rey apilados sobre ella.",
+  "hint": "Cuando la dama bloquea a su propio rey, está clavada — no espetada. Tómala.",
+  "explanation": "## La idea\n\nA pesar de la antigua tradición que llama a esto un \"espeto\", esto es técnicamente una **clavada absoluta**: la dama negra en a7 escuda a su rey en a8, así que no puede moverse.\n\n- **Clavada** = atacante, objetivo, *rey* (rey detrás).\n- **Espeto** = atacante, *rey*, objetivo (rey delante).\n\nAquí el rey está detrás de la dama, así que es una clavada.\n\nLas blancas juegan {{Rxa7+}}, capturando la dama.\n\n- {{Kxa7}} es la única respuesta legal.\n- Las blancas cambian torre (5) por dama (9), beneficio neto **+4**.\n- Las negras no tienen defensor en a7 ni forma de interponer.\n\n## Patrón a memorizar\n\n> Geometría primero, nombres después. Siempre que veas tu **torre + pieza menor/mayor enemiga + rey enemigo** todos en la misma columna, casi siempre tienes una táctica.\n\nNo te preocupes por si oficialmente es una clavada o un espeto en el momento — ambas ganan material."
 }

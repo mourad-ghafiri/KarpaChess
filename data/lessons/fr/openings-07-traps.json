@@ -4,17 +4,23 @@
   "summary": "Reconnaître (et éviter) les gaffes classiques",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/ppp2ppp/8/3pp3/4P3/2N5/PPPP1PPP/R1BQKBNR w KQkq - 0 3",
       "title": "Le mat du berger",
-      "text": "Le piège le plus célèbre : sortir dame et fou tôt pour attaquer f7. Si les Noirs ne défendent pas soigneusement, l'échec et mat arrive en quatre coups. Après 1.e4 e5 2.Bc4 Nc6 3.Qh5 — si les Noirs jouent un coup naturel comme 3...Nf6?? — la partie peut se terminer par 4.Qxf7#." },
-    { "type": "teach",
+      "text": "Tout joueur d'échecs apprend tôt ou tard le **mat du berger** — généralement parce que quelqu'un vient de le lui infliger.\n\nLa recette de base : {{e4}} {{e5}} {{Bc4}} {{Nc6}} {{Qh5}}. Les Blancs ont précipité la dame à l'attaque dans un seul but : viser la **case f7**, défendue par le seul roi noir. Si les Noirs jouent un coup négligent comme **3...Nf6 ??**, les Blancs s'engouffrent par **4.Qxf7#** — échec et mat en quatre coups.\n\n## Pourquoi ça marche ?\n\n- **f7** est une case singulièrement faible — seul le roi la défend.\n- La dame en h5 attaque f7 ; le fou en c4 attaque f7. Deux attaquants, un défenseur.\n- Un coup naturel comme ...Nf6 bloque la dame noire, qui ne peut plus venir défendre f7 — sans pour autant parer la menace.\n\n## Comment réfuter\n\n- **3...g6** chasse la dame et défend — le plus direct.\n- **3...Qe7** défend f7 par la dame, parfaitement sûr.\n- **3...Nf6 ??** est le coup qui perd — il bloque la diagonale, mais ne traite pas la menace.\n\n> Connaître un piège, c'est cent points Elo offerts. Tomber dedans une fois vous instruit pour la vie."
+    },
+    {
+      "type": "teach",
       "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 0 4",
       "title": "La punition",
-      "text": "Contre un adversaire préparé, cela se pare facilement par 3...g6 ou 3...Qe7, défendant f7. Connaître le piège vous permet à la fois de l'éviter côté Noirs et de punir le jeu imprudent côté Blancs." },
-    { "type": "teach",
+      "text": "Face à un adversaire vigilant, le mat du berger n'est *pas* une arme gagnante — c'est une arme **perdante**. Cette sortie précoce de la dame viole deux principes d'ouverture d'un coup :\n\n- La dame est en h5 — exposée et facile à chasser.\n- Les Blancs n'ont développé aucune autre pièce hormis un fou.\n\n## Pourquoi le mat du berger échoue à un niveau correct\n\n- Après **3...g6**, la dame se replie en **4.Qf3** (toujours menaçant f7) — et les Noirs jouent calmement **4...Nf6**. Maintenant, les Noirs ont *deux pièces développées* contre *une* pour les Blancs, et la dame se fera chasser à nouveau.\n- Après **3...Qe7**, les Noirs sont sereins, ont sauvé f7 et peuvent jouer **...Nf6**, **...d6**, **...Bg7**, terminant leur développement la conscience tranquille.\n\n## La leçon\n\nQuand un adversaire attaque votre case la plus faible avec une seule pièce, vous avez généralement un coup défensif calme à disposition. **Pas de panique** et ne mordez pas à l'appât d'attaquer la dame *si* cela coûte f7. Défendez d'abord, chassez ensuite.\n\n> Le mat du berger punit l'ignorance. Une fois que vous le connaissez, c'est vous qui punissez."
+    },
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPPBPPP/RNBQK2R w KQkq - 0 3",
       "title": "Développer, pas foncer",
-      "text": "La plupart des 'pièges' reposent sur le fait que l'adversaire enfreint les principes de base — roi au centre, tomber dans une fourchette, ou affaiblir une case clé comme f2/f7. Développez calmement et surveillez les tactiques à chaque coup." }
+      "text": "La plupart des pièges d'ouverture partagent une caractéristique : **la victime a violé un principe de base**. Roi laissé au centre, fourchette inaperçue, case f2/f7 affaiblie, ou la même pièce déplacée trois fois avant que le reste ne sorte.\n\n## Les grandes familles de pièges\n\n- **Mat de Légal** — les Blancs gagnent après un clouage négligent ...Bg4 : {{e4}} {{e5}} {{Nf3}} {{d6}} {{Bc4}} **Bg4** {{Nc3}} **g6** ?? {{Nxe5}} ! — et le fou en g4 est sans défense. Les Noirs perdent matériel ou pire.\n- **Piège de la canne à pêche** (Ruy Lopez) — les Noirs jouent **...h5** et **...Ng4** pour attirer le fou de g5 dans la prise, ouvrant les lignes vers le roi blanc après un sacrifice.\n- **Piège de l'Arche de Noé** (Ruy Lopez) — après une errance du fou blanc en b3, les Noirs le piègent par **...c5-c4** si les Blancs ne sont pas prudents.\n- **Sacrifice du foie en sauce** (*Fried Liver*) — après {{e4}} {{e5}} {{Nf3}} {{Nc6}} {{Bc4}} {{Nf6}} **{{Ng5}}** **d5** {{exd5}} **Nxd5** ?! {{Nxf7}} !? — les Blancs sacrifient un cavalier pour une chasse furieuse au roi.\n\n## L'antidote universel\n\nAppliquez les **trois principes d'ouverture** à chaque coup :\n\n1. Mes pièces se développent-elles vers le centre ?\n2. Mon roi est-il en route pour roquer ?\n3. Viens-je d'autoriser un échec, une prise ou une fourchette ?\n\nSuivez cette check-list et vous tomberez dans bien moins de pièges que vous n'en tendrez vous-même.\n\n> La plupart des pièges vivent dans les *erreurs* de l'adversaire. Jouez selon les principes et regardez-les y tomber d'eux-mêmes."
+    }
   ]
 }

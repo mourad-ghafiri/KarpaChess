@@ -1,8 +1,11 @@
 {
   "id": "mate-in-1-15",
-  "fen": "4R3/5pk1/6p1/8/8/8/6PP/6K1 w - - 0 1",
+  "fen": "6k1/4Rppp/8/8/1B6/8/6PP/6K1 w - - 0 1",
   "solution": [
-    "Re7"
+    "Re8#"
   ],
-  "hint": "Invade la séptima fila con jaque."
+  "title": "El alfil cierra la ventana",
+  "setup": "Tu torre en **e7** está a un paso de la fila final, y el alfil en **b4** barre la diagonal **a3-f8** — incluyendo {{f8}}.",
+  "hint": "Desliza la torre a la octava fila — tu alfil en **b4** ya controla la casilla de escape {{f8}}.",
+  "explanation": "## La idea\n\nUna **red de mate con torre + alfil**. El escudo de peones bloquea el escape habitual de {{g8}} vía h7/g7; el alfil en **b4** tapa el único escape diagonal en {{f8}}.\n\nJuega {{Re8#}}.\n\n¿Por qué está atrapado el rey?\n\n- {{f8}} — controlada por el alfil en **b4** (diagonal a3-f8)\n- {{h8}} — cubierta por la torre en e8 (octava fila)\n- {{f7}}, {{g7}}, {{h7}} — todas bloqueadas por los propios peones negros\n- El rey no puede capturar la torre: e8 está demasiado lejos de g8\n\n> **Conclusión:** Un alfil apuntando a la diagonal larga es el compañero perfecto de una torre en la fila final. Juntos cubren ambos extremos de la octava fila — la torre desde un lado, el alfil cortando el otro."
 }

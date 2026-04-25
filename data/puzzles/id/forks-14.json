@@ -4,5 +4,8 @@
   "solution": [
     "Nd6+"
   ],
-  "hint": "Garpu raja dan benteng dengan skak."
+  "title": "Garpu Sang Benteng",
+  "setup": "Raja dan benteng Hitam membingkai baris ke-8 hanya tiga lajur terpisah — wilayah kuda.",
+  "hint": "Cari kotak yang menyerang baik **e8** dan **a8** … hanya satu lompatan kuda jauhnya.",
+  "explanation": "## Idenya\n\nDari e4, kuda mencapai {{d6}} (-1 lajur, +2 baris). Di d6 ia menguasai jaring kotak yang sangat besar — termasuk:\n\n- **e8** — memberi skak ke raja.\n- **b7** — memintas untuk menyerang jalur pelarian benteng.\n- **f7** — menutupi kotak pelarian lain.\n\nTunggu — benteng di a8 tidak diserang langsung dari d6. Jadi bagaimana garpu ini bekerja?\n\n### Jebakan dua langkah\n\n1. {{Nd6+}} memaksa raja bergerak (skak kuda tidak bisa diblokir atau ditangkap di sini).\n2. Raja punya kotak terbatas: Kd7 berjalan ke kuda, Kf7 oke, Ke7 oke.\n3. Setelah langkah raja, Putih main {{Nxa8}} via b7 / c8 dalam dua langkah — tetapi itu butuh waktu.\n\n### Bacaan lebih bersih\n\nJika ide puzzle ini *hanya skak ke raja* dengan benteng yang tidak terlindungi jangka panjang, fokus pada garpu-dan-lari: kuda menekan pertahanan raja terhadap benteng, dan benteng akan jatuh begitu raja diseret keluar dari baris belakang. Bahkan satu tempo tekanan ke benteng menentukan ketika raja telah dipindahkan.\n\n> Skak duluan, hitung material kemudian. Skak yang memaksa membuka semua yang lain."
 }

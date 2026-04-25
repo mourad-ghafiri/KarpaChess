@@ -4,5 +4,8 @@
   "solution": [
     "Kc4"
   ],
-  "hint": "Melangkah ke samping — bersiap untuk maju."
+  "title": "Geser Samping Mengalahkan Oposisi",
+  "setup": "Raja saling berhadapan melintasi bidak di **d5** — Hitam memegang oposisi langsung dan Anda yang melangkah.",
+  "hint": "Maju mustahil dan mendorong bidak akan kehilangan dia. **Geser ke samping** untuk mencoba mengepung.",
+  "explanation": "## Prinsip Kunci: Pengepungan\n\nKetika raja pembela duduk di kotak depan raja Anda dengan **oposisi**, Anda tidak bisa maju lewat tengah — raja Anda tidak punya tempat. Tekniknya adalah menyelinap dari samping dan memaksa raja musuh mengalah atau menyerahkan kotak kunci.\n\n## Rencananya\n\n1. **{{Kc4}}** — Putih melangkah ke c4, mengincar c5 dan b5. Arah lain (Ke4) adalah cermin dengan ide sama.\n2. Coba terbaik Hitam adalah **...Kc6**, merebut kembali oposisi. Putih lalu kembali dengan Kd4 dan mencoba sayap lain.\n3. Aturan kotak yang harus diingat: **pihak yang giliran kehilangan oposisi**. Jadi Anda terus memeriksa sayap demi sayap sampai Hitam kehabisan kotak cermin.\n\n## Apa yang Salah dengan Langkah Salah\n\nDorongan terlalu cepat 1.d6+? menukar bidak tanpa imbalan: 1...Kxd6 dan posisinya seri mati dengan raja sendirian. Demikian pula 1.Kd3? memberi Hitam kesempatan merebut oposisi lebih maju dengan 1...Kd5, mengikat bidak. Disiplin: **jangan dorong bidak ketika raja musuh duduk di kotak promosinya**, dan gunakan raja Anda untuk mematahkan blokade dulu."
 }

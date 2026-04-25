@@ -4,5 +4,8 @@
   "solution": [
     "Nc4+"
   ],
-  "hint": "El caballo se mueve y se abre la diagonal del alfil."
+  "title": "El caballo despeja la diagonal",
+  "setup": "El alfil en **d7** mira al rey enemigo por la gran diagonal de casillas blancas, mientras el caballo en e3 está listo para saltar al ataque.",
+  "hint": "Elige la casilla del caballo que **también** controle la única huida del rey — no te conformes con cualquier descubierta.",
+  "explanation": "## La idea\n\nEn un ataque descubierto la **pieza que mueve** es la que salta de en medio y la **descubridora** es la pieza de largo alcance que está detrás. Aquí el alfil en d7 es la descubridora apuntando a e8, y el caballo en e3 es el que mueve.\n\n## Por qué {{Nc4+}} es la elección correcta\n\nCasi cualquier movimiento del caballo mantiene al alfil apuntando a e8, pero el truco de un buen jaque descubierto es hacer que la pieza que mueve sea **útil**. Tras {{Nc4+}} el caballo aterriza en una casilla desde la que ataca **d6** — exactamente la casilla a la que al rey le encantaría huir.\n\n- El alfil pega en e8.\n- El caballo cubre d6.\n- El único paso legal del rey es **f8**, donde queda encerrado en la esquina.\n\n## Qué falla con otras jugadas\n\nUn descuidado Ng4+ o Nf5+ también descubre al alfil, pero el caballo ya no pelea por las casillas de huida del rey. Las negras juegan Kd8 (o en algunas líneas capturan el alfil) y el ataque se evapora. La disciplina a aprender: cuando descubras un jaque, elige el destino del que mueve para que **cierre la red** y no solo haga ruido."
 }

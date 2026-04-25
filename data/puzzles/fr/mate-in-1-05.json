@@ -4,5 +4,8 @@
   "solution": [
     "Rb8#"
   ],
-  "hint": "Mat du couloir classique. Rien ne bloque la 8e rangée."
+  "title": "Le Marteau à Distance",
+  "setup": "Votre tour en **b2** regarde une colonne vide avec la dernière rangée grande ouverte à l'autre bout.",
+  "hint": "Grimpez sur la 8e rangée — le bouclier {{f7}}-{{g7}}-{{h7}} scelle le sort du roi.",
+  "explanation": "## L'Idée\n\nUn **mat du couloir** pur — la tour traverse toute la colonne b et transforme la 8e rangée en zone de mort.\n\nJouez {{Rb8#}}.\n\nPourquoi le roi est-il piégé ?\n\n- {{f8}}, {{h8}} et toutes les autres cases de la 8e rangée — toutes contrôlées par la tour en b8\n- {{f7}}, {{g7}}, {{h7}} — toutes bloquées par les propres pions noirs\n- Le roi ne peut capturer (b8 est loin) et il n'y a rien à interposer\n\n> **À retenir :** Une tour loin de l'action peut quand même mater en un coup si la dernière rangée est nue. Scrutez toujours les *longues diagonales* (pour fous/dames) et les *longues colonnes* (pour tours/dames) avant de jouer."
 }

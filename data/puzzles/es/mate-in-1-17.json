@@ -4,5 +4,8 @@
   "solution": [
     "Qh8#"
   ],
-  "hint": "La dama toma la octava fila."
+  "title": "Cobertura cruzada del alfil",
+  "setup": "Tu alfil en **c8** y tu rey en **e6** sellan toda la séptima fila — la dama solo necesita la fila final.",
+  "hint": "Desliza la dama a la **octava fila** — el alfil en c8 ya bloquea {{d8}} y {{f8}}.",
+  "explanation": "## La idea\n\nUn precioso **mate de fila final con dama + alfil**. El alfil en c8 no solo cubre la octava fila — asegura las casillas de escape clave mientras la dama remata desde el rincón.\n\nJuega {{Qh8#}}.\n\n¿Por qué está atrapado el rey?\n\n- {{d7}}, {{e7}}, {{f7}} — todas controladas por tu rey en **e6**\n- {{f8}} — cubierta por la dama en h8 (octava fila)\n- {{d8}} — cubierta por el alfil en **c8**\n- El rey no puede capturar la dama: e8 a h8 son tres casillas\n- Nada puede interponerse en la octava fila entre h8 y e8\n\n> **Conclusión:** Un alfil en una diagonal larga que toca la fila final es una pieza de mate silenciosa pero letal. Cuando la dama se alinea en la misma fila, todos los escapes desaparecen."
 }

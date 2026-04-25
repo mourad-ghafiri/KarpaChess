@@ -4,5 +4,8 @@
   "solution": [
     "Nc6"
   ],
-  "hint": "Kuda melakukan garpu dengan skak."
+  "title": "Garpu Hening di Baris Panjang",
+  "setup": "Raja dan benteng Hitam berbagi baris belakang dengan kuda satu lompatan jauhnya.",
+  "hint": "Cari kotak kuda yang menyerang **keduanya** benteng di a8 dan kotak pelarian raja.",
+  "explanation": "## Idenya\n\nKuda di e5 bisa mengakses kotak {{c6}} lewat lompatan L standar. Setelah di c6:\n\n- Kuda menyerang benteng di **a8** lewat diagonal-lompat-kuda c6 → a7 / a8.\n- Raja di e8 tidak punya cara baik untuk membela a8 dari jarak ini.\n\n### Mengapa benteng terkutuk\n\n1. Benteng hanya bisa bergerak sepanjang baris atau lajurnya. Untuk tetap terlindungi, ia harus menjaga rajanya tetap dekat.\n2. Raja di e8 tidak bisa mencapai a8 dalam satu langkah.\n3. Jadi benteng harus meninggalkan pojok: Ra-mana pun, dan {{Nxa8}} atau penangkapan setara menyusul.\n\nIni adalah **garpu hening** — tidak ada skak diberikan, tetapi ancaman (penangkapan langkah berikutnya) tidak bisa dihentikan.\n\n> Garpu tidak selalu berisik. Serangan diam-diam pada dua bidak tanpa pembela sama mematikannya."
 }

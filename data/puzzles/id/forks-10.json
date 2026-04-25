@@ -4,5 +4,8 @@
   "solution": [
     "Rh8+"
   ],
-  "hint": "Skak — apa yang harus dikorbankan kuda Hitam?"
+  "title": "Sate Kuda",
+  "setup": "Raja dan kuda Hitam berbagi pojok sayap menteri. Skak benteng panjang membongkar kuda di belakangnya.",
+  "hint": "Kirim benteng ke baris ke-8 dengan skak. Kuda tidak punya tempat berlindung setelah raja bergerak.",
+  "explanation": "## Idenya\n\nIni adalah **garpu gaya sate** sepanjang baris ke-8. Benteng Putih bisa berjalan dari h1 ke h8 tanpa hambatan:\n\n- {{Rh8+}} memberi skak di baris belakang.\n- Raja Hitam harus melangkah keluar dari garis benteng.\n\n### Apa yang terjadi pada kuda?\n\n1. Raja hanya punya **a7** sebagai kotak pelarian — a8 diserang benteng, b7 meninggalkan kuda tanpa penjaga, c8 diserang.\n2. Setelah raja kabur, kuda di c7 tidak lagi dilindungi rajanya.\n3. Putih mengayunkan benteng untuk memenangkan kuda (atau raja diseret lebih jauh dari baris ke-2, mengekspos lebih banyak kelemahan).\n\nSolusi satu langkah menemukan **skak yang memaksa** — ide konkret seketika yang tidak memberi Hitam waktu bernapas. Jangan coba memenangkan kuda langsung dengan angkat benteng diam-diam; skak memaksa Hitam bereaksi dan mematahkan pertahanan raja terhadap kuda.\n\n> Skak di baris belakang adalah bahasa alami benteng. Bicarakan kapan pun bisa."
 }

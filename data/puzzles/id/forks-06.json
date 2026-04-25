@@ -1,8 +1,13 @@
 {
   "id": "forks-06",
-  "fen": "4k3/8/8/2n5/8/8/8/Q3K3 w - - 0 1",
+  "fen": "8/8/8/k6n/8/8/3Q4/4K3 w - - 0 1",
   "solution": [
-    "Qa5"
+    "Qd5+",
+    "Kb6",
+    "Qxh5"
   ],
-  "hint": "Menangkan kuda di baris itu."
+  "title": "Menteri Garpu Sepanjang Baris",
+  "setup": "Raja dan kuda Hitam duduk di baris ke-5 yang sama — menteri bisa menyiram keduanya dengan satu langkah.",
+  "hint": "Geser menteri ke baris ke-5 dengan skak. Dari {{d5}}, ia mengincar raja dan kuda sekaligus.",
+  "explanation": "## Idenya\n\n**Garpu baris** oleh menteri. Raja Hitam di a5 dan kuda di h5 berbagi baris ke-5 tanpa apa pun di antara. Kotak {{d5}} adalah penyergapan sempurna — menteri menyerang kedua bidak sepanjang baris.\n\nSetelah {{Qd5+}}, Hitam tidak punya jawaban baik:\n\n- **Tangkap menteri?** Raja di a5 tiga kotak dari d5 — terlalu jauh.\n- **Blokir skak?** Satu-satunya bidak Hitam yang tersisa adalah kuda di h5, dan dari sana ia tidak bisa melompat ke b5 atau c5 (satu-satunya kotak pemblokir) dalam satu langkah.\n- **Lari?** Raja harus meninggalkan baris ke-5, yang mengabaikan kuda.\n\nHitam main {{Kb6}} (atau pelarian raja apa pun) dan Putih menyabet kuda dengan {{Qxh5}}.\n\n## Pola yang Harus Diingat\n\n> Ketika dua bidak musuh berdiri di **baris, lajur, atau diagonal yang sama**, tanyakan apakah menteri Anda bisa mencapai kotak di antara mereka — di situlah garpunya."
 }

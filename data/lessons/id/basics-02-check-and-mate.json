@@ -1,55 +1,54 @@
 {
   "id": "check-and-mate",
   "title": "Skak & Skakmat",
-  "summary": "Pahami tujuan setiap permainan",
+  "summary": "Pahami tujuan dari setiap permainan",
   "difficulty": "beginner",
   "steps": [
     {
       "type": "teach",
       "fen": "4k3/8/4K3/4Q3/8/8/8/8 w - - 0 1",
       "title": "Tujuan",
-      "text": "Anda memenangkan catur dengan menskakmat raja lawan — menyerangnya sedemikian rupa sehingga dia tidak bisa melarikan diri. Di sini menteri dan raja Anda mendekat. Mari kita akhiri."
+      "text": "Catur memiliki tepat **satu** cara untuk menang: memberikan **skakmat**. Itu berarti menyerang raja lawan dengan cara dia tidak bisa melarikan diri — tidak ada kotak untuk lari, tidak ada bidak untuk menghalangi, tidak ada cara untuk memakan penyerang.\n\n## Tiga istilah yang harus dikuasai\n\n- **Skak** — raja diserang, tetapi setidaknya punya satu jalan keluar yang sah.\n- **Skakmat** — raja diserang, dan tidak ada langkah sah sama sekali. Permainan berakhir.\n- **Pat (stalemate)** — raja *tidak* dalam keadaan skak, tetapi pihak yang giliran tidak punya langkah sah. Remis.\n\nDalam posisi yang Anda lihat, menteri dan raja Anda bekerja sama. Raja menutup kotak pelarian e7, d6, dan f6; menteri akan memberikan pukulan terakhir. Pola ini — raja + menteri vs raja sendirian — selalu harus menjadi kemenangan.\n\n> Raja sebenarnya tidak pernah mati dalam catur. Dia hanya kehabisan langkah."
     },
     {
       "type": "play",
       "fen": "4k3/8/4K3/4Q3/8/8/8/8 w - - 0 1",
-      "prompt": "Berikan skakmat dalam satu langkah.",
+      "prompt": "Geser menteri ke baris belakang dengan **{{Qb8#}}** (atau **{{Qh8#}}**) — raja tidak punya tempat lari.",
       "targetSan": [
         "Qb8#",
         "Qh8#"
       ],
-      "hint": "Serang baris ke-8 — raja tidak punya tempat melarikan diri."
+      "hint": "Raja Anda di e6 sudah mengontrol d7, e7, dan f7. Capai baris ke-8 dengan menteri dan raja terjebak."
     },
     {
       "type": "teach",
       "fen": "3k4/8/3K4/3Q4/8/8/8/8 w - - 0 1",
-      "title": "Sudut Berbeda",
-      "text": "Ide yang sama, posisi berbeda. Baris belakang sudah matang."
+      "title": "Sudut Berbeda, Ide Sama",
+      "text": "Bahan yang sama, tata letak berbeda. Pola raja-dan-menteri sangat umum, jadi Anda harus benar-benar menguasainya.\n\nPerhatikan resepnya:\n\n- **Raja Anda** berdiri satu kotak dari raja lawan, mengambil tiga kotak pelariannya.\n- **Menteri Anda** memberikan skak — dan karena kedua raja saling berhadapan, raja lawan tidak punya kotak pelarian.\n\nKetika kedua raja berdiri di kolom atau baris yang sama dengan satu kotak di antaranya, itu disebut *oposisi*. Itu formasi ajaib: memungkinkan menteri masuk untuk pembunuhan tanpa dimakan.\n\n> Raja dan menteri bekerja sama adalah duo skakmat standar emas."
     },
     {
       "type": "play",
       "fen": "3k4/8/3K4/3Q4/8/8/8/8 w - - 0 1",
-      "prompt": "Temukan skakmat.",
+      "prompt": "Tutup baris ke-8 dengan **{{Qa8#}}** — raja tidak punya jalan keluar.",
       "targetSan": [
-        "Qa8#",
-        "Qd7"
+        "Qa8#"
       ],
-      "hint": "Potong baris ke-8 dari samping. Qa8#."
+      "hint": "Raja Anda sudah menutupi c7, d7, dan e7. Anda butuh langkah menteri yang menyerang d8 dari kotak yang tidak bisa dimakan raja."
     },
     {
       "type": "teach",
       "fen": "6k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
       "title": "Skakmat Baris Belakang",
-      "text": "Ketika seorang raja terjebak di belakang pion-pionnya sendiri di baris belakang, benteng atau menteri di baris tersebut dapat memberikan skakmat. Ini salah satu pola paling umum dalam catur."
+      "text": "Pola skakmat paling sering dimainkan di catur klub: **skakmat baris belakang**.\n\nRaja yang sudah rokade itu aman — sampai pion-pion setia itu menjadi penjaranya. Ketika pion f, g, dan h belum bergerak, raja tidak punya rute pelarian. Sebuah benteng atau menteri yang meluncur ke baris belakang memberikan skakmat tanpa satu pengorbanan pun.\n\n## Apa yang harus diperhatikan\n\n- Raja lawan di **baris belakang** tanpa **kotak pelarian**.\n- Sebuah **kolom terbuka** ke baris belakang itu untuk benteng atau menteri Anda.\n- Tidak ada penjaga di baris belakang yang akan memakan Anda atau menghalangi.\n\nMisalnya, setelah {{Ra8+}}, jika Hitam tidak punya bidak untuk menghalangi dan raja tidak bisa lari, itulah skakmat. Itu persis yang akan terjadi di sini.\n\n> Selalu buat *luft* — dorong sebuah pion, bebaskan raja Anda. Lupa, dan skakmat baris belakang akan menemukan Anda cepat atau lambat."
     },
     {
       "type": "play",
       "fen": "6k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
-      "prompt": "Berikan skakmat baris belakang.",
+      "prompt": "Geser benteng ke baris belakang dengan **{{Ra8#}}** — pion raja sendiri menjebaknya.",
       "targetSan": [
         "Ra8#"
       ],
-      "hint": "Pion-pion raja adalah temboknya — tetapi juga penjaranya."
+      "hint": "Raja di g8 hanya bisa melarikan diri ke f7 atau h7 — tetapi pion-pionnya menghalangi keduanya. Jadi benteng di baris ke-8 mengakhirinya."
     }
   ]
 }

@@ -4,5 +4,8 @@
   "solution": [
     "Qc8"
   ],
-  "hint": "Threaten Qxf8 — deflect the defender."
+  "title": "Deflect the Defender",
+  "setup": "Black's king has the pawn-wall coffin, and the rook on f8 is its only defender. White's queen targets that defender with mate behind it.",
+  "hint": "{{Qc8}} threatens **mate by capture**. The defender must move — and there's no good square.",
+  "explanation": "## The Idea\n\n{{Qc8}} pins Black's rook with a deadly threat: {{Qxf8#}}. This is the **deflection** motif at its sharpest.\n\n### Why Black is lost\n\n1. The queen on c8 threatens the rook on f8.\n2. If Black moves the rook, **the back rank is wide open** for {{Qxf8#}} or any back-rank delivery.\n3. If Black tries to defend the rook, no piece can do so — Black's only minor pieces are gone.\n\n### Black's defensive tries\n\n- **Rxc8?** No — the rook is on f8, not in range of c8.\n- **Move the rook off the 8th rank?** Drops the king to mate.\n- **Push a pawn for luft?** Too slow; White plays {{Qxf8+}} immediately.\n\n### The pattern\n\n- *Attack the only defender*. Whether by capture, attack, or pin, removing the defender of the back rank is the universal recipe.\n- The queen is the perfect deflection piece because it threatens long distances and the back rank simultaneously.\n\n> Find the defender. Threaten the defender. The mate writes itself."
 }

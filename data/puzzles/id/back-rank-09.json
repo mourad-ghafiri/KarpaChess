@@ -4,5 +4,8 @@
   "solution": [
     "Re8#"
   ],
-  "hint": "Re8 skakmat — raja tidak punya tempat lari."
+  "title": "Benteng Meluncur ke Skakmat",
+  "setup": "Hanya dua raja dan satu benteng. Kadang catur sesederhana itu.",
+  "hint": "{{Re8}} tiba dengan skak. Tembok bidak adalah peti mati raja.",
+  "explanation": "## Idenya\n\nDengan papan hampir kosong, motif skakmat baris belakang tetap mengakhiri partai. {{Re8#}} memberi skakmat satu langkah:\n\n1. Benteng meninggalkan baris ke-2 dan tiba di e8 dengan skak.\n2. Raja Hitam di g8 terjebak:\n   - **f8** diserang benteng di e8.\n   - **h8** diserang sepanjang baris ke-8.\n   - **f7, g7, h7** diblokir bidak Hitam.\n3. Tidak ada bidak Hitam yang bisa ikut campur.\n\n### Pelajaran\n\nBenteng adalah **bidak pengantar skakmat** dalam endgame paling fundamental:\n\n- Raja + benteng vs raja: menang.\n- Raja + benteng vs raja dengan tembok bidak: *seketika*.\n\nKetika raja musuh duduk di balik deretan bidak yang belum bergerak, **selalu cari invasi baris ke-7**.\n\n> Ketika hanya tinggal satu bidak, jadikan dia algojo."
 }

@@ -4,5 +4,8 @@
   "solution": [
     "Qh7#"
   ],
-  "hint": "La dame et le cavalier ensemble ne laissent aucune fuite."
+  "title": "Le Baiser de la Mort",
+  "setup": "Votre cavalier en **f6** empêche le roi de fuir vers **g8**, et votre roi en **g6** défend la case d'arrivée de la dame.",
+  "hint": "Posez la dame juste à côté du roi — elle est défendue par votre roi et le cavalier couvre {{g8}}.",
+  "explanation": "## L'Idée\n\nC'est le célèbre mat du **baiser de la mort** : la dame atterrit sur la case *adjacente* au roi ennemi, défendue par votre propre roi. Le cavalier gère la fuite par le coin.\n\nJouez {{Qh7#}}.\n\nPourquoi le roi est-il piégé ?\n\n- {{g8}} — contrôlée par le cavalier en **f6** (le cavalier saute vers g8)\n- {{g7}} — contrôlée par votre roi en **g6** *et* par la dame elle-même\n- La dame en h7 attaque h8 directement (échec)\n- {{Kxh7}} est illégal car votre roi en **g6** défend h7\n- Rien ne peut s'interposer : h7 est adjacente à h8\n\n> **À retenir :** Mémorisez le motif du *baiser de la mort* — dame + roi à deux cases, avec une troisième pièce (ici le cavalier) couvrant la seule fuite. Il apparaît dans d'innombrables parties, surtout après l'avance d'un pion en f6 ou g6."
 }

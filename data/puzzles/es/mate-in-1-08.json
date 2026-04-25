@@ -4,5 +4,8 @@
   "solution": [
     "Qe8#"
   ],
-  "hint": "No vayas en línea recta — elige la casilla que tu rey ya protege."
+  "title": "Estrechón en diagonal",
+  "setup": "Rey y dama están apilados en la **columna h** — pero el mate se esconde a un lado.",
+  "hint": "No des jaque desde h7 — eso sería ahogado. Cruza a la diagonal larga para que tu rey siga cubriendo {{g7}}.",
+  "explanation": "## La idea\n\nEsta posición es una clásica **trampa de ahogado** disfrazada de mate. La jugada natural {{Qg6}} o {{Qh7}} sería ahogado o dejaría salir al rey a g8. El truco es venir desde el lado.\n\nJuega {{Qe8#}}.\n\n¿Por qué el rey está atrapado?\n\n- {{g8}} — cubierta por la dama por la octava fila\n- {{g7}} — controlada por tu propio rey en **h6**\n- {{h7}} — también controlada por tu rey en h6\n- El rey no puede capturar (e8 está lejos) y nada puede interponerse\n\n> **Conclusión:** En el final de R+D contra R, cuidado con el ahogado. La dama a menudo da mate desde *un salto de caballo* del rey enemigo — nunca directamente adyacente a menos que tu propio rey la defienda."
 }

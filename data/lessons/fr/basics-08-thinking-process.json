@@ -7,20 +7,20 @@
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "title": "Trois questions",
-      "text": "Avant chaque coup, passez en revue cette liste : (1) Que menace mon adversaire ? (2) Quels sont MES échecs, captures et menaces ? (3) Si je joue mon coup candidat, quelle est la meilleure réponse ? Répondez aux trois, puis jouez."
+      "title": "Les trois questions",
+      "text": "Les joueurs forts ne réagissent pas seulement — ils suivent une petite routine mentale à **chaque** coup. Plus tôt vous installez l'habitude, plus vite vous progressez.\n\n## Les trois questions\n\n1. **Que menace mon adversaire ?** Examinez son dernier coup. A-t-il attaqué une pièce ? Ouvert une ligne ? Préparé une combinaison ?\n2. **Quels sont MES échecs, prises et menaces ?** Balayez tout l'échiquier. La tactique se cache dans les coups *forçants*. Listez-les avant de choisir.\n3. **Quelle serait la meilleure réplique à mon coup candidat ?** Imaginez votre coup sur l'échiquier, puis demandez-vous : comment réagirais-*je* du côté noir ?\n\nTrois petites questions. Posées honnêtement, elles divisent par deux votre taux de gaffes.\n\nUn exemple rapide : imaginons que les Blancs viennent de jouer {{Bg5}}, clouant un cavalier. Question 1 : *que menace-t-on ?* Le cavalier ne peut plus bouger sans exposer la dame. Question 2 : *quelles sont mes répliques forçantes ?* Peut-être {{h6}} chasse le fou. Question 3 : *que se passe-t-il après h6 ?* Le fou se replie ou s'échange.\n\n> Trois questions, une minute. Les points Elo les moins chers que vous gagnerez jamais."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "La vérification anti-gaffe",
-      "text": "Avant de jouer votre coup, faites une pause et demandez : « Après ce coup, l'une de mes pièces est-elle attaquée ? Mon adversaire peut-il faire échec ? Peut-il capturer quelque chose gratuitement ? » Cette vérification de 5 secondes évite la plupart des gaffes."
+      "text": "Presque chaque partie perdue contient un moment où vous avez joué vite et raté quelque chose d'évident. Ce moment est évitable.\n\n## La vérif anti-gaffe en 5 secondes\n\nAvant que votre main ne lâche la pièce, figez-vous et passez en revue :\n\n- Une de **mes pièces** se retrouve-t-elle soudain en prise (sans défense, attaquée) ?\n- Mon adversaire peut-il donner un **échec** qui gagne quelque chose ?\n- Y a-t-il une **prise gratuite** que je viens de permettre ?\n- Suis-je en train de me jeter dans une **fourchette, un clouage ou une enfilade** ?\n\nSi la réponse aux quatre est *non*, jouez. Si *oui*, trouvez un autre coup.\n\nCe petit rituel ne coûte rien en cadence longue, et seulement quelques secondes en blitz. Il intercepte la plupart des gaffes en un coup — celles qui hantent chaque joueur.\n\n> Asseyez-vous sur vos mains. Regardez à nouveau. Puis jouez."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "title": "Coups candidats",
-      "text": "Les joueurs forts ne calculent pas un seul coup — ils calculent 2 à 3 candidats et comparent. Choisissez des coups qui développent une pièce, améliorent une case ou créent une menace. Rejetez tôt les coups qui semblent aléatoires."
+      "title": "Les coups candidats",
+      "text": "Aux échecs, on ne choisit pas *le* coup — on choisit *entre* plusieurs.\n\nLes grands maîtres regardent la position, identifient **2 à 3 coups candidats**, calculent brièvement chacun, puis comparent. Les débutants calculent souvent un seul coup en profondeur et le jouent sans jamais se demander *y avait-il mieux ?*\n\n## Comment générer de bons candidats\n\n- Commencez par les **coups forçants** : échecs, prises, menaces directes.\n- Ajoutez les **coups de développement** : faites entrer une pièce inactive en jeu.\n- Ajoutez la **prophylaxie** : empêchez le plan adverse avant qu'il ne démarre.\n- Rejetez vite : si un coup perd du matériel ou viole un principe sans raison, écartez-le.\n\nPuis comparez les finalistes : *lequel laisse ma position la plus solide après la meilleure réplique adverse ?*\n\n## Pourquoi c'est important\n\n- Cela évite la vision en tunnel (se figer sur le premier coup vu).\n- Cela fait surgir les tactiques — parfois, le coup B est excellent précisément parce que le coup A est bon.\n- Cela vous rend plus calme, parce que vous avez écarté les autres options au lieu de deviner.\n\n> Choisissez-en trois, gardez-en un. Répétez sur trente coups. Voilà les échecs."
     }
   ]
 }

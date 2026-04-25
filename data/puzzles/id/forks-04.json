@@ -4,5 +4,8 @@
   "solution": [
     "Nxd5"
   ],
-  "hint": "Kuda melompat langsung menyerang benteng — taktik sederhana."
+  "title": "Benteng Gratis di d5",
+  "setup": "Benteng Hitam berdiri sendirian di d5 — tidak ada pembela di sekitarnya.",
+  "hint": "Kuda mencapai d5 dalam satu lompatan. Apakah ada yang membela benteng?",
+  "explanation": "## Idenya\n\nIni adalah penangkapan **bidak lepas** — taktik paling sederhana. Kuda di c3 bisa melompat ke d5 (lajur +1, baris +2 — bentuk L contoh) dan menyabet benteng. Satu-satunya bidak Hitam yang tersisa adalah raja di e8, tiga kotak dari d5 dan tidak bisa membela.\n\nSetelah {{Nxd5}}, Putih unggul satu benteng cuma-cuma.\n\n## Mengapa Berhasil\n\n- Benteng **tanpa pembela** — selalu cek apakah bidak target punya penjaga sebelum mengasumsikannya gratis.\n- Kuda di c3 mencapai d5 dalam satu langkah lewat bentuk L (c3 → d5).\n- Raja Putih di e1 tidak menghalangi dan tidak dalam bahaya.\n\n## Pola yang Harus Diingat\n\n> Sebelum setiap langkah, pindai papan untuk **bidak lepas** — bidak musuh tanpa pembela. Mereka adalah hadiah menunggu diambil."
 }

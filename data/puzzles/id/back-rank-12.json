@@ -4,5 +4,8 @@
   "solution": [
     "Qc8"
   ],
-  "hint": "Ancam Qxf8 — alihkan pembelanya."
+  "title": "Alihkan Pembela",
+  "setup": "Raja Hitam terjebak di peti mati tembok bidak, dan benteng di f8 adalah satu-satunya pembela. Menteri Putih membidik pembela itu dengan skakmat di belakangnya.",
+  "hint": "{{Qc8}} mengancam **skakmat dengan menangkap**. Pembela harus bergerak — dan tidak ada kotak yang baik.",
+  "explanation": "## Idenya\n\n{{Qc8}} memaku benteng Hitam dengan ancaman mematikan: {{Qxf8#}}. Ini adalah motif **pengalihan** dalam bentuk paling tajam.\n\n### Mengapa Hitam kalah\n\n1. Menteri di c8 mengancam benteng di f8.\n2. Jika Hitam menggerakkan benteng, **baris belakang terbuka lebar** untuk {{Qxf8#}} atau pengantaran baris belakang lainnya.\n3. Jika Hitam mencoba membela benteng, tidak ada bidak yang bisa — bidak minor Hitam sudah habis.\n\n### Upaya pertahanan Hitam\n\n- **Rxc8?** Tidak — benteng ada di f8, tidak dalam jangkauan c8.\n- **Pindahkan benteng dari baris ke-8?** Membuat raja kena skakmat.\n- **Dorong bidak untuk luft?** Terlalu lambat; Putih memainkan {{Qxf8+}} seketika.\n\n### Pola\n\n- *Serang satu-satunya pembela*. Baik dengan menangkap, menyerang, atau memaku, menyingkirkan pembela baris belakang adalah resep universal.\n- Menteri adalah bidak pengalih sempurna karena mengancam jarak jauh dan baris belakang sekaligus.\n\n> Cari pembela. Ancam pembela. Skakmat menulis dirinya sendiri."
 }

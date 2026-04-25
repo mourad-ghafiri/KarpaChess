@@ -8,48 +8,47 @@
       "type": "teach",
       "fen": "4k3/8/4K3/4Q3/8/8/8/8 w - - 0 1",
       "title": "El Objetivo",
-      "text": "Ganas al ajedrez dando jaque mate al rey contrario — atacándolo de tal forma que no pueda escapar. Aquí tu dama y tu rey se acercan. Acabemos con esto."
+      "text": "El ajedrez tiene exactamente **una** forma de ganar: dar **jaque mate**. Eso significa atacar al rey enemigo de tal manera que no pueda escapar — sin casilla a la que huir, sin pieza con la que bloquear, sin forma de capturar al atacante.\n\n## Tres términos para grabar\n\n- **Jaque** — el rey está atacado, pero tiene al menos una salida legal.\n- **Jaque mate** — el rey está atacado y no hay ningún movimiento legal. Fin de la partida.\n- **Ahogado** — el rey *no* está en jaque, pero el bando que mueve no tiene ningún movimiento legal. Tablas.\n\nEn la posición que ves, tu dama y tu rey trabajan en equipo. El rey corta las casillas de escape e7, d6 y f6; la dama dará el golpe final. Este patrón — rey + dama contra rey solo — siempre debe ser victoria.\n\n> El rey nunca muere realmente en el ajedrez. Simplemente se queda sin movimientos."
     },
     {
       "type": "play",
       "fen": "4k3/8/4K3/4Q3/8/8/8/8 w - - 0 1",
-      "prompt": "Da jaque mate en una jugada.",
+      "prompt": "Desliza la dama a la fila final con **{{Qb8#}}** (o **{{Qh8#}}**) — el rey no tiene a dónde huir.",
       "targetSan": [
         "Qb8#",
         "Qh8#"
       ],
-      "hint": "Llega a la 8ª fila — el rey no tiene escape."
+      "hint": "Tu rey en e6 ya controla d7, e7 y f7. Golpea la 8ª fila con la dama y el rey queda atrapado."
     },
     {
       "type": "teach",
       "fen": "3k4/8/3K4/3Q4/8/8/8/8 w - - 0 1",
-      "title": "Otro Ángulo",
-      "text": "Misma idea, diferente posición. La última fila está madura."
+      "title": "Otro Ángulo, Misma Idea",
+      "text": "Mismos ingredientes, distinto montaje. El patrón rey-dama es increíblemente común, así que conviene tenerlo metido en los huesos.\n\nFíjate en la receta:\n\n- **Tu rey** se sitúa a una casilla del rey enemigo, quitándole tres casillas de escape.\n- **Tu dama** da jaque — y como los reyes están cara a cara, el rey enemigo no tiene casilla de huida.\n\nCuando los reyes están en la misma fila o columna con una casilla entre ellos, eso se llama *oposición*. Es una formación mágica: permite que la dama entre a matar sin ser capturada.\n\n> Rey y dama trabajando juntos son el dúo de mate por excelencia."
     },
     {
       "type": "play",
       "fen": "3k4/8/3K4/3Q4/8/8/8/8 w - - 0 1",
-      "prompt": "Encuentra el jaque mate.",
+      "prompt": "Corta la 8ª fila con **{{Qa8#}}** — el rey no tiene escape.",
       "targetSan": [
-        "Qa8#",
-        "Qd7"
+        "Qa8#"
       ],
-      "hint": "Corta la 8ª fila desde el lado. Qa8#."
+      "hint": "Tu rey ya cubre c7, d7 y e7. Necesitas una jugada de dama que ataque d8 desde una casilla donde el rey no pueda capturarla."
     },
     {
       "type": "teach",
       "fen": "6k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
-      "title": "Mate de la Última Fila",
-      "text": "Cuando un rey queda atrapado detrás de sus propios peones en la última fila, una torre o dama en esa fila puede dar mate. Este es uno de los patrones más comunes en ajedrez."
+      "title": "Mate del Pasillo",
+      "text": "El patrón de mate más jugado en el ajedrez de club: el **mate del pasillo** (o de la fila final).\n\nUn rey enrocado está seguro — hasta que esos mismos peones leales se convierten en su prisión. Cuando los peones de f, g y h no se han movido, el rey no tiene ruta de escape. Una torre o dama deslizándose a la fila final da mate sin un solo sacrificio.\n\n## Qué buscar\n\n- El rey enemigo en la **fila final** sin **casillas de escape**.\n- Una **columna abierta** hasta esa fila final para tu torre o dama.\n- Sin defensor en la fila final que pueda capturarte o bloquear.\n\nPor ejemplo, tras {{Ra8+}}, si las negras no tienen pieza para interponer y el rey no puede huir, es mate. Eso es exactamente lo que está a punto de ocurrir aquí.\n\n> Hazle siempre *luft* a tu rey — empuja un peón, dale aire. Olvídalo, y el mate del pasillo te encontrará tarde o temprano."
     },
     {
       "type": "play",
       "fen": "6k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
-      "prompt": "Da mate en la última fila.",
+      "prompt": "Desliza la torre a la fila final con **{{Ra8#}}** — los propios peones del rey lo atrapan.",
       "targetSan": [
         "Ra8#"
       ],
-      "hint": "Los peones del rey son su muro — pero también su prisión."
+      "hint": "El rey en g8 solo puede huir a f7 o h7 — pero sus peones bloquean ambas. Así que una torre en la 8ª fila lo termina."
     }
   ]
 }

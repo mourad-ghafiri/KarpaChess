@@ -4,5 +4,8 @@
   "solution": [
     "Rxd7+"
   ],
-  "hint": "Clava, luego captura la pieza clavada."
+  "title": "Alfil clavado, alfil perdido",
+  "setup": "Un alfil negro está en **d7**, directamente delante de su rey y directamente en la mira de la torre.",
+  "hint": "Las piezas menores clavadas son blancos fijos — captúralas.",
+  "explanation": "## La idea\n\nEl alfil negro en d7 está en una **clavada absoluta** por la columna d. Los alfiles normalmente se escabullen por las diagonales, pero este no puede moverse en absoluto — cualquier jugada del alfil pondría al rey en d8 en jaque por la torre en d2.\n\nLas blancas juegan {{Rxd7+}}, atrapando el alfil.\n\n- {{Kxd7}} es forzado — el rey es la única pieza que puede responder al jaque.\n- Tras el cambio, las blancas han intercambiado torre por alfil. En una posición más completa esto sería una **ganancia limpia de pieza**; en esta miniatura es una lección sobre la geometría.\n\n## Patrón a memorizar\n\n> A la clavada no le importa qué tipo de pieza atrape. Alfiles, caballos, torres, damas — todas se vuelven estatuas cuando están clavadas contra su rey.\n\nLa magia de una clavada es que **cancela la movilidad del objetivo por completo**, sin importar cómo se mueva normalmente la pieza."
 }

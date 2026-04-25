@@ -4,5 +4,8 @@
   "solution": [
     "a8=Q+"
   ],
-  "hint": "El peón a está a un paso de la gloria."
+  "title": "Coronación con Jaque",
+  "setup": "Un peón blanco está a una casilla de la gloria en **a7**, con el rey negro alineado cerca.",
+  "hint": "Corona con jaque siempre que sea posible — no le da tiempo a las negras de reaccionar.",
+  "explanation": "## La idea\n\nUna táctica clásica de **coronación**. El peón en a7 alcanza la octava fila y se transforma en dama, dando jaque al mismo tiempo en la 8ª fila.\n\nLas blancas juegan {{a8=Q+}}.\n\n## La respuesta forzada de las negras\n\nLa nueva dama en a8 ataca al rey en e8 por la **octava fila**. Las negras deben mover el rey (no hay pieza para interponerse, la dama está lejos de los defensores del flanco de rey):\n\n- {{Kd7}}, {{Ke7}}, {{Kf7}}, {{Kf8}}, {{Kd8}} — cualquier casilla de fuga sirve, ya que la dama está sola.\n\n## Por qué importa coronar con jaque\n\n> Coronar con jaque **le niega a las negras un tempo**. Una coronación sin jaque puede contestarse con contraamenazas; una coronación con jaque obliga a un movimiento inmediato del rey.\n\nEn finales, un solo tempo suele ser la diferencia entre ganar y entablar. Busca siempre jaques al coronar — son oro."
 }

@@ -8,57 +8,57 @@
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "The Three Laws",
-      "text": "Every strong opening rests on three pillars: (1) control the center, (2) develop your pieces quickly, (3) get your king safe. Let's practice all three."
+      "text": "Every great opening — from the Italian to the Sicilian — rests on the same three pillars. Master them and you'll never have a *bad* opening, even if you've never seen the position before.\n\n## The three laws of the opening\n\n1. **Control the center.** The four squares **d4, e4, d5, e5** are the most valuable real estate on the board. Pieces that control them reach more squares; pieces that don't are spectators.\n2. **Develop your pieces quickly.** Get every minor piece (knights, bishops) off the back rank in the first 8–10 moves. *Don't* move the same piece twice unless you must.\n3. **Get your king safe.** Castle by move 10. A king in the middle is a king in danger.\n\nA model opening sequence: {{e4}} {{e5}} {{Nf3}} {{Nc6}} {{Bc4}} {{Bc5}} {{O-O}}. White has already done all three things — pawn in the center, two pieces developed, king tucked away.\n\n> Develop with purpose. Castle without delay. The middlegame begins where the opening principles end."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "prompt": "Start by pushing a central pawn. Play e4 or d4.",
+      "prompt": "Stake your claim with a central pawn — play **{{e4}}** or **{{d4}}**.",
       "targetSan": [
         "e4",
         "d4"
       ],
-      "hint": "Central pawns claim space and open lines for your pieces."
+      "hint": "Both moves grab a center square and open lines for two pieces at once (queen and a bishop). That's the cheapest first-move principle."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
       "title": "Now Develop",
-      "text": "Pawns first — then pieces. Knights before bishops. Knights out toward the center (f3, c3) attack four central squares each."
+      "text": "The pawns lay the foundation; now the pieces move in.\n\n## Order of development\n\n- **Pawns first** — but only the central ones, just enough to open lines.\n- **Knights before bishops.** Knights have fewer good squares (usually f3, c3 or f6, c6), so develop them first to commit fewer choices.\n- **Bishops to active squares.** They want diagonals that hit the enemy camp.\n- **Queen last among the minor pieces.** She's too valuable to expose early.\n- **Rooks last of all** — they finish the development by occupying open files.\n\nWhy knights first? Because **{{Nf3}}** does triple duty: develops a piece, attacks the e5 pawn, and prepares castling. Few moves accomplish so much at once.\n\n> Move every piece once before you move any piece twice."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
-      "prompt": "Develop a knight toward the center.",
+      "prompt": "Develop a knight toward the center — **{{Nf3}}** is the classical choice (attacks e5), or **{{Nc3}}** also works.",
       "targetSan": [
         "Nf3",
         "Nc3"
       ],
-      "hint": "Nf3 and Nc3 both hit four central squares."
+      "hint": "Both moves bring a knight into the action. Which one also attacks Black's e5 pawn?"
     },
     {
       "type": "teach",
       "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
       "title": "Bishops Next",
-      "text": "With both knights out, develop bishops to active squares. Bc4 eyes the weak f7 square — the most vulnerable point in Black's camp in the opening."
+      "text": "Both knights belong on f3 and c3 (or c4 in some openings). Now the bishops want to be unleashed.\n\n## Choosing a bishop's home\n\n- **{{Bc4}}** — the *Italian Game* setup. The bishop eyes f7, the most vulnerable square in Black's camp because only the king defends it.\n- **{{Bb5}}** — the *Ruy Lopez* setup. Pressures the c6 knight (which defends e5) — chess's oldest serious opening.\n- **{{Bd3}}** — solid but blocks the d-pawn. Common in 1.d4 systems.\n- **{{Be2}}** — modest but flexible. The bishop supports a kingside attack later.\n\nNotice that Black has mirrored you with {{Nc6}}. Symmetry is fine for a few moves — the player who breaks symmetry usefully often gets the advantage.\n\n> A bishop with a target is worth two without one."
     },
     {
       "type": "play",
       "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
-      "prompt": "Develop the light-squared bishop to an active square.",
+      "prompt": "Develop your light-squared bishop. **{{Bc4}}** is the classical Italian — it stares at f7.",
       "targetSan": [
         "Bc4",
         "Bb5",
         "Bd3",
         "Be2"
       ],
-      "hint": "Bc4 is the classical choice — straight at f7."
+      "hint": "Where does Black's f7 pawn need defending? A bishop on c4 strikes that exact square."
     },
     {
       "type": "teach",
       "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
       "title": "King Safety",
-      "text": "Two pieces out on each side is a good moment to castle. Castling whisks the king into a corner and connects your rooks. Do it before launching attacks."
+      "text": "Two minor pieces out, center claimed, lines open — this is the ideal moment to **castle**.\n\nCastling does three things in one move:\n\n- Tucks the king into a corner, behind a wall of pawns\n- Connects the rooks (they can now defend each other along the back rank)\n- Brings a rook to the center — usually f1 or d1, where it controls a half-open file\n\n## A useful checklist before castling\n\n- Is the **f-pawn** still on its starting square? (Moving it weakens the castled king.)\n- Are there any **immediate threats** I should meet first?\n- Will I castle into the **same side** as my opponent (positional game) or the **opposite side** (sharp pawn-storm fight)?\n\nFrom the position above, the natural follow-up is {{O-O}}. After that, you'll think about the d-file, the c-pawn break, and active rook moves.\n\n> Castle early, castle on time, and the middlegame opens with you in shape."
     }
   ]
 }

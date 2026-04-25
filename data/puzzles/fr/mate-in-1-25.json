@@ -4,5 +4,8 @@
   "solution": [
     "Ra8#"
   ],
-  "hint": "Mat du couloir avec opposition des rois."
+  "title": "Opposition et balayage",
+  "setup": "Vos rois sont en **opposition** sur la colonne e, et la tour attend sur la 7e rangée pour porter le coup fatal.",
+  "hint": "Hissez la tour jusqu'à la 8e rangée — votre roi en **e6** tient {{d7}}, {{e7}} et {{f7}}.",
+  "explanation": "## L'idée\n\nVoici la position fondamentale du **mat R+T contre R** enseignée dans tous les manuels. Les rois se font face en opposition ; la tour porte le coup à distance.\n\nJouez {{Ra8#}}.\n\nPourquoi le roi est-il bloqué ?\n\n- {{d8}} et {{f8}} — couvertes par la tour en a8 (8e rangée)\n- {{d7}}, {{e7}}, {{f7}} — toutes contrôlées par votre roi en **e6**\n- La tour en a8 est trop loin pour {{Kxa8}}\n- Rien ne peut s'interposer sur la 8e rangée\n\n> **À retenir :** mémorisez ce schéma exact : rois en opposition + tour sur la même rangée = mat. C'est l'aboutissement de presque toutes les finales R+T contre R."
 }

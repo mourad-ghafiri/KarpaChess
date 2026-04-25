@@ -1,6 +1,13 @@
 {
   "id": "mate-in-2-01",
   "fen": "3k4/8/3K4/8/8/8/8/3Q4 w - - 0 1",
-  "solution": ["Qd5+", "Kc8", "Qa8#"],
-  "hint": "Queen step up with check, drive the king to the corner, then deliver mate along the 8th rank."
+  "solution": [
+    "Qd5+",
+    "Kc8",
+    "Qa8#"
+  ],
+  "title": "Two-Step Cage",
+  "setup": "Kings face off on the **d-file**, your queen lurks on **d1** ready to climb up with check.",
+  "hint": "Step the queen up with check, drive the king toward the corner, then sweep the back rank for mate.",
+  "explanation": "## The Idea\n\nA classic **K+Q vs K mate-in-2**. Move 1 forces the king sideways, move 2 ends it on the back rank.\n\n**1. {{Qd5+}}** — the queen jumps up the file with check. Black's king is on **d8** and must move; the only square not covered by your king on **d6** or attacked by the queen is **c8**.\n\n**1...{{Kc8}}** — forced. {{Kxd5}} is illegal (your king defends d5), {{Ke8}} is also legal but loses the same way; we follow the textbook line.\n\n**2. {{Qa8#}}** — the queen sweeps to the corner of the back rank, delivering mate.\n\nWhy is the king stuck after move 2?\n\n- {{b8}} — attacked by the queen along the 8th rank\n- {{c7}}, {{d7}} — both controlled by your king on **d6**\n- The queen is far from the king, so {{Kxa8}} is impossible\n- Nothing can interpose on the 8th rank\n\n> **Takeaway:** In K+Q endings, the queen does the cutting and your king does the *covering*. Always pair queen checks with king support, and march toward a back-rank or edge mate."
 }

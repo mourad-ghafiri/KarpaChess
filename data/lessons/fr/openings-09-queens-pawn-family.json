@@ -1,29 +1,29 @@
 {
   "id": "queens-pawn-family",
   "title": "1.d4 — Le pion dame",
-  "summary": "Comprendre les systèmes à 1.d4",
+  "summary": "Comprendre les systèmes en 1.d4",
   "difficulty": "beginner",
   "steps": [
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
       "title": "La poussée positionnelle",
-      "text": "1.d4 réclame le centre et prépare c4. Les parties sont plus positionnelles qu'avec 1.e4 — des batailles stratégiques lentes autour des structures de pions et des avant-postes."
+      "text": "**{{d4}}** est le cousin lent et stratégique de 1.e4. Au lieu d'ouvrir tout de suite, il revendique une case centrale avec un pion *défendu par la dame* — différence subtile mais énorme.\n\n## Ce que 1.d4 réalise\n\n- Réclame la **case d4**, naturellement protégée par la dame blanche en d1.\n- Libère le **fou de cases foncées** sur la diagonale c1-h6.\n- Prépare la poussée caractéristique **{{c4}}** — le coup qui définit la famille du pion dame.\n- Tend à mener à des parties **fermées** et *stratégiques*, où la compréhension positionnelle l'emporte sur le calcul brut.\n\n## Pourquoi les grands maîtres l'aiment\n\n- Les Noirs ont moins de moyens d'arracher l'initiative.\n- Les Blancs peuvent transposer entre plusieurs systèmes (Catalane, gambit dame, anglaise, Trompowsky) selon le dispositif noir.\n- Les pressions à long terme sont fréquentes — parfait pour les techniciens.\n\n> 1.d4, c'est le feu lent. L'action met plus de temps à arriver — mais elle dure plus longtemps."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
-      "title": "Réponses principales",
-      "text": "Options des Noirs : 1...d5 (classique, mène au gambit de la dame), 1...Nf6 (défenses indiennes — hypermodernes), 1...f5 (hollandaise), 1...e6 (flexible). Les défenses indiennes sont le choix moderne des grands maîtres."
+      "title": "Les principales réponses",
+      "text": "Le choix des Noirs au premier coup contre 1.d4 partage le monde des échecs en deux grands camps : les classiques qui jouent **...d5**, et les hypermodernes qui préfèrent **...Nf6**.\n\n## Les grandes répliques\n\n- **1...d5** — *Classique*. Mène au gambit dame, au Slave et au Semi-Slave. Solide, fondé sur les principes, riche en théorie.\n- **1...Nf6** — *Défenses indiennes*. La famille hypermoderne : Est-Indienne, Nimzo-Indienne, Ouest-Indienne, Grünfeld, Bogo-Indienne. Les Noirs laissent les Blancs construire le centre, puis contre-attaquent.\n- **1...f5** — *Défense hollandaise*. Tranchante et risquée. Les Noirs jouent l'attaque à l'aile roi au prix d'un affaiblissement de la diagonale du roi.\n- **1...e6** — *flexible*. Transpose souvent au gambit dame refusé ou à la française.\n- **1...c5** — famille des *Benoni*. Les Noirs défient immédiatement sur la colonne c.\n- **1...d6** — dispositifs *Vieille Indienne* ou *Moderne*, où les Noirs visent ...e5 plus tard.\n\n## Choisir sa réplique\n\n- *Vous voulez une forteresse ?* — Slave ou gambit dame refusé.\n- *Vous voulez contre-attaquer ?* — Est-Indienne ou Grünfeld.\n- *Vous aimez la profondeur stratégique ?* — Nimzo-Indienne ou Ouest-Indienne.\n- *Vous cherchez du déséquilibre ?* — Benoni ou hollandaise.\n\n## Une ligne modèle pour chaque camp\n\nUn gambit dame refusé suit {{d4}} {{d5}} {{c4}} {{e6}} {{Nc3}} **{{Nf6}}**. Les Blancs construisent lentement vers {{Nf3}}, {{Bg5}}, {{e3}} et 0-0. Les Noirs développent par {{Be7}}, {{O-O}}, {{Nbd7}}, **...c6**, **...dxc4**.\n\n> La famille 1.d4 récompense l'élève patient. Choisissez un système noir, apprenez ses plans, et tenez ferme pendant des années."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
-      "prompt": "Jouez le classique 1...d5 — affirmez votre propre prétention.",
+      "prompt": "Reflétez la prétention centrale des Blancs avec le classique **{{d5}}** — solide, principielle, éprouvée par le temps.",
       "targetSan": [
         "d5"
       ],
-      "hint": "1...d5 reflète les Blancs. Classique, solide, respecté."
+      "hint": "1...d5 plante votre propre pion central et prépare la famille du gambit dame refusé ou du Slave."
     }
   ]
 }

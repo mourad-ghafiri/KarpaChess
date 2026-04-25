@@ -4,5 +4,8 @@
   "solution": [
     "Qh8#"
   ],
-  "hint": "La dama y el caballo trabajan juntos hermosamente."
+  "title": "Red de dama y caballo",
+  "setup": "Tu caballo en **f5** y rey en **f6** cierran la columna f — la dama solo necesita la entrada correcta.",
+  "hint": "Lleva la dama a la octava fila — el caballo ya vigila {{e7}}.",
+  "explanation": "## La idea\n\nUna deliciosa **cooperación dama-caballo**. El caballo en f5 cubre silenciosamente {{e7}} y la dama se abate por la fila desde h1 hasta h8.\n\nJuega {{Qh8#}}.\n\n¿Por qué el rey está atrapado?\n\n- {{e8}} — la dama en h8 ataca la octava fila\n- {{g8}} — cubierta por la dama por la octava fila\n- {{e7}} — controlada por el caballo en **f5**\n- {{f7}} — bloqueada por el propio peón negro\n- {{g7}} — cubierta por la dama en h8 (diagonal)\n- ¿Capturar? Kxh8 es imposible — el rey está en f8, no es adyacente\n\n> **Conclusión:** Caballos y damas se combinan en redes de mate porque el caballo cubre casillas que la dama no puede (diagonales cercanas/saltos). Escanea siempre estos patrones de doble cobertura."
 }

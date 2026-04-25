@@ -4,5 +4,8 @@
   "solution": [
     "Qe8#"
   ],
-  "hint": "Jangan pergi dalam garis lurus — pilih kotak yang sudah dijaga raja Anda."
+  "title": "Tekanan Diagonal",
+  "setup": "Raja dan menteri tertumpuk di **lajur h** — tetapi skakmatnya bersembunyi di samping.",
+  "hint": "Jangan beri skak dari h7 — itu stalemate. Pindah ke diagonal panjang agar {{g7}} tetap dijaga raja Anda.",
+  "explanation": "## Idenya\n\nPosisi ini adalah **jebakan stalemate** klasik yang menyamar sebagai skakmat. Langkah alami {{Qg6}} atau {{Qh7}} entah stalemate atau membiarkan raja ke g8. Triknya adalah datang dari samping.\n\nMain {{Qe8#}}.\n\nMengapa raja terjebak?\n\n- {{g8}} — ditutupi menteri sepanjang baris ke-8\n- {{g7}} — dikuasai raja Anda sendiri di **h6**\n- {{h7}} — juga dikuasai raja Anda di h6\n- Raja tidak bisa menangkap (e8 jauh) dan tidak ada yang bisa diselipkan\n\n> **Inti:** Dalam akhir K+M vs K, waspadai stalemate. Menteri sering memberi skakmat dari *jarak langkah kuda* dari raja musuh — tidak pernah bersebelahan kecuali raja Anda sendiri yang membela."
 }

@@ -4,5 +4,8 @@
   "solution": [
     "Nd6+"
   ],
-  "hint": "Fork king and rook with check."
+  "title": "Fork the Castle",
+  "setup": "Black's king and rook frame the 8th rank just three files apart — knight territory.",
+  "hint": "Find the square that attacks both **e8** and **a8** … it's only one knight-jump away.",
+  "explanation": "## The Idea\n\nFrom e4, the knight reaches {{d6}} (-1 file, +2 ranks). On d6 it commands an enormous net of squares — including:\n\n- **e8** — gives check to the king.\n- **b7** — bypasses to attack the rook's escape route.\n- **f7** — covers another flight square.\n\nWait — the rook on a8 isn't directly attacked from d6. So how does the fork work?\n\n### The two-step trap\n\n1. {{Nd6+}} forces the king to move (knight checks can't be blocked or captured here).\n2. The king has limited squares: Kd7 walks into the knight, Kf7 is fine, Ke7 is fine.\n3. After any king move, White plays {{Nxa8}} via b7 / c8 in two moves — but that takes time.\n\n### Cleaner read\n\nIf the puzzle's idea is *just the check on the king* with the rook unprotected long-term, focus on the fork-and-flee: knight pressures the king's defense of the rook, and the rook will fall once the king is dragged off the back rank. Even one tempo of pressure on the rook is decisive when the king has been displaced.\n\n> Check first, count material later. Forced checks unlock everything else."
 }

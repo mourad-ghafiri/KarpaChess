@@ -1,6 +1,11 @@
 {
   "id": "pins-skewers-03",
   "fen": "4k3/4q3/8/8/8/8/4R3/4K3 w - - 0 1",
-  "solution": ["Rxe7+"],
-  "hint": "The queen is glued to the king by the e-file — take her."
+  "solution": [
+    "Rxe7+"
+  ],
+  "title": "E-File Pinpoint",
+  "setup": "Both kings stand on the **e-file**, with the black queen wedged between her king and the white rook on e2.",
+  "hint": "When the queen shields her king, she becomes a sitting target.",
+  "explanation": "## The Idea\n\nClassic **absolute pin**: the black queen on e7 cannot move because doing so would expose the king on e8 to a check from the white rook on e2.\n\nWhite plays {{Rxe7+}}, harvesting the queen.\n\n- {{Kxe7}} is the only legal reply — the king must capture the rook, since nothing else can block or move out of check.\n- Material count after the exchange: White gives up a rook (5) and wins a queen (9). Net **+4** points.\n\n## Pattern to Memorize\n\n> A pinned piece is not really a piece — it is a **target**.\n\nAlways ask: *\"Is there an enemy piece on the same file, rank, or diagonal as its king?\"* If yes, you may have a pin. Pile attackers onto the pinned piece and the material falls into your lap."
 }

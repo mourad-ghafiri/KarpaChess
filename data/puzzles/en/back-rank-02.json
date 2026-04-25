@@ -4,5 +4,8 @@
   "solution": [
     "Rxf7"
   ],
-  "hint": "Remove the defender of the back rank first."
+  "title": "Remove the Defender",
+  "setup": "Black's rook on f8 is the only thing keeping the back rank guarded. Tear away the supports and the king falls.",
+  "hint": "The Black king lives because the f8 rook covers the 8th rank. **Remove that defender.**",
+  "explanation": "## The Idea\n\nBefore back-rank mate works, Black's king must lose its last guardian. This is the classic **remove-the-defender** maneuver:\n\n- {{Rxf7}} captures Black's pawn on f7 *and* attacks Black's rook on f8.\n- After Black's only sensible reply (e.g. recapturing or moving the rook), White's path to the back rank is wide open.\n\n### Why it works\n\n1. The rook on f8 was defending the entire 8th rank against a back-rank invasion.\n2. By trading or driving the rook off the f-file, White breaks the defense.\n3. The pawns on g7-h7 still trap the king — once the rook is gone, mate threats appear with **Ra8+** ideas.\n\n### Procedure\n\n1. Identify the **single defender** of the king's back rank.\n2. Find a way to capture, deflect, or overload that defender.\n3. Execute the back-rank mate that follows.\n\n> Most back-rank combinations aren't a single move — they're a *peeling away* of the last guard."
 }

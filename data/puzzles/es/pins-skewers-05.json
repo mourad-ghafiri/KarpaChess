@@ -4,5 +4,8 @@
   "solution": [
     "Rxe6+"
   ],
-  "hint": "Clavada en la columna e."
+  "title": "Clavada de largo alcance",
+  "setup": "Una torre blanca en **e1** se alinea con la dama negra en **e6** y el rey negro en **e8** — tres piezas, una columna.",
+  "hint": "Si ves tu torre, una pieza enemiga y el rey enemigo todos en la misma columna, busca una clavada.",
+  "explanation": "## La idea\n\nEsta es una **clavada absoluta** estirada por toda la columna e. La dama negra en e6 no puede moverse legalmente — hacerlo pondría a su propio rey en jaque por la torre blanca en e1.\n\nLas blancas juegan {{Rxe6+}}, capturando la dama.\n\n- La torre en e6 está ahora lejos del rey negro, así que {{Kxe6}} es imposible (el rey está en e8, a dos casillas).\n- Las negras deben mover el rey: {{Kd7}}, {{Kf7}}, {{Kd8}}, {{Kf8}} o {{Ke7}} (pero {{Ke7}} también sería jaque de la torre — una vez fuera la dama, la torre en e6 ataca e7 directamente, así que {{Ke7}} es ilegal).\n- Las blancas terminan con una clara ventaja de dama.\n\n## Patrón a memorizar\n\n> La clavada ideal: atacante de largo alcance, pieza enemiga valiosa, rey enemigo — todos en una línea, sin defensor.\n\nCuando detectes esta geometría, la captura casi siempre es la jugada correcta."
 }

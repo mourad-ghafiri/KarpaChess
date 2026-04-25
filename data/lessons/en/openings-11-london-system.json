@@ -7,32 +7,32 @@
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "title": "Why Play London?",
-      "text": "The London System is a \"universal\" opening — White plays the same setup regardless of Black's response. Great for beginners: less theory, more reliable patterns."
+      "title": "Why Play the London?",
+      "text": "The **London System** is the chess equivalent of a bulletproof recipe — White plays *almost the same setup* against everything Black does. Less to memorize, more to play.\n\nIn recent years it's become hugely popular at the top level: Magnus Carlsen has used it in world championship matches, and grandmasters from Kramnik to Caruana have employed it as a surprise weapon.\n\n## Why it's beginner-friendly\n\n- **Almost no theory.** You play the same eight moves regardless of Black's setup.\n- **Solid pawn structure.** The d4-c3-e3 setup is hard to crack.\n- **Active dark-squared bishop.** Bf4 is one of the *best* squares for that piece — outside the pawn chain, eyeing the queenside.\n- **Reliable plans.** The middlegame ideas repeat every time.\n\n## What each side wants\n\n- **White's plan:** {{d4}}, {{Bf4}}, {{Nf3}}, {{e3}}, {{c3}}, {{Nbd2}}, {{Bd3}}, **0-0**. Then expand with **h2-h3**, **Re1**, and aim for **e3-e4** or a queenside **a2-a4** push.\n- **Black's plan:** play **...Nf6**, **...e6** or **...g6**, **...Be7** or **...Bd6**, **...c5** or **...c6**, and challenge the center. Modern Black setups attack the e3 pawn and the c3 weakness.\n- **Pawn structure:** *Slav-Stonewall hybrid* — White's pawns at d4-c3-e3 form a triangle that limits Black's pieces.\n\n> The London is chess on autopilot. Once you've played it ten times, you can play it in your sleep."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "prompt": "1.d4",
+      "prompt": "Begin the London with **{{d4}}** — the foundation of the whole system.",
       "targetSan": [
         "d4"
       ],
-      "hint": "Queen's pawn two squares."
+      "hint": "Every London game starts with d4. The c1 bishop now has a clear path to f4."
     },
     {
       "type": "play",
       "fen": "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2",
-      "prompt": "Develop the dark-squared bishop: 2.Bf4",
+      "prompt": "Develop the dark-squared bishop with **{{Bf4}}** *before* playing e3 — that's the key London move-order trick.",
       "targetSan": [
         "Bf4"
       ],
-      "hint": "Bishop goes BEFORE e3, so it's not blocked by its own pawns."
+      "hint": "Always play Bf4 BEFORE e3, otherwise your own pawn locks in the bishop. This move-order trick is the heart of the system."
     },
     {
       "type": "teach",
       "fen": "rnbqkb1r/pppppppp/5n2/8/3P1B2/8/PPP1PPPP/RNBQKBNR b KQkq - 2 2",
       "title": "The Full Setup",
-      "text": "The full London recipe: d4, Bf4, Nf3, e3, c3, Nbd2, Bd3, 0-0. Solid, symmetric-ish, hard to break down. Magnus Carlsen has used it in world championship matches."
+      "text": "After {{d4}} and {{Bf4}}, the rest of the London System falls into place almost automatically.\n\n## The full London recipe\n\n1. **{{d4}}** — center pawn.\n2. **{{Bf4}}** — bishop out before the e-pawn moves.\n3. **{{Nf3}}** — second knight to its natural square.\n4. **{{e3}}** — supports d4 and frees the f1 bishop.\n5. **{{c3}}** — solidifies the center, prevents ...Nb4.\n6. **{{Nbd2}}** — knight to a flexible square (not c3, where it would block the c-pawn).\n7. **{{Bd3}}** — light bishop to its natural diagonal, eyeing h7.\n8. **{{O-O}}** — castle short.\n\nFrom there, White typically expands with **h2-h3** (preventing ...Bg4 pins), **Re1**, and an eventual **e3-e4** break or a kingside attack via **Ne5** and **Qf3**.\n\n## Common Black setups against the London\n\n- **Symmetric setup**: ...d5, ...Nf6, ...Bf5 or ...Bg4, ...e6, ...Bd6, ...0-0 — solid mirror.\n- **King's Indian setup**: ...Nf6, ...g6, ...Bg7 — fianchetto. Black plays ...c5 to challenge the center.\n- **Modern challenge**: ...c5 immediately, ...Qb6 hitting the b2 pawn — a sharp test of the London move-order.\n\n## A typical attacking pattern\n\nA classic London attack runs **Ne5** + **Qf3** + **Bxh7+** — the *Greek Gift* sacrifice. The London structure is calm, but the kingside attack can be ferocious.\n\n> Pick a system. Master it. The London teaches you how the same five squares can produce a thousand different middlegames."
     }
   ]
 }

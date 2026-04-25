@@ -1,8 +1,11 @@
 {
   "id": "forks-08",
-  "fen": "3k4/8/8/8/4Q3/8/8/4K3 w - - 0 1",
+  "fen": "r3k3/8/8/1N6/8/8/8/4K3 w - - 0 1",
   "solution": [
-    "Qe8+"
+    "Nc7+"
   ],
-  "hint": "Skak — raja harus meninggalkan kolom-d."
+  "title": "Garpu Keluarga",
+  "setup": "Raja Hitam duduk di e8 dengan benteng di rumah a8 — geometri garpu kuda klasik.",
+  "hint": "Ada satu kotak kuda yang menyerang **keduanya** raja dan benteng pada saat yang sama.",
+  "explanation": "## Idenya\n\nKuda adalah satu-satunya bidak yang bisa menyerang raja dan benteng pojok sekaligus di baris yang sama. Dari b5, kotak ajaibnya:\n\n- {{Nc7+}} — skak raja di e8 *dan* serang benteng di a8.\n\n### Mengapa Hitam kehilangan material\n\n1. Skak memaksa langkah raja — Hitam tidak bisa mengabaikan.\n2. Raja tidak bisa menangkap kuda (e8 ke c7 dua kotak — raja jalan satu).\n3. Skak kuda tidak pernah bisa diblokir.\n4. Setelah raja lari, {{Nxa8}} menyabet benteng cuma-cuma.\n\nIni adalah **garpu keluarga** — setiap pemula harus belajar pola kotak C7. Carilah kapan pun raja musuh di e8 atau e1 dengan benteng di pojok.\n\n> Kuda menyukai kotak c7 / c2 / f7 / f2 — disebut *pos kehancuran* bukan tanpa alasan."
 }

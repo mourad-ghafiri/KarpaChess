@@ -1,8 +1,11 @@
 {
   "id": "mate-in-1-24",
-  "fen": "7k/6pp/6K1/7R/8/8/8/8 w - - 0 1",
+  "fen": "7k/6pp/6K1/7R/8/8/B7/8 w - - 0 1",
   "solution": [
-    "Rxh7+"
+    "Rxh7#"
   ],
-  "hint": "La torre captura al defensor."
+  "title": "Alfil en la diagonal larga",
+  "setup": "Tu rey en **g6** sella el rincón, tu alfil en **a2** barre la diagonal **a2-g8**, y la torre está a una casilla del remate.",
+  "hint": "Captura el peón de {{h7}} — el alfil en **a2** impide {{Kg8}}.",
+  "explanation": "## La idea\n\nUn **mate de rincón con torre + alfil**. La diagonal larga del alfil le niega al rey la única casilla de escape — {{g8}} — que la torre y el rey aún no controlan.\n\nJuega {{Rxh7#}}.\n\n¿Por qué está atrapado el rey?\n\n- La torre en h7 ataca h8 directamente (jaque por la columna)\n- {{Kxh7}} — ilegal, tu rey en **g6** defiende h7\n- {{g8}} — controlada por el alfil en **a2** (diagonal a2-g8)\n- {{g7}} — el peón negro sigue en g7, y de todos modos tu rey en **g6** lo atacaría\n- Nada puede interponerse entre h7 y h8 (casillas adyacentes)\n\n> **Conclusión:** Un alfil en la diagonal larga apuntando al enroque enemigo es uno de los atacantes más temibles del ajedrez. Incluso un alfil tranquilo en a2 o b1 puede ser el compañero silencioso de un mate de rincón."
 }

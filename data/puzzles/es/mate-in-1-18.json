@@ -4,5 +4,8 @@
   "solution": [
     "Re8#"
   ],
-  "hint": "Invasión de torre — nota la eventual eliminación del defensor."
+  "title": "Dos torres, una columna abierta",
+  "setup": "Dos torres en la **primera fila**, dos peones guardando el rincón — uno de esos peones es una ilusión de seguridad.",
+  "hint": "Toma la **columna e** hacia la fila final — los peones del rincón encierran al rey en lugar de ayudarle.",
+  "explanation": "## La idea\n\nUn **mate puro de fila final** con un toque de redundancia: la segunda torre en **a1** no es estrictamente necesaria, pero elimina cualquier duda de que la fila final permanezca sellada si las negras intentan algo astuto.\n\nJuega {{Re8#}}.\n\n¿Por qué está atrapado el rey?\n\n- {{g8}}, {{f8}} y el resto de la octava fila — todas controladas por la torre en e8\n- {{g7}} y {{h7}} — ambas bloqueadas por los propios peones negros\n- El rey no puede capturar: e8 está demasiado lejos de h8\n- Las negras no tienen piezas para interponerse entre e8 y h8\n\n> **Conclusión:** Cuando tienes dos torres y la fila final del rival está despejada, elige *cualquier* columna que llegue a la fila — la torre en la columna más segura suele ganar. Comprueba siempre las casillas de escape antes de comprometerte."
 }

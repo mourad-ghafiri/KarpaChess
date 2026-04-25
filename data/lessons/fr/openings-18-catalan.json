@@ -1,26 +1,26 @@
 {
   "id": "catalan-advanced",
   "title": "La catalane",
-  "summary": "Étranglement positionnel dès le premier coup",
+  "summary": "Un étranglement positionnel dès le premier coup",
   "difficulty": "advanced",
   "steps": [
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "L'arme de la grande diagonale",
-      "text": "La catalane (1.d4 Nf6 2.c4 e6 3.g3) combine la structure du gambit de la dame avec un fou fianchetto. Les Blancs obtiennent un avantage léger mais persistant — des échecs techniques, d'usure. La favorite de Kramnik."
+      "text": "L'**ouverture catalane** est le rêve du *technicien* — un système lent, positionnel, broyeur d'âmes, qui combine la structure d'aile dame du gambit dame avec la pression diagonale d'un fianchetto. Nommée d'après le tournoi de Barcelone de 1929, elle est devenue célèbre comme arme de grand maître, employée par **Vladimir Kramnik**, **Levon Aronian**, **Anish Giri** et **Magnus Carlsen** pour torturer leurs adversaires sur 60 coups et plus.\n\n## Comment on y arrive\n\nLa séquence définissante est {{d4}} **{{Nf6}}** {{c4}} **{{e6}}** {{g3}}. Le petit **3.g3** annonce la catalane — les Blancs vont placer le fou en g2 et dominer la grande diagonale h1-a8.\n\n## Ce que veut chaque camp\n\n- **Plan blanc :** terminer le fianchetto par {{Bg2}}, développer par **{{Nf3}}**, **{{O-O}}**, **{{Nbd2}}** ou **{{Nc3}}**, **{{Qc2}}**, **{{Rd1}}** ou **{{e4}}**. Le fou g2 met sous pression d5/c6/b7 pour toujours.\n- **Plan noir :** décider s'il faut prendre le pion c (catalane ouverte par **...dxc4**), rester solide par **...Be7, ...0-0, ...c6** (catalane fermée), ou jouer tranchant par **...c5**. Libérer le fou c8 reste la priorité numéro un.\n- **Structure de pions :** *structure catalane* — pions blancs en d4-c4 (ou, après échange, juste d4) sans pion central en e2-e4, et un fou en g2. Les pions noirs en d5-e6 forment un mur de type Slave.\n\n## Pourquoi elle est si difficile à affronter\n\nLa catalane recèle très peu de pièges tactiques. Les Blancs jouent simplement *bon coup après bon coup* — et lentement, le fou g2 commence à dominer, les pions à l'aile dame étouffent, et les Noirs manquent d'air.\n\n> La catalane, c'est l'équivalent échiquéen d'un python : pas une seule morsure, juste un étranglement lent et inévitable."
     },
     {
       "type": "teach",
       "fen": "rnbqkb1r/pppp1ppp/4pn2/8/2PP4/6P1/PP2PP1P/RNBQKBNR b KQkq - 0 3",
       "title": "Pourquoi le fianchetto ?",
-      "text": "Le fou en g2 met une pression à long terme sur la diagonale a8-h1. Si les Noirs jouent ...dxc4 (catalane ouverte), les Blancs abandonnent souvent le pion pour une pression continue. Pure technique."
+      "text": "Le dispositif g3 + Bg2 a l'air calme, mais le fou en g2 est l'une des pièces les plus puissantes des échecs. Voici pourquoi.\n\n## La portée du fou g2\n\n- La **diagonale a8-h1** traverse les cases les plus importantes de l'échiquier : b7, c6, d5, e4, f3, g2, h1. Combinée avec **c4**, le fou crée une pression durable sur les cases claires de l'aile dame.\n- Même quand **...dxc4** survient, le fou *prolonge sa portée* sur la diagonale — voilà pourquoi les Blancs sont contents de *céder* le pion c4 temporairement.\n- Le fou est aussi *défensif* — il couvre le roi blanc en g1 et tout l'axe h1-a8 derrière le roi.\n\n## Le thème du gambit catalan\n\nDans la **catalane ouverte** (après **3...d5 4.Nf3 dxc4**), les Blancs ne tentent souvent *pas* de récupérer le pion c4 immédiatement. Ils jouent **5.Bg2** et développent, pariant que la pression à long terme l'emporte sur un pion.\n\nUne ligne célèbre : **5.Bg2 a6 6.0-0 Nc6 7.e3 Bd7 8.Qe2** — les pièces blanches glissent sur leurs cases idéales, et le pion c manquant devient sans importance.\n\n## La catalane fermée\n\nSi les Noirs refusent par **...Be7, ...0-0, ...c6, ...Nbd7**, la structure catalane reste intacte. Les Blancs jouent alors **Bf4** ou **Bg5**, **Rd1**, **Nc3-e2-f4**, et sondent lentement les faiblesses.\n\n> Le fou catalan est un assassin à longue portée. Donnez-lui du temps et il trouve toujours une cible."
     },
     {
       "type": "teach",
       "fen": "rnbqkb1r/pppp1ppp/4pn2/8/2PP4/6P1/PP2PP1P/RNBQKBNR b KQkq - 0 3",
-      "title": "Position de rêve catalane",
-      "text": "L'idéal des Blancs : grande diagonale ouverte pour Bg2, cavaliers en d2 et f3, tours reliées, pions centraux forts. Les Noirs doivent jouer précisément ou se faire étrangler. Magnus Carlsen utilise la catalane pour broyer ses adversaires."
+      "title": "La position de rêve catalane",
+      "text": "Tout joueur de catalane a la même position de rêve en tête. La voici.\n\n## Le dispositif de rêve catalan\n\n- **Fou en g2** — fianchetté et intouchable, dominant la grande diagonale.\n- **Cavaliers en d2 et f3** — flexibles, soutenant les ruptures centrales.\n- **Pions en c4 et d4** — restreignant l'aile dame noire.\n- **Tours connectées en c1 et d1** — pression sur les colonnes c et d.\n- **Dame en c2 ou e2** — soutenant les pions centraux et le fou.\n- **Roi en g1** — roqué et en sécurité.\n\nDe là, les Blancs sondent : peut-être une poussée **c4-c5** pour gagner de l'espace, peut-être une rupture **e2-e4** pour ouvrir la position, peut-être une manœuvre lente du cavalier vers **e5** pour dominer le centre.\n\n## Les défis défensifs noirs\n\n- Le **fou c8** est le mauvais fou de la catalane. Les Noirs doivent lui trouver un avenir — **...b6/Bb7** ou **...Bd7-Bc6** sont les idées principales.\n- Les Noirs doivent **échanger les pièces** avec prudence. À la catalane, les échanges favorisent généralement les Blancs car le fou g2 éclipse presque toute pièce noire.\n- L'aile dame noire est **vulnérable**. La case b7 est une faiblesse à long terme à cause de la pression du fou g2.\n\n## Pourquoi les grands maîtres l'adorent\n\nLa catalane produit un seul type de position — un **léger avantage blanc** — encore et encore. Elle récompense la technique de finale et la patience. **Magnus Carlsen** s'en est servi pour réduire ses adversaires en poussière dans d'innombrables parties, convertissant souvent un avantage minuscule sur 80 coups et plus.\n\n> La catalane : rien ne se passe pendant trente coups, puis soudain les Blancs gagnent. Voilà la maîtrise."
     }
   ]
 }

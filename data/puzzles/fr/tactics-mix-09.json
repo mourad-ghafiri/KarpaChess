@@ -4,5 +4,8 @@
   "solution": [
     "Rxa8+"
   ],
-  "hint": "Échangez la tour adverse avec échec."
+  "title": "Échangez vers une finale gagnante",
+  "setup": "Deux tours se font face sur la **colonne a** — et le roi noir est aussi sur la dernière rangée.",
+  "hint": "Quand vous pouvez échanger les tours avec échec et émerger dans une finale gagnante, faites-le sans hésiter.",
+  "explanation": "## L'idée\n\nVoici une tactique de **simplification**. La tour blanche échange avec la tour noire, mais avec un bonus crucial : elle le fait **avec échec**, dictant la réponse de Noir.\n\nLes Blancs jouent {{Rxa8+}}.\n\n## Réponse forcée des Noirs\n\nLa tour en a8 attaque le roi en e8 le long de la **huitième rangée**. Noir n'a qu'une option :\n\n- {{Kxa8}} — impossible, le roi ne peut pas se téléporter sur quatre cases.\n- Le roi doit sortir de l'échec : {{Kd7}}, {{Ke7}}, ou {{Kf7}}. Chacun laisse la tour en a8 vivante.\n\nAttendez — en réalité, la tour étant désormais en a8 sans défense, le roi noir ne pourra jamais l'atteindre (à 4 cases). Noir bouge le roi, **et Blanc a une tour entière d'avance !**\n\n## Pourquoi cela gagne\n\nLa position résultante est **roi + tour contre roi seul** — un gain forcé. Tout débutant devrait savoir mater avec R+T contre R. Ce puzzle est donc un gain forcé de la manière la plus propre : une seule capture mène directement à une finale gagnante.\n\n## Schéma à mémoriser\n\n> Un échange qui vous mène à une finale gagnante vaut bien plus qu'une attaque spectaculaire qui s'évanouit.\n\nCherchez les occasions de **simplifier** quand vous êtes devant, même par des moyens tactiques."
 }

@@ -8,17 +8,17 @@
       "type": "teach",
       "fen": "4k3/8/4K3/4Q3/8/8/8/8 w - - 0 1",
       "title": "Skakmat Klasik",
-      "text": "Dengan raja dan menteri melawan raja telanjang, giring raja lawan ke tepi, lalu skakmat. Menteri menguasai dinding — raja Anda mencegah pelarian."
+      "text": "## R + M vs R — skakmat utama\n\nIni adalah **skakmat pertama yang harus dikuasai setiap pemain**. Dengan raja dan menteri melawan raja telanjang, sisi dengan menteri selalu menang dari posisi awal mana pun — biasanya dalam **kurang dari sepuluh langkah**.\n\n### Bagaimana babak akhir ini terlihat\n\n- Satu sisi punya **raja + menteri**.\n- Yang lain hanya punya **raja**.\n- Tidak ada pion, tidak ada bidak ringan, tidak ada benteng — teknik murni.\n\n### Konsep kunci: kotak dan dinding\n\nMenteri membangun **dinding** tak terlihat yang tidak bisa dilewati raja sendirian, sementara raja Anda berjalan untuk **mendukung** pukulan terakhir. Satu-satunya hal yang harus Anda hindari adalah **pat** — itu satu-satunya bahaya tersembunyi dari babak akhir ini.\n\n### Prosedur konversi\n\n1. Gunakan menteri untuk **mempersempit kotak raja**, tetap berjarak satu langkah-kuda jika memungkinkan.\n2. **Bawa raja Anda** ke kotak di samping tempat Anda ingin memberikan skakmat.\n3. Giring raja lawan ke **tepi** papan.\n4. Berikan skakmat dengan **menteri di tepi**, dijaga (langsung atau dari jauh) oleh raja Anda.\n\n### Kesalahan umum\n\n- Skak dengan menteri setiap langkah — raja menari berputar selamanya.\n- Menjebak raja sendirian dengan **tidak ada kotak sah** sementara menteri *tidak* memberi skak — itu **pat** dan remis.\n- Lupa membawa raja sendiri; menteri sendirian tidak bisa skakmat.\n\n### Penyelesaian model\n\nDari posisi yang ditampilkan — raja Hitam di **e8**, raja Putih di **e6**, menteri di **e5** — Putih memainkan {{Qb8#}} atau {{Qh8#}}: menteri menyegel baris ke-8 dan raja di e6 menutup d7, e7, dan f7.\n\n> Menteri yang memotong, raja yang menangkap."
     },
     {
       "type": "play",
       "fen": "4k3/8/4K3/4Q3/8/8/8/8 w - - 0 1",
-      "prompt": "Lakukan skakmat dalam satu langkah.",
+      "prompt": "Berikan **skakmat dalam satu**. Raja lawan di tepi dan raja Anda sudah mendukung — selesaikan tugasnya.",
       "targetSan": [
         "Qb8#",
         "Qh8#"
       ],
-      "hint": "Potong baris ke-8 — raja lawan tidak punya tempat melarikan diri."
+      "hint": "Geser menteri di sepanjang **baris ke-8** sehingga setiap kotak pelarian tertutup atau diserang."
     }
   ]
 }

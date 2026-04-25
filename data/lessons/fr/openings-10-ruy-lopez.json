@@ -1,47 +1,47 @@
 {
   "id": "ruy-lopez-basics",
   "title": "La Ruy Lopez",
-  "summary": "La plus ancienne ouverture sérieuse aux échecs",
+  "summary": "La plus ancienne ouverture sérieuse des échecs",
   "difficulty": "intermediate",
   "steps": [
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "L'espagnole",
-      "text": "Nommée d'après un prêtre espagnol du XVIe siècle, la Ruy Lopez (ou \"espagnole\") met la pression sur le pion e5 via le cavalier c6. Elle mène à des milieux de partie riches et nuancés. Tous les champions du monde, de Steinitz à Carlsen, l'ont jouée."
+      "text": "Nommée d'après le prêtre espagnol du XVIe siècle **Ruy López de Segura**, la Ruy Lopez (ou *partie espagnole*) est la plus ancienne ouverture sérieuse encore jouée au plus haut niveau.\n\nTous les champions du monde l'ont pratiquée — Steinitz, Lasker, Capablanca, Alekhine, Botvinnik, Fischer, Karpov, Kasparov, Carlsen.\n\n## La séquence définissante\n\nLa ligne canonique est {{e4}} {{e5}} {{Nf3}} {{Nc6}} {{Bb5}}. Le fou cloue le cavalier c6 sur le pion e5 — mais la *vraie* menace est à long terme, pas immédiate.\n\n## Ce que veut chaque camp\n\n- **Plan blanc :** entretenir la pression sur e5, développer par **{{c3}}**, **{{O-O}}**, **{{Re1}}**, **{{d4}}**, puis s'étendre à l'aile roi ou au centre.\n- **Plan noir :** défier le fou par **...a6** (la défense Morphy), développer par **...Nf6**, **...Be7**, **0-0**, **...d6**, et soit conserver le pion e5 (Ruy Lopez fermée), soit le lâcher pour l'activité des pièces (Ruy Lopez ouverte).\n- **Structure de pions :** chaînes typiques de Ruy Lopez — **e4-d3** pour les Blancs contre **e5-d6** pour les Noirs, avec des manœuvres sur les deux ailes.\n\n## Pourquoi elle reste actuelle\n\nLa Ruy Lopez crée une **profondeur stratégique sans tactique forcée**. C'est une éducation échiquéenne complète dans une seule ouverture — structures de pions, manœuvres de pièces, attaque et défense.\n\n> Comprendre la Ruy Lopez, c'est comprendre les échecs classiques."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "prompt": "Jouez 1.e4",
+      "prompt": "Ouvrez avec le pion roi — jouez **{{e4}}**.",
       "targetSan": [
         "e4"
       ],
-      "hint": "Pion roi de deux cases."
+      "hint": "1.e4 plante le centre et c'est la porte d'entrée de la Ruy Lopez."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
-      "prompt": "Développez le cavalier roi : 2.Nf3",
+      "prompt": "Développez avec **{{Nf3}}** — il attaque e5 et prépare le roque.",
       "targetSan": [
         "Nf3"
       ],
-      "hint": "Attaque e5, développe une pièce."
+      "hint": "Nf3 est le coup de cavalier par lequel commence toute ouverture classique — il développe ET attaque le pion central noir."
     },
     {
       "type": "play",
       "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
-      "prompt": "Le coup caractéristique : 3.Bb5",
+      "prompt": "Le coup caractéristique : jouez **{{Bb5}}** — le fou sort pour mettre la pression sur le cavalier c6.",
       "targetSan": [
         "Bb5"
       ],
-      "hint": "Cloue indirectement le cavalier, menace de saper e5."
+      "hint": "Le clouage Bb5 est *indirect* : il ne gagne pas immédiatement le pion e5 (à cause de ...Bxc6 dxc6 Nxe5 Qd4). Il presse simplement, lentement."
     },
     {
       "type": "teach",
       "fen": "r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
-      "title": "Idées principales",
-      "text": "Le fou ne gagne pas réellement e5 immédiatement (après 3...a6 4.Bxc6 dxc6, le pion e des Noirs est toujours défendu). La VRAIE menace est de perturber la structure noire et de l'étrangler positionnellement. Les échecs classiques à leur meilleur."
+      "title": "Les idées principales",
+      "text": "Après **3.Bb5**, les débutants se disent souvent *je peux juste prendre le cavalier !* — et découvrent que {{Bxc6}} **dxc6** {{Nxe5}} perd sur **...Qd4 !**, qui fourchette le cavalier et le pion e4. La Ruy Lopez n'est **pas** une affaire de pion à gagner.\n\n## Ce que le clouage Bb5 réalise vraiment\n\n- Il menace d'**endommager la structure de pions noire** si et quand {{Bxc6}} est joué.\n- Il **mine indirectement e5** — si les Noirs laissent un jour les Blancs jouer {{Bxc6}} puis {{Nxe5}} sans le coup salvateur **...Qd4**, les Blancs gagnent un pion.\n- Il limite le développement noir — le cavalier c6 doit réfléchir avant de bouger.\n\n## Les principales réponses noires\n\n- **3...a6** (défense Morphy, de loin la plus fréquente) — chasse le fou, l'oblige à s'engager. Les Blancs se replient en **4.Ba4** ou échangent par **4.Bxc6**.\n- **3...Nf6** (défense berlinoise) — Vladimir Kramnik s'en est servi pour vaincre Garry Kasparov en 2000.\n- **3...d6** (défense Steinitz) — solide mais passive.\n- **3...Bc5** (classique) — audacieuse, ignore le clouage, prépare ...Nf6 et 0-0.\n\n## Une ligne principale modèle\n\n{{e4}} {{e5}} {{Nf3}} {{Nc6}} {{Bb5}} **a6** **{{Ba4}}** **Nf6** **{{O-O}}** **Be7** **{{Re1}}** **b5** **{{Bb3}}** **d6** **{{c3}}** **0-0** — la Ruy Lopez fermée classique.\n\n> La Ruy Lopez, c'est l'art lent dans toute sa splendeur. Les pièces se déplacent doucement, les plans se cristallisent, et une infime imprécision peut décider de la partie dix coups plus tard."
     }
   ]
 }

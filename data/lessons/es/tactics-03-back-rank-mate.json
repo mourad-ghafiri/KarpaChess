@@ -1,6 +1,6 @@
 {
   "id": "back-rank-mate",
-  "title": "Mate de la Última Fila",
+  "title": "Mate del Pasillo",
   "summary": "Explota al rey atrapado tras sus propios peones",
   "difficulty": "beginner",
   "steps": [
@@ -8,31 +8,31 @@
       "type": "teach",
       "fen": "6k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
       "title": "El Patrón Clásico",
-      "text": "Un rey enrocado suele estar seguro — salvo que sus casillas de escape estén bloqueadas por sus propios peones. Una torre o dama en la octava fila se vuelve imparable."
+      "text": "Tras enrocar, el rey queda detrás de una muralla de peones. Esa muralla suele ser seguridad — pero si el rey no tiene casillas de escape en la fila final, esa misma muralla se convierte en una **prisión**.\n\n## El detonante visual\n\nBusca estas tres cosas en la fila final del rival:\n\n- El **rey** está en una casilla de esquina (g8 o h8 para las negras).\n- Los **peones** delante de él siguen en sus casillas iniciales (f7, g7, h7).\n- La octava fila por lo demás está **vacía** — sin piezas que estorben a una torre o dama invasora.\n\nCuando esos tres se alinean, una sola jugada en la 8ª fila puede ser jaque mate.\n\n## La geometría\n\nEl mate del pasillo es solo un **jaque de torre o dama** en una fila donde el rey enemigo no tiene casillas de huida. El rey no puede capturar (el atacante está defendido o lejos), no puede bloquear (tu pieza está justo a su lado), y no puede moverse (sus propios peones lo bloquean).\n\n## Cómo encontrarlo\n\n1. Cuenta las casillas de escape del rey enemigo en la **fila final** y la **segunda fila**.\n2. Si hay cero o una, busca cómo atacar la fila final con una pieza pesada.\n3. Cuenta defensores — ¿cuántas piezas enemigas guardan la fila final?\n4. O eliminas a cada defensor o tienes más atacantes que defensores.\n\nAquí la torre se desliza a {{Ra8#}} — jaque mate, porque la muralla de peones f7/g7/h7 se ha convertido en el ataúd negro.\n\n> Los peones que protegen al rey son los mismos peones que lo atrapan."
     },
     {
       "type": "play",
       "fen": "6k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
-      "prompt": "Da mate en la última fila.",
+      "prompt": "Da jaque mate en la fila final con **{{Ra8#}}**.",
       "targetSan": [
         "Ra8#"
       ],
-      "hint": "El muro de peones es también un muro de prisión."
+      "hint": "¿A dónde huye el rey si das jaque en la fila final? Cuenta primero sus casillas de escape."
     },
     {
       "type": "teach",
       "fen": "3r2k1/5ppp/8/8/8/8/5PPP/3R2K1 w - - 0 1",
       "title": "Cambiar y Dar Mate",
-      "text": "Cuando ambos bandos tienen debilidad en la última fila, gana el que golpea primero. Cambia al defensor para despejar el camino."
+      "text": "A menudo ambos bandos tienen una debilidad en la fila final. Entonces es cuestión de *quién golpea primero* — y el truco es **eliminar al defensor** antes de dar mate.\n\n## El patrón a reconocer\n\n- Ambos reyes están atrapados en su fila final con la muralla de peones intacta.\n- Cada bando tiene una sola torre (o dama) defendiendo su fila final.\n- Uno de los dos mueve primero.\n\n## Procedimiento\n\n1. Identifica el *defensor* de la fila final enemiga (casi siempre una sola torre o dama).\n2. Busca la manera de **cambiar** ese defensor, **desviarlo** o **capturarlo**.\n3. Tras el intercambio, entra a dar mate.\n\nAquí ambas torres se enfrentan en la columna d abierta. La torre negra es lo *único* que defiende d8. Cámbiala con {{Rxd8#}} — la recaptura es imposible porque el rey no tiene casilla de escape. El cambio *es* mate.\n\n> Cuando dos prisioneros están espalda contra espalda, el que dispara primero queda libre."
     },
     {
       "type": "play",
       "fen": "3r2k1/5ppp/8/8/8/8/5PPP/3R2K1 w - - 0 1",
-      "prompt": "Cambia torres y da mate.",
+      "prompt": "Cambia las torres **y** da mate con **{{Rxd8#}}**. El intercambio es la victoria.",
       "targetSan": [
         "Rxd8#"
       ],
-      "hint": "Tras el cambio, las Negras no tienen defensor."
+      "hint": "La torre negra es el único defensor de la fila final. ¿Qué pasa si la tomas?"
     }
   ]
 }

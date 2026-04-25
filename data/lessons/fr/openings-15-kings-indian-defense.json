@@ -1,26 +1,26 @@
 {
   "id": "kings-indian-advanced",
-  "title": "Défense est-indienne",
+  "title": "La défense est-indienne",
   "summary": "Contre-attaque hypermoderne — le choix du combattant",
   "difficulty": "advanced",
   "steps": [
     {
       "type": "teach",
       "fen": "rnbqk2r/ppppppbp/5np1/8/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 4 5",
-      "title": "Laissez-les construire le centre",
-      "text": "La défense est-indienne (1.d4 Nf6 2.c4 g6) est la défense hypermoderne ultime. Les Noirs laissent les Blancs bâtir un énorme centre de pions, puis le frappent avec ...e5 ou ...c5. Célèbre pour produire de féroces attaques à l'aile roi — l'arme favorite de Kasparov."
+      "title": "Laissez-les bâtir le centre",
+      "text": "La **défense est-indienne** (KID) est l'une des ouvertures les plus intransigeantes jamais inventées. Les Noirs disent : *prends le centre, bâtis ce que tu veux — puis regarde-moi le démolir*.\n\nElle a été l'arme de toujours de **Garry Kasparov**, **Bobby Fischer**, **David Bronstein** et de bien d'autres combattants. Quand on joue l'est-indienne, on ne joue pas pour la nulle — on joue pour gagner, même si c'est risqué.\n\n## Comment on y arrive\n\nLa séquence définissante est {{d4}} **{{Nf6}}** {{c4}} **{{g6}}** {{Nc3}} **{{Bg7}}**. Les Noirs fianchettent le fou roi et laissent les Blancs construire un centre massif.\n\n## Ce que veut chaque camp\n\n- **Plan blanc :** parachever le grand centre par {{e4}}, développer par {{Nf3}}, **{{Be2}}** (ou Be3, h3 dans la Sämisch), petit roque, puis soit verrouiller le centre pour une attaque à l'aile dame, soit rompre par **c5/d5**.\n- **Plan noir :** terminer le développement par **...0-0**, **...d6**, **...Nbd7** ou **...Nc6**, et jouer la poussée centrale **...e5**. Après le verrouillage blanc par **d5**, les Noirs lancent les tempêtes de pions à l'aile roi **...f5-f4-f3** pendant que les Blancs attaquent à l'aile dame avec **c5**.\n- **Structure de pions :** la fameuse *Mar del Plata* — centre verrouillé d5 contre e5, pièces redéployées sur les ailes opposées, courses de pions des deux côtés.\n\n## Le thème signature\n\nDans les milieux de partie classiques de l'est-indienne, la question devient : *quelle attaque arrive en premier ?* Si les Blancs percent à l'aile dame, la partie est terminée. Si l'avalanche noire à l'aile roi rejoint le roi blanc, la partie est terminée. Les positions calmes y sont très rares.\n\n> L'est-indienne : on apporte un échiquier, on repart avec une histoire de guerre."
     },
     {
       "type": "teach",
       "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2N2N2/PP3PPP/R1BQKB1R w KQ - 0 6",
-      "title": "La variante classique principale",
-      "text": "Après la variante classique principale, les Blancs ont un énorme centre. Le plan des Noirs : pousser ...e5, fermer le centre avec un blocus ...d4 ou ...f5, puis lancer les pions côté roi. Les deux camps attaquent simultanément sur des ailes opposées — les échecs à plein régime."
+      "title": "La ligne principale classique",
+      "text": "Après {{d4}} {{Nf6}} {{c4}} {{g6}} {{Nc3}} {{Bg7}} {{e4}} **d6** {{Nf3}} **0-0**, vous avez atteint l'**est-indienne classique** — l'une des positions les plus analysées des échecs.\n\n## Le point de bifurcation\n\nLes Blancs choisissent entre plusieurs grands systèmes au 6e coup :\n\n- **6.Be2** — *Ligne principale classique*. Développement calme. Les Noirs jouent **...e5**, et après **7.0-0 Nc6 8.d5 Ne7**, les Noirs sont prêts pour la fameuse **attaque à l'aile roi**.\n- **6.h3** — *Système Mäkagonov*. Empêche les clouages ...Bg4, prépare Be3.\n- **6.f3** — *Variante Sämisch*. Agressive : les Blancs préparent Be3, Qd2, 0-0-0, et une attaque à l'aile dame avec des poussées tranchantes.\n- **6.Bg5** — *Variante Averbakh*. Cloue le cavalier f6, décourage ...e5.\n- **6.g3** — *Variante du fianchetto*. Les Blancs fianchettent aussi, menant à de longues batailles stratégiques.\n\n## Un schéma classique de Mar del Plata\n\nAprès **6.Be2 e5 7.0-0 Nc6 8.d5 Ne7 9.Ne1 Nd7 10.Be3 f5 11.f3 f4 12.Bf2 g5** — la fameuse formation de tempête de pions. Les Noirs prévoient **...g4-g3** pour fendre le roi blanc. Les Blancs prévoient **c5-c6**, **Rb1**, **b4-b5** pour fendre l'aile dame noire. Que le plus rapide gagne.\n\n## Pourquoi les grands maîtres la redoutent\n\nL'est-indienne crée un **zugzwang mutuel sur la vitesse d'attaque**. Les Blancs sont *objectivement mieux* dans bien des lignes — mais une perte de tempo conduit au mat. C'est pour cela que même Kasparov a fini par cesser de la jouer.\n\n> Les deux rois sont en danger de mort dès le 15e coup. Ce n'est pas un bogue — c'est la fonctionnalité."
     },
     {
       "type": "teach",
       "fen": "rnbqk2r/ppppppbp/5np1/8/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 4 5",
       "title": "Pourquoi c'est difficile",
-      "text": "L'est-indienne exige un calcul précis — un mauvais coup de pion et votre aile roi s'effondre. Mais si vous aimez les déséquilibres dynamiques et les attaques contre le roi, il n'y a rien de mieux."
+      "text": "L'est-indienne est l'une des ouvertures les plus *exigeantes* à bien jouer. Les raisons sont concrètes.\n\n## Ce qui la rend difficile pour les Noirs\n\n- **Un mauvais coup de pion peut faire s'effondrer l'aile roi.** Poussez **...f5** au mauvais moment et la case e6 devient un trou pour toujours.\n- **La paire de fous** compte — perdre le fou de cases foncées en g7 (le cœur de la position) condamne souvent l'attaque.\n- **Profondeur de calcul.** Les courses de Mar del Plata exigent des tactiques à 10 coups simultanément sur les deux ailes.\n- **Pas de seconde chance.** Si l'attaque blanche à l'aile dame arrive un coup plus tôt, la partie est perdue — pas de regroupement lent comme en française.\n\n## Ce qui la rend gratifiante\n\n- **Déséquilibre dès le 5e coup.** Pas de nulles symétriques.\n- **Attaques contre le roi.** Peu d'ouvertures produisent autant de beaux mats que l'est-indienne.\n- **Richesse stratégique.** Vous y apprenez les ruptures de pions, les manœuvres de pièces, l'attaque et la défense — tout dans une seule ouverture.\n\n## Choisir l'est-indienne pour soi\n\nSi vous adorez le **déséquilibre dynamique**, les **attaques mutuelles** et le **risque calculé**, l'est-indienne est la meilleure ouverture du monde. Si vous préférez un jeu lent et technique, choisissez plutôt le Slave ou la Caro-Kann.\n\n> L'est-indienne, c'est une ouverture de ceinture noire. Entraînez-vous dur, combattez plus dur encore."
     }
   ]
 }

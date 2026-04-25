@@ -5,5 +5,8 @@
     "Bxf7+",
     "Kxf7"
   ],
-  "hint": "Sacrifiez pour attirer le roi dehors."
+  "title": "Le coup d'envoi du Foie Frit",
+  "setup": "Position style italien où le **fou en c4** pointe directement la case la plus vulnérable des Noirs — **f7**.",
+  "hint": "Quand la case f7 n'est défendue que par le roi, sacrifiez le fou pour traîner le monarque à découvert.",
+  "explanation": "## L'idée\n\nVoici le célèbre **sacrifice en f7** — un coup thématique qui exploite la case la plus faible des Noirs. Au début de la partie, f7 n'est défendue que par le roi noir, donc une pièce qui y atterrit force le roi à reprendre et à entrer dans le courant d'air.\n\nLes Blancs jouent {{Bxf7+}}, sacrifiant le fou.\n\n- {{Kxf7}} est la seule réponse légale : aucun autre défenseur de f7, aucune pièce ne peut s'interposer sur une attaque à une case, et le roi doit parer l'échec.\n- Après l'échange, Blanc a cédé un fou (3) contre un pion (1) — un déficit temporaire de deux points.\n\n## Pourquoi ça vaut le coup\n\nLe roi est désormais bloqué en f7, loin de toute sécurité. Dans les vraies parties, cela mène à l'**Attaque du Foie Frit** (avec Ng5 et Nxf7) ou à diverses chasses au roi où le monarque déplacé se révèle fatal.\n\n> Quand le roi noir est le *seul* défenseur de f7, cherchez un sacrifice — même un qui perd du matériel sur l'échiquier. Le roi exposé vaut souvent plus qu'une pièce.\n\nC'est le schéma originel pour « extraire le roi », et il apparaît dans les parties de débutants depuis des siècles."
 }

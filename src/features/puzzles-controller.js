@@ -7,6 +7,7 @@ import { $ } from '../core/dom.js';
 import { MODE_IDS } from '../core/constants.js';
 import { normalizeSan } from '../engine/chess.js';
 import { i18n } from '../core/i18n.js';
+import { renderMarkdown } from '../core/markdown.js';
 
 export class PuzzlesController {
   constructor({ gameState, content, puzzleState, sound, particles, practice }) {
@@ -82,6 +83,22 @@ export class PuzzlesController {
     $('#btn-puzzle-next').hidden = true;
     $('#puzzle-feedback').textContent = '';
     $('#puzzle-feedback').className = 'puzzle-feedback';
+
+    const titleEl = $('#puzzle-title');
+    if (puzzle.title) {
+      titleEl.innerHTML = `<h4 class="md-h2">${esc(puzzle.title)}</h4>`;
+      titleEl.hidden = false;
+    } else { titleEl.hidden = true; titleEl.innerHTML = ''; }
+
+    const setupEl = $('#puzzle-setup');
+    if (puzzle.setup) {
+      setupEl.innerHTML = renderMarkdown(puzzle.setup);
+      setupEl.hidden = false;
+    } else { setupEl.hidden = true; setupEl.innerHTML = ''; }
+
+    const explainEl = $('#puzzle-explanation');
+    explainEl.hidden = true;
+    explainEl.innerHTML = '';
   }
 
   #renderCurrent() {
@@ -116,6 +133,11 @@ export class PuzzlesController {
         $('#puzzle-progress').style.width = ((this.puzzleState.puzzleIdx + 1) / theme.puzzles.length * 100) + '%';
         $('#btn-puzzle-next').hidden = false;
         this.particles.spawnFromRect(document.getElementById('board').getBoundingClientRect(), { count: 60 });
+        if (puzzle.explanation) {
+          const explainEl = $('#puzzle-explanation');
+          explainEl.innerHTML = renderMarkdown(puzzle.explanation);
+          explainEl.hidden = false;
+        }
       } else {
         const reply = puzzle.solution[this.puzzleState.solutionIdx];
         this.puzzleState.advanceSolution();
@@ -159,11 +181,14 @@ export class PuzzlesController {
     const theme = this.#currentTheme();
     const puzzle = theme?.puzzles[this.puzzleState.puzzleIdx];
     if (!puzzle) return;
-    const msg = puzzle.hint
-      ? `💡 ${puzzle.hint}`
-      : `💡 Try: ${puzzle.solution[this.puzzleState.solutionIdx] || ''}`;
-    $('#puzzle-feedback').textContent = msg;
-    $('#puzzle-feedback').className = 'puzzle-feedback';
+    const fb = $('#puzzle-feedback');
+    if (puzzle.hint) {
+      fb.innerHTML = `<span class="puzzle-hint-icon">💡</span> <span class="md-content md-inline">${renderMarkdown(puzzle.hint)}</span>`;
+    } else {
+      const next = puzzle.solution[this.puzzleState.solutionIdx] || '';
+      fb.innerHTML = `<span class="puzzle-hint-icon">💡</span> Try: <span class="md-san">${esc(next)}</span>`;
+    }
+    fb.className = 'puzzle-feedback';
   }
 
   /** Fast SAN matcher — avoids computing full SAN just to compare. */

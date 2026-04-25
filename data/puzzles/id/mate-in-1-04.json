@@ -4,5 +4,8 @@
   "solution": [
     "Rd8#"
   ],
-  "hint": "Baris belakang terbuka lebar — serbu."
+  "title": "Jalur Terbuka ke Raja",
+  "setup": "Lajur d kosong sepanjang dari benteng Anda hingga baris ke-8, dan perisai bidak Hitam tidak punya jendela pelarian.",
+  "hint": "Geser benteng ke baris belakang terbuka — tembok bidak {{f7}}, {{g7}}, {{h7}} melakukan sisanya.",
+  "explanation": "## Idenya\n\n**Skakmat baris belakang** klasik. Lajur d adalah jalan tol bersih dan raja Hitam tercekik di balik bidaknya sendiri.\n\nMain {{Rd8#}}.\n\nMengapa raja terjebak?\n\n- {{f8}} dan sisa baris ke-8 — ditutupi benteng di d8\n- {{f7}}, {{g7}}, {{h7}} — semua ditempati bidak Hitam\n- Tidak ada bidak yang bisa di antara di garis d8-g8\n- Raja tidak bisa menangkap: d8 terlalu jauh dari g8\n\n> **Inti:** Setiap kali Anda melihat benteng dan raja musuh di baris belakang yang sama dengan lajur terbuka, hitung kotak pelarian sebelum apa pun. Satu langkah sering mengakhiri partai."
 }

@@ -1,10 +1,13 @@
 {
   "id": "mate-in-2-03",
-  "fen": "8/8/2K5/8/2k5/8/8/R7 w - - 0 1",
+  "fen": "8/8/8/8/8/1K6/8/k5R1 w - - 0 1",
   "solution": [
-    "Ra4+",
-    "Kb3",
-    "Rb4+"
+    "Rg2",
+    "Kb1",
+    "Rg1#"
   ],
-  "hint": "Los jaques guían al rey hacia el borde."
+  "title": "Apretón por zugzwang",
+  "setup": "El rey negro está en el rincón **a1**. Tu rey en **b3** sella {{a2}} y {{b2}} — pero las negras todavía tienen {{b1}} como escape silencioso.",
+  "hint": "Aún no des jaque — haz una *jugada de espera* que controle la segunda fila, forzando al rey a {{b1}}.",
+  "explanation": "## La idea\n\nUn **mate en 2 con primera jugada silenciosa**. El truco es que un jaque inmediato con la torre permite al rey alcanzar **b1** sin continuación, pero una *jugada de espera* pone a las negras en **zugzwang** — las negras se ven forzadas a meterse en el mate.\n\n**1. {{Rg2}}** — la torre se desliza a la segunda fila. Esto *no* es jaque, pero controla toda la segunda fila.\n\n**1...{{Kb1}}** — forzado. La única jugada legal de las negras: {{Ka2}} y {{Kb2}} están atacadas por tu rey en **b3**, y el rey no tiene otras casillas legales en a1 excepto b1.\n\n**2. {{Rg1#}}** — la torre baja a la primera fila, dando mate.\n\n¿Por qué está atrapado el rey tras la jugada 2?\n\n- {{a1}} — cubierta por la torre en g1 (primera fila)\n- {{c1}} — cubierta por la torre en g1 (primera fila)\n- {{a2}} — controlada por tu rey en **b3**\n- {{b2}} — controlada por tu rey en **b3**\n- {{c2}} — controlada por tu rey en **b3**\n- La torre está demasiado lejos para {{Kxg1}}\n\n> **Conclusión:** No todo mate empieza con jaque. El **zugzwang** es una de las herramientas más bellas de los finales de ajedrez — a veces la jugada más fuerte es *no hacer nada agresivo* y obligar al rival a una jugada perdedora."
 }

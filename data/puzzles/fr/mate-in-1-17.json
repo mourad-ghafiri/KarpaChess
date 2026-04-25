@@ -4,5 +4,8 @@
   "solution": [
     "Qh8#"
   ],
-  "hint": "La dame prend la 8e rangée."
+  "title": "Couverture Croisée du Fou",
+  "setup": "Votre fou en **c8** et votre roi en **e6** murent toute la 7e rangée — la dame n'a plus qu'à prendre la dernière rangée.",
+  "hint": "Glissez la dame sur la **8e rangée** — le fou en c8 verrouille déjà {{d8}} et {{f8}}.",
+  "explanation": "## L'Idée\n\nUn beau **mat dame + fou sur la dernière rangée**. Le fou en c8 ne couvre pas seulement la 8e rangée — il sécurise des cases de fuite clés tandis que la dame mate depuis le coin.\n\nJouez {{Qh8#}}.\n\nPourquoi le roi est-il piégé ?\n\n- {{d7}}, {{e7}}, {{f7}} — toutes contrôlées par votre roi en **e6**\n- {{f8}} — couverte par la dame en h8 (8e rangée)\n- {{d8}} — couverte par le fou en **c8**\n- Le roi ne peut capturer la dame : e8 à h8 fait trois cases\n- Rien ne peut s'interposer sur la 8e rangée entre h8 et e8\n\n> **À retenir :** Un fou sur une grande diagonale touchant la dernière rangée est une pièce de mat discrète mais mortelle. Quand la dame s'aligne sur la même rangée, toute fuite disparaît."
 }

@@ -5,5 +5,8 @@
     "Bxf7+",
     "Kxf7"
   ],
-  "hint": "Korbankan untuk menyeret raja keluar."
+  "title": "Persiapan Fried Liver",
+  "setup": "Posisi gaya Italia di mana **gajah di c4** menyorot langsung ke petak paling rentan Hitam — **f7**.",
+  "hint": "Saat petak f7 hanya dijaga raja, korbankan gajah untuk menyeret raja keluar ke ruang terbuka.",
+  "explanation": "## Idenya\n\nIni adalah **pengorbanan f7** yang terkenal — pukulan tematik yang mengeksploitasi petak terlemah Hitam. Di posisi awal, f7 hanya dijaga raja hitam, jadi buah yang mendarat di sana memaksa raja merebut kembali dan keluar ke ruang terbuka.\n\nPutih memainkan {{Bxf7+}}, mengorbankan gajah.\n\n- {{Kxf7}} adalah satu-satunya jawaban legal: tidak ada pembela lain f7, tidak ada buah yang bisa menghalangi serangan satu petak, dan raja harus menjawab skak.\n- Setelah pertukaran, Putih telah memberi gajah (3) untuk pion (1) — defisit sementara dua poin.\n\n## Mengapa Sebanding\n\nRaja sekarang terdampar di f7, jauh dari keamanan. Dalam permainan nyata ini mengarah ke **Serangan Fried Liver** (dengan Ng5 dan Nxf7) atau berbagai perburuan raja di mana raja yang tergeser terbukti fatal.\n\n> Saat raja Hitam adalah *satu-satunya* pembela f7, cari pengorbanan — bahkan yang menghilangkan material di papan. Raja yang terbuka sering bernilai lebih dari satu buah.\n\nIni adalah pola \"keluarkan raja\" yang asli, dan muncul di permainan pemula selama berabad-abad."
 }

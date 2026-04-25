@@ -4,5 +4,8 @@
   "solution": [
     "Rd8#"
   ],
-  "hint": "The back rank is wide open — infiltrate."
+  "title": "Open Lane to the King",
+  "setup": "The d-file is empty all the way from your rook to the 8th rank, and Black's pawn shield has no escape window.",
+  "hint": "Slide the rook to the open back rank — the {{f7}}, {{g7}}, {{h7}} pawn wall does the rest.",
+  "explanation": "## The Idea\n\nA classic **back-rank mate**. The d-file is a clean highway and Black's king is suffocating behind his own pawns.\n\nPlay {{Rd8#}}.\n\nWhy is the king stuck?\n\n- {{f8}} and the rest of the 8th rank — covered by the rook on d8\n- {{f7}}, {{g7}}, {{h7}} — all occupied by Black pawns\n- No piece can interpose on the d8-g8 line\n- The king cannot capture: d8 is too far from g8\n\n> **Takeaway:** Whenever you see your rook and the enemy king on the same back rank with the file open, count escape squares before anything else. One move often ends the game."
 }

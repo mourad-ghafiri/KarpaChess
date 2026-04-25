@@ -4,18 +4,26 @@
   "summary": "Obliga a una pieza a moverse a donde no debe",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "4r1k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
       "title": "El Señuelo",
-      "text": "La desviación consiste en forzar a una pieza enemiga a abandonar una casilla clave o un papel defensivo. A menudo se logra con un jaque o una captura tentadora. La pieza no puede negarse, y su partida abre una línea ganadora." },
-    { "type": "play",
+      "text": "La **desviación** consiste en forzar a una pieza enemiga a abandonar una casilla o función importante. Eliminar al defensor saca la pieza *del tablero*; la desviación solo la *empuja* a otro sitio — a menudo con una captura o un jaque que no puede rechazar.\n\n## El detonante visual\n\nBusca una pieza que cumpla un trabajo defensivo crítico — guardar la fila final, bloquear un peón, defender una pieza o una casilla de mate. Ahora encuentra el modo de *forzarla* a otra parte.\n\n## La geometría\n\nLa desviación vive en las intersecciones:\n\n- Una pieza está en una casilla que defiende **la casilla A**.\n- Tú la atacas en **la casilla B** donde debe moverse o ser capturada.\n- Una vez que se va a B, A queda sin guardia.\n\nEl sacrificio o la amenaza deben ser más urgentes que el deber defensivo — normalmente un jaque, una captura de dama o una horquilla.\n\n## Cómo detectarla\n\n1. Encuentra la pieza enemiga que sostiene todo.\n2. Busca **jugadas forzadas** que la ataquen: jaques, capturas grandes, amenazas de mate.\n3. Tras la respuesta forzada, evalúa: *¿es la casilla abandonada ahora ganadora para mí?*\n\nAquí {{Ra8}} de las blancas presiona a la torre de e8 por la octava fila y amenaza ideas tipo {{Rxe8+}}. Si las negras cambian con {{Rxa8}}, la columna e (y la fila final) se abren.\n\n> La presión es el idioma del ajedrez. Las piezas del rival responden cuando se ven obligadas."
+    },
+    {
+      "type": "play",
       "fen": "4r1k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
-      "prompt": "Invade con la torre. ¿Qué ocurre si las Negras cambian?",
-      "targetSan": ["Ra8"],
-      "hint": "Ra8 presiona a la torre de e8 — un cambio simplifica la partida." },
-    { "type": "teach",
+      "prompt": "Aplica presión con **{{Ra8}}** — la torre negra se ve forzada a abandonar su puesto.",
+      "targetSan": [
+        "Ra8"
+      ],
+      "hint": "Apunta una pieza pesada a la fila final. El defensor tiene que ocuparse de ella."
+    },
+    {
+      "type": "teach",
       "fen": "R3r1k1/5ppp/8/8/8/8/5PPP/6K1 b - - 0 1",
       "title": "Cambio Forzado",
-      "text": "Las Negras probablemente cambiarán (Rxa8 o Rb8). Tras el cambio, la simplificación favorece al lado activo. La lección: la presión fuerza decisiones — y las decisiones bajo presión suelen ser malas." }
+      "text": "Desde esta posición, las negras solo tienen elecciones incómodas. La torre en e8 está sobrecargada — defiende la fila final *y* enfrenta a la torre blanca en a8.\n\n## Los intentos negros\n\n- **{{Rxa8}}** — cambia, pero invita a simplificaciones que favorecen al bando activo.\n- **{{Rb8}}** — esquiva, pero permite a las blancas penetrar más.\n- **Movimientos de rey** — abandona la fila final por completo.\n\n## La lección\n\nLa desviación rara vez trata sobre la ganancia material inmediata. Trata sobre *quién decide qué pasa después*. Cuando el rival debe reaccionar a tus jugadas, controlas el ritmo de la posición.\n\n> La presión fuerza decisiones. Las decisiones bajo presión suelen salir mal."
+    }
   ]
 }

@@ -8,23 +8,23 @@
       "type": "teach",
       "fen": "4k3/8/8/8/4P3/8/8/4K3 w - - 0 1",
       "title": "The Core Endgame",
-      "text": "Every chess player must know K+P vs K cold. The result depends on ONE thing: can the stronger side get his king IN FRONT of the pawn with opposition? If yes, the pawn promotes. If no, it's a draw."
+      "text": "## K + P vs K — every player must know it\n\nMore games are decided by **king and pawn vs king** than by any other technical ending. It is the **gateway endgame** — every rook, queen, or minor-piece ending eventually simplifies into one of its patterns.\n\n### What this endgame looks like\n\n- One side has **king + a single pawn**.\n- The other has only the **king**.\n- A central pawn (b through g file) — rook pawns are a separate special case.\n\n### The key concept: get in front with opposition\n\nThe entire result hinges on one question: **can the stronger side place his king IN FRONT of the pawn while holding the opposition?** If yes — the pawn promotes. If not — it is a draw by stalemate or by the defending king reaching the queening square.\n\n### Procedure to convert\n\n1. **Lead with the king**, never the pawn.\n2. Reach a **key square** (see next page) with the king.\n3. **Take the opposition**, then outflank diagonally.\n4. Push the pawn only when the king has cleared the lane.\n5. Promote and switch to the K+Q mate.\n\n### Common mistakes\n\n- Pushing the pawn first — it is captured or blockaded.\n- Letting the enemy king reach the **queening square** — instant draw.\n- Allowing **stalemate** with the pawn on the 7th rank and your king right behind it on the 6th in front of him.\n\n> King in front, pawn behind."
     },
     {
       "type": "teach",
       "fen": "4k3/8/4K3/4P3/8/8/8/8 w - - 0 1",
       "title": "Key Squares",
-      "text": "For a pawn on the 5th rank or lower, the \"key squares\" are the three squares diagonally ahead of it. If your king reaches any one, you win. Learn the key squares for each pawn position."
+      "text": "## Key squares win this ending\n\nFor a pawn on the **2nd–5th rank**, the **key squares** are the three squares **two ranks ahead** of the pawn. For our pawn on **e4**, the keys are **d6, e6, f6**.\n\nFor a pawn on the **6th rank**, the key squares are simply the three squares **directly in front** of it.\n\n### The rule\n\nIf your king reaches **any key square**, you win — *regardless of opposition*. That is what makes them \"key.\"\n\n### Procedure with this position\n\nWhite king is **already on e6** (a key square!). The win is now mechanical:\n\n1. {{Kd6}} or {{Kf6}} — outflank to grab a second key square with tempo.\n2. After Black retreats, push {{e5}}.\n3. March the king ahead of the pawn until promotion.\n\n### Common mistakes\n\n- Stepping the king to **e7** — it leaves the pawn unprotected and walks into stalemate motifs.\n- Pushing the pawn while the king is on a key square — you give the squares back.\n- Treating rook-pawn (a/h) endings the same way — they are usually drawn even when the technique looks similar.\n\n### Model line\n\n{{Kd6}} Kf7 {{e5}} Ke8 {{Kc7}} and the pawn promotes.\n\n> Reach a key square with the move and the pawn queens itself."
     },
     {
       "type": "play",
       "fen": "4k3/8/4K3/4P3/8/8/8/8 w - - 0 1",
-      "prompt": "Walk toward a key square.",
+      "prompt": "Step to a **second key square** to outflank the defender. The principle: *king first, pawn later*.",
       "targetSan": [
         "Kd6",
         "Kf6"
       ],
-      "hint": "Kd6 or Kf6 both grab the opposition."
+      "hint": "Two key squares are one diagonal step away — pick either flank."
     }
   ]
 }

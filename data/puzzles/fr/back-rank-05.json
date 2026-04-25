@@ -4,5 +4,8 @@
   "solution": [
     "Rb8#"
   ],
-  "hint": "Amenez la tour sur la 8e rangée."
+  "title": "Marche de la Tour Solitaire",
+  "setup": "Le roi noir est enfermé derrière ses pions et la seule pièce blanche active est la tour — c'est tout ce qu'il faut.",
+  "hint": "Faites simplement marcher la tour vers la dernière rangée.",
+  "explanation": "## L'Idée\n\nPas d'échange, pas de sacrifice — la tour se rend simplement à sa cible. {{Rb8#}} est un mat immédiat :\n\n1. La tour arrive sur la 8e rangée avec échec.\n2. Le roi noir en g8 est encerclé par ses propres pions en f7-g7-h7.\n3. Les cases **f8** et **h8** sont toutes deux contrôlées par la tour en b8.\n4. Rien ne peut s'interposer (pas de pièce noire sur la 8e rangée à part le roi) ; rien ne peut capturer (le roi en g8 ne peut pas atteindre b8 d'un seul pas).\n\n### Pourquoi c'est si fréquent\n\nDans beaucoup de parties réelles, les tours du défenseur sont en train de s'échanger, de défendre, ou sont éloignées — laissant la dernière rangée grande ouverte. Une tour ennemie en voyage n'a pas besoin de se battre ou de se sacrifier ; elle entre simplement.\n\n### Schéma\n\n- Dernière rangée ouverte + roi sans luft = une seule tour mate depuis n'importe où sur la 8e rangée.\n\n> Le mat le plus simple aux échecs : une tour, une rangée, un clic."
 }

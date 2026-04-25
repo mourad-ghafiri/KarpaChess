@@ -8,31 +8,31 @@
       "type": "teach",
       "fen": "8/8/2k5/3q4/8/8/2N1K3/8 w - - 0 1",
       "title": "Royal Fork",
-      "text": "A fork attacks two pieces in one move. The knight is especially good at it — it jumps in a way no piece can block. Here, one knight move attacks both king AND queen."
+      "text": "A **fork** is a single move that attacks two enemy pieces at the same time. Your opponent can only save one — you keep the other.\n\n## Why the knight is the king of forks\n\nThe knight jumps over pieces, attacks eight squares from a strong central post, and **no piece can block its check**. Those traits make the knight the deadliest forker in chess.\n\n## The geometry\n\nA knight on a square *X* hits eight squares arranged like the corners of two interlocking rectangles. If two enemy targets sit on any of those eight squares, *X* is a fork square.\n\n- King + queen on a knight pair of squares = **royal fork**\n- King + rook = **family fork**\n- Two unprotected pieces = a winning fork\n\n## How to spot it\n\n1. Find every undefended enemy piece.\n2. List the squares each one *plus* the king sit on.\n3. Look for a square that touches two of them with one knight jump.\n4. Check that the fork square itself is safe (or that the gain is bigger than the loss).\n\nHere the white knight is one hop from {{Nb4+}}, hitting both the king on c6 and the queen on d5.\n\n> If you remember nothing else about tactics, remember this: *every undefended piece is a fork waiting to happen.*"
     },
     {
       "type": "play",
       "fen": "8/8/2k5/3q4/8/8/2N1K3/8 w - - 0 1",
-      "prompt": "Play the knight to fork king and queen.",
+      "prompt": "Play **{{Nb4+}}** — the knight forks king and queen on the same hop.",
       "targetSan": [
         "Nb4+"
       ],
-      "hint": "Nb4 attacks both c6 and d5."
+      "hint": "Look for the one knight square that touches both *c6* and *d5*."
     },
     {
       "type": "teach",
       "fen": "4k3/8/8/4n3/8/8/8/Q3K3 w - - 0 1",
-      "title": "Queen Fork",
-      "text": "Queens can fork too — especially with check. When the opponent MUST respond to check, you get a free move to grab material elsewhere."
+      "title": "Queen Fork with Check",
+      "text": "Knights are not the only forkers. The **queen** is a long-range fork machine — especially when the fork comes with check.\n\n## Why check matters\n\nA check is a *forced* response. While your opponent is busy moving the king (or blocking), the queen has already locked her eyes on the second target. The opponent does not get a tempo to defend it.\n\n- Diagonal + file forks: the queen sits on a square that hits the king down one ray and a piece down another.\n- Mate threats + material: a quiet-looking move that threatens both checkmate and a piece is a double attack in disguise.\n\n## How to find it\n\n1. Spot a check that is also a *capture* or that *aligns* the queen with another target.\n2. Verify the fork square is defended or unreachable for the opponent.\n3. Calculate the cleanup — *can the king step somewhere that defends the second piece?*\n\nIn this position, {{Qxe5+}} captures the knight **and** checks the king on e8 along the e-file. Black moves the king, White is up a knight.\n\n> Forks with check are not optional for the defender. That is what makes them work."
     },
     {
       "type": "play",
       "fen": "4k3/8/8/4n3/8/8/8/Q3K3 w - - 0 1",
-      "prompt": "Capture the knight with check.",
+      "prompt": "Capture the knight with **{{Qxe5+}}** — the check forks the king and pockets the piece.",
       "targetSan": [
         "Qxe5+"
       ],
-      "hint": "The queen zeros in on e5."
+      "hint": "What capture also lines the queen up with the enemy king?"
     }
   ]
 }

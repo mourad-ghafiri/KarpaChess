@@ -4,5 +4,8 @@
   "solution": [
     "Qa8#"
   ],
-  "hint": "Coupez la 8e rangée pendant que votre roi couvre toutes les cases de fuite."
+  "title": "Mat avec Opposition de Rois",
+  "setup": "Vos rois sont en **opposition** sur la colonne d — la cage parfaite à sceller pour la dame.",
+  "hint": "Glissez la dame sur la dernière rangée — votre roi couvre déjà {{c7}}, {{d7}} et {{e7}}.",
+  "explanation": "## L'Idée\n\nC'est le **mat fondamental R+D contre R**. Les deux rois sont en opposition, et la dame contourne pour mater sur la dernière rangée.\n\nJouez {{Qa8#}}.\n\nPourquoi le roi est-il piégé ?\n\n- {{c8}} et {{e8}} — couvertes par la dame en a8 (8e rangée)\n- {{c7}}, {{d7}}, {{e7}} — toutes contrôlées par votre propre roi en **d6**\n- La dame est loin, et rien ne peut s'interposer sur la 8e rangée vide\n\n> **À retenir :** Pour conclure une finale dame et roi, placez votre roi *à une case en diagonale* du roi ennemi (opposition + saut de cavalier) et laissez la dame ratisser la dernière rangée. Vérifiez toujours s'il y a pat avant de jouer."
 }

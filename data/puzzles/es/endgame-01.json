@@ -6,5 +6,8 @@
     "Kd8",
     "e6"
   ],
-  "hint": "Toma la oposición, luego empuja."
+  "title": "Flanquea, luego empuja",
+  "setup": "Rey y peón contra rey, con el rey blanco ya delante de su peón — pero las negras tienen la **oposición directa**.",
+  "hint": "No empujes el peón aún. **Da un paso lateral** con el rey para romper la oposición primero, y luego avanza.",
+  "explanation": "## Principio clave: la oposición\n\nCon el rey negro justo delante del tuyo, empujar el peón demasiado pronto lleva a tablas por ahogado o a perder el peón. La idea correcta es **flanquear**: mover el rey lateralmente para que el rey enemigo tenga que ceder.\n\n## El plan\n\n1. **{{Kd6}}** — Las blancas se mueven al flanco de dama, amenazando invadir por d7 o e7. Las negras se ven obligadas a la única defensa, **{{Kd8}}**, recuperando la oposición.\n2. Con los reyes aún enfrentados, el peón ahora **puede avanzar con seguridad**. {{e6}} llega a una casilla defendida por el rey y empuja al rey negro hacia atrás con el hombro.\n3. Tras ...Ke8 (o ...Kc8), las blancas jugarán **e7** y conducirán el peón a la coronación.\n\n> La idea clave: en R+P contra R, el rey viaja primero y el peón llega después.\n\n## Qué pasa si empujas demasiado pronto\n\nSi en cambio las blancas juegan inmediatamente 1.e6?, las negras responden 1...Kf8! y tras 2.Kf6 Ke8 3.e7 la posición es **tablas por ahogado** — las negras no tienen jugada legal y la partida es tablas. La lección: en finales de peones, **el rey va delante y el peón sigue**."
 }

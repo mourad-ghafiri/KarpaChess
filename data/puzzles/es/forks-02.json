@@ -4,5 +4,8 @@
   "solution": [
     "Qxe5+"
   ],
-  "hint": "Captura con jaque — el caballo está indefenso."
+  "title": "Caballo gratis, jaque gratis",
+  "setup": "El caballo negro en e5 está indefenso en la misma columna que el rey.",
+  "hint": "La dama ve a través de la columna e. Capturar el caballo también da jaque.",
+  "explanation": "## La idea\n\nEsta no es una horquilla en sentido estricto — es una **pieza suelta** capturada con **tempo**. El caballo en e5 no tiene defensor, y la dama blanca en a1 puede alcanzarlo con {{Qxe5+}}.\n\nEl `+` es lo que hace la jugada libre de riesgo: como la dama aterriza en la misma columna que el rey negro, da jaque en el mismo momento de la captura. Las negras tienen que atender el jaque antes que cualquier otra cosa, así que no hay tiempo para castigar a la dama blanca colgada — y además, el rey en e8 está demasiado lejos de e5 para recapturar.\n\n## Por qué las negras no tienen nada\n\n- **¿Capturar la dama?** {{Kxe5}} requeriría que el rey saltara tres casillas — ilegal.\n- **¿Bloquear el jaque?** No queda pieza negra para interponerse.\n- **¿Huir?** El rey debe abandonar la columna e (Kd7, Kf7, Kd8, Kf8), pero el caballo ya no está.\n\n## Patrón a memorizar\n\n> Una pieza suelta en la **misma línea que su rey** a menudo se puede tomar con jaque. El jaque te compra el tempo para conservar la pieza capturada."
 }

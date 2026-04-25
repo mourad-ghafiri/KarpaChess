@@ -1,6 +1,6 @@
 {
   "id": "common-mistakes",
-  "title": "Kesalahan Umum Pemula",
+  "title": "Kesalahan Pemula yang Umum",
   "summary": "Hindari jebakan yang sering dialami pemula",
   "difficulty": "beginner",
   "steps": [
@@ -8,19 +8,19 @@
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "Lima Besar",
-      "text": "Setiap pemula membuat kesalahan berikut: (1) menggerakkan bidak yang sama dua kali di pembukaan, (2) lupa rokade, (3) mengeluarkan menteri terlalu awal, (4) melakukan langkah \"otomatis\" tanpa memeriksa, (5) bermain tanpa rencana."
+      "text": "Setiap pemain kalah dalam jumlah permainan yang sama sebagai pemula. Lewati kesalahan-kesalahan ini dan Anda akan melewati seribu kekalahan.\n\n## Lima blunder klasik\n\n1. **Menggerakkan bidak yang sama dua kali di pembukaan.** Setiap tempo yang terbuang adalah bidak yang dikembangkan lawan secara gratis.\n2. **Lupa rokade.** Raja di tengah mengundang taktik — bahkan babak tengah yang kuat runtuh tanpa raja yang terlindungi.\n3. **Mengeluarkan menteri terlalu awal.** Dia dikejar oleh bidak ringan, dan setiap kemunduran adalah langkah yang tidak Anda kembangkan.\n4. **Memainkan langkah otomatis.** Memakan kembali tanpa berpikir, mempertahankan pion yang tidak diserang, meniru lawan — autopilot itu fatal.\n5. **Bermain tanpa rencana.** Langkah tanpa tujuan adalah langkah terbuang. Setiap langkah harus memperbaiki bidak, mengancam sesuatu, atau mempersiapkan terobosan.\n\nContoh klasik: setelah **{{e4}} {{e5}} {{Qh5}}?!**, Putih berharap serangan cepat. Hitam tinggal main **{{Nc6}}** dan **{{Nf6}}** — dan menteri harus mundur sementara Hitam mengembangkan dengan tempo.\n\n> Pembukaan adalah lomba. Kembangkan, jangan menari."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppp1ppp/8/4p3/3PP3/8/PPP2PPP/RNBQKBNR b KQkq d3 0 2",
       "title": "Jangan Rebut Setiap Pion",
-      "text": "Tidak setiap penangkapan itu baik. Kadang-kadang mengambil pion membuang waktu — lawan Anda mengembangkan sementara Anda menggerakkan bidak yang sama lagi. Tanya: \"Apakah pion ini sepadan dengan tempo?\""
+      "text": "Memungut pion adalah jebakan paling menggoda dalam catur. *Itu material gratis!* — kecuali, sering kali, tidak.\n\nDi posisi di atas, Putih baru saja memainkan Center Game dengan **{{e4}} {{e5}} {{d4}}**. Jika Hitam serakah memungut dengan {{exd4}}, Putih makan kembali, mengembangkan dengan tempo, dan mendapat keunggulan besar dalam aktivitas bidak.\n\n## Tiga pertanyaan sebelum merebut pion\n\n- **Apakah saya harus menggerakkan bidak yang sama lagi?** Jika ya, Anda kehilangan tempo.\n- **Akankah lawan saya mengembangkan bidak dengan skak atau ancaman saat memakan kembali?** Setiap skak biaya satu langkah lagi.\n- **Akankah raja saya atau perlindungan pion raja terbuka?** Raja yang lemah jarang sepadan dengan satu pion.\n\nSebuah pion bernilai satu poin. **Tiga tempo** pengembangan juga bernilai sekitar satu poin. Jadi *setiap* perebutan pion yang biaya tiga tempo adalah pertukaran kalah.\n\n> Ambil pion saat gratis, bukan saat menjadi umpan."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "title": "Perhatikan Ancaman Lawan Anda",
-      "text": "Separuh dari posisi kalah berasal dari mengabaikan lawan. Ketika mereka bergerak, selalu tanya: \"Apa yang diserang langkah ini?\" Jika Anda tidak bisa melihatnya, Anda mungkin melewatkannya."
+      "title": "Perhatikan Ancaman Lawan",
+      "text": "Setengah dari semua posisi yang kalah berasal dari satu sumber: mengabaikan apa yang baru dilakukan lawan.\n\nKetika lawan Anda bergerak, mereka punya **alasan**. Mungkin mereka menyerang bidak. Mungkin mereka membuka kolom. Mungkin mereka mengosongkan kotak untuk kuda. Temukan alasannya — *sebelum* Anda memilih langkah Anda sendiri.\n\n## Pemindaian langkah-lawan\n\n- *Apa yang diserang langkah ini?* (Apakah ada yang baru di garis tembak?)\n- *Apa yang dipertahankan langkah ini?* (Apakah mereka mempersiapkan tindak lanjut?)\n- *Apa yang dibuka langkah ini?* (Diagonal, kolom, atau baris baru?)\n- *Apa yang diancam langkah ini?* (Skak di langkah berikutnya? Garpu?)\n\nJika Anda tidak bisa menjawab, lihat lebih lama. Ancaman biasanya ada di sana.\n\n## Contoh dunia nyata\n\nJika lawan memainkan **{{Bg5}}**, ancaman jelasnya adalah pakuan pada kuda Anda. Ancaman tersembunyi adalah menggandakan pion Anda setelah **{{Bxf6}}**, atau — jika Anda sudah rokade — membuka jalur ke arah raja Anda.\n\n> Langkah Anda dimulai dengan memahami langkah mereka."
     }
   ]
 }

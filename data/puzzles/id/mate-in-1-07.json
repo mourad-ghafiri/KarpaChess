@@ -4,5 +4,8 @@
   "solution": [
     "Qh8#"
   ],
-  "hint": "Menteri dan kuda bekerja sama dengan indah."
+  "title": "Jaring Menteri-Kuda",
+  "setup": "Kuda Anda di **f5** dan raja di **f6** mengunci lajur f — menteri tinggal butuh pintu masuk yang tepat.",
+  "hint": "Bawa menteri ke baris ke-8 — kuda sudah membayangi {{e7}}.",
+  "explanation": "## Idenya\n\n**Kerja sama menteri-dan-kuda** yang menyenangkan. Kuda di f5 diam-diam menutup {{e7}} dan menteri menukik di sepanjang baris h1 ke h8.\n\nMain {{Qh8#}}.\n\nMengapa raja terjebak?\n\n- {{e8}} dan {{g8}} — ditutupi menteri sepanjang baris ke-8\n- {{e7}} — dikuasai kuda di **f5**\n- {{f7}} — diblokir bidak Hitam sendiri\n- {{g7}} — ditutupi menteri di h8 (diagonal)\n- Memakan? Kxh8 mustahil — raja di f8, tidak bersebelahan\n\n> **Inti:** Kuda dan menteri bergabung dalam jaring skakmat karena kuda menutup kotak yang tidak bisa dicapai menteri (diagonal dekat / lompatan kuda). Selalu pindai pola cakupan ganda ini."
 }

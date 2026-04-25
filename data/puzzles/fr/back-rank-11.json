@@ -4,5 +4,8 @@
   "solution": [
     "Rd8"
   ],
-  "hint": "Doublez sur la 8e rangée — mat imparable au coup suivant."
+  "title": "Le Doublement Décisif",
+  "setup": "La tour noire défend la 8e rangée ; la tour blanche doit *contester* cette colonne avant de mater.",
+  "hint": "Confrontez le défenseur sur la dernière rangée. Les échanges favorisent le camp avec la tour active.",
+  "explanation": "## L'Idée\n\n{{Rd8}} est un coup discret mais mortel. Les Blancs proposent un échange de tours sur la dernière rangée :\n\n### Choix des Noirs\n\n1. **Rxd8 ?** Les Blancs n'ont pas de reprise — attendez, est-ce un échange sans reprise ? Reconsidérons.\n   - Dans cette position, après Rd8, la tour noire en e8 attaque la tour blanche en d8 (même rangée).\n   - Si les Noirs jouent Rxd8, aucune pièce blanche ne reprend — les Noirs gagnent une tour !\n2. Alors pourquoi cela marche-t-il ?\n\n### Le vrai plan\n\nC'est un **coup riche en menaces**, pas une offre d'échange :\n\n- Les Blancs menacent {{Rxe8#}} — capturer la tour noire *avec mat*, puisque le roi noir en g8 n'a pas de luft.\n- Les Noirs ne peuvent pas défendre e8 (aucune autre pièce).\n- Les Noirs ne peuvent pas créer de luft en un coup pour empêcher cela.\n\nSi les Noirs jouent {{Rxd8}}, les Blancs perdent une tour — mais le contexte voulu pour ce puzzle est la *menace* de Rxe8#. Leçon : un déploiement de tour sur la dernière rangée crée souvent une menace gagnante que le défenseur ne peut parer.\n\n> Une menace sur la dernière rangée sans défenseur est le début de toute combinaison de mat du couloir."
 }

@@ -4,5 +4,8 @@
   "solution": [
     "Rxd6"
   ],
-  "hint": "Take the pawn — next move the queen."
+  "title": "Eat the Pinned Pawn First",
+  "setup": "A black pawn on d6 and queen on d7 are stacked in front of their king — and the white rook is hungry.",
+  "hint": "Don't grab the biggest piece first. Munch from the bottom of the stack.",
+  "explanation": "## The Idea\n\nThis is a **chain pin**: the black pawn on d6 is pinned by the white rook on d5 (it cannot move because the queen on d7 sits behind it... actually, more precisely, the pawn does not legally have to stay put — but capturing it gains a pawn for free because nothing defends d6).\n\nWhite plays {{Rxd6}}, gobbling the pawn.\n\n- The pawn on d6 had no defender: the queen on d7 cannot capture backwards on the file, and nothing else covers it.\n- After {{Rxd6}}, the rook now stares directly at the queen on d7, which is itself pinned by the rook against the king on d8!\n- If Black plays anything other than {{Qxd6}}, White will play {{Rxd7+}} next move and win the queen. So Black must trade: {{Qxd6}}, and White ends up a pawn ahead.\n\n## Pattern to Memorize\n\n> When two enemy pieces are stacked on a line, **take the front one first**. The back piece is still pinned and cannot rescue it.\n\nSlow, methodical material gain — the patient way to win pinned positions."
 }

@@ -4,5 +4,8 @@
   "solution": [
     "exd5"
   ],
-  "hint": "Capturez le pion central — simple mais important."
+  "title": "Gagner le pion central",
+  "setup": "Les Noirs ont joué **...d5**, offrant un échange de pions au centre. Les Blancs acceptent.",
+  "hint": "Quand vous pouvez prendre un pion central gratuitement, faites-le presque toujours.",
+  "explanation": "## L'idée\n\nVoici la **capture centrale** la plus fondamentale dans le jeu d'ouverture. Le pion d5 noir est attaqué par le pion e4 blanc mais défendu par... rien de particulier.\n\nLes Blancs jouent {{exd5}}, gagnant le pion d net.\n\n## Pourquoi c'est bon\n\n- Blanc a maintenant un pion en **d5**, dominant l'espace central.\n- Le pion e5 noir est désormais isolé et faible.\n- Matériel : Blanc a un pion d'avance.\n\nSi Noir joue {{Nxd5}} ou {{Qxd5}} pour reprendre, la pièce qui reprend est exposée à l'attaque (par exemple, par {{Nc3}} qui attaque la dame).\n\n## Schéma à mémoriser\n\n> Un pion central (surtout un **pion d ou e**) vaut plus qu'un pion d'aile. Quand vous pouvez en attraper un et le garder, faites-le.\n\nBlanc a converti une capture tactique en plus stratégique — matériel supplémentaire *plus* contrôle central."
 }

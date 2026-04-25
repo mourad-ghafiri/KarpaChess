@@ -4,5 +4,8 @@
   "solution": [
     "Rxe7+"
   ],
-  "hint": "Torre clavada — tómala."
+  "title": "Torre toma a la torre clavada",
+  "setup": "Ambas torres se enfrentan en la **columna e**, pero la torre negra en e7 está clavada contra su rey en e8.",
+  "hint": "Un defensor clavado no puede defender — y no puede huir.",
+  "explanation": "## La idea\n\nLa torre negra en e7 está en una **clavada absoluta**. Escuda al rey en e8 de la torre blanca en e1, así que no puede moverse.\n\nLas blancas juegan {{Rxe7+}}, simplemente tomando la torre.\n\n- {{Kxe7}} es la única respuesta legal — las negras no tienen otra pieza, y el rey debe responder al jaque.\n- Tras el cambio, las blancas han ganado torre por torre... ¡pero espera! Mira de nuevo: las blancas todavía tienen un rey. ¿Acaso hemos cambiado material igual? **Sí — pero en una partida real, esto significaría simplificar a un final ganador de rey y torre contra rey, o en una partida más amplia, eliminar al único defensor de las negras.**\n\n## Patrón a memorizar\n\n> Las piezas clavadas no solo están inmóviles — también son **malas defensoras**. Si una pieza clavada es la única defensora de algo, ese algo está efectivamente indefenso.\n\nEn posiciones más ricas esta idea gana material constantemente: explotas un defensor clavado atacando lo que finge proteger."
 }

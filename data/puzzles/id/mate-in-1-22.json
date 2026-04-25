@@ -4,5 +4,8 @@
   "solution": [
     "Ra1#"
   ],
-  "hint": "Skakmat baris belakang dengan dukungan raja."
+  "title": "Himpitan Sudut",
+  "setup": "Raja Hitam berada di sudut **a8**; raja Anda di **c7** menahan {{b7}}, {{b8}} dan {{c8}}.",
+  "hint": "Ayunkan benteng ke **lajur a** — sudut raja menjadi peti matinya.",
+  "explanation": "## Idenya\n\nSkakmat sudut **K+R vs K** klasik. Raja putih berada satu petak diagonal dari sudut — kandang standar — dan benteng memberi skakmat dari lajur yang sama.\n\nMainkan {{Ra1#}}.\n\nMengapa raja terjebak?\n\n- {{a7}} dan {{a8}} — keduanya diserang benteng di a1 (skak lajur a)\n- {{b7}}, {{b8}} — dikuasai raja Anda di **c7**\n- Benteng di a1 terlalu jauh untuk {{Kxa1}}\n- Tidak ada yang bisa menghalangi di lajur a\n\n> **Pelajaran:** Setelah raja Anda mencapai *diagonal oposisi* (di sini, c7 vs a8), benteng dapat memberi skakmat dari petak aman mana pun di lajur atau baris tempat raja terjebak."
 }

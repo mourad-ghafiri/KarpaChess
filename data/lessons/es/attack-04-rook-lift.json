@@ -1,20 +1,20 @@
 {
   "id": "rook-lift",
-  "title": "La Elevación de Torre",
-  "summary": "Lleva una torre al ataque por la tercera fila",
+  "title": "La elevación de torre",
+  "summary": "Llevar una torre al ataque por la tercera fila",
   "difficulty": "intermediate",
   "steps": [
     {
       "type": "teach",
       "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQR1K1 w - - 0 1",
-      "title": "Elevar y Desplazar",
-      "text": "Una elevación de torre es la maniobra Re1-e3-g3 (o h3) — la torre sube a la tercera fila, luego se desplaza para atacar al rey enemigo. Patrón clásico: Re3, Qh5 con fuegos artificiales en el flanco de rey."
+      "title": "Elevar y oscilar",
+      "text": "La **elevación de torre** es una de las maniobras de pieza más agresivas del ajedrez: la torre abandona su primera fila, sube hasta la **tercera fila** y *oscila* a través del tablero para unirse al ataque en el flanco de rey (o de dama).\n\n## Cuándo aparece esta idea\n\n- La posición está **semicerrada** o tiene una estructura de peones fija — la torre no puede usar una columna directamente.\n- Tu **rey** está enrocado y seguro.\n- El rey enemigo está enrocado y ya tienes **otros atacantes** cerca (dama, caballo, alfil).\n- Un peón en la tercera fila (por ejemplo {{d3}}, {{e3}}) deja sitio para que la torre entre.\n\n## La maniobra estándar\n\nLa versión de manual en el flanco de rey es así:\n\n1. {{Re1}}-{{Re3}} — la torre se eleva a la tercera fila.\n2. {{Rg3}} o {{Rh3}} — la torre oscila a una casilla de ataque del flanco de rey.\n3. Con la dama en h5 o el caballo en f5, el ataque suele volverse decisivo.\n\n## Cómo prepararlo\n\n- Asegúrate de que la tercera fila esté **despejada** (sin peones propios bloqueando el camino).\n- Dispón de un **pivote de peón** en el flanco de rey (empuje del peón h, peón g listo) para que la torre elevada encuentre un objetivo.\n- Coordina con la dama — es la compañera que remata la mayoría de los ataques con torre elevada.\n\n## Cómo detectarla\n\n1. ¿Hay forma de alcanzar al rey enemigo *sin necesidad de una columna abierta*?\n2. ¿Está tu torre de la primera fila ociosa, sin columna abierta que reclamar?\n3. ¿Están cerca tus otras piezas atacantes?\n\nSi las tres respuestas son sí, la elevación es la jugada.\n\n> Una torre en la 3ª fila ya no es una defensora. Es un misil."
     },
     {
       "type": "teach",
       "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQR1K1 w - - 0 1",
-      "title": "Cuándo Usarla",
-      "text": "Las elevaciones de torre funcionan cuando: la posición es semicerrada (la torre no puede usar columnas directamente), el rey enemigo está enrocado, y tienes piezas ya cerca. Funciona especialmente bien combinada con avances del peón de torre."
+      "title": "Cuándo usarla",
+      "text": "Las elevaciones de torre son un *arma posicional* con consecuencias **tácticas**. Aparecen en muchas grandes partidas de ataque una vez que ambos bandos han enrocado y el centro está estable.\n\n## Las condiciones ideales\n\n- **Centro cerrado o semicerrado** — las columnas d y e no son utilizables.\n- **Rey enemigo enrocado** — ya sea corto o largo, la torre elevada puede alcanzar cualquiera.\n- **Piezas amigas cercanas** — la torre es una pieza más en un ataque coordinado, no un héroe solitario.\n- **Estructura de peones** con una **autopista en la tercera fila** — típicamente lograda con un peón en {{d3}} o {{e3}}.\n\n## Combinaciones a recordar\n\n- **Elevación + empuje del peón h** — {{Re3}}, después {{h4}}-{{h5}} para abrir el flanco de rey.\n- **Elevación + oscilación de dama** — {{Re3}}, {{Qh5}}, amenazas de mate en h7.\n- **Elevación + maniobra de caballo** — {{Re3}}, {{Nf5}}, doblando atacantes en casillas clave.\n- **Elevación + sacrificio** — una vez que hay suficientes atacantes apostados cerca del rey, un sacrificio de caballo o alfil suele dar mate.\n\n## Una línea modelo\n\nEn muchos medios juegos del Italiano y de la Ruy López, las blancas juegan {{Re1}}-{{Re3}}-{{Rg3}} o {{Re3}}-{{Rh3}}, uniéndose a la dama en h5 en un ataque de manual contra el rey enrocado. La misma idea aparece en el flanco de dama cuando las negras han enrocado largo.\n\n## Errores comunes\n\n- Elevar demasiado pronto — antes de que el centro sea estable, la torre queda expuesta a rupturas con {{e5}} o {{d5}}.\n- Elevar *hacia* una clavada — atento a los alfiles enemigos en la diagonal larga.\n- Elevar **sin continuación** — la torre necesita compañeros. Una elevación en solitario es solo una torre lenta.\n\n> Una torre elevada con amigos es mate. Una torre elevada sola es madera."
     }
   ]
 }

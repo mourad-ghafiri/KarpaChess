@@ -4,5 +4,8 @@
   "solution": [
     "Re8+"
   ],
-  "hint": "Final de torre ganador — corta el rey."
+  "title": "Corta al rey",
+  "setup": "Un final de torre donde el rey negro está metido en la esquina — tu torre en e2 es la pieza más activa y está lista para **dominar la última fila**.",
+  "hint": "Las torres activas ganan finales. Da jaque al rey y **córtalo** del resto del tablero antes de subir tu rey.",
+  "explanation": "## Principio clave: la torre activa\n\nEn los finales de torre, el bando con la **torre más activa** casi siempre gana o sostiene. Una torre activa ataca peones, restringe al rey enemigo o se sienta detrás de un peón pasado. Una torre pasiva atada a sus propios peones es una desventaja casi fatal.\n\n## El plan\n\n1. **{{Re8+}}** — Las blancas se apoderan de la última fila con jaque. La única respuesta legal de las negras es **{{Kf7}}** (h7 está ocupada por el peón, h8 también está cubierta por la torre en la octava fila).\n2. Con la torre **dominando la 8ª fila**, el rey negro queda fuera de la esquina y atado a defender. Ahora el rey blanco sube por el tablero: Kg2, Kf3, Kg4, Kf5 — sumándose al ataque sin oposición.\n3. Las blancas atacan entonces los peones negros débiles en g7 y h7. Con el rey activo y la torre cortando la retirada, los peones del flanco de rey caerán y el peón h finalmente coronará.\n\n> El mantra: **torre a la 7ª u 8ª, rey arriba por el tablero, los peones caen como fichas de dominó**.\n\n## Qué pasa con una jugada pasiva\n\nUna jugada silenciosa como 1.Kf2? es mucho más lenta. Las negras tienen tiempo para jugar 1...Kf7, centralizando su rey y enfrentando tu invasión en igualdad. La ventaja es real pero más difícil de convertir. En cambio, 1.Re8+ **obliga** al rey negro a una casilla pasiva primero — convirtiendo una pequeña ventaja en una ligadura ganadora. En finales de torre, **no vacile; jaque, corte e invada**."
 }

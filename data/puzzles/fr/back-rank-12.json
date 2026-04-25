@@ -4,5 +4,8 @@
   "solution": [
     "Qc8"
   ],
-  "hint": "Menacez Dxf8 — déviez le défenseur."
+  "title": "Dévier le Défenseur",
+  "setup": "Le roi noir a son cercueil de pions, et la tour en f8 est son seul défenseur. La dame blanche cible ce défenseur avec mat derrière.",
+  "hint": "{{Qc8}} menace **mat par capture**. Le défenseur doit bouger — et il n'y a aucune bonne case.",
+  "explanation": "## L'Idée\n\n{{Qc8}} cloue la tour noire avec une menace mortelle : {{Qxf8#}}. C'est le motif de **déviation** dans sa forme la plus tranchante.\n\n### Pourquoi les Noirs sont perdus\n\n1. La dame en c8 menace la tour en f8.\n2. Si les Noirs bougent la tour, **la dernière rangée est grande ouverte** pour {{Qxf8#}} ou tout autre coup mat sur la dernière rangée.\n3. Si les Noirs essaient de défendre la tour, aucune pièce ne le peut — les pièces mineures noires ont disparu.\n\n### Tentatives de défense des Noirs\n\n- **Rxc8 ?** Non — la tour est en f8, pas à portée de c8.\n- **Bouger la tour hors de la 8e rangée ?** Le roi tombe au mat.\n- **Pousser un pion pour le luft ?** Trop lent ; les Blancs jouent {{Qxf8+}} immédiatement.\n\n### Le schéma\n\n- *Attaquer le seul défenseur*. Que ce soit par capture, attaque ou clouage, retirer le défenseur de la dernière rangée est la recette universelle.\n- La dame est la pièce parfaite pour la déviation car elle menace de longues distances et la dernière rangée simultanément.\n\n> Trouvez le défenseur. Menacez le défenseur. Le mat s'écrit tout seul."
 }

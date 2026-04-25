@@ -4,5 +4,8 @@
   "solution": [
     "Rxd8#"
   ],
-  "hint": "Cambia las torres — el rey negro no tiene escape."
+  "title": "El cambio sellador",
+  "setup": "Ambos reyes están refugiados detrás de sus peones. Las dos torres se enfrentan en la columna d. Quien golpee primero, sobrevive.",
+  "hint": "Cambia las torres — el rey negro no tiene **luft** y el cambio sella la última fila.",
+  "explanation": "## La idea\n\nEste es el **mate de pasillo** en su forma más pura. El cambio {{Rxd8#}} termina la partida en el acto:\n\n1. La torre blanca captura la torre negra en d8.\n2. El rey negro en g8 no tiene escape:\n   - **f8, e8, h8** — todas controladas por la torre blanca en d8.\n   - **f7, g7, h7** — bloqueadas por los propios peones negros.\n3. No hay pieza que pueda capturar la torre blanca en d8, ni manera de interponerse — la torre da jaque desde justo al lado de la prisión del rey.\n\n### Por qué la posición está perdida para las negras\n\nEl rey negro está **asfixiado**. Sus propios peones en f7-g7-h7 forman un muro que protege contra ataques frontales pero impide cualquier escape en la octava fila. Un solo tiempo de *luft* (una jugada de peón como {{h6}} o {{g6}}) habría evitado todo este motivo.\n\n### Patrón a memorizar\n\n- Rey en g8/g1 + peones en f7-g7-h7 + sin defensor en la última fila = **el mate de pasillo está en el aire.**\n- Cuando tu torre llegue a la 8ª/1ª fila sin pieza enemiga que la defienda, busca cambios estilo `Rxd8#`.\n\n> El *\"luft\"* — una jugada de peón para dar aire al rey — es el seguro más simple del ajedrez. Un tiempo. Protección de por vida."
 }

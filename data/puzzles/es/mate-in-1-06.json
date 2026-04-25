@@ -4,5 +4,8 @@
   "solution": [
     "Qa8#"
   ],
-  "hint": "Corta la octava fila mientras tu rey cubre todas las casillas de escape."
+  "title": "Mate por oposición de reyes",
+  "setup": "Tus reyes están en **oposición** en la columna d — la jaula perfecta para que la dama selle.",
+  "hint": "Desliza la dama por la última fila — tu rey ya cubre {{c7}}, {{d7}} y {{e7}}.",
+  "explanation": "## La idea\n\nEste es el **mate básico de R+D contra R**. Los dos reyes se enfrentan en oposición y la dama gira alrededor para dar mate en la última fila.\n\nJuega {{Qa8#}}.\n\n¿Por qué el rey está atrapado?\n\n- {{c8}} y {{e8}} — cubiertas por la dama en a8 (8ª fila)\n- {{c7}}, {{d7}}, {{e7}} — todas controladas por tu propio rey en **d6**\n- La dama está lejos, y nada puede interponerse en la octava fila vacía\n\n> **Conclusión:** Al convertir un final de dama y rey, coloca tu rey *a una casilla en diagonal* del rey enemigo (oposición + un salto de caballo) y deja que la dama rastrille la última fila. Comprueba siempre dos veces el ahogado antes de comprometerte."
 }

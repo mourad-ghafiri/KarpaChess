@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#f3ecd9" />
   <title>KarpaChess — Learn. Play. Master.</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <link rel="stylesheet" href="styles.css?v=r7" />
+  <link rel="stylesheet" href="styles.css?v=r8" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Noto+Sans+Arabic:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -231,8 +231,11 @@
           <p class="panel-lede" id="puzzle-theme-desc"></p>
           <div class="progress-bar"><div class="progress-fill" id="puzzle-progress"></div></div>
           <div class="puzzle-counter" id="puzzle-counter">Puzzle 1 of 5</div>
+          <div class="puzzle-title md-content" id="puzzle-title" hidden></div>
           <div class="puzzle-prompt" id="puzzle-prompt" data-i18n="puzzles.prompt">Find the best move.</div>
+          <div class="puzzle-setup md-content" id="puzzle-setup" hidden></div>
           <div class="puzzle-feedback" id="puzzle-feedback"></div>
+          <div class="puzzle-explanation md-content" id="puzzle-explanation" hidden></div>
           <div class="puzzle-actions">
             <button class="btn ghost" id="btn-puzzle-hint" data-i18n="ui.button.showHint">Show Hint</button>
             <button class="btn ghost" id="btn-puzzle-skip" data-i18n="ui.button.skip">Skip</button>

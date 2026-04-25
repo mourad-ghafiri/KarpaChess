@@ -4,5 +4,8 @@
   "solution": [
     "Rxa8#"
   ],
-  "hint": "Trade rooks and keep the mate."
+  "title": "No Pawn Wall, Just Mate",
+  "setup": "White's pawns are all gone, but Black's pawn wall is still intact — and that wall is now a coffin.",
+  "hint": "The pawn wall on f7-g7-h7 helps White, not Black. Trade the rooks.",
+  "explanation": "## The Idea\n\nWith no white pawns left, the white king is exposed — but the **race to the back rank is one-sided**: Black's king has no escape, White's does. {{Rxa8#}} is mate in one:\n\n1. White's rook captures the Black rook on a8.\n2. Check is delivered from the 8th rank.\n3. Black's king on g8 is locked in by f7-g7-h7 (its own pawns).\n4. No piece can recapture or block.\n\n### Curious detail\n\nThe White king has no pawn cover — yet it is not Black to move. **It doesn't matter who is more exposed in theory; it matters whose turn it is in practice.** White moves first and ends the game.\n\n> Tempo is more valuable than pawns when the position is decisive."
 }

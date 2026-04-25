@@ -4,5 +4,8 @@
   "solution": [
     "Re8#"
   ],
-  "hint": "Te8 mate — le roi n'a aucune case de fuite."
+  "title": "La Tour Glisse vers le Mat",
+  "setup": "Juste deux rois et une tour. Parfois les échecs ne sont rien d'autre.",
+  "hint": "{{Re8}} arrive avec échec. Le mur de pions est le cercueil du roi.",
+  "explanation": "## L'Idée\n\nAvec presque rien sur l'échiquier, le motif du mat du couloir termine encore la partie. {{Re8#}} mate en un :\n\n1. La tour quitte la 2e rangée et arrive en e8 avec échec.\n2. Le roi noir en g8 est piégé :\n   - **f8** est attaquée par la tour en e8.\n   - **h8** est attaquée le long de la 8e rangée.\n   - **f7, g7, h7** sont bloquées par les pions noirs.\n3. Aucune pièce noire ne peut intervenir.\n\n### Leçon\n\nLa tour est la **pièce qui mate** dans les finales les plus fondamentales :\n\n- Roi + tour contre roi est gagnant.\n- Roi + tour contre roi avec mur de pions est *immédiat*.\n\nQuand le roi ennemi est derrière une rangée de pions intacts, **cherchez toujours l'invasion sur la 7e rangée**.\n\n> Quand vous n'avez plus qu'une pièce, faites-en l'exécuteur."
 }

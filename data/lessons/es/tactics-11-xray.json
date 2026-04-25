@@ -1,20 +1,20 @@
 {
   "id": "xray-attack",
   "title": "Ataque de Rayos X",
-  "summary": "Ataca A TRAVÉS de una pieza",
+  "summary": "Ataca a través de una pieza",
   "difficulty": "intermediate",
   "steps": [
     {
       "type": "teach",
       "fen": "3rk3/8/8/8/8/8/3R4/3RK3 w - - 0 1",
       "title": "Viendo a Través",
-      "text": "Un ataque de rayos X es cuando una pieza ataca A TRAVÉS de una pieza interpuesta — a menudo una pieza propia del rival. Si la pieza interpuesta se mueve, tu ataque aterriza detrás. A diferencia de la clavada, el rayos X suele ganar material o tempo de cualquier modo."
+      "text": "Un **ataque de rayos X** es cuando una de tus piezas de largo alcance amenaza o defiende *a través* de una pieza intermedia. La pieza delantera bloquea el ataque inmediato, pero si alguna vez se mueve — o es capturada — los rayos X pasan a través.\n\n## La geometría\n\nCuatro elementos en una línea:\n\n1. Tu **torre**, **alfil** o **dama** en un extremo.\n2. **Tu propia pieza** (o a veces la del rival) en medio.\n3. La línea continúa *más allá* del bloqueador.\n4. Un objetivo — normalmente un rey, dama o defensor crítico — está en el otro extremo.\n\nA diferencia de una clavada (que congela una pieza) o un espeto (que persigue), los rayos X simplemente *ven más allá* de lo que esté en medio.\n\n## Dos usos de los rayos X\n\n- **Rayos X ofensivos** — tu dama mira al rey enemigo a través de su propia pieza. Cambia al bloqueador y el ataque aterriza.\n- **Rayos X defensivos** — tu torre defiende a una de tus piezas a través de otro defensor. Tras los cambios, los rayos X restablecen la guardia.\n\n## Cómo detectarlos\n\n1. Traza cada pieza de largo alcance que tengas, incluso más allá de los bloqueadores.\n2. Busca **rey o dama** sentados en el extremo lejano de una de esas líneas.\n3. Planifica un cambio que elimine al bloqueador.\n4. Cuando se asiente el polvo, los rayos X son de pronto un ataque abierto.\n\nEn esta posición, las torres blancas en d1 y d2 se apilan con la torre del rey enemigo en d8 por la columna d. Tras una serie de cambios, la torre *trasera* de d1 atraviesa con rayos X y aterriza sobre el rey.\n\n> Una clavada congela. Un espeto persigue. Un rayos X *espera* — y gana de todos modos."
     },
     {
       "type": "teach",
       "fen": "3rk3/8/8/8/8/8/3R4/3RK3 w - - 0 1",
-      "title": "Ejemplo",
-      "text": "Aquí la torre blanca de d1 ataca por rayos X al rey enemigo a través de las torres de d2 y d8. Tras los cambios en d8, el rey queda clavado o la última fila se derrumba."
+      "title": "Calculando a Través de los Cambios",
+      "text": "Los rayos X a menudo deciden quién sale ganando en una cadena de capturas en la misma casilla.\n\n## El procedimiento\n\n1. Identifica la columna, fila o diagonal donde se apilan las piezas.\n2. Cuenta atacantes y defensores.\n3. Imagina los cambios sucediendo en orden, *primero los más baratos*.\n4. Quien tenga al **último atacante** en la línea se queda con la casilla.\n\n## En esta posición\n\nLas blancas tienen *dos* torres en la columna d. Las negras una. Tras una secuencia como {{Rxd8+}} {{Rxd8}} {{Rxd8+}}, las blancas posan una torre en la octava fila dando jaque al rey — los rayos X son la razón de que funcione.\n\n> La visión de rayos X es solo conteo paciente a lo largo de una sola línea."
     }
   ]
 }

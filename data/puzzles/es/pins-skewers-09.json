@@ -4,5 +4,8 @@
   "solution": [
     "Rxe7+"
   ],
-  "hint": "El caballo está clavado — captúralo."
+  "title": "El caballo clavado",
+  "setup": "Un caballo negro en **e7** está congelado entre la torre blanca en e2 y el rey negro en e8.",
+  "hint": "Un caballo clavado es el caballo más triste — ni siquiera puede saltar.",
+  "explanation": "## La idea\n\n**Clavada absoluta** sobre un caballo. Normalmente los caballos se ríen de las clavadas porque saltan, pero una pieza clavada contra su propio rey no puede moverse legalmente en absoluto — ni siquiera a una casilla sin captura — porque la jugada expondría al rey.\n\nLas blancas juegan {{Rxe7+}}, ganando el caballo limpiamente.\n\n- {{Kxe7}} es la única respuesta legal.\n- El cambio es torre (5) por caballo (3). A primera vista parece una pérdida, pero en este final árido las blancas ganan simplificando a rey y torre contra rey solo.\n- En una posición más rica, este mismo patrón **gana un caballo gratis** cuando hay más material en el tablero.\n\n## Patrón a memorizar\n\n> Un caballo clavado está indefenso: no puede moverse, no puede defender, no puede escapar.\n\nSiempre que veas un caballo enemigo en la misma línea que su rey, busca formas de **añadir un atacante** a esa casilla."
 }

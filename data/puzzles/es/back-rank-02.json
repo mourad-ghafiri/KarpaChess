@@ -4,5 +4,8 @@
   "solution": [
     "Rxf7"
   ],
-  "hint": "Elimina primero al defensor de la última fila."
+  "title": "Eliminar al defensor",
+  "setup": "La torre negra en f8 es lo único que mantiene defendida la última fila. Arranca el sostén y el rey cae.",
+  "hint": "El rey negro vive porque la torre de f8 cubre la octava fila. **Elimina a ese defensor.**",
+  "explanation": "## La idea\n\nAntes de que el mate de pasillo funcione, el rey negro debe perder a su último guardián. Esta es la maniobra clásica de **eliminar al defensor**:\n\n- {{Rxf7}} captura el peón negro en f7 *y* ataca a la torre negra en f8.\n- Tras la única respuesta sensata de las negras (recapturar o mover la torre), el camino a la última fila queda abierto de par en par.\n\n### Por qué funciona\n\n1. La torre en f8 defendía toda la octava fila contra una invasión de pasillo.\n2. Al cambiar o desviar la torre de la columna f, las blancas rompen la defensa.\n3. Los peones en g7-h7 siguen atrapando al rey — una vez que la torre se haya ido, aparecen amenazas de mate con ideas de **Ra8+**.\n\n### Procedimiento\n\n1. Identifica al **único defensor** de la última fila del rey.\n2. Encuentra la manera de capturar, desviar o sobrecargar a ese defensor.\n3. Ejecuta el mate de pasillo que se sigue.\n\n> La mayoría de las combinaciones de pasillo no son una sola jugada — son una *eliminación progresiva* del último guardián."
 }

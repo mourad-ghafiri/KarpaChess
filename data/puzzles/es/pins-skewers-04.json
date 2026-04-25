@@ -4,5 +4,8 @@
   "solution": [
     "Rxd5+"
   ],
-  "hint": "La dama está clavada — tómala."
+  "title": "Clavada a distancia",
+  "setup": "La dama negra ha vagado a **d5** — directamente entre su rey en d8 y la torre blanca en d2.",
+  "hint": "La distancia no es defensa cuando una pieza está clavada. Tómala.",
+  "explanation": "## La idea\n\nLa dama negra parece activa en el centro, pero en realidad está **clavada**. La torre blanca en d2 ve a través de ella hasta el rey negro en d8. Está paralizada.\n\nLas blancas juegan {{Rxd5+}}, capturando la dama con jaque.\n\n- Las negras tienen una sola respuesta legal: ¿{{Kxd5}}? No — el rey está en d8, a tres casillas. El rey no puede alcanzar d5 en una sola jugada.\n- Así que las negras deben mover el rey fuera del jaque: {{Kc7}}, {{Kc8}}, {{Ke7}}, {{Ke8}}, {{Kd7}} — cualquiera de estas.\n- La torre no puede ser capturada. **Las blancas ganan la dama gratis.**\n\n## Patrón a memorizar\n\n> A una clavada absoluta no le importa lo lejos que esté el rey. Mientras el rey enemigo esté en la misma línea, la pieza clavada no puede escapar.\n\nEsto es incluso mejor que una clavada normal — no hay recaptura inmediata, solo una limpia ganancia de dama."
 }

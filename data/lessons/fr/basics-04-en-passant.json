@@ -1,25 +1,35 @@
 {
   "id": "en-passant",
-  "title": "En passant",
+  "title": "La prise en passant",
   "summary": "La prise de pion que la plupart des joueurs n'apprennent jamais",
   "difficulty": "beginner",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "4k3/3p4/8/4P3/8/8/8/4K3 w - - 0 1",
       "title": "Une règle sournoise",
-      "text": "Lorsque des pions avancent de deux cases depuis leur rangée de départ, ils peuvent parfois être capturés par un pion adverse « en passant ». Cela s'appelle la prise en passant — une expression française signifiant « au passage ». Cela ne fonctionne qu'au coup immédiatement suivant." },
-    { "type": "teach",
+      "text": "*En passant* — l'expression française est restée. C'est la règle la plus étrange et la plus oubliée des échecs. Et pourtant, parfaitement logique dès qu'on en saisit la raison.\n\nQuand on a autorisé les pions à bondir de deux cases depuis leur rangée de départ (un changement médiéval pour accélérer les ouvertures), un effet de bord est apparu : un pion pouvait *passer devant* un pion ennemi qui aurait dû pouvoir le capturer. Pour rétablir l'équité, une exception a été ajoutée — ce pion peut tout de même être capturé, mais **uniquement au coup suivant**.\n\n## Les conditions, toutes ensemble\n\n- Un pion ennemi avance de **deux cases** depuis sa rangée de départ\n- Votre pion se trouve **juste à côté** de lui sur la même rangée (la 5e pour les Blancs, la 4e pour les Noirs)\n- Vous capturez **en diagonale**, en atterrissant sur la case que le pion *aurait* occupée s'il n'avait avancé que d'une case\n- Vous devez le faire **immédiatement** — un coup d'attente, et le droit s'envole\n\n> La prise en passant est la règle qui prouve que les échecs sont plus anciens qu'on ne le croit."
+    },
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/ppp1p1pp/8/3pPp2/8/8/PPPP1PPP/RNBQKBNR w KQkq f6 0 3",
-      "title": "L'opportunité",
-      "text": "Les Noirs viennent de jouer ...f5, filant deux cases au-delà du pion blanc en e5. Le pion blanc aurait pu capturer en f6 si le pion noir n'avait avancé que d'une case. La règle de la prise en passant dit : vous pouvez quand même le faire — mais seulement à ce coup-ci." },
-    { "type": "play",
+      "title": "L'occasion",
+      "text": "Voici une vraie occasion de l'utiliser. Les Noirs viennent de jouer **...f7-f5**, filant deux cases au-delà de votre pion en e5.\n\nSi les Noirs n'avaient avancé que d'une case (...f7-f6), votre pion e5 aurait pu capturer normalement avec {{exf6}}. Le bond de deux cases tente d'esquiver cette prise.\n\nLa prise en passant dit : *pas si vite.* Vous pouvez tout de même jouer {{exf6}} — votre pion file en diagonale en f6, et le pion noir de f5 disparaît de l'échiquier. Comme si vous attrapiez le coureur en pleine course.\n\nLa petite notation `f6` après le trait dans la FEN indique que **f6 est la case-cible en passant** pour un coup.\n\n> Le pion qui capture atterrit DERRIÈRE le pion capturé — sur la case unique qu'il avait tenté de sauter."
+    },
+    {
+      "type": "play",
       "fen": "rnbqkbnr/ppp1p1pp/8/3pPp2/8/8/PPPP1PPP/RNBQKBNR w KQkq f6 0 3",
-      "prompt": "Capturez le pion f5 en passant.",
-      "targetSan": ["exf6"],
-      "hint": "Le coup est exf6 — votre pion capture comme si le pion f était en f6." },
-    { "type": "teach",
+      "prompt": "Capturez en passant avec **{{exf6}}** — votre pion atterrit en f6 et le pion f5 disparaît.",
+      "targetSan": [
+        "exf6"
+      ],
+      "hint": "Traitez le pion f5 comme s'il était en f6, et capturez en diagonale. Le pion disparaît même si vous ne vous posez pas sur sa case."
+    },
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/ppp1p1pp/5P2/3p4/8/8/PPPP1PPP/RNBQKBNR b KQkq - 0 3",
-      "title": "Règle d'un seul coup",
-      "text": "Vous DEVEZ utiliser la prise en passant au coup immédiatement suivant, sinon vous perdez ce droit. C'est l'une des règles les plus oubliées — maintenant vous la connaissez." }
+      "title": "Une seule chance",
+      "text": "Et voilà — le pion f5 a disparu et le vôtre se tient en f6 — au cœur du camp noir, à deux cases de la promotion.\n\n## Deux derniers rappels\n\n- **À utiliser ou à perdre.** Le droit à la prise en passant ne dure qu'un seul coup. Si vous ne prenez pas immédiatement, l'option s'évanouit.\n- **Réservée aux pions.** Cavaliers, fous, tours, dames et rois ne peuvent pas capturer en passant.\n\nLa plupart des débutants passent des années sans jamais jouer ce coup. Désormais, vous le repérerez instantanément — et mieux encore, vous l'*anticiperez*. Connaître la prise en passant change la manière dont vous poussez vos pions à côté de pions ennemis.\n\n> La règle que tout le monde oublie devient le coup que vous ne raterez plus jamais."
+    }
   ]
 }

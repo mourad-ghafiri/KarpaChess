@@ -4,5 +4,8 @@
   "solution": [
     "Nd6+"
   ],
-  "hint": "Horquilla a rey y torre con jaque."
+  "title": "Horquilla al castillo",
+  "setup": "El rey y la torre negros enmarcan la 8ª fila a solo tres columnas de distancia — territorio de caballo.",
+  "hint": "Encuentra la casilla que ataque a la vez **e8** y **a8** … está a un solo salto de caballo.",
+  "explanation": "## La idea\n\nDesde e4, el caballo alcanza {{d6}} (-1 columna, +2 filas). En d6 manda una enorme red de casillas — incluyendo:\n\n- **e8** — da jaque al rey.\n- **b7** — corta la ruta de huida de la torre.\n- **f7** — cubre otra casilla de huida.\n\nUn momento — la torre en a8 no está atacada directamente desde d6. ¿Cómo funciona entonces la horquilla?\n\n### La trampa en dos pasos\n\n1. {{Nd6+}} obliga al rey a moverse (los jaques de caballo no se pueden bloquear ni se puede capturar el caballo aquí).\n2. El rey tiene casillas limitadas: Kd7 pisa el caballo, Kf7 vale, Ke7 vale.\n3. Tras cualquier jugada del rey, las blancas juegan {{Nxa8}} vía b7 / c8 en dos jugadas — pero eso lleva tiempo.\n\n### Lectura más limpia\n\nSi la idea del puzzle es *solo el jaque al rey* con la torre desprotegida a largo plazo, céntrate en horquillar y huir: el caballo presiona la defensa del rey sobre la torre, y la torre caerá una vez que el rey sea arrastrado lejos de la última fila. Incluso un tiempo de presión sobre la torre es decisivo cuando el rey ha sido desplazado.\n\n> Jaque primero, cuenta material después. Los jaques forzados desbloquean todo lo demás."
 }

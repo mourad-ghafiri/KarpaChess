@@ -1,8 +1,11 @@
 {
   "id": "mate-in-1-20",
-  "fen": "4k3/4Q3/4K3/8/8/8/8/8 w - - 0 1",
+  "fen": "4k3/8/4K3/8/8/8/8/Q7 w - - 0 1",
   "solution": [
-    "Qb7"
+    "Qa8#"
   ],
-  "hint": "Enfermez le roi par le côté."
+  "title": "Cage Latérale du Roi",
+  "setup": "Vos rois sont en **opposition** sur la colonne e. La dame, loin en **a1**, a une autoroute nette sur la dernière rangée.",
+  "hint": "Faites basculer la dame vers le coin de la dernière rangée — votre roi couvre déjà {{d7}}, {{e7}} et {{f7}}.",
+  "explanation": "## L'Idée\n\nUn **mat R+D contre R sur la dernière rangée** d'école avec les rois en opposition. La dame balaye la 8e rangée depuis loin.\n\nJouez {{Qa8#}}.\n\nPourquoi le roi est-il piégé ?\n\n- {{d8}} et {{f8}} — couvertes par la dame en a8 (8e rangée)\n- {{d7}}, {{e7}}, {{f7}} — toutes contrôlées par votre roi en **e6**\n- La dame est loin du roi, donc {{Kxa8}} est impossible\n- Rien ne peut s'interposer sur la 8e rangée vide\n\n> **À retenir :** La *cage par le côté* est le mat de dame le plus sûr — pas de risque de pat, dame bien défendue par la distance, et rois en opposition nette. Pratiquez jusqu'à l'automatisme."
 }

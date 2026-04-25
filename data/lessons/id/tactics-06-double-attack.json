@@ -1,21 +1,29 @@
 {
   "id": "double-attack",
   "title": "Serangan Ganda",
-  "summary": "Ancam dua hal sekaligus",
+  "summary": "Mengancam dua hal sekaligus",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "4k3/8/8/3q4/8/4N3/8/4K3 w - - 0 1",
       "title": "Dua Ancaman, Satu Langkah",
-      "text": "Serangan ganda adalah langkah apa pun yang menciptakan dua ancaman secara bersamaan. Garpu adalah salah satu jenis — bidak yang sama menyerang dua sasaran. Tetapi satu langkah juga bisa menciptakan dua jenis ancaman yang BERBEDA: satu ancaman skakmat ditambah ancaman material, misalnya." },
-    { "type": "play",
+      "text": "**Serangan ganda** adalah nama payung untuk setiap langkah yang menciptakan dua ancaman sekaligus. Garpu adalah kasus khusus — buah yang sama mengincar dua sasaran — tetapi serangan ganda bisa lebih halus dari itu.\n\n## Variannya\n\n- **Serangan ganda buah-sama** — sebuah garpu. Satu kuda, dua sasaran.\n- **Serangan ganda buah-berbeda** — langkah Anda menyerang satu sasaran, sementara buah Anda *yang lain* sudah menyerang sesuatu dan kini ancamannya menjadi kritis.\n- **Ancaman + tangkapan** — Anda menangkap buah sambil menciptakan ancaman mat yang harus diatasi lawan.\n- **Ancaman mat + ancaman material** — mungkin yang paling umum dalam permainan master. Lawan harus membela mat; material hilang.\n\n## Geometrinya\n\nTidak ada bentuk tunggal. Ide pemersatunya adalah *aritmatika yang memaksa*: lawan punya **satu langkah** untuk menjawab **dua masalah**.\n\n## Cara menemukannya\n\n1. Hitung kelemahan lawan — buah tanpa pertahanan, petak yang longgar, ide mat.\n2. Daftar langkah yang menyentuh satu kelemahan (tangkapan, skak, ancaman).\n3. Untuk masing-masing, tanyakan: *apakah ia juga menciptakan ancaman kedua?*\n4. Langkah yang menang adalah yang membuat lawan memilih rumah mana yang akan diselamatkan sementara yang lain terbakar.\n\nDi sini menteri di d5 tidak terlindungi. {{Nxd5}} dengan mudah memenangkannya — serangan ganda yang bersih: kuda mengambil buah *dan* tidak ada ancaman balik yang berguna untuk Hitam dengan raja di tengah.\n\n> Setiap langkah yang Anda mainkan punya *tujuan*. Langkah terkuat punya **dua**."
+    },
+    {
+      "type": "play",
       "fen": "4k3/8/8/3q4/8/4N3/8/4K3 w - - 0 1",
-      "prompt": "Menteri tidak terlindungi — rebut dia.",
-      "targetSan": ["Nxd5"],
-      "hint": "Kuda melompat ke d5 dengan penangkapan." },
-    { "type": "teach",
+      "prompt": "Sambar menteri yang tidak dijaga dengan **{{Nxd5}}** — serangan ganda buku teks.",
+      "targetSan": [
+        "Nxd5"
+      ],
+      "hint": "Buah yang longgar berjatuhan. Cari petak kuda yang menyentuh menteri."
+    },
+    {
+      "type": "teach",
       "fen": "4k3/8/8/3N4/8/8/8/4K3 b - - 0 1",
-      "title": "Prinsipnya",
-      "text": "Setiap langkah taktis yang baik mengancam sesuatu yang spesifik. Dua ancaman dari satu langkah sering menentukan karena lawan hanya bisa merespons salah satunya. Latih mata Anda untuk menghitung ancaman — jika Anda melihat dua, sesuatu yang baik sedang terjadi." }
+      "title": "Latih Matamu",
+      "text": "Setiap pemain taktis yang kuat menelusuri posisi sambil menghitung ancaman — baik miliknya maupun lawannya.\n\n## Daftar periksa 30 detik\n\n1. **Buah longgar:** buah lawan mana yang tidak dilindungi?\n2. **Buah yang sejajar:** ada dua buah lawan di baris, lajur, atau diagonal yang sama?\n3. **Eksposur raja:** apakah raja di petak yang bisa diskak dengan sedikit pelarian?\n4. **Pembela kelebihan beban:** apakah satu buah menjaga dua hal?\n\nJika ada jawaban *ya*, cari langkah yang membuat **dua** dari masalah ini meletus pada saat yang sama.\n\n## Latihan yang berguna\n\n- Susun posisi dari buku taktik.\n- Sebelum memecahkannya, daftar setiap buah lawan yang tidak terlindungi dan setiap skak.\n- Solusinya hampir selalu di *persimpangan* dua ancaman.\n\n> Ancaman tunggal kalah oleh pertahanan tunggal. Ancaman ganda memenangkan permainan."
+    }
   ]
 }

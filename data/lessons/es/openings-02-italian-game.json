@@ -8,34 +8,34 @@
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "La Italiana",
-      "text": "La Apertura Italiana comienza con la jugada más principista: e4. Vamos a llegar a Bc4, apuntando a f7, la receta clásica."
+      "text": "La Apertura Italiana es una de las **más antiguas** del ajedrez y aún — increíblemente — una de las más populares en todos los niveles, incluida la cima del ranking mundial.\n\n## Las jugadas que la definen\n\nLa secuencia canónica es {{e4}} {{e5}} {{Nf3}} {{Nc6}} {{Bc4}}. Tres jugadas principistas, tres piezas desarrolladas y un alfil apuntando a f7 — la casilla más débil del campo negro.\n\n## Lo que quiere cada bando\n\n- **Plan blanco:** terminar el desarrollo con {{Nc3}} (o {{c3}} preparando d4), enrocar corto y construir lentamente un ataque en el flanco de rey o avanzar d4 para reclamar el centro.\n- **Plan negro:** imitar con **...Nf6** y **...Bc5** (la Giuoco Piano) o **...Be7** (la Húngara, más tranquila), enrocar corto y disputar el centro con **...d6** o **...d5**.\n- **Estructura de peones:** simétrica al principio, a menudo se vuelve un centro cerrado tras **c3 / d3 / d6**.\n\n## Por qué funciona\n\nLa Italiana respeta cada principio de apertura: un peón central, dos piezas menores fuera, el rey listo para enrocar. No hace falta una teoría hiperespecífica — solo buenas jugadas.\n\n> Ajedrez clásico en su forma más pura: piezas fuera, rey a salvo, lucha en el centro."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "prompt": "Abre con 1. e4",
+      "prompt": "Abre con el peón del rey — juega **{{e4}}**.",
       "targetSan": [
         "e4"
       ],
-      "hint": "Empuja el peón rey dos casillas."
+      "hint": "La primera jugada más popular de la historia del ajedrez abre líneas tanto para la dama como para el alfil de f1."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
-      "prompt": "Ahora 2. Nf3, atacando el peón de e5.",
+      "prompt": "Desarrolla con **{{Nf3}}** — un caballo que ataca **e5** y prepara el enroque.",
       "targetSan": [
         "Nf3"
       ],
-      "hint": "Caballo a f3 — la jugada predilecta de todo maestro."
+      "hint": "Dos pájaros de un tiro: esta jugada desarrolla una pieza Y ataca el peón central negro."
     },
     {
       "type": "play",
       "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
-      "prompt": "3. Bc4 — reclama tu objetivo en f7.",
+      "prompt": "Planta el alfil con **{{Bc4}}** — apuntando directamente a la casilla f7.",
       "targetSan": [
         "Bc4"
       ],
-      "hint": "Alfil a c4 entra en la Apertura Italiana propiamente dicha."
+      "hint": "La casilla más vulnerable del campo negro es f7, defendida solo por el rey. Un alfil en c4 la mira de frente."
     }
   ]
 }

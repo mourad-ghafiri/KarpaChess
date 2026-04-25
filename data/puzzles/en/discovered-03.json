@@ -4,5 +4,8 @@
   "solution": [
     "Nc4+"
   ],
-  "hint": "The knight moves and the bishop's diagonal opens."
+  "title": "Knight Clears the Diagonal",
+  "setup": "The bishop on **d7** eyes the enemy king along the long light-squared diagonal, while the knight on e3 is ready to leap into the attack.",
+  "hint": "Pick the knight square that **also** controls the king's only escape — don't just settle for any discovery.",
+  "explanation": "## The Idea\n\nIn a discovered attack the **mover** is the piece that jumps out of the way and the **discoverer** is the long-range piece behind it. Here the bishop on d7 is the discoverer aimed at e8, and the knight on e3 is the mover.\n\n## Why {{Nc4+}} Is the Right Choice\n\nAlmost any knight move keeps the bishop pointing at e8, but the trick of a good discovered check is to make the moving piece **useful**. After {{Nc4+}} the knight lands on a square from which it attacks **d6** — exactly the square the king would love to flee to.\n\n- Bishop hits e8.\n- Knight covers d6.\n- The king's only legal step is **f8**, where it is shut into the corner.\n\n## What Goes Wrong With Other Moves\n\nA careless Ng4+ or Nf5+ also reveals the bishop, but the knight no longer fights for the king's flight squares. Black plays Kd8 (or in some cases captures the bishop) and the attack evaporates. The discipline to learn: when you discover a check, choose the mover's destination so it **closes the net** rather than merely making noise."
 }

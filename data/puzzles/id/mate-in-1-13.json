@@ -4,5 +4,8 @@
   "solution": [
     "Qxg7#"
   ],
-  "hint": "Menteri menangkap — didukung oleh kuda."
+  "title": "Sesak Napas Didukung Kuda",
+  "setup": "Kuda Anda di **f6** menjepit {{e8}} dan {{h7}}, sementara menteri duduk satu petak di bawah pelindung pion.",
+  "hint": "Ambil pion {{g7}} — kuda Anda menjaga menteri dan menutup setiap pelarian.",
+  "explanation": "## Idenya\n\nIni adalah **skakmat ala smothered dengan menteri + kuda**. Menteri mengorbankan diri ke petak yang dijaga di samping raja, dan kuda mendukungnya sambil menutup petak-petak pelarian.\n\nMainkan {{Qxg7#}}.\n\nMengapa raja terjebak?\n\n- Menteri di g7 menyerang g8 langsung (skak)\n- {{f8}} — dikuasai menteri di g7 (diagonal)\n- {{h8}} — dikuasai menteri di g7 (diagonal)\n- {{Kxg7}} ilegal — raja Anda di **h6** menjaga g7\n- Pion {{h7}} tidak bisa pindah untuk menghalangi: bersebelahan langsung\n\n> **Pelajaran:** Pengorbanan menteri di samping raja yang tersesak adalah langkah paling lantang dalam catur. Selalu periksa apakah *raja atau kuda Anda sendiri* menjaga petak pendaratan — itulah yang mengubah pengorbanan menjadi pamungkas."
 }

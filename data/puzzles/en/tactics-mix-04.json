@@ -4,5 +4,8 @@
   "solution": [
     "a8=Q+"
   ],
-  "hint": "The a-pawn is one step from glory."
+  "title": "Promotion with Check",
+  "setup": "A white pawn stands one square from glory on **a7**, with the black king lined up nearby.",
+  "hint": "Promote with check whenever possible — it gives Black no time to react.",
+  "explanation": "## The Idea\n\nA classic **promotion** tactic. The pawn on a7 reaches the eighth rank and transforms into a queen, simultaneously giving check on the 8th rank.\n\nWhite plays {{a8=Q+}}.\n\n## Black's Forced Reply\n\nThe new queen on a8 attacks the king on e8 along the **eighth rank**. Black must move the king (no piece to block, queen far away from kingside defenders):\n\n- {{Kd7}}, {{Ke7}}, {{Kf7}}, {{Kf8}}, {{Kd8}} — any flight square works since the queen is alone.\n\n## Why Promotion with Check Matters\n\n> Promoting with check **denies Black a tempo**. A non-checking promotion can be answered by counter-threats; a checking promotion forces an immediate king move.\n\nIn endgames, a single tempo is often the difference between winning and drawing. Always look for checks when promoting — they are golden."
 }

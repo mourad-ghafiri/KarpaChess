@@ -8,48 +8,47 @@
       "type": "teach",
       "fen": "4k3/8/4K3/4Q3/8/8/8/8 w - - 0 1",
       "title": "The Goal",
-      "text": "You win chess by checkmating the opposing king — attacking him in a way he cannot escape. Here your queen and king are closing in. Let's finish it."
+      "text": "Chess has exactly **one** way to win: deliver **checkmate**. That means attacking the enemy king in a way he cannot escape — no square to run to, no piece to block with, no way to capture the attacker.\n\n## Three terms to lock in\n\n- **Check** — the king is attacked, but has at least one legal way out.\n- **Checkmate** — the king is attacked, and there's no legal move at all. Game over.\n- **Stalemate** — the king is *not* in check, but the side to move has no legal move. Draw.\n\nIn the position you see, your queen and king are working together. The king cuts off the e7, d6, and f6 escape squares; the queen will deliver the final blow. This pattern — king + queen vs lone king — should always be a win.\n\n> The king never actually dies in chess. He simply runs out of moves."
     },
     {
       "type": "play",
       "fen": "4k3/8/4K3/4Q3/8/8/8/8 w - - 0 1",
-      "prompt": "Deliver checkmate in one move.",
+      "prompt": "Slide the queen to the back rank for **{{Qb8#}}** (or **{{Qh8#}}**) — the king has nowhere to run.",
       "targetSan": [
         "Qb8#",
         "Qh8#"
       ],
-      "hint": "Hit the 8th rank — the king has no escape."
+      "hint": "Your king on e6 already controls d7, e7, and f7. Hit the 8th rank with the queen and the king is trapped."
     },
     {
       "type": "teach",
       "fen": "3k4/8/3K4/3Q4/8/8/8/8 w - - 0 1",
-      "title": "Different Angle",
-      "text": "Same idea, different position. The back rank is ripe."
+      "title": "Different Angle, Same Idea",
+      "text": "Same ingredients, different layout. The king-and-queen pattern is incredibly common, so you want it in your bones.\n\nNotice the recipe:\n\n- **Your king** stands one square away from the enemy king, taking three of his escape squares.\n- **Your queen** delivers check — and because the kings are face-to-face, the enemy king has no flight square.\n\nWhen the kings stand on the same file or rank with one square between them, that's called *opposition*. It's a magical formation: it lets the queen step in for the kill without being captured.\n\n> King and queen working together is the gold standard mating duo."
     },
     {
       "type": "play",
       "fen": "3k4/8/3K4/3Q4/8/8/8/8 w - - 0 1",
-      "prompt": "Find checkmate.",
+      "prompt": "Cut off the 8th rank with **{{Qa8#}}** — the king has no escape.",
       "targetSan": [
-        "Qa8#",
-        "Qd7"
+        "Qa8#"
       ],
-      "hint": "Cut off the 8th rank from the side. Qa8#."
+      "hint": "Your king already covers c7, d7, and e7. You need a queen move that attacks d8 from a square the king can't capture."
     },
     {
       "type": "teach",
       "fen": "6k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
       "title": "Back-Rank Mate",
-      "text": "When a king is trapped behind his own pawns on the back rank, a rook or queen on that rank can deliver mate. This is one of the most common patterns in chess."
+      "text": "The most-played mating pattern in club chess: the **back-rank mate**.\n\nA castled king is safe — until those same loyal pawns become his prison. When the f, g, and h pawns haven't moved, the king has no escape route. A rook or queen sliding onto the back rank delivers mate without a single sacrifice.\n\n## What to look for\n\n- The enemy king on the **back rank** with **no escape squares**.\n- An **open file** to that back rank for your rook or queen.\n- No defender on the back rank to capture you or block.\n\nFor example, after {{Ra8+}}, if Black has no piece to interpose and the king can't run, it's mate. That's exactly what's about to happen here.\n\n> Always make a *luft* — push a pawn, free your king. Forget, and back-rank mate finds you sooner or later."
     },
     {
       "type": "play",
       "fen": "6k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
-      "prompt": "Deliver back-rank mate.",
+      "prompt": "Slide the rook to the back rank with **{{Ra8#}}** — the king's own pawns trap him.",
       "targetSan": [
         "Ra8#"
       ],
-      "hint": "The king's pawns are his wall — but also his prison."
+      "hint": "The king on g8 can only flee to f7 or h7 — but his pawns block both. So a rook on the 8th rank ends it."
     }
   ]
 }

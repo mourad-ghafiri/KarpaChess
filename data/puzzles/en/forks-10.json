@@ -4,5 +4,8 @@
   "solution": [
     "Rh8+"
   ],
-  "hint": "Check — what does Black's knight give up?"
+  "title": "Skewer the Knight",
+  "setup": "Black's king and knight share the queenside corner. A long rook check exposes the knight behind it.",
+  "hint": "Send the rook to the 8th rank with check. The knight has no shelter once the king moves.",
+  "explanation": "## The Idea\n\nThis is a **skewer-style fork** along the 8th rank. White's rook can travel from h1 to h8 unobstructed:\n\n- {{Rh8+}} delivers check on the back rank.\n- The Black king must step out of the rook's line.\n\n### What happens to the knight?\n\n1. The king has only **a7** as a flight square — a8 is attacked by the rook, b7 leaves the knight unguarded, c8 is attacked.\n2. After the king flees, the knight on c7 is no longer protected by its king.\n3. White swings the rook to win the knight (or the king is dragged further off the second rank, exposing more weaknesses).\n\nThe one-move solution finds the **forcing check** — an immediate concrete idea that doesn't give Black breathing room. Don't try to win the knight directly with a quiet rook lift; the check forces Black to react and breaks the king's defense of the knight.\n\n> A check on the back rank is the rook's natural language. Speak it whenever you can."
 }

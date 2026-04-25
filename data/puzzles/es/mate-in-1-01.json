@@ -4,5 +4,8 @@
   "solution": [
     "Qxf7#"
   ],
-  "hint": "La dama tiene diagonal despejada. Observa que f7 sólo está defendida por el rey."
+  "title": "Golpe del Pastor",
+  "setup": "La dama blanca en **h5** y el alfil en **c4** apuntan ambos a la casilla más débil del campo negro.",
+  "hint": "Las dos piezas apuntan a {{f7}} — solo el rey la defiende.",
+  "explanation": "## La idea\n\nEsta es la jugada final clásica del **mate del pastor**. La dama y el alfil han construido una batería contra {{f7}}, la única casilla en la posición de apertura negra defendida solo por el rey.\n\nJuega {{Qxf7#}}. La dama captura el peón y da jaque, defendida por el alfil en **c4**.\n\n¿Por qué el rey está atrapado?\n\n- {{e7}} — bloqueada por el propio peón negro\n- {{e8}} y {{d8}} — cubiertas por la propia dama desde f7\n- Capturar la dama con {{Kxf7}} es ilegal porque el alfil en **c4** controla f7\n- Ninguna pieza puede interponerse: f7 es adyacente al rey\n\n> **Conclusión:** Comprueba siempre si f7 (o f2 para las negras) está defendida solo por el rey antes de desarrollar. Una batería dama + alfil en la diagonal a2-g8 es uno de los trucos más antiguos del ajedrez."
 }

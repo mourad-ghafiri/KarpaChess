@@ -4,23 +4,35 @@
   "summary": "Offer a pawn to control the center",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "The Classical Queen's Pawn",
-      "text": "The Queen's Gambit begins 1.d4 d5 2.c4. White offers the c-pawn. If Black takes, the center is abandoned. If Black declines (most common at master level), White maintains strong central control." },
-    { "type": "play",
+      "text": "The **Queen's Gambit** is one of the most respected openings in chess history — a positional masterpiece that was *the* opening of choice in the 1920s and surged back into popular culture with the Netflix series of the same name.\n\n## The defining sequence\n\nThe canonical line is {{d4}} {{d5}} {{c4}}. White offers the c-pawn, betting that if Black accepts, White will recover the pawn while controlling the center.\n\n## What each side wants\n\n- **White's plan:** apply long-term central pressure with {{Nf3}}, {{Nc3}}, {{Bf4}} or {{Bg5}}, and {{e3}}; castle short; eventually exploit a queenside or central majority.\n- **Black's plan:** decline the gambit (the *Queen's Gambit Declined*) with **...e6**, **...Nf6**, **...Be7**; or play the *Slav* with **...c6**; or accept (rare at top level) and try to hold the extra pawn.\n- **Pawn structure:** classical *Carlsbad* or *Tarrasch* structures — pawn chains running along c-d-e where small breaks like *minority attacks* decide the game.\n\n## Why it's not a real gambit\n\nThe Queen's Gambit is not a true gambit because Black usually can't *keep* the c4 pawn safely. After {{dxc4}}, White recovers it with **{{e4}}** or **{{Nc3}}** plus **{{e3}}** while gaining tempo.\n\n> The Queen's Gambit isn't about winning a pawn. It's about winning the center."
+    },
+    {
+      "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "prompt": "Open with the queen's pawn.",
-      "targetSan": ["d4"],
-      "hint": "1.d4 — classical central thrust." },
-    { "type": "play",
+      "prompt": "Open with the queen's pawn — play **{{d4}}**.",
+      "targetSan": [
+        "d4"
+      ],
+      "hint": "1.d4 stakes a center claim and prepares the trademark c4 break next."
+    },
+    {
+      "type": "play",
       "fen": "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
-      "prompt": "Now offer the gambit.",
-      "targetSan": ["c4"],
-      "hint": "2.c4 — attack the d5 pawn with a flank pawn." },
-    { "type": "teach",
+      "prompt": "Now offer the gambit with **{{c4}}** — challenge Black's d5 pawn on the flank.",
+      "targetSan": [
+        "c4"
+      ],
+      "hint": "If Black takes with ...dxc4 you'll recover the pawn easily and own the center. Either way you win."
+    },
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/ppp1pppp/8/3p4/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2",
       "title": "Decline or Accept?",
-      "text": "If Black accepts (2...dxc4), White usually recovers the pawn quickly. If Black declines (2...e6, 2...c6, 2...Nf6), the game becomes a positional battle for central squares. Either way, White gets a strong initiative." }
+      "text": "Black now has three main reactions, each defining a different opening *family*.\n\n## Black's three main responses\n\n- **Queen's Gambit Declined (QGD)** — **2...e6**. Solid as granite. Black accepts a slightly passive light-squared bishop in exchange for a rock-solid pawn structure.\n- **Slav Defense** — **2...c6**. Black supports d5 with the c-pawn instead of locking in the bishop. Modern, popular, and theoretically rich.\n- **Queen's Gambit Accepted (QGA)** — **2...dxc4**. Black grabs the pawn but plans to give it back. White recovers with {{e3}} or {{e4}} and develops with a small but real central edge.\n\nA fourth, less popular option is the **Tarrasch** — **2...e6 3.Nc3 c5** — Black takes the offered pawn back later but plays for activity over solidity.\n\nAt grandmaster level, the QGD and Slav are dominant. At club level, the QGA appears often because it looks tempting to grab the pawn.\n\n> The Queen's Gambit teaches patience. Pieces emerge slowly, the center is fought for square by square, and the player who understands long-term plans wins."
+    }
   ]
 }

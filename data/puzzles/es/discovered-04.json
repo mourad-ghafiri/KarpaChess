@@ -4,5 +4,8 @@
   "solution": [
     "Nc6"
   ],
-  "hint": "El caballo se aparta — la torre golpea a la torre."
+  "title": "El caballo gana la torre",
+  "setup": "Ambos bandos tienen **torre y caballo**, pero las piezas blancas están coordinadas en la columna d mientras la torre negra está indefensa en a8.",
+  "hint": "El caballo bloquea la vista de tu torre hacia d8. Llévalo a una casilla que **horquille** la torre enemiga — y mira cómo se abre la columna d.",
+  "explanation": "## La idea\n\nNo todo ataque descubierto es un jaque. Aquí la pieza descubierta es la torre blanca de d1 — actualmente bloqueada por su propio caballo en d4 — y el **objetivo** del salto del caballo es la torre negra suelta en a8.\n\n## Por qué {{Nc6}} es demoledor\n\nEl caballo salta a **c6** y consigue tres cosas a la vez:\n\n1. Ataca directamente a la torre negra en a8.\n2. Controla **d8**, así que el rey no puede correr hacia delante.\n3. La columna d queda abierta de par en par — la torre en d1 mira directamente a d8, encerrando al rey en la última fila.\n\nLas negras tienen que salvar la torre (no tiene buenos defensores cerca), pero cada casilla de escape pierde tiempo, y el rey está tan pasivo que las blancas simplemente se comerán el material. Si las negras intentan 1...Rxa-lo-que-sea, el caballo blanco captura la torre en la siguiente jugada.\n\n## ¿Y si las negras juegan ...Kd8 o ...Kd7?\n\nEl rey no puede ir a d8 — el caballo en c6 lo cubre. No puede ir a d7 — mismo caballo. No puede ir a e7 — el caballo otra vez. El único movimiento legal del rey es a f8 o f7, abandonando la torre. La **pieza descubierta** (la torre en d1) es lo que hace que esos escapes del rey sean tan terribles: cada casilla oscura de la columna d se ha convertido en veneno."
 }

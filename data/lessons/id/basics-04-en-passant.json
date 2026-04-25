@@ -1,25 +1,35 @@
 {
   "id": "en-passant",
   "title": "En Passant",
-  "summary": "Tangkapan pion yang tidak pernah dipelajari kebanyakan pemain",
+  "summary": "Pemakanan pion yang tidak pernah dipelajari kebanyakan pemain",
   "difficulty": "beginner",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "4k3/3p4/8/4P3/8/8/8/4K3 w - - 0 1",
-      "title": "Aturan Licik",
-      "text": "Ketika pion maju dua kotak dari baris awalnya, mereka kadang-kadang bisa ditangkap oleh pion lawan 'saat melintas.' Ini disebut en passant — bahasa Prancis untuk 'saat melintas.' Ini hanya berlaku pada langkah berikutnya." },
-    { "type": "teach",
+      "title": "Aturan yang Licik",
+      "text": "En passant — bahasa Prancis untuk *secara melintas* — adalah aturan teraneh dan paling sering dilupakan dalam catur. Namun, itu sangat logis begitu Anda melihat mengapa ia ada.\n\nKetika pion pertama kali diizinkan melompat dua kotak dari baris awalnya (perubahan aturan abad pertengahan untuk mempercepat pembukaan), perubahan itu memiliki efek samping: sebuah pion bisa *melewati* pion lawan yang seharusnya bisa memakannya. Untuk memulihkan keadilan, aturan menambahkan pengecualian — pion itu masih bisa dimakan, tetapi **hanya pada langkah berikutnya**.\n\n## Syarat-syaratnya, sekaligus\n\n- Pion lawan bergerak **dua kotak** dari baris awalnya\n- Pion Anda berada **tepat di sebelahnya** di baris yang sama (ke-5 untuk Putih, ke-4 untuk Hitam)\n- Anda memakan **secara diagonal**, mendarat di kotak yang *seharusnya* diduduki pion itu jika ia bergerak satu kotak\n- Anda harus melakukannya **segera** — tunggu satu langkah, kehilangan haknya selamanya\n\n> En passant adalah aturan yang membuktikan catur lebih tua dari yang Anda pikirkan."
+    },
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/ppp1p1pp/8/3pPp2/8/8/PPPP1PPP/RNBQKBNR w KQkq f6 0 3",
-      "title": "Peluang",
-      "text": "Hitam baru saja memainkan ...f5, melompati dua kotak di samping pion e5 Putih. Pion Putih bisa menangkap di f6 jika pion Hitam hanya bergerak satu kotak. En passant berkata: Anda masih bisa melakukannya — hanya giliran ini." },
-    { "type": "play",
+      "title": "Kesempatan",
+      "text": "Inilah peluang nyata untuk menggunakannya. Hitam baru saja memainkan **...f7-f5**, melaju dua kotak melewati pion Anda di e5.\n\nJika Hitam hanya melangkah satu kotak (...f7-f6), pion e5 Anda bisa memakannya secara normal dengan {{exf6}}. Lompatan dua kotak Hitam mencoba melewatkan pemakanan itu.\n\nEn passant berkata: *jangan terlalu cepat.* Anda masih bisa memainkan {{exf6}} — pion Anda bergerak diagonal ke f6, dan pion Hitam di f5 dihilangkan dari papan. Seakan-akan Anda menangkap pelari di tengah langkahnya.\n\nNotasi kecil `f6` setelah huruf giliran-jalan dalam FEN memberitahu Anda bahwa **f6 adalah kotak target en-passant** untuk satu langkah.\n\n> Pion yang memakan mendarat DI BELAKANG pion yang dimakan — kotak yang ia coba lewati."
+    },
+    {
+      "type": "play",
       "fen": "rnbqkbnr/ppp1p1pp/8/3pPp2/8/8/PPPP1PPP/RNBQKBNR w KQkq f6 0 3",
-      "prompt": "Tangkap pion f5 secara en passant.",
-      "targetSan": ["exf6"],
-      "hint": "Langkahnya adalah exf6 — pion Anda menangkap seolah-olah pion f berada di f6." },
-    { "type": "teach",
+      "prompt": "Makan en passant dengan **{{exf6}}** — pion Anda mendarat di f6 dan pion f5 lenyap.",
+      "targetSan": [
+        "exf6"
+      ],
+      "hint": "Perlakukan pion f5 seolah-olah berada di f6, dan makan secara diagonal. Pion lenyap meskipun Anda tidak mendarat di sana."
+    },
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/ppp1p1pp/5P2/3p4/8/8/PPPP1PPP/RNBQKBNR b KQkq - 0 3",
       "title": "Aturan Sekali Pakai",
-      "text": "Anda HARUS menggunakan en passant pada langkah berikutnya atau kehilangan haknya. Ini salah satu aturan paling sering dilupakan — sekarang Anda tahu." }
+      "text": "Dan begitu saja, pion f5 hilang dan milik Anda di f6 — jauh di wilayah Hitam, dua kotak dari promosi.\n\n## Dua pengingat terakhir\n\n- **Gunakan atau hilang.** Hak untuk memakan en passant berlangsung tepat satu langkah. Jika Anda tidak segera mengambil, opsinya lenyap.\n- **Hanya pion yang bisa melakukannya.** Kuda, gajah, benteng, menteri, dan raja tidak bisa memakan en passant.\n\nKebanyakan pemula bertahun-tahun tanpa pernah memainkan langkah ini. Sekarang Anda akan langsung melihatnya — dan lebih baik lagi, Anda akan *mengantisipasinya*. Mengetahui en passant ada akan mengubah cara Anda mendorong pion di sebelah pion lawan.\n\n> Aturan yang dilupakan semua orang menjadi langkah yang tidak akan pernah Anda lewatkan."
+    }
   ]
 }

@@ -4,5 +4,8 @@
   "solution": [
     "Kc4"
   ],
-  "hint": "Step sideways — prepare to advance."
+  "title": "Side-step the Opposition",
+  "setup": "The kings face each other across the pawn on **d5** — Black holds the direct opposition and you are to move.",
+  "hint": "Going forward is impossible and pushing the pawn loses it. **Move sideways** to try to outflank.",
+  "explanation": "## Key Principle: Outflanking\n\nWhen the defender's king sits on the square in front of yours with the **opposition**, you cannot make progress through the middle — your king has nowhere to go. The technique is to slip around the side and force the enemy king to either give way or surrender a key square.\n\n## The Plan\n\n1. **{{Kc4}}** — White steps to c4, eyeing c5 and b5. Going the other way (Ke4) is the mirror image and carries the same idea.\n2. Black's best try is **...Kc6**, recapturing the opposition. White then returns with Kd4 and tries the other wing.\n3. The rule of squares to remember: **the side with the move loses the opposition**. So you keep probing wing to wing until Black runs out of mirroring squares.\n\n## What Goes Wrong With the Wrong Move\n\nA premature 1.d6+? trades the pawn for nothing: 1...Kxd6 and the position is a dead draw with king alone. Likewise 1.Kd3? hands Black the opportunity to seize the opposition further forward with 1...Kd5, fixing the pawn. The discipline: **don't push the pawn while the enemy king sits on its promotion square**, and use your king to break the blockade first."
 }

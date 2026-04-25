@@ -4,5 +4,8 @@
   "solution": [
     "Rb8#"
   ],
-  "hint": "Benteng maju saat raja lawan terkurung."
+  "title": "Jalan Panjang, Skakmat Singkat",
+  "setup": "Bidak a Putih tertinggal di belakang, tetapi benteng b punya jalur bersih ke baris ke-8.",
+  "hint": "Jalan benteng ke b8. Struktur bidak melakukan sisanya.",
+  "explanation": "## Idenya\n\nKeberadaan bidak Putih ekstra di a2 tidak relevan — fitur posisional murni (kelemahan baris belakang + raja tanpa luft) menentukan partai. {{Rb8#}} skakmat seketika:\n\n1. Benteng tiba di baris ke-8 dengan skak.\n2. Raja di g8 disegel oleh bidaknya sendiri di f7-g7-h7.\n3. Kotak **a8** sampai **h8** di luar gelembung raja semuanya diserang benteng.\n4. Tidak ada yang memakan balik, tidak ada yang memblokir.\n\n### Mengapa \"material ekstra\" tidak menyelamatkan Hitam\n\nPosisi raja Hitam sangat lemah sehingga material tidak berarti. **Satu tempo {{h6}} di awal partai sudah cukup mencegah seluruh pola ini**, terlepas dari berapa banyak bidak yang dimiliki masing-masing pihak.\n\n> Hitungan material selalu kalah dari keamanan raja dalam posisi taktis."
 }

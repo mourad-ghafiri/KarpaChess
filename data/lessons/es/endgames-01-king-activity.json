@@ -1,6 +1,6 @@
 {
   "id": "king-activity",
-  "title": "Activa Tu Rey",
+  "title": "Activa tu Rey",
   "summary": "En el final, tu rey lucha",
   "difficulty": "intermediate",
   "steps": [
@@ -8,17 +8,17 @@
       "type": "teach",
       "fen": "4k3/8/8/4K3/4P3/8/8/8 w - - 0 1",
       "title": "El Poder del Rey",
-      "text": "En el medio juego el rey se esconde. En el final sale a luchar. Aquí tu rey debe escoltar a su peón hasta la promoción. La técnica importa."
+      "text": "## El rey en el final\n\nEn el **medio juego** el rey es un fugitivo — enrocado, escondido, defendido por sus peones. En el **final**, con la mayoría de las piezas cambiadas, esa timidez se convierte en un lujo que no puedes permitirte. El rey es ahora una **pieza de combate**, equivalente aproximadamente a una pieza menor fuerte, y todo plan ganador en un final sencillo empieza con él.\n\n### Qué es esta posición\n\n- Rey blanco en **e5**, ya escoltando a su peón por delante.\n- Peón en **e4**, a dos casillas del carril de coronación.\n- Rey negro en **e8**, bloqueando el camino.\n\nEste es el arquetipo **R + P contra R** — la estructura ganadora más común del ajedrez.\n\n### El procedimiento para convertir\n\n1. **Lleva primero el rey**, nunca el peón. El peón solo avanza cuando el rey ya ha despejado el camino.\n2. **Flanquea** al rey enemigo dando un paso diagonal hacia adelante: {{Kd6}} o {{Kf6}}.\n3. **Toma la oposición** — cuando los reyes se enfrentan a una casilla y al rival le toca mover, tú controlas la danza.\n4. **Después empuja el peón** para conquistar más espacio y forzar la dama.\n\n### Errores comunes\n\n- Avanzar {{e5}} demasiado pronto — el peón llega sin escolta y queda bloqueado.\n- Retroceder con el rey (p. ej. Ke4) — cedes tempo y la oposición.\n- Vagar con el rey lateralmente sin un plan para flanquear.\n\n### Una línea modelo\n\n{{Kd6}} ... Kd8 {{e5}} ... Ke8 {{Kc7}} — el rey ha despejado un corredor y el peón es imparable.\n\n> Activa al rey antes de empujar al peón."
     },
     {
       "type": "play",
       "fen": "4k3/8/8/4K3/4P3/8/8/8 w - - 0 1",
-      "prompt": "Avanza tu rey — toma la oposición.",
+      "prompt": "Avanza el rey diagonalmente para **flanquear** al defensor. Aplica el principio: *primero el rey, después el peón*.",
       "targetSan": [
         "Kd6",
         "Kf6"
       ],
-      "hint": "Kd6 o Kf6 — ambas toman la oposición."
+      "hint": "No toques aún el peón — despeja un carril con un paso diagonal a la 6ª fila."
     }
   ]
 }

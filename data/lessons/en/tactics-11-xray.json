@@ -8,13 +8,13 @@
       "type": "teach",
       "fen": "3rk3/8/8/8/8/8/3R4/3RK3 w - - 0 1",
       "title": "Seeing Through",
-      "text": "An X-ray attack is when a piece attacks THROUGH an intervening piece — often the enemy's own piece. If the intervening piece moves, your attack lands behind it. Unlike a pin, X-ray usually wins or gains tempo either way."
+      "text": "An **X-ray attack** is when one of your long-range pieces threatens or defends *through* an intervening piece. The piece in front blocks the immediate attack, but if it ever moves — or is captured — the X-ray crashes through.\n\n## The geometry\n\nFour things on one line:\n\n1. Your **rook**, **bishop**, or **queen** at one end.\n2. Your **own piece** (or sometimes the enemy's) standing in the way.\n3. The line continues *past* the blocker.\n4. A target — usually a king, queen, or critical defender — sits at the far end.\n\nUnlike a pin (which freezes a piece) or a skewer (which chases one off), the X-ray simply *sees past* whatever's in the middle.\n\n## Two uses of the X-ray\n\n- **Offensive X-ray** — your queen X-rays the enemy king through their own piece. Trade the blocker and the attack lands.\n- **Defensive X-ray** — your rook X-rays one of your own pieces, defending it through another defender. After exchanges, the X-ray re-establishes guard.\n\n## How to spot it\n\n1. Trace every long-range piece you have, including beyond blockers.\n2. Look for **king or queen** sitting on the far end of one of those lines.\n3. Plan an exchange that removes the blocker.\n4. After the smoke clears, the X-ray is suddenly an open attack.\n\nIn this position, White's rooks on d1 and d2 stack with the enemy king's rook on d8 down the d-file. After a series of trades, the *back* rook on d1 X-rays through and lands on the king.\n\n> A pin freezes. A skewer chases. An X-ray *waits* — and wins anyway."
     },
     {
       "type": "teach",
       "fen": "3rk3/8/8/8/8/8/3R4/3RK3 w - - 0 1",
-      "title": "Example",
-      "text": "Here White's d1 rook X-rays the enemy king through the d2 and d8 rooks. After exchanges on d8, the king is pinned or the back-rank collapses."
+      "title": "Calculating Through Trades",
+      "text": "X-rays often decide who comes out ahead in a chain of captures on the same square.\n\n## The procedure\n\n1. Identify the file, rank, or diagonal where pieces are stacked.\n2. Count attackers and defenders.\n3. Imagine the exchanges happening in order, *cheapest first*.\n4. Whoever has the **last attacker** on the line wins the square.\n\n## In this position\n\nWhite has *two* rooks on the d-file. Black has one. After a sequence like {{Rxd8+}} {{Rxd8}} {{Rxd8+}}, White lands a rook on the eighth rank checking the king — the X-ray is the reason it works.\n\n> X-ray vision is just patient counting along a single line."
     }
   ]
 }

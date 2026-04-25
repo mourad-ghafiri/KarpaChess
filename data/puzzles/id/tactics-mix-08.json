@@ -4,5 +4,8 @@
   "solution": [
     "a4"
   ],
-  "hint": "Majukan menuju promosi."
+  "title": "Dorong Pion Pas",
+  "setup": "Pion putih sendirian di **a2** tanpa pion lawan untuk menghentikannya — **pion pas (passed pawn)** klasik.",
+  "hint": "Dorong cepat. Setiap tempo penting di akhir raja-dan-pion.",
+  "explanation": "## Idenya\n\nIni adalah **balap promosi pion pas** yang fundamental. Tidak ada pion lawan yang menghalangi lajur a, jadi satu-satunya halangan pion adalah raja hitam — saat ini di e8, jauh.\n\nPutih memainkan {{a4}} — **dorongan awal dua petak**, mendapatkan tempo vital atas {{a3}}.\n\n## Mengapa a4 dan Bukan a3?\n\nDi akhir pion, setiap tempo menentukan hasilnya. Pion harus mencapai a8 sebelum raja hitam bisa mengejarnya. Hitung petak:\n\n- Setelah {{a4}}, pion butuh 4 langkah lagi untuk promosi ({{a5}}, {{a6}}, {{a7}}, {{a8=Q}}).\n- Raja Hitam butuh mencapai **petak promosi** (a8) atau jalur pion. Dari e8 ke a8 adalah 4 langkah raja.\n- Itu balapan — dan kita baru saja menyelamatkan tempo dengan melompat dua petak.\n\n## Aturan Persegi Pion\n\n> Gambar persegi imajiner dari pion ke baris promosi, di diagonal menuju raja lawan. Jika raja **di luar** persegi, pion promosi.\n\nPelajari aturan ini sampai hafal — itu menentukan ratusan akhir pion."
 }

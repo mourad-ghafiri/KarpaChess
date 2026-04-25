@@ -4,5 +4,8 @@
   "solution": [
     "a4"
   ],
-  "hint": "Avanza hacia la coronación."
+  "title": "Empuja el Peón Pasado",
+  "setup": "Un peón blanco solitario en **a2** sin peones enemigos que lo detengan — un **peón pasado** de manual.",
+  "hint": "Empuja rápido. Cada tempo cuenta en finales de rey y peón.",
+  "explanation": "## La idea\n\nEsta es una **carrera de coronación** fundamental con peón pasado. No hay peones enemigos bloqueando la columna a, así que el único obstáculo del peón es el rey negro — actualmente en e8, lejos.\n\nLas blancas juegan {{a4}} — el **avance inicial de dos casillas**, ganando un tempo vital frente a {{a3}}.\n\n## ¿Por qué a4 y no a3?\n\nEn finales de peones, cada tempo decide el resultado. El peón debe llegar a a8 antes de que el rey negro lo alcance. Contando casillas:\n\n- Tras {{a4}}, al peón le faltan 4 jugadas más para coronar ({{a5}}, {{a6}}, {{a7}}, {{a8=Q}}).\n- El rey negro necesita llegar a la **casilla de coronación** (a8) o al camino del peón. De e8 a a8 son 4 jugadas de rey.\n- Es una carrera — y acabamos de ahorrar un tempo saltando dos casillas.\n\n## La regla del cuadrado del peón\n\n> Dibuja un cuadrado imaginario desde el peón hasta la fila de coronación, en diagonal hacia el rey enemigo. Si el rey está **fuera** del cuadrado, el peón corona.\n\nAprende esta regla a fondo — decide cientos de finales de peones."
 }

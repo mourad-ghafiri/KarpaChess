@@ -4,5 +4,8 @@
   "solution": [
     "Rxd6+"
   ],
-  "hint": "La dame est clouée sur son roi — prenez-la."
+  "title": "La dame figée",
+  "setup": "La dame noire est sur la **colonne d** devant son roi, tandis qu'une tour blanche les vise tous deux d'en bas.",
+  "hint": "Une pièce clouée sur son roi ne peut bouger. Prenez-la.",
+  "explanation": "## L'idée\n\nVoici un **clouage absolu** d'école. La dame noire en d6 est collée à son roi en d8 — la déplacer exposerait le roi à un échec, ce qui est illégal. Elle doit donc rester là et encaisser ce qui atterrit sur sa case.\n\nLes Blancs jouent {{Rxd6+}}, raflant la dame. Noir est désormais en échec et doit répondre :\n\n- {{Kxd6}} reprend la tour, mais Blanc a échangé une tour contre une dame — un gain de matériel net.\n- Le roi n'a pas d'autre issue légale : impossible de bloquer (aucune pièce entre), et la tour ne peut être prise que par le roi.\n\n## Schéma à mémoriser\n\n> Quand une pièce adverse est clouée sur son roi, attaquez-la avec une autre pièce. La pièce clouée ne peut pas fuir.\n\nCherchez ces situations à chaque coup : **un attaquant à longue portée (tour, fou, dame) plus une cible sur la même ligne que le roi adverse.**"
 }

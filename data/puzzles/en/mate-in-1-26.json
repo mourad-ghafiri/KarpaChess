@@ -4,5 +4,8 @@
   "solution": [
     "Ra8#"
   ],
-  "hint": "Rook joins king and pawn for mate."
+  "title": "Pawn Plug",
+  "setup": "A pawn on **d7** plugs the king's escape down the file, and your king on **d6** holds the diagonals.",
+  "hint": "Sweep the rook to the 8th rank — the **d7** pawn freezes the king on **d8**.",
+  "explanation": "## The Idea\n\nA cute **rook + pawn mate**. The d7 pawn isn't checking — but it stops the Black king from running to d7 or even capturing your king's defender.\n\nPlay {{Ra8#}}.\n\nWhy is the king stuck?\n\n- {{c8}} and {{e8}} — covered by the rook on a8\n- {{c7}}, {{e7}} — both controlled by your king on **d6**\n- {{d7}} — blocked by your own pawn (and also defended by your king)\n- {{Kxd7}} would be illegal anyway because your king on **d6** defends d7\n- Nothing can interpose on the empty 8th rank\n\n> **Takeaway:** Even a *humble pawn* can be the deciding factor in a mating net. When promoting near an enemy king, don't always rush to a queen — sometimes the pawn itself is the most useful blocker."
 }

@@ -4,18 +4,26 @@
   "summary": "Flexible flank play",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "Control the Center From the Flanks",
-      "text": "The English (1.c4) is a flexible opening championed by top players. Instead of rushing to push d4, White prepares it with c-pawn support and develops pieces first. Games often transpose into Queen's Gambit or Indian structures." },
-    { "type": "play",
+      "text": "The **English Opening** ({{c4}}) is the connoisseur's choice — a flexible, hypermodern system favored by world champions like Botvinnik, Kasparov, Carlsen, and Caruana.\n\nInstead of marching pawns to the center, White prepares **gradual control** with the c-pawn, develops pieces first, and decides on a structure based on what Black does.\n\n## What each side wants\n\n- **White's plan:** play {{c4}} first, then {{Nc3}} and {{Nf3}}, fianchetto the king's bishop with {{g3}} and {{Bg2}}, and castle. The center is fought over with d3 or d4 *later*.\n- **Black's plan:** treat the English like a Queen's Gambit Declined or fight back symmetrically with **...c5**. The most fearless reply is **1...e5** (a *reversed Sicilian*), which can lead to wild play.\n- **Pawn structure:** often *English / Hedgehog* shapes — Black's pawns on a6, b6, d6, e6, while White expands with c4-d4-e4 over the long term.\n\n## A model line\n\n{{c4}} {{e5}} {{Nc3}} {{Nf6}} {{g3}} **d5** {{cxd5}} **Nxd5** {{Bg2}}. White is set for a long, positional grind with the long-diagonal bishop pointing at Black's queenside.\n\n## Why it's grandmaster-friendly\n\nThe English transposes into other openings *only when White wants it to*. If you play **1.c4**, you can choose later whether to head into a Queen's Gambit, an Indian Defense, or a pure English structure — the flexibility is enormous.\n\n> Control without commitment. The English wins by patience."
+    },
+    {
+      "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "prompt": "Play the English Opening.",
-      "targetSan": ["c4"],
-      "hint": "1.c4 — the English." },
-    { "type": "teach",
+      "prompt": "Open with the English — play **{{c4}}**.",
+      "targetSan": [
+        "c4"
+      ],
+      "hint": "1.c4 challenges Black's d5 square from the flank and keeps the e- and d-pawns flexible for later."
+    },
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/2P5/8/PP1PPPPP/RNBQKBNR b KQkq - 0 1",
       "title": "Flexible Follow-ups",
-      "text": "Depending on Black's reply, White can play d4 (transposing to Queen's Gambit), Nc3 + g3 (positional Botvinnik-style), or e3 (flexible). The English is a great choice if you dislike memorizing sharp theory." }
+      "text": "What's powerful about 1.c4 is the menu of plans White keeps open.\n\n## Four main White setups\n\n- **Symmetric English** — White plays {{Nc3}}, {{g3}}, {{Bg2}}, {{Nf3}}, **0-0**, then chooses between {{d4}} (transposing to Queen's Gambit) or quiet manoeuvring.\n- **Botvinnik System** — pawns at c4-d3-e4, knights to c3 and e2, bishop to g2. Bulletproof and flexible.\n- **Reversed Sicilian** — if Black plays 1...e5, White essentially gets a Sicilian *with an extra tempo*. Sharp and rewarding.\n- **Mikenas Attack** — 1.c4 Nf6 2.Nc3 e6 3.e4!? — direct and aggressive, like a delayed 1.e4.\n\n## Common transpositions\n\n- After **1.c4 e5 2.Nc3 Nf6 3.Nf3 Nc6** — a *reversed Sicilian* tabiya.\n- After **1.c4 c5 2.Nf3 Nf6 3.Nc3** — a *Symmetrical English* heading toward Hedgehog.\n- After **1.c4 e6 2.Nc3 d5** — White can play d4 and reach a *Queen's Gambit Declined* on his terms.\n\n> If you dislike memorizing forced theory, the English gives you a system. If you love deep strategy, it gives you a lifetime of study."
+    }
   ]
 }

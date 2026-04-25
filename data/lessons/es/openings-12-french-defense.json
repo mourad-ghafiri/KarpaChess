@@ -1,38 +1,38 @@
 {
   "id": "french-defense-deep",
   "title": "La Defensa Francesa",
-  "summary": "Una cadena de peones sólida con potencial de contraataque",
+  "summary": "Una sólida cadena de peones con potencial de contraataque",
   "difficulty": "intermediate",
   "steps": [
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
-      "title": "Una Filosofía Diferente",
-      "text": "La Francesa (1...e6) cede espacio central pero construye una cadena de peones de granito. Las Negras planean ...d5, ...c5 y ...Nc6 para socavar el centro blanco."
+      "title": "Una Filosofía Distinta",
+      "text": "La **Defensa Francesa** es la respuesta del estratega a 1.e4. Con **1...e6**, las negras anuncian: *no pelearé contigo de forma simétrica. Construiré un muro y tras él contraatacaré.*\n\nLlamada así por una partida por correspondencia del siglo XIX entre Londres y París (ganó París), es la elección de leyendas como **Botvinnik**, **Petrosian**, **Korchnoi** y **Morozevich**.\n\n## La secuencia que la define\n\nLa línea canónica es {{e4}} {{e6}} {{d4}} {{d5}}. Las blancas tienen el centro mayor por el momento, pero las negras están a punto de desafiarlo directamente con **...d5**.\n\n## Qué quiere cada bando\n\n- **Plan blanco:** avanzar con {{e5}} (Variante del Avance), cambiar con {{exd5}} (Cambio) o desarrollar con {{Nc3}} o {{Nd2}} (Clásica / Tarrasch). Cada una lleva a una batalla distinta.\n- **Plan negro:** atacar el peón d4 blanco con **...c5**, desarrollar el caballo de dama a **...Nc6**, fianchetar el caballo b8 vía **...Nd7-...Nb6** en algunas líneas, y cambiar el alfil malo. Contraatacar el centro con **...f6** si las blancas juegan e5.\n- **Estructura de peones:** cadenas características de la Francesa — peones blancos en d4-e5 frente a los negros en d5-e6, encerrados en una *cadena cerrada*. Cada bando ataca la *base* de la cadena enemiga.\n\n## La paradoja francesa\n\nEl gran problema: el **alfil de casillas claras negro en c8** se queda encerrado tras el peón de e6. Resolver (o aceptar) el *mal alfil francés* es el tema estratégico de toda la apertura.\n\n> La Francesa no es pasiva. Es un resorte enroscado esperando saltar."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
-      "prompt": "1...e6 — esquema francés.",
+      "prompt": "Juega el planteamiento francés con **{{e6}}** — preparando **...d5** con una cadena de peones de granito.",
       "targetSan": [
         "e6"
       ],
-      "hint": "Prepara ...d5 en la jugada 2."
+      "hint": "No empujes e5 (eso sería 1...e5). En su lugar, prepara un ...d5 apoyado por el caballo con un movimiento de peón pequeño pero robusto."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
-      "prompt": "Las Blancas juegan 2.d4 — reclama el centro.",
+      "prompt": "Las blancas reclaman el centro completo con **{{d4}}** — construyendo el gran dúo de peones.",
       "targetSan": [
         "d4"
       ],
-      "hint": "Construye el gran centro."
+      "hint": "Si no juegas d4, las negras desafiarán primero con ...d5. Planta tu centro máximo."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/ppp2ppp/4p3/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
       "title": "El Centro Bloqueado",
-      "text": "Tras 2...d5, las Blancas deben decidir: Avance (e5, ganan espacio pero bloquean el centro), Cambio (exd5, simplifica) o Clásica (Nc3, táctica). La Francesa te enseña a jugar CON y CONTRA cadenas de peones."
+      "text": "Tras **2...d5**, llega el momento de la verdad. Las blancas deben comprometerse con un planteamiento, y cada uno crea una partida distinta.\n\n## Las cuatro variantes principales\n\n- **Variante del Avance** — **3.e5**. Las blancas cierran el centro y ganan espacio, pero el alfil de c8 cobra vida tras **...Bd7-...Bb5** o vía rupturas con **...c5**. Las negras planean **...c5**, **...Nc6**, **...Qb6**, **...Nge7**.\n- **Variante del Cambio** — **3.exd5 exd5**. Simétrica y tranquila — históricamente considerada tablas, pero las blancas pueden jugar por una pequeña ventaja con rupturas en c4.\n- **Variante Clásica** — **3.Nc3 Nf6 4.e5 Nfd7** (o **4.Bg5**). Las blancas mantienen abiertas sus opciones y las negras aceptan una posición apretada con fuertes recursos defensivos.\n- **Variante Tarrasch** — **3.Nd2**. Las blancas evitan la clavada **...Bb4** y preparan c3 + Ngf3 + Bd3. Tranquila pero flexible.\n\n## La danza de las rupturas francesas\n\n- **Las blancas juegan {{f4}}-{{f5}}** para desafiar el peón de e6 (base de la cadena negra).\n- **Las negras juegan {{c5}}** — y después **...f6** — para desafiar d4 y e5 (base de la cadena blanca).\n\nQuien gana la carrera de la cadena de peones gana el medio juego.\n\n> La Francesa te enseña a pensar en *cadenas*, no en *piezas*. Domina eso y tu visión posicional se triplica."
     }
   ]
 }

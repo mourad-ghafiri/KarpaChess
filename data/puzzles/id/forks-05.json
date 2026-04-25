@@ -4,5 +4,8 @@
   "solution": [
     "Nxd5"
   ],
-  "hint": "Kuda memenangkan menteri."
+  "title": "Kuda Mengait Menteri",
+  "setup": "Menteri Hitam duduk di d5 — tepat satu lompatan kuda dari kuda Putih di e3, tanpa pembela.",
+  "hint": "Dari e3, hitung kotak kuda: satu lompatan L mendarat di d5. Apakah menterinya dibela?",
+  "explanation": "## Idenya\n\n**Menteri lepas** adalah hadiah paling mahal dalam catur. Kuda di e3 bisa melangkah ke d5 dalam satu langkah (e3 → d5 adalah bentuk L: lajur -1, baris +2), dan raja Hitam di e8 terlalu jauh untuk membela.\n\nSetelah {{Nxd5}}, Putih unggul satu menteri dengan harga sangat tipis.\n\n## Mengapa Hitam Tidak Punya Pertahanan\n\n- Menteri di d5 tidak punya teman di dekatnya — raja di e8 tiga kotak jauhnya.\n- Kuda di e3 **dibela** raja Putih di e1 (meskipun tidak penting di sini, karena Hitam tidak punya bidak untuk memakan balik).\n- Setelah penangkapan, kuda Putih duduk bangga di d5 tanpa perlu tindak lanjut.\n\n## Pola yang Harus Diingat\n\n> Selalu periksa **radius L kuda** ketika melihat bidak musuh. Jika kuda satu langkah jauhnya bisa menangkap bidak tanpa pembela, itu langkah terkuat di papan."
 }

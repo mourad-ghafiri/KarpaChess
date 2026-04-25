@@ -4,5 +4,8 @@
   "solution": [
     "Ra8#"
   ],
-  "hint": "La tour rejoint roi et pion pour le mat."
+  "title": "Pion-bouchon",
+  "setup": "Un pion en **d7** bouche la fuite du roi sur la colonne, et votre roi en **d6** tient les diagonales.",
+  "hint": "Balayez la tour vers la 8e rangée — le pion en **d7** fige le roi en **d8**.",
+  "explanation": "## L'idée\n\nUn joli **mat tour + pion**. Le pion en d7 ne donne pas l'échec — mais il empêche le roi noir de fuir en d7 ou même de capturer le défenseur de votre roi.\n\nJouez {{Ra8#}}.\n\nPourquoi le roi est-il bloqué ?\n\n- {{c8}} et {{e8}} — couvertes par la tour en a8\n- {{c7}}, {{e7}} — toutes deux contrôlées par votre roi en **d6**\n- {{d7}} — bloquée par votre propre pion (et également défendue par votre roi)\n- {{Kxd7}} serait illégal de toute façon car votre roi en **d6** défend d7\n- Rien ne peut s'interposer sur la 8e rangée vide\n\n> **À retenir :** même un *humble pion* peut être le facteur décisif d'un filet de mat. Lors d'une promotion près du roi adverse, ne vous précipitez pas toujours sur la dame — parfois le pion lui-même est le bloqueur le plus utile."
 }

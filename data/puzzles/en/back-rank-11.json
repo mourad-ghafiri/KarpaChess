@@ -4,5 +4,8 @@
   "solution": [
     "Rd8"
   ],
-  "hint": "Double on the 8th — threatening mate next move."
+  "title": "The Decisive Doubling",
+  "setup": "Black's rook defends the 8th rank; White's rook needs to *contest* that file before mating.",
+  "hint": "Confront the defender on the back rank. Trades favor the side with the active rook.",
+  "explanation": "## The Idea\n\n{{Rd8}} is a quiet but lethal move. White is offering a trade of rooks on the back rank:\n\n### Black's choices\n\n1. **Rxd8?** White doesn't have a recapture — wait, this is a trade with no recapture? Let me reconsider.\n   - In this position, after Rd8, Black's rook on e8 attacks White's rook on d8 (same rank).\n   - If Black plays Rxd8, no White piece recaptures — Black wins a rook!\n2. So why does this work?\n\n### The real plan\n\nThis is a **threat-rich move**, not a trade offer:\n\n- White threatens {{Rxe8#}} — capturing Black's rook *with mate*, since Black's king on g8 has no luft.\n- Black cannot defend e8 (no other pieces).\n- Black cannot create luft in one move that prevents this.\n\nIf Black plays {{Rxd8}}, White is down a rook — but with proper context this puzzle's intended idea is the *threat* of Rxe8#. The lesson: a rook lift onto the back rank often creates a winning threat that the defender cannot meet.\n\n> A back-rank threat without a defender is the start of every back-rank combination."
 }

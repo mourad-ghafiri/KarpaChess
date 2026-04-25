@@ -4,22 +4,32 @@
   "summary": "The pawn capture most players never learn",
   "difficulty": "beginner",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "4k3/3p4/8/4P3/8/8/8/4K3 w - - 0 1",
       "title": "A Sneaky Rule",
-      "text": "When pawns advance two squares from their starting rank, they can sometimes be captured by an enemy pawn 'in passing.' This is called en passant — French for 'in passing.' It only works on the very next move." },
-    { "type": "teach",
+      "text": "En passant — French for *in passing* — is the strangest, most-forgotten rule in chess. And yet, it's perfectly logical once you see why it exists.\n\nWhen pawns were first allowed to leap two squares from their starting rank (a medieval rule change to speed up openings), the change had a side-effect: a pawn could *skip past* an enemy pawn that should have been able to capture it. To restore fairness, the rules added an exception — that pawn can still be captured, but **only on the very next move**.\n\n## The conditions, all at once\n\n- An enemy pawn moves **two squares** from its starting rank\n- Your pawn sits **right next to it** on the same rank (the 5th for White, the 4th for Black)\n- You capture **diagonally**, landing on the square the pawn *would* have been on if it had moved one square\n- You must do it **immediately** — wait one move, lose the right forever\n\n> En passant is the rule that proves chess is older than you think."
+    },
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/ppp1p1pp/8/3pPp2/8/8/PPPP1PPP/RNBQKBNR w KQkq f6 0 3",
       "title": "The Opportunity",
-      "text": "Black just played ...f5, zipping two squares past White's e5 pawn. White's pawn could have captured at f6 if the Black pawn had only moved one square. En passant says: you can still do it — just this turn." },
-    { "type": "play",
+      "text": "Here's a real chance to use it. Black just played **...f7-f5**, racing two squares past your pawn on e5.\n\nIf Black had only stepped one square (...f7-f6), your e5 pawn could have captured normally with {{exf6}}. Black's two-square jump tries to skip past that capture.\n\nEn passant says: *not so fast.* You can still play {{exf6}} — your pawn moves diagonally to f6, and the Black pawn on f5 is removed from the board. It's almost as if you caught the runner mid-stride.\n\nThe little notation `f6` after the side-to-move letter in the FEN tells you that **f6 is the en-passant target square** for one move.\n\n> The capturing pawn lands BEHIND the captured pawn — the one square it tried to skip."
+    },
+    {
+      "type": "play",
       "fen": "rnbqkbnr/ppp1p1pp/8/3pPp2/8/8/PPPP1PPP/RNBQKBNR w KQkq f6 0 3",
-      "prompt": "Capture the f5 pawn en passant.",
-      "targetSan": ["exf6"],
-      "hint": "The move is exf6 — your pawn captures as if the f-pawn were on f6." },
-    { "type": "teach",
+      "prompt": "Capture en passant with **{{exf6}}** — your pawn lands on f6 and the f5 pawn vanishes.",
+      "targetSan": [
+        "exf6"
+      ],
+      "hint": "Treat the f5 pawn as if it were on f6, and capture diagonally. The pawn disappears even though you didn't land on it."
+    },
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/ppp1p1pp/5P2/3p4/8/8/PPPP1PPP/RNBQKBNR b KQkq - 0 3",
       "title": "One-Shot Rule",
-      "text": "You MUST use en passant on the very next move or lose the right. It's one of the most commonly forgotten rules — now you know." }
+      "text": "And just like that, the f5 pawn is gone and yours is on f6 — deep in Black's territory, two squares from promotion.\n\n## Two final reminders\n\n- **Use it or lose it.** The right to capture en passant lasts exactly one move. If you don't take immediately, the option vanishes.\n- **Only pawns can do it.** Knights, bishops, rooks, queens, and kings cannot capture en passant.\n\nMost beginners go years without ever playing this move. Now you'll spot it instantly — and even better, you'll *anticipate* it. Knowing en passant exists changes how you push pawns next to enemy pawns.\n\n> The rule everyone forgets becomes the move you'll never miss."
+    }
   ]
 }

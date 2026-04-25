@@ -1,38 +1,38 @@
 {
   "id": "kings-indian-attack",
   "title": "Serangan King's Indian",
-  "summary": "King's Indian terbalik — sistem untuk Putih",
+  "summary": "King's Indian terbalik — sebuah sistem untuk Putih",
   "difficulty": "intermediate",
   "steps": [
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "title": "Senjata yang Fleksibel",
-      "text": "Serangan King's Indian (KIA) adalah Pertahanan King's Indian yang dimainkan oleh Putih. Fianchetto gajah raja, rokade cepat, lalu ekspansi dengan e4/e5. Digunakan Bobby Fischer dengan efek mematikan."
+      "title": "Senjata Fleksibel",
+      "text": "**Serangan King's Indian** (KIA) adalah Pertahanan King's Indian — *yang dimainkan oleh Putih*. Setup sama, rencana sama, hanya warna terbalik: Putih melakukan fianchetto pada gajah raja, rokade pendek, lalu melepaskan serangan sayap raja yang lambat dan metodis.\n\nIa adalah senjata rahasia Bobby Fischer ketika ia ingin menghindari teori arus utama. Bahkan saat ini, pemain top seperti **Hikaru Nakamura** dan **Levon Aronian** mengeluarkannya sebagai senjata kejutan.\n\n## Urutan yang mendefinisikan\n\nUrutan model adalah {{Nf3}} **{{d5}}** {{g3}} **{{Nf6}}** {{Bg2}} **{{c5}}** **{{O-O}}** **{{Nc6}}** {{d3}} **{{e6}}** {{Nbd2}}. Tanda kunci adalah klaster: **Nf3, g3, Bg2, 0-0, d3, Nbd2, e4** — hampir terlepas dari apa yang dilakukan Hitam.\n\n## Apa yang diinginkan setiap pihak\n\n- **Rencana Putih:** lengkapi setup fianchetto, lalu dorong **{{e4}}** dan akhirnya **{{e5}}**, membuka jalur menuju sayap raja. Buah menumpuk: **Re1**, **Nf1-g3**, **h2-h4-h5**, dan terobosan sayap raja.\n- **Rencana Hitam:** perlakukan seperti Pertahanan Prancis atau Sisilia — kembangkan dengan solid, bertarung di sayap menteri (**...b5, ...c5-c4, ...Rb8**), dan eksploitasi setup lambat Putih.\n- **Struktur bidak:** *struktur KIA / Prancis* — bidak Putih di d3-e4 vs Hitam di d5-e6, dengan serangan di sayap berlawanan.\n\n## Mengapa ramah-grandmaster\n\nKIA adalah **satu sistem melawan segalanya** — Sisilia, Prancis, Caro-Kann semua bertransposisi ke middlegame serupa. Anda mempelajari satu set rencana dan menerapkannya seumur hidup.\n\n> KIA adalah jawaban universal catur. Setup lambat, serangan tajam."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "prompt": "Mulai dengan 1.Nf3",
+      "prompt": "Mulai dengan langkah pertama paling fleksibel: **{{Nf3}}**.",
       "targetSan": [
         "Nf3"
       ],
-      "hint": "Langkah pertama yang fleksibel."
+      "hint": "1.Nf3 mengembangkan buah dan menjaga setiap opsi terbuka. Bisa bertransposisi ke Reti, English, Catalan, atau — seperti di sini — KIA."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppp1ppp/8/4p3/8/5N2/PPPPPPPP/RNBQKB1R w KQkq - 0 2",
-      "prompt": "Sekarang fianchetto: 2.g3",
+      "prompt": "Mulai fianchetto dengan **{{g3}}** — mempersiapkan diagonal panjang gajah.",
       "targetSan": [
         "g3"
       ],
-      "hint": "Siapkan diagonal panjang untuk gajah."
+      "hint": "g3 mempersiapkan fianchetto — gajah akan tinggal di g2, mengincar diagonal panjang h1-a8."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppp1ppp/8/4p3/8/5NP1/PPPPPP1P/RNBQKB1R b KQkq - 0 2",
       "title": "Struktur KIA",
-      "text": "Selanjutnya: Bg2, 0-0, d3, Nbd2, e4. Anda akan mendapatkan benteng sisi raja yang kokoh dan pegas yang siap meledak dengan e5. Ideal jika Anda ingin SATU pembukaan melawan segalanya."
+      "text": "Setelah **{{Nf3}}** dan **{{g3}}**, sisa Serangan King's Indian jatuh ke alur yang familiar.\n\n## Setup lengkap\n\n1. **{{Nf3}}** — pengembangan kuda yang fleksibel.\n2. **{{g3}}** — mempersiapkan fianchetto.\n3. **{{Bg2}}** — gajah ke rumah diagonal panjangnya.\n4. **{{O-O}}** — rokade pendek, raja tersembunyi.\n5. **{{d3}}** — dukungan tengah yang solid.\n6. **{{Nbd2}}** — kuda kedua (bukan di c3, di mana ia akan menghalangi bidak-c).\n7. **{{e4}}** — *langkah* menyerang. Pusat terbangun.\n\nDari sana: **Re1**, **Nf1-h2** atau **Nf1-g3**, **h2-h4-h5**, dan longsoran sayap raja.\n\n## Rencana permainan model\n\nSetelah setup tipikal Hitam (**...d5, ...Nf6, ...e6, ...c5, ...Nc6, ...Be7**), Putih break dengan **e4-e5** menendang kuda f6. Lalu **Nf1-g3** dan **h4-h5** membuka jalur. Dikombinasikan dengan **Qe2** dan **Bf4**, serangan pada f7/h7 menjadi mematikan.\n\n## Daya tarik utama KIA\n\n- **Satu pembukaan untuk semua.** Sisilia? Prancis? Caro-Kann? Anda memainkan KIA melawan ketiganya.\n- **Strategis kaya.** Rencana middlegame berulang, tetapi taktik segar setiap permainan.\n- **Sulit dibantah.** Bahkan lawan kuat harus berhati-hati — setup alami Hitam masuk ke rencana Putih.\n\n> Jika Anda ingin satu senjata seumur hidup, pelajari KIA. Anda tidak akan pernah tanpa jawaban."
     }
   ]
 }

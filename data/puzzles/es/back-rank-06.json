@@ -4,5 +4,8 @@
   "solution": [
     "Ra8"
   ],
-  "hint": "Simplifica — invasión de torre en a8."
+  "title": "Clavada al rey",
+  "setup": "La torre negra en e8 defiende la última fila. La torre blanca está a una casilla de ejercer una presión decisiva.",
+  "hint": "Planta la torre en la octava fila. La prisión del rey hace el resto.",
+  "explanation": "## La idea\n\n{{Ra8}} es la jugada silenciosa pero devastadora. No da mate inmediato, pero pone a las negras en una **clavada totalmente perdedora**:\n\n1. La torre blanca llega a a8, fijando toda la octava fila.\n2. La torre negra en e8 está **clavada** — no puede moverse sin exponer al rey al mate por Rxe8#.\n3. Las blancas amenazan {{Rxe8#}} en la siguiente jugada.\n\n### Por qué las negras no tienen buena defensa\n\n- **¿Mover el rey?** El rey no tiene aire. Kh8 sigue permitiendo Rxe8#. Kg8 es lo mismo. El rey no puede escapar a la séptima fila sin antes crear luft, y no le da tiempo.\n- **¿Defender la torre?** Ninguna pieza al alcance puede reforzar e8.\n- **¿Contraamenaza?** A las negras solo les quedan rey y torre — no hay contraataque.\n\n### Patrón a recordar\n\n- Una torre que llega con **apoyo de sus propias fuerzas** a una última fila abierta contra un rey sin luft es decisiva.\n- La clavada sobre la torre negra es la estaca en el corazón.\n\n> Las jugadas silenciosas matan más rápido que las ruidosas. La amenaza es más fuerte que la ejecución — pero aquí, la ejecución es imparable."
 }

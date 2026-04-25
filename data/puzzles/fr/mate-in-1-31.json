@@ -2,7 +2,10 @@
   "id": "mate-in-1-31",
   "fen": "5k2/4Q3/5K2/8/8/8/8/8 w - - 0 1",
   "solution": [
-    "Qe8+"
+    "Qf7#"
   ],
-  "hint": "La dame sur la dernière rangée — aucune fuite."
+  "title": "Baiser sur la colonne",
+  "setup": "Votre dame en **e7** et votre roi en **f6** forment un duo serré — mais {{e8}} permettrait au roi de fuir.",
+  "hint": "Poussez la dame *sur la colonne* du roi — votre roi défend sa case d'arrivée.",
+  "explanation": "## L'idée\n\nUn autre **baiser de la mort**. Aller en {{e8}} laisse le roi s'échapper car **f6** ne défend pas e8 — mais la dame une case devant le roi, défendue par votre roi, est mortelle.\n\nJouez {{Qf7#}}.\n\nPourquoi le roi est-il bloqué ?\n\n- La dame en f7 attaque f8 directement (échec sur la colonne)\n- {{e8}} — couverte par la dame en f7 (diagonale)\n- {{g8}} — couverte par la dame en f7 (diagonale)\n- {{Kxf7}} est illégal — votre roi en **f6** défend f7\n- Rien ne peut s'interposer : f7 est adjacent à f8\n\n> **À retenir :** méfiez-vous des *échecs de dame spectaculaires à distance* — ils permettent souvent la fuite. La dame qui mate atterrit souvent *à côté* du roi adverse sur une case défendue par votre roi."
 }

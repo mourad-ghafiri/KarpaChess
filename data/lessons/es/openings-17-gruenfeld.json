@@ -1,26 +1,26 @@
 {
   "id": "gruenfeld-advanced",
   "title": "Defensa Grünfeld",
-  "summary": "Un sistema hipermoderno de contraataque",
+  "summary": "Un sistema hipermoderno de contragolpe",
   "difficulty": "advanced",
   "steps": [
     {
       "type": "teach",
       "fen": "rnbqkb1r/ppp1pp1p/5np1/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4",
-      "title": "Deja que se Extiendan",
-      "text": "La Grünfeld (1.d4 Nf6 2.c4 g6 3.Nc3 d5) es el sueño del contragolpeador. Las Negras dejan que las Blancas levanten un centro masivo y luego lo atacan con piezas del flanco de dama y rupturas de peón."
+      "title": "Déjales que se Sobre-extiendan",
+      "text": "La **Defensa Grünfeld** es la obra maestra del contragolpeador — una apertura hipermoderna donde las negras *invitan* a las blancas a construir un centro enorme, sabiendo que será difícil de defender.\n\nLlamada así por el maestro austríaco **Ernst Grünfeld**, que la introdujo en los años 20, ha sido el arma favorita de **Bobby Fischer**, **Vladimir Kramnik**, **Garry Kasparov** y **Magnus Carlsen** en distintos momentos de sus carreras.\n\n## Cómo se llega a ella\n\nLa secuencia que la define es {{d4}} **{{Nf6}}** {{c4}} **{{g6}}** {{Nc3}} **{{d5}}**. La intrépida **3...d5** es el alma del sistema: las negras desafían directamente al peón c blanco mientras preparan el fianchetto.\n\n## Qué quiere cada bando\n\n- **Plan blanco:** capturar en el centro con **{{cxd5}} {{Nxd5}} {{e4}}** (Variante del Cambio), o desarrollar tranquilamente con {{Nf3}}, {{Bf4}}, {{e3}}, {{Be2}} (Sistema Ruso) o {{Bg5}} (Sistema Smyslov). Buscar construir y *mantener* un gran centro.\n- **Plan negro:** fianchetar el alfil de rey en **g7**, atacar el peón d4 con **...c5**, a veces romper con **...e5**, desarrollar **...Nc6**, **...Bg4**, y demostrar que el centro blanco está *sobre-extendido*.\n- **Estructura de peones:** desequilibrio característico Grünfeld — las blancas tienen peones centrales en d4 y e4 (Variante del Cambio), las negras tienen menos peones pero una enorme actividad de piezas.\n\n## Por qué es atrevida\n\nLa Grünfeld concede el **centro** voluntariamente. Las negras apuestan a que los peones blancos se convertirán en *objetivos* en lugar de armas. Si las negras tienen razón, el gran centro blanco colapsa; si se equivocan, las negras quedan aplastadas.\n\n> La Grünfeld es jazz: improvisación sobre un tema complejo. Hermosa cuando funciona."
     },
     {
       "type": "teach",
       "fen": "rnbqkb1r/ppp1pp1p/5np1/3P4/2P5/2N5/PP2PPPP/R1BQKBNR b KQkq - 0 4",
       "title": "La Variante del Cambio",
-      "text": "Tras 4.cxd5 Nxd5 5.e4, el caballo negro retrocede y las Blancas tienen un enorme centro — pero las Negras amenazan con destruirlo mediante piezas. Una prueba clave del ajedrez dinámico: centro estático vs actividad de piezas."
+      "text": "La respuesta más común para las blancas es la **Variante del Cambio** — **4.cxd5 Nxd5 5.e4**. El caballo negro retrocede y el centro blanco tiene ahora *dos* peones centrales (d4 y e4).\n\n## Por qué es crítica\n\n- Los peones blancos parecen intimidantes — cortan a las piezas negras por la mitad y parecen dominar el tablero.\n- Pero los peones son **peones** — pueden ser atacados. Las piezas son flexibles.\n- Las negras planean **...Bg7**, **...c5** (golpeando d4), **...Nc6**, **...Qa5** o **...Bg4** — asalto total al centro.\n\n## La línea moderna del Cambio\n\nUna línea principal famosa es **5.e4 Nxc3 6.bxc3 Bg7 7.Nf3 c5 8.Be3 Qa5 9.Qd2 Nc6** — para la jugada 9, las negras están desarrolladas, atacando el centro y listas para minar la estructura blanca con rupturas **...cxd4**.\n\n## Lo que dice la estructura\n\n- El **peón d aislado o los peones c doblados** blancos se convierten en los objetivos a largo plazo.\n- El **alfil de fianchetto en g7** negro domina la diagonal larga — apuntando a **a1, b2, c3, d4** todos a la vez.\n- La **ruptura con c5** es la jugada que define a las negras — sin ella, la Grünfeld no hace nada.\n\n## Otros intentos blancos\n\n- **Sistema Ruso** (4.Nf3 Bg7 5.Qb3) — las blancas presionan d5 con la dama.\n- **Bg5 / Sistema Smyslov** — las blancas desarrollan el alfil pronto para desalentar ...c5.\n- **Sämisch / Tartakower** — las blancas juegan {{f3}} preparando e4.\n\n> La Grünfeld del Cambio: las blancas construyen, las negras disparan como francotiradores."
     },
     {
       "type": "teach",
       "fen": "rnbqkb1r/ppp1pp1p/5np1/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4",
       "title": "Temas Clásicos de la Grünfeld",
-      "text": "Planes de las Negras: fianqueto en g7, presión sobre d4 con ...c5, enroque, ...Nc6, ...Bg4. El alfil fianquetado en g7 es clave — irradia poder sobre la posición blanca, especialmente tras rupturas de ...d4."
+      "text": "La Grünfeld tiene un pequeño conjunto de temas estratégicos recurrentes. Domínalos y te sentirás como en casa en casi cualquier medio juego Grünfeld.\n\n## El manual negro\n\n- **Fianchetto en g7.** El alfil es el motor de toda la apertura. *Nunca* lo cambies por menos de un caballo a menos que sea absolutamente necesario.\n- **Presionar d4 con ...c5.** Esta es la ruptura que la define. Sin ella, el centro blanco es demasiado fuerte.\n- **Enrocar corto** — normalmente jugada 6 o 7. El alfil fianchetado y el rey enrocado forman el triángulo defensivo.\n- **...Nc6, ...Bg4, ...Qa5.** Las piezas apuntan a los peones centrales y al caballo de c3 (que está sobrecargado defendiendo d4 y e4).\n- **...Rfd8, ...Rac8.** Una vez desarrolladas, las torres se acumulan en las columnas c y d donde vive la batalla estructural.\n\n## La carrera d4-d5\n\nLa pregunta crítica en muchas partidas Grünfeld: *¿forzarán las negras que d4 avance a d5?* Si sí, las negras pueden atacar el peón d5 ahora aislado desde c6 y e6. Si no, el centro blanco permanece intacto y la pareja de alfiles más el espacio importan.\n\n## Partidas Grünfeld famosas\n\n- **Botvinnik–Fischer 1962** — Fischer usó la Grünfeld para demoler al campeón mundial con un estilo deslumbrante.\n- **Mundial Kasparov–Karpov 1990** — las repetidas victorias Grünfeld de Kasparov cambiaron la teoría principal.\n- **Carlsen–Anand 2014** — la Grünfeld de Anand fue la elección sorpresa de apertura que hizo sudar a Carlsen.\n\n> La Grünfeld: piezas pequeñas, ideas grandes. El contraataque como forma de vida."
     }
   ]
 }

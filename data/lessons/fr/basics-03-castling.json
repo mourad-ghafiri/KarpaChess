@@ -1,30 +1,44 @@
 {
   "id": "castling",
   "title": "Le roque",
-  "summary": "Déplacez le roi et la tour en un seul coup",
+  "summary": "Déplacez roi et tour en un seul geste",
   "difficulty": "beginner",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "r3k2r/pppq1ppp/2n1pn2/3p4/3P4/2N1PN2/PPPQ1PPP/R3K2R w KQkq - 0 1",
       "title": "Qu'est-ce que le roque ?",
-      "text": "Le roque est le seul coup aux échecs où DEUX pièces bougent en même temps : votre roi et l'une de vos tours. C'est le moyen le plus rapide de mettre le roi à l'abri ET d'activer une tour. Vous pouvez roquer côté roi (petit roque) ou côté dame (grand roque)." },
-    { "type": "teach",
+      "text": "Le roque est le **seul coup des échecs** où deux pièces bougent en même temps — votre roi et l'une de vos tours, dans le même tempo.\n\nIl accomplit deux miracles d'un coup :\n\n- **Met le roi à l'abri** dans un coin, blotti derrière un mur de pions\n- **Active une tour**, qui se pose sur une colonne centrale ou semi-ouverte\n\n## Deux versions\n\n- **Petit roque (côté roi)** : noté {{O-O}}. Le roi saute deux cases vers la tour h ; la tour vient se placer juste à côté de lui.\n- **Grand roque (côté dame)** : noté {{O-O-O}}. Le roi saute deux cases vers la tour a ; la tour franchit le roi pour se poser de l'autre côté.\n\nDans la position ci-dessus, les deux camps sont parfaitement prêts à roquer d'un côté ou de l'autre. Imaginez {{O-O}} — votre roi devient soudain à l'abri, votre tour en f1 lorgne la colonne e.\n\n> Le roque, c'est deux excellents coups en un. Ne le gaspillez pas."
+    },
+    {
+      "type": "teach",
       "fen": "r3k2r/pppq1ppp/2n1pn2/3p4/3P4/2N1PN2/PPPQ1PPP/R3K2R w KQkq - 0 1",
-      "title": "Les règles",
-      "text": "Pour roquer : (1) ni le roi ni la tour concernée n'ont bougé, (2) aucune pièce entre eux, (3) le roi n'est pas en échec, et (4) le roi ne traverse pas et n'atterrit pas sur une case attaquée." },
-    { "type": "play",
+      "title": "Les quatre règles",
+      "text": "Le roque a l'air magique, mais il a des conditions strictes. Oubliez-en une et le coup est illégal.\n\n## Les quatre conditions\n\n1. **Ni le roi ni la tour concernée n'ont bougé.** Tous deux doivent être sur leur case d'origine, intouchés.\n2. **Les cases entre eux sont libres.** Aucun fou ni cavalier ne doit barrer le passage.\n3. **Le roi n'est pas en échec.** On ne peut pas roquer pour échapper à un échec.\n4. **Le roi ne traverse ni n'atterrit sur une case attaquée.** Les cases de transit doivent être sûres elles aussi.\n\nMoyen mnémotechnique classique : *on ne roque ni dans, ni hors, ni à travers un échec*.\n\nNotez que la **tour**, elle, peut être attaquée ou traverser une case attaquée — seul le chemin du roi compte. Détail subtil mais utile, surtout pour le grand roque.\n\n> En cas de doute, vérifiez ces quatre règles. Le moteur ne pardonne jamais un coup illégal."
+    },
+    {
+      "type": "play",
       "fen": "r3k2r/pppq1ppp/2n1pn2/3p4/3P4/2N1PN2/PPPQ1PPP/R3K2R w KQkq - 0 1",
-      "prompt": "Roquez côté roi (petit roque).",
-      "targetSan": ["O-O"],
-      "hint": "Dans la plupart des interfaces d'échecs, il suffit de déplacer le roi de deux cases vers la tour." },
-    { "type": "play",
+      "prompt": "Petit roque avec **{{O-O}}** — le roi va en g1, la tour en f1, tous deux à l'abri en un coup.",
+      "targetSan": [
+        "O-O"
+      ],
+      "hint": "Sur la plupart des interfaces, il suffit de bouger le roi de deux cases vers la tour h — la tour suit automatiquement."
+    },
+    {
+      "type": "play",
       "fen": "r3k2r/pppq1ppp/2n1pn2/3p4/3P4/2N1PN2/PPPQ1PPP/R3K2R b KQkq - 0 1",
-      "prompt": "Maintenant, les Noirs roquent côté dame (grand roque).",
-      "targetSan": ["O-O-O"],
-      "hint": "Déplacez le roi de deux cases vers la tour de la colonne a." },
-    { "type": "teach",
+      "prompt": "Au tour des Noirs : grand roque avec **{{O-O-O}}** — le roi va en c8, la tour en d8, et attaque sur la colonne d.",
+      "targetSan": [
+        "O-O-O"
+      ],
+      "hint": "Bougez le roi de deux cases vers la tour a. La tour saute en d8 dans le même mouvement."
+    },
+    {
+      "type": "teach",
       "fen": "2kr3r/pppq1ppp/2n1pn2/3p4/3P4/2N1PN2/PPPQ1PPP/R4RK1 w - - 0 1",
-      "title": "Terminé !",
-      "text": "Les deux rois sont en sécurité et les tours de la colonne a sont connectées avec l'autre tour. Roquer tôt est l'une des habitudes les plus importantes aux échecs — visez à le faire avant le coup 10 dans la plupart des parties." }
+      "title": "Les deux rois à l'abri",
+      "text": "Les deux camps ont roqué — Blancs petit, Noirs grand — et la position prend tout son caractère.\n\nObservez ce qui a changé :\n\n- **Les deux rois ont quitté la colonne e.** Plus de clouages ou de petites piques venant d'une dame.\n- **Les quatre tours sont connectées** sur leurs rangées de fond. Elles peuvent basculer sur n'importe quelle colonne ouverte.\n- **Les deux armées sont en ordre de bataille.** La lutte pour le centre peut commencer.\n\nQuand on roque sur **des côtés opposés** (un joueur petit, l'autre grand), méfiez-vous : les tempêtes de pions deviennent mortelles, car chaque camp peut lancer ses pions sur le roi adverse sans exposer le sien. Une attaque-course décide souvent la partie.\n\n> Visez à roquer avant le 10e coup. Les rois qui tardent se font surprendre au milieu de l'échiquier."
+    }
   ]
 }

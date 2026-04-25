@@ -4,5 +4,8 @@
   "solution": [
     "Nxb5"
   ],
-  "hint": "Le cavalier embroche la dame."
+  "title": "Le Cavalier Arrache la Dame",
+  "setup": "La dame noire s'est garée à un saut de cavalier du cavalier blanc, et il n'y a rien pour reprendre.",
+  "hint": "Depuis {{d4}}, le cavalier a huit cases au choix — l'une d'elles termine la partie.",
+  "explanation": "## L'Idée\n\nLe cavalier en d4 atteint **b5** par un L parfait (-2 colonnes, +1 rangée). La dame y est seule :\n\n- {{Nxb5}} — le cavalier engloutit la dame.\n- Variation matérielle : cavalier (3) contre dame (9) = **+6**, décisif.\n\n### Comment la repérer\n\n1. Après que l'adversaire déplace sa dame, scrutez les huit cases de cavalier autour de la nouvelle position de la dame.\n2. Si un de *vos* cavaliers est à un saut de cavalier de la dame, vous avez peut-être une tactique.\n3. Vérifiez que la dame n'a pas de défenseur sur cette case.\n\nIci le roi en e8 est loin et il n'y a aucune autre pièce noire.\n\n> Le cavalier est la seule pièce qui peut attaquer une dame *sans* être attaqué en retour. Cette asymétrie est son superpouvoir."
 }

@@ -1,38 +1,38 @@
 {
   "id": "london-system",
   "title": "El Sistema Londres",
-  "summary": "El sistema universal — la misma estructura, siempre",
+  "summary": "El sistema universal — el mismo planteamiento, siempre",
   "difficulty": "intermediate",
   "steps": [
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "title": "¿Por Qué el Londres?",
-      "text": "El Sistema Londres es una apertura \"universal\" — las Blancas montan el mismo esquema sin importar la respuesta de las Negras. Ideal para principiantes: menos teoría, patrones más fiables."
+      "title": "¿Por Qué Jugar el Londres?",
+      "text": "El **Sistema Londres** es el equivalente ajedrecístico de una receta a prueba de balas — las blancas juegan *casi el mismo planteamiento* contra todo lo que hagan las negras. Menos para memorizar, más para jugar.\n\nEn los últimos años se ha vuelto enormemente popular al máximo nivel: Magnus Carlsen lo ha usado en matches por el campeonato mundial, y grandes maestros desde Kramnik hasta Caruana lo han empleado como arma sorpresa.\n\n## Por qué es amistoso para principiantes\n\n- **Casi nada de teoría.** Juegas las mismas ocho jugadas sin importar el planteamiento negro.\n- **Estructura de peones sólida.** El esquema d4-c3-e3 es difícil de romper.\n- **Alfil de casillas oscuras activo.** Bf4 es una de las *mejores* casillas para esa pieza — fuera de la cadena de peones, mirando al flanco de dama.\n- **Planes fiables.** Las ideas del medio juego se repiten cada vez.\n\n## Qué quiere cada bando\n\n- **Plan blanco:** {{d4}}, {{Bf4}}, {{Nf3}}, {{e3}}, {{c3}}, {{Nbd2}}, {{Bd3}}, **0-0**. Después expandir con **h2-h3**, **Re1**, y buscar **e3-e4** o un empuje de dama **a2-a4**.\n- **Plan negro:** jugar **...Nf6**, **...e6** o **...g6**, **...Be7** o **...Bd6**, **...c5** o **...c6**, y desafiar el centro. Los planteamientos negros modernos atacan el peón de e3 y la debilidad de c3.\n- **Estructura de peones:** *híbrido Eslava-Stonewall* — los peones blancos en d4-c3-e3 forman un triángulo que limita las piezas negras.\n\n> El Londres es ajedrez en piloto automático. Una vez que lo has jugado diez veces, puedes jugarlo dormido."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "prompt": "1.d4",
+      "prompt": "Comienza el Londres con **{{d4}}** — la base de todo el sistema.",
       "targetSan": [
         "d4"
       ],
-      "hint": "Peón dama dos casillas."
+      "hint": "Toda partida del Londres empieza con d4. El alfil de c1 ahora tiene la vía libre hacia f4."
     },
     {
       "type": "play",
       "fen": "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2",
-      "prompt": "Desarrolla el alfil de casillas oscuras: 2.Bf4",
+      "prompt": "Desarrolla el alfil de casillas oscuras con **{{Bf4}}** *antes* de jugar e3 — ese es el truco clave del orden de jugadas londinense.",
       "targetSan": [
         "Bf4"
       ],
-      "hint": "El alfil sale ANTES de e3 para no quedar bloqueado por sus propios peones."
+      "hint": "Juega siempre Bf4 ANTES de e3, o tu propio peón encerrará al alfil. Este truco de orden es el corazón del sistema."
     },
     {
       "type": "teach",
       "fen": "rnbqkb1r/pppppppp/5n2/8/3P1B2/8/PPP1PPPP/RNBQKBNR b KQkq - 2 2",
-      "title": "La Estructura Completa",
-      "text": "La receta completa del Londres: d4, Bf4, Nf3, e3, c3, Nbd2, Bd3, 0-0. Sólida, casi simétrica, difícil de romper. Magnus Carlsen la ha usado en matches por el campeonato mundial."
+      "title": "El Planteamiento Completo",
+      "text": "Tras {{d4}} y {{Bf4}}, el resto del Sistema Londres encaja casi de forma automática.\n\n## La receta completa del Londres\n\n1. **{{d4}}** — peón central.\n2. **{{Bf4}}** — alfil fuera antes de mover el peón e.\n3. **{{Nf3}}** — segundo caballo a su casilla natural.\n4. **{{e3}}** — apoya d4 y libera el alfil de f1.\n5. **{{c3}}** — solidifica el centro, evita ...Nb4.\n6. **{{Nbd2}}** — caballo a una casilla flexible (no c3, donde bloquearía el peón c).\n7. **{{Bd3}}** — alfil ligero a su diagonal natural, mirando a h7.\n8. **{{O-O}}** — enroque corto.\n\nDesde ahí, las blancas suelen expandirse con **h2-h3** (evitando clavadas con ...Bg4), **Re1**, y un eventual rompimiento **e3-e4** o un ataque al flanco de rey vía **Ne5** y **Qf3**.\n\n## Planteamientos negros comunes contra el Londres\n\n- **Esquema simétrico**: ...d5, ...Nf6, ...Bf5 o ...Bg4, ...e6, ...Bd6, ...0-0 — espejo sólido.\n- **Esquema India de Rey**: ...Nf6, ...g6, ...Bg7 — fianchetto. Las negras juegan ...c5 para desafiar el centro.\n- **Reto moderno**: ...c5 inmediato, ...Qb6 atacando el peón b2 — una prueba aguda del orden londinense.\n\n## Un patrón típico de ataque\n\nUn ataque clásico del Londres va **Ne5** + **Qf3** + **Bxh7+** — el sacrificio del *Regalo Griego*. La estructura del Londres es tranquila, pero el ataque al flanco de rey puede ser feroz.\n\n> Elige un sistema. Domínalo. El Londres te enseña cómo las mismas cinco casillas pueden producir mil medios juegos distintos."
     }
   ]
 }

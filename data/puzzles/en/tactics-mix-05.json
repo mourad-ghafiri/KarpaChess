@@ -4,5 +4,8 @@
   "solution": [
     "exd5"
   ],
-  "hint": "Capture the central pawn — simple but important."
+  "title": "Win the Center Pawn",
+  "setup": "Black has played **...d5**, offering a pawn trade in the center. White accepts.",
+  "hint": "When you can take a central pawn for free, almost always do it.",
+  "explanation": "## The Idea\n\nThis is the most fundamental **central capture** in chess opening play. Black's d5 pawn is attacked by White's e4 pawn but defended by... nothing in particular.\n\nWhite plays {{exd5}}, winning the d-pawn outright.\n\n## Why It's Good\n\n- White now has a pawn on **d5**, dominating central space.\n- Black's e5 pawn is now isolated and weak.\n- Material: White is up one pawn.\n\nIf Black plays {{Nxd5}} or {{Qxd5}} to recapture, the recapturing piece is exposed to attack (e.g., by {{Nc3}} hitting the queen).\n\n## Pattern to Memorize\n\n> A central pawn (especially **d-pawn or e-pawn**) is worth more than a wing pawn. When you can grab one and keep it, do.\n\nWhite has converted a tactical capture into a strategic plus — extra material *plus* central control."
 }

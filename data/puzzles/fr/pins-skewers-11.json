@@ -4,5 +4,8 @@
   "solution": [
     "Rxa7+"
   ],
-  "hint": "Enfilade — dame devant son roi."
+  "title": "Duel sur la colonne a",
+  "setup": "La tour blanche regarde vers le haut de la **colonne a** la dame noire et le roi empilés au-dessus d'elle.",
+  "hint": "Quand la dame bloque son propre roi, elle est clouée — pas enfilée. Prenez-la.",
+  "explanation": "## L'idée\n\nMalgré la tradition qui appelle parfois cela une « enfilade », il s'agit techniquement d'un **clouage absolu** : la dame noire en a7 protège son roi en a8, donc elle ne peut pas bouger.\n\n- **Clouage** = attaquant, cible, *roi* (roi derrière).\n- **Enfilade** = attaquant, *roi*, cible (roi devant).\n\nIci le roi est derrière la dame, donc c'est un clouage.\n\nLes Blancs jouent {{Rxa7+}}, capturant la dame.\n\n- {{Kxa7}} est la seule réponse légale.\n- Blanc échange une tour (5) contre une dame (9), gain net **+4**.\n- Noir n'a aucun défenseur en a7 ni moyen de s'interposer.\n\n## Schéma à mémoriser\n\n> La géométrie d'abord, les noms ensuite. Chaque fois que vous voyez votre **tour + pièce mineure/majeure adverse + roi adverse** tous sur la même colonne, vous avez presque toujours une tactique.\n\nNe vous souciez pas, sur le moment, de savoir si c'est officiellement un clouage ou une enfilade — les deux gagnent du matériel."
 }

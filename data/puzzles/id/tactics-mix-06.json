@@ -1,8 +1,12 @@
 {
   "id": "tactics-mix-06",
-  "fen": "4k3/8/8/8/8/3BN3/8/4K3 w - - 0 1",
+  "fen": "4k3/8/2N5/4q3/B7/8/8/4K3 w - - 0 1",
   "solution": [
-    "Nc4+"
+    "Nxe5+",
+    "Kd8"
   ],
-  "hint": "Kuda bergerak — apa yang dilakukan gajah?"
+  "title": "Skak Tersingkap Menang Menteri",
+  "setup": "Kuda putih di **c6** duduk antara gajah putih di a4 dan raja hitam di e8. Menteri hitam telah parkir di e5 — tepat di lompatan kuda.",
+  "hint": "Saat buah Anda bergerak dan mengungkap skak dari buah di belakangnya — itu skak tersingkap. Gunakan untuk menangkap secara gratis.",
+  "explanation": "## Idenya\n\nIni adalah **skak tersingkap** dikombinasikan dengan tangkapan. Kuda di c6 menghalangi gajah di a4 untuk memberi skak di sepanjang diagonal a4-e8. Saat kuda pindah, skak gajah **diungkap**.\n\nPutih memainkan {{Nxe5+}} — kuda menangkap menteri *dan* membuka skak dari gajah.\n\n## Jawaban Hitam yang Terpaksa\n\nHitam harus menjawab **skak gajah** (bukan kuda, yang baru saja pindah). Langkah raja legal:\n\n- {{Kd8}} — aman; gajah di a4 hanya memberi skak di sepanjang garis a4-e8, dan d8 tidak di diagonal itu.\n- {{Kf8}} — juga lepas dari diagonal.\n- {{Ke7}} — diagonal gajah berjalan a4-b5-c6-d7-e8, jadi e7 aman.\n\nHitam tidak bisa menangkap kuda di e5 (raja di e8 terlalu jauh) dan tidak bisa menghalangi skak gajah (tidak ada buah ringan tersisa).\n\n## Pola untuk Diingat\n\n> Skak tersingkap = **dua ancaman dari satu langkah**. Buah yang bergerak bisa menangkap atau mengancam apa pun, sementara raja harus menjawab skak buah yang tidak bergerak dulu.\n\nSetiap kali Anda melihat baterai — gajah/benteng/menteri Anda berbaris di raja lawan dengan salah satu buah *Anda* menghalanginya — cari cara untuk memindahkan buah penghalang ke petak yang menang material. Pembela tidak bisa menjawab kedua serangan."
 }

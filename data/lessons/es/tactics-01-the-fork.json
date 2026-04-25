@@ -1,38 +1,38 @@
 {
   "id": "the-fork",
-  "title": "El Doble (Horquilla)",
+  "title": "La Horquilla",
   "summary": "Ataca dos piezas a la vez",
   "difficulty": "beginner",
   "steps": [
     {
       "type": "teach",
       "fen": "8/8/2k5/3q4/8/8/2N1K3/8 w - - 0 1",
-      "title": "Doble Real",
-      "text": "Un doble ataca dos piezas en una sola jugada. El caballo es especialmente bueno en ello — salta de una forma que ninguna pieza puede bloquear. Aquí, una jugada de caballo ataca al rey Y a la dama."
+      "title": "Horquilla Real",
+      "text": "Una **horquilla** es una sola jugada que ataca dos piezas enemigas a la vez. Tu rival solo puede salvar una — tú te quedas con la otra.\n\n## Por qué el caballo es el rey de las horquillas\n\nEl caballo salta sobre las piezas, ataca ocho casillas desde un buen puesto central y **ninguna pieza puede bloquear su jaque**. Esos rasgos hacen del caballo el horquillador más letal del ajedrez.\n\n## La geometría\n\nUn caballo en una casilla *X* alcanza ocho casillas dispuestas como las esquinas de dos rectángulos entrelazados. Si dos objetivos enemigos están en cualquiera de esas ocho casillas, *X* es una casilla de horquilla.\n\n- Rey + dama en un par de casillas de caballo = **horquilla real**\n- Rey + torre = **horquilla familiar**\n- Dos piezas indefensas = horquilla ganadora\n\n## Cómo detectarla\n\n1. Encuentra cada pieza enemiga indefensa.\n2. Lista las casillas que cada una *más* el rey ocupan.\n3. Busca una casilla que toque dos de ellas con un salto de caballo.\n4. Verifica que la propia casilla de horquilla sea segura (o que la ganancia supere a la pérdida).\n\nAquí el caballo blanco está a un salto de {{Nb4+}}, golpeando a la vez al rey en c6 y a la dama en d5.\n\n> Si no recuerdas nada más sobre tácticas, recuerda esto: *cada pieza indefensa es una horquilla esperando a ocurrir.*"
     },
     {
       "type": "play",
       "fen": "8/8/2k5/3q4/8/8/2N1K3/8 w - - 0 1",
-      "prompt": "Juega el caballo para dar un doble al rey y a la dama.",
+      "prompt": "Juega **{{Nb4+}}** — el caballo da horquilla a rey y dama en el mismo salto.",
       "targetSan": [
         "Nb4+"
       ],
-      "hint": "Nb4 ataca c6 y d5 a la vez."
+      "hint": "Busca la única casilla de caballo que toca a la vez *c6* y *d5*."
     },
     {
       "type": "teach",
       "fen": "4k3/8/8/4n3/8/8/8/Q3K3 w - - 0 1",
-      "title": "Doble de Dama",
-      "text": "Las damas también pueden dar dobles — especialmente con jaque. Cuando el rival DEBE responder al jaque, tú ganas un tempo gratuito para apropiarte de material en otra parte."
+      "title": "Horquilla de Dama con Jaque",
+      "text": "Los caballos no son los únicos que dan horquillas. La **dama** es una máquina de horquillas a larga distancia — sobre todo cuando la horquilla viene con jaque.\n\n## Por qué importa el jaque\n\nUn jaque es una respuesta *forzada*. Mientras el rival está ocupado moviendo el rey (o bloqueando), la dama ya tiene los ojos puestos en el segundo objetivo. El rival no recibe un tiempo para defenderlo.\n\n- Horquillas en diagonal + columna: la dama se sitúa en una casilla que golpea al rey por un rayo y a una pieza por otro.\n- Amenazas de mate + material: una jugada de aspecto silencioso que amenaza a la vez mate y una pieza es un doble ataque disfrazado.\n\n## Cómo encontrarla\n\n1. Detecta un jaque que también sea *captura* o que *alinee* la dama con otro objetivo.\n2. Verifica que la casilla de horquilla esté defendida o sea inaccesible para el rival.\n3. Calcula la limpieza — *¿puede el rey ir a una casilla que defienda la segunda pieza?*\n\nEn esta posición, {{Qxe5+}} captura el caballo **y** da jaque al rey en e8 por la columna e. Las negras mueven el rey, las blancas se llevan un caballo.\n\n> Las horquillas con jaque no son opcionales para el defensor. Eso es lo que las hace funcionar."
     },
     {
       "type": "play",
       "fen": "4k3/8/8/4n3/8/8/8/Q3K3 w - - 0 1",
-      "prompt": "Captura el caballo con jaque.",
+      "prompt": "Captura el caballo con **{{Qxe5+}}** — el jaque hace horquilla al rey y se embolsa la pieza.",
       "targetSan": [
         "Qxe5+"
       ],
-      "hint": "La dama se fija en e5."
+      "hint": "¿Qué captura también alinea a la dama con el rey enemigo?"
     }
   ]
 }

@@ -4,5 +4,8 @@
   "solution": [
     "Qxd4"
   ],
-  "hint": "She's undefended — collect the queen."
+  "title": "Free Queen, Take It",
+  "setup": "Two queens face off — but only one is defended.",
+  "hint": "Always look for hanging pieces. The simplest tactic is *take the free thing*.",
+  "explanation": "## The Idea\n\nThis is the most basic **loose piece** tactic. The black queen on d4 is undefended. The white queen on d1 attacks her along the d-file. White just takes.\n\nWhite plays {{Qxd4}}.\n\n- The black king is on e8, far away — no recapture possible.\n- No black piece defends d4.\n- White wins a queen for nothing.\n\n## Pattern to Memorize\n\n> Before every move, scan for **undefended enemy pieces** on lines you control.\n\nGM John Nunn called these *Loose Pieces* — the **LPDO** rule (Loose Pieces Drop Off) is the foundation of all tactics. Master this and the rest of tactical chess is just decoration."
 }

@@ -4,5 +4,8 @@
   "solution": [
     "d6"
   ],
-  "hint": "Poussez le pion — restreignez le roi."
+  "title": "Restreindre le roi",
+  "setup": "Un pion passé en **d5** marche vers la promotion, le roi noir l'observant depuis e8.",
+  "hint": "Poussez le pion sur une case où le roi ne peut entrer. La restriction gagne les finales.",
+  "explanation": "## L'idée\n\nVoici une technique de **restriction du roi** — une idée critique dans les finales de pions. En poussant le pion en avant, Blanc refuse au roi noir des cases clés.\n\nLes Blancs jouent {{d6}}.\n\n## Ce que le pion contrôle\n\nUn pion en d6 attaque les cases **c7** et **e7**. Le roi noir en e8 ne peut désormais plus légalement aller en e7 — cette case est attaquée.\n\nLe roi noir est forcé de battre en retraite ou de tergiverser : {{Kd7}} (bloquant le pion), {{Kf7}}, {{Kf8}}, ou {{Kd8}}.\n\n## Pourquoi d6 (et pas une avance plus lente) ?\n\nDans cette position, le roi blanc est loin en arrière en e1, donc le pion ne peut pas promouvoir seul — il a besoin de l'aide du roi. **Mais** avancer le pion d'abord restreint le roi noir et crée du temps pour que le roi blanc remonte.\n\n## Schéma à mémoriser\n\n> Dans les finales **R+P contre R**, le pion ne va pas toujours le plus vite en poussant. Parfois il va le plus vite en **restreignant** — refusant des cases clés au roi adverse pour que votre roi puisse contourner.\n\nC'est l'idée derrière l'**opposition**, le **contournement** et le célèbre **carré du pion** — les briques de toutes les finales de pions."
 }

@@ -4,5 +4,8 @@
   "solution": [
     "Qg8#"
   ],
-  "hint": "Dua buah bekerja sama — paksakan pertukaran."
+  "title": "Gajah Mendukung Menteri",
+  "setup": "Raja Hitam terjebak di **h7** dengan pion di belakangnya di **h6**, dan gajah Anda di **f7** mengunci {{g8}} dari diagonal.",
+  "hint": "Letakkan menteri di {{g8}} — gajah di **f7** menjaga petak pendaratannya.",
+  "explanation": "## Idenya\n\nSebuah **kiss-of-death menteri + gajah**. Gajah di **f7** menjadikan g8 sebagai petak terjaga, dan menteri mengorbankan diri ke sana.\n\nMainkan {{Qg8#}}.\n\nMengapa raja terjebak?\n\n- Menteri di g8 menyerang h7 langsung (skak diagonal, dijaga gajah)\n- {{Kxg8}} ilegal — gajah di **f7** menjaga g8\n- {{h8}} — dikuasai menteri di g8\n- Raja sedang dalam skak, jadi tidak bisa menangkap gajah f7 — itu mengabaikan skak menteri\n- {{g6}} — menteri di g8 menguasai lajur g\n\n> **Pelajaran:** Gajah satu langkah dari baris belakang dapat mendukung pengorbanan skakmat menteri. Setiap kali menteri dan gajah Anda mencapai sekitar raja, pindai petak pendaratan terjaga di samping raja."
 }

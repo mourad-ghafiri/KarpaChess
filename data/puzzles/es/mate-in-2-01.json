@@ -6,5 +6,8 @@
     "Kc8",
     "Qa8#"
   ],
-  "hint": "La dama avanza con jaque, empuja al rey hacia la esquina y luego da mate en la octava fila."
+  "title": "Jaula en dos pasos",
+  "setup": "Los reyes se enfrentan en la **columna d**, tu dama acecha en **d1** lista para subir con jaque.",
+  "hint": "Sube la dama con jaque, empuja al rey hacia el rincón y luego barre la fila final para dar mate.",
+  "explanation": "## La idea\n\nUn clásico **mate en 2 de R+D contra R**. La jugada 1 fuerza al rey de lado, la jugada 2 lo remata en la fila final.\n\n**1. {{Qd5+}}** — la dama salta por la columna con jaque. El rey negro está en **d8** y debe moverse; la única casilla no cubierta por tu rey en **d6** ni atacada por la dama es **c8**.\n\n**1...{{Kc8}}** — forzado. {{Kxd5}} es ilegal (tu rey defiende d5), {{Ke8}} también es legal pero pierde de la misma manera; seguimos la línea de manual.\n\n**2. {{Qa8#}}** — la dama barre hasta el rincón de la fila final, dando mate.\n\n¿Por qué está atrapado el rey tras la jugada 2?\n\n- {{b8}} — atacada por la dama en la octava fila\n- {{c7}}, {{d7}} — ambas controladas por tu rey en **d6**\n- La dama está lejos del rey, así que {{Kxa8}} es imposible\n- Nada puede interponerse en la octava fila\n\n> **Conclusión:** En finales de R+D, la dama hace el corte y tu rey hace la *cobertura*. Empareja siempre los jaques de dama con el apoyo del rey, y marcha hacia un mate en la fila final o el borde."
 }

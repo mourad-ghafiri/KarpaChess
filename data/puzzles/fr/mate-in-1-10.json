@@ -4,5 +4,8 @@
   "solution": [
     "Rg8#"
   ],
-  "hint": "Attaquez la colonne du roi — il est enfermé par votre roi et son propre pion."
+  "title": "Refermer le Couvercle",
+  "setup": "Le roi noir est coincé en **h8** avec le pion **h7** bloquant la seule case que la tour ne couvre pas déjà.",
+  "hint": "Montez la tour sur la colonne g — votre roi et le pion noir referment le couvercle.",
+  "explanation": "## L'Idée\n\nUn **mat R+T dans le coin** avec une petite variation : la tour mate depuis la colonne *adjacente* plutôt que la même rangée que le roi.\n\nJouez {{Rg8#}}.\n\nPourquoi le roi est-il piégé ?\n\n- {{h8}} — la tour en g8 attaque toute la 8e rangée incluant h8\n- {{g7}} — contrôlée par votre roi en **f7**\n- {{h7}} — bloquée par le propre pion noir\n- La tour en g8 est défendue par votre roi en f7, donc {{Kxg8}} est illégal de toute façon\n\n> **À retenir :** Quand le roi ennemi est enfermé par ses propres pièces, pas besoin d'élaborer. Marchez la tour vers une case *défendue par votre roi* sur la même rangée ou colonne adjacente que le roi piégé."
 }

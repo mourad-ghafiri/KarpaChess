@@ -8,13 +8,13 @@
       "type": "teach",
       "fen": "8/8/3k4/3q4/8/8/8/K3RR2 w - - 0 1",
       "title": "Nulle part où aller",
-      "text": "Les pièces enfoncées en territoire ennemi sont vulnérables. Si vous pouvez couper toutes les cases d'évasion, vous gagnez la pièce gratuitement. Les dames, cavaliers et fous se piègent particulièrement facilement au bord."
+      "text": "Une pièce enfoncée en territoire ennemi est courageuse mais vulnérable. **Piégez-la** — contrôlez chaque case où elle peut fuir — et vous la gagnez sans dépenser de matériel.\n\n## Ce qui rend une pièce piégeable\n\n- Elle est **loin de chez elle**, sans soutien ami.\n- Sa **mobilité** est limitée (un cavalier au bord, un fou bloqué par les pions).\n- C'est la pièce la plus précieuse dans son coin de l'échiquier (souvent une dame).\n- L'**attaquant** a des pièces ou des pions à proximité qui peuvent couvrir ses retraites.\n\n## La géométrie\n\nÉnumérez chaque case où la pièce piégée peut aller. Si vous pouvez attaquer l'une d'elles ou en bloquer une autre à chacun de vos coups — sans perdre de tempo — la pièce meurt une case à la fois.\n\n## Comment la repérer\n\n1. Cherchez une pièce ennemie **du mauvais côté de l'échiquier**.\n2. Comptez les cases où elle peut aller.\n3. Pour chaque case d'évasion, trouvez une pièce ou un pion à vous qui la contrôle ou la bloque.\n4. Approchez avec un coup à tempo (souvent un échec ou une menace) pour que le piège se ferme avant que la pièce ne puisse fuir.\n\nIci la dame noire en d5 se trouve devant son roi avec les tours blanches doublées sur les colonnes e et f. Les Blancs peuvent jouer des coups qui retirent systématiquement chaque case que la dame peut atteindre.\n\n> Une dame loin de chez elle n'est qu'un prisonnier coûteux."
     },
     {
       "type": "teach",
       "fen": "8/8/8/8/6Q1/8/r7/K1R5 w - - 0 1",
-      "title": "Cavaliers au bord",
-      "text": "Un cavalier au bord est sombre — et souvent condamné. Poussez les pions vers lui, bloquez ses cases avec vos pièces, et le cavalier n'a nulle part où aller. \"Cavalier au bord, avenir incertain\" — Tarrasch."
+      "title": "Cavaliers au bord et tours piégées",
+      "text": "Deux des motifs de piégeage les plus courants que vous verrez dans des parties réelles :\n\n## Le cavalier au bord\n\nUn cavalier sur la **colonne a** ou **h** ne contrôle que quatre cases au lieu des huit habituelles. Poussez les pions vers lui. Bloquez ses retraites. Amenez une pièce à côté. Fini.\n\n- **a4 + b5** contre un cavalier noir en a6 → le cavalier n'a plus de bonne case.\n- Un fou en c8 enfermé par ses propres pions, puis attaqué par un cavalier en a7.\n\n> *« Cavalier au bord, avenir incertain. »* — Tarrasch\n\n## La tour piégée\n\nLes tours enfoncées en territoire ennemi pour chasser un pion (a2, h2) sont souvent attrapées.\n\n- La tour capture un pion en a2.\n- Le roi adverse marche vers b1.\n- Une pièce (souvent un fou ou un cavalier) couvre la case d'évasion.\n- La tour est perdue.\n\n## Comment trouver le piège\n\n1. Identifiez la pièce ennemie **loin de chez elle**.\n2. Comptez ses cases d'évasion.\n3. Utilisez des **coups à tempo** (échecs, menaces) pour amener les attaquants sans donner à la pièce une chance de fuir.\n\n> Les pièces aventureuses ont besoin d'un propriétaire aventureux — et d'un adversaire inattentif."
     }
   ]
 }

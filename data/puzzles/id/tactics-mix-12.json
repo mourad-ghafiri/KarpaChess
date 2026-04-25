@@ -1,8 +1,11 @@
 {
   "id": "tactics-mix-12",
-  "fen": "4k3/5ppp/8/8/8/8/5PPP/3QK3 w - - 0 1",
+  "fen": "6k1/5ppp/8/8/8/8/5PPP/3QK3 w - - 0 1",
   "solution": [
-    "Qd8+"
+    "Qd8#"
   ],
-  "hint": "Skak raja di baris belakangnya."
+  "title": "Skakmat Baris Belakang",
+  "setup": "Raja Hitam di **g8** terkurung oleh bidaknya sendiri di f7, g7, h7 — perangkap maut **baris belakang** klasik.",
+  "hint": "Ketika raja lawan terkunci di belakang bidaknya sendiri di baris ke-8, geser buah berat ke baris belakang.",
+  "explanation": "## Idenya\n\nIni adalah **skakmat baris belakang** abadi — motif taktis paling umum di seluruh dunia catur. Raja Hitam terjebak di baris kedelapan oleh bidaknya sendiri, tanpa kotak pelarian.\n\nPutih bermain {{Qd8#}} — menteri meluncur sepanjang lajur d dan menyeberang untuk memberi skakmat.\n\n## Mengapa Ini Skakmat\n\nMari verifikasi bahwa Hitam **tidak punya** respons legal:\n\n- **Gerakan raja**: {{Kg8}} sudah berada di sana. Kotak sebelah: f7 (bidak sendiri), g7 (bidak sendiri), h7 (bidak sendiri), f8 (diserang menteri di d8 sepanjang baris ke-8), h8 (diserang menteri sepanjang baris ke-8).\n- **Memakan**: {{Kxd8}} — terlalu jauh, raja ada di g8.\n- **Memblokir**: tidak ada yang bisa memblokir — Hitam hanya punya bidak, dan tidak ada yang mencapai garis d8-g8.\n\nTidak ada jalan keluar. Skakmat.\n\n## Pola yang Harus Diingat\n\n> **Kelemahan baris belakang**: raja yang terjebak di belakang bidak yang belum digerakkan hanya satu skak buah berat dari skakmat.\n\n**Pelajaran defensif**: dalam permainan Anda sendiri, buatlah *luft* — dorong h3 atau g3 untuk memberi raja kotak pelarian. Satu gerakan bidak ini mencegah ribuan bencana baris belakang."
 }

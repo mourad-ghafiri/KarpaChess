@@ -1,38 +1,38 @@
 {
   "id": "the-fork",
   "title": "La fourchette",
-  "summary": "Attaquer deux pièces en même temps",
+  "summary": "Attaquer deux pièces à la fois",
   "difficulty": "beginner",
   "steps": [
     {
       "type": "teach",
       "fen": "8/8/2k5/3q4/8/8/2N1K3/8 w - - 0 1",
-      "title": "Fourchette royale",
-      "text": "Une fourchette attaque deux pièces en un seul coup. Le cavalier y est particulièrement doué — il saute d'une façon qu'aucune pièce ne peut bloquer. Ici, un seul coup de cavalier attaque à la fois le roi ET la dame."
+      "title": "La fourchette royale",
+      "text": "Une **fourchette** est un coup unique qui attaque deux pièces ennemies en même temps. L'adversaire ne peut en sauver qu'une — vous gardez l'autre.\n\n## Pourquoi le cavalier est le roi de la fourchette\n\nLe cavalier saute par-dessus les pièces, attaque huit cases depuis un poste central solide, et **aucune pièce ne peut intercepter son échec**. Ces traits font du cavalier le plus dangereux des fourcheurs.\n\n## La géométrie\n\nUn cavalier sur une case *X* couvre huit cases agencées comme les coins de deux rectangles entrelacés. Si deux cibles ennemies se trouvent sur l'une de ces huit cases, *X* est une case de fourchette.\n\n- Roi + dame sur une paire de cases du cavalier = **fourchette royale**\n- Roi + tour = **fourchette familiale**\n- Deux pièces non défendues = une fourchette gagnante\n\n## Comment la repérer\n\n1. Trouvez chaque pièce ennemie non défendue.\n2. Listez les cases qu'elle occupe *plus* celles du roi.\n3. Cherchez une case qui touche deux d'entre elles d'un seul saut.\n4. Vérifiez que la case de fourchette elle-même est sûre (ou que le gain dépasse la perte).\n\nIci, le cavalier blanc est à un saut de {{Nb4+}}, frappant à la fois le roi en c6 et la dame en d5.\n\n> Si vous ne deviez retenir qu'une chose en tactique, retenez ceci : *toute pièce non défendue est une fourchette qui couve.*"
     },
     {
       "type": "play",
       "fen": "8/8/2k5/3q4/8/8/2N1K3/8 w - - 0 1",
-      "prompt": "Jouez le cavalier pour fourcher le roi et la dame.",
+      "prompt": "Jouez **{{Nb4+}}** — le cavalier fourchette le roi et la dame d'un seul saut.",
       "targetSan": [
         "Nb4+"
       ],
-      "hint": "Nb4 attaque à la fois c6 et d5."
+      "hint": "Cherchez la case de cavalier qui touche à la fois *c6* et *d5*."
     },
     {
       "type": "teach",
       "fen": "4k3/8/8/4n3/8/8/8/Q3K3 w - - 0 1",
-      "title": "Fourchette de dame",
-      "text": "Les dames peuvent fourcher aussi — surtout avec échec. Quand l'adversaire DOIT répondre à l'échec, vous obtenez un coup gratuit pour prendre du matériel ailleurs."
+      "title": "Fourchette de dame avec échec",
+      "text": "Les cavaliers ne sont pas les seuls fourcheurs. La **dame** est une machine à fourcher à longue portée — surtout quand la fourchette s'accompagne d'un échec.\n\n## Pourquoi l'échec change tout\n\nUn échec est une réponse *forcée*. Pendant que l'adversaire est occupé à bouger son roi (ou à intercepter), la dame a déjà verrouillé sa seconde cible. L'adversaire n'a pas le tempo pour la défendre.\n\n- Fourchettes diagonale + colonne : la dame se place sur une case qui frappe le roi par un rayon et une pièce par un autre.\n- Menaces de mat + matériel : un coup d'apparence calme qui menace à la fois mat et pièce est une attaque double déguisée.\n\n## Comment la trouver\n\n1. Repérez un échec qui est aussi une *prise* ou qui *aligne* la dame avec une autre cible.\n2. Vérifiez que la case de fourchette est défendue ou inaccessible à l'adversaire.\n3. Calculez le nettoyage — *le roi peut-il se déplacer sur une case qui défend la seconde pièce ?*\n\nDans cette position, {{Qxe5+}} capture le cavalier **et** met le roi en e8 en échec sur la colonne e. Le roi bouge, les Blancs gagnent un cavalier.\n\n> Les fourchettes avec échec ne sont pas optionnelles pour le défenseur. C'est ce qui les rend imparables."
     },
     {
       "type": "play",
       "fen": "4k3/8/8/4n3/8/8/8/Q3K3 w - - 0 1",
-      "prompt": "Capturez le cavalier avec échec.",
+      "prompt": "Capturez le cavalier avec **{{Qxe5+}}** — l'échec fourchette le roi et empoche la pièce.",
       "targetSan": [
         "Qxe5+"
       ],
-      "hint": "La dame fond sur e5."
+      "hint": "Quelle prise aligne aussi la dame avec le roi ennemi ?"
     }
   ]
 }

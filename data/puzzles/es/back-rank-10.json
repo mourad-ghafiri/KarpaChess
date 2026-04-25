@@ -4,5 +4,8 @@
   "solution": [
     "Rd8+"
   ],
-  "hint": "Torre a la octava — la cobertura de peones no ayuda."
+  "title": "Los peones no salvan a este rey",
+  "setup": "Las negras han jugado {{g6}} buscando algo de luft — pero el rey está en g8 y la única salida es hacia una esquina.",
+  "hint": "{{Rd8+}} desplaza al rey. La ruta de escape es más corta de lo que las negras creen.",
+  "explanation": "## La idea\n\n{{Rd8+}} es decisivo aunque las negras hayan creado algo de aire con {{g6}}. El jaque obliga a mover el rey, y las opciones negras son catastróficas:\n\n### Tras Rd8+\n\n1. **¿Kh7?** Pierde con la torre continuando el asalto — las blancas se trasladan a la columna h y al rey se le acaban las casillas.\n2. **Kg7** — el rey intenta avanzar, pero la torre lo persigue por la séptima fila, hostigando al rey y a los peones.\n\nLa clave: **{{g6}} no fue suficiente luft** porque el rey sigue atado a la octava fila por sus propios peones de f7 y h7. La jugada del peón g solo habría servido si el rey realmente pudiera deslizarse a g7 *con seguridad* — y no puede, porque la torre blanca lo seguirá por la séptima u octava fila.\n\n### Patrón\n\n- *Medio luft* (un peón movido) es peor que nada de luft, porque tienta al rey hacia su muerte.\n- El verdadero luft significa que el rey tiene una casilla de huida **segura**, no solo vacía.\n\n> El luft trata sobre seguridad, no solo sobre espacio."
 }

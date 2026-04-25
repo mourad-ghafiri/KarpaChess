@@ -4,5 +4,8 @@
   "solution": [
     "Nxd5"
   ],
-  "hint": "Le cavalier gagne la dame."
+  "title": "Le Cavalier Attrape une Dame",
+  "setup": "La dame noire est en d5 — exactement à un saut de cavalier du cheval blanc en e3, sans défenseur en vue.",
+  "hint": "Depuis e3, comptez les cases du cavalier : un seul saut en L atterrit en d5. La dame est-elle défendue ?",
+  "explanation": "## L'Idée\n\nUne **dame détachée** est le cadeau le plus coûteux des échecs. Le cavalier en e3 peut aller en d5 en un coup (e3 → d5 est le L : colonne -1, rangée +2), et le roi noir en e8 est bien trop éloigné pour défendre.\n\nAprès {{Nxd5}}, les Blancs gagnent une dame contre rien.\n\n## Pourquoi les Noirs n'ont Aucune Défense\n\n- La dame en d5 n'a pas d'ami à proximité — le roi en e8 est à trois cases.\n- Le cavalier en e3 est **défendu** par le roi blanc en e1 (mais ça importe peu ici, car les Noirs n'ont aucune pièce pour reprendre).\n- Après la capture, le cavalier blanc trône fièrement en d5 sans suite nécessaire.\n\n## Schéma à Mémoriser\n\n> Vérifiez toujours le **rayon en L du cavalier** en regardant les pièces ennemies. Si un cavalier à un coup peut capturer une pièce non défendue, c'est le coup le plus fort de l'échiquier."
 }

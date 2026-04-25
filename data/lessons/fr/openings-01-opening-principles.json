@@ -8,57 +8,57 @@
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "Les trois lois",
-      "text": "Toute ouverture solide repose sur trois piliers : (1) contrôler le centre, (2) développer vos pièces rapidement, (3) mettre votre roi en sécurité. Pratiquons les trois."
+      "text": "Toute grande ouverture — de l'italienne à la sicilienne — repose sur les trois mêmes piliers. Maîtrisez-les et vous n'aurez jamais de *mauvaise* ouverture, même dans une position que vous n'avez jamais vue.\n\n## Les trois lois de l'ouverture\n\n1. **Contrôlez le centre.** Les quatre cases **d4, e4, d5, e5** sont l'immobilier le plus précieux de l'échiquier. Les pièces qui les contrôlent rayonnent ; les autres sont spectatrices.\n2. **Développez vos pièces rapidement.** Sortez chaque pièce mineure (cavaliers, fous) de la dernière rangée dans les 8 à 10 premiers coups. *Ne déplacez pas* la même pièce deux fois sans nécessité.\n3. **Mettez votre roi à l'abri.** Roquez avant le 10e coup. Un roi au centre est un roi en danger.\n\nUne séquence modèle : {{e4}} {{e5}} {{Nf3}} {{Nc6}} {{Bc4}} {{Bc5}} {{O-O}}. Les Blancs ont déjà tout fait — un pion au centre, deux pièces développées, le roi à l'abri.\n\n> Développez avec un but. Roquez sans tarder. Le milieu de partie commence là où s'arrêtent les principes d'ouverture."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "prompt": "Commencez par pousser un pion central. Jouez e4 ou d4.",
+      "prompt": "Plantez votre étendard avec un pion central — jouez **{{e4}}** ou **{{d4}}**.",
       "targetSan": [
         "e4",
         "d4"
       ],
-      "hint": "Les pions centraux réclament l'espace et ouvrent des lignes pour vos pièces."
+      "hint": "Les deux coups occupent une case centrale et ouvrent les lignes de deux pièces (la dame et un fou) d'un seul mouvement. Le principe le moins coûteux du premier coup."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
-      "title": "Développez maintenant",
-      "text": "Les pions d'abord — puis les pièces. Les cavaliers avant les fous. Les cavaliers vers le centre (f3, c3) attaquent chacun quatre cases centrales."
+      "title": "Place au développement",
+      "text": "Les pions posent les fondations ; aux pièces d'entrer en scène.\n\n## L'ordre du développement\n\n- **Les pions d'abord** — mais seulement les centraux, juste pour ouvrir les lignes.\n- **Les cavaliers avant les fous.** Les cavaliers ont moins de bonnes cases (souvent f3, c3 ou f6, c6), il faut donc les sortir tôt pour s'engager moins.\n- **Les fous sur des cases actives.** Ils veulent des diagonales qui frappent le camp adverse.\n- **La dame en dernier parmi les pièces mineures.** Trop précieuse pour s'exposer tôt.\n- **Les tours en tout dernier** — elles achèvent le développement en occupant les colonnes ouvertes.\n\nPourquoi les cavaliers d'abord ? Parce que **{{Nf3}}** fait triple emploi : développe une pièce, attaque le pion e5 et prépare le roque. Peu de coups accomplissent autant.\n\n> Faites jouer chaque pièce une fois avant d'en bouger une deux fois."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
-      "prompt": "Développez un cavalier vers le centre.",
+      "prompt": "Développez un cavalier vers le centre — **{{Nf3}}** est le choix classique (il attaque e5), ou **{{Nc3}}** convient aussi.",
       "targetSan": [
         "Nf3",
         "Nc3"
       ],
-      "hint": "Nf3 et Nc3 touchent tous deux quatre cases centrales."
+      "hint": "Les deux coups amènent un cavalier dans le jeu. Lequel attaque aussi le pion e5 noir ?"
     },
     {
       "type": "teach",
       "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
       "title": "Les fous ensuite",
-      "text": "Avec les deux cavaliers sortis, développez les fous sur des cases actives. Bc4 vise la case faible f7 — le point le plus vulnérable dans le camp noir en ouverture."
+      "text": "Les deux cavaliers ont leur place en f3 et c3 (ou c4 dans certaines ouvertures). Place aux fous.\n\n## Choisir la maison du fou\n\n- **{{Bc4}}** — la version *partie italienne*. Le fou vise f7, la case la plus vulnérable du camp noir, défendue par le seul roi.\n- **{{Bb5}}** — la version *Ruy Lopez*. Pression sur le cavalier c6 (qui défend e5) — la plus ancienne ouverture sérieuse des échecs.\n- **{{Bd3}}** — solide mais bloque le pion d. Fréquent dans les systèmes 1.d4.\n- **{{Be2}}** — modeste mais flexible. Le fou soutient une attaque ultérieure à l'aile roi.\n\nNotez que les Noirs ont copié avec {{Nc6}}. La symétrie est acceptable quelques coups — celui qui la rompt utilement obtient souvent l'avantage.\n\n> Un fou avec une cible en vaut deux sans cible."
     },
     {
       "type": "play",
       "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
-      "prompt": "Développez le fou de cases claires sur une case active.",
+      "prompt": "Développez votre fou de cases claires. **{{Bc4}}** est la version classique italienne — il fixe f7.",
       "targetSan": [
         "Bc4",
         "Bb5",
         "Bd3",
         "Be2"
       ],
-      "hint": "Bc4 est le choix classique — droit sur f7."
+      "hint": "Où le pion f7 noir a-t-il besoin d'être défendu ? Un fou en c4 frappe précisément cette case."
     },
     {
       "type": "teach",
       "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
-      "title": "Sécurité du roi",
-      "text": "Deux pièces sorties de chaque côté est un bon moment pour roquer. Le roque met le roi dans un coin et relie vos tours. Faites-le avant de lancer des attaques."
+      "title": "La sécurité du roi",
+      "text": "Deux pièces mineures sorties, le centre revendiqué, les lignes ouvertes — c'est le moment idéal pour **roquer**.\n\nLe roque accomplit trois choses en un coup :\n\n- Met le roi à l'abri dans un coin, derrière un mur de pions\n- Connecte les tours (elles peuvent désormais se défendre mutuellement sur la dernière rangée)\n- Amène une tour vers le centre — souvent en f1 ou d1, où elle contrôle une colonne semi-ouverte\n\n## Une petite check-list avant de roquer\n\n- Le **pion f** est-il toujours sur sa case d'origine ? (Le bouger fragilise le roi roqué.)\n- Y a-t-il des **menaces immédiates** à parer d'abord ?\n- Vais-je roquer du **même côté** que mon adversaire (jeu positionnel) ou du **côté opposé** (combat tranchant à la tempête de pions) ?\n\nDepuis la position ci-dessus, la suite naturelle est {{O-O}}. Vous penserez ensuite à la colonne d, à la rupture c, et à des coups de tour actifs.\n\n> Roquez tôt, roquez à l'heure, et le milieu de partie s'ouvre avec vous en pleine forme."
     }
   ]
 }

@@ -4,5 +4,8 @@
   "solution": [
     "Rxd2+"
   ],
-  "hint": "Tusuk sate — menangkan menteri."
+  "title": "Menteri Lengket pada Rajanya",
+  "setup": "Menteri hitam di **d2** menyimpang di depan benteng putih, dengan rajanya di belakangnya di d8.",
+  "hint": "Saat buah lawan menutup garis ke rajanya sendiri, buah itu terpaku — serbu.",
+  "explanation": "## Idenya\n\nMeskipun beberapa orang menyebut ini \"sate (skewer)\", secara teknis ini adalah **pakuan absolut**: menteri hitam di d2 berdiri antara benteng putih di d1 dan raja hitam di d8. Dia tidak bisa pindah tanpa menyingkap rajanya.\n\nPutih memainkan {{Rxd2+}}, mengambil menteri dengan skak.\n\n- {{Kxd2}}? Raja di d8, enam petak jauhnya — mustahil.\n- Hitam harus memindahkan raja: {{Kc7}}, {{Kc8}}, {{Ke7}}, {{Ke8}}, atau {{Kd7}}. Petak pelarian apa pun bekerja karena benteng tidak terlindungi dan jauh.\n- Menteri hilang tanpa imbalan.\n\n## Pola untuk Diingat\n\n> Geometri pakuan: **penyerang — target — pembela (raja)** di garis yang sama.\n> Geometri sate: **penyerang — raja — target** di garis yang sama.\n\nDi sini raja *di belakang* menteri, jadi ini pakuan. Apa pun caranya, hasilnya sama: material gratis."
 }

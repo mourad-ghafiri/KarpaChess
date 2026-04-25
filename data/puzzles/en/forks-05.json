@@ -4,5 +4,8 @@
   "solution": [
     "Nxd5"
   ],
-  "hint": "Knight wins the queen."
+  "title": "The Knight Snags a Queen",
+  "setup": "Black's queen sits on d5 — exactly one knight-leap from White's e3 horse, with no defender in sight.",
+  "hint": "From e3, count the knight squares: a single L-jump lands on d5. Is the queen defended?",
+  "explanation": "## The Idea\n\nA **loose queen** is the most expensive gift in chess. The knight on e3 can step to d5 in one move (e3 → d5 is the L-shape: file -1, rank +2), and Black's king on e8 is far too distant to defend.\n\nAfter {{Nxd5}}, White is up a queen for a pawn-shaped sliver of nothing.\n\n## Why Black Has No Defense\n\n- The queen on d5 has no friend nearby — the king on e8 is three squares away.\n- The knight on e3 is **defended** by White's king on e1 (although that doesn't matter here, since Black has no piece to recapture with).\n- After the capture, White's knight sits proudly on d5 with no follow-up needed.\n\n## Pattern to Memorize\n\n> Always check the **knight's L-radius** when looking at enemy pieces. If a knight one move away can capture an undefended piece, that's the strongest move on the board."
 }

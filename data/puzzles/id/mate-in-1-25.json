@@ -4,5 +4,8 @@
   "solution": [
     "Ra8#"
   ],
-  "hint": "Skakmat baris belakang dengan oposisi raja."
+  "title": "Oposisi dan Sapuan",
+  "setup": "Raja-raja Anda berdiri dalam **oposisi** di lajur e, dan benteng menunggu di baris ke-7 untuk pamungkas.",
+  "hint": "Angkat benteng ke baris ke-8 — raja Anda di **e6** menahan {{d7}}, {{e7}} dan {{f7}}.",
+  "explanation": "## Idenya\n\nIni adalah posisi **skakmat K+R vs K** dasar yang diajarkan di setiap buku. Raja-raja saling berhadapan dalam oposisi; benteng memberi skakmat dari jauh.\n\nMainkan {{Ra8#}}.\n\nMengapa raja terjebak?\n\n- {{d8}} dan {{f8}} — dikuasai benteng di a8 (baris ke-8)\n- {{d7}}, {{e7}}, {{f7}} — semua dikuasai raja Anda di **e6**\n- Benteng di a8 terlalu jauh untuk {{Kxa8}}\n- Tidak ada yang bisa menghalangi di baris ke-8\n\n> **Pelajaran:** Hafalkan pola persis ini: raja-raja dalam oposisi + benteng di baris yang sama = skakmat. Itulah tujuan dari hampir setiap akhir K+R vs K."
 }

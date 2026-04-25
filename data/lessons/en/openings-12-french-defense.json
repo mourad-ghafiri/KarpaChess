@@ -8,31 +8,31 @@
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
       "title": "A Different Philosophy",
-      "text": "The French (1...e6) concedes center space but builds a granite pawn chain. Black plans ...d5, ...c5, and ...Nc6 to undermine White's center."
+      "text": "The **French Defense** is the strategist's reply to 1.e4. With **1...e6**, Black announces: *I will not fight you symmetrically. I will build a wall, and behind it I will counter-attack.*\n\nNamed after a 19th-century correspondence match between London and Paris (Paris won), it's the choice of legends like **Botvinnik**, **Petrosian**, **Korchnoi**, and **Morozevich**.\n\n## The defining sequence\n\nThe canonical line is {{e4}} {{e6}} {{d4}} {{d5}}. White has the bigger center for the moment, but Black is about to challenge it directly with **...d5**.\n\n## What each side wants\n\n- **White's plan:** advance with {{e5}} (Advance Variation), exchange with {{exd5}} (Exchange), or develop with {{Nc3}} or {{Nd2}} (Classical / Tarrasch). Each leads to a different battle.\n- **Black's plan:** target White's d4 pawn with **...c5**, develop the queen's knight to **...Nc6**, fianchetto the b8 knight via **...Nd7-...Nb6** in some lines, and exchange the bad bishop. Counter-attack the center with **...f6** if White plays e5.\n- **Pawn structure:** characteristic French chains — White's pawns at d4-e5 vs Black's at d5-e6, locked in a *closed pawn chain*. Each side attacks the *base* of the enemy chain.\n\n## The French paradox\n\nThe one big problem: Black's **light-squared bishop on c8** gets hemmed in behind the e6 pawn. Solving (or accepting) the *bad French bishop* is the strategic theme of the entire opening.\n\n> The French isn't passive. It's a coiled spring waiting to strike."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
-      "prompt": "1...e6 — French setup.",
+      "prompt": "Play the French setup with **{{e6}}** — preparing **...d5** with a granite pawn chain.",
       "targetSan": [
         "e6"
       ],
-      "hint": "Prepares ...d5 on move 2."
+      "hint": "Don't push e5 (that would be 1...e5). Instead, prepare a Knight-supported ...d5 with a small but rugged pawn move."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
-      "prompt": "White plays 2.d4 — claim the center.",
+      "prompt": "White claims the full center with **{{d4}}** — building the big pawn duo.",
       "targetSan": [
         "d4"
       ],
-      "hint": "Build the big center."
+      "hint": "If you don't play d4, Black gets to challenge with ...d5 first. Stake your maximum center."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/ppp2ppp/4p3/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
       "title": "The Blocked Center",
-      "text": "After 2...d5, White must decide: Advance (e5, gain space but block the center), Exchange (exd5, simplify), or Classical (Nc3, tactical). The French teaches you to play with AND against pawn chains."
+      "text": "After **2...d5**, the moment of truth arrives. White must commit to a setup, and each one creates a different game.\n\n## The four major variations\n\n- **Advance Variation** — **3.e5**. White locks the center, gains space, but the c8 bishop comes alive after **...Bd7-...Bb5** or via **...c5** breaks. Black plans **...c5**, **...Nc6**, **...Qb6**, **...Nge7**.\n- **Exchange Variation** — **3.exd5 exd5**. Symmetrical and quiet — historically considered drawish, but White can play for a small edge with c4 breaks.\n- **Classical Variation** — **3.Nc3 Nf6 4.e5 Nfd7** (or **4.Bg5**). White keeps options open and Black accepts a cramped position with strong defensive resources.\n- **Tarrasch Variation** — **3.Nd2**. White avoids the **...Bb4** pin and prepares c3 + Ngf3 + Bd3. Quiet but flexible.\n\n## The French pawn-break dance\n\n- **White plays {{f4}}-{{f5}}** to challenge the e6 pawn (base of Black's chain).\n- **Black plays {{c5}}** — and later **...f6** — to challenge d4 and e5 (base of White's chain).\n\nWhoever wins the pawn-chain race wins the middlegame.\n\n> The French teaches you to think in *chains*, not in *pieces*. Master that, and your positional vision triples."
     }
   ]
 }

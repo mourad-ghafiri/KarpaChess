@@ -4,5 +4,8 @@
   "solution": [
     "Re8#"
   ],
-  "hint": "Rook invasion — note the eventual defender removal."
+  "title": "Two Rooks, One Open File",
+  "setup": "Two rooks on the **1st rank**, two pawns guarding the corner — one of those pawns is an illusion of safety.",
+  "hint": "Take the **e-file** to the back rank — the corner pawns lock the king instead of helping him.",
+  "explanation": "## The Idea\n\nA pure **back-rank mate** with a touch of redundancy: the second rook on **a1** isn't strictly needed, but it removes any doubt that the back rank stays sealed if Black tries something clever.\n\nPlay {{Re8#}}.\n\nWhy is the king stuck?\n\n- {{g8}}, {{f8}} and the rest of the 8th rank — all controlled by the rook on e8\n- {{g7}} and {{h7}} — both blocked by Black's own pawns\n- The king cannot capture: e8 is too far from h8\n- Black has no pieces left to interpose between e8 and h8\n\n> **Takeaway:** When you have two rooks and the enemy back rank is bare, pick *any* file that lands on the rank — the rook on the safer file usually wins. Always double-check escape squares before committing."
 }

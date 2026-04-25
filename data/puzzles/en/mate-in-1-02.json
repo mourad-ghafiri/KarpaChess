@@ -4,5 +4,8 @@
   "solution": [
     "Ra8#"
   ],
-  "hint": "Look at the back rank — no escape squares."
+  "title": "Back-Rank Bedrock",
+  "setup": "Black's king is hiding behind **f7**, **g7** and **h7** — pawns that have become a wall.",
+  "hint": "The 8th rank is wide open and Black's pawns have not made an escape window on {{h6}} or {{g6}}.",
+  "explanation": "## The Idea\n\nThis is the textbook **back-rank mate**. The rook slides into the corner and the king cannot escape because his own pawns block every flight square.\n\nPlay {{Ra8#}}.\n\nWhy is the king stuck?\n\n- {{f7}}, {{g7}}, {{h7}} — all blocked by Black's own pawns\n- {{f8}} and {{h8}} — both swept by the rook on a8\n- No piece is left to interpose between a8 and g8\n\n> **Takeaway:** The price of safety is one tempo — a single pawn move (h6, g6, or f6) opens an air hole and prevents this disaster. Train your eye to spot this skeleton in every game."
 }

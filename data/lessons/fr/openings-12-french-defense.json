@@ -1,38 +1,38 @@
 {
   "id": "french-defense-deep",
   "title": "La défense française",
-  "summary": "Une chaîne de pions solide avec du potentiel de contre-attaque",
+  "summary": "Une chaîne de pions solide avec un potentiel de contre-attaque",
   "difficulty": "intermediate",
   "steps": [
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
-      "title": "Une philosophie différente",
-      "text": "La française (1...e6) concède de l'espace central mais construit une chaîne de pions granitique. Les Noirs prévoient ...d5, ...c5 et ...Nc6 pour saper le centre blanc."
+      "title": "Une autre philosophie",
+      "text": "La **défense française** est la réponse du stratège à 1.e4. Avec **1...e6**, les Noirs annoncent : *je ne vais pas te combattre en symétrie. Je vais bâtir un mur, et derrière, je contre-attaquerai.*\n\nNommée d'après un match par correspondance du XIXe siècle entre Londres et Paris (Paris l'emporta), c'est le choix de légendes comme **Botvinnik**, **Petrosian**, **Kortchnoï** et **Morozevitch**.\n\n## La séquence définissante\n\nLa ligne canonique est {{e4}} {{e6}} {{d4}} {{d5}}. Les Blancs ont le centre le plus large pour le moment, mais les Noirs sont sur le point de le défier directement par **...d5**.\n\n## Ce que veut chaque camp\n\n- **Plan blanc :** avancer par {{e5}} (variante d'avance), échanger par {{exd5}} (variante d'échange), ou développer par {{Nc3}} ou {{Nd2}} (classique / Tarrasch). Chacun mène à une bataille différente.\n- **Plan noir :** viser le pion d4 par **...c5**, développer le cavalier dame en **...Nc6**, faire transiter le cavalier b8 par **...Nd7-...Nb6** dans certaines lignes, et échanger le mauvais fou. Contre-attaquer le centre par **...f6** si les Blancs jouent e5.\n- **Structure de pions :** chaînes typiques de la française — pions blancs en d4-e5 contre pions noirs en d5-e6, verrouillés en *chaîne fermée*. Chaque camp attaque la *base* de la chaîne adverse.\n\n## Le paradoxe français\n\nUn gros problème : le **fou de cases claires noir en c8** se retrouve enfermé derrière le pion e6. Résoudre (ou accepter) le *mauvais fou français* est le thème stratégique de toute l'ouverture.\n\n> La française n'est pas passive. C'est un ressort comprimé qui n'attend qu'un instant pour bondir."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
-      "prompt": "1...e6 — mise en place française.",
+      "prompt": "Adoptez le dispositif français avec **{{e6}}** — préparant **...d5** avec une chaîne de pions de granit.",
       "targetSan": [
         "e6"
       ],
-      "hint": "Prépare ...d5 au coup 2."
+      "hint": "Ne poussez pas e5 (ce serait 1...e5). Préparez plutôt un ...d5 soutenu par les pions, par un petit coup de pion robuste."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppp1ppp/4p3/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
-      "prompt": "Les Blancs jouent 2.d4 — réclament le centre.",
+      "prompt": "Les Blancs revendiquent tout le centre avec **{{d4}}** — construisant le grand duo de pions.",
       "targetSan": [
         "d4"
       ],
-      "hint": "Construisez le grand centre."
+      "hint": "Si vous ne jouez pas d4, les Noirs défieront les premiers par ...d5. Plantez un centre maximal."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/ppp2ppp/4p3/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3",
       "title": "Le centre bloqué",
-      "text": "Après 2...d5, les Blancs doivent choisir : avance (e5, gagner de l'espace mais bloquer le centre), échange (exd5, simplifier) ou classique (Nc3, tactique). La française apprend à jouer AVEC et CONTRE les chaînes de pions."
+      "text": "Après **2...d5**, le moment de vérité arrive. Les Blancs doivent s'engager dans un dispositif, et chacun crée une partie différente.\n\n## Les quatre grandes variantes\n\n- **Variante d'avance** — **3.e5**. Les Blancs verrouillent le centre, gagnent de l'espace, mais le fou c8 prend vie après **...Bd7-...Bb5** ou via les ruptures **...c5**. Plan noir : **...c5**, **...Nc6**, **...Qb6**, **...Nge7**.\n- **Variante d'échange** — **3.exd5 exd5**. Symétrique et tranquille — historiquement réputée nulle, mais les Blancs peuvent jouer pour un petit avantage avec des ruptures c4.\n- **Variante classique** — **3.Nc3 Nf6 4.e5 Nfd7** (ou **4.Bg5**). Les Blancs gardent leurs options ouvertes ; les Noirs acceptent une position à l'étroit avec de fortes ressources défensives.\n- **Variante Tarrasch** — **3.Nd2**. Les Blancs évitent le clouage **...Bb4** et préparent c3 + Ngf3 + Bd3. Calme mais souple.\n\n## La danse des ruptures de pions\n\n- **Les Blancs jouent {{f4}}-{{f5}}** pour défier le pion e6 (base de la chaîne noire).\n- **Les Noirs jouent {{c5}}** — puis plus tard **...f6** — pour défier d4 et e5 (base de la chaîne blanche).\n\nQui gagne la course aux ruptures gagne le milieu de partie.\n\n> La française vous apprend à penser en *chaînes*, pas en *pièces*. Maîtrisez cela et votre vision positionnelle triplera."
     }
   ]
 }

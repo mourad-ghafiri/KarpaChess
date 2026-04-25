@@ -1,8 +1,12 @@
 {
   "id": "tactics-mix-06",
-  "fen": "4k3/8/8/8/8/3BN3/8/4K3 w - - 0 1",
+  "fen": "4k3/8/2N5/4q3/B7/8/8/4K3 w - - 0 1",
   "solution": [
-    "Nc4+"
+    "Nxe5+",
+    "Kd8"
   ],
-  "hint": "El caballo se mueve — ¿qué hace el alfil?"
+  "title": "Jaque a la Descubierta Gana la Dama",
+  "setup": "Un caballo blanco en **c6** está entre el alfil blanco en a4 y el rey negro en e8. La dama negra se ha estacionado en e5 — justo en el salto del caballo.",
+  "hint": "Cuando tu pieza se mueve y revela un jaque de la pieza de atrás — eso es jaque a la descubierta. Úsalo para capturar gratis.",
+  "explanation": "## La idea\n\nEsto es un **jaque a la descubierta** combinado con una captura. El caballo en c6 bloquea al alfil en a4 para dar jaque por la diagonal a4-e8. Cuando el caballo se mueve, el jaque del alfil queda **descubierto**.\n\nLas blancas juegan {{Nxe5+}} — el caballo captura la dama *y* destapa el jaque del alfil.\n\n## La respuesta forzada de las negras\n\nLas negras deben responder al **jaque del alfil** (no al caballo, que ya se movió). Jugadas legales del rey:\n\n- {{Kd8}} — segura; el alfil en a4 solo da jaque por la línea a4-e8, y d8 está fuera de esa diagonal.\n- {{Kf8}} — también escapa de la diagonal.\n- {{Ke7}} — la diagonal del alfil va a4-b5-c6-d7-e8, así que e7 es segura.\n\nLas negras no pueden capturar el caballo en e5 (el rey en e8 está demasiado lejos) ni interponerse al jaque del alfil (no quedan piezas menores).\n\n## Patrón a memorizar\n\n> Jaque a la descubierta = **dos amenazas en una jugada**. La pieza que se mueve puede capturar o amenazar cualquier cosa, mientras que el rey debe atender primero el jaque de la pieza que no se movió.\n\nSiempre que veas una batería — tu alfil/torre/dama alineados con el rey enemigo y una de *tus* piezas tapando — busca cómo mover la pieza tapadora a una casilla que gane material. El defensor no puede responder a ambos ataques."
 }

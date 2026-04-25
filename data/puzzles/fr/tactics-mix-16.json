@@ -4,5 +4,8 @@
   "solution": [
     "Bxc6+"
   ],
-  "hint": "Échangez et abîmez la structure des Noirs."
+  "title": "Abîmer la structure des Noirs",
+  "setup": "Le fou blanc en **b5** cloue le cavalier en c6 contre — eh bien, contre rien de particulier. Il est temps d'échanger.",
+  "hint": "L'échange espagnol : le fou prend le cavalier, doublant les pions c des Noirs et créant des faiblesses durables.",
+  "explanation": "## L'idée\n\nVoici un **échange espagnol (Ruy López)** d'école. Le fou blanc en b5 s'échange contre le cavalier noir en c6, avec deux avantages clairs.\n\nLes Blancs jouent {{Bxc6+}}.\n\n## Avec quoi Noir reprend\n\nNoir doit parer l'échec (le fou en c6 attaque le roi en e8 le long de la diagonale a4-e8). Trois réponses sont possibles :\n\n- {{bxc6}} — le pion b prend. **Le plus courant.** Cela **double les pions c des Noirs** (c7 et c6), créant une faiblesse structurelle durable.\n- {{dxc6}} — le pion d prend. Cela ouvre la colonne d mais double aussi les pions c, juste de manière moins gênante.\n- Bloquer ? Rien n'atteint d7 proprement (la dame et le fou sont bloqués).\n\n## Pourquoi cet échange est stratégique\n\nLes pions doublés sont **structurellement faibles** :\n\n- Ils ne peuvent pas se défendre l'un l'autre (l'un est devant l'autre).\n- Ils contrôlent moins de cases que deux pions adjacents.\n- Ils créent des **colonnes semi-ouvertes** pour les tours adverses.\n\nLe matériel est égal (fou contre cavalier = 3 contre 3), mais Blanc a remporté la bataille *positionnelle*.\n\n## Schéma à mémoriser\n\n> Les échanges qui **abîment la structure de pions adverse** valent autant que les échanges qui gagnent du matériel — parfois plus.\n\nC'est l'âme des échecs stratégiques : de petits avantages permanents accumulés sur de nombreux coups."
 }

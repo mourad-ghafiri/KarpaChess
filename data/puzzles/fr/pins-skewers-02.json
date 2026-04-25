@@ -4,5 +4,8 @@
   "solution": [
     "Bxh1"
   ],
-  "hint": "La tour n'est pas défendue sur la grande diagonale."
+  "title": "Balayage de la grande diagonale",
+  "setup": "Un fou blanc en **f3** lorgne sur la grande **diagonale a8-h1** une tour noire sans défense.",
+  "hint": "Cherchez les pièces non défendues sur les diagonales de votre fou — collecteurs à longue portée.",
+  "explanation": "## L'idée\n\nVoici un schéma simple mais vital : une **pièce non défendue (en l'air)** sur une grande diagonale. Le fou en f3 voit jusqu'à h1, où la tour noire est isolée sans défenseur ami à proximité.\n\nLes Blancs jouent {{Bxh1}} et empochent simplement la tour.\n\n- Le roi noir est en d5, beaucoup trop loin pour reprendre.\n- Aucune pièce noire ne défend h1.\n- La tour ne peut pas s'écarter **avant** le coup blanc — Blanc a le trait.\n\n## Schéma à mémoriser\n\n> Les pièces en l'air tombent — la règle **LPDO** (Loose Pieces Drop Off).\n\nAvant chaque coup, balayez les lignes ouvertes de votre fou et de votre tour à la recherche de pièces ennemies sans défenseur. Ce sont des points gratuits à ramasser."
 }

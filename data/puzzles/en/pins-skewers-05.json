@@ -4,5 +4,8 @@
   "solution": [
     "Rxe6+"
   ],
-  "hint": "Pinned on the e-file."
+  "title": "Long-Range Pin",
+  "setup": "A white rook on **e1** lines up with the black queen on **e6** and the black king on **e8** — three pieces, one file.",
+  "hint": "If you see your rook, an enemy piece, and the enemy king all on the same file, look for a pin.",
+  "explanation": "## The Idea\n\nThis is an **absolute pin** stretched across the entire e-file. The black queen on e6 cannot legally move — doing so would put her own king in check from the white rook on e1.\n\nWhite plays {{Rxe6+}}, capturing the queen.\n\n- The rook on e6 is now far from the black king, so {{Kxe6}} is impossible (king is on e8, two squares away).\n- Black must move the king: {{Kd7}}, {{Kf7}}, {{Kd8}}, {{Kf8}}, or {{Ke7}} (but Ke7 would still be check from the rook? No — once the queen is gone, the rook on e6 attacks e7 directly, so {{Ke7}} is illegal).\n- White finishes a clear queen up.\n\n## Pattern to Memorize\n\n> The ideal pin: long-range attacker, valuable enemy piece, enemy king — all on one line, no defender.\n\nWhen you spot this geometry, the capture is almost always the right move."
 }

@@ -4,5 +4,8 @@
   "solution": [
     "Qxe5+"
   ],
-  "hint": "Tangkap dengan skak — kudanya tidak terlindungi."
+  "title": "Kuda Gratis, Skak Gratis",
+  "setup": "Kuda Hitam di e5 berdiri tanpa pembela di lajur yang sama dengan raja.",
+  "hint": "Menteri menembus lajur e. Memakan kuda juga memberi skak.",
+  "explanation": "## Idenya\n\nIni bukan garpu dalam arti ketat — ini adalah **bidak lepas** yang ditangkap dengan **tempo**. Kuda di e5 tanpa pembela, dan menteri putih di a1 bisa mencapainya dengan {{Qxe5+}}.\n\nTanda `+` itulah yang membuat langkah ini bebas risiko: karena menteri mendarat di lajur yang sama dengan raja Hitam, ia memberi skak saat menangkap. Hitam harus menangani skak sebelum melakukan apa pun, jadi tidak ada waktu menghukum menteri putih yang menggantung — lagi pula, raja di e8 terlalu jauh dari e5 untuk memakan balik.\n\n## Mengapa Hitam Tidak Punya Apa-apa\n\n- **Tangkap menteri?** {{Kxe5}} mengharuskan raja melompat tiga kotak — ilegal.\n- **Blokir skak?** Tidak ada bidak Hitam yang tersisa untuk masuk di antara.\n- **Lari?** Raja harus meninggalkan lajur e (Kd7, Kf7, Kd8, Kf8), tetapi kudanya sudah hilang.\n\n## Pola yang Harus Diingat\n\n> Bidak lepas di **garis yang sama dengan rajanya** sering bisa diambil dengan skak. Skak membeli Anda tempo untuk menyimpan bidak yang ditangkap."
 }

@@ -4,5 +4,8 @@
   "solution": [
     "Qc8"
   ],
-  "hint": "Amenaza Dxf8 — desvía al defensor."
+  "title": "Desviar al defensor",
+  "setup": "El rey negro está dentro del ataúd del muro de peones, y la torre en f8 es su único defensor. La dama blanca apunta a ese defensor con mate detrás.",
+  "hint": "{{Qc8}} amenaza **mate por captura**. El defensor tiene que moverse — y no hay buena casilla.",
+  "explanation": "## La idea\n\n{{Qc8}} clava la torre negra con una amenaza letal: {{Qxf8#}}. Este es el motivo de **desviación** en su forma más afilada.\n\n### Por qué las negras están perdidas\n\n1. La dama en c8 amenaza a la torre en f8.\n2. Si las negras mueven la torre, **la última fila queda abierta de par en par** para {{Qxf8#}} o cualquier ejecución por la última fila.\n3. Si las negras intentan defender la torre, ninguna pieza puede hacerlo — no quedan piezas menores negras.\n\n### Intentos defensivos negros\n\n- **¿Rxc8?** No — la torre está en f8, fuera del alcance de c8.\n- **¿Mover la torre fuera de la octava fila?** El rey cae al mate.\n- **¿Empujar un peón para luft?** Demasiado lento; las blancas juegan {{Qxf8+}} de inmediato.\n\n### El patrón\n\n- *Ataca al único defensor*. Sea por captura, ataque o clavada, eliminar al defensor de la última fila es la receta universal.\n- La dama es la pieza perfecta para desviar porque amenaza a larga distancia y la última fila al mismo tiempo.\n\n> Encuentra al defensor. Amenaza al defensor. El mate se escribe solo."
 }

@@ -4,5 +4,8 @@
   "solution": [
     "Rxe7+"
   ],
-  "hint": "La dame est collée au roi par la colonne e — prenez-la."
+  "title": "Pointe sur la colonne e",
+  "setup": "Les deux rois sont sur la **colonne e**, avec la dame noire coincée entre son roi et la tour blanche en e2.",
+  "hint": "Quand la dame protège son roi, elle devient une cible immobile.",
+  "explanation": "## L'idée\n\nClouage absolu classique : la dame noire en e7 ne peut pas bouger, car cela exposerait le roi en e8 à un échec de la tour blanche en e2.\n\nLes Blancs jouent {{Rxe7+}}, récoltant la dame.\n\n- {{Kxe7}} est l'unique réponse légale — le roi doit prendre la tour, puisque rien d'autre ne peut bloquer ou parer l'échec.\n- Bilan matériel après l'échange : Blanc cède une tour (5) et gagne une dame (9). Net **+4** points.\n\n## Schéma à mémoriser\n\n> Une pièce clouée n'est pas vraiment une pièce — c'est une **cible**.\n\nDemandez-vous toujours : *« Y a-t-il une pièce adverse sur la même colonne, rangée ou diagonale que son roi ? »* Si oui, vous avez peut-être un clouage. Empilez les attaquants sur la pièce clouée et le matériel vous tombe dans le bec."
 }

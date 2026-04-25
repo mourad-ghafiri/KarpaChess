@@ -1,8 +1,11 @@
 {
   "id": "forks-08",
-  "fen": "3k4/8/8/8/4Q3/8/8/4K3 w - - 0 1",
+  "fen": "r3k3/8/8/1N6/8/8/8/4K3 w - - 0 1",
   "solution": [
-    "Qe8+"
+    "Nc7+"
   ],
-  "hint": "Échec — le roi doit quitter la colonne d."
+  "title": "Fourchette Familiale",
+  "setup": "Le roi noir est en e8 avec une tour à la maison en a8 — la géométrie classique de la fourchette de cavalier.",
+  "hint": "Il y a une case du cavalier qui attaque **à la fois** le roi et la tour en même temps.",
+  "explanation": "## L'Idée\n\nLe cavalier est la seule pièce qui peut frapper un roi et une tour de coin sur la même rangée. Depuis b5, la case magique est :\n\n- {{Nc7+}} — fait échec au roi en e8 *et* attaque la tour en a8.\n\n### Pourquoi les Noirs perdent du matériel\n\n1. L'échec force un coup de roi — les Noirs ne peuvent l'ignorer.\n2. Le roi ne peut capturer le cavalier (e8 à c7 fait deux cases — les rois bougent d'une case).\n3. Les échecs au cavalier ne sont jamais blocables.\n4. Après la fuite du roi, {{Nxa8}} prend la tour gratuitement.\n\nC'est la **fourchette familiale** — tout débutant devrait apprendre le motif de la case c7. Cherchez-la chaque fois que le roi ennemi est en e8 ou e1 avec une tour dans le coin.\n\n> Le cavalier adore les cases c7 / c2 / f7 / f2 — elles sont appelées *avant-postes du désastre* pour une raison."
 }

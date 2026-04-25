@@ -4,5 +4,8 @@
   "solution": [
     "Qxh7#"
   ],
-  "hint": "La dama captura con apoyo del rey — mate en la esquina."
+  "title": "Toma el peón, toma al rey",
+  "setup": "Tu dama barre la séptima fila y tu rey en **g6** está a un paso de la acción.",
+  "hint": "Captura el peón de {{h7}} — tu rey defiende a la dama y las negras no tienen escape.",
+  "explanation": "## La idea\n\nUn clásico **beso de la muerte en el rincón**. La dama captura el único peón que defendía al rey y aterriza en una casilla defendida por tu propio rey.\n\nJuega {{Qxh7#}}.\n\n¿Por qué está atrapado el rey?\n\n- La dama en h7 ataca h8 directamente (jaque)\n- {{g8}} — cubierta por la dama en h7 (diagonal)\n- {{Kxh7}} es ilegal — tu rey en **g6** defiende h7\n- Nada puede interponerse: la dama está adyacente al rey\n\n> **Conclusión:** El rincón es la casilla más peligrosa para un rey sin escape. Cuando tu dama y tu rey cooperan a distancia dos, cada casilla cercana es un objetivo de mate — especialmente tras capturar el último escudo del rey."
 }

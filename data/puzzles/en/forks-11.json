@@ -4,5 +4,8 @@
   "solution": [
     "Nxd5"
   ],
-  "hint": "Simple knight-takes-queen."
+  "title": "Knight Eats Queen",
+  "setup": "Black's queen has stepped onto a square the white knight can leap to — and no Black piece defends it.",
+  "hint": "Count: who attacks {{d5}}? Who defends it?",
+  "explanation": "## The Idea\n\nA queen on a knight-attacked square with no defender is a **gift**. The simplest of tactics:\n\n- {{Nxd5}} — knight from e3 jumps to d5 (one of its eight L-shape squares) and captures the queen.\n- Material trade: knight (3) for queen (9) = **+6**, a winning swing.\n\n### How to spot it during a game\n\n1. After the opponent moves their queen, ask: *which of my minor pieces could leap or slide to that square?*\n2. Count defenders: if zero, take.\n3. Count defenders again: sometimes a hidden defender (a long-range bishop or rook) makes the capture lose material.\n\nHere, the only Black piece besides the king is the queen itself, and the king on e8 is too far to defend d5.\n\n> Beginners hang their queen far more often than they admit. Always ask: *is my queen on a knight square?*"
 }

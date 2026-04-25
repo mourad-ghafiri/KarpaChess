@@ -4,5 +4,8 @@
   "solution": [
     "a8=Q+"
   ],
-  "hint": "Promotion avec échec."
+  "title": "Couronnez le pion",
+  "setup": "Le pion blanc a atteint **a7** — à un pas d'une dame toute neuve.",
+  "hint": "Promouvez toujours avec échec quand vous le pouvez. Ça prive le défenseur d'un coup gratuit.",
+  "explanation": "## L'idée\n\nUne simple **promotion avec échec**. Le pion en a7 atteint a8 et se transforme en dame, livrant simultanément l'échec sur la huitième rangée au roi en e8.\n\nLes Blancs jouent {{a8=Q+}}.\n\n## Réponse forcée des Noirs\n\nLe roi noir doit parer l'échec. Sans défenseurs à proximité, les seules options sont des coups de roi :\n\n- {{Kd7}}, {{Ke7}}, {{Kf7}}, {{Kf8}}, {{Kd8}} — toutes les cases de fuite sont valides.\n- Le roi ne peut pas atteindre a8 pour capturer (trop loin).\n- Rien à interposer — Noir n'a aucune autre pièce.\n\nBlanc émerge avec une dame plus le roi — une finale trivialement gagnée.\n\n## Schéma à mémoriser\n\n> Lors d'une promotion, **préférez la dame avec échec** — cela force l'adversaire à réagir d'abord à votre coup.\n\nMéfiez-vous des pièges de pat dans des positions légèrement différentes : quand le roi adverse n'a aucune case légale, une dame sans échec peut accidentellement annuler. Ici, le roi a beaucoup d'air, donc l'échec est pur profit."
 }

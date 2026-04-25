@@ -4,5 +4,8 @@
   "solution": [
     "Qa8#"
   ],
-  "hint": "La dama controla la octava, el caballo cubre g6."
+  "title": "Red de dama + caballo",
+  "setup": "Tu caballo en **f6** impide que el rey alcance {{g8}}, tu rey en **h6** sella {{g7}}, y el peón de **h7** bloquea el tercer escape.",
+  "hint": "Envía la dama por la fila final — el caballo en **f6** sella {{g8}}.",
+  "explanation": "## La idea\n\nUna **red de mate con dama + caballo** con la ayuda del propio peón del rey. La dama remata desde el rincón, mientras que el caballo y el rey ya han sellado el resto de la caja.\n\nJuega {{Qa8#}}.\n\n¿Por qué está atrapado el rey?\n\n- La dama en a8 ataca h8 por la octava fila (jaque)\n- {{g8}} — controlada por el caballo en **f6**\n- {{g7}} — controlada por tu rey en **h6**\n- {{h7}} — bloqueada por el propio peón negro\n- Nada puede interponerse en la octava fila vacía entre a8 y h8\n\n> **Conclusión:** Un caballo a un movimiento del rincón es un *guardia silencioso* — cubre las casillas de escape de segunda fila que la dama no puede alcanzar en una sola jugada. Cuando tengas dama + caballo + rey cerca del rincón enemigo, busca este patrón."
 }

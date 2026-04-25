@@ -1,20 +1,20 @@
 {
   "id": "xray-attack",
-  "title": "Serangan Sinar-X",
-  "summary": "Serang MELALUI sebuah bidak",
+  "title": "Serangan Rontgen",
+  "summary": "Menyerang MELALUI sebuah buah",
   "difficulty": "intermediate",
   "steps": [
     {
       "type": "teach",
       "fen": "3rk3/8/8/8/8/8/3R4/3RK3 w - - 0 1",
       "title": "Melihat Tembus",
-      "text": "Serangan sinar-X adalah ketika bidak menyerang MELALUI bidak yang menghalangi — sering bidak milik musuh sendiri. Jika bidak yang menghalangi pindah, serangan Anda mendarat di belakangnya. Berbeda dari ikatan, sinar-X biasanya menang atau mendapat tempo bagaimanapun juga."
+      "text": "**Serangan rontgen** adalah ketika salah satu buah jarak jauh Anda mengancam atau membela *melalui* buah perantara. Buah di depan memblokir serangan langsung, tetapi jika ia bergerak — atau ditangkap — sinar rontgennya menerobos.\n\n## Geometrinya\n\nEmpat hal pada satu garis:\n\n1. **Benteng**, **gajah**, atau **menteri** Anda di salah satu ujung.\n2. **Buah Anda sendiri** (atau kadang milik lawan) berdiri di tengah.\n3. Garis berlanjut *melewati* penghalang.\n4. Sasaran — biasanya raja, menteri, atau pembela kritis — duduk di ujung jauh.\n\nTidak seperti pakuan (yang membekukan buah) atau sate (yang mengusir), serangan rontgen sekadar *melihat melewati* apa pun di tengah.\n\n## Dua kegunaan rontgen\n\n- **Rontgen ofensif** — menteri Anda menyinari raja lawan melalui buah lawan sendiri. Tukar penghalang dan serangan mendarat.\n- **Rontgen defensif** — benteng Anda menyinari salah satu buah Anda, membelanya melalui pembela lain. Setelah pertukaran, rontgen menegakkan kembali penjagaan.\n\n## Cara mengenalinya\n\n1. Telusuri setiap buah jarak jauh Anda, termasuk melewati penghalang.\n2. Cari **raja atau menteri** yang duduk di ujung jauh salah satu garis itu.\n3. Rencanakan pertukaran yang menyingkirkan penghalang.\n4. Setelah asap memudar, rontgen tiba-tiba menjadi serangan terbuka.\n\nDi posisi ini, benteng Putih di d1 dan d2 berdiri sejajar dengan benteng raja lawan di d8 di lajur-d. Setelah serangkaian pertukaran, benteng *belakang* di d1 menyinari tembus dan mendarat di raja.\n\n> Pakuan membekukan. Sate mengejar. Rontgen *menunggu* — dan menang juga."
     },
     {
       "type": "teach",
       "fen": "3rk3/8/8/8/8/8/3R4/3RK3 w - - 0 1",
-      "title": "Contoh",
-      "text": "Di sini benteng d1 Putih menyinari raja musuh melalui benteng d2 dan d8. Setelah pertukaran di d8, raja terikat atau baris belakang runtuh."
+      "title": "Menghitung Lewat Pertukaran",
+      "text": "Rontgen sering menentukan siapa yang unggul dalam rantai tangkapan di petak yang sama.\n\n## Prosedur\n\n1. Identifikasi lajur, baris, atau diagonal di mana buah-buah saling tumpang tindih.\n2. Hitung penyerang dan pembela.\n3. Bayangkan pertukaran terjadi berurutan, *yang termurah lebih dulu*.\n4. Siapa pun yang memiliki **penyerang terakhir** di garis itu memenangkan petak.\n\n## Di posisi ini\n\nPutih punya *dua* benteng di lajur-d. Hitam punya satu. Setelah urutan seperti {{Rxd8+}} {{Rxd8}} {{Rxd8+}}, Putih mendaratkan benteng di baris kedelapan menyerang raja — rontgen adalah alasan ini berhasil.\n\n> Visi rontgen hanyalah penghitungan sabar di sepanjang satu garis."
     }
   ]
 }

@@ -4,5 +4,8 @@
   "solution": [
     "Rb8#"
   ],
-  "hint": "Una torre avanza mientras la otra controla la fila."
+  "title": "Escalera de dos torres",
+  "setup": "Ambas torres están en la **columna b**, listas para subir la escalera codo a codo.",
+  "hint": "Una torre da jaque en la octava fila mientras la otra vigila {{b7}} — sin escape entre ellas.",
+  "explanation": "## La idea\n\nEste es el **mate de la escalera con dos torres** — también llamado *escalerilla*. Con dos torres, alternas filas de modo que el rey queda apretado contra el borde sin aire.\n\nJuega {{Rb8#}}. La torre b sube a **b8** y da jaque por la octava fila.\n\n¿Por qué el rey está atrapado?\n\n- {{g8}}, {{f8}} y el resto de la octava fila — barridas por la nueva torre en b8\n- {{g7}} — bloqueada por el propio peón negro\n- {{h7}} — bloqueada por el propio peón negro\n- La torre inferior en **b2** sigue mandando la columna b, así que Kxb8 sería ilegal de todos modos (no es que el rey pudiera llegar)\n\n> **Conclusión:** Dos torres son una máquina de mate incluso sin rey. Mantenlas en columnas o filas adyacentes y márcalas hacia arriba — al rey suelto no le queda dónde correr."
 }

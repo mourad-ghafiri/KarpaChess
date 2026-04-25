@@ -8,23 +8,23 @@
       "type": "teach",
       "fen": "4k3/8/8/8/4P3/8/8/4K3 w - - 0 1",
       "title": "Babak Akhir Inti",
-      "text": "Setiap pemain catur harus hafal R+B vs R di luar kepala. Hasilnya bergantung pada SATU hal: bisakah pihak yang lebih kuat membawa rajanya DI DEPAN pion dengan oposisi? Jika ya, pion promosi. Jika tidak, remis."
+      "text": "## R + P vs R — setiap pemain harus tahu\n\nLebih banyak permainan diputuskan oleh **raja dan pion vs raja** dibanding babak akhir teknis lainnya. Ini adalah **gerbang babak akhir** — setiap babak akhir benteng, menteri, atau bidak ringan akhirnya disederhanakan menjadi salah satu polanya.\n\n### Bagaimana babak akhir ini terlihat\n\n- Satu sisi punya **raja + satu pion**.\n- Yang lain hanya punya **raja**.\n- Pion tengah (kolom b sampai g) — pion benteng adalah kasus khusus terpisah.\n\n### Konsep kunci: maju di depan dengan oposisi\n\nSeluruh hasil bergantung pada satu pertanyaan: **bisakah sisi yang lebih kuat menempatkan rajanya DI DEPAN pion sambil memegang oposisi?** Jika ya — pion promosi. Jika tidak — remis dengan pat atau dengan raja bertahan mencapai kotak promosi.\n\n### Prosedur konversi\n\n1. **Pimpin dengan raja**, jangan pion.\n2. Capai **kotak kunci** (lihat halaman berikutnya) dengan raja.\n3. **Ambil oposisi**, lalu apit secara diagonal.\n4. Dorong pion hanya saat raja telah membersihkan jalur.\n5. Promosi dan beralih ke skakmat R+M.\n\n### Kesalahan umum\n\n- Mendorong pion lebih dulu — pion ditangkap atau diblokade.\n- Membiarkan raja lawan mencapai **kotak promosi** — remis seketika.\n- Membuat **pat** dengan pion di baris ke-7 dan raja Anda tepat di belakangnya di baris ke-6 di depannya.\n\n> Raja di depan, pion di belakang."
     },
     {
       "type": "teach",
       "fen": "4k3/8/4K3/4P3/8/8/8/8 w - - 0 1",
       "title": "Kotak Kunci",
-      "text": "Untuk pion di baris ke-5 atau lebih rendah, \"kotak kunci\" adalah tiga kotak secara diagonal di depannya. Jika raja Anda mencapai salah satunya, Anda menang. Pelajari kotak kunci untuk setiap posisi pion."
+      "text": "## Kotak kunci memenangkan babak akhir ini\n\nUntuk pion di **baris ke-2 sampai ke-5**, **kotak kunci** adalah tiga kotak **dua baris di depan** pion. Untuk pion kita di **e4**, kuncinya adalah **d6, e6, f6**.\n\nUntuk pion di **baris ke-6**, kotak kunci sederhananya tiga kotak **langsung di depan** nya.\n\n### Aturan\n\nJika raja Anda mencapai **kotak kunci mana pun**, Anda menang — *terlepas dari oposisi*. Itulah yang menjadikan mereka \"kunci.\"\n\n### Prosedur dengan posisi ini\n\nRaja Putih **sudah di e6** (kotak kunci!). Kemenangan kini mekanis:\n\n1. {{Kd6}} atau {{Kf6}} — apit untuk merebut kotak kunci kedua dengan tempo.\n2. Setelah Hitam mundur, dorong {{e5}}.\n3. Bawa raja di depan pion sampai promosi.\n\n### Kesalahan umum\n\n- Melangkah raja ke **e7** — meninggalkan pion tidak terlindungi dan masuk ke pola pat.\n- Mendorong pion saat raja di kotak kunci — Anda mengembalikan kotak.\n- Memperlakukan babak akhir pion benteng (a/h) dengan cara yang sama — biasanya remis bahkan saat tekniknya terlihat serupa.\n\n### Garis model\n\n{{Kd6}} Kf7 {{e5}} Ke8 {{Kc7}} dan pion promosi.\n\n> Capai kotak kunci pada giliran Anda dan pion mempromosikan dirinya sendiri."
     },
     {
       "type": "play",
       "fen": "4k3/8/4K3/4P3/8/8/8/8 w - - 0 1",
-      "prompt": "Jalan menuju kotak kunci.",
+      "prompt": "Langkah ke **kotak kunci kedua** untuk mengapit pembela. Prinsipnya: *raja dulu, pion belakangan*.",
       "targetSan": [
         "Kd6",
         "Kf6"
       ],
-      "hint": "Kd6 atau Kf6 sama-sama merebut oposisi."
+      "hint": "Dua kotak kunci hanya satu langkah diagonal — pilih sayap mana saja."
     }
   ]
 }

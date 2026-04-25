@@ -4,5 +4,8 @@
   "solution": [
     "Ra8#"
   ],
-  "hint": "Regardez la dernière rangée — aucune case de fuite."
+  "title": "Le Socle du Couloir",
+  "setup": "Le roi noir se cache derrière **f7**, **g7** et **h7** — des pions devenus un mur.",
+  "hint": "La 8e rangée est grande ouverte et les pions noirs n'ont pas créé de fenêtre d'évasion en {{h6}} ou {{g6}}.",
+  "explanation": "## L'Idée\n\nC'est le **mat du couloir** d'école. La tour glisse dans le coin et le roi ne peut s'échapper car ses propres pions bloquent toutes les cases de fuite.\n\nJouez {{Ra8#}}.\n\nPourquoi le roi est-il piégé ?\n\n- {{f7}}, {{g7}}, {{h7}} — toutes bloquées par les propres pions noirs\n- {{f8}} et {{h8}} — toutes deux balayées par la tour en a8\n- Aucune pièce ne reste pour s'interposer entre a8 et g8\n\n> **À retenir :** Le prix de la sécurité est un tempo — un seul coup de pion (h6, g6 ou f6) ouvre une fenêtre d'air et évite ce désastre. Entraînez votre œil à repérer ce squelette dans chaque partie."
 }

@@ -1,8 +1,11 @@
 {
   "id": "mate-in-1-15",
-  "fen": "4R3/5pk1/6p1/8/8/8/6PP/6K1 w - - 0 1",
+  "fen": "6k1/4Rppp/8/8/1B6/8/6PP/6K1 w - - 0 1",
   "solution": [
-    "Re7"
+    "Re8#"
   ],
-  "hint": "Invade the 7th rank with check."
+  "title": "Bishop Cuts the Window",
+  "setup": "Your rook on **e7** is one step from the back rank, and the bishop on **b4** rakes the **a3-f8** diagonal — including {{f8}}.",
+  "hint": "Slide the rook to the 8th rank — your bishop on **b4** already controls the {{f8}} escape square.",
+  "explanation": "## The Idea\n\nA **rook + bishop mating net**. The pawn shield blocks {{g8}}'s usual escape via h7/g7; the bishop on **b4** plugs the only diagonal escape on {{f8}}.\n\nPlay {{Re8#}}.\n\nWhy is the king stuck?\n\n- {{f8}} — controlled by the bishop on **b4** (b4-c5-d6-e7-f8 diagonal — wait, e7 has the rook! Actually after Re8, e7 is empty so the bishop's diagonal is **a3-f8** running b4-c5-d6-e7-f8, which now has nothing on it)\n- {{h8}} — covered by the rook on e8 (8th rank)\n- {{f7}}, {{g7}}, {{h7}} — all blocked by Black's own pawns\n- The king cannot capture the rook: e8 is too far from g8\n\n> **Takeaway:** A bishop pointing at the long diagonal is the perfect partner for a back-rank rook. Together they cover both ends of the 8th rank — the rook from one side, the bishop slicing the other."
 }

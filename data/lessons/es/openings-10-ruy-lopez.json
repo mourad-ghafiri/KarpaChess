@@ -8,40 +8,40 @@
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "La Española",
-      "text": "Llamada así por un sacerdote español del siglo XVI, la Ruy López (o \"Española\") presiona el peón e5 a través del caballo de c6. Conduce a medios juegos ricos y matizados. Todo campeón del mundo, de Steinitz a Carlsen, la ha jugado."
+      "text": "Bautizada por el sacerdote español del siglo XVI **Ruy López de Segura**, la Ruy López (también llamada *Apertura Española*) es la apertura seria más antigua aún jugada al más alto nivel del ajedrez.\n\nTodos los campeones del mundo la han jugado — Steinitz, Lasker, Capablanca, Alekhine, Botvinnik, Fischer, Karpov, Kasparov, Carlsen.\n\n## La secuencia que la define\n\nLa línea canónica es {{e4}} {{e5}} {{Nf3}} {{Nc6}} {{Bb5}}. El alfil clava el caballo de c6 contra el peón de e5 — pero la *verdadera* amenaza es a largo plazo, no inmediata.\n\n## Qué quiere cada bando\n\n- **Plan de las blancas:** mantener la presión sobre e5, desarrollar con **{{c3}}**, **{{O-O}}**, **{{Re1}}**, **{{d4}}**, y luego expandirse en el flanco de rey o en el centro.\n- **Plan de las negras:** desafiar al alfil con **...a6** (la Defensa Morphy), desarrollar con **...Nf6**, **...Be7**, **0-0**, **...d6**, y o bien sostener el peón de e5 (Ruy López cerrada) o liberarlo a cambio de actividad de piezas (Ruy López abierta).\n- **Estructura de peones:** las cadenas características de la Ruy López — **e4-d3** para las blancas frente a **e5-d6** para las negras, con maniobras en ambos flancos.\n\n## Por qué sigue vigente\n\nLa Ruy López genera **profundidad estratégica sin tácticas forzadas**. Es una educación ajedrecística completa en una sola apertura — estructuras de peones, maniobras, ataque y defensa.\n\n> Una vez entiendes la Ruy López, entiendes el ajedrez clásico."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "prompt": "Juega 1.e4",
+      "prompt": "Abre con el peón de rey — juega **{{e4}}**.",
       "targetSan": [
         "e4"
       ],
-      "hint": "Peón rey dos casillas."
+      "hint": "1.e4 reclama el centro y es la puerta de entrada a la Ruy López."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
-      "prompt": "Desarrolla el caballo de rey: 2.Nf3",
+      "prompt": "Desarrolla con **{{Nf3}}** — atacando e5 y preparando el enroque.",
       "targetSan": [
         "Nf3"
       ],
-      "hint": "Ataca e5, desarrolla una pieza."
+      "hint": "Nf3 es la jugada de caballo con la que comienza toda apertura clásica — desarrolla una pieza Y ataca el peón central de las negras."
     },
     {
       "type": "play",
       "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
-      "prompt": "La jugada característica: 3.Bb5",
+      "prompt": "La jugada que la define: juega **{{Bb5}}** — el alfil sale a presionar el caballo de c6.",
       "targetSan": [
         "Bb5"
       ],
-      "hint": "Clava indirectamente el caballo, amenaza socavar e5."
+      "hint": "La clavada con Bb5 es *indirecta*: no gana de inmediato el peón de e5 (por ...Bxc6 dxc6 Nxe5 Qd4). Solo oprime lentamente."
     },
     {
       "type": "teach",
       "fen": "r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
-      "title": "Ideas Principales",
-      "text": "El alfil no gana realmente e5 de inmediato (tras 3...a6 4.Bxc6 dxc6, el peón e de las Negras sigue defendido). La AMENAZA real es romper la estructura negra y oprimirla posicionalmente. Ajedrez clásico en su máxima expresión."
+      "title": "Ideas principales",
+      "text": "Tras **3.Bb5**, a menudo verás a principiantes pensar *¡puedo simplemente tomar el caballo!* — y descubrir que {{Bxc6}} **dxc6** {{Nxe5}} pierde por **...Qd4!**, con doble ataque al caballo y al peón de e4. La Ruy López **no** trata de ganar un peón directamente.\n\n## Qué consigue realmente la clavada con Bb5\n\n- Amenaza con **dañar la estructura de peones de las negras** si y cuando se juega {{Bxc6}}.\n- **Socava indirectamente e5** — si las negras dejan que las blancas jueguen {{Bxc6}} y luego {{Nxe5}} sin tener disponible el truco **...Qd4**, las blancas ganan un peón.\n- Limita el desarrollo de las negras — el caballo de c6 tiene que pensar antes de moverse.\n\n## Las respuestas principales de las negras\n\n- **3...a6** (Defensa Morphy, con mucho la más común) — expulsa al alfil, le pide que se comprometa. Las blancas se retiran con **4.Ba4** o cambian con **4.Bxc6**.\n- **3...Nf6** (Defensa Berlinesa) — Vladimir Kramnik la usó para derrotar a Garry Kasparov en el campeonato mundial del año 2000.\n- **3...d6** (Defensa Steinitz) — sólida pero pasiva.\n- **3...Bc5** (Clásica) — audaz, ignora la clavada, prepara ...Nf6 y 0-0.\n\n## Una línea principal modelo\n\n{{e4}} {{e5}} {{Nf3}} {{Nc6}} {{Bb5}} **a6** **{{Ba4}}** **Nf6** **{{O-O}}** **Be7** **{{Re1}}** **b5** **{{Bb3}}** **d6** **{{c3}}** **0-0** — la clásica Ruy López cerrada.\n\n> La Ruy López es ajedrez lento en su máxima expresión. Las piezas se reordenan, los planes cristalizan y una pequeña inexactitud puede decidir la partida diez jugadas después."
     }
   ]
 }

@@ -7,18 +7,18 @@
     {
       "type": "teach",
       "fen": "4k3/8/4K3/4Q3/8/8/8/8 w - - 0 1",
-      "title": "Mat classique",
-      "text": "Avec roi et dame contre roi seul, conduisez le roi ennemi vers le bord, puis matez. La dame contrôle un mur — votre roi empêche l'évasion."
+      "title": "Le mat classique",
+      "text": "## R + D contre R — le mat fondamental\n\nC'est le **premier mat que tout joueur doit maîtriser**. Avec roi et dame contre roi seul, le camp avec la dame gagne toujours depuis n'importe quelle position de départ — généralement en **moins de dix coups**.\n\n### À quoi ressemble cette finale\n\n- Un camp a **roi + dame**.\n- L'autre n'a que le **roi**.\n- Pas de pions, pas de pièces mineures, pas de tour — pure technique.\n\n### Le concept clé : la cage et le mur\n\nLa dame construit un **mur** invisible que le roi seul ne peut franchir, tandis que votre propre roi avance pour **soutenir** le coup final. La seule chose à éviter est le **pat** — c'est le seul danger caché de cette finale.\n\n### Procédure pour convertir\n\n1. Utilisez la dame pour **rétrécir la cage du roi**, en restant à un saut de cavalier quand c'est possible.\n2. **Faites avancer votre roi** vers une case adjacente à celle où vous voulez donner mat.\n3. Poussez le roi adverse vers le **bord** de l'échiquier.\n4. Donnez mat avec la **dame sur le bord**, défendue (directement ou à distance) par votre roi.\n\n### Erreurs courantes\n\n- Faire échec avec la dame à chaque coup — le roi danse à l'infini.\n- Coincer le roi seul **sans cases légales** alors que la dame ne donne *pas* échec — c'est **pat** et nulle.\n- Oublier de monter votre propre roi ; la dame seule ne peut pas mater.\n\n### Une finition modèle\n\nDepuis la position montrée — roi noir en **e8**, roi blanc en **e6**, dame en **e5** — les Blancs jouent {{Qb8#}} ou {{Qh8#}} : la dame scelle la 8e rangée et le roi en e6 couvre d7, e7 et f7.\n\n> La dame coupe, le roi attrape."
     },
     {
       "type": "play",
       "fen": "4k3/8/4K3/4Q3/8/8/8/8 w - - 0 1",
-      "prompt": "Donnez échec et mat en un coup.",
+      "prompt": "Donnez **échec et mat en un coup**. Le roi adverse est sur le bord et votre roi soutient déjà — terminez le travail.",
       "targetSan": [
         "Qb8#",
         "Qh8#"
       ],
-      "hint": "Coupez la 8e rangée — le roi ennemi n'a nulle part où aller."
+      "hint": "Glissez la dame le long de la **8e rangée** pour que chaque case de fuite soit couverte ou attaquée."
     }
   ]
 }

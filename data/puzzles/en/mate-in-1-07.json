@@ -4,5 +4,8 @@
   "solution": [
     "Qh8#"
   ],
-  "hint": "The queen and the knight work together beautifully."
+  "title": "Queen-and-Knight Net",
+  "setup": "Your knight on **f5** and king on **f6** lock the f-file — the queen just needs the right entry.",
+  "hint": "Bring the queen to the 8th rank along the diagonal — the knight already shadows {{e7}}.",
+  "explanation": "## The Idea\n\nA delightful **queen-and-knight cooperation**. The knight on f5 quietly covers {{e7}} and the queen swoops in along the long h1-a8 diagonal... but in fact along the rank from h1 to h8.\n\nPlay {{Qh8#}}.\n\nWhy is the king stuck?\n\n- {{e8}} — covered by the knight on **f5** (knight jump f5-e7? no, the queen on h8 attacks the 8th rank)\n- {{g8}} and {{e8}} — covered by the queen along the 8th rank\n- {{e7}} — controlled by the knight on **f5**\n- {{f7}} — blocked by Black's own pawn\n- {{g7}} — covered by the queen on h8 (diagonal)\n- Capturing? Kxh8 is impossible — the king is on f8, not adjacent\n\n> **Takeaway:** Knights and queens combine into mating nets because the knight covers squares the queen can't (close diagonal/horse-jumps). Always scan for these dual coverage patterns."
 }

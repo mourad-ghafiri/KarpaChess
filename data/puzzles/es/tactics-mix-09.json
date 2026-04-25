@@ -4,5 +4,8 @@
   "solution": [
     "Rxa8+"
   ],
-  "hint": "Cambia la torre enemiga con jaque."
+  "title": "Cambia hacia un Final Ganado",
+  "setup": "Dos torres se enfrentan en la **columna a** — y el rey negro también está en la última fila.",
+  "hint": "Cuando puedas cambiar torres con jaque y entrar a un final ganado, hazlo sin dudar.",
+  "explanation": "## La idea\n\nEsta es una táctica de **simplificación**. La torre blanca cambia con la torre negra, pero con un bono crítico: lo hace **con jaque**, dictando la respuesta de las negras.\n\nLas blancas juegan {{Rxa8+}}.\n\n## La respuesta forzada de las negras\n\nLa torre en a8 ataca al rey en e8 por la **octava fila**. Las negras tienen una sola opción:\n\n- {{Kxa8}} — imposible, el rey no puede teletransportarse cuatro casillas.\n- El rey debe salir del jaque: {{Kd7}}, {{Ke7}} o {{Kf7}}. Cada una deja viva la torre en a8.\n\nUn momento — de hecho, con la torre ahora en a8 e indefensa, el rey negro nunca puede alcanzarla (a 4 casillas). Las negras mueven el rey, ¡**y las blancas tienen una torre entera de ventaja!**\n\n## Por qué esto gana\n\nLa posición resultante es **rey + torre contra rey solitario** — un triunfo forzado. Todo principiante debe saber dar mate con T+R contra R. Este puzzle es por tanto un triunfo forzado de la manera más limpia: una sola captura conduce directamente a un final ganado.\n\n## Patrón a memorizar\n\n> Un cambio que te lleva a un final ganado vale mucho más que un ataque vistoso que se desinfla.\n\nBusca oportunidades de **simplificar** cuando vas adelante, incluso por medios tácticos."
 }

@@ -4,5 +4,8 @@
   "solution": [
     "Qxf7#"
   ],
-  "hint": "Menteri memiliki diagonal yang bebas. Perhatikan f7 hanya dijaga oleh raja."
+  "title": "Pukulan Sang Pelajar",
+  "setup": "Menteri Putih di **h5** dan gajah di **c4** keduanya menatap kotak terlemah di kubu Hitam.",
+  "hint": "Kedua bidak mengincar {{f7}} — hanya raja yang membelanya.",
+  "explanation": "## Idenya\n\nIni adalah langkah penutup klasik **Skakmat Pelajar**. Menteri dan gajah membangun baterai melawan {{f7}}, satu-satunya kotak di posisi pembukaan Hitam yang dijaga hanya oleh raja.\n\nMain {{Qxf7#}}. Menteri menangkap bidak dan memberi skak, didukung gajah di **c4**.\n\nMengapa raja terjebak?\n\n- {{e7}} — diblokir bidak Hitam sendiri\n- {{e8}} dan {{d8}} — ditutupi menteri sendiri dari f7\n- Memakan menteri dengan {{Kxf7}} ilegal karena gajah di **c4** menguasai f7\n- Tidak ada bidak yang bisa di antara: f7 bersebelahan dengan raja\n\n> **Inti:** Selalu periksa apakah f7 (atau f2 untuk Hitam) hanya dibela oleh raja sebelum mengembangkan. Baterai menteri + gajah di diagonal a2-g8 adalah salah satu trik tertua dalam catur."
 }

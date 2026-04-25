@@ -4,5 +4,8 @@
   "solution": [
     "Rxe6+"
   ],
-  "hint": "Clouée sur la colonne e."
+  "title": "Clouage à longue portée",
+  "setup": "Une tour blanche en **e1** s'aligne avec la dame noire en **e6** et le roi noir en **e8** — trois pièces, une colonne.",
+  "hint": "Si vous voyez votre tour, une pièce adverse et le roi adverse tous sur la même colonne, cherchez un clouage.",
+  "explanation": "## L'idée\n\nVoici un **clouage absolu** étiré sur toute la colonne e. La dame noire en e6 ne peut pas légalement bouger — elle mettrait son propre roi en échec depuis la tour blanche en e1.\n\nLes Blancs jouent {{Rxe6+}}, capturant la dame.\n\n- La tour en e6 est désormais loin du roi noir, donc {{Kxe6}} est impossible (roi en e8, à deux cases).\n- Noir doit bouger le roi : {{Kd7}}, {{Kf7}}, {{Kd8}}, {{Kf8}}, ou {{Ke7}} (mais Ke7 serait toujours un échec de la tour ? Non — une fois la dame partie, la tour en e6 attaque e7 directement, donc {{Ke7}} est illégal).\n- Blanc termine avec une dame d'avance.\n\n## Schéma à mémoriser\n\n> Le clouage idéal : attaquant à longue portée, pièce adverse de valeur, roi adverse — tous sur une ligne, sans défenseur.\n\nQuand vous repérez cette géométrie, la capture est presque toujours le bon coup."
 }

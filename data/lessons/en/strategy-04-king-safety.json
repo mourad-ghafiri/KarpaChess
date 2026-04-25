@@ -4,18 +4,26 @@
   "summary": "A safe king wins games",
   "difficulty": "beginner",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQK2R w KQkq - 0 1",
       "title": "Tuck Him Away",
-      "text": "The king's worst enemies are open files and diagonals leading to him. Castling gets him out of the center into a fortress of pawns. Keep that fortress intact — don't rush to push your castled-side pawns unless you have a concrete reason." },
-    { "type": "play",
+      "text": "## King safety — defined\n\n**King safety** is the measure of how well your king is shielded from **direct attack**. It is not just \"having a wall of pawns\" — it is the combination of **shelter**, **defenders**, and the **absence of open lines** pointing at the king.\n\n### What this position is\n\nThe Italian Opening: pieces developed, knights on c3 and f3, bishops on c4 and c5, central pawns locked. Both kings sit on **e1** and **e8** — exposed in the centre, with **two open files (the d-file and any half-open file)** ready to host enemy rooks. **Castling now** is the priority before pieces start landing on weak squares.\n\n### Three pillars of safety\n\n1. **Pawn shelter** — three pawns in front of the king (f2-g2-h2 or a7-b7-c7).\n2. **Defenders nearby** — at least the knight on **f3** (or f6) covering critical squares like h2/h7.\n3. **Closed lines** — no open files pointing at the king, no diagonals leading to him.\n\n### How to USE the concept\n\n1. **Castle by move 10** in 90% of games. Sometimes earlier, rarely later.\n2. **Don't push pawns near the king** unless there's a concrete tactical reason.\n3. **Watch the diagonals** to your king — a long bishop or queen pointing in is a future sacrifice.\n4. **Trade attackers**, not defenders. Every piece you trade off the board reduces the attacker's power and yours.\n\n### What signs in the position tell you to apply it\n\n- The opponent has retained **both bishops and queen** with development complete — an attack is brewing.\n- A **pawn lever** like h4-h5 or g4 is being prepared — clamp down before it lands.\n- Your king is **still on e1 / e8** past move 10 — castle this move.\n\n### Common mistakes\n\n- Delaying castling to **grab a pawn** in the centre — the resulting open files swallow the king.\n- **Pushing g3 or h3** automatically — every pawn move near the king creates a hook for an opponent's pawn break.\n- Trading off a **defender** (often the f6 / f3 knight) without an equally strong replacement.\n\n> Castle early, castle short, then keep the wall up."
+    },
+    {
+      "type": "play",
       "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQK2R w KQkq - 0 1",
-      "prompt": "Castle your king into safety.",
-      "targetSan": ["O-O"],
-      "hint": "Short castling — the most common choice." },
-    { "type": "teach",
+      "prompt": "Castle your king into safety. The principle: *get out of the centre before the position opens*.",
+      "targetSan": [
+        "O-O"
+      ],
+      "hint": "Short castling — kingside, the most common and quickest shelter."
+    },
+    {
+      "type": "teach",
       "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 b kq - 1 1",
       "title": "After Castling",
-      "text": "You're not done! Keep pawns in front: f2, g2, h2. The knight on f3 defends h2. Don't play g3 or h3 unless necessary — every pawn move near your king creates a weakness for later." }
+      "text": "## You castled — now what?\n\nCastling alone is not safety; it is the **opening move** of safety. The work begins after the king lands.\n\n### Maintaining the fortress\n\n1. **Keep the pawns home**: f2-g2-h2 (or a7-b7-c7 for queenside). The shape is the wall.\n2. **Keep a defender on f3 / f6**: the knight covers **h2 / h7** and the **g5 / g4** invasion squares. Trading it without replacement is dangerous.\n3. **Keep a back-rank escape**: Kh1 / Kh8 may be required if a back-rank check is threatened — *luft* with h3 / h6 only when needed.\n4. **Trade attackers**, not defenders.\n\n### Two visual examples in prose\n\n- After **O-O**, Black plays ...Bg4 pinning the f3-knight. White's wall is **f2-g2-h2** but the **f3 defender is paralysed**. White must dissolve the pin (h3, then if Bxf3 recapture with the queen) before launching anything else.\n- A White king on g1 with pawns f2/g2/h2 is **structurally safe**, but if the queen leaves d1 to attack, the **back rank** becomes a worry. A timely **h3** creates *luft* and saves the king from future Re1 threats.\n\n### How to USE it in your games\n\n1. **Audit your castled position every five moves**. Are the pawns still there? Is the f-knight still there?\n2. When the **opponent retains attackers**, retain defenders.\n3. **Open the centre** only when your king is *safer* than your opponent's.\n\n### What signs tell you the wall is failing\n\n- A **pawn move near your king** (g3, h3, f3) — every one is a potential weakness.\n- A **defender has been traded** — recompute safety from scratch.\n- An **open file or long diagonal** leads to your king.\n\n### Common mistakes\n\n- Pushing **h3 or g3** prophylactically when nothing was attacking — you weakened yourself for free.\n- **Trading queens** when you were the attacker — king safety questions vanish but so does your initiative.\n- Forgetting **back-rank mate** patterns. Many games are lost on move 30 by an undefended first rank.\n\n> Castling is not the end of king safety — it is the beginning."
+    }
   ]
 }

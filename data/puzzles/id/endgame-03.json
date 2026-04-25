@@ -4,5 +4,8 @@
   "solution": [
     "Kd4"
   ],
-  "hint": "Pusatkan sebelum mendorong."
+  "title": "Raja Duluan, Bidak Belakangan",
+  "setup": "Akhir raja-dan-bidak sederhana — bidak Anda di **e4**, raja Anda tepat di belakangnya, raja musuh jauh di e8.",
+  "hint": "Dorong **raja**, bukan bidak. Raja yang harus memimpin; bidak hanya mengikuti ketika jalan aman.",
+  "explanation": "## Prinsip Kunci: Raja Adalah Mesin\n\nDalam akhir raja-dan-bidak, pihak dengan bidak ekstra menang dengan **mengawal** bidak menggunakan raja. Jika bidak pergi sendiri, raja pembela mengejar dan memblokade. Raja Anda harus tiba di **baris ke-6 di depan bidak** sebelum bidak melaju maju.\n\n## Rencananya\n\n1. **{{Kd4}}** — Putih memusatkan, menuju d5 atau e5. Ke f4 juga oke; prinsipnya berjalan ke arah kotak promosi bidak.\n2. Apa pun yang Hitam main (...Kd7 atau ...Ke7), Putih melanjutkan dengan **Kd5** lalu **Kd6 / Ke5 / Kf6** untuk menguasai kotak di sekitar bidak.\n3. Begitu raja mencapai baris ke-6 di depan bidak, Anda dorong. Bidak lalu promosi secara paksa.\n\n> Hafalkan aturan ini: **raja di baris ke-6, bidak di baris ke-5 — Anda menang**.\n\n## Apa yang Salah Jika Mendorong Bidak Duluan\n\nJika Putih main 1.e5? langsung, Hitam menjawab 1...Ke7 dan setelah 2.Kd4 Ke6 raja Hitam memblokade bidak dari depan. Putih bisa menyelidiki tapi tidak pernah menembus, dan partai seri. Bidak tidak bisa berjuang sendiri — ia butuh kawalan raja."
 }

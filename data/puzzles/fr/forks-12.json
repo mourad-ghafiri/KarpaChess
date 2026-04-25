@@ -4,5 +4,8 @@
   "solution": [
     "Nc6"
   ],
-  "hint": "Le cavalier fait une fourchette avec échec."
+  "title": "Fourchette Silencieuse sur la Longue Rangée",
+  "setup": "Le roi noir et la tour partagent la dernière rangée avec un cavalier à un saut.",
+  "hint": "Cherchez la case du cavalier qui attaque **à la fois** la tour en a8 et les cases d'évasion du roi.",
+  "explanation": "## L'Idée\n\nLe cavalier en e5 a accès à la case {{c6}} via le saut en L standard. Une fois en c6 :\n\n- Le cavalier attaque la tour en **a8**.\n- Le roi en e8 n'a aucun bon moyen de défendre a8 à cette distance.\n\n### Pourquoi la tour est condamnée\n\n1. La tour ne peut bouger que sur sa rangée ou colonne. Pour rester protégée, il faudrait que son roi soit proche.\n2. Le roi en e8 ne peut atteindre a8 en un coup.\n3. La tour doit donc abandonner le coin : Ra-quelque part, et {{Nxa8}} ou une capture équivalente suit.\n\nC'est une **fourchette silencieuse** — pas d'échec, mais la menace (capture au coup suivant) est imparable.\n\n> Les fourchettes ne sont pas toujours bruyantes. Une attaque silencieuse sur deux pièces non défendues est tout aussi mortelle."
 }

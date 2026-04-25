@@ -1,6 +1,11 @@
 {
   "id": "mate-in-1-11",
   "fen": "7k/8/5NK1/7Q/8/8/8/8 w - - 0 1",
-  "solution": ["Qh7#"],
-  "hint": "The queen and knight together leave no escape."
+  "solution": [
+    "Qh7#"
+  ],
+  "title": "Kiss-of-Death",
+  "setup": "Your knight on **f6** stops the king from escaping to **g8**, and your king on **g6** defends the queen's landing square.",
+  "hint": "Drop the queen right next to the king — she's defended by your king and the knight covers {{g8}}.",
+  "explanation": "## The Idea\n\nThis is the famous **kiss-of-death** mate: the queen lands on the square *adjacent* to the enemy king, defended by your own king. The knight handles the corner escape.\n\nPlay {{Qh7#}}.\n\nWhy is the king stuck?\n\n- {{g8}} — controlled by the knight on **f6** (knight jumps to g8)\n- {{g7}} — controlled by your king on **g6** *and* by the queen herself\n- The queen on h7 attacks h8 directly (check)\n- {{Kxh7}} is illegal because your king on **g6** defends h7\n- Nothing can block: h7 is adjacent to h8\n\n> **Takeaway:** Memorize the *kiss-of-death* pattern — queen + king two squares apart, with a third piece (here, the knight) covering the only flight square. It appears in countless games, especially after a pawn has been pushed forward to f6 or g6."
 }

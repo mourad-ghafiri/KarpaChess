@@ -4,5 +4,8 @@
   "solution": [
     "exd5"
   ],
-  "hint": "Tangkap pion tengah — sederhana tetapi penting."
+  "title": "Menang Pion Tengah",
+  "setup": "Hitam telah memainkan **...d5**, menawarkan pertukaran pion di tengah. Putih menerima.",
+  "hint": "Saat Anda bisa mengambil pion tengah secara gratis, hampir selalu lakukan.",
+  "explanation": "## Idenya\n\nIni adalah **tangkapan tengah** paling fundamental dalam permainan pembukaan catur. Pion d5 Hitam diserang oleh pion e4 Putih tetapi dijaga oleh... tidak ada secara khusus.\n\nPutih memainkan {{exd5}}, langsung memenangkan pion-d.\n\n## Mengapa Bagus\n\n- Putih sekarang punya pion di **d5**, mendominasi ruang tengah.\n- Pion e5 Hitam sekarang terisolasi dan lemah.\n- Material: Putih satu pion lebih.\n\nJika Hitam memainkan {{Nxd5}} atau {{Qxd5}} untuk merebut kembali, buah yang merebut kembali terbuka untuk diserang (mis., oleh {{Nc3}} memukul menteri).\n\n## Pola untuk Diingat\n\n> Pion tengah (terutama **pion-d atau pion-e**) bernilai lebih dari pion sayap. Saat Anda bisa meraihnya dan mempertahankannya, lakukan.\n\nPutih telah mengubah tangkapan taktis menjadi plus strategis — material ekstra *plus* kontrol tengah."
 }

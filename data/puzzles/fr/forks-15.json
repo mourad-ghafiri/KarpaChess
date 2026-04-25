@@ -4,5 +4,8 @@
   "solution": [
     "Nxb7"
   ],
-  "hint": "Gagnez la dame avec le cavalier."
+  "title": "Attraper la Dame",
+  "setup": "La dame noire s'est aventurée en b7, et le cavalier blanc en c5 est juste à côté.",
+  "hint": "Depuis c5, comptez les huit cases de cavalier. L'une d'elles atterrit sur la dame.",
+  "explanation": "## L'Idée\n\nC'est la tactique la plus simple aux échecs : une pièce est pendante, prenez-la. Depuis c5, le cavalier atteint {{b7}} via -1 colonne +2 rangées :\n\n- {{Nxb7}} — le cavalier capture la dame.\n- Échange matériel : cavalier contre dame = **+6**, totalement gagnant.\n\n### Pourquoi pas de reprise\n\n1. Le roi noir en e8 est trop loin de b7 pour reprendre (les rois bougent d'une case).\n2. Il n'y a pas d'autres pièces noires sur l'échiquier.\n3. Le cavalier s'échappe en sécurité avec la dame en poche.\n\n### Leçon\n\nAvant de chercher des combinaisons, demandez-vous toujours :\n\n- *Une pièce ennemie est-elle non défendue ?*\n- *Ai-je une pièce qui l'atteint ?*\n\nLa moitié des « tactiques » sont en réalité juste des motifs de pièces pendantes repérés rapidement.\n\n> La grandeur aux échecs commence par ne pas manquer les pièces gratuites."
 }

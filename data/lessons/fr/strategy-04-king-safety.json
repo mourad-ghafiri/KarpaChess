@@ -4,18 +4,26 @@
   "summary": "Un roi en sécurité gagne les parties",
   "difficulty": "beginner",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQK2R w KQkq - 0 1",
       "title": "Mettez-le à l'abri",
-      "text": "Les pires ennemis du roi sont les colonnes et diagonales ouvertes qui mènent à lui. Le roque le sort du centre pour l'amener dans une forteresse de pions. Gardez cette forteresse intacte — ne poussez pas les pions autour de votre roque sans raison concrète." },
-    { "type": "play",
+      "text": "## Sécurité du roi — définie\n\nLa **sécurité du roi** est la mesure de la protection de votre roi contre les **attaques directes**. Ce n'est pas seulement « avoir un mur de pions » — c'est la combinaison d'**abri**, de **défenseurs**, et de l'**absence de lignes ouvertes** pointées sur le roi.\n\n### Ce qu'est cette position\n\nL'ouverture italienne : pièces développées, cavaliers en c3 et f3, fous en c4 et c5, pions centraux verrouillés. Les deux rois sont en **e1** et **e8** — exposés au centre, avec **deux colonnes ouvertes (la colonne d et toute colonne semi-ouverte)** prêtes à accueillir des tours ennemies. **Roquer maintenant** est la priorité avant que des pièces ne se posent sur des cases faibles.\n\n### Trois piliers de sécurité\n\n1. **Abri de pions** — trois pions devant le roi (f2-g2-h2 ou a7-b7-c7).\n2. **Défenseurs proches** — au moins le cavalier en **f3** (ou f6) couvrant les cases critiques comme h2/h7.\n3. **Lignes fermées** — pas de colonnes ouvertes pointées sur le roi, pas de diagonales menant à lui.\n\n### Comment UTILISER le concept\n\n1. **Roquez avant le coup 10** dans 90 % des parties. Parfois plus tôt, rarement plus tard.\n2. **Ne poussez pas les pions près du roi** sauf raison tactique concrète.\n3. **Surveillez les diagonales** vers votre roi — un long fou ou dame pointant vers vous est un futur sacrifice.\n4. **Échangez les attaquants**, pas les défenseurs. Chaque pièce que vous échangez réduit la puissance de l'attaquant et la vôtre.\n\n### Quels signes dans la position vous disent de l'appliquer\n\n- L'adversaire a conservé **les deux fous et la dame** avec son développement terminé — une attaque se prépare.\n- Un **levier de pion** comme h4-h5 ou g4 se prépare — neutralisez avant qu'il n'arrive.\n- Votre roi est **encore en e1 / e8** après le coup 10 — roquez ce coup.\n\n### Erreurs courantes\n\n- Retarder le roque pour **gagner un pion** au centre — les colonnes ouvertes qui en résultent engloutissent le roi.\n- **Pousser g3 ou h3** automatiquement — chaque coup de pion près du roi crée un crochet pour une cassure de pion adverse.\n- Échanger un **défenseur** (souvent le cavalier f6 / f3) sans remplacement aussi solide.\n\n> Roquez tôt, roquez petit, puis maintenez le mur."
+    },
+    {
+      "type": "play",
       "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQK2R w KQkq - 0 1",
-      "prompt": "Roquez votre roi en sécurité.",
-      "targetSan": ["O-O"],
-      "hint": "Petit roque — le choix le plus courant." },
-    { "type": "teach",
+      "prompt": "Roquez votre roi en sécurité. Le principe : *sortez du centre avant que la position ne s'ouvre*.",
+      "targetSan": [
+        "O-O"
+      ],
+      "hint": "Petit roque — aile roi, l'abri le plus courant et le plus rapide."
+    },
+    {
+      "type": "teach",
       "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 b kq - 1 1",
       "title": "Après le roque",
-      "text": "Ce n'est pas fini ! Gardez les pions devant : f2, g2, h2. Le cavalier en f3 défend h2. Ne jouez pas g3 ou h3 sans nécessité — chaque coup de pion près de votre roi crée une faiblesse pour plus tard." }
+      "text": "## Vous avez roqué — et maintenant ?\n\nLe roque seul n'est pas la sécurité ; c'est le **coup d'ouverture** de la sécurité. Le travail commence après l'arrivée du roi.\n\n### Maintenir la forteresse\n\n1. **Gardez les pions chez eux** : f2-g2-h2 (ou a7-b7-c7 pour grand roque). La forme est le mur.\n2. **Gardez un défenseur en f3 / f6** : le cavalier couvre **h2 / h7** et les cases d'invasion **g5 / g4**. L'échanger sans remplacement est dangereux.\n3. **Gardez une échappée arrière** : Kh1 / Kh8 peut être nécessaire si un échec sur la dernière rangée menace — *luft* avec h3 / h6 seulement quand c'est nécessaire.\n4. **Échangez les attaquants**, pas les défenseurs.\n\n### Deux exemples visuels en mots\n\n- Après **O-O**, les Noirs jouent ...Bg4 clouant le cavalier f3. Le mur des Blancs est **f2-g2-h2** mais le **défenseur f3 est paralysé**. Les Blancs doivent dissoudre le clouage (h3, puis si Bxf3 reprendre avec la dame) avant de lancer quoi que ce soit d'autre.\n- Un roi blanc en g1 avec pions f2/g2/h2 est **structurellement en sécurité**, mais si la dame quitte d1 pour attaquer, la **dernière rangée** devient un souci. Un **h3** opportun crée du *luft* et sauve le roi de futures menaces Re1.\n\n### Comment l'UTILISER dans vos parties\n\n1. **Auditez votre position roquée tous les cinq coups**. Les pions sont-ils encore là ? Le cavalier f est-il encore là ?\n2. Quand l'**adversaire conserve les attaquants**, conservez les défenseurs.\n3. **Ouvrez le centre** seulement quand votre roi est *plus en sécurité* que celui de l'adversaire.\n\n### Quels signes vous disent que le mur cède\n\n- Un **coup de pion près de votre roi** (g3, h3, f3) — chaque coup est une faiblesse potentielle.\n- Un **défenseur a été échangé** — recalculez la sécurité depuis zéro.\n- Une **colonne ouverte ou longue diagonale** mène à votre roi.\n\n### Erreurs courantes\n\n- Pousser **h3 ou g3** prophylactiquement quand rien n'attaquait — vous vous êtes affaibli gratuitement.\n- **Échanger les dames** quand vous étiez l'attaquant — les questions de sécurité du roi disparaissent mais votre initiative aussi.\n- Oublier les motifs de **mat sur la dernière rangée**. Beaucoup de parties sont perdues au coup 30 par une première rangée non défendue.\n\n> Le roque n'est pas la fin de la sécurité du roi — c'est le début."
+    }
   ]
 }

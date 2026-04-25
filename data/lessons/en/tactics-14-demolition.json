@@ -8,13 +8,13 @@
       "type": "teach",
       "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
       "title": "Sacrifices that Crack the Shell",
-      "text": "Sometimes the only way to reach a king is to blast through the pawn shield. The Greek Gift (Bxh7+), Nxf7 sacrifices, and exchange sacrifices on c3/c6 are all classic demolition patterns."
+      "text": "Sometimes the only road to the enemy king runs through a brick wall — his pawn cover. **Demolition** sacrifices break that wall apart, exposing the king to your other pieces.\n\n## The classic demolition patterns\n\n- **Greek Gift** — {{Bxh7+}} on a kingside-castled king; bishop sacrifice followed by knight and queen.\n- **Knight on f7** — {{Nxf7}} forks the queen and rook, or peels open the f-file.\n- **Knight on h6 / f5** — pries open the king's pawn cover with check or major threats.\n- **Exchange sacs on c3 / c6** — Sicilian-style: trading rook for knight to ruin the pawn structure.\n- **Pawn storms** — pushing pawns *into* the enemy king to crack files and diagonals.\n\n## The visual trigger\n\n- The enemy king is **castled** behind intact pawns.\n- You have a **pile of attackers** within two moves of the king (queen + 1-2 minor pieces).\n- The defender lacks a useful **knight on f6** (or its mirror) to plug the holes.\n\n## How to find a demolition\n\n1. Count attackers near the enemy king.\n2. Count *defenders* of his pawn shield.\n3. If attackers >= defenders + 1, look for a sacrifice that opens a file or diagonal.\n4. Calculate to mate or to a winning attack — at least 4-6 moves deep.\n\n> Material can be replaced. A wide-open enemy king cannot be rebuilt.\n\nIn this Italian-style position {{Bxh7+}} is the textbook Greek Gift starter — read the next lessons to see how it unfolds."
     },
     {
       "type": "teach",
       "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
-      "title": "When to Demolish",
-      "text": "The sacrifice works when: (1) you have attacking pieces ready to follow up, (2) the enemy king has no escape squares, (3) the defender can't bring reinforcements in time. Calculate 4-6 moves deep before committing."
+      "title": "When to Demolish (and When Not To)",
+      "text": "Demolition sacrifices are **calculated**, not played on instinct. Burn a piece in the wrong position and you simply lose.\n\n## Three preconditions\n\n1. **Attackers ready** — your queen and at least one minor piece can join the attack within two moves.\n2. **Defender absent** — the key defender (almost always {{Nf6}} for Black, {{Nf3}} for White) is gone or pinned.\n3. **No counterplay** — the opponent does not have a faster attack on your own king.\n\n## A model decision\n\nBefore committing:\n\n- Calculate the **forced** moves five-plus deep.\n- At each branch, ask: *do I keep an attacking piece on the king?*\n- Look for the **mate threat or perpetual** at the bottom of the tree.\n\n## When to back off\n\n- Your queen is far away and the rook lift is slow.\n- The defender has a key piece you cannot remove.\n- The opponent's counter-threat (like a passed pawn or a discovered attack) lands first.\n\n> A demolition that does not finish the king finishes you instead."
     }
   ]
 }

@@ -4,5 +4,8 @@
   "solution": [
     "Nc6"
   ],
-  "hint": "Le cavalier s'écarte — la tour frappe la tour."
+  "title": "Le Cavalier Gagne la Tour",
+  "setup": "Les deux camps ont une **tour et un cavalier**, mais les pièces blanches sont coordonnées sur la colonne d alors que la tour noire est sans défense en a8.",
+  "hint": "Le cavalier bloque la vue de votre tour vers d8. Déplacez-le sur une case qui **fourche** la tour ennemie — et regardez la colonne d s'ouvrir.",
+  "explanation": "## L'Idée\n\nToutes les attaques à la découverte ne sont pas des échecs. Ici la pièce découverte est la tour blanche en d1 — actuellement bloquée par son propre cavalier en d4 — et la **cible** du saut du cavalier est la tour noire pendante en a8.\n\n## Pourquoi {{Nc6}} est Écrasant\n\nLe cavalier saute en **c6** et accomplit trois choses à la fois :\n\n1. Il attaque directement la tour noire en a8.\n2. Il contrôle **d8**, donc le roi ne peut avancer.\n3. La colonne d est désormais grande ouverte — la tour en d1 regarde droit vers d8, enfermant le roi sur la dernière rangée.\n\nLes Noirs doivent sauver la tour (aucun bon défenseur à proximité), mais chaque case d'évasion perd du temps, et le roi est si passif que les Blancs vont simplement engloutir le matériel. Si les Noirs essaient 1...Rxa-quelque chose, le cavalier blanc capture la tour au coup suivant.\n\n## Et Si les Noirs Jouent ...Kd8 ou ...Kd7 ?\n\nLe roi ne peut aller en d8 — le cavalier en c6 le couvre. Il ne peut aller en d7 — même cavalier. Il ne peut aller en e7 — encore le cavalier. Le seul coup légal du roi est en f8 ou f7, abandonnant la tour. La **pièce découverte** (la tour en d1) est ce qui rend ces fuites du roi si terribles : chaque case sombre sur la colonne d est devenue du poison."
 }

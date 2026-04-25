@@ -1,55 +1,54 @@
 {
   "id": "check-and-mate",
-  "title": "Échec & échec et mat",
-  "summary": "Comprenez l'objectif de chaque partie",
+  "title": "Échec et mat",
+  "summary": "Comprenez le but de chaque partie",
   "difficulty": "beginner",
   "steps": [
     {
       "type": "teach",
       "fen": "4k3/8/4K3/4Q3/8/8/8/8 w - - 0 1",
       "title": "L'objectif",
-      "text": "On gagne aux échecs en mettant échec et mat le roi adverse — en l'attaquant sans qu'il puisse s'échapper. Ici, votre dame et votre roi se referment sur lui. Concluons."
+      "text": "Aux échecs, il n'existe qu'**une seule** façon de gagner : donner **échec et mat**. C'est-à-dire attaquer le roi adverse de telle sorte qu'il ne puisse pas s'échapper — aucune case où fuir, aucune pièce pour intercepter, aucun moyen de capturer l'attaquant.\n\n## Trois termes à graver\n\n- **Échec** — le roi est attaqué, mais a au moins une issue légale.\n- **Échec et mat** — le roi est attaqué et aucun coup légal n'existe. Partie terminée.\n- **Pat** — le roi n'est *pas* en échec, mais le camp au trait n'a aucun coup légal. Nulle.\n\nDans la position affichée, votre dame et votre roi coopèrent. Le roi coupe les cases d'évasion e7, d6 et f6 ; la dame portera le coup final. Ce schéma — roi + dame contre roi seul — doit toujours être gagnant.\n\n> Le roi ne meurt jamais réellement aux échecs. Il finit simplement par n'avoir plus aucun coup."
     },
     {
       "type": "play",
       "fen": "4k3/8/4K3/4Q3/8/8/8/8 w - - 0 1",
-      "prompt": "Délivrez l'échec et mat en un coup.",
+      "prompt": "Glissez la dame sur la dernière rangée avec **{{Qb8#}}** (ou **{{Qh8#}}**) — le roi n'a nulle part où fuir.",
       "targetSan": [
         "Qb8#",
         "Qh8#"
       ],
-      "hint": "Frappez la 8e rangée — le roi n'a pas d'échappatoire."
+      "hint": "Votre roi en e6 contrôle déjà d7, e7 et f7. Frappez la 8e rangée avec la dame et le roi est piégé."
     },
     {
       "type": "teach",
       "fen": "3k4/8/3K4/3Q4/8/8/8/8 w - - 0 1",
-      "title": "Angle différent",
-      "text": "Même idée, position différente. La dernière rangée est mûre pour le mat."
+      "title": "Autre angle, même idée",
+      "text": "Mêmes ingrédients, autre disposition. Le schéma roi + dame est extrêmement courant — il faut donc qu'il soit dans vos os.\n\nNotez la recette :\n\n- **Votre roi** se tient à une case du roi adverse, lui retirant trois cases d'évasion.\n- **Votre dame** porte l'échec — et comme les rois sont face à face, le roi adverse n'a aucune case de fuite.\n\nQuand les rois sont sur la même colonne ou rangée avec une case d'écart, on parle d'*opposition*. C'est une formation magique : elle permet à la dame d'avancer pour porter l'estocade sans pouvoir être capturée.\n\n> Le roi et la dame ensemble forment le duo de mat de référence."
     },
     {
       "type": "play",
       "fen": "3k4/8/3K4/3Q4/8/8/8/8 w - - 0 1",
-      "prompt": "Trouvez l'échec et mat.",
+      "prompt": "Coupez la 8e rangée avec **{{Qa8#}}** — le roi n'a plus d'échappatoire.",
       "targetSan": [
-        "Qa8#",
-        "Qd7"
+        "Qa8#"
       ],
-      "hint": "Coupez la 8e rangée sur le côté. Qa8#."
+      "hint": "Votre roi couvre déjà c7, d7 et e7. Trouvez un coup de dame qui attaque d8 depuis une case que le roi ne peut pas prendre."
     },
     {
       "type": "teach",
       "fen": "6k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
-      "title": "Mat du couloir",
-      "text": "Quand un roi est piégé derrière ses propres pions sur la dernière rangée, une tour ou une dame sur cette rangée peut donner mat. C'est l'un des schémas les plus fréquents aux échecs."
+      "title": "Le mat du couloir",
+      "text": "Le schéma de mat le plus joué dans les clubs : le **mat du couloir** (back-rank mate).\n\nUn roi roqué est en sécurité — jusqu'à ce que ses pions fidèles deviennent sa prison. Lorsque les pions f, g et h n'ont pas bougé, le roi n'a plus d'issue. Une tour ou une dame qui glisse sur la dernière rangée donne mat sans aucun sacrifice.\n\n## Ce qu'il faut repérer\n\n- Le roi adverse sur la **dernière rangée** sans **case d'évasion**.\n- Une **colonne ouverte** vers cette dernière rangée pour votre tour ou votre dame.\n- Aucun défenseur sur la dernière rangée pour vous capturer ou intercepter.\n\nPar exemple, après {{Ra8+}}, si les Noirs n'ont rien pour intercepter et que le roi ne peut pas fuir, c'est mat. C'est précisément ce qui va se produire ici.\n\n> Faites toujours un *trou d'aération* — poussez un pion, libérez votre roi. Oubliez-le et le mat du couloir vous rattrapera tôt ou tard."
     },
     {
       "type": "play",
       "fen": "6k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
-      "prompt": "Délivrez le mat du couloir.",
+      "prompt": "Glissez la tour sur la dernière rangée avec **{{Ra8#}}** — les pions du roi le piègent eux-mêmes.",
       "targetSan": [
         "Ra8#"
       ],
-      "hint": "Les pions du roi sont son mur — mais aussi sa prison."
+      "hint": "Le roi en g8 ne peut fuir qu'en f7 ou h7 — mais ses pions barrent la route. Une tour sur la 8e rangée met fin à la partie."
     }
   ]
 }

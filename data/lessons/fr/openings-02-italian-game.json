@@ -1,41 +1,41 @@
 {
   "id": "italian-game",
   "title": "La partie italienne",
-  "summary": "Classique, fondée sur les principes, toujours jouée au sommet",
+  "summary": "Classique, fondée sur les principes, toujours jouée au plus haut niveau",
   "difficulty": "intermediate",
   "steps": [
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "L'italienne",
-      "text": "La partie italienne commence par le premier coup le plus orthodoxe : e4. Nous construirons jusqu'à Bc4, visant f7, la recette classique."
+      "text": "La partie italienne est l'une des **plus anciennes** ouvertures du jeu d'échecs et reste — chose incroyable — l'une des plus populaires à tous les niveaux, jusqu'au sommet du classement mondial.\n\n## Les coups qui la définissent\n\nLa séquence canonique est {{e4}} {{e5}} {{Nf3}} {{Nc6}} {{Bc4}}. Trois coups de principe, trois pièces développées, et un fou pointé sur f7 — la case la plus faible du camp noir.\n\n## Ce que veut chaque camp\n\n- **Plan blanc :** terminer le développement par {{Nc3}} (ou {{c3}} préparant d4), petit roque, puis bâtir lentement une attaque à l'aile roi ou pousser d4 pour réclamer le centre.\n- **Plan noir :** copier avec **...Nf6** et **...Bc5** (le Giuoco Piano) ou **...Be7** (la plus calme défense hongroise), petit roque, et contester le centre par **...d6** ou **...d5**.\n- **Structure de pions :** symétrique au début, devenant souvent un centre fermé après **c3 / d3 / d6**.\n\n## Pourquoi ça marche\n\nL'italienne respecte tous les principes : un pion central, deux pièces mineures sorties, un roi prêt à roquer. Pas besoin de théorie hyper-pointue — juste de bons coups.\n\n> Les échecs classiques dans leur forme la plus pure : pièces sorties, roi à l'abri, lutte au centre."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "prompt": "Ouvrez avec 1. e4",
+      "prompt": "Ouvrez avec le pion roi — jouez **{{e4}}**.",
       "targetSan": [
         "e4"
       ],
-      "hint": "Poussez le pion roi de deux cases."
+      "hint": "Le premier coup le plus populaire de l'histoire ouvre les lignes pour la dame ET le fou de f1."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
-      "prompt": "Maintenant 2. Nf3, attaquant le pion e5.",
+      "prompt": "Développez avec **{{Nf3}}** — un cavalier qui attaque **e5** et prépare le roque.",
       "targetSan": [
         "Nf3"
       ],
-      "hint": "Cavalier en f3 — le coup favori de tout maître."
+      "hint": "Deux pierres d'un coup : ce coup développe une pièce ET attaque le pion central noir."
     },
     {
       "type": "play",
       "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
-      "prompt": "3. Bc4 — affirmez votre prétention sur f7.",
+      "prompt": "Plantez le fou avec **{{Bc4}}** — droit sur f7.",
       "targetSan": [
         "Bc4"
       ],
-      "hint": "Fou en c4 entre dans la partie italienne proprement dite."
+      "hint": "La case la plus vulnérable du camp noir est f7, défendue uniquement par le roi. Un fou en c4 fixe précisément cette case."
     }
   ]
 }

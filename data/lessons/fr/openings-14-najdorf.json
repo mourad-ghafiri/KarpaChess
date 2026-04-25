@@ -1,26 +1,26 @@
 {
   "id": "najdorf-sicilian",
-  "title": "Sicilienne Najdorf",
+  "title": "La sicilienne Najdorf",
   "summary": "L'ouverture la plus tranchante des échecs modernes",
   "difficulty": "advanced",
   "steps": [
     {
       "type": "teach",
       "fen": "rnbqkb1r/1p2pppp/p2p1n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6",
-      "title": "Le favori de Fischer",
-      "text": "La sicilienne Najdorf (5...a6) est considérée comme l'ouverture la plus tranchante et la plus théorique des échecs. Kasparov, Fischer et Carlsen l'ont tous jouée au plus haut niveau. Le coup ...a6 a de nombreux buts : empêcher les clouages Bb5+, préparer ...e5 ou ...b5, et créer de la flexibilité."
+      "title": "Le coup préféré de Fischer",
+      "text": "La **variante Najdorf** de la sicilienne est largement considérée comme l'ouverture la plus **tranchante, théorique et étudiée** de l'histoire des échecs. C'était l'arme favorite de **Bobby Fischer** et de **Garry Kasparov** — deux des champions du monde les plus agressifs jamais vus — et elle reste un pilier au plus haut niveau.\n\n## Comment on arrive à la Najdorf\n\nLa séquence définissante est {{e4}} **{{c5}}** {{Nf3}} **{{d6}}** {{d4}} **{{cxd4}}** {{Nxd4}} **{{Nf6}}** {{Nc3}} **a6** — et vous y êtes. Le petit coup **5...a6** est l'âme de la variante.\n\n## Pourquoi **5...a6** est-il si important ?\n\n- **Empêche les idées Bb5+ ou de clouage** qui pourraient gêner le développement noir.\n- **Prépare ...e5** en retirant la case b5 comme avant-poste potentiel pour les pièces blanches.\n- **Prépare ...b5** — la tempête de pions à l'aile dame des Noirs.\n- **Reste flexible** — les Noirs ne se sont pas encore engagés dans un dispositif, laissant les Blancs choisir d'abord.\n\n## Ce que veut chaque camp\n\n- **Plan blanc :** choisir un dispositif d'attaque (attaque anglaise, Bg5, Be2, Bc4) et viser une percée à l'aile roi ou au centre. Grand roque si possible (attaque anglaise), puis **g4-g5** pour fracasser l'aile roi.\n- **Plan noir :** développer par **...e5** ou **...e6**, **...Be7** ou **...Nbd7**, **...b5**, et contre-attaquer à l'aile dame. La Najdorf est célèbre pour ses *courses au mat des roques opposés*.\n- **Structure de pions :** chaînes typiques de la Najdorf — Noirs en d6/e6/a6/b5 contre Blancs en e4/f3 (attaque anglaise) ou e4/f4 (lignes Be2).\n\n> La Najdorf, c'est les échecs dans leur forme la plus violente. Les deux rois sous le feu, chaque coup un calcul, aucun milieu de partie tranquille."
     },
     {
       "type": "teach",
       "fen": "rnbqkb1r/1p2pppp/p2p1n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6",
-      "title": "Variantes principales",
-      "text": "Les Blancs ont de nombreux choix ambitieux : 6.Be3 (attaque anglaise — attaques mutuelles), 6.Bg5 (classique pion empoisonné), 6.Bc4 (Fischer-Sozin), 6.Be2 (style Scheveningue). Chacun mène à une bataille distincte et fortement analysée. Préparez une théorie profonde ou évitez."
+      "title": "Les lignes principales",
+      "text": "Au 6e coup, les Blancs ont l'embarras du choix — *six* options sérieuses, chacune menant à un milieu de partie distinct.\n\n## Les six grands coups blancs\n\n- **6.Be3** — *Attaque anglaise*. Les Blancs jouent {{Be3}}, **f3**, **Qd2**, **0-0-0**, puis **g2-g4-g5**. Attaques mutuelles sur des ailes opposées. La ligne moderne la plus populaire.\n- **6.Bg5** — *Najdorf classique*. Le fou cloue f6 et prépare l'échange. Mène à une théorie sauvage dans les variantes du **pion empoisonné** et de **Goteborg**.\n- **6.Bc4** — *Attaque Fischer-Sozin*. La ligne de prédilection de Bobby Fischer. Le fou cible f7 ; les Blancs visent un feu d'artifice direct à l'aile roi.\n- **6.Be2** — *Classique / Opocensky*. Calme, solide, objectifs modestes. Transpose souvent vers des milieux de partie de style Scheveningen.\n- **6.f3** — préparation de l'attaque anglaise un coup plus tôt.\n- **6.h3** — la mode moderne, popularisée par **Magnus Carlsen** et **Wesley So**. Prépare **g4** sans les faiblesses de **f3**.\n\n## Choisir son arme\n\n- *Maximum de tranchant ?* — Attaque anglaise par 6.Be3.\n- *Pure agression ?* — Bg5 pion empoisonné ou Bc4 Fischer-Sozin.\n- *Jeu positionnel ?* — 6.Be2 ou 6.h3.\n\n## Le coût de la Najdorf\n\nApprendre la Najdorf est un **projet d'une vie**. La théorie va à 20 coups de profondeur dans de nombreuses lignes. Des livres consacrés à une seule variante font des centaines de pages.\n\n> La Najdorf récompense l'étude comme aucune autre ouverture. On y investit — on en récolte des victoires."
     },
     {
       "type": "teach",
       "fen": "rnbqkb1r/1p2pppp/p2p1n2/6B1/3NP3/2N5/PPP2PPP/R2QKB1R b KQkq - 1 6",
       "title": "Le pion empoisonné",
-      "text": "La célèbre ligne 6.Bg5 e6 7.f4 Qb6!? invite les Blancs à défendre le pion b2. La dame noire part en raid avide pendant que les Blancs construisent une énorme attaque. Pas pour les âmes sensibles — l'une des variantes les plus analysées de tous les échecs."
+      "text": "Après **6.Bg5 e6 7.f4**, les Noirs sont à la croisée des chemins. La fameuse réplique empoisonnée est **7...Qb6 !?** — défiant les Blancs de défendre le pion **b2**.\n\n## Pourquoi « empoisonné » ?\n\nParce que si les Noirs croquent gloutonnement le pion par **8...Qxb2**, les Blancs abandonnent la colonne b en échange d'une attaque énorme : **9.Rb1 Qa3** et désormais les Blancs ont les idées **Rb3**, la **rupture e5**, **Bxf6 + Bd3**, et un centre rugissant.\n\n## La ligne historique du pion empoisonné\n\nLa ligne critique va **6.Bg5 e6 7.f4 Qb6 8.Qd2 Qxb2 9.Rb1 Qa3 10.f5** — et les Noirs doivent naviguer dans un fourré de menaces, leur dame hors de jeu. Spassky a employé cette ligne contre Fischer lors du match du championnat du monde 1972.\n\n## Que parie chaque camp ?\n\n- **Pari noir :** la dame en a3 est exposée, et la structure à l'aile dame est en miettes. Mais si l'attaque blanche s'essouffle, le pion en plus et la paire de fous noirs peuvent décider la finale.\n- **Pari blanc :** le pion b2 a disparu, mais les pièces blanches hurlent en avant et le roi noir est encore au centre.\n\n## Pourquoi l'étudier\n\nLe pion empoisonné est *l'*exemple type d'un gambit moderne testé par les ordinateurs — les moteurs confirment que les Noirs s'en sortent **avec un jeu parfait**, mais la marge d'erreur humaine est minuscule. Les deux camps ont besoin de plus de 20 coups de théorie pour survivre.\n\n> Les coups gourmands peuvent gagner des parties — à condition d'être prêt à marcher sur un fil pour les défendre."
     }
   ]
 }

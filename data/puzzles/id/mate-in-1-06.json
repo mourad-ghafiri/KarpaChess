@@ -4,5 +4,8 @@
   "solution": [
     "Qa8#"
   ],
-  "hint": "Potong baris ke-8 sementara raja Anda menutup semua kotak pelarian."
+  "title": "Skakmat Oposisi Raja",
+  "setup": "Kedua raja Anda berdiri dalam **oposisi** di lajur d — sangkar sempurna untuk disegel menteri.",
+  "hint": "Geser menteri sepanjang baris belakang — raja Anda sudah menutupi {{c7}}, {{d7}}, dan {{e7}}.",
+  "explanation": "## Idenya\n\nIni adalah **skakmat K+M vs K** dasar. Kedua raja saling berhadapan dalam oposisi, dan menteri mengayun untuk skakmat di baris belakang.\n\nMain {{Qa8#}}.\n\nMengapa raja terjebak?\n\n- {{c8}} dan {{e8}} — ditutupi menteri di a8 (baris ke-8)\n- {{c7}}, {{d7}}, {{e7}} — semua dikuasai raja Anda sendiri di **d6**\n- Menteri jauh, dan tidak ada yang bisa memblokir di baris ke-8 yang kosong\n\n> **Inti:** Saat mengonversi akhir menteri-dan-raja, tempatkan raja Anda *satu kotak diagonal* dari raja musuh (oposisi + langkah kuda) dan biarkan menteri menyapu baris belakang. Selalu cek ulang stalemate sebelum melangkah."
 }

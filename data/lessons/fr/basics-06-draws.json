@@ -1,20 +1,26 @@
 {
   "id": "draws",
-  "title": "Pat & nulles",
+  "title": "Le pat et les nulles",
   "summary": "Un demi-point est parfois une victoire",
   "difficulty": "beginner",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "7k/8/6K1/8/8/8/8/8 w - - 0 1",
       "title": "Le pat",
-      "text": "Le pat se produit lorsque le camp au trait n'a AUCUN coup légal mais que son roi N'EST PAS en échec. C'est une partie nulle. Attention : quand vous avez un avantage écrasant, prenez garde à ne pas faire pat le roi adverse — cela jette la victoire !" },
-    { "type": "teach",
+      "text": "Le pat est la règle la plus cruelle des échecs — et la plus belle, selon le côté où l'on se trouve.\n\nIl survient lorsque **le camp au trait n'a aucun coup légal mais N'EST PAS en échec**. Résultat ? Une **nulle** immédiate, peu importe l'écart matériel.\n\nObservez le diagramme : le roi noir en h8 n'a nulle part où aller. Il ne peut pas aller en g8 (attaqué par votre roi en g6), ni en h7 (attaqué aussi), et il n'est pas en échec en h8. Si c'est au tour des Noirs ici, c'est pat.\n\n## Pourquoi le pat existe\n\n- Il récompense la technique soigneuse et punit la négligence.\n- Il offre au camp perdant une chance de se battre, même dans les pires positions.\n- Il vous enseigne qu'*attaquer le roi ne suffit pas — il faut lui laisser un coup légal jusqu'à pouvoir le mater*.\n\n> Même avec roi et dame contre roi seul, un coup négligent peut faire pat. Laissez toujours au roi adverse au moins une case légale — jusqu'à pouvoir l'achever."
+    },
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "title": "Autres moyens de faire nulle",
-      "text": "En plus du pat : (1) triple répétition — même position atteinte trois fois ; (2) règle des 50 coups — 50 coups sans prise ni poussée de pion ; (3) matériel insuffisant — par ex. deux rois seuls, ou roi + cavalier contre roi ; (4) les deux joueurs s'accordant sur la nulle." },
-    { "type": "teach",
+      "title": "Les autres façons d'annuler",
+      "text": "Le pat n'est qu'une des voies vers le demi-point. Les connaître toutes vous fait sauver — et gagner — des parties.\n\n## Les cinq grands types de nulle\n\n- **Pat** — aucun coup légal, pas en échec.\n- **Triple répétition** — la même position (même camp au trait, mêmes droits de roque et de prise en passant) apparaît trois fois. Chaque joueur peut réclamer la nulle.\n- **Règle des 50 coups** — cinquante coups consécutifs des deux camps sans poussée de pion ni capture. Chaque joueur peut réclamer.\n- **Matériel insuffisant** — aucun camp n'a de quoi mater. Roi contre roi, R + C contre R, ou R + F contre R sont les nulles classiques.\n- **Accord** — les deux joueurs s'entendent pour partager le point.\n\nDeux autres, plus rares : la **position morte** (le mat est mathématiquement impossible des deux côtés) et la **chute du drapeau face à un matériel insuffisant** en jeu en ligne.\n\n> Une nulle, c'est la moitié d'une victoire. Parfois, c'est un triomphe."
+    },
+    {
+      "type": "teach",
       "fen": "4k3/4q3/8/8/8/8/8/4K3 w - - 0 1",
       "title": "Éviter les accidents",
-      "text": "Même quand vous êtes manifestement perdant, le pat peut vous sauver ! Vérifiez toujours : mon adversaire a-t-il un coup légal ? Sinon, et s'il n'est pas en échec, c'est nulle. C'est pourquoi la technique de finale compte — même avec R+D contre R, un jeu négligent peut faire pat." }
+      "text": "Le pat est **la** technique à maîtriser avant de prétendre savoir mater.\n\nDans cette position, vous êtes en infériorité matérielle — la dame noire va dominer — mais si les Noirs jouent négligemment, *vous* pourriez vous échapper par le pat.\n\n## La check-list de deux secondes avant chaque coup\n\n1. *Mon adversaire aura-t-il au moins un coup légal après ce coup ?*\n2. *Une de ses pièces est-elle bloquée (le roi sans case, tous les pions cloués, toutes les pièces clouées) ?*\n3. *Suis-je sur le point de prendre sa dernière pièce mobile ?*\n\nSi la réponse à la question 1 est **non** et que le roi n'est **pas** en échec — vous venez de faire pat. Combien de positions gagnantes ont été dilapidées par un coup de dame trop confiant…\n\n## Une leçon célèbre\n\nDans la finale la plus simple — Roi + Dame contre Roi — le piège de pat le plus courant consiste à placer la dame juste devant le roi acculé, sans case d'évasion. Laissez toujours au roi adverse une case de fuite, jusqu'à ce que votre roi soit assez près pour donner mat.\n\n> Quand vous gagnez, votre travail est de rester calme. La victoire est déjà là — ne la rendez pas."
+    }
   ]
 }

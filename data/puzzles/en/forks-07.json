@@ -1,8 +1,11 @@
 {
   "id": "forks-07",
-  "fen": "3rk3/8/8/2N5/8/8/8/4K3 w - - 0 1",
+  "fen": "3r1k2/8/8/2N5/8/8/8/4K3 w - - 0 1",
   "solution": [
-    "Ne6"
+    "Ne6+"
   ],
-  "hint": "Fork rook and king."
+  "title": "The Royal Fork",
+  "setup": "Black's king and rook stand on the 8th rank just two squares apart — the perfect target for a knight leap.",
+  "hint": "Find a square where the knight attacks **both** the king on f8 and the rook on d8 at once.",
+  "explanation": "## The Idea\n\nThis is a textbook **knight fork**. From c5, only one square hits both Black pieces in a single L-shape:\n\n- {{Ne6+}} attacks **f8** (the king) and **d8** (the rook) simultaneously.\n- The check is forcing — Black must respond to it before doing anything else.\n\n### Why Black has no defense\n\n1. **Capture the knight?** The king on f8 can't reach e6 in one step (kings move one square). No other Black piece is in range.\n2. **Block the check?** Knights jump — checks by knights cannot be blocked.\n3. **Move the king?** The king must run (Ke7, Ke8, Kg8, Kf7…). The rook stays on d8, undefended.\n\nAfter the king moves, {{Nxd8}} collects the rook. White wins **rook for knight** — a clean +2 material swing.\n\n> When you see a king and rook two squares apart, look for the knight square that touches both."
 }

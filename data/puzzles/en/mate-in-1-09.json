@@ -1,6 +1,11 @@
 {
   "id": "mate-in-1-09",
   "fen": "7k/5K1p/8/8/8/8/8/R7 w - - 0 1",
-  "solution": ["Ra8#"],
-  "hint": "The king's own pawn seals his fate — just walk the rook to the 8th rank."
+  "solution": [
+    "Ra8#"
+  ],
+  "title": "His Own Pawn, His Own Cage",
+  "setup": "Black's king sits in the corner with the **h7** pawn blocking his only escape, while your king on **f7** locks the rest.",
+  "hint": "March the rook all the way up — the {{h7}} pawn is doing your job for you.",
+  "explanation": "## The Idea\n\nA pure **back-rank corner mate**. Your king on **f7** chokes off g7 and g8, and the Black h7 pawn finishes the cage.\n\nPlay {{Ra8#}}.\n\nWhy is the king stuck?\n\n- {{g8}} — covered by your king on **f7**\n- {{g7}} — also covered by your king on **f7**\n- {{h7}} — blocked by Black's own pawn\n- The king cannot capture the rook (h8 to a8 is half a board away) and nothing can interpose\n\n> **Takeaway:** A king on the 7th rank one file away from the enemy king is the *standard cage* for K+R vs K. Once the king is boxed, the rook delivers the killing blow from any safe square on the back rank."
 }

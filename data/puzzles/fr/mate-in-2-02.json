@@ -1,10 +1,13 @@
 {
   "id": "mate-in-2-02",
-  "fen": "7k/8/6K1/6Q1/8/8/8/8 w - - 0 1",
+  "fen": "Q7/8/8/8/8/6K1/8/7k w - - 0 1",
   "solution": [
-    "Qh5+",
-    "Kg8",
-    "Qh8+"
+    "Qh8+",
+    "Kg1",
+    "Qa1#"
   ],
-  "hint": "Échec pour forcer le roi, puis mat."
+  "title": "Piège sur la grande diagonale",
+  "setup": "Le roi noir est coincé dans le coin **h1** ; votre roi en **g3** tient {{g2}} et {{h2}}, ne laissant que **g1** comme fuite.",
+  "hint": "Forcez le roi en {{g1}} avec un échec à distance, puis balayez-le avec la diagonale **a1-h8**.",
+  "explanation": "## L'idée\n\nUn élégant **mat en 2 R+D contre R** dans le coin. La dame coupe la fuite du roi, puis livre le mat depuis le coin *opposé*.\n\n**1. {{Qh8+}}** — la dame atterrit sur la colonne h, donnant un échec à distance. Le roi noir doit bouger.\n\n**1...{{Kg1}}** — forcé. {{Kg2}} est illégal (votre roi en **g3** attaque g2), {{Kh2}} est illégal (votre roi attaque h2), et {{Kxh8}} est impossible (trop loin).\n\n**2. {{Qa1#}}** — la dame plonge le long de la grande diagonale **h8-a1** pour mater.\n\nPourquoi le roi est-il bloqué après le coup 2 ?\n\n- {{b1}} et le reste de la 1re rangée — couverts par la dame en a1\n- {{f1}} — également couverte par la dame en a1 (1re rangée)\n- {{h2}} — contrôlée par votre roi en **g3**\n- {{g2}} — contrôlée par votre roi en **g3**\n- La dame est loin, donc {{Kxa1}} est impossible\n\n> **À retenir :** les grandes diagonales sont les autoroutes des dames. Pour mater dans le coin, cherchez un *schéma à deux coins* — échec depuis un coin pour forcer le roi, puis mat depuis le coin opposé sur la grande diagonale."
 }

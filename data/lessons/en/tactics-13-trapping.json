@@ -8,13 +8,13 @@
       "type": "teach",
       "fen": "8/8/3k4/3q4/8/8/8/K3RR2 w - - 0 1",
       "title": "Nowhere to Go",
-      "text": "Pieces deep in enemy territory are vulnerable. If you can cut off every escape square, you win the piece for free. Queens, knights, and bishops are particularly easy to trap on the edge."
+      "text": "A piece deep in enemy territory is brave but vulnerable. **Trap it** — control every square it can flee to — and you win it without spending material.\n\n## What makes a piece trappable\n\n- It is **far from home**, with no friendly support.\n- Its **mobility** is limited (a knight on the rim, a bishop blocked by pawns).\n- It is the most valuable piece in its corner of the board (often a queen).\n- The **attacker** has nearby pieces or pawns that can cover its retreats.\n\n## The geometry\n\nList every square the trapped piece can move to. If you can attack one of them or block another with each of your moves — without losing tempo — the piece dies one square at a time.\n\n## How to spot it\n\n1. Look for an enemy piece on **the wrong side of the board**.\n2. Count the squares it can move to.\n3. For each escape square, find a piece or pawn of yours that controls or blocks it.\n4. Approach with a tempo move (often a check or a threat) so the trap is sealed before the piece can flee.\n\nHere the black queen on d5 sits in front of her king with white rooks doubled on the e- and f-files. White can play moves that systematically take away every square the queen can reach.\n\n> A queen far from home is just an expensive prisoner."
     },
     {
       "type": "teach",
       "fen": "8/8/8/8/6Q1/8/r7/K1R5 w - - 0 1",
-      "title": "Rim Knights",
-      "text": "A knight on the rim is dim — and often doomed. Push pawns toward it, block its squares with your pieces, and the knight has nowhere to run. \"Knight on the rim, future is dim\" — Tarrasch."
+      "title": "Rim Knights and Trapped Rooks",
+      "text": "Two of the most common trapping motifs you will see in real games:\n\n## The rim knight\n\nA knight on the **a-** or **h-file** controls only four squares instead of the usual eight. Push pawns at it. Block its retreats. Bring a piece next to it. Game over.\n\n- **a4 + b5** vs. a Black knight on a6 → the knight has no good square.\n- A bishop on c8 hemmed in by its own pawns, then attacked by a knight on a7.\n\n> *\"A knight on the rim is dim.\"* — Tarrasch\n\n## The trapped rook\n\nRooks deep in enemy territory chasing a pawn (a2, h2) often get caught.\n\n- The rook captures a pawn on a2.\n- The opponent's king walks to b1.\n- A piece (often a bishop or knight) covers the escape square.\n- The rook is gone.\n\n## How to find the trap\n\n1. Identify the **far-from-home** enemy piece.\n2. Count its escape squares.\n3. Use **tempo moves** (checks, threats) to bring attackers in without giving the piece a chance to flee.\n\n> Adventurous pieces need an adventurous owner — and an unobservant opponent."
     }
   ]
 }

@@ -4,5 +4,8 @@
   "solution": [
     "Nf6+"
   ],
-  "hint": "Un caballo puede atacar dos piezas a la vez — encuentra la casilla que golpea al rey y a la dama."
+  "title": "El caballo horquilla a la realeza",
+  "setup": "El rey negro en e8 y la dama en d5 están ambos a un salto de caballo de f6.",
+  "hint": "Busca la casilla en la que el caballo aterrice y golpee **a la vez** al rey y a la dama.",
+  "explanation": "## La idea\n\nUna **horquilla familiar** de manual. La casilla {{f6}} toca e8 (el rey) y d5 (la dama) al mismo tiempo — el patrón clásico del caballo atacando dos piezas a dos casillas en forma de L.\n\nTras {{Nf6+}}:\n\n- **¿Capturar?** El rey en e8 no es adyacente a f6 (está a dos casillas en diagonal), así que {{Kxf6}} es ilegal. La dama en d5 tampoco puede tomar f6 — d5 a f6 es patrón de caballo, no línea de dama.\n- **¿Interponer?** Un jaque de caballo nunca es bloqueable.\n- **¿Huir?** El rey debe moverse (Kd7, Kf7, Kd8, Kf8), y en la siguiente jugada las blancas juegan {{Nxd5}}, ganando la dama por nada.\n\n## Patrón a memorizar\n\n> Cuando el rey y la dama enemigos estén **a dos casillas en diagonal** (como d5 y e8 — situados en una L de caballo), el caballo normalmente puede horquillarlos desde la casilla intermedia."
 }

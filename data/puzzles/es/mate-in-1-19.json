@@ -4,5 +4,8 @@
   "solution": [
     "Qg8#"
   ],
-  "hint": "Dos piezas trabajan juntas — fuerza el cambio."
+  "title": "El alfil respalda a la dama",
+  "setup": "El rey negro está atrapado en **h7** con un peón detrás en **h6**, y tu alfil en **f7** bloquea {{g8}} desde la diagonal.",
+  "hint": "Coloca la dama en {{g8}} — el alfil en **f7** defiende su casilla de aterrizaje.",
+  "explanation": "## La idea\n\nUn **beso de la muerte con dama + alfil**. El alfil en **f7** convierte g8 en una casilla defendida, y la dama se sacrifica allí.\n\nJuega {{Qg8#}}.\n\n¿Por qué está atrapado el rey?\n\n- La dama en g8 ataca h7 directamente (jaque diagonal, defendida por el alfil)\n- {{Kxg8}} es ilegal — el alfil en **f7** defiende g8\n- {{h8}} — cubierta por la dama en g8\n- El rey está en *jaque*, así que las únicas jugadas legales son escapar del jaque; capturar el alfil ignora el jaque de la dama\n- {{g6}} — la dama en g8 cubre g6 por la columna\n\n> **Conclusión:** Un alfil a un movimiento de la fila final puede apoyar el sacrificio mate de la dama. Cuando tu dama y tu alfil llegan al vecindario del rey, busca una casilla de aterrizaje defendida junto al rey."
 }

@@ -4,5 +4,8 @@
   "solution": [
     "Rb8#"
   ],
-  "hint": "Lleva la torre a la octava."
+  "title": "Marcha de la torre solitaria",
+  "setup": "El rey negro está encerrado tras sus peones y la única pieza blanca activa es la torre — eso es todo lo que necesitas.",
+  "hint": "Solo lleva la torre a la última fila.",
+  "explanation": "## La idea\n\nSin cambios, sin sacrificios — la torre simplemente viaja hasta su destino. {{Rb8#}} es jaque mate al instante:\n\n1. La torre llega a la octava fila con jaque.\n2. El rey negro en g8 está rodeado por sus propios peones en f7-g7-h7.\n3. Las casillas **f8** y **h8** están ambas controladas por la torre en b8.\n4. Nada puede interponerse (ninguna pieza negra en la octava fila aparte del rey); nada puede capturar (el rey en g8 no puede llegar a b8 en un paso).\n\n### Por qué es tan común\n\nEn muchas partidas reales, las torres del defensor están cambiándose, defendiendo o lejos — dejando la última fila abierta. Una torre enemiga que viaja no necesita pelear ni sacrificarse; simplemente entra.\n\n### Patrón\n\n- Última fila abierta + rey sin luft = una sola torre da mate desde cualquier lugar de la octava fila.\n\n> El mate más simple del ajedrez: una torre, una fila, un clic."
 }

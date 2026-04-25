@@ -4,5 +4,8 @@
   "solution": [
     "Rd8#"
   ],
-  "hint": "Clásico mate de la última fila."
+  "title": "El muro de peones",
+  "setup": "El escudo de peones negro en **f7**, **g7**, **h7** está intacto — pero sin ventana de escape, eso es una sentencia de muerte.",
+  "hint": "Sube la torre por la columna abierta — los peones de {{f7}}-{{g7}}-{{h7}} hacen todo el trabajo.",
+  "explanation": "## La idea\n\nEl **mate de fila final** en su forma más pura: una columna abierta, una fila final vacía, y un escudo de peones negro sin casillas de escape.\n\nJuega {{Rd8#}}.\n\n¿Por qué está atrapado el rey?\n\n- {{f8}} y {{h8}} — cubiertas por la torre en d8 (octava fila)\n- {{f7}}, {{g7}}, {{h7}} — todas bloqueadas por los propios peones negros\n- Nada en la línea d8-g8 puede interponerse\n- El rey no puede capturar: d8 está lejos de g8\n\n> **Conclusión:** Esta es la posición que todo profesor de ajedrez usa el primer día. La solución es simple — empuja *uno* de los peones f, g o h una casilla hacia adelante para crear una ventana de escape antes de que llegue la torre."
 }

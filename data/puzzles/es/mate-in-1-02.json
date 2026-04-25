@@ -4,5 +4,8 @@
   "solution": [
     "Ra8#"
   ],
-  "hint": "Observa la última fila — no hay casillas de escape."
+  "title": "Cimiento de la última fila",
+  "setup": "El rey negro se esconde detrás de **f7**, **g7** y **h7** — peones que se han convertido en muro.",
+  "hint": "La octava fila está completamente abierta y los peones negros no han creado ventana de escape en {{h6}} o {{g6}}.",
+  "explanation": "## La idea\n\nEste es el **mate de pasillo** de manual. La torre se desliza a la esquina y el rey no puede escapar porque sus propios peones bloquean cada casilla de huida.\n\nJuega {{Ra8#}}.\n\n¿Por qué el rey está atrapado?\n\n- {{f7}}, {{g7}}, {{h7}} — todas bloqueadas por los propios peones negros\n- {{f8}} y {{h8}} — ambas barridas por la torre en a8\n- Ninguna pieza puede interponerse entre a8 y g8\n\n> **Conclusión:** El precio de la seguridad es un tiempo — una sola jugada de peón (h6, g6 o f6) abre un respiradero y previene este desastre. Entrena el ojo para detectar este esqueleto en cada partida."
 }

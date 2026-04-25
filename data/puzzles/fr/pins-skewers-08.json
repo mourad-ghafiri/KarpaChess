@@ -4,5 +4,8 @@
   "solution": [
     "Rxd6"
   ],
-  "hint": "Prenez le pion — au coup suivant, la dame."
+  "title": "Mangez d'abord le pion cloué",
+  "setup": "Un pion noir en d6 et une dame en d7 sont empilés devant leur roi — et la tour blanche a faim.",
+  "hint": "Ne prenez pas la plus grosse pièce d'abord. Grignotez par le bas de la pile.",
+  "explanation": "## L'idée\n\nVoici un **clouage en chaîne** : le pion noir en d6 est cloué par la tour blanche en d5 (il ne peut pas bouger car la dame en d7 est derrière... plus précisément, le pion n'est pas obligé de rester, mais le capturer rapporte un pion gratuit car rien ne défend d6).\n\nLes Blancs jouent {{Rxd6}}, gobant le pion.\n\n- Le pion en d6 n'avait aucun défenseur : la dame en d7 ne peut pas capturer en arrière sur la colonne, et rien d'autre ne le couvre.\n- Après {{Rxd6}}, la tour fixe maintenant directement la dame en d7, qui est elle-même clouée par la tour contre le roi en d8 !\n- Si Noir joue autre chose que {{Qxd6}}, Blanc jouera {{Rxd7+}} au coup suivant et gagnera la dame. Donc Noir doit échanger : {{Qxd6}}, et Blanc termine avec un pion d'avance.\n\n## Schéma à mémoriser\n\n> Quand deux pièces adverses sont empilées sur une ligne, **prenez celle de devant en premier**. La pièce arrière reste clouée et ne peut pas la sauver.\n\nGain de matériel lent et méthodique — la manière patiente de gagner les positions clouées."
 }

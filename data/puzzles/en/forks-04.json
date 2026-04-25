@@ -1,6 +1,11 @@
 {
   "id": "forks-04",
   "fen": "4k3/8/8/3r4/8/2N5/8/4K3 w - - 0 1",
-  "solution": ["Nxd5"],
-  "hint": "The knight hops straight into the rook — simple tactic."
+  "solution": [
+    "Nxd5"
+  ],
+  "title": "Free Rook on d5",
+  "setup": "Black's rook stands alone on d5 — no defender in sight.",
+  "hint": "The knight reaches d5 in one hop. Is anything defending the rook?",
+  "explanation": "## The Idea\n\nThis is a **loose piece** capture — the simplest tactic of all. The knight on c3 can leap to d5 (file +1, rank +2 — a textbook L-shape) and grab the rook. Black's only piece left is the king on e8, which is three squares away from d5 and cannot defend it.\n\nAfter {{Nxd5}}, White is up a clean rook for nothing.\n\n## Why It Works\n\n- The rook is **undefended** — always check whether a target piece has a guard before assuming it's free.\n- The knight on c3 reaches d5 in one move via the L-shape (c3 → d5).\n- White's own king on e1 isn't in the way and isn't in any danger.\n\n## Pattern to Memorize\n\n> Before every move, scan the board for **loose pieces** — enemy pieces with no defender. They are gifts waiting to be collected."
 }

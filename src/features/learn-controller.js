@@ -7,6 +7,7 @@ import { $ } from '../core/dom.js';
 import { MODE_IDS } from '../core/constants.js';
 import { normalizeSan } from '../engine/chess.js';
 import { i18n } from '../core/i18n.js';
+import { renderMarkdown } from '../core/markdown.js';
 
 export class LearnController {
   constructor({ gameState, content, prefs, learnState, sound, toast }) {
@@ -127,11 +128,11 @@ export class LearnController {
     const content = $('#learn-step-content');
     content.className = 'step-content ' + (step.type === 'play' ? 'play' : 'teach');
     if (step.type === 'play') {
-      content.innerHTML = `<div class="step-prompt">${esc(step.prompt)}</div>`;
+      content.innerHTML = `<div class="step-prompt md-content">${renderMarkdown(step.prompt)}</div>`;
     } else {
       content.innerHTML =
         (step.title ? `<div class="step-title">${esc(step.title)}</div>` : '') +
-        `<div class="step-text">${esc(step.text || '')}</div>`;
+        `<div class="step-text md-content">${renderMarkdown(step.text || '')}</div>`;
     }
 
     $('#learn-lesson-title').textContent = lesson.title;

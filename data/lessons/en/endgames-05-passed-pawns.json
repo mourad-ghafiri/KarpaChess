@@ -4,18 +4,26 @@
   "summary": "The engine of endgame victories",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "4k3/8/8/8/4P3/8/8/4K3 w - - 0 1",
       "title": "What Is a Passed Pawn?",
-      "text": "A passed pawn has no enemy pawn in front of it or on either adjacent file — nothing can stop it from promoting except a piece. Passed pawns are enormous assets in the endgame. The phrase 'a passed pawn must be pushed' is a Nimzowitsch-ism for a reason." },
-    { "type": "play",
+      "text": "## What makes a pawn *passed*\n\nA pawn is **passed** when:\n\n- No enemy pawn stands on its **own file** ahead of it, **and**\n- No enemy pawn stands on either **adjacent file** ahead of it.\n\nNothing but enemy pieces can stop it from reaching the 8th rank — and a piece eventually has to abandon it for other duties. That is why passed pawns are the **engine** of endgame victories.\n\n### What this position is\n\nA single White pawn on **e4**, two kings far apart, no defenders on the d- or f-files. The pawn is passed and four moves from queening. The only question is whether White's king can support it before Black's king blockades it.\n\n### How to USE a passed pawn\n\n1. Push the pawn when **escorted** or when the opponent cannot catch it (the *square rule*).\n2. **Use it as a decoy** — the enemy king or pieces must abandon other targets to stop it.\n3. **Trade pieces, not pawns** — simpler positions amplify the pawn's power.\n4. On the wing furthest from the action, an *outside* passed pawn is even stronger because it pulls the enemy king away.\n\n### Common mistakes\n\n- **Pushing too soon** without escort — the pawn is rounded up by the enemy king.\n- **Trading the wrong pawn** and leaving yourself with no passer.\n- Forgetting the **square rule**: draw an imaginary square from the pawn to its queening file; if the enemy king cannot enter that square in time, the pawn queens unaided.\n\n### Model line\n\n{{e5}} Ke7 {{Kd2}} Kd6 {{Kd3}} — White's king is too slow; Black's king catches up and the pawn is lost. The lesson is sharp: **a passed pawn needs help**.\n\n> A passed pawn must be pushed — but only when its king can keep up."
+    },
+    {
+      "type": "play",
       "fen": "4k3/8/8/8/4P3/8/8/4K3 w - - 0 1",
-      "prompt": "Advance the passed pawn.",
-      "targetSan": ["e5"],
-      "hint": "e5 — one step closer to promotion." },
-    { "type": "teach",
+      "prompt": "Advance the passed pawn one square. The principle: *passers gain space the moment you push them*.",
+      "targetSan": [
+        "e5"
+      ],
+      "hint": "One square forward on the e-file — start the run."
+    },
+    {
+      "type": "teach",
       "fen": "4k3/8/8/4P3/8/8/8/4K3 b - - 0 1",
       "title": "Support It!",
-      "text": "A lone passed pawn still needs help. Without a king escorting it forward, a single enemy piece can stop it. Activate your king to support the advance — and create a new queen." }
+      "text": "## A pawn alone cannot win\n\nAfter {{e5}}, it is Black to move. Notice the gap between the pawn on **e5** and its king on **e1** — four ranks apart. Black plays Ke7 and the pawn is **doomed** without help.\n\n### What signs tell you to escort\n\n- The enemy king is **closer** to the pawn than your own.\n- No friendly piece can defend the queening square in one move.\n- The opposing king already covers the **promotion square**.\n\n### Procedure when your passer needs an escort\n\n1. **Halt the push** and bring the king up: Kd2, Kd3, Ke4.\n2. Use **opposition** so the enemy king cannot blockade.\n3. Resume pushing only when the pawn has a king behind or beside it.\n4. Use the pawn as a **shield** — it screens your king from sideways checks.\n\n### Common mistakes\n\n- Pushing every move on autopilot — *a passed pawn must be pushed* is a slogan, not a plan.\n- Trading off your king's *active* path with random king moves.\n- Defending the pawn with the king from **behind** instead of beside or in front.\n\n### Model continuation\n\n... Ke7 {{Kd2}} Kxe5? — but if instead {{Ke2}} Kf6 {{Kd3}} Kxe5 — the pawn falls. With the kings this far apart, only after the king is closer (e.g. on e3) can White safely push e6.\n\n> Activate the king before pushing the pawn."
+    }
   ]
 }

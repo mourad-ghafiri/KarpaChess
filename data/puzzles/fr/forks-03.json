@@ -4,5 +4,8 @@
   "solution": [
     "Nf6+"
   ],
-  "hint": "Un cavalier peut attaquer deux pièces à la fois — trouvez la case qui frappe roi et dame."
+  "title": "Le Cavalier Fourche les Royaux",
+  "setup": "Le roi noir en e8 et la dame en d5 sont tous deux à un saut de cavalier de f6.",
+  "hint": "Cherchez une case où le cavalier peut atterrir et qui frappe **à la fois** le roi et la dame.",
+  "explanation": "## L'Idée\n\nUne **fourchette familiale** d'école. La case {{f6}} touche e8 (le roi) et d5 (la dame) en même temps — le motif classique du cavalier attaquant deux pièces à deux cases en L.\n\nAprès {{Nf6+}} :\n\n- **Capture ?** Le roi en e8 n'est pas adjacent à f6 (deux cases en diagonale), donc {{Kxf6}} est illégal. La dame en d5 ne peut pas non plus prendre f6 — d5 vers f6 est un motif de cavalier, pas une ligne de dame.\n- **S'interposer ?** Un échec au cavalier n'est jamais interposable.\n- **Fuir ?** Le roi doit bouger (Kd7, Kf7, Kd8, Kf8), et au coup suivant les Blancs jouent {{Nxd5}}, gagnant la dame pour rien.\n\n## Schéma à Mémoriser\n\n> Quand le roi et la dame ennemis sont **à deux cases sur une diagonale** (comme d5 et e8 — mais en miroir : e8 et d5 sont en L de cavalier), le cavalier peut généralement les fourcher depuis la case entre les deux."
 }

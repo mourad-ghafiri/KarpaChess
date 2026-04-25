@@ -4,5 +4,8 @@
   "solution": [
     "Nxd5"
   ],
-  "hint": "El caballo salta directo hacia la torre — táctica simple."
+  "title": "Torre gratis en d5",
+  "setup": "La torre negra está sola en d5 — sin defensor a la vista.",
+  "hint": "El caballo llega a d5 en un salto. ¿Hay algo defendiendo la torre?",
+  "explanation": "## La idea\n\nEsta es una captura de **pieza suelta** — la táctica más simple de todas. El caballo en c3 puede saltar a d5 (columna +1, fila +2 — una L de manual) y atrapar la torre. La única pieza que les queda a las negras es el rey en e8, que está a tres casillas de d5 y no puede defenderla.\n\nTras {{Nxd5}}, las blancas suman una torre limpia por nada.\n\n## Por qué funciona\n\n- La torre está **indefensa** — comprueba siempre si una pieza objetivo tiene guardián antes de asumir que está libre.\n- El caballo en c3 alcanza d5 en una jugada por la L (c3 → d5).\n- El propio rey blanco en e1 no estorba ni corre ningún peligro.\n\n## Patrón a memorizar\n\n> Antes de cada jugada, escanea el tablero buscando **piezas sueltas** — piezas enemigas sin defensor. Son regalos esperando a ser recogidos."
 }

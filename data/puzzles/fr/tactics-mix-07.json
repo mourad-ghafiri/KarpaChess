@@ -2,7 +2,11 @@
   "id": "tactics-mix-07",
   "fen": "r4rk1/1pp2ppp/p1np4/4p3/2B1P3/2Pq1N2/PP2QPPP/R2R2K1 b - - 0 1",
   "solution": [
-    "Qxd1+"
+    "Qxe2",
+    "Bxe2"
   ],
-  "hint": "Forcez l'échange pour atteindre une finale gagnante."
+  "title": "Échangez les dames pour sauver la situation",
+  "setup": "La dame noire en **d3** est attaquée à la fois par la dame blanche en e2 et par le fou en c4. Elle doit échanger maintenant ou être perdue.",
+  "hint": "Quand votre dame est attaquée deux fois et défendue zéro fois, échangez-la — ne dansez pas.",
+  "explanation": "## L'idée\n\nVoici un **échange forcé** — une tactique de survie, pas une combinaison gagnante. La dame noire est attaquée par **deux** pièces blanches (dame e2 et fou c4) et défendue par **aucune**. Si Noir ne fait rien, Blanc joue {{Qxd3}} (ou {{Bxd3}}) en gagnant la dame pour rien.\n\nLe seul bon coup est d'**initier l'échange aux conditions des Noirs** : capturer la dame blanche.\n\nLes Noirs jouent {{Qxe2}}.\n\n## Réponse forcée des Blancs\n\nBlanc doit reprendre ou perdre la dame pour rien :\n\n- {{Bxe2}} — le fou en c4 glisse en e2 et reprend. C'est la seule reprise légale (aucune tour ni cavalier n'atteint e2 en un coup).\n\nMatériel après que la poussière retombe : égal. Noir a transformé une position perdante en milieu de partie équilibré.\n\n## Schéma à mémoriser\n\n> Quand votre dame est doublement attaquée et indéfendue, la question n'est plus *« Puis-je gagner du matériel ? »* mais *« Comment perdre le moins ? »*\n\nUn échange de dames avec capture neutralise l'attaque et égalise le matériel. Vérifiez toujours cette option avant de battre en retraite — parfois l'échange le plus simple est la meilleure ressource."
 }

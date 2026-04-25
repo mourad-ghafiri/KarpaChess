@@ -4,5 +4,8 @@
   "solution": [
     "Bxc6+"
   ],
-  "hint": "Trade and damage Black's structure."
+  "title": "Damage Black's Structure",
+  "setup": "White's bishop on **b5** pins the knight on c6 against — wait, against nothing in particular. Time to trade.",
+  "hint": "The Spanish exchange: bishop takes knight, doubling Black's c-pawns and creating long-term weaknesses.",
+  "explanation": "## The Idea\n\nThis is a textbook **Spanish (Ruy López) exchange**. White's bishop on b5 trades itself for Black's knight on c6, with two clear benefits.\n\nWhite plays {{Bxc6+}}.\n\n## What Black Recaptures With\n\nBlack must address the check (the bishop on c6 attacks the king on e8 along the a4-e8 diagonal). Three replies are possible:\n\n- {{bxc6}} — the b-pawn captures. **Most common.** This **doubles Black's c-pawns** (c7 and c6), creating a long-term structural weakness.\n- {{dxc6}} — the d-pawn captures. This opens the d-file but also doubles c-pawns, just less awkwardly.\n- Block? Nothing reaches d7 cleanly (the queen and bishop are blocked).\n\n## Why This Trade Is Strategic\n\nDoubled pawns are **structurally weak**:\n\n- They cannot defend each other (one is in front of the other).\n- They control fewer squares than two adjacent pawns.\n- They create **half-open files** for the opponent's rooks.\n\nMaterial is even (bishop for knight = 3-for-3), but White has won the *positional* battle.\n\n## Pattern to Memorize\n\n> Trades that **damage the opponent's pawn structure** are worth as much as trades that win material — sometimes more.\n\nThis is the soul of strategic chess: small, permanent advantages accumulated over many moves."
 }

@@ -8,17 +8,17 @@
       "type": "teach",
       "fen": "4k3/8/4K3/4Q3/8/8/8/8 w - - 0 1",
       "title": "Classic Mate",
-      "text": "With king and queen vs bare king, walk the enemy king to the edge, then mate. The queen controls a wall — your king prevents escape."
+      "text": "## K + Q vs K — the staple checkmate\n\nThis is the **first checkmate every player must own**. With king and queen against a lone king, the side with the queen always wins from any starting position — usually in **under ten moves**.\n\n### What this endgame looks like\n\n- One side has **king + queen**.\n- The other has only the **king**.\n- No pawns, no minor pieces, no rooks — pure technique.\n\n### The key concept: the box and the wall\n\nThe queen builds an invisible **wall** that the lone king cannot cross, while your own king walks up to **support** the final blow. The only thing you must avoid is **stalemate** — that is the single hidden danger of this ending.\n\n### Procedure to convert\n\n1. Use the queen to **shrink the king's box**, staying a knight's-move away when possible.\n2. **March your king up** to a square next to where you want to deliver mate.\n3. Drive the enemy king to the **edge** of the board.\n4. Deliver mate with the **queen on the edge**, defended (directly or remotely) by your king.\n\n### Common mistakes\n\n- Checking with the queen on every move — the king dances around forever.\n- Trapping the lone king with **no legal squares** while the queen does *not* give check — this is **stalemate** and a draw.\n- Forgetting to bring your own king up; the queen alone cannot mate.\n\n### A model finish\n\nFrom the position shown — Black king on **e8**, White king on **e6**, queen on **e5** — White plays {{Qb8#}} or {{Qh8#}}: the queen seals the 8th rank and the king on e6 covers d7, e7, and f7.\n\n> The queen does the cutting, the king does the catching."
     },
     {
       "type": "play",
       "fen": "4k3/8/4K3/4Q3/8/8/8/8 w - - 0 1",
-      "prompt": "Deliver checkmate in one.",
+      "prompt": "Deliver **checkmate in one**. The enemy king is on the edge and your king is already supporting — finish the job.",
       "targetSan": [
         "Qb8#",
         "Qh8#"
       ],
-      "hint": "Cut the 8th rank — the enemy king has nowhere to run."
+      "hint": "Slide the queen along the **8th rank** so every escape square is covered or attacked."
     }
   ]
 }

@@ -1,8 +1,11 @@
 {
   "id": "mate-in-1-14",
-  "fen": "3R4/8/8/8/8/k7/8/2K5 w - - 0 1",
+  "fen": "7R/8/8/8/8/1K6/8/k7 w - - 0 1",
   "solution": [
-    "Rd3+"
+    "Rh1#"
   ],
-  "hint": "Corta al rey solitario en la tercera fila."
+  "title": "El borde del mundo",
+  "setup": "El rey negro está atrapado en el rincón **a1**; tu rey en **b3** controla las casillas de escape {{a2}} y {{b2}}.",
+  "hint": "Baja la torre a la **primera fila** — todos los escapes ya están cubiertos por tu rey.",
+  "explanation": "## La idea\n\nUn **mate puro de R+T contra R en el rincón**. El rey blanco ha hecho el trabajo duro de cortar las casillas de escape; la torre simplemente da el golpe final.\n\nJuega {{Rh1#}}.\n\n¿Por qué está atrapado el rey?\n\n- {{b1}} — cubierta por la torre en h1 (primera fila)\n- {{a2}} — cubierta por tu rey en **b3**\n- {{b2}} — cubierta por tu rey en **b3**\n- El rey no puede capturar la torre: a1 a h1 está demasiado lejos\n- Nada puede interponerse: la primera fila está vacía\n\n> **Conclusión:** En R+T contra R, la torre da mate desde una *distancia segura* una vez que el rey ha sido empujado al borde. Tu propio rey debe controlar las casillas de escape una fila por delante del rey atrapado."
 }

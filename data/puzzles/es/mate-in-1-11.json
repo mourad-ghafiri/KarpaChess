@@ -4,5 +4,8 @@
   "solution": [
     "Qh7#"
   ],
-  "hint": "La dama y el caballo juntos no dejan escape."
+  "title": "Beso de la muerte",
+  "setup": "Tu caballo en **f6** impide que el rey escape a **g8**, y tu rey en **g6** defiende la casilla de aterrizaje de la dama.",
+  "hint": "Coloca la dama justo al lado del rey — está defendida por tu rey y el caballo cubre {{g8}}.",
+  "explanation": "## La idea\n\nEste es el famoso mate del **beso de la muerte**: la dama aterriza en la casilla *adyacente* al rey enemigo, defendida por tu propio rey. El caballo se ocupa del escape por el rincón.\n\nJuega {{Qh7#}}.\n\n¿Por qué está atrapado el rey?\n\n- {{g8}} — controlada por el caballo en **f6** (el caballo salta a g8)\n- {{g7}} — controlada por tu rey en **g6** *y* por la propia dama\n- La dama en h7 ataca h8 directamente (jaque)\n- {{Kxh7}} es ilegal porque tu rey en **g6** defiende h7\n- Nada puede interponerse: h7 es adyacente a h8\n\n> **Conclusión:** Memoriza el patrón del *beso de la muerte* — dama + rey separados por dos casillas, con una tercera pieza (aquí, el caballo) cubriendo la única casilla de escape. Aparece en infinidad de partidas, especialmente tras un peón avanzado a f6 o g6."
 }

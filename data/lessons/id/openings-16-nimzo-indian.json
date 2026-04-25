@@ -1,26 +1,26 @@
 {
   "id": "nimzo-indian-advanced",
   "title": "Pertahanan Nimzo-Indian",
-  "summary": "Mahakarya strategis — ikat dan kontrol",
+  "summary": "Mahakarya strategis — paku dan kontrol",
   "difficulty": "advanced",
   "steps": [
     {
       "type": "teach",
       "fen": "rnbqk2r/pppp1ppp/4pn2/8/1bPP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 3 4",
-      "title": "Ikatan Bb4",
-      "text": "Nimzo-Indian (1.d4 Nf6 2.c4 e6 3.Nc3 Bb4) mengikat kuda c3 dan mengancam menggandakan pion Putih dengan ...Bxc3+. Dinamai sesuai Aron Nimzowitsch, bapak catur hipermodern."
+      "title": "Pakuan Bb4",
+      "text": "**Pertahanan Nimzo-Indian** adalah salah satu pembukaan terdalam dan paling dihormati di seluruh dunia catur. Dinamai dari **Aron Nimzowitsch** — bapak *catur hipermodern* dan penulis *My System* — ini adalah mahakarya strategis berdasarkan satu ide berani: **paku kuda c3 dan ancam merusak struktur bidak Putih**.\n\n## Cara mencapainya\n\nUrutan yang mendefinisikan adalah {{d4}} **{{Nf6}}** {{c4}} **{{e6}}** {{Nc3}} **{{Bb4}}**. Gajah Hitam di b4 memaku kuda c3 ke raja (yah, *paku* secara metaforis — sebenarnya tidak terpaku ke apa pun, tetapi **...Bxc3+** akan menggandakan bidak Putih).\n\n## Apa yang diinginkan setiap pihak\n\n- **Rencana Putih:** hindari bidak ganda (4.Qc2, 4.a3) atau terima sebagai imbalan untuk pasangan gajah (4.e3, 4.f3). Lalu eksploitasi mayoritas tengah dan gajah diagonal panjang.\n- **Rencana Hitam:** tukar gajah di b4 untuk kuda c3 pada saat yang tepat, meninggalkan Putih dengan **bidak-c ganda**. Lalu blokade bidak itu dan eksploitasi kelemahan struktural.\n- **Struktur bidak:** *bidak-c ganda Nimzo* (c4 dan c3) — kelemahan jangka panjang yang dimainkan Hitam selama 30+ langkah.\n\n## Pertukaran abadi\n\nPutih mendapat **pasangan gajah**; Hitam mendapat **struktur musuh yang rusak**. Keuntungan siapa lebih besar? Tergantung pada apakah posisi terbuka (gajah bersinar) atau tetap tertutup (struktur menang). Itulah jantung setiap middlegame Nimzo-Indian.\n\n> Nimzo bukan tentang skakmat. Itu tentang struktur bidak, kualitas buah, dan rencana 50 langkah."
     },
     {
       "type": "teach",
       "fen": "rnbqk2r/pppp1ppp/4pn2/8/1bPP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 3 4",
-      "title": "Dua Variasi Utama",
-      "text": "Putih memilih: 4.Qc2 (menghindari pion ganda, mengembangkan secara alami), 4.e3 (Rubinstein — pembangunan klasik), atau 4.f3 (Kmoch — ambisius). Masing-masing mengarah ke babak tengah yang banyak dipelajari di mana Hitam memainkan untuk mengeksploitasi pion-c ganda."
+      "title": "Dua Garis Utama",
+      "text": "Pada langkah 4, Putih harus memilih bagaimana menangani pakuan. Setiap pilihan menciptakan middlegame yang sepenuhnya berbeda.\n\n## Empat respons utama Putih\n\n- **4.Qc2** — *Variasi Capablanca*. Putih menghindari bidak ganda dengan memakan balik dengan menteri. Modern, populer, sedikit lebih fleksibel.\n- **4.e3** — *Sistem Rubinstein*. Yang paling fleksibel. Putih mempersiapkan **Nf3, Bd3, 0-0**, kadang **a3** untuk mengejar gajah. Memungkinkan ...Bxc3+ tetapi mengompensasi dengan pasangan gajah.\n- **4.f3** — *Kmoch / Sämisch*. Agresif: Putih mempersiapkan **e4** dan serangan sayap raja, menerima kerusakan struktural untuk aktivitas.\n- **4.a3** — *Sämisch / Hübner*. Putih menantang segera: gajah harus tukar atau mundur. Hampir memaksa Bxc3+, dan Putih mendapat pasangan gajah plus lajur b terbuka.\n\n## Respons utama Hitam untuk setiap garis\n\n- Setelah **4.Qc2**: Hitam main **...d5** atau **...c5** dengan permainan buah aktif.\n- Setelah **4.e3**: Hitam punya **...c5**, **...d5**, **...0-0**, **...d5+...c5** (Variasi Hübner).\n- Setelah **4.f3**: Hitam main **...d5** untuk menantang sebelum dorongan e4 Putih mendarat.\n- Setelah **4.a3**: **...Bxc3+ 5.bxc3** dipaksa, dan pertarungan strategis di sekitar bidak ganda Putih dimulai.\n\n## Garis utama model\n\n{{d4}} {{Nf6}} {{c4}} {{e6}} {{Nc3}} {{Bb4}} **4.e3** **0-0** **5.Bd3** **d5** **6.Nf3** **c5** **7.0-0** **dxc4** **8.Bxc4** **Nbd7** — *Variasi Karpov*, seimbang dan strategis.\n\n> Apa pun garis yang dipilih Putih, Hitam mendapat posisi di mana pemahaman mengalahkan hafalan."
     },
     {
       "type": "teach",
       "fen": "r1bqk2r/pppp1ppp/2n1pn2/8/1bPP4/2N1P3/PP3PPP/R1BQKBNR w KQkq - 2 5",
       "title": "Kedalaman Strategis",
-      "text": "Nimzo adalah salah satu pembukaan yang paling kaya secara strategis. Hitam sering mengorbankan pasangan gajah untuk menggandakan pion Putih, bertaruh bahwa struktur pion yang rusak lebih berat daripada keunggulan gajah. Catur posisional klasik."
+      "text": "Nimzo-Indian terkenal karena satu hal di atas segalanya: ini adalah **satu-satunya** pembukaan di mana pemahaman struktur bidak lebih penting daripada menghitung taktik.\n\n## Empat struktur bidak Nimzo klasik\n\n- **Bidak-c ganda** (setelah ...Bxc3+ bxc3) — Putih punya c4-c3, Hitam bermain melawan c3.\n- **Hübner / Bidak gantung** — bidak-d dan bidak-c Hitam berdiri terisolasi bersama, keduanya bisa diserang, keduanya fleksibel.\n- **Bidak Menteri Terisolasi (IQP)** — kadang Putih menerima bidak-d terisolasi untuk aktivitas buah.\n- **Gaya Karlsbad** — rantai bidak simetris di mana break kecil menentukan permainan.\n\n## Proses berpikir Nimzo-Indian\n\n- Apakah posisi **terbuka**? Maka pasangan gajah menjadi berharga.\n- Apakah posisi **tetap tertutup**? Maka bidak ganda dan kotak lemah menentukan.\n- Di mana Hitam **memblokade**? Biasanya dengan kuda di c4 atau e4 — kotak yang tidak bisa dijaga bidak ganda.\n- Di mana Putih **break**? Dengan **e3-e4** atau **c4-c5** untuk membebaskan gajah.\n\n## Warisan\n\nJuara dunia **Mikhail Botvinnik**, **Tigran Petrosian**, **Anatoly Karpov**, dan **Vladimir Kramnik** semua memainkan Nimzo sebagai senjata utama. Karpov secara khusus menggunakannya untuk memenangkan kejuaraan dunia — dan untuk *mempertahankannya* selama lebih dari satu dekade.\n\n> Nimzo-Indian adalah catur posisional dalam bentuk paling murni. Setelah Anda memahaminya, setiap pembukaan lain menjadi lebih mudah."
     }
   ]
 }

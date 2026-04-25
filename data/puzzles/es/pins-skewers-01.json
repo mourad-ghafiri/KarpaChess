@@ -4,5 +4,8 @@
   "solution": [
     "Rxd6+"
   ],
-  "hint": "La dama está clavada contra su rey — tómala."
+  "title": "La dama congelada",
+  "setup": "La dama negra está en la **columna d** delante de su rey, mientras que una torre blanca los apunta a ambos desde abajo.",
+  "hint": "Una pieza clavada contra su rey no puede moverse. Tómala.",
+  "explanation": "## La idea\n\nEsta es una **clavada absoluta** de manual. La dama negra en d6 está pegada a su rey en d8 — moverla expondría al rey al jaque, lo cual es ilegal. Así que tiene que quedarse ahí y absorber lo que aterrice en su casilla.\n\nLas blancas juegan {{Rxd6+}}, capturando la dama. Las negras están ahora en jaque y deben responder:\n\n- {{Kxd6}} recaptura la torre, pero las blancas han cambiado una torre por una dama — una clara ganancia de material.\n- El rey no tiene otra salida legal: bloquear es imposible (no hay pieza entre medias), y la torre solo puede ser capturada por el rey.\n\n## Patrón a memorizar\n\n> Cuando una pieza enemiga está clavada contra su rey, atácala con otra pieza. La pieza clavada no puede huir.\n\nBúscalas en cada jugada: **un atacante de largo alcance (torre, alfil, dama) más un objetivo en la misma línea que el rey enemigo.**"
 }

@@ -4,5 +4,8 @@
   "solution": [
     "Bc5"
   ],
-  "hint": "Develop the bishop actively."
+  "title": "Italian Bishop Mirror",
+  "setup": "White has played the Italian opening, placing a bishop on **c4** aimed at f7. Black mirrors the threat.",
+  "hint": "When your opponent develops a bishop attacking your weak square, develop *your* bishop attacking theirs.",
+  "explanation": "## The Idea\n\nThis is a **classical development** decision in the Italian Game. White's bishop on c4 stares down Black's f7-square. Black should respond by mirroring: develop the bishop to **c5**, eyeing White's symmetrical weak square — **f2**.\n\nBlack plays {{Bc5}}.\n\n## Why c5?\n\n- The bishop is **active**: it attacks the long a7-g1 diagonal, including the f2 square (defended only by White's king).\n- The bishop is **flexible**: it doesn't block any other piece's development.\n- The move is **symmetric**: matching White's threat with an equal threat is a mature opening idea.\n\n## What This Sets Up\n\nThis is the entry into the **Giuoco Piano** (\"Quiet Game\") or the more aggressive **Giuoco Pianissimo** lines. Both sides have:\n\n- An active bishop on the long diagonal.\n- Both knights developed.\n- Quick castling on the way.\n\n## Pattern to Memorize\n\n> Develop your bishops to **active squares that attack key enemy weaknesses** — typically f2/f7 in the opening.\n\nDon't waste opening tempo on cosmetic moves. Every developing move should improve your position **and** put pressure on the opponent. Bc5 does both in one stroke."
 }

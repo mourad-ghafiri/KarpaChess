@@ -4,5 +4,8 @@
   "solution": [
     "Nc7+"
   ],
-  "hint": "Jaque descubierto — el caballo también ataca."
+  "title": "Jaque doble en la columna e",
+  "setup": "El caballo está **justo delante** de la torre, y ambos comparten la columna e con el rey negro — una batería de manual lista para disparar.",
+  "hint": "Encuentra la casilla del caballo que **además** ataque al rey. Cuando dos piezas dan jaque a la vez, interponer es imposible.",
+  "explanation": "## La idea\n\nEsta posición es la imagen más nítida posible de un jaque descubierto. La torre de e1 es la **descubridora**; el caballo de e6 es la **que mueve**. Cualquier salto legal del caballo descubre a la torre y da jaque.\n\nPero un movimiento del caballo es mucho más fuerte que los demás: {{Nc7+}}. Desde c7 el caballo **también** ataca e8.\n\n## Por qué el jaque doble es especial\n\nCuando dos piezas dan jaque al rey en la misma jugada, el defensor:\n\n- No puede interponer, porque ninguna casilla detiene a ambos atacantes.\n- No puede capturar a ambas piezas en una jugada.\n- **Tiene que** mover el rey.\n\nAsí que tras {{Nc7+}} las negras se ven obligadas a llevar el rey a d7 o f7, donde queda mal colocado para el resto de la partida. El caballo en c7 ha aterrizado además en un fuerte puesto avanzado, vigilando a8 y e8.\n\n## ¿Y si eliges la casilla equivocada?\n\nUna jugada como Nd4+ también descubre el jaque de la torre, pero el caballo ya no presiona el entorno del rey. Las negras juegan Kd7 o Kf7 y tu ataque se desvanece. La regla práctica: **con el jaque descubierto, prefiere la casilla que se sume al ataque**."
 }

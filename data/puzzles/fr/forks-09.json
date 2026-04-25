@@ -4,5 +4,8 @@
   "solution": [
     "Nxd3"
   ],
-  "hint": "Le cavalier capture la tour."
+  "title": "La Tour Gratuite",
+  "setup": "La tour noire s'est aventurée sur une case sans défenseur — et un cavalier est à un saut.",
+  "hint": "Comptez les défenseurs de {{d3}} — il n'y en a aucun. Le cavalier fait son travail.",
+  "explanation": "## L'Idée\n\nAvant de chercher des combinaisons sophistiquées, vérifiez si quelque chose est simplement **pendant**. Ici, la tour en d3 n'a aucun défenseur noir, et un cavalier blanc en c1 l'attaque directement par le L c1 → d3.\n\n- {{Nxd3}} capture la tour pour un cavalier qui ne faisait pas grand-chose.\n- Valeur d'échange : tour (5) contre cavalier (3) = **+2 en matériel**.\n\n### La Leçon\n\n1. Commencez toujours par scruter les **pièces pendantes** des deux camps.\n2. Comparez attaquants vs défenseurs case par case.\n3. Si votre pièce atteint une pièce ennemie non défendue, prenez-la — *à moins* que la reprise ne soit un pire problème.\n\nIci aucune reprise : le roi noir en e8 est loin de d3, et il n'y a aucune autre pièce noire sur l'échiquier.\n\n> Une tour pour un cavalier est l'un des gains de matériel les plus nets aux échecs. Ne laissez jamais les cadeaux faciles sur la table."
 }

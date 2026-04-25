@@ -4,5 +4,8 @@
   "solution": [
     "Rxd5+"
   ],
-  "hint": "Queen is pinned — take her."
+  "title": "Pinned at Distance",
+  "setup": "The black queen has wandered to **d5** — directly between her king on d8 and the white rook on d2.",
+  "hint": "Distance is no defense when a piece is pinned. Take her.",
+  "explanation": "## The Idea\n\nThe black queen looks active in the center, but she is actually **pinned**. The white rook on d2 sees through her all the way to the black king on d8. She is paralyzed.\n\nWhite plays {{Rxd5+}}, capturing the queen with check.\n\n- Black has only one legal response: {{Kxd5}}? No — the king is on d8, three squares away. The king cannot reach d5 in one move.\n- So Black must move the king out of check: {{Kc7}}, {{Kc8}}, {{Ke7}}, {{Ke8}}, {{Kd7}} — any of these.\n- The rook cannot be captured. **White wins the queen for free.**\n\n## Pattern to Memorize\n\n> An absolute pin doesn't care how far away the king is. As long as the enemy king sits on the same line, the pinned piece cannot escape.\n\nThis is even better than a normal pin — there's no instant recapture, just a clean queen win."
 }

@@ -6,5 +6,8 @@
     "Kc8",
     "Qa8#"
   ],
-  "hint": "La dame avance avec échec, pousse le roi dans le coin, puis mate sur la 8e rangée."
+  "title": "Cage en deux temps",
+  "setup": "Les rois se font face sur la **colonne d**, votre dame est tapie en **d1** prête à monter avec échec.",
+  "hint": "Avancez la dame avec échec, poussez le roi vers le coin, puis balayez la dernière rangée pour le mat.",
+  "explanation": "## L'idée\n\nUn classique **mat en 2 R+D contre R**. Le coup 1 force le roi de côté, le coup 2 termine sur la dernière rangée.\n\n**1. {{Qd5+}}** — la dame saute sur la colonne avec échec. Le roi noir est en **d8** et doit bouger ; la seule case non couverte par votre roi en **d6** ni attaquée par la dame est **c8**.\n\n**1...{{Kc8}}** — forcé. {{Kxd5}} est illégal (votre roi défend d5), {{Ke8}} est aussi légal mais perd de la même façon ; nous suivons la ligne classique.\n\n**2. {{Qa8#}}** — la dame balaie jusqu'au coin de la dernière rangée, livrant le mat.\n\nPourquoi le roi est-il bloqué après le coup 2 ?\n\n- {{b8}} — attaquée par la dame le long de la 8e rangée\n- {{c7}}, {{d7}} — toutes deux contrôlées par votre roi en **d6**\n- La dame est loin du roi, donc {{Kxa8}} est impossible\n- Rien ne peut s'interposer sur la 8e rangée\n\n> **À retenir :** dans les finales R+D, la dame fait la coupe et votre roi fait la *couverture*. Associez toujours les échecs de dame au soutien du roi, et marchez vers un mat sur la dernière rangée ou sur le bord."
 }

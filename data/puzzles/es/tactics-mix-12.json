@@ -1,8 +1,11 @@
 {
   "id": "tactics-mix-12",
-  "fen": "4k3/5ppp/8/8/8/8/5PPP/3QK3 w - - 0 1",
+  "fen": "6k1/5ppp/8/8/8/8/5PPP/3QK3 w - - 0 1",
   "solution": [
-    "Qd8+"
+    "Qd8#"
   ],
-  "hint": "Da jaque al rey en su última fila."
+  "title": "Mate de la fila final",
+  "setup": "El rey negro en **g8** está acorralado por sus propios peones en f7, g7, h7 — una clásica trampa mortal de la **fila final**.",
+  "hint": "Cuando el rey enemigo está encerrado tras sus propios peones en la octava fila, desliza una pieza pesada a la fila final.",
+  "explanation": "## La idea\n\nEste es el inmortal **mate de la fila final** — el motivo táctico más común en todo el ajedrez. El rey negro está atrapado en la octava fila por sus propios peones, sin casillas de escape.\n\nLas blancas juegan {{Qd8#}} — la dama se desliza por la columna d para dar mate.\n\n## Por qué es mate\n\nVerifiquemos que las negras tienen **cero** respuestas legales:\n\n- **Movimientos del rey**: {{Kg8}} ya está donde está. Casillas adyacentes: f7 (peón propio), g7 (peón propio), h7 (peón propio), f8 (atacada por la dama en d8 por la octava fila), h8 (atacada por la dama por la octava fila).\n- **Captura**: {{Kxd8}} — demasiado lejos, el rey está en g8.\n- **Bloqueo**: nada con qué bloquear — las negras solo tienen peones, ninguno alcanza la línea d8-g8.\n\nNo hay escape. Mate.\n\n## Patrón a memorizar\n\n> La **debilidad de la fila final**: un rey atrapado tras peones sin mover está a un jaque de pieza pesada del mate.\n\n**Lección defensiva**: en tus propias partidas, haz un *luft* — empuja h3 o g3 para darle a tu rey una casilla de escape. Esta sola jugada de peón previene miles de desastres en la fila final."
 }

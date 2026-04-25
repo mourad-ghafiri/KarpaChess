@@ -4,5 +4,8 @@
   "solution": [
     "exd4"
   ],
-  "hint": "Captura hacia el centro."
+  "title": "Captura hacia el centro",
+  "setup": "Las blancas han jugado **d4**, ofreciendo un cambio de peones. Las negras toman — y agarran el centro.",
+  "hint": "Recaptura siempre hacia el centro cuando puedas elegir — mejora la estructura de peones.",
+  "explanation": "## La idea\n\nEsta es una **captura básica de peón central** — la jugada fundamental de la cual surgen el famoso **Juego del Centro** y muchas posiciones abiertas.\n\nLas negras juegan {{exd4}}, capturando el peón d con el peón e.\n\n## ¿Por qué esta captura?\n\n- El peón negro se mueve de **e5** (una casilla menos central) a **d4** (más central).\n- El peón central blanco ha desaparecido, liberando las piezas negras.\n- El material está ahora igualado, pero las negras han mejorado la estructura de peones.\n\n## ¿Y si las negras no toman?\n\nSi las negras ignoran la oferta:\n\n- Las blancas podrían jugar {{dxe5}} en la siguiente jugada, ganando el peón e.\n- O las blancas podrían jugar {{d5}}, ganando una fuerte cuña.\n\nEn cualquier caso las negras pierden influencia central.\n\n## Patrón a memorizar\n\n> Cuando puedas capturar **hacia el centro**, casi siempre hazlo. Los peones centralizados controlan más casillas, apoyan más piezas y crean más amenazas.\n\nEl simple acto de jugar exd4 aquí representa un principio mayor: **lucha por el centro con cada jugada que puedas.**"
 }

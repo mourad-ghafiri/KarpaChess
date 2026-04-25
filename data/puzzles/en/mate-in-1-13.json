@@ -4,5 +4,8 @@
   "solution": [
     "Qxg7#"
   ],
-  "hint": "Queen captures — supported by the knight."
+  "title": "Knight-Backed Smother",
+  "setup": "Your knight on **f6** stings {{e8}} and {{h7}} from the side, while the queen sits one square below the pawn shield.",
+  "hint": "Take the {{g7}} pawn — your knight defends the queen and seals every escape.",
+  "explanation": "## The Idea\n\nThis is a **queen + knight smothered-style mate**. The queen sacrifices into a defended square next to the king, and the knight backs her up while covering escape squares.\n\nPlay {{Qxg7#}}.\n\nWhy is the king stuck?\n\n- The queen on g7 attacks g8 directly (check)\n- {{f8}} — covered by the queen on g7 (diagonal)\n- {{h8}} — covered by the queen on g7 (diagonal)\n- {{Kxg7}} is illegal — the knight on **f6** defends g7 (knight from f6 attacks g8, h7, e8 ... and g7? actually no, f6 covers d5, d7, e4, e8, g4, g8, h5, h7. The queen is defended by the king on **h6** instead)\n- Wait — the **king on h6** defends g7. So {{Kxg7}} is illegal.\n- {{h7}} pawn cannot move to block: it's pinned by being adjacent\n\n> **Takeaway:** A queen sacrifice next to a smothered king is the loudest move in chess. Always check whether *your own king or knight* defends the landing square — that's what turns a giveaway into a finish."
 }

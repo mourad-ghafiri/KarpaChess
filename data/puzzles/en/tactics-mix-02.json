@@ -4,5 +4,8 @@
   "solution": [
     "g3"
   ],
-  "hint": "The queen has overextended — punish her."
+  "title": "Punish the Wandering Queen",
+  "setup": "Black has lashed out with an early **Qh4**, hoping for cheap threats. White's pawns are about to make her pay.",
+  "hint": "When the enemy queen pokes out early, kick her with a humble pawn and gain a free tempo.",
+  "explanation": "## The Idea\n\nThis is a **trapping / tempo-gaining** motif. Black's premature {{Qh4}} placed the queen on an active-looking square, but with no support — and right next to a pawn that is about to promote her into a fugitive.\n\nWhite plays {{g3}}, attacking the queen with a pawn.\n\n## Why Black Suffers\n\n- The queen has very few good retreat squares. {{Qh3}} or {{Qh5}} keeps her active but White has gained a free move of development.\n- {{Qxe4}}? Not possible — there's nothing to grab there.\n- {{Qxh2}} runs into {{Rxh2}}, losing the queen for a rook.\n\nEvery move the queen wastes is a tempo White uses to develop knights, bishops, and castle.\n\n## Pattern to Memorize\n\n> Don't bring your queen out early — she's the most valuable piece, so every attacker is a free tempo for the opponent.\n\nWhen *they* break this rule, **chase the queen with cheap pieces**: pawns and minor pieces gain time while the queen scurries home."
 }

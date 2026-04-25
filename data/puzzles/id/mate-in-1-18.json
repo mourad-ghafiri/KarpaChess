@@ -4,5 +4,8 @@
   "solution": [
     "Re8#"
   ],
-  "hint": "Serbuan benteng — perhatikan penyingkiran pembela pada akhirnya."
+  "title": "Dua Benteng, Satu Lajur Terbuka",
+  "setup": "Dua benteng di **baris 1**, dua pion menjaga sudut — salah satu pion itu hanyalah ilusi keamanan.",
+  "hint": "Ambil **lajur e** ke baris belakang — pion di sudut justru mengunci raja, bukan menolongnya.",
+  "explanation": "## Idenya\n\nSebuah **skakmat baris belakang murni** dengan sentuhan redundansi: benteng kedua di **a1** sebenarnya tidak diperlukan, namun menghapus keraguan bahwa baris belakang tetap tertutup jika Hitam mencoba sesuatu cerdik.\n\nMainkan {{Re8#}}.\n\nMengapa raja terjebak?\n\n- {{g8}}, {{f8}} dan baris ke-8 lainnya — semua dikuasai benteng di e8\n- {{g7}} dan {{h7}} — keduanya diblokir pion Hitam sendiri\n- Raja tidak bisa menangkap: e8 terlalu jauh dari h8\n- Hitam tidak punya buah untuk menghalangi antara e8 dan h8\n\n> **Pelajaran:** Saat punya dua benteng dan baris belakang lawan kosong, pilih *lajur mana saja* yang mendarat di baris itu — benteng di lajur yang lebih aman biasanya menang. Selalu periksa ulang petak pelarian sebelum bertindak."
 }

@@ -4,23 +4,35 @@
   "summary": "Ofrece un peón para controlar el centro",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "El Clásico Peón de Dama",
-      "text": "El Gambito de Dama comienza con 1.d4 d5 2.c4. Las Blancas ofrecen el peón c. Si las Negras aceptan, abandonan el centro. Si rehúsan (lo más común a nivel maestro), las Blancas conservan un fuerte control central." },
-    { "type": "play",
+      "text": "El **Gambito de Dama** es una de las aperturas más respetadas de la historia del ajedrez — una obra maestra posicional que fue *la* apertura preferida de los años 20 y volvió con fuerza a la cultura popular gracias a la serie de Netflix del mismo nombre.\n\n## La secuencia que la define\n\nLa línea canónica es {{d4}} {{d5}} {{c4}}. Las blancas ofrecen el peón de c, apostando a que si las negras aceptan, las blancas recuperarán el peón controlando el centro.\n\n## Lo que quiere cada bando\n\n- **Plan blanco:** aplicar presión central a largo plazo con {{Nf3}}, {{Nc3}}, {{Bf4}} o {{Bg5}} y {{e3}}; enrocar corto; finalmente explotar una mayoría en el flanco de dama o en el centro.\n- **Plan negro:** rehusar el gambito (el *Gambito de Dama Rehusado*) con **...e6**, **...Nf6**, **...Be7**; o jugar la *Eslava* con **...c6**; o aceptar (raro al máximo nivel) e intentar conservar el peón extra.\n- **Estructura de peones:** estructuras clásicas tipo *Carlsbad* o *Tarrasch* — cadenas de peones por c-d-e donde pequeñas rupturas como los *ataques de minoría* deciden la partida.\n\n## Por qué no es un gambito real\n\nEl Gambito de Dama no es un gambito verdadero porque las negras normalmente no pueden *quedarse* con el peón de c4 con seguridad. Tras {{dxc4}}, las blancas lo recuperan con **{{e4}}** o **{{Nc3}}** más **{{e3}}** ganando tiempo.\n\n> El Gambito de Dama no va de ganar un peón. Va de ganar el centro."
+    },
+    {
+      "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "prompt": "Abre con el peón de dama.",
-      "targetSan": ["d4"],
-      "hint": "1.d4 — empuje central clásico." },
-    { "type": "play",
+      "prompt": "Abre con el peón de dama — juega **{{d4}}**.",
+      "targetSan": [
+        "d4"
+      ],
+      "hint": "1.d4 reclama el centro y prepara la ruptura distintiva de c4 a continuación."
+    },
+    {
+      "type": "play",
       "fen": "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
-      "prompt": "Ahora ofrece el gambito.",
-      "targetSan": ["c4"],
-      "hint": "2.c4 — ataca el peón d5 con un peón de flanco." },
-    { "type": "teach",
+      "prompt": "Ahora ofrece el gambito con **{{c4}}** — desafía el peón d5 negro desde el flanco.",
+      "targetSan": [
+        "c4"
+      ],
+      "hint": "Si las negras toman con ...dxc4 recuperarás el peón fácilmente y dominarás el centro. De cualquier manera ganas."
+    },
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/ppp1pppp/8/3p4/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2",
       "title": "¿Rehusar o Aceptar?",
-      "text": "Si las Negras aceptan (2...dxc4), las Blancas suelen recuperar el peón rápidamente. Si rehúsan (2...e6, 2...c6, 2...Nf6), la partida se convierte en una batalla posicional por las casillas centrales. De un modo u otro, las Blancas obtienen una fuerte iniciativa." }
+      "text": "Las negras tienen ahora tres reacciones principales, cada una definiendo una *familia* de aperturas distinta.\n\n## Las tres respuestas principales negras\n\n- **Gambito de Dama Rehusado (GDR)** — **2...e6**. Sólido como granito. Las negras aceptan un alfil de casillas claras algo pasivo a cambio de una estructura de peones rocosa.\n- **Defensa Eslava** — **2...c6**. Las negras apoyan d5 con el peón de c en lugar de encerrar al alfil. Moderna, popular y teóricamente rica.\n- **Gambito de Dama Aceptado (GDA)** — **2...dxc4**. Las negras toman el peón pero planean devolverlo. Las blancas recuperan con {{e3}} o {{e4}} y desarrollan con una pequeña pero real ventaja central.\n\nUna cuarta opción, menos popular, es la **Tarrasch** — **2...e6 3.Nc3 c5** — las negras devuelven el peón después pero juegan por actividad antes que por solidez.\n\nA nivel de gran maestro dominan el GDR y la Eslava. A nivel de club el GDA aparece a menudo porque parece tentador agarrar el peón.\n\n> El Gambito de Dama enseña paciencia. Las piezas emergen lentamente, el centro se disputa casilla a casilla, y gana el jugador que entiende los planes a largo plazo."
+    }
   ]
 }

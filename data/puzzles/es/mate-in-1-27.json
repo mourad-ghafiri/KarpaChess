@@ -1,8 +1,11 @@
 {
   "id": "mate-in-1-27",
-  "fen": "k7/7R/2K5/8/8/8/8/8 w - - 0 1",
+  "fen": "k7/8/1K6/8/8/8/8/7R w - - 0 1",
   "solution": [
-    "Ra7+"
+    "Rh8#"
   ],
-  "hint": "Corta la columna a y el rey muere."
+  "title": "Martillo desde el otro lado",
+  "setup": "El rey negro está acorralado en el rincón **a8** con tu rey en **b6** bloqueando las casillas de escape diagonales.",
+  "hint": "Desliza la torre a la octava fila desde lejos — tu rey en **b6** controla {{a7}} y {{b7}}.",
+  "explanation": "## La idea\n\nOtro **mate de R+T contra R en el rincón**, esta vez con la torre rematando desde el lado opuesto del tablero. El rey en b6 está a la *distancia estándar de la jaula*, controlando las casillas de escape diagonales.\n\nJuega {{Rh8#}}.\n\n¿Por qué está atrapado el rey?\n\n- {{b8}} — cubierta por la torre en h8 (octava fila)\n- {{a7}} — cubierta por tu rey en **b6**\n- {{b7}} — cubierta por tu rey en **b6**\n- La torre está demasiado lejos para {{Kxh8}}\n- Nada puede interponerse en la octava fila\n\n> **Conclusión:** Cuando das mate con R+T, la torre puede rematar desde cualquier punto de la fila o columna una vez establecida la *jaula del rey*. La distancia no debilita el mate."
 }

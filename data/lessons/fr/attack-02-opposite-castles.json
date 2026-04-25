@@ -1,20 +1,20 @@
 {
   "id": "opposite-castles",
   "title": "Attaques avec roques opposés",
-  "summary": "Course aux pions vers le roi ennemi",
+  "summary": "Course aux pions vers le roi adverse",
   "difficulty": "advanced",
   "steps": [
     {
       "type": "teach",
       "fen": "r1bqk2r/ppp2ppp/2npbn2/4p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 b kq - 0 6",
       "title": "La tempête de pions",
-      "text": "Quand vous roquez du côté roi et que votre adversaire roque du côté dame, vous pouvez attaquer avec les pions SANS affaiblir votre propre roi. Poussez h4, g4, Nf5, h5, hxg6 — l'attaque est une tempête de pions."
+      "text": "Quand vous roquez d'**un côté** et que votre adversaire roque de **l'autre**, les règles de l'attaque changent. Vos pions deviennent des *attaquants*, car les pousser n'affaiblit pas la couverture de votre propre roi.\n\n## Quand cette idée apparaît\n\n- Les deux camps ont engagé leur roi sur des ailes opposées (l'un petit, l'autre grand).\n- Le centre est **fermé ou stable** donc aucun camp ne peut le percer.\n- Chaque camp a un ou deux pions supplémentaires près du roi adverse.\n\n## Le plan standard\n\nAvec les Blancs roqués petit et les Noirs roqués grand, les Blancs attaquent avec les **pions de l'aile dame** ({{a4}}, {{b4}}, {{a5}}). Avec les rôles inversés, vous poussez les pions *de l'aile roi* ({{h4}}, {{g4}}, {{h5}}, {{g5}}).\n\n## Comment se préparer\n\n1. **Identifiez la couverture de pions du roi cible.** Les pions directement devant son roque sont le mur à briser.\n2. **Poussez d'abord le pion qui rencontre un défenseur** — celui qui peut être échangé contre une pièce adverse.\n3. **Tenez vos pièces prêtes** à envahir dès qu'une colonne ou diagonale s'ouvre.\n4. **Évitez les échanges prématurés** d'attaquants — chaque pièce mineure cédée est une brique manquante à votre bélier.\n\n## Une idée d'attaque modèle\n\nContre un roi roqué petit avec pions en f7-g7-h7, l'attaquant typique côté roi joue :\n\n- {{h4}} préparant la tempête.\n- {{g4}} ajoutant un second pion à la vague.\n- {{h5}} fixant le pion cible ou menaçant l'échange.\n- {{hxg6}} ou {{g5}} pour ouvrir la colonne.\n- Une tour ou la dame bascule en {{h1}}-{{h3}} ou directement sur la colonne ouverte.\n\n> *« Les roques opposés signifient mat en 20 coups — pour quelqu'un. »*"
     },
     {
       "type": "teach",
       "fen": "r1bqk2r/ppp2ppp/2npbn2/4p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 b kq - 0 6",
       "title": "La vitesse compte",
-      "text": "Les roques opposés créent une course : les deux camps attaquent le roi adverse. Celui qui ouvre les lignes en premier gagne généralement. Comptez les tempos — chaque coup compte. \"Roques opposés, c'est mat en 20 coups — pour quelqu'un.\""
+      "text": "Les roques opposés sont une **course**. Les deux camps poussent leurs pions vers le roi adverse. Celui qui ouvre les lignes en premier gagne généralement — parfois à un simple tempo près.\n\n## Comment compter les tempos\n\n1. Comptez combien de coups il vous faut pour **ouvrir** la couverture de pions du roi adverse.\n2. Comptez combien il faut à votre *adversaire* pour briser la **vôtre**.\n3. Si vous êtes à égalité, le camp **au trait** gagne.\n4. Si vous avez un tempo de retard, il vous faut un **sacrifice** pour combler la différence.\n\n## Priorités pratiques\n\n- **Ne bougez pas vos pions devant le roi** — c'est votre bouclier.\n- **Ne perdez pas de coups** à reculer des pièces sauf si elles vont être perdues.\n- **Échangez les défenseurs adverses** — surtout le cavalier qui garde son roque.\n- **Amenez toutes les pièces lourdes** sur la colonne ou diagonale d'attaque.\n\n## Évitez ces erreurs\n\n- Pousser les pions devant *votre propre* roi pour « créer de l'espace » — vous venez d'ouvrir des lignes pour l'adversaire.\n- Ralentir pour grappiller un pion loin de l'action.\n- Surprotéger votre roi avec une pièce passive qui devrait attaquer.\n\n## Comment repérer le bon moment\n\n- Le cavalier défensif adverse a été échangé.\n- Votre pion h (ou pion a) est à un coup de {{h5}} ou {{a5}} et la colonne va s'ouvrir.\n- Votre dame ou tour est déjà sur ou près de la colonne d'attaque.\n\nQuand tout cela s'aligne, **frappez maintenant** — même un sacrifice de pièce peut être correct.\n\n> Dans les courses à roques opposés, le deuxième attaquant le plus rapide est celui qui se fait mater."
     }
   ]
 }

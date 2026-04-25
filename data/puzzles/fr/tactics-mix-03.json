@@ -4,5 +4,8 @@
   "solution": [
     "Qxd4"
   ],
-  "hint": "Elle n'est pas défendue — ramassez la dame."
+  "title": "Dame gratuite, prenez-la",
+  "setup": "Deux dames se font face — mais une seule est défendue.",
+  "hint": "Cherchez toujours les pièces en l'air. La tactique la plus simple est *prends ce qui est gratuit*.",
+  "explanation": "## L'idée\n\nVoici la tactique la plus basique de **pièce en l'air**. La dame noire en d4 n'est pas défendue. La dame blanche en d1 l'attaque le long de la colonne d. Blanc prend, point.\n\nLes Blancs jouent {{Qxd4}}.\n\n- Le roi noir est en e8, loin — pas de reprise possible.\n- Aucune pièce noire ne défend d4.\n- Blanc gagne une dame pour rien.\n\n## Schéma à mémoriser\n\n> Avant chaque coup, balayez les **pièces adverses non défendues** sur les lignes que vous contrôlez.\n\nLe GM John Nunn appelait cela les *Loose Pieces* — la règle **LPDO** (Loose Pieces Drop Off) est le fondement de toutes les tactiques. Maîtrisez ceci et le reste de la tactique n'est que décoration."
 }

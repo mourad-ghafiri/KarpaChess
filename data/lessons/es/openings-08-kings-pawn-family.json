@@ -1,29 +1,29 @@
 {
   "id": "kings-pawn-family",
-  "title": "1.e4 — El Peón Rey",
-  "summary": "Panorama de toda respuesta mayor a 1.e4",
+  "title": "1.e4 — El peón de rey",
+  "summary": "Panorama de toda respuesta importante a 1.e4",
   "difficulty": "beginner",
   "steps": [
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
-      "title": "La Apertura Romántica",
-      "text": "1.e4 abre líneas para la dama y el alfil y lucha por el centro con un peón. Es aguda, táctica y la primera jugada más popular de la historia del ajedrez."
+      "title": "La apertura romántica",
+      "text": "**{{e4}}** es la primera jugada más popular de la historia del ajedrez. Bobby Fischer la llamó *la mejor según las pruebas*, y tenía razón — la jugada hace cinco cosas a la vez.\n\n## Qué consigue 1.e4\n\n- **Reclama una casilla central** — e4 es una de las cuatro casillas clave.\n- **Libera a la dama** por la diagonal d1-h5.\n- **Libera al alfil de f1** por la diagonal a6-f1.\n- **No amenaza nada todavía** — pero crea posibilidades inmediatas.\n- **Marca el tono** — las partidas abiertas y tácticas son mucho más comunes tras 1.e4 que tras 1.d4.\n\n## Lo que las blancas suelen querer\n\n- Sacar las piezas rápido (caballos a f3 y c3).\n- Presionar casillas clave como **f7** y **e5**.\n- Enrocar corto y usar la columna e con la torre.\n\n## Por qué los principiantes deberían probarla\n\nLas partidas tras 1.e4 tienden a ser abiertas, con tácticas más claras y decisiones más rápidas. Practicar 1.e4 afila tu ojo táctico de una forma que los sistemas lentos con d4 a menudo no consiguen.\n\n> 1.e4 es el sol radiante de la mañana del ajedrez — líneas abiertas, piezas vivas, peleas de verdad."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
-      "title": "Respuestas Principales de las Negras",
-      "text": "Las Negras tienen varias respuestas serias: 1...e5 (clásica, simétrica), 1...c5 (Siciliana, asimétrica), 1...e6 (Francesa), 1...c6 (Caro-Kann), 1...d5 (Escandinava). Cada una lleva a una partida distinta."
+      "title": "Las respuestas principales de las negras",
+      "text": "Las negras tienen un menú rico de respuestas a 1.e4 — cada una define un universo ajedrecístico distinto.\n\n## Las grandes seis\n\n- **1...e5** — *Juegos abiertos*. Reflejan la reivindicación de las blancas. Llevan al Italiano, la Ruy López, la Escocesa, el Gambito de Rey, la Petroff y más.\n- **1...c5** — *Defensa siciliana*. La elección más aguda y popular del luchador. Asimétrica, dinámica, llena de teoría.\n- **1...e6** — *Defensa francesa*. Sólida y estratégica. Las negras construyen una cadena de peones tras **...d5**.\n- **1...c6** — *Defensa Caro-Kann*. Tranquila y a prueba de balas. Prepara ...d5 con apoyo del peón c.\n- **1...d5** — *Defensa escandinava*. Directa: cambio de peones inmediato. Fácil de aprender.\n- **1...Nf6** — *Defensa Alekhine*. Provocación hipermoderna. Tienta a los peones blancos a avanzar para atacarlos después.\n\n## Menos comunes pero legítimas\n\n- **1...d6** — *Pirc / Moderna* — dejar que las blancas construyan, luego contraatacar.\n- **1...g6** — *Defensa moderna* — fianchetto primero, decidir después.\n- **1...Nc6** — *Defensa Nimzowitsch* — peculiar pero jugable.\n\n## Cómo elegir qué jugar\n\n- *¿Táctico, te gusta atacar?* — Juego abierto con 1...e5 o Najdorf siciliana.\n- *¿Odias memorizar?* — Caro-Kann o Pirc.\n- *¿Amas el juego posicional?* — Francesa o Caro-Kann.\n\n> Elige una defensa y apréndela a fondo. Cinco sistemas sólidos vencen a cincuenta superficiales."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
-      "prompt": "Responde a 1.e4 con la jugada clásica.",
+      "prompt": "Responde a 1.e4 con la respuesta clásica — juega **{{e5}}** y reclama tu propio territorio en el centro.",
       "targetSan": [
         "e5"
       ],
-      "hint": "1...e5 refleja la reivindicación del centro por las Blancas."
+      "hint": "1...e5 es la respuesta consagrada por el tiempo. Refleja a las blancas y abre las mismas diagonales para tu alfil y tu dama."
     }
   ]
 }

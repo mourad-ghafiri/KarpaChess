@@ -1,8 +1,11 @@
 {
   "id": "mate-in-1-20",
-  "fen": "4k3/4Q3/4K3/8/8/8/8/8 w - - 0 1",
+  "fen": "4k3/8/4K3/8/8/8/8/Q7 w - - 0 1",
   "solution": [
-    "Qb7"
+    "Qa8#"
   ],
-  "hint": "Kurung raja dari samping."
+  "title": "Kandang Raja dari Samping",
+  "setup": "Raja-raja berdiri **berhadapan (oposisi)** di lajur e. Menteri, jauh di **a1**, punya jalan tol baris belakang yang bersih.",
+  "hint": "Ayunkan menteri ke sudut baris belakang — raja Anda sudah menutup {{d7}}, {{e7}} dan {{f7}}.",
+  "explanation": "## Idenya\n\nSkakmat baris belakang **K+Q vs K** klasik dengan raja-raja dalam oposisi. Menteri menyapu baris ke-8 dari jauh.\n\nMainkan {{Qa8#}}.\n\nMengapa raja terjebak?\n\n- {{d8}} dan {{f8}} — dikuasai menteri di a8 (baris ke-8)\n- {{d7}}, {{e7}}, {{f7}} — semua dikuasai raja Anda di **e6**\n- Menteri jauh dari raja, jadi {{Kxa8}} mustahil\n- Tidak ada yang bisa menghalangi di baris ke-8 yang kosong\n\n> **Pelajaran:** *Kandang dari samping* adalah skakmat menteri paling aman — tanpa risiko pat, menteri terjaga jauh dari raja, dan raja-raja dalam oposisi rapi. Latih sampai jadi otomatis."
 }

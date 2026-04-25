@@ -1,8 +1,11 @@
 {
   "id": "mate-in-1-14",
-  "fen": "3R4/8/8/8/8/k7/8/2K5 w - - 0 1",
+  "fen": "7R/8/8/8/8/1K6/8/k7 w - - 0 1",
   "solution": [
-    "Rd3+"
+    "Rh1#"
   ],
-  "hint": "Cut off the lone king on the 3rd rank."
+  "title": "Edge of the World",
+  "setup": "Black's king is wedged in the **a1** corner; your king on **b3** holds the {{a2}} and {{b2}} flight squares.",
+  "hint": "Drop the rook to the **1st rank** — every escape is already covered by your king.",
+  "explanation": "## The Idea\n\nA bare **K+R vs K corner mate**. The white king has done the hard work of cutting off escape squares; the rook just delivers the killing blow.\n\nPlay {{Rh1#}}.\n\nWhy is the king stuck?\n\n- {{b1}} — covered by the rook on h1 (1st rank)\n- {{a2}} — covered by your king on **b3**\n- {{b2}} — covered by your king on **b3**\n- The king cannot capture the rook: a1 to h1 is far too distant\n- Nothing can interpose: the 1st rank is empty\n\n> **Takeaway:** In K+R vs K, the rook delivers mate from a *safe distance* once the king has been driven to the edge. Your own king must control the flight squares one rank in front of the trapped king."
 }

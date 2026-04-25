@@ -1,21 +1,29 @@
 {
   "id": "overloading",
-  "title": "Surcharge",
-  "summary": "Une pièce qui fait deux tâches en ratera une",
+  "title": "La surcharge",
+  "summary": "Une pièce qui fait deux travaux en ratera un",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "4k3/4q3/8/8/8/8/4R3/4K3 w - - 0 1",
       "title": "Trop de travail",
-      "text": "Une pièce surchargée défend (ou attaque) plus qu'elle ne peut gérer. Le cas classique : une pièce défend deux cases. Quand vous en attaquez une, l'autre tombe. Ici la dame noire défend le roi — elle ne peut pas bouger sans perdre sur Rxe7+." },
-    { "type": "play",
+      "text": "Une pièce **surchargée** est une pièce qui a plus de devoirs défensifs qu'elle ne peut en assumer. Attaquez l'une de ses tâches et elle échouera à une autre.\n\n## La forme classique\n\nUne pièce ennemie accomplit deux des choses suivantes en même temps :\n\n- Défendre une case qui, si elle était envahie, donnerait mat.\n- Défendre une autre pièce sans quoi elle serait lâche.\n- Intercepter un échec tout en gardant une case-clé.\n- Maintenir un clouage tout en couvrant une case de fourchette de cavalier.\n\nSi une pièce fait **deux** travaux, il suffit qu'on lui en demande **trois** pour qu'elle craque.\n\n## La géométrie\n\nIl n'y a pas de forme — la surcharge est une affaire de comptabilité. Cartographiez les devoirs de chaque défenseur ; trouvez la pièce qui en a deux ; attaquez l'un de ces devoirs.\n\n## Comment la trouver\n\n1. Listez les pièces ennemies qui gardent le plus de choses.\n2. Pour chacune, écrivez ses devoirs — cases défendues, pièces protégées, lignes couvertes.\n3. Trouvez une attaque qui force la pièce à abandonner un devoir.\n4. Profitez de la case délaissée.\n\nIci, la dame noire en e7 est surchargée : elle est la seule pièce entre la tour en e2 et le roi en e8. Les Blancs jouent {{Rxe7+}} — la dame tombe car elle ne peut pas à la fois rester en place et faire écran au roi.\n\n> Même les pièces les plus fidèles finissent par démissionner quand on leur en demande trop."
+    },
+    {
+      "type": "play",
       "fen": "4k3/4q3/8/8/8/8/4R3/4K3 w - - 0 1",
-      "prompt": "Capturez la dame clouée.",
-      "targetSan": ["Rxe7+"],
-      "hint": "La double fonction de la dame (défendre le roi ET sa case) la condamne." },
-    { "type": "teach",
+      "prompt": "Croquez la dame surchargée avec **{{Rxe7+}}** — elle fait écran au roi et ne peut pas bouger.",
+      "targetSan": [
+        "Rxe7+"
+      ],
+      "hint": "La dame fait deux travaux à la fois. Attaquez l'un et l'autre échoue."
+    },
+    {
+      "type": "teach",
       "fen": "4k3/4R3/8/8/8/8/8/4K3 b - - 0 1",
       "title": "Repérer les surcharges",
-      "text": "Cherchez les pièces qui défendent plusieurs choses — des pions se défendant mutuellement plus une pièce, ou un cavalier tenant une colonne tout en bloquant un pion passé. Quand vous en trouvez une, attaquez l'une de ses tâches." }
+      "text": "La tour est désormais en e7, deux pions de matériel en plus avec une finale roi-et-pion gagnante en perspective. La surcharge a fait son œuvre.\n\n## Schémas de surcharge à mémoriser\n\n- Un pion défendant deux pièces (cavalier + fou).\n- Un cavalier qui bloque un pion passé *et* défend une autre pièce mineure.\n- Une dame qui tient une dernière rangée *et* défend un cavalier en l'air.\n- Une tour qui défend la dernière rangée *et* fait face à une tour ennemie sur une colonne.\n\n## Une question utile\n\nÀ chaque scan d'une position, demandez : *quelle pièce ennemie défend plus d'une chose ?* Cette pièce est votre point faible. Trouvez un coup qui la force à choisir, et vous gagnez.\n\n> Les coups forts n'attaquent pas seulement les pièces. Ils attaquent les *responsabilités*."
+    }
   ]
 }

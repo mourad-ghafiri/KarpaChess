@@ -4,5 +4,8 @@
   "solution": [
     "Rxd8#"
   ],
-  "hint": "Cambia las torres — mate en la última fila."
+  "title": "Mate en espejo",
+  "setup": "Estructuras idénticas en el flanco de rey, torres en la misma columna. Quien mueva primero da mate.",
+  "hint": "Captura la torre con jaque. Los peones del negro bloquean el escape de su propio rey.",
+  "explanation": "## La idea\n\nEste es el **mate de pasillo** de manual en una sola jugada: {{Rxd8#}}.\n\n### Por qué es mate inmediato\n\n1. La torre blanca captura la torre negra — ahora la torre blanca ataca toda la octava fila.\n2. El rey negro en g8 solo tiene tres casillas a un paso del rey:\n   - **f8** ✗ — atacada por la torre.\n   - **h8** ✗ — atacada por la torre.\n   - **f7, g7, h7** ✗ — todas bloqueadas por los propios peones negros.\n3. Ninguna pieza negra puede capturar la torre blanca en d8; nada puede interponerse al jaque.\n\n### La lección\n\nLa posición importa más que el material aquí. Ambos bandos tenían una torre — pero solo uno tenía la torre *correcta* en la columna *correcta*. **Una torre activa en la columna abierta vence a una torre dormida en la esquina.**\n\n> La octava fila es el carril del verdugo. Siempre comprueba quién la controla."
 }

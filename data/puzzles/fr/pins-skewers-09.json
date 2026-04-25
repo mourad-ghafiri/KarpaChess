@@ -4,5 +4,8 @@
   "solution": [
     "Rxe7+"
   ],
-  "hint": "Le cavalier est cloué — capturez-le."
+  "title": "Le cavalier cloué",
+  "setup": "Un cavalier noir en **e7** est figé entre la tour blanche en e2 et le roi noir en e8.",
+  "hint": "Un cavalier cloué est le plus triste des cavaliers — il ne peut même pas sauter.",
+  "explanation": "## L'idée\n\n**Clouage absolu** sur un cavalier. Normalement, les cavaliers se moquent des clouages parce qu'ils sautent, mais une pièce clouée sur son propre roi ne peut pas légalement bouger du tout — même vers une case sans capture — car le coup exposerait le roi.\n\nLes Blancs jouent {{Rxe7+}}, gagnant le cavalier proprement.\n\n- {{Kxe7}} est la seule réponse légale.\n- L'échange est tour (5) contre cavalier (3). À première vue, cela ressemble à une perte, mais dans cette finale dépouillée, Blanc gagne en simplifiant vers roi+tour contre roi seul.\n- Dans une position plus riche, ce même schéma **gagne simplement un cavalier pour rien** quand il y a plus de matériel sur l'échiquier.\n\n## Schéma à mémoriser\n\n> Un cavalier cloué est impuissant : il ne peut pas bouger, ne peut pas défendre, ne peut pas s'échapper.\n\nQuand vous voyez un cavalier adverse sur la même ligne que son roi, cherchez à **ajouter un attaquant** sur cette case."
 }

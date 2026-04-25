@@ -1,26 +1,26 @@
 {
   "id": "thinking-process",
   "title": "Cara Berpikir",
-  "summary": "Proses 3 langkah sederhana untuk setiap gerakan",
+  "summary": "Proses 3-langkah sederhana untuk setiap langkah",
   "difficulty": "beginner",
   "steps": [
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "Tiga Pertanyaan",
-      "text": "Sebelum setiap langkah, jalankan daftar periksa ini: (1) Apa yang sedang diancam lawan saya? (2) Apa SKAK, penangkapan, dan ancaman saya? (3) Jika saya memainkan kandidat saya, apa jawaban terbaiknya? Jawab ketiganya, lalu bergerak."
+      "text": "Pemain kuat tidak hanya bereaksi — mereka mengikuti rutinitas mental kecil di **setiap** langkah. Semakin awal Anda membangun kebiasaan, semakin cepat Anda akan berkembang.\n\n## Tiga pertanyaan\n\n1. **Apa yang diancam lawan saya?** Lihat langkah terakhir mereka. Apakah itu menyerang bidak? Membuka jalur? Mempersiapkan taktik?\n2. **Apa skak, pemakanan, dan ancaman SAYA?** Pindai seluruh papan. Taktik hidup di langkah-langkah *memaksa*. Daftarkan sebelum memilih.\n3. **Apa balasan terbaik jika saya memainkan kandidat saya?** Bayangkan langkah Anda di papan, lalu tanya: bagaimana *saya* akan merespons sebagai Hitam?\n\nTiga pertanyaan kecil. Diajukan dengan jujur, mereka memotong tingkat blunder Anda menjadi setengah.\n\nContoh cepat: bayangkan Putih baru saja memainkan {{Bg5}}, memakukan kuda. Pertanyaan 1: *apa yang diancam?* Kuda tidak bisa bergerak tanpa membuka menteri. Pertanyaan 2: *apa balasan memaksa saya?* Mungkin {{h6}} mengusir gajah. Pertanyaan 3: *apa yang terjadi setelah h6?* Gajah mundur atau ditukar.\n\n> Tiga pertanyaan, satu menit. Poin rating termurah yang pernah Anda hasilkan."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "Pemeriksaan Blunder",
-      "text": "Sebelum Anda memainkan langkah Anda, berhenti sejenak dan tanya: \"Setelah saya melakukan langkah ini, apakah ada bidak saya yang diserang? Bisakah lawan saya memberikan skak? Bisakah mereka menangkap sesuatu secara gratis?\" Pemeriksaan 5 detik ini menyelamatkan sebagian besar blunder."
+      "text": "Hampir setiap permainan yang kalah berisi momen di mana Anda main cepat dan melewatkan sesuatu yang jelas. Momen itu bisa dicegah.\n\n## Pemeriksaan blunder 5 detik\n\nSebelum tangan Anda meninggalkan bidak, berhenti dan jalankan pemindaian kecil:\n\n- Apakah ada **bidak saya** yang tiba-tiba menggantung (tidak terjaga, diserang)?\n- Bisakah lawan saya memberi **skak** yang memenangkan sesuatu?\n- Apakah ada **pemakanan sederhana** gratis yang baru saja saya izinkan?\n- Apakah saya baru saja masuk ke **garpu, pakuan, atau sate**?\n\nJika jawaban keempatnya *tidak*, mainkan langkah itu. Jika *ya*, cari langkah lain.\n\nRitual sederhana ini tidak biaya apa-apa di permainan klasik dan hanya beberapa detik di blitz. Ia menangkap sebagian besar blunder satu-langkah — jenis yang menghantui setiap pemain catur.\n\n> Duduki tangan Anda. Lalu lihat lagi. Lalu mainkan."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "Langkah Kandidat",
-      "text": "Pemain kuat tidak menghitung satu langkah — mereka menghitung 2-3 kandidat dan membandingkan. Pilih langkah yang mengembangkan bidak, memperbaiki kotak, atau menciptakan ancaman. Tolak langkah-langkah yang terlihat acak sejak dini."
+      "text": "Catur bukan memilih *langkah*-nya — itu memilih *di antara* langkah-langkah.\n\nGrandmaster melihat papan, mengidentifikasi **2–3 langkah kandidat**, menghitung masing-masing sebentar, dan membandingkan. Pemula sering menghitung satu langkah secara mendalam dan memainkannya tanpa pernah bertanya *apakah ada yang lebih baik?*\n\n## Cara menghasilkan kandidat yang baik\n\n- Mulai dengan **langkah memaksa**: skak, pemakanan, dan ancaman langsung.\n- Tambahkan **langkah pengembangan**: bawa bidak yang menganggur ke dalam permainan.\n- Tambahkan **profilaksis**: hentikan rencana lawan sebelum dimulai.\n- Tolak dengan cepat: jika langkah kehilangan material atau melanggar prinsip tanpa alasan, buang dari daftar.\n\nLalu bandingkan finalis Anda secara langsung: *yang mana yang meninggalkan posisi saya paling kuat setelah balasan terbaik lawan?*\n\n## Mengapa ini penting\n\n- Mencegah penglihatan terowongan (terkunci pada langkah pertama yang Anda lihat).\n- Memunculkan taktik — kadang Langkah B hebat justru karena Langkah A bagus.\n- Membuat Anda pemain yang lebih tenang, karena Anda sudah menyingkirkan alternatif daripada menebak.\n\n> Pilih tiga, tentukan satu. Ulangi tiga puluh langkah. Itulah catur."
     }
   ]
 }

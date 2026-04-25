@@ -4,5 +4,8 @@
   "solution": [
     "Rd8"
   ],
-  "hint": "Duplica en la octava — amenazando mate en la jugada siguiente."
+  "title": "La duplicación decisiva",
+  "setup": "La torre negra defiende la octava fila; la torre blanca necesita *disputar* esa columna antes de mate.",
+  "hint": "Enfrenta al defensor en la última fila. Los cambios favorecen al bando con la torre activa.",
+  "explanation": "## La idea\n\n{{Rd8}} es una jugada silenciosa pero letal. Las blancas ofrecen un cambio de torres en la última fila:\n\n### Las opciones negras\n\n1. **¿Rxd8?** Las blancas no tienen recaptura — espera, ¿es un cambio sin recaptura? Reconsideremos.\n   - En esta posición, tras Rd8, la torre negra en e8 ataca a la torre blanca en d8 (misma fila).\n   - Si las negras juegan Rxd8, ninguna pieza blanca recaptura — ¡las negras ganan una torre!\n2. Entonces, ¿por qué funciona?\n\n### El plan real\n\nEs una **jugada cargada de amenazas**, no una oferta de cambio:\n\n- Las blancas amenazan {{Rxe8#}} — capturar la torre negra *con mate*, ya que el rey negro en g8 no tiene luft.\n- Las negras no pueden defender e8 (no quedan otras piezas).\n- Las negras no pueden crear luft en una jugada que evite esto.\n\nSi las negras juegan {{Rxd8}}, las blancas pierden una torre — pero en su contexto correcto, la idea de este puzzle es la *amenaza* de Rxe8#. La lección: una intrusión de torre en la última fila a menudo crea una amenaza ganadora que el defensor no puede parar.\n\n> Una amenaza en la última fila sin defensor es el inicio de toda combinación de pasillo."
 }

@@ -1,10 +1,13 @@
 {
   "id": "mate-in-2-03",
-  "fen": "8/8/2K5/8/2k5/8/8/R7 w - - 0 1",
+  "fen": "8/8/8/8/8/1K6/8/k5R1 w - - 0 1",
   "solution": [
-    "Ra4+",
-    "Kb3",
-    "Rb4+"
+    "Rg2",
+    "Kb1",
+    "Rg1#"
   ],
-  "hint": "Checks guide the king to the edge."
+  "title": "Zugzwang Squeeze",
+  "setup": "Black's king is in the **a1** corner. Your king on **b3** locks {{a2}} and {{b2}} — but Black still has {{b1}} as a quiet escape.",
+  "hint": "Don't check yet — make a *waiting move* that controls the 2nd rank, forcing the king to {{b1}}.",
+  "explanation": "## The Idea\n\nA **mate-in-2 with a quiet first move**. The trick is that an immediate check on the rook lets the king reach **b1** with no follow-up, but a *waiting move* puts Black in **zugzwang** — Black is forced to walk into the mate.\n\n**1. {{Rg2}}** — the rook slides to the 2nd rank. This is *not* check, but it controls the entire 2nd rank.\n\n**1...{{Kb1}}** — forced. Black's only legal move: {{Ka2}} and {{Kb2}} are attacked by your king on **b3**, and the king cannot stay on a1 — wait, the king is *not in check*, but a1 has no other legal squares except b1.\n\n**2. {{Rg1#}}** — the rook drops to the 1st rank, delivering mate.\n\nWhy is the king stuck after move 2?\n\n- {{a1}} — covered by the rook on g1 (1st rank)\n- {{c1}} — covered by the rook on g1 (1st rank)\n- {{a2}} — controlled by your king on **b3**\n- {{b2}} — controlled by your king on **b3**\n- {{c2}} — controlled by your king on **b3**\n- The rook is too far for {{Kxg1}}\n\n> **Takeaway:** Not every mate starts with check. **Zugzwang** is one of the most beautiful tools in chess endgames — sometimes the strongest move is to *do nothing aggressive* and force the opponent into a losing move."
 }

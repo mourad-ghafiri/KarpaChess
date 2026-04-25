@@ -4,5 +4,8 @@
   "solution": [
     "Rxd6+"
   ],
-  "hint": "The queen is pinned against her king — take it."
+  "title": "The Frozen Queen",
+  "setup": "The black queen sits on the **d-file** in front of her king, while a white rook eyes them both from below.",
+  "hint": "A piece pinned to its king cannot move. Take it.",
+  "explanation": "## The Idea\n\nThis is a textbook **absolute pin**. The black queen on d6 is glued to her king on d8 — moving her would expose the king to check, which is illegal. So she has to sit there and absorb whatever lands on her square.\n\nWhite plays {{Rxd6+}}, snapping up the queen. Black is now in check and must respond:\n\n- {{Kxd6}} recaptures the rook, but White has traded a rook for a queen — a clear win of material.\n- The king has no other legal way out: blocking is impossible (no piece between), and the rook can only be captured by the king.\n\n## Pattern to Memorize\n\n> When an enemy piece is pinned to its king, attack it with another piece. The pinned piece cannot run.\n\nLook for these every move: **a long-range attacker (rook, bishop, queen) plus a target on the same line as the enemy king.**"
 }

@@ -2,7 +2,11 @@
   "id": "tactics-mix-07",
   "fen": "r4rk1/1pp2ppp/p1np4/4p3/2B1P3/2Pq1N2/PP2QPPP/R2R2K1 b - - 0 1",
   "solution": [
-    "Qxd1+"
+    "Qxe2",
+    "Bxe2"
   ],
-  "hint": "Fuerza el cambio hacia un final ganador."
+  "title": "Cambia Damas para Salvar el Día",
+  "setup": "La dama negra en **d3** está atacada por la dama blanca en e2 y por el alfil en c4. Debe cambiar ahora o se pierde.",
+  "hint": "Cuando tu dama está atacada dos veces y defendida cero veces, cámbiala — no bailes.",
+  "explanation": "## La idea\n\nEsto es un **cambio forzado** — una táctica de supervivencia, no una combinación ganadora. La dama negra está atacada por **dos** piezas blancas (dama en e2 y alfil en c4) y defendida por **ninguna**. Si las negras no hacen nada, las blancas juegan {{Qxd3}} (o {{Bxd3}}) ganando la dama por nada.\n\nLa única jugada buena es **iniciar el cambio en los términos de las negras**: capturar la dama blanca.\n\nLas negras juegan {{Qxe2}}.\n\n## La respuesta forzada de las blancas\n\nLas blancas deben recapturar o perder la dama por nada:\n\n- {{Bxe2}} — el alfil en c4 se desliza a e2 y recaptura. Es la única recaptura legal (ni torre ni caballo llegan a e2 en una jugada).\n\nMaterial tras asentarse el polvo: igual. Las negras han convertido una posición perdida en un medio juego equilibrado.\n\n## Patrón a memorizar\n\n> Cuando tu dama está doblemente atacada e indefensa, la pregunta cambia de *\"¿Puedo ganar material?\"* a *\"¿Cómo pierdo lo menos posible?\"*\n\nUn cambio de damas con captura neutraliza el ataque e iguala el material. Verifica siempre esta opción antes de retirar — a veces el cambio más simple es el mejor recurso."
 }

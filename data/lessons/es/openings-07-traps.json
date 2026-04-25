@@ -4,17 +4,23 @@
   "summary": "Reconoce (y evita) errores clásicos",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/ppp2ppp/8/3pp3/4P3/2N5/PPPP1PPP/R1BQKBNR w KQkq - 0 3",
       "title": "El Mate Pastor",
-      "text": "La trampa más famosa: saca pronto la dama y el alfil para atacar f7. Si las Negras no defienden con cuidado, llega el jaque mate en cuatro jugadas. Tras 1.e4 e5 2.Bc4 Nc6 3.Qh5 — si las Negras juegan una jugada natural como 3...Nf6?? — la partida puede terminar con 4.Qxf7#." },
-    { "type": "teach",
+      "text": "Todo jugador de ajedrez aprende el **Mate Pastor** tarde o temprano — normalmente porque alguien acaba de soltárselo encima.\n\nLa receta básica va: {{e4}} {{e5}} {{Bc4}} {{Nc6}} {{Qh5}}. Las blancas han apresurado la dama al ataque con un objetivo: la casilla **f7**, defendida solo por el rey negro. Si las negras juegan una jugada descuidada como **3...Nf6??**, las blancas rompen con **4.Qxf7#** — jaque mate en cuatro jugadas.\n\n## ¿Por qué funciona?\n\n- **f7** es una casilla únicamente débil — solo la defiende el rey.\n- La dama en h5 ataca f7; el alfil en c4 ataca f7. Dos atacantes, un defensor.\n- Una jugada de caballo de aspecto natural (como ...Nf6) bloquea que la dama negra llegue a defender f7 sin resolver la amenaza.\n\n## Cómo refutarlo\n\n- **3...g6** persigue a la dama y defiende — lo más directo.\n- **3...Qe7** defiende f7 con la dama, perfectamente seguro.\n- **3...Nf6??** es la jugada que pierde — bloquea la diagonal, pero no atiende la amenaza.\n\n> Conocer una trampa es un regalo de 100 puntos de Elo. Caer en ella una vez te enseña para siempre."
+    },
+    {
+      "type": "teach",
       "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 0 4",
       "title": "El Castigo",
-      "text": "Frente a un oponente preparado, se refuta fácilmente con 3...g6 o 3...Qe7, defendiendo f7. Conocer la trampa te permite evitarla con Negras y castigar el juego descuidado con Blancas." },
-    { "type": "teach",
+      "text": "Frente a un rival despierto, el Mate Pastor *no* es un arma ganadora — es un arma **perdedora**. La salida temprana de la dama viola dos principios de apertura a la vez:\n\n- La dama está en h5 — expuesta y fácil de perseguir.\n- Las blancas no han desarrollado ninguna otra pieza salvo un alfil.\n\n## Por qué el Mate Pastor falla a cualquier nivel decente\n\n- Tras **3...g6** la dama se retira a **4.Qf3** (todavía amenazando f7) — y las negras juegan **4...Nf6** con seguridad. Ahora las negras tienen *dos piezas desarrolladas* contra *una* de las blancas, y la dama blanca volverá a ser perseguida.\n- Tras **3...Qe7** las negras están tranquilas, han salvado f7 y pueden jugar **...Nf6**, **...d6**, **...Bg7**, completando el desarrollo con la conciencia limpia.\n\n## La lección\n\nSi un rival ataca tu casilla más débil con una pieza, normalmente tienes una jugada defensiva tranquila. **No te asustes** y no muerdas el cebo de atacar su dama *si* eso te cuesta f7. Defiende primero, después persigue.\n\n> El Mate Pastor castiga la ignorancia. Una vez que lo conoces, lo castigas tú."
+    },
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPPBPPP/RNBQK2R w KQkq - 0 3",
-      "title": "Desarrolla sin Correr",
-      "text": "La mayoría de las 'trampas' dependen de que el rival viole principios básicos — dejar al rey en el centro, caer en un doble o debilitar una casilla clave como f2/f7. Desarrolla con calma y vigila las tácticas en cada jugada." }
+      "title": "Desarrolla, no Corras",
+      "text": "La mayoría de las trampas de apertura comparten un rasgo: **la víctima rompió un principio básico**. Dejaron al rey en el centro, cayeron en un horquillado, debilitaron f2/f7 o movieron la misma pieza tres veces antes de desarrollar el resto.\n\n## Las familias de trampas más comunes\n\n- **Mate de Légal** — las blancas ganan tras una clavada descuidada con ...Bg4: {{e4}} {{e5}} {{Nf3}} {{d6}} {{Bc4}} **Bg4** {{Nc3}} **g6**?? {{Nxe5}}! y el alfil de g4 está indefenso — las negras pierden material o algo peor.\n- **Trampa de la Caña de Pescar** (Ruy López) — las negras juegan **...h5** y **...Ng4** para tentar al alfil de g5 a capturar, abriendo líneas hacia el rey blanco tras un sacrificio.\n- **Trampa del Arca de Noé** (Ruy López) — tras vagar el alfil blanco a b3, las negras lo atrapan con **...c5-c4** si las blancas no tienen cuidado.\n- **Hígado Frito** — tras {{e4}} {{e5}} {{Nf3}} {{Nc6}} {{Bc4}} {{Nf6}} **{{Ng5}}** **d5** {{exd5}} **Nxd5**?! {{Nxf7}}!? — las blancas sacrifican un caballo por una furiosa caza al rey.\n\n## El antídoto universal\n\nAplica los **tres principios de la apertura** en cada jugada:\n\n1. ¿Mis piezas se desarrollan hacia el centro?\n2. ¿Mi rey va camino de enrocar?\n3. ¿Acabo de permitir un jaque, una captura o un horquillado?\n\nSigue esa lista y caerás en muchísimas menos trampas que las que tú mismo te tiendes.\n\n> La mayoría de las trampas viven en los errores del *rival*. Juega con principios y verás cómo caen solos."
+    }
   ]
 }

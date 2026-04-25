@@ -4,5 +4,8 @@
   "solution": [
     "dxe5"
   ],
-  "hint": "Tangkapan tengah."
+  "title": "Buka Pusat",
+  "setup": "Kedua sisi telah mendorong **bidak-d** dan **bidak-e** mereka. Saatnya pertukaran tengah yang bersih.",
+  "hint": "Ketika dua pasang bidak terkunci di tengah, pihak yang memakan lebih dulu membuka jalur untuk buah-buahnya.",
+  "explanation": "## Idenya\n\nIni adalah **pertukaran tengah** yang fundamental dalam permainan pembukaan. Kedua sisi telah mendorong bidak tengah, dan ketegangan terbangun. Putih giliran dan memutuskan untuk **melepaskan ketegangan** dengan memakan.\n\nPutih bermain {{dxe5}}.\n\n## Apa yang Dilakukan Ini\n\n- Bidak-d Putih memakan bidak-e Hitam.\n- **Lajur d** kini setengah terbuka untuk Putih (tidak ada bidak putih lagi di sana).\n- **Lajur e** masih punya bidak-d (Hitam) dan bidak-e (Putih) — tunggu, setelah pemakanan, Hitam masih punya bidak-d di d5, dan Putih hanya punya bidak-e di e4 (tidak lagi di e5; itu telah dimakan).\n\nMari runut ulang pertukaran dengan hati-hati:\n- Putih d4 memakan e5 → bidak Putih kini di e5, bidak e5 Hitam hilang.\n- Lajur d tidak lagi punya bidak putih — ia **setengah terbuka** untuk menteri dan benteng Putih.\n\n## Opsi Pemakanan Balik Hitam\n\nHitam kemungkinan akan bermain {{dxe4}}, memakan balik di tengah dan melanjutkan pertukaran simetris. Setelah {{dxe4}}, kedua lajur d kini setengah terbuka dan posisinya kira-kira seimbang.\n\n## Pola yang Harus Diingat\n\n> Jangan biarkan ketegangan bidak tengah tanpa penyelesaian selamanya. **Memakan lebih dulu** sering menentukan pihak mana yang mendapat jalur lebih baik untuk buahnya.\n\nIde pembukaan sederhana ini adalah leluhur semua struktur **permainan terbuka** dan **Sicilian Terbuka**: tukar bidak tengah, isi lajur terbuka dengan benteng, bertarung di garis yang telah Anda ciptakan."
 }

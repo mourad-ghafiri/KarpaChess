@@ -1,26 +1,26 @@
 {
   "id": "kings-indian-advanced",
   "title": "Defensa India de Rey",
-  "summary": "Contraataque hipermoderno — la elección del luchador",
+  "summary": "Contraataque hipermoderno — la elección del peleador",
   "difficulty": "advanced",
   "steps": [
     {
       "type": "teach",
       "fen": "rnbqk2r/ppppppbp/5np1/8/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 4 5",
-      "title": "Deja que Construyan el Centro",
-      "text": "La India de Rey (1.d4 Nf6 2.c4 g6) es la máxima defensa hipermoderna. Las Negras dejan que las Blancas construyan un enorme centro de peones y luego lo golpean con ...e5 o ...c5. Famosa por generar feroces ataques de flanco de rey — el arma predilecta de Kasparov."
+      "title": "Déjales Construir el Centro",
+      "text": "La **Defensa India de Rey** (KID) es una de las aperturas más intransigentes jamás inventadas. Las negras dicen: *toma el centro, construye lo que quieras — y luego mira cómo lo derribo*.\n\nFue el arma de toda la vida de **Garry Kasparov**, **Bobby Fischer**, **David Bronstein** y muchos otros peleadores. Cuando juegas la India de Rey, no juegas para empatar — juegas para ganar, aunque sea arriesgado.\n\n## Cómo se llega a ella\n\nLa secuencia que la define es {{d4}} **{{Nf6}}** {{c4}} **{{g6}}** {{Nc3}} **{{Bg7}}**. Las negras fianchetan el alfil de rey y dejan que las blancas construyan un centro masivo.\n\n## Qué quiere cada bando\n\n- **Plan blanco:** completar el gran centro con {{e4}}, desarrollar con {{Nf3}}, **{{Be2}}** (o Be3, h3 en la Sämisch), enrocar corto, y o bien cerrar el centro para atacar el flanco de dama o romper con **c5/d5**.\n- **Plan negro:** terminar el desarrollo con **...0-0**, **...d6**, **...Nbd7** o **...Nc6**, y jugar el empuje central **...e5**. Tras el cierre blanco con **d5**, las negras lanzan tormentas de peones en el flanco de rey **...f5-f4-f3** mientras las blancas atacan el flanco de dama con **c5**.\n- **Estructura de peones:** la *Mar del Plata de la India de Rey* — centro cerrado con d5 frente a e5, piezas redesplegadas a flancos opuestos, carreras de peones en ambos lados.\n\n## El tema característico\n\nEn los medios juegos clásicos de la India de Rey, la pregunta es: *¿qué ataque llega primero?* Si las blancas rompen en el flanco de dama, la partida termina. Si la avalancha negra del flanco de rey alcanza al rey blanco, la partida termina. Hay muy pocas posiciones tranquilas.\n\n> La India de Rey: trae un tablero, vete con una historia de guerra."
     },
     {
       "type": "teach",
       "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2N2N2/PP3PPP/R1BQKB1R w KQ - 0 6",
       "title": "La Línea Principal Clásica",
-      "text": "Tras la Línea Principal Clásica, las Blancas tienen un centro enorme. El plan de las Negras: empujar ...e5, cerrar el centro con bloqueo ...d4 o ...f5, y luego lanzar los peones del flanco de rey. Ambos bandos atacan simultáneamente en flancos opuestos — ajedrez a toda máquina."
+      "text": "Tras {{d4}} {{Nf6}} {{c4}} {{g6}} {{Nc3}} {{Bg7}} {{e4}} **d6** {{Nf3}} **0-0**, has llegado a la **India de Rey Clásica** — una de las posiciones más analizadas del ajedrez.\n\n## El punto de bifurcación\n\nLas blancas eligen entre varios sistemas principales en la jugada 6:\n\n- **6.Be2** — *Línea Principal Clásica*. Desarrollo tranquilo. Las negras juegan **...e5**, y tras **7.0-0 Nc6 8.d5 Ne7**, las negras se preparan para el famoso **ataque al flanco de rey**.\n- **6.h3** — *Sistema Mäkagonov*. Evita clavadas con ...Bg4, prepara Be3.\n- **6.f3** — *Variante Sämisch*. Agresiva: las blancas preparan Be3, Qd2, 0-0-0 y un ataque al flanco de dama con afilados empujes de peón.\n- **6.Bg5** — *Variante Averbakh*. Clava el caballo de f6, desalienta ...e5.\n- **6.g3** — *Variante con Fianchetto*. Las blancas también fianchetan, llevando a largas batallas estratégicas.\n\n## Un patrón clásico Mar del Plata\n\nTras **6.Be2 e5 7.0-0 Nc6 8.d5 Ne7 9.Ne1 Nd7 10.Be3 f5 11.f3 f4 12.Bf2 g5** — la famosa formación de tormenta de peones. Las negras planean **...g4-g3** para romper el rey blanco. Las blancas planean **c5-c6**, **Rb1**, **b4-b5** para romper el flanco de dama negro. Que gane el atacante más rápido.\n\n## Por qué los grandes maestros la temen\n\nLa India de Rey crea **zugzwang mutuo en velocidad de ataque**. Las blancas son *objetivamente mejores* en muchas líneas — pero un solo tiempo perdido lleva al mate. Por eso incluso Kasparov dijo que finalmente dejó de jugarla.\n\n> Ambos reyes corren peligro mortal desde la jugada 15. Eso no es un error — es la característica."
     },
     {
       "type": "teach",
       "fen": "rnbqk2r/ppppppbp/5np1/8/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 4 5",
-      "title": "Por Qué es Difícil",
-      "text": "La India de Rey exige un cálculo preciso — un movimiento de peón equivocado y tu flanco de rey se desploma. Pero si amas los desequilibrios dinámicos y los ataques al rey, no hay nada mejor."
+      "title": "Por Qué Es Difícil",
+      "text": "La India de Rey es una de las aperturas más *exigentes* de jugar bien. Las razones son concretas.\n\n## Lo que la hace difícil para las negras\n\n- **Una mala jugada de peón puede colapsar el flanco de rey.** Empujar **...f5** en el momento equivocado y la casilla e6 queda como un agujero para siempre.\n- **La pareja de alfiles** importa — perder el alfil de casillas oscuras en g7 (el corazón de la posición) suele condenar el ataque.\n- **Profundidad de cálculo.** Las carreras Mar del Plata exigen tácticas de 10 jugadas de profundidad en ambos flancos a la vez.\n- **Sin segundas oportunidades.** Si el ataque blanco al flanco de dama llega una jugada antes, la partida está perdida — no hay reagrupamientos lentos como en la Francesa.\n\n## Lo que la hace gratificante\n\n- **Desequilibrio desde la jugada 5.** Sin tablas simétricas.\n- **Ataques al rey.** Pocas aperturas producen tantos hermosos jaques mate como la India de Rey.\n- **Riqueza estratégica.** Aprendes rupturas de peones, maniobras de piezas, ataque y defensa, todo en una sola apertura.\n\n## Eligiendo la India de Rey para ti\n\nSi amas el **desequilibrio dinámico**, los **ataques mutuos** y el **riesgo calculado**, la India de Rey es la mejor apertura del planeta. Si prefieres juego lento y técnico, elige la Eslava o la Caro-Kann.\n\n> La India de Rey es la apertura del cinturón negro. Entrena duro, pelea más duro."
     }
   ]
 }

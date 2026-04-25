@@ -1,8 +1,11 @@
 {
   "id": "mate-in-1-27",
-  "fen": "k7/7R/2K5/8/8/8/8/8 w - - 0 1",
+  "fen": "k7/8/1K6/8/8/8/8/7R w - - 0 1",
   "solution": [
-    "Ra7+"
+    "Rh8#"
   ],
-  "hint": "Potong kolom-a dan raja mati."
+  "title": "Palu dari Sisi Jauh",
+  "setup": "Raja Hitam terhimpit di sudut **a8** dengan raja Anda di **b6** mengunci petak pelarian diagonal.",
+  "hint": "Geser benteng ke baris ke-8 dari jauh — raja Anda di **b6** menahan {{a7}} dan {{b7}}.",
+  "explanation": "## Idenya\n\n**Skakmat sudut K+R vs K** lainnya, kali ini benteng memberi skakmat dari sisi jauh papan. Raja di b6 berada pada *jarak kandang standar*, mengontrol petak pelarian diagonal.\n\nMainkan {{Rh8#}}.\n\nMengapa raja terjebak?\n\n- {{b8}} — dikuasai benteng di h8 (baris ke-8)\n- {{a7}} — dikuasai raja Anda di **b6**\n- {{b7}} — dikuasai raja Anda di **b6**\n- Benteng terlalu jauh untuk {{Kxh8}}\n- Tidak ada yang bisa menghalangi di baris ke-8\n\n> **Pelajaran:** Saat menskakmat dengan K+R, benteng dapat memberi skakmat dari mana saja di baris atau lajur setelah *kandang raja* terbentuk. Jarak tidak melemahkan skakmat."
 }

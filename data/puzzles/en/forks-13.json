@@ -4,5 +4,8 @@
   "solution": [
     "Nxb5"
   ],
-  "hint": "Knight snags the queen."
+  "title": "Knight Tears Off the Queen",
+  "setup": "Black's queen has parked one knight-leap away from the white knight, and there's nothing to recapture with.",
+  "hint": "From {{d4}} the knight has eight squares to choose from — one of them ends the game.",
+  "explanation": "## The Idea\n\nThe knight on d4 reaches **b5** with a perfect L-shape jump (-2 files, +1 rank). The queen sits there alone:\n\n- {{Nxb5}} — knight gobbles the queen.\n- Material change: knight (3) for queen (9) = **+6**, decisive.\n\n### How to spot it\n\n1. After the opponent moves the queen, scan all eight knight squares around the new queen position.\n2. If one of *your* knights stands on a knight-leap from the queen, you may have a tactic.\n3. Verify the queen has no defender on that square.\n\nHere the king on e8 is far away and there are no other Black pieces.\n\n> The knight is the only piece that can attack a queen *without* being attacked back. That asymmetry is its superpower."
 }

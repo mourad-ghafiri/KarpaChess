@@ -4,28 +4,44 @@
   "summary": "La réponse la plus tranchante des Noirs à 1.e4",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "title": "La réponse la plus tranchante",
-      "text": "Quand les Blancs jouent 1.e4, la réponse la plus combative des Noirs est 1...c5 — la défense sicilienne. Les Noirs ne concèdent rien au centre et préparent une contre-attaque à l'aile dame. C'est la défense la plus populaire à tous les niveaux." },
-    { "type": "play",
+      "title": "La réplique la plus tranchante",
+      "text": "La **défense sicilienne** est la réponse la plus jouée, la plus redoutée et la plus analysée des Noirs face à **{{e4}}**. Elle dit, en substance : *je ne veux pas de symétrie — je veux la bagarre.*\n\n## Le coup d'entrée\n\nAprès {{e4}} {{c5}}, les Noirs ont fait quelque chose de subtil mais puissant. Au lieu de copier par ...e5, le pion c défie le centre blanc depuis le côté. Il ne **bloque pas** la colonne c (précisément la colonne où les Noirs veulent du contre-jeu).\n\n## Ce que veut chaque camp\n\n- **Plan blanc :** jouer {{Nf3}} et {{d4}} pour ouvrir la position (la *sicilienne ouverte*), développer agressivement et bâtir une attaque à l'aile roi.\n- **Plan noir :** échanger le pion c contre le pion d (après **...cxd4**), s'emparer de la *colonne c semi-ouverte*, développer par **...Nc6**, **...d6**, **...Nf6**, **...e6** ou **...g6**, et contre-attaquer à l'aile dame.\n- **Structure de pions :** très asymétrique — les Noirs ont souvent un *pion d arriéré* avec des pions en e6+d6, tandis que les Blancs disposent d'un puissant pion e4 et visent les tempêtes f2-f4-f5.\n\n## Pourquoi les grands maîtres l'adorent\n\nLa sicilienne crée un **déséquilibre dès le premier coup**. Les Blancs attaquent un flanc, les Noirs l'autre. Les parties décisives y sont bien plus fréquentes que les nulles — voilà pourquoi tout champion du monde a dû la connaître par cœur.\n\n> La symétrie, c'est pour les parties amicales. La sicilienne, elle, veut se battre."
+    },
+    {
+      "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "prompt": "Jouez le premier coup de principe des Blancs.",
-      "targetSan": ["e4"],
-      "hint": "1.e4 — l'ouverture classique du pion roi." },
-    { "type": "play",
+      "prompt": "Ouvrez avec le coup de principe — jouez **{{e4}}**.",
+      "targetSan": [
+        "e4"
+      ],
+      "hint": "1.e4 est le choix classique des Blancs — il revendique une case centrale et libère la dame ainsi que le fou de f1."
+    },
+    {
+      "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
-      "prompt": "Les Noirs jouent la sicilienne — poussez le pion c.",
-      "targetSan": ["c5"],
-      "hint": "1...c5 se bat pour d4 sans bloquer la colonne c." },
-    { "type": "play",
+      "prompt": "Les Noirs jouent la sicilienne — poussez **{{c5}}**, et défiez d4 par le flanc.",
+      "targetSan": [
+        "c5"
+      ],
+      "hint": "Ne copiez pas avec ...e5. Poussez le pion c — il attaque d4 sans bloquer la colonne c que les Noirs veulent ouvrir."
+    },
+    {
+      "type": "play",
       "fen": "rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
-      "prompt": "Réponse classique des Blancs : développez le cavalier.",
-      "targetSan": ["Nf3"],
-      "hint": "2.Nf3 prépare d4, la sicilienne ouverte." },
-    { "type": "teach",
+      "prompt": "Réplique classique des Blancs : **{{Nf3}}**, préparant **d4** pour la sicilienne ouverte.",
+      "targetSan": [
+        "Nf3"
+      ],
+      "hint": "Le cavalier se développe, contre les idées ...e5 et libère la voie à d2-d4 — le coup qui définit la sicilienne ouverte."
+    },
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
       "title": "Pourquoi la sicilienne ?",
-      "text": "Contrairement à ...e5 qui reproduit le coup des Blancs, ...c5 crée un jeu asymétrique. Les Blancs attaquent à l'aile roi ; les Noirs contre-attaquent à l'aile dame. Les parties sont tranchantes et décisives — les victoires, pas les nulles, sont fréquentes." }
+      "text": "On voit maintenant le génie de {{c5}}. Les Noirs sont prêts à jouer **...d6** ou **...e6**, puis à infiltrer plus tard la colonne c semi-ouverte avec une tour.\n\n## Les quatre grands parfums du dispositif noir\n\n- **Najdorf** — {{c5}} {{Nf3}} {{d6}} {{d4}} {{cxd4}} {{Nxd4}} {{Nf6}} {{Nc3}} **a6** — la plus tranchante, la plus théorique de toutes.\n- **Dragon** — les Noirs fianchettent par **...g6** et **...Bg7**. Attaques sauvages sur des ailes opposées.\n- **Sveshnikov** — les Noirs jouent ...Nf6 et ...e5, acceptant un pion d arriéré contre l'activité des pièces.\n- **Taimanov / Kan** — dispositifs flexibles avec ...e6 et ...a6, plus lents mais durs comme l'acier.\n\nLe parfum que vous choisissez en dit long sur votre style : les Najdorfistes adorent calculer ; les Sveshnikoviens aiment l'activité ; les amateurs de Kan goûtent les pressions calmes et stratégiques.\n\n> Choisissez un parfum sicilien et apprenez-le en profondeur. Récompense : une vie entière de parties à double tranchant."
+    }
   ]
 }

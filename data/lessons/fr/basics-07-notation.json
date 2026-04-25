@@ -1,44 +1,44 @@
 {
   "id": "notation",
   "title": "Lire la notation des échecs",
-  "summary": "Décodez n'importe quel coup d'échecs en notation algébrique",
+  "summary": "Décodez n'importe quel coup en notation algébrique",
   "difficulty": "beginner",
   "steps": [
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "title": "Le système",
-      "text": "La notation algébrique décrit chaque coup de manière unique. Les colonnes sont des lettres a–h, les rangées sont des nombres 1–8. La première rangée des Blancs est 1, celle des Noirs est 8. Une case est colonne+rangée : e4, d5, h8."
+      "title": "Le système de coordonnées",
+      "text": "Les échecs ont leur propre langue — la **notation algébrique** — et dès que vous la maîtrisez, vous pouvez lire toutes les parties de l'histoire, suivre tous les commentaires, étudier tous les livres.\n\nChaque case du plateau a un nom unique formé d'une **lettre** et d'un **chiffre**.\n\n## Comment les cases se nomment\n\n- Les **colonnes** (verticales) sont des lettres **a–h**, de gauche à droite vu des Blancs.\n- Les **rangées** (horizontales) sont des chiffres **1–8**, en partant de la première rangée des Blancs.\n- On combine les deux et chaque case a un nom unique — *colonne d'abord, puis rangée*.\n\nAinsi, le roi blanc commence en **e1**, sa dame en **d1**, et la case la plus célèbre des échecs — celle que le pion blanc occupe souvent en premier — est **e4**.\n\nPetit repère : a1 est le coin en bas à gauche vu des Blancs ; h8 est le coin en haut à droite.\n\n> Si vous savez nommer chaque case sans réfléchir, vous avez déjà pris l'avantage sur la plupart des joueurs occasionnels."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "title": "Lettres des pièces",
-      "text": "Les pièces sont K (Roi), Q (Dame), R (Tour), B (Fou), N (Cavalier). Les pions n'ont pas de lettre — « e4 » seul signifie un pion en e4. Les prises utilisent « x » : Nxe5 signifie le cavalier prend en e5."
+      "title": "Les lettres des pièces",
+      "text": "Chaque pièce (sauf le pion) reçoit une seule majuscule.\n\n## L'alphabet des pièces\n\n- **K** — Roi (*King*)\n- **Q** — Dame (*Queen*)\n- **R** — Tour (*Rook*)\n- **B** — Fou (*Bishop*)\n- **N** — Cavalier (*kNight*, car `K` est déjà pris pour le roi)\n- *(pion — aucune lettre)*\n\nUn coup, c'est simplement **lettre de la pièce + case d'arrivée**. Ainsi {{Nf3}} signifie *cavalier en f3*. Les coups de pion omettent la lettre — {{e4}} veut dire *le pion qui peut légalement aller en e4*.\n\nLa notation algébrique est une convention internationale fondée sur les lettres anglaises — c'est la même notation pour tous les joueurs du monde.\n\n## Les prises\n\n- Un **x** entre la pièce et la case marque une capture : {{Nxe5}} = *cavalier prend en e5*.\n- Une **prise de pion** utilise la colonne de départ du pion : {{exd5}} = *le pion e prend en d5*.\n\n> Les pions sont humbles : pas de lettre, mais ils utilisent leur colonne pour capturer."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "title": "Symboles spéciaux",
-      "text": "« + » signifie échec. « # » signifie échec et mat. « O-O » est le petit roque, « O-O-O » est le grand roque. « = » indique la promotion : e8=Q (le pion promeut en dame). Lorsque deux pièces peuvent aller sur la même case, on ajoute la colonne ou la rangée de départ : Nbd2 ou R1e1."
+      "title": "Les symboles spéciaux",
+      "text": "Une poignée de signes supplémentaires permet à la notation de tout décrire.\n\n## La trousse complète\n\n- **+** — échec. Exemple : {{Bb5+}}.\n- **#** — échec et mat. Exemple : {{Qh7#}}.\n- **O-O** — petit roque (côté roi).\n- **O-O-O** — grand roque (côté dame).\n- **=Q** — promotion (toute pièce). Exemple : {{e8=Q}} promeut le pion e en dame en e8.\n- **!** et **?** — annotations : *bon coup* et *coup douteux* ; **!!** brillant, **??** gaffe.\n\n## Désambiguïsation\n\nQuand deux pièces de même couleur peuvent atteindre la même case, on précise la colonne ou la rangée de départ :\n\n- {{Nbd2}} — le cavalier *de la colonne b* va en d2 (quand l'autre cavalier le pourrait aussi).\n- {{R1e1}} — la tour de la *1re rangée* va en e1 (quand les deux tours partagent la colonne e).\n\n> Une fois la notation maîtrisée, vous pouvez lire chaque livre d'échecs jamais écrit."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "prompt": "Jouez 1.e4 — poussez le pion roi.",
+      "prompt": "Ouvrez avec le pion roi — jouez **{{e4}}**, le premier coup le plus populaire des échecs.",
       "targetSan": [
         "e4"
       ],
-      "hint": "Sélectionnez simplement le pion en e2 et déplacez-le en e4."
+      "hint": "Pas de lettre signifie un pion. Poussez le pion e de deux cases vers e4."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
-      "prompt": "Maintenant jouez 2.Nf3.",
+      "prompt": "Sortez maintenant un cavalier avec **{{Nf3}}** — il attaque e5 et se développe vers le centre.",
       "targetSan": [
         "Nf3"
       ],
-      "hint": "Le cavalier de g1 saute en f3."
+      "hint": "Le N majuscule désigne le cavalier. Depuis g1, il atterrit en f3 en L."
     }
   ]
 }

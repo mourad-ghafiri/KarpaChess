@@ -4,5 +4,8 @@
   "solution": [
     "Rxe7+"
   ],
-  "hint": "Tour clouée — prenez-la."
+  "title": "Tour prend la tour clouée",
+  "setup": "Les deux tours se font face sur la **colonne e**, mais la tour noire en e7 est clouée sur son roi en e8.",
+  "hint": "Un défenseur cloué ne peut pas défendre — et ne peut pas fuir.",
+  "explanation": "## L'idée\n\nLa tour noire en e7 est en **clouage absolu**. Elle protège le roi en e8 de la tour blanche en e1, donc elle ne peut pas bouger.\n\nLes Blancs jouent {{Rxe7+}}, prenant simplement la tour.\n\n- {{Kxe7}} est la seule réponse légale — Noir n'a aucune autre pièce, et le roi doit répondre à l'échec.\n- Après l'échange, Blanc a gagné une tour contre une tour... mais regardez bien : Blanc a encore son roi. A-t-on simplement échangé du matériel équivalent ? **Oui — mais en pratique, cela revient à simplifier vers une finale R+T contre R gagnante, ou dans une partie complète, à éliminer le seul défenseur des Noirs.**\n\n## Schéma à mémoriser\n\n> Les pièces clouées ne sont pas seulement immobiles — elles sont aussi de **mauvais défenseurs**. Si une pièce clouée est l'unique défenseur de quelque chose, ce quelque chose est en réalité indéfendu.\n\nDans des positions plus riches, cette idée fait gagner du matériel constamment : on exploite un défenseur cloué en attaquant ce qu'il prétend garder."
 }

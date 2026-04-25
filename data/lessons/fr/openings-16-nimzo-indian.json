@@ -1,6 +1,6 @@
 {
   "id": "nimzo-indian-advanced",
-  "title": "Défense nimzo-indienne",
+  "title": "La défense nimzo-indienne",
   "summary": "Chef-d'œuvre stratégique — clouer et contrôler",
   "difficulty": "advanced",
   "steps": [
@@ -8,19 +8,19 @@
       "type": "teach",
       "fen": "rnbqk2r/pppp1ppp/4pn2/8/1bPP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 3 4",
       "title": "Le clouage Bb4",
-      "text": "La nimzo-indienne (1.d4 Nf6 2.c4 e6 3.Nc3 Bb4) cloue le cavalier c3 et menace de doubler les pions blancs avec ...Bxc3+. Nommée d'après Aron Nimzowitsch, le père des échecs hypermodernes."
+      "text": "La **défense nimzo-indienne** est l'une des ouvertures les plus profondes et les plus respectées de tous les échecs. Nommée d'après **Aron Nimzowitsch** — le père des *échecs hypermodernes* et auteur de *Mon système* — c'est un chef-d'œuvre stratégique fondé sur une idée audacieuse : **clouer le cavalier c3 et menacer de ruiner la structure de pions blanche**.\n\n## Comment on y arrive\n\nLa séquence définissante est {{d4}} **{{Nf6}}** {{c4}} **{{e6}}** {{Nc3}} **{{Bb4}}**. Le fou noir en b4 cloue le cavalier c3 sur le roi (en réalité un *clouage* métaphorique — il n'y a rien derrière, mais **...Bxc3+** doublerait les pions blancs).\n\n## Ce que veut chaque camp\n\n- **Plan blanc :** éviter les pions doublés (4.Qc2, 4.a3) ou les accepter en échange de la paire de fous (4.e3, 4.f3). Puis exploiter la majorité centrale et le fou de la grande diagonale.\n- **Plan noir :** échanger le fou de b4 contre le cavalier c3 au bon moment, laissant les Blancs avec des **pions c doublés**. Puis bloquer ces pions et exploiter la faiblesse structurelle.\n- **Structure de pions :** les *pions c doublés de la nimzo* (c4 et c3) — une faiblesse à long terme contre laquelle les Noirs jouent pendant 30 coups et plus.\n\n## L'éternel marché\n\nLes Blancs obtiennent la **paire de fous** ; les Noirs obtiennent une **structure adverse abîmée**. Lequel l'emporte ? Cela dépend de l'ouverture (les fous brillent) ou du verrouillage (la structure gagne) de la position. Voilà le cœur de tout milieu de partie nimzo-indien.\n\n> La nimzo, ce n'est pas le mat. Ce sont les structures de pions, la qualité des pièces, et des plans à 50 coups."
     },
     {
       "type": "teach",
       "fen": "rnbqk2r/pppp1ppp/4pn2/8/1bPP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 3 4",
-      "title": "Deux lignes principales",
-      "text": "Les Blancs choisissent : 4.Qc2 (éviter les doublements, développer naturellement), 4.e3 (Rubinstein — construction classique), ou 4.f3 (Kmoch — ambitieux). Chacun mène à des milieux de partie très étudiés où les Noirs jouent pour exploiter les pions c doublés."
+      "title": "Deux grandes lignes",
+      "text": "Au 4e coup, les Blancs doivent décider comment gérer le clouage. Chaque choix crée un milieu de partie complètement différent.\n\n## Les quatre grandes réponses blanches\n\n- **4.Qc2** — *Variante Capablanca*. Les Blancs évitent les pions doublés en reprenant avec la dame. Moderne, populaire, légèrement plus flexible.\n- **4.e3** — *Système Rubinstein*. Le plus souple. Les Blancs préparent **Nf3, Bd3, 0-0**, parfois **a3** pour chasser le fou. Autorise ...Bxc3+ mais compensent par la paire de fous.\n- **4.f3** — *Kmoch / Sämisch*. Agressif : les Blancs préparent **e4** et une attaque à l'aile roi, acceptant des dégâts structurels pour de l'activité.\n- **4.a3** — *Sämisch / Hübner*. Les Blancs défient immédiatement : le fou doit s'échanger ou se replier. Quasi forçant Bxc3+, et les Blancs récupèrent la paire de fous plus la colonne b ouverte.\n\n## Réponses noires à chaque ligne\n\n- Après **4.Qc2** : les Noirs jouent **...d5** ou **...c5** avec un jeu de pièces actif.\n- Après **4.e3** : les Noirs ont **...c5**, **...d5**, **...0-0**, **...d5+...c5** (variante Hübner).\n- Après **4.f3** : les Noirs jouent **...d5** pour défier avant que la poussée e4 ne s'installe.\n- Après **4.a3** : **...Bxc3+ 5.bxc3** est forcé, et la bataille stratégique autour des pions c doublés blancs commence.\n\n## Une ligne principale modèle\n\n{{d4}} {{Nf6}} {{c4}} {{e6}} {{Nc3}} {{Bb4}} **4.e3** **0-0** **5.Bd3** **d5** **6.Nf3** **c5** **7.0-0** **dxc4** **8.Bxc4** **Nbd7** — la *variante Karpov*, équilibrée et stratégique.\n\n> Quelle que soit la ligne blanche, les Noirs obtiennent une position où la compréhension l'emporte sur la mémorisation."
     },
     {
       "type": "teach",
       "fen": "r1bqk2r/pppp1ppp/2n1pn2/8/1bPP4/2N1P3/PP3PPP/R1BQKBNR w KQkq - 2 5",
-      "title": "Profondeur stratégique",
-      "text": "La nimzo est l'une des ouvertures les plus riches stratégiquement. Les Noirs sacrifient souvent la paire de fous pour doubler les pions blancs, pariant que la structure de pions endommagée l'emporte sur l'avantage des fous. Échecs positionnels classiques."
+      "title": "La profondeur stratégique",
+      "text": "La nimzo-indienne est célèbre pour une chose avant tout : c'est **l'**ouverture où la compréhension des structures de pions compte plus que le calcul des tactiques.\n\n## Les quatre structures classiques\n\n- **Pions c doublés** (après ...Bxc3+ bxc3) — Blancs en c4-c3, les Noirs jouent contre c3.\n- **Pions pendants à la Hübner** — les pions d et c noirs se tiennent isolés ensemble, attaquables et flexibles.\n- **Pion dame isolé (IQP)** — parfois les Blancs acceptent un pion d isolé contre l'activité des pièces.\n- **Style Karlsbad** — chaînes de pions symétriques où de petites ruptures décident.\n\n## Le processus de pensée nimzo\n\n- La position s'**ouvre-t-elle** ? Alors la paire de fous prend de la valeur.\n- La position **reste-t-elle fermée** ? Alors les pions doublés et les cases faibles décident.\n- Où les Noirs **bloquent-ils** ? Souvent avec un cavalier en c4 ou e4 — cases que les pions doublés ne peuvent défendre.\n- Où les Blancs **rompent-ils** ? Avec **e3-e4** ou **c4-c5** pour libérer les fous.\n\n## L'héritage\n\nLes champions du monde **Mikhaïl Botvinnik**, **Tigran Petrosian**, **Anatoli Karpov** et **Vladimir Kramnik** ont tous joué la nimzo en arme principale. Karpov s'en est servi pour conquérir le titre — et pour le *garder* plus d'une décennie.\n\n> La nimzo-indienne, c'est l'échec positionnel dans sa forme la plus pure. Une fois maîtrisée, toutes les autres ouvertures deviennent plus simples."
     }
   ]
 }

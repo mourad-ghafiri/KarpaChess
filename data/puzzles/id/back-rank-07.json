@@ -4,5 +4,8 @@
   "solution": [
     "Rxa8#"
   ],
-  "hint": "Tukar benteng dan pertahankan skakmatnya."
+  "title": "Tanpa Tembok Bidak, Tetap Skakmat",
+  "setup": "Bidak Putih sudah hilang semua, tetapi tembok bidak Hitam masih utuh — dan tembok itu kini menjadi peti mati.",
+  "hint": "Tembok bidak di f7-g7-h7 membantu Putih, bukan Hitam. Tukar benteng.",
+  "explanation": "## Idenya\n\nDengan tidak adanya bidak Putih, raja Putih terbuka — tetapi **lomba ke baris belakang berat sebelah**: raja Hitam tidak punya jalan keluar, raja Putih punya. {{Rxa8#}} adalah skakmat satu langkah:\n\n1. Benteng Putih memakan benteng Hitam di a8.\n2. Skak diberikan dari baris ke-8.\n3. Raja Hitam di g8 terkunci oleh f7-g7-h7 (bidaknya sendiri).\n4. Tidak ada bidak yang bisa memakan balik atau memblokir.\n\n### Detail menarik\n\nRaja Putih tanpa pelindung bidak — namun bukan giliran Hitam. **Tidak penting siapa yang lebih terbuka secara teori; yang penting siapa yang giliran dalam praktik.** Putih bergerak duluan dan mengakhiri partai.\n\n> Tempo lebih berharga daripada bidak ketika posisi sudah menentukan."
 }

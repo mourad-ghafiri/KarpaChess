@@ -4,5 +4,8 @@
   "solution": [
     "Rxe7+"
   ],
-  "hint": "La dama está pegada al rey por la columna e — tómala."
+  "title": "Punto fijo en la columna e",
+  "setup": "Ambos reyes están en la **columna e**, con la dama negra encajada entre su rey y la torre blanca en e2.",
+  "hint": "Cuando la dama escuda a su rey, se convierte en un blanco fijo.",
+  "explanation": "## La idea\n\n**Clavada absoluta** clásica: la dama negra en e7 no puede moverse porque hacerlo expondría al rey en e8 a un jaque de la torre blanca en e2.\n\nLas blancas juegan {{Rxe7+}}, cosechando la dama.\n\n- {{Kxe7}} es la única respuesta legal — el rey debe capturar la torre, ya que nada más puede bloquear ni salir del jaque.\n- Recuento de material tras el cambio: las blancas entregan una torre (5) y ganan una dama (9). Beneficio neto **+4** puntos.\n\n## Patrón a memorizar\n\n> Una pieza clavada no es realmente una pieza — es un **objetivo**.\n\nPregúntate siempre: *\"¿Hay una pieza enemiga en la misma columna, fila o diagonal que su rey?\"* Si la respuesta es sí, puedes tener una clavada. Acumula atacantes sobre la pieza clavada y el material caerá en tu regazo."
 }

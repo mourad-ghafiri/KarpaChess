@@ -1,38 +1,38 @@
 {
   "id": "back-rank-mate",
   "title": "Skakmat Baris Belakang",
-  "summary": "Eksploitasi raja yang terjebak di belakang pionnya",
+  "summary": "Manfaatkan raja yang terjebak di belakang bidaknya",
   "difficulty": "beginner",
   "steps": [
     {
       "type": "teach",
       "fen": "6k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
       "title": "Pola Klasik",
-      "text": "Raja yang sudah rokade biasanya aman — kecuali kotak pelariannya diblokir oleh pionnya sendiri. Benteng atau menteri di baris ke-8 menjadi tak terbendung."
+      "text": "Setelah rokade, raja duduk di belakang dinding bidak. Dinding itu biasanya berarti keamanan — tetapi jika raja tidak punya petak pelarian di baris belakang, dinding yang sama menjadi **penjara**.\n\n## Pemicu visual\n\nCari tiga hal ini di baris belakang lawan:\n\n- **Raja** duduk di petak sudut (g8 atau h8 untuk Hitam).\n- **Bidak** di depannya masih di petak awal mereka (f7, g7, h7).\n- Baris kedelapan selain itu **kosong** — tidak ada buah yang menghalangi benteng atau menteri yang menyerbu.\n\nKetika tiga hal itu sejajar, satu langkah di baris kedelapan bisa berarti skakmat.\n\n## Geometrinya\n\nSkakmat baris belakang hanyalah **skak benteng atau menteri** di baris yang tidak punya petak pelarian bagi raja lawan. Raja tidak bisa menangkap (penyerang dilindungi atau jauh), tidak bisa memblokir (buah Anda tepat di sebelahnya), dan tidak bisa bergerak (bidaknya sendiri menghalanginya).\n\n## Cara menemukannya\n\n1. Hitung petak pelarian raja lawan di **baris belakang** dan **baris kedua**.\n2. Jika nol atau satu, cari cara untuk menyerang baris belakang dengan buah berat.\n3. Hitung pembela — berapa banyak buah lawan yang menjaga baris belakang?\n4. Singkirkan setiap pembela atau kalahkan mereka dalam jumlah penyerang.\n\nDi sini benteng meluncur ke {{Ra8#}} — skakmat, karena dinding bidak f7/g7/h7 telah menjadi peti mati Hitam.\n\n> Bidak yang melindungi raja adalah bidak yang sama yang menjebaknya."
     },
     {
       "type": "play",
       "fen": "6k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
-      "prompt": "Lakukan skakmat baris belakang.",
+      "prompt": "Berikan skakmat di baris belakang dengan **{{Ra8#}}**.",
       "targetSan": [
         "Ra8#"
       ],
-      "hint": "Dinding pion juga merupakan dinding penjara."
+      "hint": "Ke mana raja lari jika Anda skak di baris belakang? Hitung dulu petak pelariannya."
     },
     {
       "type": "teach",
       "fen": "3r2k1/5ppp/8/8/8/8/5PPP/3R2K1 w - - 0 1",
-      "title": "Tukar & Skakmat",
-      "text": "Ketika kedua belah pihak memiliki kelemahan baris belakang, yang menyerang lebih dulu menang. Tukar pembelanya untuk membersihkan jalan."
+      "title": "Tukar & Mat",
+      "text": "Sering kali kedua sisi punya kelemahan baris belakang. Maka pertanyaannya adalah *siapa yang menyerang lebih dulu* — dan triknya adalah **mengeliminasi pembela** sebelum memberikan mat.\n\n## Pola yang harus dikenali\n\n- Kedua raja terjebak di baris belakangnya dengan dinding bidak utuh.\n- Setiap sisi punya satu benteng (atau menteri) yang membela baris belakang.\n- Satu sisi mendapat giliran lebih dulu.\n\n## Prosedur\n\n1. Identifikasi *pembela* baris belakang lawan (hampir selalu satu benteng atau menteri).\n2. Cari cara untuk **menukar** pembela itu, **mengalihkannya**, atau **menangkapnya**.\n3. Setelah pertukaran, masuk dengan mat.\n\nDi sini kedua benteng saling berhadapan di lajur-d terbuka. Benteng Hitam adalah satu-satunya pembela d8. Tukar dengan {{Rxd8#}} — penangkapan kembali tidak mungkin karena raja tidak punya petak pelarian. Pertukaran *itulah* matnya.\n\n> Ketika dua tahanan berdiri saling membelakangi, yang menembak lebih dulu yang berjalan bebas."
     },
     {
       "type": "play",
       "fen": "3r2k1/5ppp/8/8/8/8/5PPP/3R2K1 w - - 0 1",
-      "prompt": "Tukar benteng menjadi skakmat.",
+      "prompt": "Tukar benteng **menjadi** mat dengan **{{Rxd8#}}**. Pertukaran itulah kemenangannya.",
       "targetSan": [
         "Rxd8#"
       ],
-      "hint": "Setelah pertukaran, Hitam tidak memiliki pembela yang tersisa."
+      "hint": "Benteng Hitam adalah satu-satunya pembela baris belakang. Apa yang terjadi jika Anda menangkapnya?"
     }
   ]
 }

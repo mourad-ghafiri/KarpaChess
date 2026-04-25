@@ -4,5 +4,8 @@
   "solution": [
     "Kc4"
   ],
-  "hint": "Pas de côté — préparez l'avance."
+  "title": "Esquiver l'Opposition",
+  "setup": "Les rois se font face de part et d'autre du pion en **d5** — les Noirs détiennent l'opposition directe et c'est à vous de jouer.",
+  "hint": "Avancer est impossible et pousser le pion le perd. **Allez de côté** pour tenter le contournement.",
+  "explanation": "## Principe Clé : Le Contournement\n\nQuand le roi du défenseur est devant le vôtre avec l'**opposition**, vous ne pouvez progresser par le centre — votre roi n'a nulle part où aller. La technique consiste à passer sur le côté et forcer le roi ennemi soit à céder, soit à abandonner une case clé.\n\n## Le Plan\n\n1. **{{Kc4}}** — Les Blancs s'écartent en c4, lorgnant c5 et b5. Aller de l'autre côté (Ke4) est l'image miroir et porte la même idée.\n2. La meilleure tentative noire est **...Kc6**, reprenant l'opposition. Les Blancs reviennent alors avec Kd4 et essaient l'autre aile.\n3. Règle des cases à retenir : **le camp qui doit jouer perd l'opposition**. Vous sondez donc d'aile en aile jusqu'à ce que les Noirs manquent de cases miroir.\n\n## Ce Qui Ne Va Pas avec un Mauvais Coup\n\nUn 1.d6+? prématuré échange le pion pour rien : 1...Kxd6 et la position est nulle morte avec roi seul. De même 1.Kd3? donne aux Noirs l'opportunité de saisir l'opposition plus avant avec 1...Kd5, fixant le pion. La discipline : **ne poussez pas le pion tant que le roi ennemi est sur sa case de promotion**, et utilisez votre roi pour briser le blocus d'abord."
 }

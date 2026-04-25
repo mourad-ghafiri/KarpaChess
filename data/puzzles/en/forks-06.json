@@ -1,8 +1,13 @@
 {
   "id": "forks-06",
-  "fen": "4k3/8/8/2n5/8/8/8/Q3K3 w - - 0 1",
+  "fen": "8/8/8/k6n/8/8/3Q4/4K3 w - - 0 1",
   "solution": [
-    "Qa5"
+    "Qd5+",
+    "Kb6",
+    "Qxh5"
   ],
-  "hint": "Win the knight along the rank."
+  "title": "Queen Forks Across the Rank",
+  "setup": "Black's king and knight sit on the same 5th rank — the queen can splash both with one move.",
+  "hint": "Slide the queen onto the 5th rank with check. From {{d5}}, she eyes the king and the knight at once.",
+  "explanation": "## The Idea\n\nA **rank fork** by the queen. Black's king on a5 and knight on h5 share the 5th rank with nothing between them. The square {{d5}} is the perfect ambush — the queen attacks both pieces along the rank.\n\nAfter {{Qd5+}} Black has no good answer:\n\n- **Capture the queen?** The king on a5 is three squares away from d5 — too far.\n- **Block the check?** The only Black piece left is the knight on h5, and from there it cannot jump to b5 or c5 (the only blocking squares) in a single move.\n- **Run?** The king has to leave the 5th rank, which abandons the knight.\n\nBlack plays {{Kb6}} (or any king escape) and White grabs the knight with {{Qxh5}}.\n\n## Pattern to Memorize\n\n> When two enemy pieces stand on the **same rank, file, or diagonal**, ask whether your queen can reach a square between them — that's where the fork lives."
 }

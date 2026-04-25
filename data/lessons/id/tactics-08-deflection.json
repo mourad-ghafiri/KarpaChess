@@ -1,21 +1,29 @@
 {
   "id": "deflection",
   "title": "Pengalihan",
-  "summary": "Paksa bidak bergerak ke tempat yang tidak seharusnya",
+  "summary": "Paksa buah pindah ke tempat yang tidak seharusnya",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "4r1k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
       "title": "Umpan",
-      "text": "Pengalihan adalah memaksa bidak musuh menjauh dari kotak kunci atau peran bertahan. Sering dilakukan dengan skak atau penangkapan yang menggoda. Bidak tidak bisa menolak, dan kepergiannya membuka garis kemenangan." },
-    { "type": "play",
+      "text": "**Pengalihan** adalah memaksa buah lawan *pergi* dari petak atau tugas penting. Eliminasi pembela menyingkirkan buah *dari papan*; pengalihan hanya *memindahkannya* — sering kali dengan tangkapan atau skak yang tidak bisa ditolak.\n\n## Pemicu visual\n\nCari buah yang melakukan tugas pertahanan kritis — menjaga baris belakang, memblokir bidak lewat, melindungi buah atau petak mat. Sekarang cari cara untuk *memaksanya* ke tempat lain.\n\n## Geometrinya\n\nPengalihan hidup di persimpangan:\n\n- Sebuah buah berada di petak yang membela **petak A**.\n- Anda menyerang buah itu di **petak B** di mana ia harus bergerak atau hilang.\n- Setelah ia pindah ke B, A tidak terjaga.\n\nPengorbanan atau ancaman harus lebih mendesak daripada tugas pertahanan — biasanya skak, tangkapan menteri, atau garpu.\n\n## Cara mengenalinya\n\n1. Cari buah lawan yang menyatukan segalanya.\n2. Cari **langkah memaksa** yang menyerang buah itu: skak, tangkapan besar, ancaman mat.\n3. Setelah respons paksa, evaluasi: *apakah petak yang ditinggalkan kini menang untuk saya?*\n\nDi sini {{Ra8}} Putih menekan benteng e8 di sepanjang baris kedelapan dan mengancam ide {{Rxe8+}}. Jika Hitam menukar dengan {{Rxa8}}, lajur-e (dan baris belakang) terbuka.\n\n> Tekanan adalah bahasa catur. Buah lawan menjawab ketika dipaksa."
+    },
+    {
+      "type": "play",
       "fen": "4r1k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
-      "prompt": "Serbu dengan benteng. Apa yang terjadi jika Hitam menukar?",
-      "targetSan": ["Ra8"],
-      "hint": "Ra8 menekan benteng di e8 — pertukaran menyederhanakan permainan." },
-    { "type": "teach",
+      "prompt": "Berikan tekanan dengan **{{Ra8}}** — benteng Hitam kini dimohon untuk meninggalkan posnya.",
+      "targetSan": [
+        "Ra8"
+      ],
+      "hint": "Arahkan buah berat ke baris belakang. Pembela harus menanganinya."
+    },
+    {
+      "type": "teach",
       "fen": "R3r1k1/5ppp/8/8/8/8/5PPP/6K1 b - - 0 1",
       "title": "Pertukaran Paksa",
-      "text": "Hitam kemungkinan akan menukar (Rxa8 atau Rb8). Setelah pertukaran, penyederhanaan menguntungkan pihak yang aktif. Pelajaran: tekanan memaksa keputusan — dan keputusan di bawah tekanan biasanya salah." }
+      "text": "Dari posisi ini Hitam hanya punya pilihan yang tidak nyaman. Benteng di e8 kelebihan beban — membela baris belakang *dan* menghadapi benteng putih di a8.\n\n## Upaya Hitam\n\n- **{{Rxa8}}** — bertukar tetapi mengundang penyederhanaan yang menguntungkan pihak yang aktif.\n- **{{Rb8}}** — menghindar tetapi membiarkan Putih menerobos lebih jauh.\n- **Raja bergerak** — meninggalkan baris belakang sepenuhnya.\n\n## Pelajarannya\n\nPengalihan jarang tentang keuntungan material langsung. Ini tentang *siapa yang memutuskan apa yang terjadi selanjutnya*. Ketika lawan harus bereaksi terhadap langkah Anda, Anda mengontrol tempo posisi.\n\n> Tekanan memaksa keputusan. Keputusan di bawah tekanan biasanya salah."
+    }
   ]
 }

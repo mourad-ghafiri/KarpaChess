@@ -8,23 +8,23 @@
       "type": "teach",
       "fen": "4k3/8/8/8/4P3/8/8/4K3 w - - 0 1",
       "title": "El Final Esencial",
-      "text": "Todo ajedrecista debe conocer R+P vs R a la perfección. El resultado depende de UNA cosa: ¿puede el bando fuerte colocar su rey DELANTE del peón con oposición? Si sí, el peón promociona. Si no, son tablas."
+      "text": "## R + P contra R — todo jugador debe conocerlo\n\nMás partidas se deciden con **rey y peón contra rey** que con cualquier otro final técnico. Es el **final puerta** — todo final de torres, damas o piezas menores acaba simplificándose en uno de sus patrones.\n\n### Cómo es este final\n\n- Un bando tiene **rey + un único peón**.\n- El otro solo tiene **rey**.\n- Un peón central (columnas b a g) — los peones de torre son un caso especial aparte.\n\n### El concepto clave: ponerse delante con oposición\n\nTodo el resultado depende de una sola pregunta: **¿puede el bando fuerte colocar a su rey DELANTE del peón con la oposición?** Si sí — el peón corona. Si no — son tablas por ahogado o porque el rey defensor llega a la casilla de coronación.\n\n### Procedimiento para convertir\n\n1. **Lleva primero al rey**, nunca al peón.\n2. Alcanza con el rey una **casilla clave** (ver siguiente página).\n3. **Toma la oposición**, después flanquea en diagonal.\n4. Empuja el peón solo cuando el rey haya despejado el carril.\n5. Promociona y pasa al mate de R+D.\n\n### Errores comunes\n\n- Empujar primero el peón — lo capturan o lo bloquean.\n- Dejar que el rey enemigo llegue a la **casilla de coronación** — tablas instantáneas.\n- Permitir el **ahogado** con el peón en la 7ª fila y tu rey justo detrás en la 6ª delante de él.\n\n> El rey delante, el peón detrás."
     },
     {
       "type": "teach",
       "fen": "4k3/8/4K3/4P3/8/8/8/8 w - - 0 1",
       "title": "Casillas Clave",
-      "text": "Para un peón en la quinta fila o más atrás, las \"casillas clave\" son las tres casillas diagonalmente delante de él. Si tu rey alcanza cualquiera, ganas. Aprende las casillas clave para cada posición del peón."
+      "text": "## Las casillas clave ganan este final\n\nPara un peón en la **2ª-5ª fila**, las **casillas clave** son las tres casillas **dos filas por delante** del peón. Para nuestro peón en **e4**, las claves son **d6, e6, f6**.\n\nPara un peón en la **6ª fila**, las casillas clave son simplemente las tres casillas **directamente delante** de él.\n\n### La regla\n\nSi tu rey alcanza **cualquier casilla clave**, ganas — *independientemente de la oposición*. Por eso son \"clave\".\n\n### Procedimiento con esta posición\n\nEl rey blanco ya está **en e6** (¡una casilla clave!). La victoria es ahora mecánica:\n\n1. {{Kd6}} o {{Kf6}} — flanquea para tomar una segunda casilla clave con tempo.\n2. Tras la retirada negra, avanza {{e5}}.\n3. Marcha el rey por delante del peón hasta la coronación.\n\n### Errores comunes\n\n- Mover el rey a **e7** — deja al peón sin protección y entra en motivos de ahogado.\n- Empujar el peón mientras el rey está en una casilla clave — devuelves las casillas.\n- Tratar los finales de peón de torre (a/h) igual — suelen ser tablas incluso cuando la técnica parece similar.\n\n### Línea modelo\n\n{{Kd6}} Kf7 {{e5}} Ke8 {{Kc7}} y el peón corona.\n\n> Alcanza una casilla clave con la jugada y el peón se hace dama solo."
     },
     {
       "type": "play",
       "fen": "4k3/8/4K3/4P3/8/8/8/8 w - - 0 1",
-      "prompt": "Avanza hacia una casilla clave.",
+      "prompt": "Avanza a una **segunda casilla clave** para flanquear al defensor. El principio: *primero el rey, después el peón*.",
       "targetSan": [
         "Kd6",
         "Kf6"
       ],
-      "hint": "Kd6 o Kf6 toman la oposición."
+      "hint": "Dos casillas clave están a un paso diagonal — elige cualquier flanco."
     }
   ]
 }

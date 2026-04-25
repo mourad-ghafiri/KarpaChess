@@ -2,7 +2,10 @@
   "id": "mate-in-1-31",
   "fen": "5k2/4Q3/5K2/8/8/8/8/8 w - - 0 1",
   "solution": [
-    "Qe8+"
+    "Qf7#"
   ],
-  "hint": "Queen on the back rank — no escape."
+  "title": "File-Push Kiss",
+  "setup": "Your queen on **e7** and king on **f6** form a tight pair — but {{e8}} would let the king run.",
+  "hint": "Push the queen *up the file* of the king — your king defends her landing square.",
+  "explanation": "## The Idea\n\nAnother **kiss-of-death**. Going to {{e8}} lets the king walk away because **f6** doesn't defend e8 — but the queen one square in front of the king, defended by your king, is the killer.\n\nPlay {{Qf7#}}.\n\nWhy is the king stuck?\n\n- The queen on f7 attacks f8 directly (file check)\n- {{e8}} — covered by the queen on f7 (diagonal)\n- {{g8}} — covered by the queen on f7 (diagonal)\n- {{Kxf7}} is illegal — your king on **f6** defends f7\n- Nothing can interpose: f7 is adjacent to f8\n\n> **Takeaway:** Beware of *flashy queen checks from afar* — they often allow escape. The mating queen often lands *next to* the enemy king on a square defended by your king."
 }

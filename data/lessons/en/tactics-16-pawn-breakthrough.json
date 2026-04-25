@@ -8,13 +8,13 @@
       "type": "teach",
       "fen": "8/1p6/1P6/8/8/8/1K6/1k6 w - - 0 1",
       "title": "The Classic Motif",
-      "text": "In an endgame, three pawns abreast (e.g. on a5/b5/c5 vs a6/b6/c6) can almost always break through with sacrifices, creating an unstoppable passed pawn. The \"breakthrough\" is a pure chess motif — all calculation, no pieces."
+      "text": "In a king-and-pawn endgame, **pawn breakthroughs** are the king of all motifs. Three pawns standing abreast against three opposing pawns can almost always force a passer with a small sacrifice.\n\n## The textbook example\n\nWith White pawns on a5, b5, c5 versus Black pawns on a6, b7, c6, White plays {{b6}}:\n\n- If `axb6`, then `c6` and the c-pawn runs.\n- If `cxb6`, then `a6` and the a-pawn runs.\n- Either way, one pawn becomes a queen.\n\n## The visual trigger\n\nLook for these features:\n\n- **Three (or more) pawns abreast** facing the enemy.\n- **No pieces** to interfere — pure pawn endgame.\n- **Defending king too far** to stop the resulting passer.\n\n## The geometry\n\nA breakthrough trades pawns for **a clear running lane** for one of your pawns. Count the squares to the queening line and the squares the enemy king needs to reach the lane (the *square of the pawn*).\n\n## How to find it\n\n1. Identify the chain or formation that *would* produce a passer if the structure changed.\n2. Look for the pawn sacrifice that opens the file or distracts a defender.\n3. Count tempi to promotion.\n4. Compare to the enemy king's path — if you arrive first, the breakthrough wins.\n\n> Pawns are cheap. Queens are not."
     },
     {
       "type": "teach",
       "fen": "4k3/p1p2ppp/1p6/P1P2PPP/1P6/8/8/4K3 w - - 0 1",
       "title": "Beyond the Endgame",
-      "text": "Breakthroughs appear in middlegames too: a knight sacrifice on f5 opening the f-file, a rook sacrifice on a7, a pawn wave against the castled king. The principle: give up material to create an unstoppable force."
+      "text": "The breakthrough idea is not just for endgames. It appears all over the middlegame and attack.\n\n## Common middlegame breakthroughs\n\n- **{{f5}} or {{e5}} pawn breaks** that crack open the center against a king.\n- **{{Nxf5}}** sacrifices that hand a knight for an open f-file and an attack on the king.\n- **{{Rxa7}}** rook sacrifices to demolish queenside cover.\n- **{{h5}}-{{hxg6}}** pawn waves against the kingside-castled king (especially with opposite castling).\n\n## The shared principle\n\nIn every case, you give up material to **manufacture an unstoppable force**:\n\n- An open file aimed at the king.\n- A passed pawn that the defenders cannot stop.\n- A diagonal that wrecks the king's pawn cover.\n\n## How to evaluate the sacrifice\n\n1. What **lines, files, or pawns** do I get in return?\n2. Is the **target** (often the king or a queening square) close enough that the opponent cannot defend in time?\n3. Are my **other pieces** ready to follow up?\n\n> Material loses to motion. A breakthrough turns matter into momentum."
     }
   ]
 }

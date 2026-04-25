@@ -8,57 +8,57 @@
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "Tiga Hukum",
-      "text": "Setiap pembukaan yang kuat berdiri di atas tiga pilar: (1) kuasai pusat, (2) kembangkan bidak dengan cepat, (3) amankan raja Anda. Ayo kita latih ketiganya."
+      "text": "Setiap pembukaan hebat — dari Italia hingga Sisilia — bersandar pada tiga pilar yang sama. Kuasai mereka dan Anda tidak akan pernah memiliki pembukaan yang *buruk*, bahkan jika Anda belum pernah melihat posisinya sebelumnya.\n\n## Tiga hukum pembukaan\n\n1. **Kuasai pusat.** Empat kotak **d4, e4, d5, e5** adalah lahan paling berharga di papan. Bidak yang menguasainya menjangkau lebih banyak kotak; yang tidak hanyalah penonton.\n2. **Kembangkan bidak Anda dengan cepat.** Bawa setiap bidak ringan (kuda, gajah) keluar dari baris belakang dalam 8–10 langkah pertama. *Jangan* gerakkan bidak yang sama dua kali kecuali harus.\n3. **Amankan raja Anda.** Rokade pada langkah ke-10. Raja di tengah adalah raja dalam bahaya.\n\nUrutan pembukaan model: {{e4}} {{e5}} {{Nf3}} {{Nc6}} {{Bc4}} {{Bc5}} {{O-O}}. Putih telah melakukan ketiga hal — pion di pusat, dua bidak dikembangkan, raja terlindung.\n\n> Kembangkan dengan tujuan. Rokade tanpa penundaan. Babak tengah dimulai di tempat prinsip pembukaan berakhir."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "prompt": "Mulai dengan mendorong pion tengah. Mainkan e4 atau d4.",
+      "prompt": "Klaim hak Anda dengan pion tengah — mainkan **{{e4}}** atau **{{d4}}**.",
       "targetSan": [
         "e4",
         "d4"
       ],
-      "hint": "Pion tengah merebut ruang dan membuka garis untuk bidak Anda."
+      "hint": "Kedua langkah merebut kotak pusat dan membuka jalur untuk dua bidak sekaligus (menteri dan satu gajah). Itulah prinsip langkah pertama termurah."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
       "title": "Sekarang Kembangkan",
-      "text": "Pion dulu — lalu bidak. Kuda sebelum gajah. Kuda keluar ke arah pusat (f3, c3) masing-masing menyerang empat kotak pusat."
+      "text": "Pion meletakkan fondasi; sekarang bidak masuk.\n\n## Urutan pengembangan\n\n- **Pion dulu** — tetapi hanya yang tengah, cukup untuk membuka jalur.\n- **Kuda sebelum gajah.** Kuda punya lebih sedikit kotak baik (biasanya f3, c3 atau f6, c6), jadi kembangkan mereka dulu untuk membuat lebih sedikit pilihan komitmen.\n- **Gajah ke kotak aktif.** Mereka ingin diagonal yang menerjang kubu lawan.\n- **Menteri terakhir di antara bidak ringan.** Dia terlalu berharga untuk dipaparkan terlalu awal.\n- **Benteng paling terakhir** — mereka menyelesaikan pengembangan dengan menduduki kolom terbuka.\n\nMengapa kuda dulu? Karena **{{Nf3}}** menjalankan tugas tiga: mengembangkan bidak, menyerang pion e5, dan mempersiapkan rokade. Sedikit langkah yang menyelesaikan begitu banyak sekaligus.\n\n> Gerakkan setiap bidak satu kali sebelum Anda menggerakkan bidak mana pun dua kali."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
-      "prompt": "Kembangkan kuda ke arah pusat.",
+      "prompt": "Kembangkan kuda ke arah pusat — **{{Nf3}}** adalah pilihan klasik (menyerang e5), atau **{{Nc3}}** juga bisa.",
       "targetSan": [
         "Nf3",
         "Nc3"
       ],
-      "hint": "Nf3 dan Nc3 sama-sama menyentuh empat kotak pusat."
+      "hint": "Kedua langkah membawa kuda ke aksi. Yang mana juga menyerang pion e5 Hitam?"
     },
     {
       "type": "teach",
       "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
       "title": "Gajah Berikutnya",
-      "text": "Dengan kedua kuda sudah keluar, kembangkan gajah ke kotak yang aktif. Bc4 mengincar kotak f7 yang lemah — titik paling rentan di kubu Hitam pada pembukaan."
+      "text": "Kedua kuda berada di f3 dan c3 (atau c4 di beberapa pembukaan). Sekarang gajah ingin dilepas.\n\n## Memilih rumah gajah\n\n- **{{Bc4}}** — penataan *Permainan Italia*. Gajah mengincar f7, kotak paling rentan di kubu Hitam karena hanya raja yang menjaganya.\n- **{{Bb5}}** — penataan *Ruy Lopez*. Menekan kuda c6 (yang menjaga e5) — pembukaan serius tertua dalam catur.\n- **{{Bd3}}** — solid tetapi memblokir pion-d. Umum di sistem 1.d4.\n- **{{Be2}}** — sederhana tetapi fleksibel. Gajah mendukung serangan kingside nanti.\n\nPerhatikan bahwa Hitam telah mencerminkan Anda dengan {{Nc6}}. Simetri baik untuk beberapa langkah — pemain yang memecah simetri secara berguna sering mendapat keuntungan.\n\n> Gajah dengan target bernilai dua tanpa target."
     },
     {
       "type": "play",
       "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
-      "prompt": "Kembangkan gajah kotak terang ke kotak yang aktif.",
+      "prompt": "Kembangkan gajah kotak terang Anda. **{{Bc4}}** adalah Italia klasik — ia menatap f7.",
       "targetSan": [
         "Bc4",
         "Bb5",
         "Bd3",
         "Be2"
       ],
-      "hint": "Bc4 adalah pilihan klasik — langsung ke f7."
+      "hint": "Di mana pion f7 Hitam butuh pertahanan? Gajah di c4 menyerang kotak itu persis."
     },
     {
       "type": "teach",
       "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
       "title": "Keamanan Raja",
-      "text": "Dua bidak keluar di setiap sisi adalah saat yang baik untuk rokade. Rokade membawa raja ke sudut dan menghubungkan benteng Anda. Lakukan sebelum melancarkan serangan."
+      "text": "Dua bidak ringan keluar, pusat diklaim, jalur terbuka — ini momen ideal untuk **rokade**.\n\nRokade melakukan tiga hal dalam satu langkah:\n\n- Menyembunyikan raja di sudut, di balik dinding pion\n- Menghubungkan benteng (mereka kini bisa saling membela di sepanjang baris belakang)\n- Membawa benteng ke pusat — biasanya f1 atau d1, di mana ia mengontrol kolom setengah-terbuka\n\n## Daftar periksa berguna sebelum rokade\n\n- Apakah **pion-f** masih di kotak awalnya? (Menggerakkannya melemahkan raja yang rokade.)\n- Apakah ada **ancaman langsung** yang harus saya tangani dulu?\n- Akan saya rokade ke **sisi yang sama** dengan lawan (permainan posisional) atau **sisi berlawanan** (pertarungan badai pion tajam)?\n\nDari posisi di atas, tindak lanjut alami adalah {{O-O}}. Setelah itu, Anda akan memikirkan kolom-d, terobosan pion-c, dan langkah benteng aktif.\n\n> Rokade lebih awal, rokade tepat waktu, dan babak tengah dibuka dengan Anda dalam kondisi prima."
     }
   ]
 }

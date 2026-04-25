@@ -1,20 +1,20 @@
 {
   "id": "trapping-pieces",
-  "title": "Menjebak Bidak",
-  "summary": "Potong jalur pelarian",
+  "title": "Perangkap",
+  "summary": "Putus jalur pelarian",
   "difficulty": "intermediate",
   "steps": [
     {
       "type": "teach",
       "fen": "8/8/3k4/3q4/8/8/8/K3RR2 w - - 0 1",
       "title": "Tidak Ada Tempat Pergi",
-      "text": "Bidak yang masuk jauh ke wilayah musuh rentan. Jika Anda bisa memotong setiap kotak pelariannya, Anda menang bidak secara gratis. Menteri, kuda, dan gajah sangat mudah dijebak di tepi."
+      "text": "Sebuah buah jauh di wilayah lawan itu berani tetapi rentan. **Jebak** — kontrol setiap petak yang bisa ia tuju — dan Anda memenangkannya tanpa mengeluarkan material.\n\n## Apa yang membuat buah bisa dijebak\n\n- Ia **jauh dari rumah**, tanpa dukungan teman.\n- **Mobilitasnya** terbatas (kuda di tepi, gajah terhalang bidak).\n- Ia adalah buah paling berharga di sudut papannya (sering kali menteri).\n- **Penyerang** punya buah atau bidak terdekat yang dapat menutup retret.\n\n## Geometrinya\n\nDaftarkan setiap petak yang bisa dituju buah yang dijebak. Jika Anda dapat menyerang salah satunya atau memblokir yang lain dengan setiap langkah Anda — tanpa kehilangan tempo — buah itu mati satu petak demi satu petak.\n\n## Cara mengenalinya\n\n1. Cari buah lawan **di sisi yang salah** dari papan.\n2. Hitung petak yang bisa ia tuju.\n3. Untuk setiap petak pelarian, cari buah atau bidak Anda yang mengontrol atau memblokirnya.\n4. Dekati dengan langkah tempo (sering skak atau ancaman) sehingga jebakan tertutup sebelum buah bisa lari.\n\nDi sini menteri hitam di d5 duduk di depan rajanya dengan benteng putih bertumpuk di lajur-e dan lajur-f. Putih dapat memainkan langkah yang secara sistematis mengambil setiap petak yang bisa dijangkau menteri.\n\n> Menteri yang jauh dari rumah hanyalah tahanan yang mahal."
     },
     {
       "type": "teach",
       "fen": "8/8/8/8/6Q1/8/r7/K1R5 w - - 0 1",
-      "title": "Kuda di Tepi",
-      "text": "Kuda di tepi itu redup — dan sering terdoom. Dorong pion ke arahnya, blokir kotaknya dengan bidak Anda, dan kuda tidak punya tempat melarikan diri. \"Kuda di tepi, masa depan suram\" — Tarrasch."
+      "title": "Kuda di Tepi dan Benteng yang Terjebak",
+      "text": "Dua motif perangkap paling umum yang akan Anda lihat dalam permainan nyata:\n\n## Kuda di tepi\n\nKuda di **lajur-a** atau **lajur-h** mengontrol hanya empat petak alih-alih delapan biasanya. Dorong bidak ke arahnya. Blokir retretnya. Bawa buah di sebelahnya. Selesai.\n\n- **a4 + b5** vs. kuda Hitam di a6 → kuda tidak punya petak yang bagus.\n- Gajah di c8 yang terkurung oleh bidaknya sendiri, lalu diserang oleh kuda di a7.\n\n> *\"Kuda di tepi, masa depan suram.\"* — Tarrasch\n\n## Benteng yang terjebak\n\nBenteng yang masuk jauh ke wilayah lawan mengejar bidak (a2, h2) sering tertangkap.\n\n- Benteng menangkap bidak di a2.\n- Raja lawan berjalan ke b1.\n- Sebuah buah (sering gajah atau kuda) menutupi petak pelarian.\n- Benteng hilang.\n\n## Cara menemukan jebakan\n\n1. Identifikasi buah lawan **yang jauh dari rumah**.\n2. Hitung petak pelariannya.\n3. Gunakan **langkah tempo** (skak, ancaman) untuk membawa penyerang masuk tanpa memberi buah kesempatan kabur.\n\n> Buah yang petualang butuh pemilik yang petualang — dan lawan yang lengah."
     }
   ]
 }

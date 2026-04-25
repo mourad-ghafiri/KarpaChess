@@ -4,5 +4,8 @@
   "solution": [
     "Nxb7"
   ],
-  "hint": "Menangkan menteri dengan kuda."
+  "title": "Sambar Sang Menteri",
+  "setup": "Menteri Hitam berkelana ke b7, dan kuda putih di c5 ada tepat di sebelah.",
+  "hint": "Dari c5, hitung delapan kotak kuda. Salah satunya mendarat di menteri.",
+  "explanation": "## Idenya\n\nIni adalah taktik paling sederhana dalam catur: ada bidak menggantung, ambil. Dari c5, kuda mencapai {{b7}} lewat -1 lajur +2 baris:\n\n- {{Nxb7}} — kuda menangkap menteri.\n- Pertukaran material: kuda untuk menteri = **+6**, sepenuhnya menang.\n\n### Mengapa tidak ada tangkapan balik\n\n1. Raja Hitam di e8 terlalu jauh dari b7 untuk memakan balik (raja jalan satu kotak).\n2. Tidak ada bidak Hitam lain di papan.\n3. Kuda lolos ke tempat aman dengan menteri di kantongnya.\n\n### Pelajaran\n\nSebelum mencari kombinasi, selalu tanyakan:\n\n- *Apakah ada bidak musuh tanpa pembela?*\n- *Apakah saya punya bidak yang mencapainya?*\n\nSetengah dari \"taktik\" sebenarnya hanya pola bidak menggantung yang dilihat cepat.\n\n> Kebesaran dalam catur dimulai dengan tidak melewatkan bidak gratis."
 }

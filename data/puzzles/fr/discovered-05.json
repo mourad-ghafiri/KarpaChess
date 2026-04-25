@@ -4,5 +4,8 @@
   "solution": [
     "Bd7+"
   ],
-  "hint": "Déplacez le fou avec échec — exposez la tour."
+  "title": "Le Fou Déclenche la Batterie",
+  "setup": "Un fou et une tour sont alignés sur la **colonne e** devant le roi ennemi — une batterie d'école visant droit vers e8.",
+  "hint": "Le fou bloque plus qu'il ne défend — déplacez-le avec échec, et laissez la tour faire le gros du travail.",
+  "explanation": "## L'Idée\n\nQuand deux de vos pièces de longue portée s'alignent l'une derrière l'autre, pointant vers le roi ennemi, vous avez une **batterie**. La pièce devant est le mobile ; la pièce derrière est le découvreur. Ici le fou en e6 est le mobile et la tour en e4 est le découvreur.\n\n## Pourquoi {{Bd7+}} est Dévastateur\n\nLe fou glisse en d7 et donne échec lui-même le long de la diagonale d7-e8. **Au même instant**, en quittant e6, il découvre la tour en e4 — qui fait aussi échec au roi le long de la colonne e. Deux pièces font échec au roi noir simultanément.\n\n- C'est un **échec double** : impossible de s'interposer.\n- Capturer le fou est impossible — aucune pièce noire à proximité n'atteint d7.\n- Capturer la tour est impossible — le roi noir ne peut atteindre e4.\n- Le roi **doit** bouger.\n\n## Ce Qui Ne Va Pas Sans Échec\n\nUn coup discret de fou (par exemple Bb3) découvrirait aussi la tour, mais l'échec de la tour serait simple, et les Noirs peuvent simplement reculer le roi en d7 ou f7 — voire capturer le fou dans certaines lignes. Le but de {{Bd7+}} est que le fou **arrive avec tempo** : en faisant échec lui-même, il force les Noirs à parer deux menaces en un coup, ce que les règles des échecs interdisent."
 }

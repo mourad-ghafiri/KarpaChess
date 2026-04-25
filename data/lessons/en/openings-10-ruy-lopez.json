@@ -8,40 +8,40 @@
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "The Spanish",
-      "text": "Named after a 16th-century Spanish priest, the Ruy Lopez (or \"Spanish\") pressures the e5 pawn via the c6 knight. It leads to rich, nuanced middlegames. Every world champion from Steinitz to Carlsen has played it."
+      "text": "Named after the 16th-century Spanish priest **Ruy López de Segura**, the Ruy Lopez (also called the *Spanish Game*) is the oldest serious opening still played at the highest levels of chess.\n\nEvery world champion has played it — Steinitz, Lasker, Capablanca, Alekhine, Botvinnik, Fischer, Karpov, Kasparov, Carlsen.\n\n## The defining sequence\n\nThe canonical line is {{e4}} {{e5}} {{Nf3}} {{Nc6}} {{Bb5}}. The bishop pins the c6 knight to the e5 pawn — but the *real* threat is long-term, not immediate.\n\n## What each side wants\n\n- **White's plan:** maintain pressure on e5, develop with **{{c3}}**, **{{O-O}}**, **{{Re1}}**, **{{d4}}**, then expand on the kingside or center.\n- **Black's plan:** challenge the bishop with **...a6** (the Morphy Defense), develop with **...Nf6**, **...Be7**, **0-0**, **...d6**, and either hold the e5 pawn (Closed Ruy) or release it for piece activity (Open Ruy).\n- **Pawn structure:** characteristic Ruy Lopez chains — **e4-d3** for White vs **e5-d6** for Black, with manoeuvring on both wings.\n\n## Why it's still relevant\n\nThe Ruy Lopez creates **strategic depth without forcing tactics**. It's a complete chess education in one opening — pawn structures, piece manoeuvres, attack and defense.\n\n> Once you understand the Ruy Lopez, you understand classical chess."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "prompt": "Play 1.e4",
+      "prompt": "Open with the king's pawn — play **{{e4}}**.",
       "targetSan": [
         "e4"
       ],
-      "hint": "King's pawn two squares."
+      "hint": "1.e4 stakes the center and is the gateway to the Ruy Lopez."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
-      "prompt": "Develop the king's knight: 2.Nf3",
+      "prompt": "Develop with **{{Nf3}}** — attacking e5 and preparing castling.",
       "targetSan": [
         "Nf3"
       ],
-      "hint": "Attacks e5, develops a piece."
+      "hint": "Nf3 is the knight move every classical opening starts with — it develops a piece AND attacks Black's central pawn."
     },
     {
       "type": "play",
       "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
-      "prompt": "The defining move: 3.Bb5",
+      "prompt": "The defining move: play **{{Bb5}}** — the bishop steps out to pressure the c6 knight.",
       "targetSan": [
         "Bb5"
       ],
-      "hint": "Pins the knight indirectly, threatens to undermine e5."
+      "hint": "The Bb5 pin is *indirect*: it doesn't immediately win the e5 pawn (because of ...Bxc6 dxc6 Nxe5 Qd4). It just slowly squeezes."
     },
     {
       "type": "teach",
       "fen": "r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
       "title": "Main Ideas",
-      "text": "The bishop doesn't actually win e5 immediately (after 3...a6 4.Bxc6 dxc6, Black's e-pawn is still defended). The REAL threat is to disrupt Black's structure and squeeze him positionally. Classical chess at its finest."
+      "text": "After **3.Bb5**, you'll often see beginners think *I can just take the knight!* — and discover that {{Bxc6}} **dxc6** {{Nxe5}} loses to **...Qd4!**, forking the knight and the e4 pawn. The Ruy Lopez is **not** about winning a pawn directly.\n\n## What the Bb5 pin actually achieves\n\n- It threatens to **damage Black's pawn structure** if and when {{Bxc6}} is played.\n- It indirectly **undermines e5** — if Black ever lets White play {{Bxc6}} and then {{Nxe5}} without the **...Qd4** trick available, White wins a pawn.\n- It limits Black's development — the c6 knight has to think before moving.\n\n## Black's main responses\n\n- **3...a6** (Morphy Defense, by far the most common) — kicks the bishop, asks it to commit. White retreats with **4.Ba4** or trades with **4.Bxc6**.\n- **3...Nf6** (Berlin Defense) — Vladimir Kramnik used this to defeat Garry Kasparov for the world title in 2000.\n- **3...d6** (Steinitz Defense) — solid but passive.\n- **3...Bc5** (Classical) — bold, ignores the pin, prepares ...Nf6 and 0-0.\n\n## A model main line\n\n{{e4}} {{e5}} {{Nf3}} {{Nc6}} {{Bb5}} **a6** **{{Ba4}}** **Nf6** **{{O-O}}** **Be7** **{{Re1}}** **b5** **{{Bb3}}** **d6** **{{c3}}** **0-0** — the classical Closed Ruy.\n\n> The Ruy Lopez is slow chess at its finest. Pieces shuffle, plans crystallize, and one tiny inaccuracy can decide the game ten moves later."
     }
   ]
 }

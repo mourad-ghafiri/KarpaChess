@@ -8,17 +8,17 @@
       "type": "teach",
       "fen": "4k3/8/8/4K3/4P3/8/8/8 w - - 0 1",
       "title": "Puissance du roi",
-      "text": "Au milieu de partie, le roi se cache. En finale, il sort pour combattre. Ici, votre roi doit escorter son pion jusqu'à la promotion. La technique compte."
+      "text": "## Le roi en finale\n\nDans le **milieu de partie**, le roi est un fugitif — roqué, caché, défendu par ses pions. En **finale**, avec la plupart des pièces échangées, cette timidité devient un luxe que vous ne pouvez pas vous permettre. Le roi est désormais une **pièce combattante**, valant à peu près une pièce mineure forte, et tout plan gagnant en finale simple commence par lui.\n\n### Ce qu'est cette position\n\n- Roi blanc en **e5**, escortant déjà son pion par devant.\n- Pion en **e4**, à deux cases de la voie de promotion.\n- Roi noir en **e8**, bloquant le chemin.\n\nC'est l'archétype **R + P contre R** — la structure gagnante la plus courante aux échecs.\n\n### La procédure pour convertir\n\n1. **Faites passer le roi en premier**, jamais le pion. Le pion ne pousse que lorsque le roi a dégagé la voie.\n2. **Contournez** le roi adverse en avançant en diagonale : {{Kd6}} ou {{Kf6}}.\n3. **Prenez l'opposition** — quand les rois se font face à une case et que votre adversaire doit bouger, vous contrôlez la danse.\n4. **Puis poussez le pion** pour gagner plus d'espace et forcer une dame.\n\n### Erreurs courantes\n\n- Pousser {{e5}} trop tôt — le pion arrive sans escorte et est bloqué.\n- Reculer le roi (par ex. Ke4) — vous abandonnez un tempo et l'opposition.\n- Faire dériver le roi sur les côtés sans plan de contournement.\n\n### Une ligne modèle\n\n{{Kd6}} ... Kd8 {{e5}} ... Ke8 {{Kc7}} — le roi a dégagé un couloir et le pion est inarrêtable.\n\n> Activez le roi avant de pousser le pion."
     },
     {
       "type": "play",
       "fen": "4k3/8/8/4K3/4P3/8/8/8 w - - 0 1",
-      "prompt": "Avancez votre roi — prenez l'opposition.",
+      "prompt": "Avancez le roi en diagonale pour **contourner** le défenseur. Appliquez le principe : *roi d'abord, pion ensuite*.",
       "targetSan": [
         "Kd6",
         "Kf6"
       ],
-      "hint": "Kd6 ou Kf6 — les deux saisissent l'opposition."
+      "hint": "Ne touchez pas encore au pion — dégagez-lui une voie avec un pas en diagonale sur la 6e rangée."
     }
   ]
 }

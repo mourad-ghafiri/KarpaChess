@@ -1,8 +1,11 @@
 {
   "id": "mate-in-1-14",
-  "fen": "3R4/8/8/8/8/k7/8/2K5 w - - 0 1",
+  "fen": "7R/8/8/8/8/1K6/8/k7 w - - 0 1",
   "solution": [
-    "Rd3+"
+    "Rh1#"
   ],
-  "hint": "Potong raja yang sendirian di baris ke-3."
+  "title": "Ujung Dunia",
+  "setup": "Raja Hitam terhimpit di sudut **a1**; raja Anda di **b3** menahan petak pelarian {{a2}} dan {{b2}}.",
+  "hint": "Turunkan benteng ke **baris 1** — setiap pelarian sudah ditutup raja Anda.",
+  "explanation": "## Idenya\n\nSkakmat sudut **K+R vs K** sederhana. Raja putih sudah melakukan pekerjaan berat memutus petak pelarian; benteng tinggal memberi pukulan pamungkas.\n\nMainkan {{Rh1#}}.\n\nMengapa raja terjebak?\n\n- {{b1}} — dikuasai benteng di h1 (baris 1)\n- {{a2}} — dikuasai raja Anda di **b3**\n- {{b2}} — dikuasai raja Anda di **b3**\n- Raja tidak bisa menangkap benteng: a1 ke h1 terlalu jauh\n- Tidak ada yang bisa menghalangi: baris 1 kosong\n\n> **Pelajaran:** Pada K+R vs K, benteng memberi skakmat dari *jarak aman* setelah raja didesak ke tepi. Raja Anda sendiri harus menguasai petak-petak pelarian satu baris di depan raja yang terjebak."
 }

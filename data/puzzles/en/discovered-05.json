@@ -4,5 +4,8 @@
   "solution": [
     "Bd7+"
   ],
-  "hint": "Move the bishop with check — expose the rook."
+  "title": "Bishop Springs the Battery",
+  "setup": "A bishop and rook are stacked on the **e-file** in front of the enemy king — a textbook battery aimed straight at e8.",
+  "hint": "The bishop blocks more than it defends — move it with check, and let the rook do the heavy lifting.",
+  "explanation": "## The Idea\n\nWhen two of your long-range pieces line up behind one another, pointing at the enemy king, you have a **battery**. The piece in front is the mover; the piece behind is the discoverer. Here the bishop on e6 is the mover and the rook on e4 is the discoverer.\n\n## Why {{Bd7+}} Is Devastating\n\nThe bishop slides to d7 and gives check by itself along the d7-e8 diagonal. **At the same instant**, by leaving e6, it uncovers the rook on e4 — which now also checks the king down the e-file. Two pieces are checking the black king at once.\n\n- This is **double check**: blocking is impossible.\n- Capturing the bishop is impossible — there is no black piece nearby that reaches d7.\n- Capturing the rook is impossible — the black king cannot reach e4.\n- The king **must** move.\n\n## What Goes Wrong Without Check\n\nA quiet bishop move (say, Bb3) would still uncover the rook, but the rook check is single, and Black can simply step the king to d7 or f7 — even capture the bishop in some lines. The point of {{Bd7+}} is that the bishop **arrives with tempo**: by checking on its own, it forces Black to handle two threats with one move, which the rules of chess forbid."
 }

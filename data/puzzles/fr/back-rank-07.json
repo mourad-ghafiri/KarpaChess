@@ -4,5 +4,8 @@
   "solution": [
     "Rxa8#"
   ],
-  "hint": "Échangez les tours et conservez le mat."
+  "title": "Pas de Mur de Pions, Juste le Mat",
+  "setup": "Les pions blancs ont tous disparu, mais le mur de pions noirs est encore intact — et ce mur est désormais un cercueil.",
+  "hint": "Le mur de pions en f7-g7-h7 sert les Blancs, pas les Noirs. Échangez les tours.",
+  "explanation": "## L'Idée\n\nSans pion blanc restant, le roi blanc est exposé — mais la **course vers la dernière rangée est à sens unique** : le roi noir n'a pas d'échappatoire, le blanc oui. {{Rxa8#}} est mat en un :\n\n1. La tour blanche capture la tour noire en a8.\n2. L'échec est donné depuis la 8e rangée.\n3. Le roi noir en g8 est verrouillé par f7-g7-h7 (ses propres pions).\n4. Aucune pièce ne peut reprendre ou s'interposer.\n\n### Détail curieux\n\nLe roi blanc n'a aucune couverture de pions — pourtant ce n'est pas aux Noirs de jouer. **Peu importe qui est plus exposé en théorie ; ce qui compte est à qui est le tour en pratique.** Les Blancs jouent en premier et terminent la partie.\n\n> Le tempo a plus de valeur que les pions quand la position est décisive."
 }

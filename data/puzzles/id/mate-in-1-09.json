@@ -4,5 +4,8 @@
   "solution": [
     "Ra8#"
   ],
-  "hint": "Pion raja sendiri yang menyegel nasibnya — cukup jalankan benteng ke baris ke-8."
+  "title": "Bidak Sendiri, Sangkar Sendiri",
+  "setup": "Raja Hitam duduk di pojok dengan bidak **h7** memblokir satu-satunya pelarian, sementara raja Anda di **f7** mengunci sisanya.",
+  "hint": "Jalankan benteng sampai atas — bidak {{h7}} mengerjakan tugas Anda.",
+  "explanation": "## Idenya\n\n**Skakmat pojok baris belakang** murni. Raja Anda di **f7** mencekik g7 dan g8, dan bidak h7 Hitam menutup sangkar.\n\nMain {{Ra8#}}.\n\nMengapa raja terjebak?\n\n- {{g8}} — ditutupi raja Anda di **f7**\n- {{g7}} — juga ditutupi raja Anda di **f7**\n- {{h7}} — diblokir bidak Hitam sendiri\n- Raja tidak bisa menangkap benteng (h8 ke a8 setengah papan) dan tidak ada yang bisa diselipkan\n\n> **Inti:** Raja di baris ke-7 satu lajur dari raja musuh adalah *sangkar standar* untuk K+B vs K. Begitu raja terkurung, benteng memberikan pukulan akhir dari kotak aman mana pun di baris belakang."
 }

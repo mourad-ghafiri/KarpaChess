@@ -1,6 +1,6 @@
 {
   "id": "quiet-move",
-  "title": "La Jugada Tranquila",
+  "title": "La Jugada Silenciosa",
   "summary": "La jugada que mata sin dar jaque",
   "difficulty": "advanced",
   "steps": [
@@ -8,13 +8,13 @@
       "type": "teach",
       "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
       "title": "La Jugada Más Difícil de Ver",
-      "text": "Los aficionados ven fácilmente los jaques y las capturas. Los maestros ven las jugadas TRANQUILAS — jugadas que no atacan nada de inmediato pero crean una amenaza imparable. Son las más difíciles de detectar porque no son \"ruidosas\"."
+      "text": "Los principiantes miran **jaques**, **capturas** y **amenazas**. Los maestros miran todo eso *y* las **jugadas silenciosas** — jugadas que no anuncian nada pero preparan una amenaza imparable a la siguiente.\n\n## Por qué las jugadas silenciosas son difíciles\n\n- No capturan ni dan jaque, así que no pasan el primer escaneo del cerebro.\n- A menudo implican *retiradas*, esquivos o jugadas de tempo que parecen pasivas.\n- La amenaza vive **en la siguiente jugada**, no en esta.\n\n## El detonante visual\n\nUna jugada silenciosa suele ser la respuesta a una de estas preguntas:\n\n- *Tengo un gran ataque pero sin ruptura inmediata — ¿qué jugada añade un atacante sin liberar la presión?*\n- *Mi pieza está a una casilla del puesto perfecto — ¿puedo llegar sin perder tempo?*\n- *El rival solo tiene un recurso defensivo — ¿puedo quitárselo con una jugada no forzada?*\n\n## La geometría\n\nA menudo es una preparación de **red de mate**:\n\n- {{Kh1}} esquivando un futuro jaque descubierto.\n- {{h3}} quitando la única casilla de escape del rey.\n- {{Re3}} preparando una subida de torre a g3 o h3.\n- {{Rd1}} centralizando antes de la tormenta.\n\n## Cómo encontrarlas\n\n1. Una vez que tengas un ataque fuerte, lista cada **defensor** del rival.\n2. Por cada defensor, pregúntate: *¿puedo preparar una jugada que lo elimine?*\n3. Mira *tus* piezas sueltas — ¿una jugada silenciosa las protege o mejora su puesto?\n4. Si el rival **no tiene respuesta útil** a una jugada silenciosa, esa es la jugada.\n\n> Una jugada ruidosa fuerza una respuesta. Una jugada silenciosa fuerza al rival a encontrar una — y a menudo no la hay."
     },
     {
       "type": "teach",
       "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
-      "title": "El Entrenamiento",
-      "text": "Cuando estés seguro de haber hallado la victoria, pregúntate siempre: \"¿Hay una jugada TRANQUILA que sea aún mejor?\" A veces retroceder con una torre o un alfil crea amenazas demoledoras. Entrénate a considerarlas."
+      "title": "Entrena el Reflejo de la Jugada Silenciosa",
+      "text": "Incluso cuando estés seguro de haber encontrado la victoria, hazte una pregunta más: *¿hay una jugada más silenciosa que sea aún más fuerte?*\n\n## Un ejercicio sencillo\n\n1. Coloca una posición táctica complicada.\n2. Encuentra tu mejor jugada **forzada** (captura, jaque, amenaza).\n3. Ahora mira cada jugada **no forzada** que mejore tu posición aunque sea una casilla.\n4. Compara. La jugada silenciosa es la correcta cuando deja al rival **sin respuesta útil**.\n\n## Tipos famosos de jugada silenciosa\n\n- **Toma-luft** — jugadas como {{h3}} que cierran la puerta al escape del rey enemigo.\n- **Retiradas para red de mate** — replegar un alfil a la diagonal larga antes de lanzar la dama.\n- **Jugadas de doblaje** — añadir una segunda torre a una columna antes de invadir.\n- **Coberturas de casilla crítica** — colocar un caballo en una casilla que evita el único recurso defensivo enemigo.\n\n## La mentalidad\n\nLos buenos jugadores tácticos ven los fuegos artificiales. Los grandes jugadores tácticos ven el **silencio justo antes** de los fuegos artificiales.\n\n> La jugada asesina a veces es la que susurra."
     }
   ]
 }

@@ -1,27 +1,29 @@
 {
   "id": "the-skewer",
-  "title": "Tusukan",
-  "summary": "Seperti ikatan — tetapi terbalik",
+  "title": "Sate",
+  "summary": "Seperti pakuan — tetapi terbalik",
   "difficulty": "intermediate",
   "steps": [
     {
       "type": "teach",
       "fen": "8/8/3q4/8/8/3k4/8/R6K w - - 0 1",
-      "title": "Tusukan",
-      "text": "Tusukan adalah cerminan ikatan. Anda menyerang bidak berharga yang HARUS bergerak — dan ketika ia bergerak, bidak yang kurang berharga di belakangnya terekspos. Paling sering raja adalah bidak yang tertusuk: ia harus keluar dari skak, meninggalkan apa pun yang ada di belakangnya."
+      "title": "Sate",
+      "text": "**Sate** adalah cerminan dari pakuan. Anda menyerang buah yang *lebih bernilai* di depan; ketika ia minggir, Anda mengambil buah yang *kurang bernilai* di belakangnya.\n\n## Geometrinya\n\nSate memerlukan garis lurus yang sama seperti pakuan — lajur, baris, atau diagonal — tetapi urutan sasarannya **terbalik**:\n\n1. **Penyerang jarak jauh** Anda ({{Ra1}}, menteri, gajah).\n2. **Buah yang bernilai** di depan (sering kali raja).\n3. **Buah yang kurang bernilai** di belakangnya pada garis yang sama.\n\nKetika buah depan bergerak (dan ia harus — terutama di bawah skak), buah belakang jatuh.\n\n## Pakuan vs. sate sekilas\n\n- **Pakuan:** buah kecil di depan, buah besar di belakang. Buah kecil *dibekukan*.\n- **Sate:** buah besar di depan, buah kecil di belakang. Buah besar *kabur* dan buah kecil ditangkap.\n\n## Cara mengenalinya\n\n1. Cari garis mana pun yang melewati raja atau menteri lawan.\n2. Periksa apa yang ada di garis itu *di belakang* sasaran berharga.\n3. Jika buah yang kurang bernilai ada di sana, cari cara menyerang di garis itu — biasanya skak.\n4. Hitung penangkapan kembali: apakah petak sate dilindungi?\n\nDi sini raja di d3 dan menteri di belakangnya di d6. {{Rd1+}} mengincar raja di lajur-d; raja harus bergerak dan menteri jatuh.\n\n> Sate adalah apa yang terjadi ketika buah berharga terlalu berani untuk bersembunyi di belakang yang lebih kecil."
     },
     {
       "type": "play",
       "fen": "8/8/3q4/8/8/3k4/8/R6K w - - 0 1",
-      "prompt": "Bawa benteng Anda ke kolom d untuk menusuk raja dan menteri.",
-      "targetSan": ["Rd1+"],
-      "hint": "Rd1 memberi skak — menteri akan jadi sasaran berikutnya."
+      "prompt": "Sate raja dan menteri di lajur-d dengan **{{Rd1+}}**.",
+      "targetSan": [
+        "Rd1+"
+      ],
+      "hint": "Apa yang ada di lajur-d di belakang raja? Skak memaksanya minggir."
     },
     {
       "type": "teach",
-      "fen": "8/8/8/3q4/8/3k4/8/3R3K w - - 0 1",
+      "fen": "8/8/8/3q4/8/3k4/8/3R3K b - - 0 1",
       "title": "Ambil Hadiahnya",
-      "text": "Setelah Rd1+, raja harus bergerak. Menteri hilang di langkah berikutnya. Inilah mengapa tusukan sangat kuat di kolom dan diagonal terbuka — bahkan benteng yang ditempatkan dengan baik dapat menjatuhkan menteri."
+      "text": "Setelah {{Rd1+}}, raja dalam skak dan **harus** keluar dari lajur-d — tidak ada buah untuk memblokir dan benteng tidak bisa ditangkap.\n\n## Yang terjadi selanjutnya\n\n- Raja berjalan ke **e3**, **c3**, **e2**, atau **c2** — petak mana pun yang bukan di lajur-d.\n- Menteri di d6 kini terbuka untuk {{Rxd5}} atau, tergantung petak pelarian raja, hilang di langkah berikutnya.\n- Putih memenangkan menteri secara cuma-cuma.\n\n## Mengapa sate begitu mematikan\n\n- Mereka hampir selalu datang **dengan skak**, jadi responsnya dipaksa.\n- Lajur terbuka dan diagonal panjang adalah jalan rayanya. Tukar buah untuk membersihkannya.\n- Bahkan benteng sederhana bisa menjatuhkan menteri jika sejajar tepat.\n\n> Pakuan membekukan; sate mengejar. Bagaimanapun, seseorang akan mati di garis itu."
     }
   ]
 }

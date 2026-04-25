@@ -4,5 +4,8 @@
   "solution": [
     "Nd6+"
   ],
-  "hint": "Pindahkan kuda — benteng menyerang melaluinya."
+  "title": "Kuda Melangkah, Benteng Menyerang",
+  "setup": "Benteng Putih berdiri di belakang kuda di **lajur e** terbuka, dengan raja Hitam menatap lurus ke kedua bidak.",
+  "hint": "Kuda adalah satu-satunya yang menghalangi benteng dan raja musuh — gerakkan dengan skak.",
+  "explanation": "## Idenya\n\nSerangan terbuka selalu punya dua pemeran: **penggerak** (bidak di depan) dan **pembuka** (bidak di belakang). Di sini kuda di e4 adalah penggerak dan benteng di e1 adalah pembuka. Selama kuda duduk di lajur e, benteng tidak bekerja.\n\n## Mengapa {{Nd6+}} Berhasil\n\nKuda meninggalkan lajur e dengan tempo. Dua hal terjadi serentak:\n\n- Benteng di e1 kini melihat sampai e8 dan memberi skak.\n- Kuda mendarat di **d6**, dari sana ia juga menyerang satu-satunya kotak pelarian raja, **f7**, dan menatap e8 untuk kedua kalinya.\n\nRaja Hitam diskak oleh bidak yang tidak bisa ia makan (benteng terlalu jauh dan dilindungi), dan tidak bisa diblokir di lajur e karena tidak ada bidak di antaranya. Satu-satunya jawaban legal adalah mundur, lalu kuda di d6 berdiri di tempat sangat baik.\n\n## Mengapa Tidak Ada Langkah Lain Sebagus Ini\n\nJika kuda pindah ke kotak yang **tidak** juga menusuk kotak pelarian raja (misalnya retret pasif), Hitam cukup lari ke f7 atau d7 dan skak terbuka kehilangan banyak racunnya. Pelajarannya: ketika Anda meluncurkan skak terbuka, usahakan agar bidak penggerak mendarat di kotak yang **menambah serangan**."
 }

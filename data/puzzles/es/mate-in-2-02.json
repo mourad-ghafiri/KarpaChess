@@ -1,10 +1,13 @@
 {
   "id": "mate-in-2-02",
-  "fen": "7k/8/6K1/6Q1/8/8/8/8 w - - 0 1",
+  "fen": "Q7/8/8/8/8/6K1/8/7k w - - 0 1",
   "solution": [
-    "Qh5+",
-    "Kg8",
-    "Qh8+"
+    "Qh8+",
+    "Kg1",
+    "Qa1#"
   ],
-  "hint": "Jaque para forzar al rey, luego mate."
+  "title": "Trampa por la diagonal larga",
+  "setup": "El rey negro está atascado en el rincón **h1**; tu rey en **g3** controla {{g2}} y {{h2}}, dejando solo **g1** como escape.",
+  "hint": "Fuerza al rey a {{g1}} con un jaque a larga distancia, luego barre con la diagonal **a1-h8**.",
+  "explanation": "## La idea\n\nUn elegante **mate en 2 de R+D contra R** en el rincón. La dama corta el escape del rey, luego da mate desde el rincón *opuesto*.\n\n**1. {{Qh8+}}** — la dama aterriza en la columna h, dando un jaque a larga distancia. El rey negro debe moverse.\n\n**1...{{Kg1}}** — forzado. {{Kg2}} es ilegal (tu rey en **g3** ataca g2), {{Kh2}} es ilegal (tu rey ataca h2), y {{Kxh8}} es imposible (demasiado lejos).\n\n**2. {{Qa1#}}** — la dama baja por la diagonal larga **h8-a1** para dar mate.\n\n¿Por qué está atrapado el rey tras la jugada 2?\n\n- {{b1}} y el resto de la primera fila — cubiertas por la dama en a1\n- {{f1}} — también cubierta por la dama en a1 (primera fila)\n- {{h2}} — controlada por tu rey en **g3**\n- {{g2}} — controlada por tu rey en **g3**\n- La dama está lejos, así que {{Kxa1}} es imposible\n\n> **Conclusión:** Las diagonales largas son autopistas para la dama. Cuando des mate en el rincón, busca un *patrón de dos rincones* — jaque desde un rincón para forzar al rey, luego mate desde el rincón opuesto por la diagonal larga."
 }

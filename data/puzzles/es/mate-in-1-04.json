@@ -4,5 +4,8 @@
   "solution": [
     "Rd8#"
   ],
-  "hint": "La última fila está completamente abierta — infiltra."
+  "title": "Carril abierto al rey",
+  "setup": "La columna d está vacía hasta la octava fila desde tu torre, y el escudo de peones negros no tiene ventana de escape.",
+  "hint": "Desliza la torre a la última fila abierta — el muro de peones {{f7}}, {{g7}}, {{h7}} hace el resto.",
+  "explanation": "## La idea\n\nUn **mate de pasillo** clásico. La columna d es una autopista limpia y el rey negro se asfixia detrás de sus propios peones.\n\nJuega {{Rd8#}}.\n\n¿Por qué el rey está atrapado?\n\n- {{f8}} y el resto de la octava fila — cubiertas por la torre en d8\n- {{f7}}, {{g7}}, {{h7}} — todas ocupadas por peones negros\n- Ninguna pieza puede interponerse en la línea d8-g8\n- El rey no puede capturar: d8 está demasiado lejos de g8\n\n> **Conclusión:** Cada vez que veas tu torre y el rey enemigo en la misma fila final con la columna abierta, cuenta las casillas de escape antes que nada. Una jugada a menudo termina la partida."
 }

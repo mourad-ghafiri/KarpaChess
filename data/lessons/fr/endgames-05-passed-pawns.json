@@ -4,18 +4,26 @@
   "summary": "Le moteur des victoires en finale",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "4k3/8/8/8/4P3/8/8/4K3 w - - 0 1",
       "title": "Qu'est-ce qu'un pion passé ?",
-      "text": "Un pion passé n'a aucun pion ennemi devant lui ni sur les colonnes adjacentes — rien ne peut l'empêcher de promouvoir sauf une pièce. Les pions passés sont des atouts énormes en finale. La phrase 'un pion passé doit être poussé' est une maxime de Nimzowitsch pour une raison." },
-    { "type": "play",
+      "text": "## Ce qui rend un pion *passé*\n\nUn pion est **passé** quand :\n\n- Aucun pion ennemi ne se trouve sur sa **propre colonne** devant lui, **et**\n- Aucun pion ennemi ne se trouve sur l'une des **colonnes adjacentes** devant lui.\n\nRien d'autre que des pièces ennemies ne peut l'empêcher d'atteindre la 8e rangée — et une pièce finit par devoir l'abandonner pour d'autres tâches. Voilà pourquoi les pions passés sont le **moteur** des victoires en finale.\n\n### Ce qu'est cette position\n\nUn seul pion blanc en **e4**, deux rois éloignés, aucun défenseur sur les colonnes d ou f. Le pion est passé et à quatre coups de la promotion. La seule question est de savoir si le roi blanc peut le soutenir avant que le roi noir ne le bloque.\n\n### Comment UTILISER un pion passé\n\n1. Poussez le pion quand il est **escorté** ou quand l'adversaire ne peut le rattraper (la *règle du carré*).\n2. **Utilisez-le comme leurre** — le roi ennemi ou les pièces doivent abandonner d'autres cibles pour l'arrêter.\n3. **Échangez les pièces, pas les pions** — les positions plus simples amplifient la puissance du pion.\n4. Sur l'aile la plus éloignée de l'action, un pion passé *extérieur* est encore plus fort car il attire le roi ennemi.\n\n### Erreurs courantes\n\n- **Pousser trop tôt** sans escorte — le pion est ramassé par le roi ennemi.\n- **Échanger le mauvais pion** et se retrouver sans aucun passé.\n- Oublier la **règle du carré** : tracez un carré imaginaire du pion à sa colonne de promotion ; si le roi ennemi ne peut entrer dans ce carré à temps, le pion fait dame sans aide.\n\n### Ligne modèle\n\n{{e5}} Ke7 {{Kd2}} Kd6 {{Kd3}} — le roi blanc est trop lent ; le roi noir rattrape et le pion est perdu. La leçon est nette : **un pion passé a besoin d'aide**.\n\n> Un pion passé doit être poussé — mais seulement quand son roi peut suivre."
+    },
+    {
+      "type": "play",
       "fen": "4k3/8/8/8/4P3/8/8/4K3 w - - 0 1",
-      "prompt": "Avancez le pion passé.",
-      "targetSan": ["e5"],
-      "hint": "e5 — un pas de plus vers la promotion." },
-    { "type": "teach",
+      "prompt": "Avancez le pion passé d'une case. Le principe : *les pions passés gagnent de l'espace dès qu'on les pousse*.",
+      "targetSan": [
+        "e5"
+      ],
+      "hint": "Une case en avant sur la colonne e — lancez la course."
+    },
+    {
+      "type": "teach",
       "fen": "4k3/8/8/4P3/8/8/8/4K3 b - - 0 1",
       "title": "Soutenez-le !",
-      "text": "Un pion passé seul a quand même besoin d'aide. Sans un roi pour l'escorter, une seule pièce ennemie peut l'arrêter. Activez votre roi pour soutenir l'avancée — et créer une nouvelle dame." }
+      "text": "## Un pion seul ne peut gagner\n\nAprès {{e5}}, c'est aux Noirs de jouer. Remarquez l'écart entre le pion en **e5** et son roi en **e1** — quatre rangées d'écart. Les Noirs jouent Ke7 et le pion est **condamné** sans aide.\n\n### Quels signes vous disent d'escorter\n\n- Le roi ennemi est **plus proche** du pion que le vôtre.\n- Aucune pièce amie ne peut défendre la case de promotion en un coup.\n- Le roi adverse couvre déjà la **case de promotion**.\n\n### Procédure quand votre pion passé a besoin d'escorte\n\n1. **Arrêtez la poussée** et amenez le roi : Kd2, Kd3, Ke4.\n2. Utilisez l'**opposition** pour que le roi ennemi ne puisse bloquer.\n3. Reprenez la poussée seulement quand le pion a un roi derrière ou à côté.\n4. Utilisez le pion comme **bouclier** — il protège votre roi des échecs latéraux.\n\n### Erreurs courantes\n\n- Pousser à chaque coup en pilote automatique — *un pion passé doit être poussé* est un slogan, pas un plan.\n- Sacrifier le chemin *actif* du roi avec des coups de roi aléatoires.\n- Défendre le pion avec le roi **derrière** au lieu d'à côté ou devant.\n\n### Suite modèle\n\n... Ke7 {{Kd2}} Kxe5 ? — mais si à la place {{Ke2}} Kf6 {{Kd3}} Kxe5 — le pion tombe. Avec les rois si éloignés, ce n'est qu'après que le roi est plus proche (par exemple en e3) que les Blancs peuvent pousser e6 en sécurité.\n\n> Activez le roi avant de pousser le pion."
+    }
   ]
 }

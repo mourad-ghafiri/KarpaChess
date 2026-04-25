@@ -4,5 +4,8 @@
   "solution": [
     "Kd5"
   ],
-  "hint": "Raih kemajuan dengan raja."
+  "title": "Aktivitas Raja Menentukan",
+  "setup": "Bidak di **e3**, raja Anda di **e4**, raja Hitam duduk di f6 mencoba menjaga kotak promosi bidak.",
+  "hint": "Jangan langsung maju ke depan — **raih kemajuan** dengan melangkah ke kotak yang tidak bisa dicapai raja musuh.",
+  "explanation": "## Prinsip Kunci: Merebut Kotak dengan Raja\n\nRaja Hitam sedang menjalankan tugasnya: ia menutup e5, e6, dan e7, memperlambat bidak Anda. Untuk maju, raja Anda harus mencapai baris ke-6 tanpa harus tukar. Caranya adalah melangkah **diagonal ke depan** ke kotak yang tidak bisa diperdebatkan raja musuh.\n\n## Rencananya\n\n1. **{{Kd5}}** — Putih maju ke arah sayap menteri, naik satu baris tanpa pernah berdiri di kotak yang bisa segera ditantang Hitam. Hitam tidak bisa membalas Kd5 (terisi), Ke5 (diserang raja Anda), atau Kf5 (diserang).\n2. Coba terbaik Hitam adalah **...Ke7**, bergegas mundur untuk membela. Putih menjawab dengan **Kc6** atau **Ke5**, terus mendesak raja musuh sambil menjaga bidak aman.\n3. Ketika raja Putih mencapai baris ke-6, bidak berbaris: **e4, e5, e6** — dan raja membersihkan kotak promosi.\n\n## Apa yang Salah Jika Mendorong Bidak\n\nJika Putih main 1.e4? langsung, raja di f6 sekarang ditempatkan baik: 1...Ke6! dan Hitam telah mengamankan **kotak di depan bidak**. Dari sana itu benteng pertahanan dan seri. Pelajarannya: **sebelum mendorong, menangkan kotak yang akan ditempati bidak Anda**."
 }

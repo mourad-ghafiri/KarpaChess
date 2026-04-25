@@ -4,18 +4,26 @@
   "summary": "Drive the king to the edge and deliver mate",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "7k/8/5K2/8/8/8/8/6R1 w - - 0 1",
       "title": "The Technique",
-      "text": "King and rook vs. king is always a win for the stronger side. The technique: use the rook to cut off the enemy king, then walk your king up alongside to drive him to the edge. Finally, deliver mate on the back rank." },
-    { "type": "teach",
+      "text": "## K + R vs K — the textbook win\n\nKing and rook against a lone king is **always winning** for the stronger side. There is no opposition trick to learn, no zugzwang exception — just a clean technique you can repeat from any starting position in **roughly 16 moves**.\n\n### What this endgame looks like\n\n- **Rook + king** versus a bare king.\n- The board is empty; everything is about coordination.\n\n### The key concept: cut and shoulder\n\nThe rook **cuts** off a rank or file the enemy king cannot cross. Your king then **shoulders** him — taking the opposition — to push him toward that wall. Mate arrives when the lone king is pinned to the **edge** with no escape squares.\n\n### Procedure to convert\n\n1. Place the rook to **cut off** the enemy king on a rank or file, narrowing his prison.\n2. **March your king** up to face the enemy king (direct opposition).\n3. When the enemy king must move along the wall, **swing the rook** to the new cut-off line.\n4. Repeat until he is on the **edge**, then deliver mate with {{Rg8#}}-style cut.\n\n### Common mistakes\n\n- **Stalemating** the lone king on the edge with the rook far away. Always check that he has at least one square *or* he is in check.\n- Allowing the kings to be adjacent on the same file — the king attacks your rook.\n- Wandering the king while the rook does all the work — you need both.\n\n> Rook cuts, king shoulders, then mate on the edge."
+    },
+    {
+      "type": "teach",
       "fen": "7k/5K1p/8/8/8/8/8/6R1 w - - 0 1",
       "title": "The Mating Net",
-      "text": "When the enemy king is pinned to the edge and the opposing king stops any escape, your rook slides in for mate. The pattern is this — memorize it." },
-    { "type": "play",
+      "text": "## The final pattern\n\nLook carefully at this position. Black's king sits on **h8**, his own pawn on **h7** blocking the only escape. The White king on **f7** controls **g7** and **g8** — every flight square. White's rook on **g1** has a clear lane to **g8**.\n\n### Why this is a forced mate\n\n- **g8** — covered by White king *and* the rook delivering mate.\n- **g7** — covered by White king on f7.\n- **h7** — occupied by Black's own pawn.\n\nThe enemy king has nowhere to run. The mating piece, the rook, slides into **g8** with check.\n\n### The pattern to memorise\n\n- Defending king on the **edge** (8th rank).\n- Attacking king **two squares away**, controlling the escape diagonally.\n- Rook delivers **mate on the edge file or rank**.\n\nThis exact picture — sometimes with a pawn cooperating, sometimes pure — is the **fingerprint** of K+R vs K mate. Burn it in.\n\n> Once you see the cage, you can build it from anywhere."
+    },
+    {
+      "type": "play",
       "fen": "7k/5K1p/8/8/8/8/8/6R1 w - - 0 1",
-      "prompt": "Deliver checkmate.",
-      "targetSan": ["Rg8#"],
-      "hint": "The king's own pawn is his prison wall." }
+      "prompt": "Deliver **checkmate** along the back rank. The principle: *the rook closes the cage your king has already built*.",
+      "targetSan": [
+        "Rg8#"
+      ],
+      "hint": "The h7 pawn is doing your work — slide the rook to the **8th rank** with check."
+    }
   ]
 }

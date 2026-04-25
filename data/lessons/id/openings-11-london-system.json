@@ -1,38 +1,38 @@
 {
   "id": "london-system",
   "title": "Sistem London",
-  "summary": "Sistem universal — susunan yang sama, setiap kali",
+  "summary": "Sistem universal — setup yang sama, setiap waktu",
   "difficulty": "intermediate",
   "steps": [
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "title": "Mengapa Main London?",
-      "text": "Sistem London adalah pembukaan \"universal\" — Putih memainkan susunan yang sama terlepas dari respons Hitam. Bagus untuk pemula: lebih sedikit teori, pola yang lebih dapat diandalkan."
+      "title": "Mengapa Memainkan London?",
+      "text": "**Sistem London** adalah ekuivalen catur dari resep antipeluru — Putih bermain *hampir setup yang sama* terhadap apa pun yang dilakukan Hitam. Lebih sedikit yang dihafal, lebih banyak yang dimainkan.\n\nDalam beberapa tahun terakhir, ia menjadi sangat populer di level atas: Magnus Carlsen telah menggunakannya dalam pertandingan kejuaraan dunia, dan grandmaster dari Kramnik hingga Caruana menggunakannya sebagai senjata kejutan.\n\n## Mengapa ramah-pemula\n\n- **Hampir tidak ada teori.** Anda bermain delapan langkah yang sama terlepas dari setup Hitam.\n- **Struktur bidak solid.** Setup d4-c3-e3 sulit dibobol.\n- **Gajah kotak gelap aktif.** Bf4 adalah salah satu kotak *terbaik* untuk buah itu — di luar rantai bidak, mengincar sayap menteri.\n- **Rencana yang dapat diandalkan.** Ide middlegame berulang setiap waktu.\n\n## Apa yang diinginkan setiap pihak\n\n- **Rencana Putih:** {{d4}}, {{Bf4}}, {{Nf3}}, {{e3}}, {{c3}}, {{Nbd2}}, {{Bd3}}, **0-0**. Lalu meluas dengan **h2-h3**, **Re1**, dan mengarah ke **e3-e4** atau dorongan **a2-a4** sayap menteri.\n- **Rencana Hitam:** mainkan **...Nf6**, **...e6** atau **...g6**, **...Be7** atau **...Bd6**, **...c5** atau **...c6**, dan tantang pusat. Setup Hitam modern menyerang bidak e3 dan kelemahan c3.\n- **Struktur bidak:** *hibrida Slav-Stonewall* — bidak Putih di d4-c3-e3 membentuk segitiga yang membatasi buah Hitam.\n\n> London adalah catur autopilot. Setelah Anda memainkannya sepuluh kali, Anda bisa memainkannya saat tidur."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "prompt": "1.d4",
+      "prompt": "Mulai London dengan **{{d4}}** — fondasi seluruh sistem.",
       "targetSan": [
         "d4"
       ],
-      "hint": "Pion menteri dua kotak."
+      "hint": "Setiap permainan London mulai dengan d4. Gajah c1 kini punya jalur jelas ke f4."
     },
     {
       "type": "play",
       "fen": "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2",
-      "prompt": "Kembangkan gajah kotak gelap: 2.Bf4",
+      "prompt": "Kembangkan gajah kotak gelap dengan **{{Bf4}}** *sebelum* memainkan e3 — itulah trik urutan langkah London yang penting.",
       "targetSan": [
         "Bf4"
       ],
-      "hint": "Gajah dikeluarkan SEBELUM e3, sehingga tidak diblokir oleh pionnya sendiri."
+      "hint": "Selalu mainkan Bf4 SEBELUM e3, jika tidak bidak Anda sendiri akan mengunci gajah. Trik urutan langkah ini adalah jantung sistem."
     },
     {
       "type": "teach",
       "fen": "rnbqkb1r/pppppppp/5n2/8/3P1B2/8/PPP1PPPP/RNBQKBNR b KQkq - 2 2",
-      "title": "Susunan Lengkap",
-      "text": "Resep London lengkap: d4, Bf4, Nf3, e3, c3, Nbd2, Bd3, 0-0. Kokoh, nyaris simetris, sulit ditembus. Magnus Carlsen telah menggunakannya dalam pertandingan kejuaraan dunia."
+      "title": "Setup Lengkap",
+      "text": "Setelah {{d4}} dan {{Bf4}}, sisa Sistem London jatuh ke tempatnya hampir secara otomatis.\n\n## Resep London lengkap\n\n1. **{{d4}}** — bidak pusat.\n2. **{{Bf4}}** — gajah keluar sebelum bidak-e bergerak.\n3. **{{Nf3}}** — kuda kedua ke kotak alaminya.\n4. **{{e3}}** — mendukung d4 dan membebaskan gajah f1.\n5. **{{c3}}** — memperkuat pusat, mencegah ...Nb4.\n6. **{{Nbd2}}** — kuda ke kotak fleksibel (bukan c3, di mana ia akan menghalangi bidak-c).\n7. **{{Bd3}}** — gajah terang ke diagonal alaminya, mengincar h7.\n8. **{{O-O}}** — rokade pendek.\n\nDari sana, Putih biasanya meluas dengan **h2-h3** (mencegah pakuan ...Bg4), **Re1**, dan akhirnya **e3-e4** break atau serangan sayap raja via **Ne5** dan **Qf3**.\n\n## Setup Hitam umum melawan London\n\n- **Setup simetris**: ...d5, ...Nf6, ...Bf5 atau ...Bg4, ...e6, ...Bd6, ...0-0 — cermin solid.\n- **Setup King's Indian**: ...Nf6, ...g6, ...Bg7 — fianchetto. Hitam mainkan ...c5 untuk menantang pusat.\n- **Tantangan modern**: ...c5 segera, ...Qb6 menyerang bidak b2 — uji tajam terhadap urutan langkah London.\n\n## Pola serangan tipikal\n\nSerangan London klasik berjalan **Ne5** + **Qf3** + **Bxh7+** — pengorbanan *Greek Gift*. Struktur London tenang, tetapi serangan sayap raja bisa sangat ganas.\n\n> Pilih sistem. Kuasai. London mengajari Anda bagaimana lima kotak yang sama bisa menghasilkan seribu middlegame berbeda."
     }
   ]
 }

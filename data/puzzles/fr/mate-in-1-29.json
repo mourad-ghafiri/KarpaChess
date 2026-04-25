@@ -1,8 +1,11 @@
 {
   "id": "mate-in-1-29",
-  "fen": "6k1/6pp/6B1/5K2/8/8/8/8 w - - 0 1",
+  "fen": "7k/5K2/8/6N1/8/8/8/2B5 w - - 0 1",
   "solution": [
-    "Bf7+"
+    "Bb2#"
   ],
-  "hint": "Fou sur la grande diagonale — roi piégé."
+  "title": "Lance sur la grande diagonale",
+  "setup": "Votre cavalier en **g5** pique {{h7}}, votre roi en **f7** verrouille {{g7}}, {{g8}} et {{f8}} — et le fou est à un coup de la diagonale **a1-h8**.",
+  "hint": "Posez le fou sur la **grande diagonale** — le roi en **h8** n'a nulle part où fuir.",
+  "explanation": "## L'idée\n\nUn magnifique **mat fou + cavalier + roi**. Le fou glisse sur la grande diagonale et perce jusqu'à h8, tandis que le cavalier et le roi couvrent toutes les cases de fuite.\n\nJouez {{Bb2#}}.\n\nPourquoi le roi est-il bloqué ?\n\n- Le fou en b2 attaque h8 directement le long de la **diagonale a1-h8**\n- {{g7}} — couverte par votre roi en **f7**\n- {{g8}} — couverte par votre roi en **f7**\n- {{h7}} — contrôlée par le cavalier en **g5**\n- Le fou est trop loin pour {{Kxb2}}, et rien ne peut s'interposer sur la grande diagonale\n\n> **À retenir :** la **diagonale a1-h8** style fianchetto (ou son miroir **h1-a8**) est l'une des voies de mat les plus mortelles aux échecs. Quand votre fou atteint cette diagonale et que le roi est dans le coin avec une pièce couvrant h7 — partie terminée."
 }

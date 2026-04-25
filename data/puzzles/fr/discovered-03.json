@@ -4,5 +4,8 @@
   "solution": [
     "Nc4+"
   ],
-  "hint": "Le cavalier bouge et la diagonale du fou s'ouvre."
+  "title": "Le Cavalier Libère la Diagonale",
+  "setup": "Le fou en **d7** vise le roi ennemi sur la grande diagonale claire, tandis que le cavalier en e3 est prêt à bondir dans l'attaque.",
+  "hint": "Choisissez la case du cavalier qui contrôle **aussi** la seule fuite du roi — ne vous contentez pas de n'importe quelle découverte.",
+  "explanation": "## L'Idée\n\nDans une attaque à la découverte, le **mobile** est la pièce qui s'écarte et le **découvreur** est la pièce de longue portée derrière. Ici le fou en d7 est le découvreur visant e8, et le cavalier en e3 est le mobile.\n\n## Pourquoi {{Nc4+}} est le Bon Choix\n\nPresque tout coup de cavalier garde le fou pointé sur e8, mais l'astuce d'un bon échec à la découverte est de rendre la pièce mobile **utile**. Après {{Nc4+}}, le cavalier atterrit sur une case d'où il attaque **d6** — exactement la case où le roi voudrait fuir.\n\n- Le fou frappe e8.\n- Le cavalier couvre d6.\n- La seule fuite légale du roi est **f8**, où il est enfermé dans le coin.\n\n## Ce Qui Ne Va Pas avec d'Autres Coups\n\nUn Ng4+ ou Nf5+ négligent révèle aussi le fou, mais le cavalier ne se bat plus pour les cases de fuite du roi. Les Noirs jouent Kd8 (ou dans certaines lignes capturent le fou) et l'attaque s'évanouit. La discipline à apprendre : quand vous découvrez un échec, choisissez la destination du mobile pour qu'elle **ferme le filet** plutôt que simplement faire du bruit."
 }

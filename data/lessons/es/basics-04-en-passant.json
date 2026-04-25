@@ -1,25 +1,35 @@
 {
   "id": "en-passant",
-  "title": "En Passant",
-  "summary": "La captura de peón que la mayoría nunca aprende",
+  "title": "Al Paso",
+  "summary": "La captura de peón que pocos jugadores aprenden",
   "difficulty": "beginner",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "4k3/3p4/8/4P3/8/8/8/4K3 w - - 0 1",
       "title": "Una Regla Astuta",
-      "text": "Cuando los peones avanzan dos casillas desde su fila inicial, a veces pueden ser capturados por un peón enemigo 'al paso'. Esto se llama en passant — en francés significa 'al pasar'. Solo funciona en la jugada inmediatamente siguiente." },
-    { "type": "teach",
+      "text": "*En passant* — francés para *al paso* — es la regla más extraña y olvidada del ajedrez. Y, sin embargo, es perfectamente lógica una vez que ves por qué existe.\n\nCuando se permitió por primera vez que los peones saltaran dos casillas desde su fila inicial (un cambio medieval para acelerar las aperturas), la modificación tuvo un efecto secundario: un peón podía *escabullirse* junto a un peón enemigo que debería haber podido capturarlo. Para restaurar la justicia, las reglas añadieron una excepción — ese peón aún puede ser capturado, pero **solo en la jugada inmediatamente siguiente**.\n\n## Las condiciones, todas a la vez\n\n- Un peón enemigo se mueve **dos casillas** desde su fila inicial\n- Tu peón está **justo al lado** en la misma fila (la 5ª para las blancas, la 4ª para las negras)\n- Capturas **en diagonal**, aterrizando en la casilla donde *habría estado* el peón si solo hubiera avanzado una\n- Debes hacerlo **inmediatamente** — espera una jugada y pierdes el derecho para siempre\n\n> El al paso es la regla que demuestra que el ajedrez es más antiguo de lo que crees."
+    },
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/ppp1p1pp/8/3pPp2/8/8/PPPP1PPP/RNBQKBNR w KQkq f6 0 3",
       "title": "La Oportunidad",
-      "text": "Las Negras acaban de jugar ...f5, saltando dos casillas más allá del peón blanco de e5. El peón blanco podría haber capturado en f6 si el peón negro solo se hubiera movido una casilla. En passant dice: aún puedes hacerlo — solo en este turno." },
-    { "type": "play",
+      "text": "Aquí tienes una oportunidad real de usarlo. Las negras acaban de jugar **...f7-f5**, lanzándose dos casillas más allá de tu peón en e5.\n\nSi las negras hubieran avanzado solo una casilla (...f7-f6), tu peón de e5 podría haber capturado normalmente con {{exf6}}. El salto de dos casillas de las negras intenta esquivar esa captura.\n\nEl al paso dice: *no tan rápido*. Aún puedes jugar {{exf6}} — tu peón se mueve en diagonal a f6 y el peón negro de f5 desaparece del tablero. Es casi como si atraparas al corredor a media zancada.\n\nLa pequeña anotación `f6` después de la letra del bando que mueve en el FEN te indica que **f6 es la casilla de captura al paso** durante una jugada.\n\n> El peón que captura aterriza DETRÁS del peón capturado — en la única casilla que intentó saltarse."
+    },
+    {
+      "type": "play",
       "fen": "rnbqkbnr/ppp1p1pp/8/3pPp2/8/8/PPPP1PPP/RNBQKBNR w KQkq f6 0 3",
-      "prompt": "Captura el peón de f5 al paso.",
-      "targetSan": ["exf6"],
-      "hint": "La jugada es exf6 — tu peón captura como si el peón f estuviera en f6." },
-    { "type": "teach",
+      "prompt": "Captura al paso con **{{exf6}}** — tu peón aterriza en f6 y el peón de f5 se esfuma.",
+      "targetSan": [
+        "exf6"
+      ],
+      "hint": "Trata al peón de f5 como si estuviera en f6 y captura en diagonal. El peón desaparece aunque no aterrices sobre él."
+    },
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/ppp1p1pp/5P2/3p4/8/8/PPPP1PPP/RNBQKBNR b KQkq - 0 3",
-      "title": "Regla de Un Solo Disparo",
-      "text": "DEBES usar en passant en la jugada inmediatamente siguiente o perderás el derecho. Es una de las reglas más olvidadas — ahora ya la conoces." }
+      "title": "Regla de un Único Disparo",
+      "text": "Y así, sin más, el peón de f5 ha desaparecido y el tuyo está en f6 — bien adentrado en territorio negro, a dos casillas de la coronación.\n\n## Dos recordatorios finales\n\n- **Úsalo o piérdelo.** El derecho a capturar al paso dura exactamente una jugada. Si no la realizas inmediatamente, la opción se desvanece.\n- **Solo los peones pueden hacerlo.** Caballos, alfiles, torres, damas y reyes no pueden capturar al paso.\n\nLa mayoría de los principiantes pasan años sin jugar nunca este movimiento. Ahora lo detectarás al instante — y aún mejor, lo *anticiparás*. Saber que el al paso existe cambia cómo empujas peones junto a peones enemigos.\n\n> La regla que todos olvidan se convierte en la jugada que tú nunca dejarás pasar."
+    }
   ]
 }

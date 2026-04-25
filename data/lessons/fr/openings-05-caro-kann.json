@@ -4,23 +4,35 @@
   "summary": "Une défense rocheuse contre 1.e4",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "Solide et saine",
-      "text": "La Caro-Kann (1.e4 c6) prépare ...d5 avec le soutien du pion c. Contrairement à la française, le fou de cases claires se développe librement. Elle est calme, stratégique, et notoirement difficile à briser." },
-    { "type": "play",
+      "text": "La **défense Caro-Kann** est le choix des joueurs qui veulent *survivre à l'ouverture* et atteindre un milieu de partie sain sans mémoriser des pages et des pages de théorie. Elle a servi de cheval de bataille à des champions du monde comme Capablanca, Karpov et Anand.\n\n## La séquence définissante\n\nL'ouverture commence par {{e4}} {{c6}}. Avec **...c6**, les Noirs préparent **...d5** au coup suivant — mais contrairement à la française (1...e6), le coup du pion c *ne bloque pas* le fou de cases claires. Après ...d5 et un éventuel échange, le fou noir sort activement en f5 ou g4.\n\n## Ce que veut chaque camp\n\n- **Plan blanc :** défier le centre par **{{d4}}** et choisir un dispositif — *Avance* ({{e5}}), *Échange* ({{exd5}}), *Classique* ({{Nc3}} ou {{Nd2}} dxe4 Nxe4), ou *Deux Cavaliers* ({{Nc3}}, {{Nf3}}). Chaque choix mène à un milieu de partie distinct.\n- **Plan noir :** jouer **...d5**, développer le fou c8 *à l'extérieur* de la chaîne de pions (souvent en f5), puis **...e6**, **...Nd7**, **...Ngf6**, petit roque, et viser un léger avantage en finale.\n- **Structure de pions :** souvent une *chaîne Caro-Kann* (e6, d5) ou, après échanges, une structure symétrique propre où les Noirs aiment grignoter.\n\n## Pourquoi la jouer\n\nLa Caro-Kann offre aux Noirs **un bon fou de cases claires** (le grief le plus fréquent contre la française est résolu) et un noyau dur à fendre pour les Blancs. Elle récompense la patience et une excellente technique de finale.\n\n> La Caro-Kann, c'est l'équivalent échiquéen d'un mur de granit. Lente, régulière, presque imprenable."
+    },
+    {
+      "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
-      "prompt": "Les Noirs jouent la configuration Caro-Kann.",
-      "targetSan": ["c6"],
-      "hint": "1...c6 prépare ...d5." },
-    { "type": "play",
+      "prompt": "Les Noirs jouent la Caro-Kann avec **{{c6}}** — préparant **...d5** avec un soutien complet de pion.",
+      "targetSan": [
+        "c6"
+      ],
+      "hint": "Contrairement à la française (1...e6), ce coup laisse le fou de cases claires libre. Solide ET actif."
+    },
+    {
+      "type": "play",
       "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
-      "prompt": "Réponse principale des Blancs : renforcer le centre.",
-      "targetSan": ["d4"],
-      "hint": "2.d4 réclame le centre entier." },
-    { "type": "teach",
+      "prompt": "Réplique principale des Blancs : occupez tout le centre avec **{{d4}}**.",
+      "targetSan": [
+        "d4"
+      ],
+      "hint": "Avec d4, les Blancs construisent le grand centre classique. Si les Noirs défient avec ...d5, la position devient critique."
+    },
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pp1ppppp/2p5/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2",
       "title": "La rupture",
-      "text": "Les Noirs jouent maintenant 2...d5, défiant directement le centre blanc. Les Blancs peuvent avancer (e5), échanger (exd5) ou passer à la variante d'avance. Chaque choix mène à un type de jeu différent." }
+      "text": "Les Noirs jouent désormais le **...d5** prévu, attaquant directement le pion e4 blanc. Les Blancs doivent choisir leur réaction — et ce choix définit le reste de la partie.\n\n## Les quatre principales variantes\n\n- **Variante d'avance** — **3.e5**. Les Blancs poussent au-delà, gagnant de l'espace. Les Noirs sortent d'abord le fou en **...Bf5** avant de l'enfermer.\n- **Variante d'échange** — **3.exd5 cxd5**. Symétrique, calme, donne aux Blancs un petit avantage d'espace.\n- **Variante classique (Capablanca)** — **3.Nc3 dxe4 4.Nxe4 Bf5**. Célèbre pour le fou noir actif en f5.\n- **Attaque Panov-Botvinnik** — **3.exd5 cxd5 4.c4 !** Les Blancs transposent vers un jeu de type pion d isolé avec des chances d'attaque.\n\nUne partie modèle suit {{e4}} {{c6}} {{d4}} {{d5}} {{Nc3}} **dxe4** {{Nxe4}} **Bf5**. Les Noirs en sortent avec la paire de fous déjà brisée en leur faveur et un dispositif souple.\n\n> La Caro-Kann vous apprend que *la flexibilité gagne plus de parties que l'agressivité*."
+    }
   ]
 }

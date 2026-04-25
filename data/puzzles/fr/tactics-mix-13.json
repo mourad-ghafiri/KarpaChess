@@ -4,5 +4,8 @@
   "solution": [
     "O-O-O"
   ],
-  "hint": "Roquez pour connecter les tours."
+  "title": "Roque long",
+  "setup": "Le roi blanc et la tour côté dame n'ont pas bougé, toutes les cases entre eux sont vides — territoire de roque parfait.",
+  "hint": "Roquer active la tour *et* met le roi en sécurité — deux coups pour le prix d'un.",
+  "explanation": "## L'idée\n\nVoici un puzzle positionnel déguisé en tactique : le bon coup est le **roque côté dame**, aussi appelé **roque long** ou **O-O-O**.\n\nLes Blancs jouent {{O-O-O}}.\n\n## Que vient-il de se passer ?\n\nEn un coup :\n\n- Le roi passe de **e1 à c1** (deux cases vers la tour).\n- La tour passe de **a1 à d1** (sautant par-dessus le roi).\n- Le roi est désormais bien à l'abri.\n- La tour est centralisée sur la colonne d, où elle vise les colonnes centrales.\n\n## Pourquoi c'est légal ici\n\nPour que le roque soit légal, **toutes** les conditions suivantes doivent être réunies (et elles le sont) :\n\n1. Le roi n'a pas bougé.\n2. La tour de roque n'a pas bougé.\n3. **Aucune pièce** entre le roi et la tour (b1, c1, d1 sont toutes vides).\n4. Le roi n'est **pas en échec**.\n5. Les cases que le roi traverse (d1, c1) ne sont **pas attaquées**.\n\nNoir n'a aucune pièce ici, donc les conditions 4 et 5 sont trivialement satisfaites.\n\n## Schéma à mémoriser\n\n> Roquez tôt, roquez souvent. Un roi au centre est un roi en danger.\n\nLe roque côté dame amène la tour immédiatement dans le jeu central et est souvent plus agressif que le roque côté roi — au prix d'une position du roi un peu plus exposée."
 }

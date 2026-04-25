@@ -4,5 +4,8 @@
   "solution": [
     "O-O-O"
   ],
-  "hint": "Rokade untuk menghubungkan benteng-benteng."
+  "title": "Rokade Panjang",
+  "setup": "Raja dan benteng sayap menteri Putih belum digerakkan, dan semua kotak di antaranya kosong — wilayah rokade yang sempurna.",
+  "hint": "Rokade mengaktifkan benteng *sekaligus* menyembunyikan raja ke tempat aman — dua langkah dengan harga satu.",
+  "explanation": "## Idenya\n\nIni adalah teka-teki posisional yang menyamar sebagai taktis: gerakan yang tepat adalah **rokade sayap menteri**, juga disebut **rokade panjang** atau **O-O-O**.\n\nPutih bermain {{O-O-O}}.\n\n## Apa yang Baru Saja Terjadi?\n\nDalam satu gerakan:\n\n- Raja berpindah dari **e1 ke c1** (dua kotak ke arah benteng).\n- Benteng berpindah dari **a1 ke d1** (melompati raja).\n- Raja kini aman tersembunyi.\n- Benteng tersentralisasi di lajur d, mengincar lajur tengah.\n\n## Mengapa Legal di Sini\n\nAgar rokade legal, **semua** hal berikut harus benar (dan memang demikian):\n\n1. Raja belum bergerak.\n2. Benteng yang berokade belum bergerak.\n3. **Tidak ada buah** di antara raja dan benteng (b1, c1, d1 semuanya kosong).\n4. Raja **tidak dalam skak**.\n5. Kotak yang dilewati raja (d1, c1) **tidak diserang**.\n\nHitam tidak punya buah sama sekali di sini, jadi syarat 4 dan 5 jelas terpenuhi.\n\n## Pola yang Harus Diingat\n\n> Berokadelah lebih awal, sering berokade. Raja di tengah adalah raja dalam bahaya.\n\nRokade sayap menteri membawa benteng langsung ke permainan tengah dan sering kali lebih agresif daripada rokade sayap raja — dengan harga posisi raja yang sedikit lebih terbuka."
 }

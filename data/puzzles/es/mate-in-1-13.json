@@ -4,5 +4,8 @@
   "solution": [
     "Qxg7#"
   ],
-  "hint": "La dama captura — apoyada por el caballo."
+  "title": "Ahogo respaldado por el caballo",
+  "setup": "Tu caballo en **f6** pica {{e8}} y {{h7}} desde el costado, mientras que la dama está una casilla por debajo del escudo de peones.",
+  "hint": "Toma el peón de {{g7}} — tu caballo defiende a la dama y sella todos los escapes.",
+  "explanation": "## La idea\n\nEste es un **mate al estilo ahogado con dama + caballo**. La dama se sacrifica en una casilla defendida junto al rey, y el caballo la respalda mientras cubre las casillas de escape.\n\nJuega {{Qxg7#}}.\n\n¿Por qué está atrapado el rey?\n\n- La dama en g7 ataca g8 directamente (jaque)\n- {{f8}} — cubierta por la dama en g7 (diagonal)\n- {{h8}} — cubierta por la dama en g7 (diagonal)\n- {{Kxg7}} es ilegal — el **rey en h6** defiende g7\n- El peón de {{h7}} no puede moverse para bloquear: es adyacente\n\n> **Conclusión:** Un sacrificio de dama junto a un rey ahogado es la jugada más sonora del ajedrez. Comprueba siempre si *tu propio rey o caballo* defiende la casilla de aterrizaje — eso es lo que convierte un regalo en un remate."
 }

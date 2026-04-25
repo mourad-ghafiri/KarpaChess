@@ -4,5 +4,8 @@
   "solution": [
     "Nxb7"
   ],
-  "hint": "Win the queen with the knight."
+  "title": "Snatch the Queen",
+  "setup": "The Black queen has wandered to b7, and the white knight on c5 is right next door.",
+  "hint": "From c5, count the eight knight squares. One of them lands on the queen.",
+  "explanation": "## The Idea\n\nThis is the simplest tactic in chess: a piece is hanging, take it. From c5, the knight reaches {{b7}} via -1 file +2 ranks:\n\n- {{Nxb7}} — knight captures queen.\n- Material trade: knight for queen = **+6**, completely winning.\n\n### Why no recapture\n\n1. The Black king on e8 is too far from b7 to recapture (kings move one square).\n2. There are no other Black pieces on the board.\n3. The knight escapes to safety with the queen in its pocket.\n\n### Lesson\n\nBefore searching for combinations, always ask:\n\n- *Is any enemy piece undefended?*\n- *Do I have a piece that reaches it?*\n\nHalf of \"tactics\" are really just hanging-piece patterns spotted quickly.\n\n> Greatness in chess starts with not missing the free pieces."
 }

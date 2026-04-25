@@ -4,27 +4,41 @@
   "summary": "Gerakkan raja dan benteng dalam satu langkah",
   "difficulty": "beginner",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "r3k2r/pppq1ppp/2n1pn2/3p4/3P4/2N1PN2/PPPQ1PPP/R3K2R w KQkq - 0 1",
       "title": "Apa Itu Rokade?",
-      "text": "Rokade adalah satu-satunya langkah dalam catur di mana DUA bidak bergerak sekaligus: raja Anda dan satu benteng. Ini cara tercepat untuk menyelipkan raja ke tempat aman DAN mengaktifkan benteng. Anda bisa melakukan rokade sayap raja (pendek) atau sayap menteri (panjang)." },
-    { "type": "teach",
+      "text": "Rokade adalah **satu-satunya langkah dalam catur** di mana dua bidak bergerak sekaligus — raja Anda dan salah satu benteng Anda, pada giliran yang sama.\n\nIa melakukan dua hal berharga dalam satu tempo:\n\n- **Menyembunyikan raja** di sudut, terlindung di balik dinding pion\n- **Mengaktifkan benteng**, menempatkannya di kolom tengah atau setengah-terbuka\n\n## Dua jenis\n\n- **Rokade kingside (pendek)**: ditulis {{O-O}}. Raja melompat dua kotak ke arah benteng-h; benteng mendarat di sebelahnya.\n- **Rokade queenside (panjang)**: ditulis {{O-O-O}}. Raja melompat dua kotak ke arah benteng-a; benteng melompat ke sisi lain di atasnya.\n\nDalam posisi di atas, kedua sisi telah siap sempurna untuk rokade ke arah mana pun. Bayangkan memainkan {{O-O}} — raja Anda tiba-tiba aman, benteng Anda di f1 mengincar kolom-e.\n\n> Rokade adalah dua langkah hebat yang dibungkus menjadi satu. Jangan sia-siakan."
+    },
+    {
+      "type": "teach",
       "fen": "r3k2r/pppq1ppp/2n1pn2/3p4/3P4/2N1PN2/PPPQ1PPP/R3K2R w KQkq - 0 1",
-      "title": "Aturannya",
-      "text": "Untuk melakukan rokade: (1) raja atau benteng tersebut belum pernah bergerak, (2) tidak ada bidak di antara mereka, (3) raja tidak sedang dalam skak, dan (4) raja tidak melewati atau mendarat di kotak yang diserang." },
-    { "type": "play",
+      "title": "Empat Aturan",
+      "text": "Rokade tampak ajaib, tetapi memiliki persyaratan ketat. Lupakan salah satunya dan langkah itu menjadi ilegal.\n\n## Empat syarat\n\n1. **Tidak satu pun bidak telah bergerak.** Raja dan benteng yang dipilih harus berada di kotak asalnya, tidak tersentuh.\n2. **Kotak di antara mereka kosong.** Tidak ada gajah atau kuda yang menghalangi jalan.\n3. **Raja tidak dalam keadaan skak.** Anda tidak bisa rokade untuk menghindar dari skak.\n4. **Raja tidak melewati atau mendarat di kotak yang diserang.** Kotak transit juga harus aman.\n\nPengingat klasik: *tidak boleh rokade ke dalam, keluar dari, atau melewati skak*.\n\nPerhatikan bahwa **benteng** boleh diserang atau melewati kotak yang diserang — hanya jalur raja yang penting. Itu detail halus tetapi berguna dalam rokade queenside.\n\n> Jika ragu apakah Anda bisa rokade, cek ulang empat aturan itu. Mesin tidak pernah memaafkan langkah ilegal."
+    },
+    {
+      "type": "play",
       "fen": "r3k2r/pppq1ppp/2n1pn2/3p4/3P4/2N1PN2/PPPQ1PPP/R3K2R w KQkq - 0 1",
-      "prompt": "Rokade sayap raja (rokade pendek).",
-      "targetSan": ["O-O"],
-      "hint": "Pada kebanyakan antarmuka catur, Anda cukup menggerakkan raja dua kotak ke arah benteng." },
-    { "type": "play",
+      "prompt": "Rokade kingside dengan **{{O-O}}** — raja ke g1, benteng ke f1, keduanya aman dalam satu langkah.",
+      "targetSan": [
+        "O-O"
+      ],
+      "hint": "Di kebanyakan antarmuka catur Anda cukup memindahkan raja dua kotak ke arah benteng kolom-h — benteng akan mengikuti otomatis."
+    },
+    {
+      "type": "play",
       "fen": "r3k2r/pppq1ppp/2n1pn2/3p4/3P4/2N1PN2/PPPQ1PPP/R3K2R b KQkq - 0 1",
-      "prompt": "Sekarang Hitam rokade sayap menteri (rokade panjang).",
-      "targetSan": ["O-O-O"],
-      "hint": "Gerakkan raja dua kotak ke arah benteng di kolom-a." },
-    { "type": "teach",
+      "prompt": "Sekarang Hitam rokade panjang dengan **{{O-O-O}}** — raja ke c8, benteng ke d8, menyerang lewat kolom-d.",
+      "targetSan": [
+        "O-O-O"
+      ],
+      "hint": "Pindahkan raja dua kotak ke arah benteng kolom-a. Benteng melompat ke d8 dalam gerakan yang sama."
+    },
+    {
+      "type": "teach",
       "fen": "2kr3r/pppq1ppp/2n1pn2/3p4/3P4/2N1PN2/PPPQ1PPP/R4RK1 w - - 0 1",
-      "title": "Selesai!",
-      "text": "Kedua raja aman dan kedua benteng di kolom-a sudah terhubung dengan benteng lainnya. Rokade lebih awal adalah salah satu kebiasaan terpenting dalam catur — usahakan melakukannya pada langkah ke-10 di sebagian besar permainan." }
+      "title": "Kedua Raja Terlindung",
+      "text": "Kedua sisi telah rokade — Putih pendek, Hitam panjang — dan posisi sekarang memiliki karakter penuhnya.\n\nPerhatikan apa yang berubah:\n\n- **Kedua raja sudah keluar dari kolom-e.** Tidak ada lagi pakuan atau colekan tak sengaja dari menteri.\n- **Keempat benteng terhubung** di sepanjang baris belakang masing-masing. Mereka bisa mengayun ke kolom terbuka mana pun.\n- **Kedua pasukan siap tempur.** Pertempuran untuk pusat bisa dimulai.\n\nKetika Anda rokade ke **sisi berlawanan** (satu pemain pendek, satu panjang), waspada — badai pion menjadi mematikan karena masing-masing sisi bisa melempar pion ke raja lawan tanpa membuka raja sendiri. Serangan balapan sering menentukan permainan.\n\n> Targetkan untuk rokade pada langkah ke-10. Rokade terlambat akan tertangkap di tengah papan."
+    }
   ]
 }

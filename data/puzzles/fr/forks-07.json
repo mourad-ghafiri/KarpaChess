@@ -1,8 +1,11 @@
 {
   "id": "forks-07",
-  "fen": "3rk3/8/8/2N5/8/8/8/4K3 w - - 0 1",
+  "fen": "3r1k2/8/8/2N5/8/8/8/4K3 w - - 0 1",
   "solution": [
-    "Ne6"
+    "Ne6+"
   ],
-  "hint": "Fourchette tour et roi."
+  "title": "La Fourchette Royale",
+  "setup": "Le roi noir et la tour sont sur la 8e rangée à seulement deux cases l'un de l'autre — cible parfaite pour un saut de cavalier.",
+  "hint": "Trouvez une case où le cavalier attaque **à la fois** le roi en f8 et la tour en d8.",
+  "explanation": "## L'Idée\n\nC'est une **fourchette de cavalier** d'école. Depuis c5, une seule case frappe les deux pièces noires en un seul L :\n\n- {{Ne6+}} attaque **f8** (le roi) et **d8** (la tour) simultanément.\n- L'échec est forçant — les Noirs doivent y répondre avant tout.\n\n### Pourquoi les Noirs n'ont aucune défense\n\n1. **Capturer le cavalier ?** Le roi en f8 ne peut atteindre e6 en un pas (les rois bougent d'une case). Aucune autre pièce noire à portée.\n2. **S'interposer ?** Les cavaliers sautent — les échecs au cavalier sont inblocables.\n3. **Bouger le roi ?** Le roi doit fuir (Ke7, Ke8, Kg8, Kf7…). La tour reste en d8, sans défense.\n\nAprès le déplacement du roi, {{Nxd8}} ramasse la tour. Les Blancs gagnent **tour contre cavalier** — un gain net de +2 en matériel.\n\n> Quand vous voyez un roi et une tour à deux cases, cherchez la case du cavalier qui touche les deux."
 }

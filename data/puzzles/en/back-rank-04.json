@@ -4,5 +4,8 @@
   "solution": [
     "Rxd8#"
   ],
-  "hint": "Trade rooks — back-rank mate."
+  "title": "Mirror Mate",
+  "setup": "Identical kingside structures, rooks on the same file. The first mover delivers mate.",
+  "hint": "Capture the rook with check. Black's pawns block their own king's escape.",
+  "explanation": "## The Idea\n\nThis is the textbook **back-rank mate** with one move: {{Rxd8#}}.\n\n### Why it's instant mate\n\n1. White's rook captures Black's rook — now the white rook attacks the entire 8th rank.\n2. Black's king on g8 has only three king-step squares:\n   - **f8** ✗ — attacked by the rook.\n   - **h8** ✗ — attacked by the rook.\n   - **f7, g7, h7** ✗ — all blocked by Black's own pawns.\n3. No Black piece can capture the white rook on d8; nothing can block the check.\n\n### The lesson\n\nPosition matters more than material here. Both sides had a rook each — but only one side had the *right* rook on the *right* file. **Active rook on the open file beats sleeping rook in the corner.**\n\n> The 8th rank is the executioner's lane. Always check who controls it."
 }

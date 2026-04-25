@@ -1,44 +1,44 @@
 {
   "id": "notation",
   "title": "Membaca Notasi Catur",
-  "summary": "Menguraikan setiap langkah catur dalam notasi aljabar",
+  "summary": "Decode setiap langkah catur dalam notasi aljabar",
   "difficulty": "beginner",
   "steps": [
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "title": "Sistemnya",
-      "text": "Notasi aljabar menggambarkan setiap langkah secara unik. Kolom adalah huruf a–h, baris adalah angka 1–8. Baris pertama Putih adalah 1, baris Hitam adalah 8. Sebuah kotak adalah kolom+baris: e4, d5, h8."
+      "title": "Sistem Koordinat",
+      "text": "Catur memiliki bahasanya sendiri — **notasi aljabar** — dan begitu Anda mengerti, Anda bisa membaca permainan apa pun dari sejarah, mengikuti komentar apa pun, dan mempelajari buku apa pun.\n\nSetiap kotak di papan punya nama unik yang terdiri dari **huruf** dan **angka**.\n\n## Bagaimana kotak diberi nama\n\n- **Kolom** (kolom yang naik di papan) adalah huruf **a–h**, kiri ke kanan dari sudut pandang Putih.\n- **Baris** adalah angka **1–8**, dimulai dari baris pertama Putih.\n- Gabungkan keduanya dan setiap kotak unik diberi nama — *kolom dulu, lalu baris*.\n\nJadi raja Putih mulai di **e1**, menterinya di **d1**, dan kotak paling terkenal dalam catur — yang sering direbut pion Putih lebih dulu — adalah **e4**.\n\nOrientasi cepat: a1 adalah sudut kiri-bawah dari sisi Putih; h8 adalah kanan-atas.\n\n> Jika Anda bisa menamai setiap kotak tanpa berpikir, Anda sudah unggul dari kebanyakan pemain biasa."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "Huruf Bidak",
-      "text": "Bidak adalah K (Raja), Q (Menteri), R (Benteng), B (Gajah), N (Kuda). Pion tidak memiliki huruf — \"e4\" saja berarti pion ke e4. Penangkapan menggunakan \"x\": Nxe5 berarti kuda menangkap di e5."
+      "text": "Setiap bidak (kecuali pion) mendapat satu huruf kapital.\n\n## Alfabet bidak\n\n- **K** — Raja (King)\n- **Q** — Menteri (Queen)\n- **R** — Benteng (Rook)\n- **B** — Gajah (Bishop)\n- **N** — Kuda (Knight) (`N` karena `K` sudah untuk Raja)\n- *(pion — tidak ada huruf sama sekali)*\n\nSebuah langkah hanyalah **huruf bidak + kotak tujuan**. Jadi {{Nf3}} berarti *kuda ke f3*. Langkah pion melewati huruf — {{e4}} berarti *pion yang bisa secara sah mencapai e4*.\n\n## Pemakanan\n\n- Sebuah **x** antara bidak dan kotak menandai pemakanan: {{Nxe5}} = *kuda memakan di e5*.\n- **Pemakanan pion** menggunakan kolom asal pion: {{exd5}} = *pion-e memakan di d5*.\n\n> Pion itu sederhana: tidak ada huruf, tetapi mereka boleh menggunakan kolomnya saat memakan."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "Simbol Khusus",
-      "text": "\"+\" berarti skak. \"#\" berarti skakmat. \"O-O\" adalah rokade pendek, \"O-O-O\" adalah rokade panjang. \"=\" menandai promosi: e8=Q (pion dipromosikan menjadi menteri). Ketika dua bidak bisa bergerak ke kotak yang sama, kolom atau baris awal ditambahkan: Nbd2 atau R1e1."
+      "text": "Beberapa tanda tambahan memungkinkan notasi menggambarkan segala sesuatu yang bisa terjadi di papan.\n\n## Set lengkap\n\n- **+** — skak. Contoh: {{Bb5+}}.\n- **#** — skakmat. Contoh: {{Qh7#}}.\n- **O-O** — rokade kingside (pendek).\n- **O-O-O** — rokade queenside (panjang).\n- **=Q** — promosi (bidak apa pun). Contoh: {{e8=Q}} mempromosikan pion-e menjadi menteri di e8.\n- **!** dan **?** — tanda anotator untuk langkah *baik* dan *meragukan*; **!!** brilian, **??** blunder.\n\n## Disambiguasi\n\nKetika dua bidak warna sama bisa bergerak ke kotak yang sama, Anda menambahkan kolom atau baris bidak yang bergerak:\n\n- {{Nbd2}} — kuda *kolom-b* bergerak ke d2 (saat kuda lain juga bisa).\n- {{R1e1}} — benteng di *baris ke-1* bergerak ke e1 (saat kedua benteng berbagi kolom-e).\n\n> Begitu Anda bisa membaca notasi, Anda bisa membaca setiap buku catur dalam sejarah."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "prompt": "Mainkan 1.e4 — dorong pion raja.",
+      "prompt": "Buka dengan pion raja — mainkan **{{e4}}**, langkah pertama paling populer dalam catur.",
       "targetSan": [
         "e4"
       ],
-      "hint": "Pilih saja pion di e2 dan gerakkan ke e4."
+      "hint": "Tidak ada huruf bidak berarti itu pion. Dorong pion-e dua kotak ke e4."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
-      "prompt": "Sekarang mainkan 2.Nf3.",
+      "prompt": "Sekarang keluarkan kuda dengan **{{Nf3}}** — menyerang e5 dan mengembangkan ke arah pusat.",
       "targetSan": [
         "Nf3"
       ],
-      "hint": "Kuda dari g1 melompat ke f3."
+      "hint": "Huruf kapital N berarti kuda. Dari g1, ia mendarat di f3 dalam bentuk L."
     }
   ]
 }

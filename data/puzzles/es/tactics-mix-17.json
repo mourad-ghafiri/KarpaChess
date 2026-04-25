@@ -4,5 +4,8 @@
   "solution": [
     "Bc5"
   ],
-  "hint": "Desarrolla el alfil activamente."
+  "title": "Espejo del alfil italiano",
+  "setup": "Las blancas han jugado la apertura italiana, colocando un alfil en **c4** apuntando a f7. Las negras reflejan la amenaza.",
+  "hint": "Cuando tu oponente desarrolla un alfil atacando tu casilla débil, desarrolla *tu* alfil atacando la suya.",
+  "explanation": "## La idea\n\nEsta es una decisión de **desarrollo clásico** en el Juego Italiano. El alfil blanco en c4 mira a la casilla f7 de las negras. Las negras deben responder reflejando: desarrollar el alfil a **c5**, vigilando la casilla débil simétrica de las blancas — **f2**.\n\nLas negras juegan {{Bc5}}.\n\n## ¿Por qué c5?\n\n- El alfil está **activo**: ataca la diagonal larga a7-g1, incluyendo la casilla f2 (defendida solo por el rey blanco).\n- El alfil es **flexible**: no bloquea el desarrollo de ninguna otra pieza.\n- La jugada es **simétrica**: igualar la amenaza de las blancas con una amenaza igual es una idea madura de apertura.\n\n## Lo que esto prepara\n\nEsta es la entrada al **Giuoco Piano** (\"Juego Tranquilo\") o a las líneas más agresivas del **Giuoco Pianissimo**. Ambos lados tienen:\n\n- Un alfil activo en la diagonal larga.\n- Ambos caballos desarrollados.\n- Enroque rápido en camino.\n\n## Patrón a memorizar\n\n> Desarrolla tus alfiles a **casillas activas que ataquen debilidades enemigas clave** — típicamente f2/f7 en la apertura.\n\nNo desperdicies tempo de apertura en jugadas cosméticas. Cada jugada de desarrollo debe mejorar tu posición **y** poner presión sobre el rival. Bc5 hace ambas cosas de un golpe."
 }

@@ -4,5 +4,8 @@
   "solution": [
     "Rb8#"
   ],
-  "hint": "Skakmat baris belakang klasik. Tidak ada yang menghalangi baris ke-8."
+  "title": "Palu Jarak Jauh",
+  "setup": "Benteng Anda di **b2** menatap lajur kosong dengan baris belakang terbuka lebar di ujung lain.",
+  "hint": "Naik ke baris ke-8 — perisai bidak {{f7}}-{{g7}}-{{h7}} menyegel nasib raja.",
+  "explanation": "## Idenya\n\n**Skakmat baris belakang** murni — benteng menempuh sepanjang lajur b lalu mengubah baris ke-8 menjadi zona pembunuhan.\n\nMain {{Rb8#}}.\n\nMengapa raja terjebak?\n\n- {{f8}}, {{h8}} dan setiap kotak baris ke-8 lain — semua dikuasai benteng di b8\n- {{f7}}, {{g7}}, {{h7}} — semua diblokir bidak Hitam sendiri\n- Raja tidak bisa menangkap (b8 jauh) dan tidak ada yang bisa diselipkan\n\n> **Inti:** Benteng yang jauh dari aksi tetap bisa skakmat satu langkah jika baris belakang kosong. Selalu pindai *diagonal panjang* (untuk gajah/menteri) dan *lajur panjang* (untuk benteng/menteri) sebelum bergerak."
 }

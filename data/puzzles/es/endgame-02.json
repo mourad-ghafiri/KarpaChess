@@ -4,5 +4,8 @@
   "solution": [
     "Kc4"
   ],
-  "hint": "Un paso lateral — prepárate para avanzar."
+  "title": "Esquiva la oposición",
+  "setup": "Los reyes se enfrentan a través del peón en **d5** — las negras tienen la oposición directa y a ti te toca mover.",
+  "hint": "Avanzar es imposible y empujar el peón lo pierde. **Muévete lateralmente** para intentar flanquear.",
+  "explanation": "## Principio clave: el flanqueo\n\nCuando el rey defensor está sobre la casilla delante del tuyo con la **oposición**, no puedes progresar por el centro — tu rey no tiene a dónde ir. La técnica es escabullirse por el lado y forzar al rey enemigo a ceder o entregar una casilla clave.\n\n## El plan\n\n1. **{{Kc4}}** — Las blancas pasan a c4, vigilando c5 y b5. Ir hacia el otro lado (Ke4) es la imagen en espejo y conlleva la misma idea.\n2. La mejor respuesta negra es **...Kc6**, recuperando la oposición. Las blancas vuelven con Kd4 y prueban por el otro flanco.\n3. La regla a recordar: **el bando que mueve pierde la oposición**. Así que sigues sondeando de un flanco a otro hasta que las negras se quedan sin casillas en espejo.\n\n## Qué pasa con la jugada equivocada\n\nUn 1.d6+? prematuro cambia el peón por nada: 1...Kxd6 y la posición es tablas muertas con rey solo. Igualmente 1.Kd3? le entrega a las negras la oportunidad de tomar la oposición más adelante con 1...Kd5, fijando el peón. La disciplina: **no empujes el peón mientras el rey enemigo se siente sobre su casilla de coronación**, y usa primero el rey para romper el bloqueo."
 }

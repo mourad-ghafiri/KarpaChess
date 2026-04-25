@@ -1,27 +1,29 @@
 {
   "id": "discovered-attack",
-  "title": "Serangan Terbuka",
-  "summary": "Satu bidak pindah — bidak lain menyerang",
+  "title": "Serangan Tersembunyi",
+  "summary": "Satu buah bergerak — buah lain menyerang",
   "difficulty": "intermediate",
   "steps": [
     {
       "type": "teach",
       "fen": "4k3/8/8/8/4N3/8/8/4R2K w - - 0 1",
       "title": "Membuka Tabir",
-      "text": "Serangan terbuka terjadi ketika Anda menggerakkan salah satu bidak Anda dan mengungkap serangan dari bidak lain di belakangnya. Ketika serangan yang terungkap adalah skak DAN bidak yang bergerak juga memberi skak, itu disebut skak ganda — taktik paling menghancurkan dalam catur."
+      "text": "**Serangan tersembunyi** adalah langkah dua-untuk-satu. Anda menggerakkan salah satu buah, *dan buah di belakangnya* — yang sebelumnya terhalang — tiba-tiba menyerang sesuatu. Anda mendapatkan dua ancaman dari satu langkah.\n\n## Konfigurasinya\n\n- Buah jarak jauh Anda (benteng, gajah, atau menteri) mengincar sasaran lawan.\n- Salah satu buah **Anda sendiri** menghalangi garis tersebut.\n- Buah penghalang itu bisa pindah untuk membuat ancamannya sendiri — sekaligus *membuka* garis.\n\n## Geometrinya\n\nAnda butuh tiga hal di satu garis: penyerang tersembunyi Anda, penghalang Anda sendiri, dan sasaran lawan. Penghalang adalah **pin pemicu** — ketika ia pergi, senjata meletus.\n\n## Dua varian yang menghancurkan\n\n- **Skak tersembunyi** — buah yang terbuka memberi skak sementara buah yang bergerak merebut material di tempat lain. Lawan *harus* menjawab skak, jadi buah yang ditangkap tidak bisa dipertahankan tepat waktu.\n- **Skak ganda** — buah yang bergerak *dan* buah yang terbuka menyerang raja sekaligus. Raja **harus** bergerak; Anda tidak bisa memblokir dua skak dengan satu buah, dan menangkap salah satu menyisakan yang lain.\n\n## Cara menemukannya\n\n1. Identifikasi setiap buah jarak jauh Anda yang mengincar raja atau menteri lawan.\n2. Periksa apakah salah satu buah Anda sendiri menghalangi.\n3. Tanyakan: ke mana penghalang itu bisa pindah untuk *menyerang sesuatu* sendiri?\n4. Pilih langkah yang menciptakan ancaman kedua terbesar — idealnya, juga skak.\n\nDi sini benteng di e1 sudah membidik e8. Kuda di e4 adalah pin pemicu. {{Nd6+}} menyerang raja dengan kuda **dan** membuka benteng di e8 — skak ganda.\n\n> Serangan tersembunyi adalah satu langkah yang membuat dua ancaman. Cari pin pemicu di pasukan Anda sendiri."
     },
     {
       "type": "play",
       "fen": "4k3/8/8/8/4N3/8/8/4R2K w - - 0 1",
-      "prompt": "Gerakkan kuda untuk mengekspos benteng — lebih baik lagi, buat kuda JUGA menyerang raja.",
-      "targetSan": ["Nd6+"],
-      "hint": "Nd6 menyerang e8 DAN mengungkap benteng. Skak ganda!"
+      "prompt": "Lepaskan **skak ganda** dengan **{{Nd6+}}** — kuda menyerang, dan benteng terbuka.",
+      "targetSan": [
+        "Nd6+"
+      ],
+      "hint": "Petak kuda mana yang menyerang raja *dan* membersihkan lajur-e dalam satu langkah?"
     },
     {
       "type": "teach",
-      "fen": "4k3/8/3N4/8/8/8/8/4R2K w - - 0 1",
-      "title": "Mengapa Mematikan",
-      "text": "Terhadap skak ganda, raja HARUS bergerak — Anda tidak bisa memblokir dua serangan dengan satu bidak, dan menangkap salah satu menyisakan yang lain. Skak ganda adalah di antara pola skakmat tercepat dalam catur."
+      "fen": "4k3/8/3N4/8/8/8/8/4R2K b - - 0 1",
+      "title": "Mengapa Skak Ganda Mematikan",
+      "text": "Terhadap skak biasa, pembela memiliki tiga pilihan: tangkap penyerang, blokir, atau pindahkan raja. **Skak ganda menghilangkan dua yang pertama.**\n\n## Mengapa memblokir dan menangkap gagal\n\n- Satu buah tidak bisa memblokir dua garis serangan secara bersamaan.\n- Menangkap salah satu dari dua penyerang masih menyisakan yang lain memberi skak.\n- Itu menyisakan hanya satu jawaban legal: **raja harus bergerak.**\n\n## Konsekuensi praktis\n\n- Skak ganda adalah dasar banyak kombinasi mat terkenal.\n- Bahkan pengorbanan menteri pun layak jika skak ganda yang dihasilkan memaksa.\n- Raja dengan sedikit petak pelarian dan skak ganda biasanya adalah raja yang *dimat*.\n\n> Paku raja; ia tetap. Skak raja; ia menghindar. *Skak ganda* raja; ia lari — dan Anda yang memilih ke mana."
     }
   ]
 }

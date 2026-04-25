@@ -4,5 +4,8 @@
   "solution": [
     "Qe8#"
   ],
-  "hint": "N'allez pas en ligne droite — choisissez la case déjà gardée par votre roi."
+  "title": "Étranglement Diagonal",
+  "setup": "Roi et dame sont alignés sur la **colonne h** — mais le mat se cache sur le côté.",
+  "hint": "Ne donnez pas échec depuis h7 — c'est pat. Passez sur la grande diagonale pour que {{g7}} reste couverte par votre roi.",
+  "explanation": "## L'Idée\n\nCette position est un classique **piège de pat** déguisé en mat. Le coup naturel {{Qg6}} ou {{Qh7}} serait soit pat soit laisserait le roi en g8. L'astuce est de venir de côté.\n\nJouez {{Qe8#}}.\n\nPourquoi le roi est-il piégé ?\n\n- {{g8}} — couverte par la dame le long de la 8e rangée\n- {{g7}} — contrôlée par votre propre roi en **h6**\n- {{h7}} — aussi contrôlée par votre roi en h6\n- Le roi ne peut capturer (e8 est loin) et rien ne peut s'interposer\n\n> **À retenir :** Dans la finale R+D contre R, méfiez-vous du pat. La dame mate souvent à *un saut de cavalier* du roi ennemi — jamais directement adjacente sauf si votre propre roi la défend."
 }

@@ -4,5 +4,8 @@
   "solution": [
     "Rxe7+"
   ],
-  "hint": "Menteri terikat pada raja oleh kolom-e — tangkap dia."
+  "title": "Penjepit Lajur E",
+  "setup": "Kedua raja berdiri di **lajur e**, dengan menteri hitam terjepit antara rajanya dan benteng putih di e2.",
+  "hint": "Saat menteri melindungi rajanya, dia menjadi sasaran tetap.",
+  "explanation": "## Idenya\n\n**Pakuan absolut** klasik: menteri hitam di e7 tidak bisa bergerak karena melakukannya akan menyingkap raja di e8 ke skak dari benteng putih di e2.\n\nPutih memainkan {{Rxe7+}}, memanen menteri.\n\n- {{Kxe7}} adalah satu-satunya jawaban legal — raja harus menangkap benteng, karena tidak ada lain yang bisa menghalangi atau bergerak keluar dari skak.\n- Hitungan material setelah pertukaran: Putih melepas benteng (5) dan menang menteri (9). Net **+4** poin.\n\n## Pola untuk Diingat\n\n> Buah yang terpaku bukan benar-benar buah — dia adalah **target**.\n\nSelalu tanya: *\"Apakah ada buah lawan di lajur, baris, atau diagonal yang sama dengan rajanya?\"* Jika ya, Anda mungkin punya pakuan. Tumpuk penyerang ke buah yang terpaku dan material jatuh ke pangkuan Anda."
 }

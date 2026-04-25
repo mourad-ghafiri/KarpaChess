@@ -1,26 +1,26 @@
 {
   "id": "catalan-advanced",
   "title": "La Catalana",
-  "summary": "Presión posicional desde la primera jugada",
+  "summary": "Apretón posicional desde la primera jugada",
   "difficulty": "advanced",
   "steps": [
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "title": "El Arma de la Larga Diagonal",
-      "text": "La Catalana (1.d4 Nf6 2.c4 e6 3.g3) combina la estructura del Gambito de Dama con un alfil fianquetado. Las Blancas obtienen una ventaja leve pero persistente — ajedrez técnico de desgaste. La favorita de Kramnik."
+      "title": "El Arma de la Diagonal Larga",
+      "text": "La **Apertura Catalana** es el sueño del *técnico* — un sistema lento, posicional y demoledor del alma que combina la estructura del flanco de dama del Gambito de Dama con la presión por la diagonal larga de un fianchetto. Llamada así por el torneo de Barcelona de 1929, se hizo famosa como arma de gran maestro usada por **Vladimir Kramnik**, **Levon Aronian**, **Anish Giri** y **Magnus Carlsen** para torturar a sus rivales durante más de 60 jugadas.\n\n## Cómo se llega a ella\n\nLa secuencia que la define es {{d4}} **{{Nf6}}** {{c4}} **{{e6}}** {{g3}}. La pequeña **3.g3** anuncia la Catalana — las blancas van a poner el alfil en g2 y dominar la diagonal larga h1-a8.\n\n## Qué quiere cada bando\n\n- **Plan blanco:** completar el fianchetto con {{Bg2}}, desarrollar con **{{Nf3}}**, **{{O-O}}**, **{{Nbd2}}** o **{{Nc3}}**, **{{Qc2}}**, **{{Rd1}}** o **{{e4}}**. El alfil de g2 presiona d5/c6/b7 para siempre.\n- **Plan negro:** decidir si tomar el peón c (Catalana Abierta con **...dxc4**), mantenerse sólido con **...Be7, ...0-0, ...c6** (Catalana Cerrada) o jugar agudamente con **...c5**. Liberar al alfil de c8 es siempre la prioridad número uno.\n- **Estructura de peones:** *estructura catalana* — peones blancos en d4-c4 (o, tras el cambio, solo d4) sin peón central en e2-e4, y un alfil en g2. Los peones negros en d5-e6 forman un muro tipo Eslava.\n\n## Por qué es tan dura de afrontar\n\nLa Catalana tiene pocas trampas tácticas. Las blancas simplemente juegan *buena jugada tras buena jugada* — y poco a poco, el alfil de g2 empieza a dominar, los peones del flanco de dama aprietan y las negras se quedan sin aire.\n\n> La Catalana es el equivalente ajedrecístico de una pitón: ni un solo mordisco, solo un apretón lento e ineludible."
     },
     {
       "type": "teach",
       "fen": "rnbqkb1r/pppp1ppp/4pn2/8/2PP4/6P1/PP2PP1P/RNBQKBNR b KQkq - 0 3",
-      "title": "¿Por Qué el Fianqueto?",
-      "text": "El alfil en g2 ejerce presión a largo plazo sobre la diagonal a8-h1. Si las Negras juegan ...dxc4 (Catalana Abierta), las Blancas a menudo entregan el peón a cambio de presión continua. Técnica pura."
+      "title": "¿Por Qué el Fianchetto?",
+      "text": "El planteamiento g3 + Bg2 parece tranquilo, pero el alfil en g2 es una de las piezas más poderosas del ajedrez. Aquí va por qué.\n\n## El alcance del alfil de g2\n\n- La **diagonal a8-h1** atraviesa las casillas más importantes del tablero: b7, c6, d5, e4, f3, g2, h1. Combinada con **c4**, el alfil crea presión duradera sobre las casillas claras del flanco de dama.\n- Incluso cuando ocurre **...dxc4**, el alfil *extiende su alcance* más allá por la diagonal — por eso a las blancas no les importa *ceder* el peón c4 temporalmente.\n- El alfil también es una *pieza defensiva* — cubre al rey blanco en g1 y todo el eje h1-a8 detrás del rey.\n\n## El tema de gambito de la Catalana\n\nEn la **Catalana Abierta** (tras **3...d5 4.Nf3 dxc4**), las blancas a menudo *no* intentan recuperar el peón c4 inmediatamente. En lugar de eso, las blancas juegan **5.Bg2** y desarrollan, apostando a que la presión a largo plazo supera a un peón.\n\nUna línea ejemplo famosa: **5.Bg2 a6 6.0-0 Nc6 7.e3 Bd7 8.Qe2** — las piezas blancas fluyen a casillas perfectas, y el peón c ausente se vuelve irrelevante.\n\n## La Catalana Cerrada\n\nSi las negras rehúsan con **...Be7, ...0-0, ...c6, ...Nbd7**, la estructura catalana queda intacta. Las blancas juegan entonces **Bf4** o **Bg5**, **Rd1**, **Nc3-e2-f4**, y sondean lentamente en busca de debilidades.\n\n> El alfil catalán es un asesino a larga distancia. Dale tiempo y siempre encuentra un objetivo."
     },
     {
       "type": "teach",
       "fen": "rnbqkb1r/pppp1ppp/4pn2/8/2PP4/6P1/PP2PP1P/RNBQKBNR b KQkq - 0 3",
-      "title": "Posición Ideal Catalana",
-      "text": "El ideal blanco: diagonal larga abierta para el Bg2, caballos en d2 y f3, torres conectadas, peones centrales fuertes. Las Negras deben jugar con precisión o serán estranguladas. Magnus Carlsen usa la Catalana para triturar a sus rivales."
+      "title": "La Posición Soñada de la Catalana",
+      "text": "Todo jugador de la Catalana tiene en mente la misma posición soñada. Aquí va.\n\n## El planteamiento soñado de la Catalana\n\n- **Alfil en g2** — fianchetado e intocable, dominando la diagonal larga.\n- **Caballos en d2 y f3** — flexibles, apoyando rupturas centrales.\n- **Peones en c4 y d4** — restringiendo el flanco de dama negro.\n- **Torres conectadas en c1 y d1** — presionando las columnas c y d.\n- **Dama en c2 o e2** — apoyando los peones centrales y el alfil.\n- **Rey en g1** — enrocado y seguro.\n\nDesde ahí, las blancas sondean: quizás un empuje **c4-c5** para ganar espacio, quizás una ruptura **e2-e4** para abrir la posición, quizás una lenta maniobra de caballo a **e5** para dominar el centro.\n\n## Los retos defensivos de las negras\n\n- El **alfil de c8** es el mal alfil de la Catalana. Las negras necesitan encontrarle un futuro — **...b6/Bb7** o **...Bd7-Bc6** son las ideas principales.\n- Las negras deben **cambiar piezas** con cuidado. En la Catalana, los cambios suelen favorecer a las blancas porque su alfil de g2 brilla más que casi cualquier pieza negra.\n- El flanco de dama negro es **vulnerable**. La casilla b7 es una debilidad a largo plazo por la presión del alfil de g2.\n\n## Por qué los grandes maestros la aman\n\nLa Catalana produce un solo tipo de posición — una **ligera ventaja blanca** — una y otra vez. Premia la técnica de finales y la paciencia. **Magnus Carlsen** la ha usado para moler a sus rivales hasta convertirlos en polvo en innumerables partidas, a menudo convirtiendo una pequeña ventaja en más de 80 jugadas.\n\n> La Catalana: durante treinta jugadas no pasa nada, y de pronto las blancas ganan. Eso es maestría."
     }
   ]
 }

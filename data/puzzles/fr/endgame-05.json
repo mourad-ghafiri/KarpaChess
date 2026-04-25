@@ -4,5 +4,8 @@
   "solution": [
     "Re8+"
   ],
-  "hint": "Finale de tours gagnante — coupez le roi."
+  "title": "Couper le Roi",
+  "setup": "Une finale de tours où le roi noir est blotti dans le coin — votre tour en e2 est la pièce la plus active et prête à **dominer la dernière rangée**.",
+  "hint": "Les tours actives gagnent les finales. Faites échec au roi et **coupez-le** du reste de l'échiquier avant d'amener votre roi.",
+  "explanation": "## Principe Clé : La Tour Active\n\nDans les finales de tours, le camp avec la **tour la plus active** gagne ou tient presque toujours. Une tour active attaque les pions, restreint le roi ennemi ou se tient derrière un pion passé. Une tour passive collée à ses propres pions est un handicap presque fatal.\n\n## Le Plan\n\n1. **{{Re8+}}** — Les Blancs s'emparent de la dernière rangée ouverte avec échec. La seule réponse légale des Noirs est **{{Kf7}}** (h7 est occupée par le pion, h8 est aussi couverte par la tour sur la 8e rangée).\n2. Avec la tour **dominant la 8e rangée**, le roi noir est exclu du coin et lié à la défense. Maintenant le roi blanc remonte l'échiquier : Kg2, Kf3, Kg4, Kf5 — rejoignant l'attaque sans opposition.\n3. Les Blancs ciblent ensuite les pions noirs faibles en g7 et h7. Avec le roi actif et la tour coupant la retraite, les pions de l'aile-roi tombent et le pion h finit par promouvoir.\n\n> Le mantra : **tour sur la 7e ou 8e, roi remonté, pions tombent comme des dominos**.\n\n## Ce Qui Ne Va Pas avec un Coup Passif\n\nUn coup discret comme 1.Kf2? est bien plus lent. Les Noirs ont le temps de jouer 1...Kf7 eux-mêmes, centralisant leur roi et accueillant votre invasion à armes égales. L'avantage est réel mais plus dur à concrétiser. À l'inverse, 1.Re8+ **force** le roi noir sur une case passive d'abord — transformant un petit avantage en étranglement gagnant. Dans les finales de tours, **ne dérivez pas ; faites échec, coupez et envahissez**."
 }

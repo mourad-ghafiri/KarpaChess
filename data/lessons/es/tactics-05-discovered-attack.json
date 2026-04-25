@@ -8,20 +8,22 @@
       "type": "teach",
       "fen": "4k3/8/8/8/4N3/8/8/4R2K w - - 0 1",
       "title": "El Desenmascarado",
-      "text": "Un ataque descubierto sucede cuando mueves una de tus piezas y revelas un ataque de otra detrás de ella. Cuando el ataque revelado es un jaque Y la pieza movida también da jaque, se llama jaque doble — la táctica más devastadora del ajedrez."
+      "text": "Un **ataque descubierto** es una jugada dos en uno. Mueves una de tus piezas, *y la pieza de detrás* — que estaba bloqueada — de pronto ataca algo. Obtienes dos amenazas con un solo movimiento.\n\n## El montaje\n\n- Una pieza tuya de largo alcance (torre, alfil o dama) apunta a un objetivo enemigo.\n- Una de tus **propias** piezas se interpone en el camino, bloqueando la línea.\n- Esa pieza bloqueadora puede moverse para crear su propia amenaza — y *desenmascarar* la línea al mismo tiempo.\n\n## La geometría\n\nNecesitas tres elementos en una línea: tu atacante oculto, tu propio bloqueador y el objetivo enemigo. El bloqueador es el **percutor** — cuando se va, la pistola se dispara.\n\n## Dos variantes devastadoras\n\n- **Jaque descubierto** — la pieza desenmascarada da jaque mientras la pieza que se mueve toma material en otra parte. El rival *debe* responder al jaque, así que la pieza capturada no puede defenderse a tiempo.\n- **Jaque doble** — tanto la pieza que se mueve *como* la pieza desenmascarada atacan al rey a la vez. El rey **debe** moverse; no puedes bloquear dos jaques con una pieza, y capturar uno deja al otro.\n\n## Cómo encontrarlo\n\n1. Identifica cualquier pieza tuya de largo alcance apuntando al rey o dama enemigos.\n2. Comprueba si una de tus propias piezas se interpone.\n3. Pregúntate: ¿a dónde puede ese bloqueador moverse para *atacar algo* por sí mismo?\n4. Elige la jugada que cree la mayor segunda amenaza — idealmente, también un jaque.\n\nAquí la torre en e1 ya vigila e8. El caballo en e4 es el percutor. {{Nd6+}} ataca al rey con el caballo **y** desenmascara la torre sobre e8 — un jaque doble.\n\n> Un ataque descubierto es la jugada que crea dos amenazas. Busca el percutor en tu propio ejército."
     },
     {
       "type": "play",
       "fen": "4k3/8/8/8/4N3/8/8/4R2K w - - 0 1",
-      "prompt": "Mueve el caballo para desenmascarar la torre — y que además el caballo ATAQUE al rey.",
-      "targetSan": ["Nd6+"],
-      "hint": "Nd6 ataca e8 Y descubre la torre. ¡Jaque doble!"
+      "prompt": "Dispara un **jaque doble** con **{{Nd6+}}** — el caballo da jaque y la torre se desenmascara.",
+      "targetSan": [
+        "Nd6+"
+      ],
+      "hint": "¿Qué casilla de caballo ataca al rey *y* despeja la columna e en una sola jugada?"
     },
     {
       "type": "teach",
-      "fen": "4k3/8/3N4/8/8/8/8/4R2K w - - 0 1",
-      "title": "Por Qué es Letal",
-      "text": "Contra un jaque doble, el rey DEBE moverse — no puedes bloquear dos ataques con una pieza, y capturar una deja la otra. Los jaques dobles están entre los patrones de mate más rápidos del ajedrez."
+      "fen": "4k3/8/3N4/8/8/8/8/4R2K b - - 0 1",
+      "title": "Por Qué el Jaque Doble Es Letal",
+      "text": "Contra un jaque normal, el defensor tiene tres opciones: capturar al que da jaque, bloquearlo o mover el rey. **El jaque doble elimina las dos primeras.**\n\n## Por qué bloquear y capturar fallan\n\n- Una pieza no puede bloquear dos líneas de ataque a la vez.\n- Capturar a uno de los dos atacantes deja al otro dando jaque.\n- Solo queda una respuesta legal: **el rey debe moverse**.\n\n## Consecuencias prácticas\n\n- Los jaques dobles son la base de muchas combinaciones de mate famosas.\n- Incluso un sacrificio de dama está bien si el jaque doble resultante es forzado.\n- Un rey con pocas casillas de huida y un jaque doble suele ser un rey *mate*.\n\n> Clava a un rey y se queda. Da jaque a un rey y esquiva. *Doble jaque* a un rey y huye — y tú eliges a dónde."
     }
   ]
 }

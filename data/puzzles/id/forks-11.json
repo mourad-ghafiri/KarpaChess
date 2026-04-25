@@ -4,5 +4,8 @@
   "solution": [
     "Nxd5"
   ],
-  "hint": "Sederhana saja, kuda menangkap menteri."
+  "title": "Kuda Memakan Menteri",
+  "setup": "Menteri Hitam melangkah ke kotak yang bisa dilompati kuda Putih — dan tidak ada bidak Hitam yang membelanya.",
+  "hint": "Hitung: siapa yang menyerang {{d5}}? Siapa yang membelanya?",
+  "explanation": "## Idenya\n\nMenteri di kotak yang diserang kuda tanpa pembela adalah **hadiah**. Taktik paling sederhana:\n\n- {{Nxd5}} — kuda dari e3 melompat ke d5 (salah satu dari delapan kotak L) dan menangkap menteri.\n- Pertukaran material: kuda (3) untuk menteri (9) = **+6**, pergeseran menang.\n\n### Cara mengenalinya saat bertanding\n\n1. Setelah lawan menggerakkan menteri, tanyakan: *bidak minor saya mana yang bisa melompat atau meluncur ke kotak itu?*\n2. Hitung pembela: jika nol, ambil.\n3. Hitung pembela lagi: kadang pembela tersembunyi (gajah jarak jauh atau benteng) membuat penangkapan kehilangan material.\n\nDi sini, satu-satunya bidak Hitam selain raja adalah menterinya sendiri, dan raja di e8 terlalu jauh untuk membela d5.\n\n> Pemula menggantungkan menterinya jauh lebih sering daripada yang mereka akui. Selalu tanyakan: *apakah menteri saya di kotak kuda?*"
 }

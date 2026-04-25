@@ -1,29 +1,29 @@
 {
   "id": "kings-pawn-family",
-  "title": "1.e4 — Pion Raja",
-  "summary": "Gambaran umum setiap balasan utama 1.e4",
+  "title": "1.e4 — Bidak Raja",
+  "summary": "Gambaran umum setiap balasan utama untuk 1.e4",
   "difficulty": "beginner",
   "steps": [
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
       "title": "Pembukaan Romantis",
-      "text": "1.e4 membuka garis untuk menteri dan gajah serta berjuang untuk pusat dengan pion. Tajam, taktis, dan langkah pertama paling populer dalam sejarah catur."
+      "text": "**{{e4}}** adalah langkah pertama paling populer dalam sejarah catur. Bobby Fischer menyebutnya *best by test*, dan ia ada benarnya — langkah ini melakukan lima hal sekaligus.\n\n## Apa yang dicapai 1.e4\n\n- **Mengklaim kotak pusat** — e4 adalah salah satu dari empat kotak kunci.\n- **Membebaskan menteri** sepanjang diagonal d1-h5.\n- **Membebaskan gajah f1** sepanjang diagonal a6-f1.\n- **Belum mengancam apa-apa** — tetapi menciptakan kemungkinan instan.\n- **Menentukan nada** — permainan terbuka dan taktis jauh lebih umum setelah 1.e4 daripada 1.d4.\n\n## Apa yang umumnya diinginkan Putih\n\n- Mengeluarkan buah dengan cepat (kuda ke f3 dan c3).\n- Memberi tekanan pada kotak kunci seperti **f7** dan **e5**.\n- Berokade pendek dan menggunakan lajur e untuk aktivitas benteng.\n\n## Mengapa pemula sebaiknya mencobanya\n\nPermainan setelah 1.e4 cenderung terbuka, dengan taktik lebih jelas dan keputusan lebih cepat. Berlatih 1.e4 mempertajam mata taktis Anda dengan cara yang sering tidak dilakukan sistem d4 yang lambat.\n\n> 1.e4 adalah matahari pagi catur yang cerah — jalur terbuka, buah lincah, pertarungan sungguhan."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
       "title": "Balasan Utama Hitam",
-      "text": "Hitam memiliki beberapa jawaban serius: 1...e5 (klasik, simetris), 1...c5 (Sisilia, asimetris), 1...e6 (French), 1...c6 (Caro-Kann), 1...d5 (Skandinavia). Masing-masing mengarah ke permainan yang berbeda."
+      "text": "Hitam memiliki menu balasan yang kaya untuk 1.e4 — masing-masing mendefinisikan dunia catur yang berbeda.\n\n## Enam besar\n\n- **1...e5** — *Permainan Terbuka*. Mencerminkan klaim Putih. Mengarah ke Italia, Ruy Lopez, Scotch, King's Gambit, Petroff, dan lainnya.\n- **1...c5** — *Pertahanan Sisilia*. Pilihan paling tajam dan paling populer bagi petarung. Asimetris, dinamis, penuh teori.\n- **1...e6** — *Pertahanan Prancis*. Solid dan strategis. Hitam membangun rantai bidak setelah **...d5**.\n- **1...c6** — *Pertahanan Caro-Kann*. Tenang dan antipeluru. Mempersiapkan ...d5 dengan dukungan bidak-c.\n- **1...d5** — *Pertahanan Skandinavia*. Langsung: tukar bidak segera. Mudah dipelajari.\n- **1...Nf6** — *Pertahanan Alekhine*. Provokasi hipermodern. Menggoda bidak Putih maju untuk diserang nanti.\n\n## Kurang umum tetapi sah\n\n- **1...d6** — *Pirc / Modern* — biarkan Putih membangun, lalu balas serang.\n- **1...g6** — *Pertahanan Modern* — fianchetto dulu, putuskan kemudian.\n- **1...Nc6** — *Pertahanan Nimzowitsch* — aneh tetapi bisa dimainkan.\n\n## Cara memilih apa yang dimainkan\n\n- *Taktis, ingin menyerang?* — Permainan Terbuka dengan 1...e5 atau Sicilian Najdorf.\n- *Benci menghafal?* — Caro-Kann atau Pirc.\n- *Suka permainan posisional?* — Prancis atau Caro-Kann.\n\n> Pilih satu pertahanan dan pelajari secara mendalam. Lima sistem kuat lebih baik daripada lima puluh yang dangkal."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
-      "prompt": "Balas 1.e4 dengan balasan klasik.",
+      "prompt": "Hadapi 1.e4 dengan balasan klasik — mainkan **{{e5}}** dan tegakkan klaim Anda sendiri di tengah.",
       "targetSan": [
         "e5"
       ],
-      "hint": "1...e5 mencerminkan klaim Putih di pusat."
+      "hint": "1...e5 adalah jawaban yang dihormati waktu. Ia mencerminkan Putih dan membuka diagonal yang sama untuk gajah dan menteri Anda."
     }
   ]
 }

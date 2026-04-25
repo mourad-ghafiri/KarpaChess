@@ -4,5 +4,8 @@
   "solution": [
     "Rxa8+"
   ],
-  "hint": "Tukar benteng lawan dengan skak."
+  "title": "Tukar ke Akhir Permainan yang Menang",
+  "setup": "Dua benteng saling berhadapan di **lajur a** — dan raja Hitam juga di baris belakang.",
+  "hint": "Saat Anda bisa menukar benteng dengan skak dan masuk ke akhir yang menang, lakukan tanpa ragu.",
+  "explanation": "## Idenya\n\nIni adalah taktik **penyederhanaan**. Benteng Putih menukar dengan benteng Hitam, tetapi dengan bonus penting: itu dilakukan **dengan skak**, mendikte jawaban Hitam.\n\nPutih memainkan {{Rxa8+}}.\n\n## Jawaban Hitam yang Terpaksa\n\nBenteng di a8 menyerang raja di e8 di sepanjang **baris kedelapan**. Hitam hanya punya satu opsi:\n\n- {{Kxa8}} — mustahil, raja tidak bisa teleportasi empat petak.\n- Raja harus pindah keluar dari skak: {{Kd7}}, {{Ke7}}, atau {{Kf7}}. Setiap satu meninggalkan benteng di a8 hidup.\n\nTunggu — sebenarnya dengan benteng sekarang di a8 dan tidak terjaga, raja hitam tidak akan pernah mencapainya (4 petak jauhnya). Hitam memindahkan raja, **dan Putih unggul satu benteng penuh!**\n\n## Mengapa Ini Menang\n\nPosisi yang dihasilkan adalah **Raja + Benteng vs. Raja sendirian** — kemenangan terpaksa. Setiap pemula harus tahu cara menskakmat dengan K+R vs K. Teka-teki ini karenanya adalah kemenangan terpaksa dengan cara yang paling bersih: satu tangkapan langsung mengarah ke akhir yang menang.\n\n## Pola untuk Diingat\n\n> Pertukaran yang membawa Anda ke akhir yang menang bernilai jauh lebih banyak daripada serangan spektakuler yang gagal.\n\nCari peluang untuk **menyederhanakan** saat Anda unggul, bahkan dengan cara taktis."
 }

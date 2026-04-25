@@ -1,21 +1,29 @@
 {
   "id": "remove-the-defender",
   "title": "Éliminer le défenseur",
-  "summary": "Éliminer la pièce qui tient leur position",
+  "summary": "Ôter la pièce qui tient toute leur position",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "5rk1/R4ppp/8/8/8/8/5PPP/6K1 w - - 0 1",
       "title": "Le défenseur clé",
-      "text": "Beaucoup de tactiques échouent parce qu'une seule pièce ennemie défend tout. La solution : l'éliminer ou l'échanger. Ici la tour noire en f8 défend la dernière rangée. Si les Blancs prennent le pion f7, la tour est détournée et le roi est nu." },
-    { "type": "play",
+      "text": "La plupart des positions tiennent grâce à **une** pièce. Retirez-la et le reste s'effondre. Cette tactique s'appelle *l'élimination du défenseur* (ou parfois *l'enlèvement du gardien*).\n\n## Ce qu'il faut chercher\n\n- Une faiblesse de dernière rangée défendue par **une** seule tour.\n- Un pion défendant un cavalier, ou un cavalier défendant une case-clé.\n- Une dame coincée dans un rôle défensif autour du roi.\n\nSi vous pouvez prendre, échanger ou chasser cette pièce unique, toute la structure tombe.\n\n## La géométrie\n\nDressez la carte des **défenseurs** de chaque case-clé adverse. Pour un mat du couloir, la dernière rangée est la case-clé ; le défenseur, c'est la pièce qui la contrôle. Pour un cavalier en prise, le défenseur, c'est le pion ou la pièce qui le protège.\n\n## Comment la trouver\n\n1. Identifiez la **menace** que vous voudriez pouvoir jouer — souvent un mat ou une prise gagnante.\n2. Repérez la **pièce unique** qui empêche cette menace.\n3. Trouvez un moyen de **l'éliminer** : capturez-la (même au prix d'un sacrifice), échangez-la ou forcez-la à partir.\n4. Vérifiez que la *suite* fonctionne après la reprise.\n\nIci, {{Rxf7}} fracasse le défenseur en f7. La tour noire en f8 gardait la dernière rangée ; si les Noirs reprennent par {{Rxf7}}, la tour est *hors* de la dernière rangée et les Blancs s'engouffrent au coup suivant.\n\n> Un défenseur éliminé, c'est une cible démasquée."
+    },
+    {
+      "type": "play",
       "fen": "5rk1/R4ppp/8/8/8/8/5PPP/6K1 w - - 0 1",
-      "prompt": "Prenez le pion f7 — cela force les Noirs à réagir.",
-      "targetSan": ["Rxf7"],
-      "hint": "Rxf7 élimine le défenseur de la dernière rangée." },
-    { "type": "teach",
+      "prompt": "Brisez le pion f7 avec **{{Rxf7}}** — et regardez la dernière rangée s'effondrer.",
+      "targetSan": [
+        "Rxf7"
+      ],
+      "hint": "Quelle pièce garde la dernière rangée noire ? Que se passe-t-il si vous la forcez à bouger ?"
+    },
+    {
+      "type": "teach",
       "fen": "5rk1/5Rpp/8/8/8/8/5PPP/6K1 b - - 0 1",
-      "title": "Ce qui suit",
-      "text": "Les Noirs doivent maintenant gérer la tour en f7. S'ils échangent avec ...Rxf7, la dernière rangée reste faible. Demandez-vous toujours : 'Qu'est-ce qui tient leur position ensemble ?' La réponse est généralement une pièce précise." }
+      "title": "La suite",
+      "text": "Après {{Rxf7}}, les Noirs doivent réagir. Quel que soit leur choix, leur structure a été mise en pièces.\n\n## Les options noires\n\n- **{{Rxf7}}** — éloigne la tour de la dernière rangée. Les Blancs vont alors envahir la 8e rangée avec leurs pièces lourdes.\n- **Coup de roi** — laisse aux Blancs un pion en plus loin dans le camp noir, avec des pièces actives.\n- **Ignorer** — les Blancs gagnent encore plus de matériel par {{Rxg7+}}.\n\n## La leçon\n\nPosez-vous toujours la même question diagnostique :\n\n> *Quelle pièce ennemie unique m'empêche de gagner ?*\n\nPuis concentrez-vous à la retirer — par capture, par échange, par déviation, ou par un coup de tempo qui la chasse."
+    }
   ]
 }

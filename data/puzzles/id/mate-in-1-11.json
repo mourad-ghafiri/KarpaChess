@@ -4,5 +4,8 @@
   "solution": [
     "Qh7#"
   ],
-  "hint": "Menteri dan kuda bersama-sama tidak menyisakan jalan keluar."
+  "title": "Ciuman Maut",
+  "setup": "Kuda Anda di **f6** mencegah raja kabur ke **g8**, dan raja Anda di **g6** menjaga petak pendaratan menteri.",
+  "hint": "Letakkan menteri tepat di samping raja — ia dijaga raja Anda dan kuda menutup {{g8}}.",
+  "explanation": "## Idenya\n\nIni adalah skakmat **kiss-of-death** (ciuman maut) yang terkenal: menteri mendarat di petak yang *bersebelahan* dengan raja lawan, dijaga oleh raja Anda sendiri. Kuda menangani petak pelarian di sudut.\n\nMainkan {{Qh7#}}.\n\nMengapa raja terjebak?\n\n- {{g8}} — dikuasai kuda di **f6** (kuda melompat ke g8)\n- {{g7}} — dikuasai raja Anda di **g6** *dan* oleh menteri itu sendiri\n- Menteri di h7 menyerang h8 langsung (skak)\n- {{Kxh7}} ilegal karena raja Anda di **g6** menjaga h7\n- Tidak ada yang bisa menghalangi: h7 bersebelahan dengan h8\n\n> **Pelajaran:** Hafalkan pola *kiss-of-death* — menteri + raja berjarak dua petak, dengan buah ketiga (di sini, kuda) menutup satu-satunya petak pelarian. Pola ini muncul di banyak partai, terutama setelah pion didorong ke f6 atau g6."
 }

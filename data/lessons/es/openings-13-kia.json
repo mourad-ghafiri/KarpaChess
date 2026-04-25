@@ -1,38 +1,38 @@
 {
   "id": "kings-indian-attack",
   "title": "Ataque India de Rey",
-  "summary": "India de Rey al revés — un sistema con Blancas",
+  "summary": "India de Rey invertida — un sistema con blancas",
   "difficulty": "intermediate",
   "steps": [
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "Un Arma Flexible",
-      "text": "El Ataque India de Rey (KIA) es la Defensa India de Rey jugada con Blancas. Fianqueta el alfil de rey, enroca rápido y luego expande con e4/e5. Usada por Bobby Fischer con efecto letal."
+      "text": "El **Ataque India de Rey** (KIA) es la Defensa India de Rey — *jugada con blancas*. El mismo planteamiento, los mismos planes, solo invertidos los colores: las blancas fianchetan el alfil de rey, enrocan corto y luego desatan un ataque lento y metódico al flanco de rey.\n\nFue el arma secreta de Bobby Fischer cuando quería esquivar la teoría principal. Aún hoy, jugadores de élite como **Hikaru Nakamura** y **Levon Aronian** lo sacan a relucir como arma sorpresa.\n\n## La secuencia que lo define\n\nUn orden modelo es {{Nf3}} **{{d5}}** {{g3}} **{{Nf6}}** {{Bg2}} **{{c5}}** **{{O-O}}** **{{Nc6}}** {{d3}} **{{e6}}** {{Nbd2}}. La firma clave es el bloque: **Nf3, g3, Bg2, 0-0, d3, Nbd2, e4** — casi sin importar lo que hagan las negras.\n\n## Qué quiere cada bando\n\n- **Plan blanco:** completar el planteamiento con fianchetto, después empujar **{{e4}}** y eventualmente **{{e5}}**, abriendo líneas hacia el flanco de rey. Las piezas se acumulan: **Re1**, **Nf1-g3**, **h2-h4-h5** y un avance decisivo en el flanco de rey.\n- **Plan negro:** tratarlo como una Francesa o una Siciliana — desarrollar sólidamente, disputar el flanco de dama (**...b5, ...c5-c4, ...Rb8**) y explotar el desarrollo lento blanco.\n- **Estructura de peones:** *estructura KIA / francesa* — peones blancos en d3-e4 frente a negros en d5-e6, con ataques en flancos opuestos.\n\n## Por qué encanta a los grandes maestros\n\nEl KIA es **un sistema contra todo** — Siciliana, Francesa, Caro-Kann transponen a medios juegos similares. Aprendes un conjunto de planes y lo aplicas de por vida.\n\n> El KIA es la respuesta universal del ajedrez. Planteamiento lento, ataque agudo."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "prompt": "Comienza con 1.Nf3",
+      "prompt": "Empieza con la primera jugada más flexible: **{{Nf3}}**.",
       "targetSan": [
         "Nf3"
       ],
-      "hint": "Primera jugada flexible."
+      "hint": "1.Nf3 desarrolla una pieza y mantiene todas las opciones abiertas. Puede transponer a Reti, Inglesa, Catalana o — como aquí — al KIA."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppp1ppp/8/4p3/8/5N2/PPPPPPPP/RNBQKB1R w KQkq - 0 2",
-      "prompt": "Ahora fianqueta: 2.g3",
+      "prompt": "Comienza el fianchetto con **{{g3}}** — preparando la diagonal larga del alfil.",
       "targetSan": [
         "g3"
       ],
-      "hint": "Prepara la larga diagonal del alfil."
+      "hint": "g3 prepara el fianchetto — el alfil vivirá en g2, mirando la diagonal larga h1-a8."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppp1ppp/8/4p3/8/5NP1/PPPPPP1P/RNBQKB1R b KQkq - 0 2",
-      "title": "Estructura KIA",
-      "text": "Luego: Bg2, 0-0, d3, Nbd2, e4. Obtendrás una fortaleza sólida en el flanco de rey y un resorte comprimido listo para e5. Ideal si quieres UNA apertura contra todo."
+      "title": "Estructura del KIA",
+      "text": "Tras **{{Nf3}}** y **{{g3}}**, el resto del Ataque India de Rey cae en una rutina familiar.\n\n## El planteamiento completo\n\n1. **{{Nf3}}** — desarrollo flexible del caballo.\n2. **{{g3}}** — preparando el fianchetto.\n3. **{{Bg2}}** — alfil a su casa en la diagonal larga.\n4. **{{O-O}}** — enroque corto, rey a buen recaudo.\n5. **{{d3}}** — apoyo central sólido.\n6. **{{Nbd2}}** — segundo caballo (no en c3, donde bloquearía el peón c).\n7. **{{e4}}** — *la* jugada de ataque. El centro despierta.\n\nDesde ahí: **Re1**, **Nf1-h2** o **Nf1-g3**, **h2-h4-h5** y un alud sobre el flanco de rey.\n\n## Un plan modelo\n\nTras el planteamiento típico negro (**...d5, ...Nf6, ...e6, ...c5, ...Nc6, ...Be7**), las blancas rompen con **e4-e5** desplazando al caballo de f6. Después **Nf1-g3** y **h4-h5** abren líneas. Combinado con **Qe2** y **Bf4**, el ataque sobre f7/h7 se vuelve mortal.\n\n## El atractivo principal del KIA\n\n- **Una apertura para todo.** ¿Siciliana? ¿Francesa? ¿Caro-Kann? Juegas el KIA contra las tres.\n- **Estratégicamente rica.** Los planes del medio juego se repiten, pero las tácticas son frescas en cada partida.\n- **Difícil de refutar.** Incluso rivales fuertes han de ir con cuidado — los planteamientos naturales negros se meten dentro de los planes blancos.\n\n> Si quieres un arma para toda la vida, aprende el KIA. Nunca te quedarás sin respuesta."
     }
   ]
 }

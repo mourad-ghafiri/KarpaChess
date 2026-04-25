@@ -1,8 +1,11 @@
 {
   "id": "mate-in-1-28",
-  "fen": "1k6/pp6/8/8/8/8/8/1K4R1 w - - 0 1",
+  "fen": "1k6/pp6/1P6/8/8/8/8/1K4R1 w - - 0 1",
   "solution": [
-    "Rg8+"
+    "Rg8#"
   ],
-  "hint": "Invade the 8th — pawns are his prison."
+  "title": "Pawn Wedge Mate",
+  "setup": "Your pawn on **b6** plugs the {{c7}} escape, while Black's own pawns lock the **a-** and **b-files**.",
+  "hint": "Storm the rook to the 8th rank — the pawn on **b6** seals {{c7}} and Black's pawns hold {{a7}} and {{b7}}.",
+  "explanation": "## The Idea\n\nA **back-rank mate with a quiet pawn assist**. The pawn on **b6** isn't checking — but it controls c7, the only flight square the rook doesn't reach.\n\nPlay {{Rg8#}}.\n\nWhy is the king stuck?\n\n- {{a8}}, {{c8}} and the rest of the 8th rank — all swept by the rook on g8\n- {{a7}} — blocked by Black's own a-pawn (and also attacked by the white b6 pawn)\n- {{b7}} — blocked by Black's own b-pawn\n- {{c7}} — controlled by the white pawn on **b6**\n- The rook is too far for {{Kxg8}}\n\n> **Takeaway:** A pawn one square in front of the enemy king's *escape file* is a hidden mate-helper. When you spot a king stuck behind two pawns, scan for tiny pawn-supports that close the third escape square."
 }

@@ -4,5 +4,8 @@
   "solution": [
     "Qxe5+"
   ],
-  "hint": "Capture with check — the knight is undefended."
+  "title": "Free Knight, Free Check",
+  "setup": "Black's knight on e5 stands undefended on the same file as the king.",
+  "hint": "The queen sees right through the e-file. Capturing the knight also delivers check.",
+  "explanation": "## The Idea\n\nThis isn't a fork in the strict sense — it's a **loose piece** captured with **tempo**. The knight on e5 has no defender, and the white queen on a1 can reach it with {{Qxe5+}}.\n\nThe `+` is what makes the move free of risk: because the queen lands on the same file as Black's king, it gives check the moment it captures. Black has to deal with the check before doing anything else, so there is no time to punish a hanging white queen — and besides, the king on e8 is too far from e5 to recapture.\n\n## Why Black Has Nothing\n\n- **Capture the queen?** {{Kxe5}} would need the king to leap three squares — illegal.\n- **Block the check?** No Black piece is left to interpose.\n- **Run?** The king has to leave the e-file (Kd7, Kf7, Kd8, Kf8), but the knight is already gone.\n\n## Pattern to Memorize\n\n> A loose piece on the **same line as its king** can often be taken with check. The check buys you the tempo to keep the captured piece."
 }

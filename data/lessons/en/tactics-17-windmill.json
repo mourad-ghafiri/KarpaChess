@@ -8,13 +8,13 @@
       "type": "teach",
       "fen": "r1b1k2r/pp3ppp/1qn1p3/3pn3/8/1P2PN2/PB1N1PPP/R2QKB1R w KQkq - 0 1",
       "title": "The Windmill Pattern",
-      "text": "The windmill is a sequence of discovered checks that allows you to capture piece after piece. The most famous example is Torre vs. Lasker, 1925 — Torre's bishop and rook combined to harvest Lasker's army."
+      "text": "The **windmill** is a relentless cycle of *discovered checks* that lets you snatch piece after piece while the enemy king has no time to breathe. It is one of the most beautiful — and most lethal — patterns in chess.\n\n## The visual trigger\n\nA windmill needs a very specific setup:\n\n- A **rook or queen** giving check (or about to give check) on the seventh or eighth rank.\n- A **bishop** (or sometimes a knight) sitting on a square where it both *delivers a discovered check* and *retreats safely*.\n- An enemy king with **only one or two flight squares**, so it must keep returning to the same place.\n- **Loose enemy pieces** along the rank or diagonal that the rook scoops up between checks.\n\n## The geometry\n\nThe rook and bishop are the two grinding stones of the mill:\n\n1. The bishop steps off the line — **discovered check** from the rook.\n2. The king has no choice but to move to a single safe square.\n3. The bishop **steps back**, capturing a piece on the way.\n4. The rook *checks again* (or the bishop reveals a new check).\n5. Repeat until the enemy army is gone.\n\n## The most famous example\n\n**Torre vs. Lasker, Moscow 1925** — the bishop on f6 and rook on g7 ground Lasker's pieces to dust over a dozen moves. Look it up after this lesson; it is unforgettable.\n\n> A windmill turns the laws of chess into a meat grinder."
     },
     {
       "type": "teach",
       "fen": "r1b1k2r/pp3ppp/1qn1p3/3pn3/8/1P2PN2/PB1N1PPP/R2QKB1R w KQkq - 0 1",
-      "title": "How It Works",
-      "text": "Key setup: your rook/queen gives check, you move a bishop/knight out and back (discovered check each time), picking off an undefended enemy piece each cycle. The enemy king can't stop — he's in check every move."
+      "title": "How to Set One Up",
+      "text": "Windmills do not happen by accident. They are *engineered*. Once you know the recipe, you start to see them long before they appear.\n\n## The ingredients\n\n- A **bishop** placed on a long diagonal aimed at the enemy king's pocket.\n- Your **rook (or queen)** infiltrating to the seventh rank or back rank.\n- The enemy king cornered with limited escape squares.\n- Enemy pieces lined up along the rook's rank — easy targets between checks.\n\n## The procedure\n\n1. Place the **bishop** behind your rook so that moving the rook delivers a discovered check.\n2. Drive the king to a square with no flight option except back where it started.\n3. Move the rook *off* the discovered-check square (capturing material), check resolves.\n4. Move the rook *back* with check again.\n5. Continue until the position is winning.\n\n## How to spot windmill *threats*\n\n- Two of your long-range pieces share an attack on the king.\n- The king has only one safe square between the two attackers.\n- One of your pieces can capture and return without being captured.\n\n> If you ever wondered why bishops on the long diagonal are scary, the windmill is the answer."
     }
   ]
 }

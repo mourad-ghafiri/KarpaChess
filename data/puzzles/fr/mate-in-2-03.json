@@ -1,10 +1,13 @@
 {
   "id": "mate-in-2-03",
-  "fen": "8/8/2K5/8/2k5/8/8/R7 w - - 0 1",
+  "fen": "8/8/8/8/8/1K6/8/k5R1 w - - 0 1",
   "solution": [
-    "Ra4+",
-    "Kb3",
-    "Rb4+"
+    "Rg2",
+    "Kb1",
+    "Rg1#"
   ],
-  "hint": "Les échecs guident le roi vers le bord."
+  "title": "Étranglement par zugzwang",
+  "setup": "Le roi noir est dans le coin **a1**. Votre roi en **b3** verrouille {{a2}} et {{b2}} — mais Noir a encore {{b1}} comme fuite tranquille.",
+  "hint": "Pas d'échec tout de suite — faites un *coup d'attente* qui contrôle la 2e rangée, forçant le roi en {{b1}}.",
+  "explanation": "## L'idée\n\nUn **mat en 2 avec un premier coup tranquille**. L'astuce, c'est qu'un échec immédiat de la tour permet au roi d'atteindre **b1** sans suite, mais un *coup d'attente* met les Noirs en **zugzwang** — Noir est forcé d'entrer dans le mat.\n\n**1. {{Rg2}}** — la tour glisse sur la 2e rangée. Ce n'est *pas* un échec, mais cela contrôle toute la 2e rangée.\n\n**1...{{Kb1}}** — forcé. Le seul coup légal pour Noir : {{Ka2}} et {{Kb2}} sont attaquées par votre roi en **b3**, et le roi ne peut pas rester en a1 — attendez, le roi *n'est pas en échec*, mais a1 n'a aucune autre case légale sauf b1.\n\n**2. {{Rg1#}}** — la tour descend sur la 1re rangée, livrant le mat.\n\nPourquoi le roi est-il bloqué après le coup 2 ?\n\n- {{a1}} — couverte par la tour en g1 (1re rangée)\n- {{c1}} — couverte par la tour en g1 (1re rangée)\n- {{a2}} — contrôlée par votre roi en **b3**\n- {{b2}} — contrôlée par votre roi en **b3**\n- {{c2}} — contrôlée par votre roi en **b3**\n- La tour est trop loin pour {{Kxg1}}\n\n> **À retenir :** tous les mats ne commencent pas par un échec. Le **zugzwang** est l'un des outils les plus beaux des finales d'échecs — parfois le coup le plus fort consiste à *ne rien faire d'agressif* et à forcer l'adversaire dans un coup perdant."
 }

@@ -8,62 +8,62 @@
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "Selamat Datang",
-      "text": "Catur dimainkan di 64 kotak dengan 16 bidak per sisi. Putih selalu jalan lebih dulu. Anda akan mengenal setiap bidak satu per satu — pion, kuda, gajah, benteng, menteri, dan raja."
+      "text": "Enam puluh empat kotak, tiga puluh dua bidak, kisah tak terbatas. Itulah catur.\n\nPapan yang Anda lihat di depan adalah posisi awal dari setiap permainan yang pernah dimainkan oleh Capablanca, Fischer, Kasparov, dan Carlsen. Putih selalu jalan lebih dulu, kemudian Hitam, bergantian sampai salah satu raja diskakmat, kedua pemain sepakat remis, atau waktu habis.\n\n## Apa yang akan Anda pelajari di sini\n\n- Bagaimana setiap dari **enam jenis bidak** bergerak dan memakan\n- Mengapa beberapa bidak lebih kuat dari yang lain\n- Kosakata yang akan Anda gunakan sepanjang hidup catur Anda\n\nJangan mencoba menghafal semuanya. Setiap bidak punya satu atau dua aturan sederhana — setelah Anda menggerakkannya beberapa kali, polanya akan menjadi naluri.\n\n> Bidak-bidak adalah karakter dalam sebuah cerita. Pelajari cara setiap karakter berjalan sebelum Anda memintanya menari."
     },
     {
       "type": "teach",
       "fen": "8/8/8/8/8/8/4P3/4K3 w - - 0 1",
       "title": "Pion",
-      "text": "Pion melangkah maju satu kotak setiap kali — atau dua kotak pada langkah pertamanya. Mereka memakan secara diagonal. Pion yang mencapai sisi seberang dipromosikan menjadi bidak apa pun yang Anda pilih. Kecil, tetapi menentukan."
+      "text": "Pion yang sederhana — jiwa catur, kata sang maestro Philidor.\n\nPion adalah satu-satunya bidak yang **bergerak dan memakan secara berbeda**. Ia melangkah maju satu kotak setiap kali, tidak pernah ke samping dan tidak pernah ke belakang. Pada langkah pertamanya, ia punya pilihan untuk melompat dua kotak — satu sentakan tenaga sebelum kariernya yang panjang dan lambat.\n\n## Tiga hal yang bisa dilakukan setiap pion\n\n- **Melangkah maju** satu kotak, hanya jika kotak itu kosong\n- **Melompat dua kotak** dari baris awalnya — berguna saat pembukaan\n- **Memakan secara diagonal** satu kotak ke depan, mengambil bidak lawan\n\nDan satu hadiah ajaib menanti: pion yang mencapai sisi seberang **dipromosikan** menjadi bidak apa pun yang Anda pilih (menteri adalah pilihan favorit). Seorang prajurit menjadi menteri. Itulah mimpinya.\n\nMisalnya, dari kotak awal, pion-e bisa memainkan {{e3}} atau {{e4}}.\n\n> Pion tidak bisa kembali — pilih jalannya dengan cermat."
     },
     {
       "type": "play",
       "fen": "8/8/8/8/8/8/4P3/4K3 w - - 0 1",
-      "prompt": "Dorong pion dua kotak ke depan untuk menguasai pusat.",
+      "prompt": "Dorong pion-e dua kotak untuk merebut pusat dengan **{{e4}}**.",
       "targetSan": [
         "e4"
       ],
-      "hint": "Pada langkah pertamanya, pion boleh lompat dua kotak. Coba e4."
+      "hint": "Pada langkah pertama pion, ia bisa melompat dua kotak. Pusat papan adalah tempat yang bagus untuk mendarat."
     },
     {
       "type": "teach",
       "fen": "8/8/8/8/8/8/8/4K2N w - - 0 1",
       "title": "Kuda",
-      "text": "Kuda melompat dalam bentuk huruf L — dua kotak ke satu arah, lalu satu kotak ke arah sudut siku-siku. Mereka satu-satunya bidak yang bisa melompati bidak lain. Sulit dilihat, mematikan di tempat yang tepat."
+      "text": "Kuda adalah si jenaka di papan catur.\n\nTidak seperti bidak lain, kuda **tidak** bergerak dalam garis lurus. Ia melompat dalam **bentuk huruf L**: dua kotak ke satu arah (baris atau kolom), kemudian satu kotak tegak lurus. Dari kotak tengah, seekor kuda mencapai hingga delapan kotak berbeda — seperti kelopak di sekitar bunga.\n\n## Apa yang membuat kuda istimewa\n\n- **Mereka melompat.** Tidak ada bidak lain yang bisa melompati bidak kawan atau lawan — kuda melayang di atas mereka.\n- **Mereka menyukai pusat.** Kuda di pinggir hanya menyerang dua atau tiga kotak; kuda di tengah menyerang delapan.\n- **Mereka lambat tapi mematikan.** Seekor kuda bisa butuh empat langkah untuk menyeberangi papan, tapi di pos yang tepat ia menjadi monster.\n\nDari h1, kuda bisa melompat ke {{Nf2}} atau {{Ng3}}. Perhatikan bagaimana bentuk L bekerja — hitung dua kotak ke satu arah, satu kotak ke arah lain.\n\n> Kuda di pinggir itu redup. Kuda di tengah itu teka-teki."
     },
     {
       "type": "play",
       "fen": "8/8/8/8/8/8/8/4K2N w - - 0 1",
-      "prompt": "Kembangkan kuda ke arah pusat. Mainkan Nf3 atau Ng3.",
+      "prompt": "Kembangkan kuda menuju aksi. Coba **{{Nf2}}** atau **{{Ng3}}** — keduanya adalah lompatan bentuk L dari h1.",
       "targetSan": [
         "Nf2",
         "Ng3"
       ],
-      "hint": "Kuda di h1 bisa mencapai f2 atau g3."
+      "hint": "Dua kotak ke satu arah, lalu satu kotak tegak lurus. Dari h1, kotak apa yang dijangkau?"
     },
     {
       "type": "teach",
       "fen": "8/8/8/8/8/8/8/2B1K3 w - - 0 1",
       "title": "Gajah",
-      "text": "Gajah meluncur di sepanjang diagonal sejauh yang mereka inginkan. Setiap gajah tetap pada satu warna selamanya — satu menguasai kotak terang, yang lain kotak gelap. Mereka menyukai posisi terbuka."
+      "text": "Gajah adalah bangsawan diagonal. Mereka meluncur sejauh yang mereka mau di sepanjang garis miring papan — tetapi hanya pada **satu warna selamanya**.\n\nGajah yang Anda lihat di sini hidup di kotak gelap; pasangannya (saat dia bergabung) akan hidup di kotak terang. Bersama-sama mereka menutupi seluruh papan. Terpisah, masing-masing menyembunyikan separuh dunia.\n\n## Dasar-dasar gajah\n\n- **Jangkauan jauh, tetapi terhalang oleh bidak.** Sinar gajah berhenti pada bidak pertama yang menghalanginya.\n- **Posisi terbuka adalah surga.** Sedikit pion berarti gajah bisa menjangkau lebih jauh.\n- **Kedua gajah bersama-sama** disebut *pasangan gajah* dan sedikit lebih kuat dibanding sepasang kuda.\n\nDari c1, gajah ini bisa mengayun ke {{Bd2}}, {{Be3}}, {{Bf4}}, sampai {{Bh6}} jika tidak ada yang menghalangi.\n\n> Gajah adalah penembak jitu jarak jauh. Berikan dia jalur terbuka dan dia akan mendominasi."
     },
     {
       "type": "teach",
       "fen": "8/8/8/8/8/8/8/R3K3 w - - 0 1",
       "title": "Benteng",
-      "text": "Benteng bergerak dalam garis lurus — sepanjang baris dan kolom. Mereka menjadi monster di babak akhir dan menyukai kolom terbuka."
+      "text": "Benteng adalah infanteri berat — garis lurus dan kekuatan kasar.\n\nBenteng bergerak sejumlah kotak di sepanjang **baris** atau **kolom**. Seperti gajah, sinarnya berhenti pada bidak pertama. Tidak seperti gajah, ia bisa berganti warna dan mencapai setiap kotak di papan, pada akhirnya.\n\n## Yang disukai benteng\n\n- **Kolom terbuka.** Kolom tanpa pion adalah jalan tol benteng.\n- **Baris ke-7** (atau ke-2 dari sisi lawan Anda). Benteng di sini memanen pion dan mengusik raja.\n- **Babak akhir.** Dengan papan yang kosong, benteng menjadi tak terhentikan.\n\nTrik istimewa lain dari benteng adalah **rokade** — satu-satunya saat raja dan benteng bergerak bersama, dalam giliran yang sama. Kita akan membahas itu di pelajaran tersendiri.\n\n> Bawa benteng keluar belakangan. Mereka lambat dikembangkan, tetapi di babak akhir mereka berkuasa."
     },
     {
       "type": "teach",
       "fen": "8/8/8/8/8/8/8/3QK3 w - - 0 1",
       "title": "Menteri",
-      "text": "Menteri menggabungkan benteng dan gajah — bergerak sejauh apa pun sepanjang baris, kolom, atau diagonal. Dia adalah bidak paling kuat. Jangan keluarkan terlalu awal; dia bisa dikejar."
+      "text": "Menteri adalah bidak paling kuat di papan — sangat jauh dari yang lain.\n\nIa bergerak seperti **benteng dan gajah digabungkan**: sejumlah kotak di sepanjang baris, kolom, ATAU diagonal. Dari kotak tengah, ia bisa menyerang 27 kotak sekaligus. Tidak ada bidak lain yang mendekati.\n\n## Catatan kehati-hatian\n\n- **Jangan keluarkan terlalu awal.** Setiap kali ia diserang, ia harus mundur — dan Anda membuang tempo.\n- **Tukar dengan hati-hati.** Kehilangan menteri demi yang lebih kecil biasanya berarti kalah.\n- **Dalam serangan, dia adalah konduktor.** Pasangkan dia dengan kuda atau gajah dan kombinasi yang menghancurkan akan muncul.\n\nMenteri di d1 bisa mengalir ke {{Qd5}}, mengayun ke {{Qa4}}, atau menyerang sepanjang {{Qh5}} — hanya terhalang ketika bertemu bidak.\n\n> Kekuatan itu sabar. Kembangkan bidak ringan Anda dulu; menteri bergabung dalam tarian belakangan."
     },
     {
       "type": "teach",
       "fen": "8/8/8/8/8/8/8/4K3 w - - 0 1",
       "title": "Raja",
-      "text": "Raja melangkah satu kotak ke arah mana pun. Lindungi dia dengan segala cara — jika dia diskakmat, permainan berakhir. Di babak akhir, aktifkan dia: dia bernilai sekitar tiga pion dalam serangan."
+      "text": "Raja adalah jantung dari setiap posisi. Kehilangan dia, dan permainan berakhir.\n\nRaja melangkah hanya **satu kotak ke arah mana pun**: maju, mundur, ke samping, atau diagonal. Jangkauan sederhana, tetapi dia memikul seluruh permainan di pundaknya. Dia tidak boleh melangkah ke kotak yang diserang oleh bidak lawan — itu ilegal, karena berjalan ke skak akan mengakhiri permainan.\n\n## Dua fase, dua peran\n\n- **Pembukaan dan babak tengah:** *sembunyikan dia.* Lakukan rokade secepat mungkin. Raja seharusnya berada di sudut, di balik dinding pion.\n- **Babak akhir:** *aktifkan dia.* Dengan menteri sudah tidak ada dan bahaya berkurang, raja menjadi bidak penyerang yang nilainya kira-kira tiga pion.\n\nPergantian ini — dari bersembunyi menjadi menyerang — adalah salah satu ide terdalam dalam catur.\n\n> Lindungi raja Anda seolah-olah hidup Anda bergantung padanya. Karena dalam catur, memang begitulah."
     }
   ]
 }

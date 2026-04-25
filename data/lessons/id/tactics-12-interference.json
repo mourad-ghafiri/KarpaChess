@@ -1,20 +1,20 @@
 {
   "id": "interference",
   "title": "Interferensi",
-  "summary": "Blokir garis pertahanan musuh",
+  "summary": "Blokir garis pertahanan lawan",
   "difficulty": "intermediate",
   "steps": [
     {
       "type": "teach",
       "fen": "4k3/8/8/8/8/8/8/4K3 w - - 0 1",
       "title": "Sang Pemblokir",
-      "text": "Taktik interferensi bekerja ketika bidak musuh mempertahankan kotak kunci di sepanjang garis — Anda menempatkan bidak Anda sendiri untuk memblokir pertahanan itu. Sering menentukan di babak tengah."
+      "text": "**Interferensi** (kadang disebut *obstruksi*) adalah tindakan menempatkan sebuah buah *di antara* penyerang lawan dan apa yang ia bela atau serang. Garisnya putus — dan kini petak atau buah yang dibela tiba-tiba terbuka.\n\n## Pemicu visual\n\nCari buah lawan — biasanya benteng, gajah, atau menteri — yang membela sesuatu yang penting dari jauh. Sekarang tanyakan: *bisakah saya menanam buah di garis di antara mereka?*\n\nJika ya, bahkan mengorbankan material pun mungkin sepadan. Pertahanan lenyap saat garis terputus.\n\n## Geometrinya\n\nInterferensi membutuhkan:\n\n1. **Buah jarak jauh lawan** sebagai pembela.\n2. **Petak atau buah sasaran** di ujung garis lain.\n3. Petak *di antara* di mana Anda dapat menempatkan buah — biasanya dengan skak atau ancaman agar langkah memaksa.\n\n## Cara mengenalinya\n\n1. Cari buah lawan yang melakukan tugas pertahanan kritis.\n2. Telusuri garis pertahanannya.\n3. Cari petak kosong di sepanjang garis itu di mana salah satu buah Anda bisa mendarat **dengan ancaman**.\n4. Setelah interferensi, manfaatkan sasaran yang tidak terjaga.\n\n> Tembok yang dibangun di petak yang tepat senilai dengan satu buah."
     },
     {
       "type": "teach",
       "fen": "4k3/8/8/8/8/8/8/4K3 w - - 0 1",
       "title": "Novotny dan Plachutta",
-      "text": "Dua pola interferensi klasik: Novotny (mengorbankan di persimpangan dua garis, memaksa satu pembela memblokir yang lain) dan Plachutta (ide yang sama tetapi dengan bidak yang bergerak serupa). Taktik geometris yang indah."
+      "text": "Dua pola interferensi yang indah dari dunia komposisi catur layak diberi nama.\n\n## Novotny\n\nSebuah buah **dikorbankan** di persimpangan dua garis pertahanan lawan — biasanya garis benteng dan garis gajah yang berpotongan di satu petak.\n\n- Jika benteng menangkap, ia berhenti membela garisnya.\n- Jika gajah menangkap, ia berhenti membela *garisnya*.\n- Bagaimanapun, satu pembela hilang.\n\n## Plachutta\n\nIde yang sama, tetapi kedua pembela adalah buah *yang bergerak serupa* (mis. dua benteng di baris dan lajur, atau dua gajah di diagonal berlawanan). Buah yang dikorbankan mendarat di titik persilangan, dan benteng atau gajah mana pun yang menangkap **harus meninggalkan salah satu garisnya**.\n\n## Mengapa pola ini penting\n\n- Mereka menunjukkan bahwa material tidak berarti dibanding **garis kekuatan**.\n- Mereka melatih mata Anda untuk melihat *persimpangan* — petak tempat dua garis lawan bertemu sering kali adalah batu bata yang menahan tembok.\n- Bahkan jika Anda tidak pernah menyusun akhir partai komposisi, pola \"pengorbanan di persimpangan\" memenangkan permainan di setiap level.\n\n> Taktik yang indah jarang tentang buah. Mereka tentang garis-garis yang *bertemu*."
     }
   ]
 }

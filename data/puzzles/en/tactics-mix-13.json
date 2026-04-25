@@ -4,5 +4,8 @@
   "solution": [
     "O-O-O"
   ],
-  "hint": "Castle to connect the rooks."
+  "title": "Castle Long",
+  "setup": "White's king and queenside rook are unmoved, with all squares between them empty — perfect castling territory.",
+  "hint": "Castling activates the rook *and* tucks the king into safety — two moves for the price of one.",
+  "explanation": "## The Idea\n\nThis is a positional puzzle disguised as a tactical one: the right move is **queenside castling**, also called **long castling** or **O-O-O**.\n\nWhite plays {{O-O-O}}.\n\n## What Just Happened?\n\nIn one move:\n\n- The king moves from **e1 to c1** (two squares toward the rook).\n- The rook moves from **a1 to d1** (jumping over the king).\n- The king is now safely tucked away.\n- The rook is centralized on the d-file, where it eyes the central files.\n\n## Why It's Legal Here\n\nFor castling to be legal, **all** of the following must be true (and they are):\n\n1. The king has not moved.\n2. The castling rook has not moved.\n3. **No pieces** between the king and rook (b1, c1, d1 are all empty).\n4. The king is **not in check**.\n5. The squares the king passes through (d1, c1) are **not attacked**.\n\nBlack has no pieces at all here, so conditions 4 and 5 are trivially satisfied.\n\n## Pattern to Memorize\n\n> Castle early, castle often. A king in the center is a king in danger.\n\nQueenside castling brings the rook into immediate central play and is often more aggressive than kingside castling — at the cost of slightly more exposed king position."
 }

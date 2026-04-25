@@ -1,8 +1,11 @@
 {
   "id": "mate-in-1-15",
-  "fen": "4R3/5pk1/6p1/8/8/8/6PP/6K1 w - - 0 1",
+  "fen": "6k1/4Rppp/8/8/1B6/8/6PP/6K1 w - - 0 1",
   "solution": [
-    "Re7"
+    "Re8#"
   ],
-  "hint": "Serbu baris ke-7 dengan skak."
+  "title": "Gajah Memotong Jendela",
+  "setup": "Benteng Anda di **e7** satu langkah dari baris belakang, dan gajah di **b4** menyapu diagonal **a3-f8** — termasuk {{f8}}.",
+  "hint": "Geser benteng ke baris ke-8 — gajah Anda di **b4** sudah menguasai petak pelarian {{f8}}.",
+  "explanation": "## Idenya\n\nSebuah **jaring skakmat benteng + gajah**. Pelindung pion menutup pelarian biasa {{g8}} via h7/g7; gajah di **b4** menyumbat satu-satunya pelarian diagonal di {{f8}}.\n\nMainkan {{Re8#}}.\n\nMengapa raja terjebak?\n\n- {{f8}} — dikuasai gajah di **b4** (diagonal b4-c5-d6-e7-f8)\n- {{h8}} — dikuasai benteng di e8 (baris ke-8)\n- {{f7}}, {{g7}}, {{h7}} — semua diblokir pion Hitam sendiri\n- Raja tidak bisa menangkap benteng: e8 terlalu jauh dari g8\n\n> **Pelajaran:** Gajah yang mengarah ke diagonal panjang adalah pasangan sempurna bagi benteng baris belakang. Bersama, mereka menutup kedua ujung baris ke-8 — benteng dari satu sisi, gajah memotong dari sisi lain."
 }

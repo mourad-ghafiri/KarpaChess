@@ -4,5 +4,8 @@
   "solution": [
     "O-O-O"
   ],
-  "hint": "Enroca para conectar las torres."
+  "title": "Enroca largo",
+  "setup": "El rey blanco y la torre del flanco dama no se han movido, con todas las casillas entre ellos vacías — territorio perfecto para enrocar.",
+  "hint": "Enrocar activa la torre *y* mete al rey a la seguridad — dos jugadas por el precio de una.",
+  "explanation": "## La idea\n\nEste es un puzle posicional disfrazado de táctico: la jugada correcta es el **enroque largo**, también llamado **enroque largo** u **O-O-O**.\n\nLas blancas juegan {{O-O-O}}.\n\n## ¿Qué acaba de pasar?\n\nEn una jugada:\n\n- El rey se mueve de **e1 a c1** (dos casillas hacia la torre).\n- La torre se mueve de **a1 a d1** (saltando sobre el rey).\n- El rey está ahora a salvo.\n- La torre está centralizada en la columna d, donde vigila las columnas centrales.\n\n## Por qué es legal aquí\n\nPara que el enroque sea legal, **todo** lo siguiente debe ser cierto (y lo es):\n\n1. El rey no se ha movido.\n2. La torre del enroque no se ha movido.\n3. **Ninguna pieza** entre el rey y la torre (b1, c1, d1 están todas vacías).\n4. El rey **no está en jaque**.\n5. Las casillas que cruza el rey (d1, c1) **no están atacadas**.\n\nLas negras no tienen piezas aquí, así que las condiciones 4 y 5 se cumplen trivialmente.\n\n## Patrón a memorizar\n\n> Enroca pronto, enroca a menudo. Un rey en el centro es un rey en peligro.\n\nEl enroque largo lleva la torre inmediatamente al juego central y suele ser más agresivo que el enroque corto — al precio de una posición de rey ligeramente más expuesta."
 }

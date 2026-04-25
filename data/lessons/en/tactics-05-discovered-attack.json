@@ -8,20 +8,22 @@
       "type": "teach",
       "fen": "4k3/8/8/8/4N3/8/8/4R2K w - - 0 1",
       "title": "The Unmasking",
-      "text": "A discovered attack happens when you move one of your pieces and reveal an attack from another piece behind it. When the revealed attack is a check AND the moved piece also checks, it's called a double check — the most devastating tactic in chess."
+      "text": "A **discovered attack** is a two-for-one move. You move one of your pieces, *and the piece behind it* — which was blocked — suddenly attacks something. You get two threats from a single move.\n\n## The setup\n\n- A long-range piece of yours (rook, bishop, or queen) is aimed at an enemy target.\n- One of your **own** pieces is sitting in the way, blocking the line.\n- That blocking piece can move to make its own threat — and *uncover* the line at the same time.\n\n## The geometry\n\nYou need three things on one line: your hidden attacker, your own blocker, and the enemy target. The blocker is the **firing pin** — when it leaves, the gun goes off.\n\n## Two devastating variants\n\n- **Discovered check** — the uncovered piece gives check while the moving piece grabs material elsewhere. The opponent *must* answer check, so the captured piece cannot be defended in time.\n- **Double check** — both the moving piece *and* the uncovered piece attack the king at once. The king **must** move; you cannot block two checks with one piece, and capturing one leaves the other.\n\n## How to find it\n\n1. Identify any of your long-range pieces aimed at the enemy king or queen.\n2. Check whether one of your own pieces stands in the way.\n3. Ask: where can that blocker move to *attack something* of its own?\n4. Choose the move that creates the largest second threat — ideally, also a check.\n\nHere the rook on e1 already eyes e8. The knight on e4 is the firing pin. {{Nd6+}} attacks the king with the knight **and** uncovers the rook on e8 — a double check.\n\n> A discovered attack is the one move that makes two threats. Look for the firing pin in your own army."
     },
     {
       "type": "play",
       "fen": "4k3/8/8/8/4N3/8/8/4R2K w - - 0 1",
-      "prompt": "Move the knight to expose the rook — better yet, have the knight ALSO attack the king.",
-      "targetSan": ["Nd6+"],
-      "hint": "Nd6 attacks e8 AND unveils the rook. Double check!"
+      "prompt": "Fire a **double check** with **{{Nd6+}}** — the knight checks, and the rook is unmasked.",
+      "targetSan": [
+        "Nd6+"
+      ],
+      "hint": "Which knight square attacks the king *and* clears the e-file in one move?"
     },
     {
       "type": "teach",
-      "fen": "4k3/8/3N4/8/8/8/8/4R2K w - - 0 1",
-      "title": "Why It's Lethal",
-      "text": "Against a double check, the king MUST move — you can't block two attacks with one piece, and capturing one leaves the other. Double checks are among the fastest mating patterns in chess."
+      "fen": "4k3/8/3N4/8/8/8/8/4R2K b - - 0 1",
+      "title": "Why Double Check Is Lethal",
+      "text": "Against a normal check the defender has three options: capture the checker, block it, or move the king. **Double check eliminates the first two.**\n\n## Why blocking and capturing fail\n\n- One piece cannot block two attacking lines simultaneously.\n- Capturing one of the two attackers still leaves the other one giving check.\n- That leaves only one legal reply: **the king must move.**\n\n## Practical consequences\n\n- Double checks are the foundation of many famous mating combinations.\n- Even a queen sacrifice is fine if the resulting double check is forcing.\n- A king with few flight squares and a double check is usually a *mated* king.\n\n> Pin a king; he stays. Check a king; he dodges. *Double-check* a king; he runs — and you choose where."
     }
   ]
 }

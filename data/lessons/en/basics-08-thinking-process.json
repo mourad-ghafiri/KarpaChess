@@ -7,20 +7,20 @@
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "title": "Three Questions",
-      "text": "Before every move, run through this checklist: (1) What is my opponent threatening? (2) What are MY checks, captures, and threats? (3) If I play my candidate, what's the best reply? Answer all three, then move."
+      "title": "The Three Questions",
+      "text": "Strong players don't just react — they follow a tiny mental routine on **every** move. The earlier you build the habit, the faster you'll improve.\n\n## The three questions\n\n1. **What is my opponent threatening?** Look at their last move. Did it attack a piece? Open a line? Prepare a tactic?\n2. **What are MY checks, captures, and threats?** Scan the whole board. Tactics live in *forcing* moves. List them before you choose.\n3. **What's the best reply if I play my candidate?** Imagine your move on the board, then ask: how would *I* respond as Black?\n\nThree little questions. Asked honestly, they cut your blunder rate in half.\n\nA quick example: imagine White just played {{Bg5}}, pinning a knight. Question 1: *what's threatened?* The knight can't move without exposing the queen. Question 2: *what are my forcing replies?* Maybe {{h6}} chases the bishop. Question 3: *what happens after h6?* The bishop retreats or trades.\n\n> Three questions, one minute. The cheapest rating points you'll ever earn."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "The Blunder Check",
-      "text": "Before you play your move, pause and ask: \"After I make this move, is any of my pieces being attacked? Can my opponent give check? Can they capture something free?\" This 5-second check saves most blunders."
+      "text": "Almost every lost game contains a moment where you played fast and missed something obvious. That moment is preventable.\n\n## The 5-second blunder check\n\nBefore your hand leaves the piece, freeze and run a tiny scan:\n\n- Is any of **my pieces** suddenly hanging (undefended, attacked)?\n- Can my opponent give a **check** that wins something?\n- Is there a **simple capture** for free that I just allowed?\n- Did I just walk into a **fork, pin, or skewer**?\n\nIf the answer to all four is *no*, play the move. If *yes*, find another move.\n\nThis simple ritual costs nothing in classical games and only seconds in blitz. It catches most one-move blunders — the kind that haunt every chess player.\n\n> Sit on your hands. Then look again. Then play."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "Candidate Moves",
-      "text": "Strong players don't calculate one move — they calculate 2-3 candidates and compare. Pick moves that develop a piece, improve a square, or create a threat. Reject random-looking moves early."
+      "text": "Chess is not picking *the* move — it's choosing *between* moves.\n\nGrandmasters look at the board, identify **2–3 candidate moves**, calculate each briefly, and compare. Beginners often calculate one move deeply and play it without ever asking *was there something better?*\n\n## How to generate good candidates\n\n- Start with **forcing moves**: checks, captures, and direct threats.\n- Add **developing moves**: bring an idle piece into the game.\n- Add **prophylaxis**: stop your opponent's plan before it starts.\n- Reject quickly: if a move loses material or violates a principle for no reason, drop it from your shortlist.\n\nThen compare your finalists head-to-head: *which leaves my position the strongest after my opponent's best reply?*\n\n## Why this matters\n\n- It prevents tunnel vision (locking in on the first move you saw).\n- It surfaces tactics — sometimes Move B is great precisely because Move A is good.\n- It makes you a calmer player, because you've ruled out alternatives instead of guessing.\n\n> Pick three, choose one. Repeat for thirty moves. That's chess."
     }
   ]
 }

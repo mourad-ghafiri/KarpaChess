@@ -4,5 +4,8 @@
   "solution": [
     "Bc5"
   ],
-  "hint": "Développez le fou activement."
+  "title": "Miroir du fou italien",
+  "setup": "Les Blancs ont joué l'ouverture italienne, plaçant un fou en **c4** visant f7. Les Noirs reflètent la menace.",
+  "hint": "Quand votre adversaire développe un fou attaquant votre case faible, développez *votre* fou attaquant la sienne.",
+  "explanation": "## L'idée\n\nVoici une décision de **développement classique** dans le Jeu Italien. Le fou blanc en c4 vise la case f7 des Noirs. Noir devrait répondre en miroir : développer le fou en **c5**, lorgnant la case faible symétrique des Blancs — **f2**.\n\nLes Noirs jouent {{Bc5}}.\n\n## Pourquoi c5 ?\n\n- Le fou est **actif** : il attaque la grande diagonale a7-g1, y compris la case f2 (défendue uniquement par le roi blanc).\n- Le fou est **flexible** : il ne bloque le développement d'aucune autre pièce.\n- Le coup est **symétrique** : répondre à la menace blanche par une menace équivalente est une idée d'ouverture mature.\n\n## Ce que cela prépare\n\nC'est l'entrée dans le **Giuoco Piano** (« Jeu Tranquille ») ou les variantes plus agressives du **Giuoco Pianissimo**. Les deux camps ont :\n\n- Un fou actif sur la grande diagonale.\n- Les deux cavaliers développés.\n- Le roque rapide en vue.\n\n## Schéma à mémoriser\n\n> Développez vos fous sur des **cases actives qui attaquent les faiblesses ennemies clés** — typiquement f2/f7 dans l'ouverture.\n\nNe gaspillez pas le tempo d'ouverture sur des coups cosmétiques. Chaque coup de développement doit améliorer votre position **et** mettre la pression sur l'adversaire. Bc5 fait les deux d'un seul coup."
 }

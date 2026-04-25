@@ -4,5 +4,8 @@
   "solution": [
     "Rh8+"
   ],
-  "hint": "Jaque — ¿qué entrega el caballo de las negras?"
+  "title": "Espeto al caballo",
+  "setup": "El rey y el caballo negros comparten la esquina del flanco de dama. Un jaque largo de torre expone el caballo detrás.",
+  "hint": "Lleva la torre a la 8ª fila con jaque. El caballo no tiene refugio una vez que el rey se mueva.",
+  "explanation": "## La idea\n\nEsta es una **horquilla en estilo de espeto** por la 8ª fila. La torre blanca puede viajar de h1 a h8 sin obstáculos:\n\n- {{Rh8+}} da jaque por la última fila.\n- El rey negro tiene que salir de la línea de la torre.\n\n### ¿Qué le pasa al caballo?\n\n1. El rey solo tiene **a7** como casilla de huida — a8 está atacada por la torre, b7 deja el caballo desprotegido, c8 está atacada.\n2. Tras la huida del rey, el caballo en c7 deja de estar protegido por su rey.\n3. Las blancas reposicionan la torre para ganar el caballo (o el rey es arrastrado más lejos de la segunda fila, exponiendo más debilidades).\n\nLa solución de una jugada encuentra el **jaque forzante** — una idea concreta inmediata que no le da aire a las negras. No intentes ganar el caballo directamente con una intrusión silenciosa de torre; el jaque obliga a las negras a reaccionar y rompe la defensa del rey sobre el caballo.\n\n> Un jaque por la última fila es el lenguaje natural de la torre. Háblalo siempre que puedas."
 }

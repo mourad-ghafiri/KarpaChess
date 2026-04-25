@@ -1,8 +1,11 @@
 {
   "id": "mate-in-1-20",
-  "fen": "4k3/4Q3/4K3/8/8/8/8/8 w - - 0 1",
+  "fen": "4k3/8/4K3/8/8/8/8/Q7 w - - 0 1",
   "solution": [
-    "Qb7"
+    "Qa8#"
   ],
-  "hint": "Cage the king from the side."
+  "title": "Side-Cage the King",
+  "setup": "Your kings stand in **opposition** on the e-file. The queen, far on **a1**, has a clean back-rank highway.",
+  "hint": "Swing the queen to the corner of the back rank — your king already covers {{d7}}, {{e7}} and {{f7}}.",
+  "explanation": "## The Idea\n\nA textbook **K+Q vs K back-rank mate** with the kings in opposition. The queen sweeps across the 8th rank from far away.\n\nPlay {{Qa8#}}.\n\nWhy is the king stuck?\n\n- {{d8}} and {{f8}} — covered by the queen on a8 (8th rank)\n- {{d7}}, {{e7}}, {{f7}} — all controlled by your king on **e6**\n- The queen is far from the king, so {{Kxa8}} is impossible\n- Nothing can interpose on the empty 8th rank\n\n> **Takeaway:** The *cage from the side* is the safest queen mate — no risk of stalemate, queen well-defended by distance, and the kings in clean opposition. Practice this until it's automatic."
 }

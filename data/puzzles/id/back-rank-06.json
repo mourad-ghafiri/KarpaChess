@@ -4,5 +4,8 @@
   "solution": [
     "Ra8"
   ],
-  "hint": "Sederhanakan — serbuan benteng di a8."
+  "title": "Pakuan ke Raja",
+  "setup": "Benteng Hitam di e8 menjaga baris belakang. Benteng Putih hanya satu kotak dari memberi tekanan menentukan.",
+  "hint": "Tanam benteng di baris ke-8. Penjara raja melakukan sisanya.",
+  "explanation": "## Idenya\n\n{{Ra8}} adalah langkah hening tapi mematikan. Tidak memberi skakmat langsung, tetapi menempatkan Hitam dalam **pakuan yang sepenuhnya kalah**:\n\n1. Benteng Putih tiba di a8, menguasai seluruh baris ke-8.\n2. Benteng Hitam di e8 **terpaku** — tidak bisa bergerak tanpa membuat raja kena skakmat lewat Rxe8#.\n3. Putih mengancam {{Rxe8#}} di langkah berikutnya.\n\n### Mengapa Hitam tidak punya pertahanan baik\n\n- **Gerakkan raja?** Raja tidak punya udara. Kh8 tetap memungkinkan Rxe8#. Kg8 sama saja. Raja tidak bisa lolos ke baris ke-7 tanpa lebih dulu menciptakan luft, yang Hitam tidak punya waktu untuk lakukan.\n- **Bela benteng?** Tidak ada bidak yang bisa memperkuat e8.\n- **Serangan balik?** Hitam hanya punya raja dan benteng — tidak ada serangan balik.\n\n### Pola yang harus diingat\n\n- Sebuah benteng yang tiba dengan **dukungan pasukan sendiri** di baris belakang terbuka melawan raja tanpa luft adalah menentukan.\n- Pakuan pada benteng Hitam adalah taruhan ke jantung.\n\n> Langkah hening sering membunuh lebih cepat daripada langkah keras. Ancaman lebih kuat daripada eksekusi — tetapi di sini, eksekusi tidak terbendung."
 }

@@ -1,30 +1,44 @@
 {
   "id": "castling",
-  "title": "Enroque",
+  "title": "El Enroque",
   "summary": "Mueve rey y torre en un solo paso",
   "difficulty": "beginner",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "r3k2r/pppq1ppp/2n1pn2/3p4/3P4/2N1PN2/PPPQ1PPP/R3K2R w KQkq - 0 1",
       "title": "¿Qué es el Enroque?",
-      "text": "El enroque es la única jugada en el ajedrez donde DOS piezas se mueven a la vez: tu rey y una torre. Es la forma más rápida de poner al rey a salvo Y activar una torre. Puedes enrocar al flanco de rey (corto) o al flanco de dama (largo)." },
-    { "type": "teach",
+      "text": "El enroque es la **única jugada del ajedrez** en la que dos piezas se mueven a la vez — tu rey y una de tus torres, en el mismo turno.\n\nHace dos cosas valiosísimas en un solo tiempo:\n\n- **Esconde al rey** en un rincón, refugiado tras una muralla de peones\n- **Activa una torre**, llevándola a una columna central o semiabierta\n\n## Dos sabores\n\n- **Enroque corto (flanco de rey)**: se escribe {{O-O}}. El rey salta dos casillas hacia la torre de h; la torre aterriza junto a él.\n- **Enroque largo (flanco de dama)**: se escribe {{O-O-O}}. El rey salta dos casillas hacia la torre de a; la torre vuela sobre él al otro lado.\n\nEn la posición de arriba, ambos bandos están perfectamente preparados para enrocar a cualquier lado. Imagina jugar {{O-O}} — tu rey está de pronto a salvo y tu torre en f1 vigila la columna e.\n\n> El enroque son dos grandes jugadas en una sola. No la desperdicies."
+    },
+    {
+      "type": "teach",
       "fen": "r3k2r/pppq1ppp/2n1pn2/3p4/3P4/2N1PN2/PPPQ1PPP/R3K2R w KQkq - 0 1",
-      "title": "Las Reglas",
-      "text": "Para enrocar: (1) ni el rey ni esa torre se han movido, (2) no hay piezas entre ellos, (3) el rey no está en jaque, y (4) el rey no pasa por ni llega a una casilla atacada." },
-    { "type": "play",
+      "title": "Las Cuatro Reglas",
+      "text": "El enroque parece mágico, pero tiene requisitos estrictos. Si olvidas alguno, la jugada es ilegal.\n\n## Las cuatro condiciones\n\n1. **Ninguna de las dos piezas se ha movido.** El rey y la torre elegida deben estar ambos en sus casillas originales, intactos.\n2. **Las casillas entre ellos están vacías.** Sin alfil ni caballo bloqueando el camino.\n3. **El rey no está en jaque.** No puedes enrocar para escapar de un jaque.\n4. **El rey no atraviesa ni aterriza en una casilla atacada.** Las casillas de tránsito también deben ser seguras.\n\nUna regla clásica: *no se enroca para entrar, salir o pasar por jaque*.\n\nFíjate en que la **torre** sí puede estar atacada o pasar por una casilla atacada — solo importa el camino del rey. Es un detalle sutil pero útil en el enroque largo.\n\n> Si dudas si puedes enrocar, comprueba dos veces esas cuatro reglas. El motor nunca perdona una jugada ilegal."
+    },
+    {
+      "type": "play",
       "fen": "r3k2r/pppq1ppp/2n1pn2/3p4/3P4/2N1PN2/PPPQ1PPP/R3K2R w KQkq - 0 1",
-      "prompt": "Enroca corto (enroque al flanco de rey).",
-      "targetSan": ["O-O"],
-      "hint": "En la mayoría de las interfaces de ajedrez solo mueves el rey dos casillas hacia la torre." },
-    { "type": "play",
+      "prompt": "Enroca corto con **{{O-O}}** — rey a g1, torre a f1, ambos a salvo en una jugada.",
+      "targetSan": [
+        "O-O"
+      ],
+      "hint": "En la mayoría de las interfaces de ajedrez basta con mover el rey dos casillas hacia la torre de la columna h — la torre lo sigue automáticamente."
+    },
+    {
+      "type": "play",
       "fen": "r3k2r/pppq1ppp/2n1pn2/3p4/3P4/2N1PN2/PPPQ1PPP/R3K2R b KQkq - 0 1",
-      "prompt": "Ahora las Negras enrocan largo (enroque al flanco de dama).",
-      "targetSan": ["O-O-O"],
-      "hint": "Mueve el rey dos casillas hacia la torre de la columna a." },
-    { "type": "teach",
+      "prompt": "Ahora las negras enrocan largo con **{{O-O-O}}** — rey a c8, torre a d8, atacando por la columna d.",
+      "targetSan": [
+        "O-O-O"
+      ],
+      "hint": "Mueve el rey dos casillas hacia la torre de la columna a. La torre salta a d8 en el mismo movimiento."
+    },
+    {
+      "type": "teach",
       "fen": "2kr3r/pppq1ppp/2n1pn2/3p4/3P4/2N1PN2/PPPQ1PPP/R4RK1 w - - 0 1",
-      "title": "¡Listo!",
-      "text": "Ambos reyes están seguros y ambas torres de la columna a están conectadas con la otra torre. Enrocar temprano es uno de los hábitos más importantes en ajedrez — procura hacerlo en la jugada 10 en la mayoría de las partidas." }
+      "title": "Ambos Reyes Refugiados",
+      "text": "Ambos bandos han enrocado — blancas corto, negras largo — y la posición tiene ya su carácter pleno.\n\nFíjate en lo que cambió:\n\n- **Ambos reyes salieron de la columna e.** Se acabaron las clavadas o los pinchazos accidentales de una dama.\n- **Las cuatro torres están conectadas** por sus filas finales. Pueden moverse a cualquier columna abierta.\n- **Ambos ejércitos están listos para la batalla.** La lucha por el centro puede comenzar.\n\nCuando se enroca a **lados opuestos** (uno corto, otro largo), cuidado — las tormentas de peones se vuelven mortales porque cada bando puede lanzar peones contra el rey rival sin exponer al suyo. Una carrera de ataque suele decidir la partida.\n\n> Apunta a enrocar antes de la jugada 10. Los enroques tardíos quedan atrapados en medio del tablero."
+    }
   ]
 }

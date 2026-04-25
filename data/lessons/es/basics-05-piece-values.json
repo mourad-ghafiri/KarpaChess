@@ -4,18 +4,27 @@
   "summary": "Aprende cuánto vale cada pieza",
   "difficulty": "beginner",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "Los Valores Aproximados",
-      "text": "Conocer el valor de las piezas es esencial para hacer cambios. Peón = 1. Caballo = 3. Alfil = 3 (algo más en posiciones abiertas). Torre = 5. Dama = 9. Rey = invaluable. Estos son aproximaciones — el contexto importa — pero son el punto de partida de todo buen cambio." },
-    { "type": "teach",
+      "text": "Antes de poder cambiar piezas con sabiduría, necesitas una idea aproximada de cuánto *vale* cada una.\n\nLas piezas de ajedrez no tienen un precio oficial, pero generaciones de análisis han establecido una aproximación útil — medida en unidades de peón.\n\n## La escala estándar\n\n- **Peón = 1**\n- **Caballo = 3**\n- **Alfil = 3** *(un poco más en posiciones abiertas; alrededor de 3.25)*\n- **Torre = 5**\n- **Dama = 9**\n- **Rey = invaluable** *(pero unos 4 en fuerza de combate cuando salen las damas)*\n\nAparecen algunas proporciones útiles:\n\n- Una torre supera a una pieza menor (caballo o alfil) por 2 — eso se llama *ganar la calidad*.\n- Dos piezas menores (3 + 3 = 6) suelen vencer a una torre (5).\n- Tres piezas menores (9) equivalen aproximadamente a una dama — pero las piezas suelen ser más flexibles.\n\n> Estos números son una brújula, no una calculadora. La posición vence a los puntos."
+    },
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "title": "Principios de Cambios",
-      "text": "Cambia piezas de igual valor cuando vayas por delante en material (simplifica a un final ganador). Evita cambios cuando vayas por detrás — mantén piezas en el tablero para crear oportunidades. Sacrificar una pieza de mayor valor por una menor es un 'sacrificio' — a veces vale la pena por un ataque ganador." },
-    { "type": "play",
+      "title": "Principios de los Cambios",
+      "text": "Conocer los valores es la mitad de la historia. Saber *cuándo* cambiar es la otra mitad.\n\n## Tres reglas generales\n\n- **Cuando vas con ventaja material, cambia piezas.** Cada cambio te acerca a un final ganador y reduce las posibilidades de tu rival de encontrar trampas.\n- **Cuando vas por detrás, mantén piezas en el tablero.** Las piezas crean problemas — mantén el problema vivo y conservarás tus posibilidades.\n- **Un sacrificio es intencional.** Entregar un caballo por un peón parece un error; si lleva al mate, es brillantez. Cuenta jugadas, no piezas.\n\n## La posición puede invertir los valores\n\n- Un *alfil malo* (encerrado tras sus propios peones) puede valer un peón o dos.\n- Un *caballo fuerte* en un puesto avanzado protegido puede eclipsar a una torre.\n- *Dos alfiles* en un tablero abierto son más fuertes que dos caballos — esa es la famosa **pareja de alfiles**.\n\n> Cambia como un banquero: solo cuando ganas, en puntos o en posición."
+    },
+    {
+      "type": "play",
       "fen": "rnbqkb1r/pppp1ppp/5n2/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3",
-      "prompt": "¿Qué peón central deberías empujar para reclamar más espacio? Juega uno.",
-      "targetSan": ["d4", "c4"],
-      "hint": "d4 o c4 — ambos refuerzan tu centro." }
+      "prompt": "Refuerza tu centro avanzando **{{d4}}** o **{{c4}}** — ambas conquistan más espacio y abren líneas.",
+      "targetSan": [
+        "d4",
+        "c4"
+      ],
+      "hint": "El centro es donde las piezas se despliegan. Dos peones amigos en el medio son una base por la que vale la pena luchar."
+    }
   ]
 }

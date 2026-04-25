@@ -1,8 +1,13 @@
 {
   "id": "forks-06",
-  "fen": "4k3/8/8/2n5/8/8/8/Q3K3 w - - 0 1",
+  "fen": "8/8/8/k6n/8/8/3Q4/4K3 w - - 0 1",
   "solution": [
-    "Qa5"
+    "Qd5+",
+    "Kb6",
+    "Qxh5"
   ],
-  "hint": "Gagnez le cavalier sur la rangée."
+  "title": "La Dame Fourche sur la Rangée",
+  "setup": "Le roi noir et le cavalier sont sur la même 5e rangée — la dame peut éclabousser les deux d'un seul coup.",
+  "hint": "Glissez la dame sur la 5e rangée avec échec. Depuis {{d5}}, elle vise le roi et le cavalier en même temps.",
+  "explanation": "## L'Idée\n\nUne **fourchette sur rangée** par la dame. Le roi noir en a5 et le cavalier en h5 partagent la 5e rangée sans rien entre eux. La case {{d5}} est l'embuscade parfaite — la dame attaque les deux pièces le long de la rangée.\n\nAprès {{Qd5+}}, les Noirs n'ont aucune bonne réponse :\n\n- **Capturer la dame ?** Le roi en a5 est à trois cases de d5 — trop loin.\n- **S'interposer ?** La seule pièce noire restante est le cavalier en h5, et de là il ne peut sauter en b5 ou c5 (les seules cases d'interposition) en un coup.\n- **Fuir ?** Le roi doit quitter la 5e rangée, ce qui abandonne le cavalier.\n\nLes Noirs jouent {{Kb6}} (ou toute autre fuite du roi) et les Blancs prennent le cavalier avec {{Qxh5}}.\n\n## Schéma à Mémoriser\n\n> Quand deux pièces ennemies sont sur la **même rangée, colonne ou diagonale**, demandez-vous si votre dame peut atteindre une case entre elles — c'est là que vit la fourchette."
 }

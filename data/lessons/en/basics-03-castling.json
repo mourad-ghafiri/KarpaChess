@@ -4,27 +4,41 @@
   "summary": "Move king and rook in a single step",
   "difficulty": "beginner",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "r3k2r/pppq1ppp/2n1pn2/3p4/3P4/2N1PN2/PPPQ1PPP/R3K2R w KQkq - 0 1",
       "title": "What Is Castling?",
-      "text": "Castling is the only move in chess where TWO pieces move at once: your king and one rook. It's the fastest way to tuck the king into safety AND activate a rook. You can castle kingside (short) or queenside (long)." },
-    { "type": "teach",
+      "text": "Castling is the **only move in chess** where two pieces move at once — your king and one of your rooks, on the same turn.\n\nIt does two priceless things in a single tempo:\n\n- **Hides the king** in a corner, tucked behind a wall of pawns\n- **Activates a rook**, dropping it onto a central or semi-open file\n\n## Two flavors\n\n- **Kingside castle (short)**: written {{O-O}}. King hops two squares toward the h-rook; the rook lands next to him.\n- **Queenside castle (long)**: written {{O-O-O}}. King hops two squares toward the a-rook; the rook flies over him to the other side.\n\nIn the position above, both sides have set up perfectly to castle either way. Imagine playing {{O-O}} — your king is suddenly safe, your rook on f1 eyes the e-file.\n\n> Castling is two great moves wrapped into one. Don't waste it."
+    },
+    {
+      "type": "teach",
       "fen": "r3k2r/pppq1ppp/2n1pn2/3p4/3P4/2N1PN2/PPPQ1PPP/R3K2R w KQkq - 0 1",
-      "title": "The Rules",
-      "text": "To castle: (1) neither the king nor that rook has moved, (2) no pieces are between them, (3) the king is not in check, and (4) the king doesn't pass through or land on an attacked square." },
-    { "type": "play",
+      "title": "The Four Rules",
+      "text": "Castling looks magical, but it has strict requirements. Forget any of them and the move is illegal.\n\n## The four conditions\n\n1. **Neither piece has moved.** The king and the chosen rook must both be on their original squares, untouched.\n2. **The squares between them are empty.** No bishop or knight blocking the path.\n3. **The king is not in check.** You can't castle to escape a check.\n4. **The king doesn't pass through or land on an attacked square.** The transit squares must be safe too.\n\nA classic mnemonic: *can't castle into, out of, or through check*.\n\nNotice that the **rook** is allowed to be attacked or to pass through an attacked square — only the king's path matters. That's a subtle but useful detail in queenside castling.\n\n> If you're not sure you can castle, double-check those four rules. The engine never forgives an illegal move."
+    },
+    {
+      "type": "play",
       "fen": "r3k2r/pppq1ppp/2n1pn2/3p4/3P4/2N1PN2/PPPQ1PPP/R3K2R w KQkq - 0 1",
-      "prompt": "Castle kingside (short castle).",
-      "targetSan": ["O-O"],
-      "hint": "In most chess interfaces you just move the king two squares toward the rook." },
-    { "type": "play",
+      "prompt": "Castle kingside with **{{O-O}}** — king to g1, rook to f1, both safe in one move.",
+      "targetSan": [
+        "O-O"
+      ],
+      "hint": "In most chess interfaces you simply move the king two squares toward the h-file rook — the rook follows automatically."
+    },
+    {
+      "type": "play",
       "fen": "r3k2r/pppq1ppp/2n1pn2/3p4/3P4/2N1PN2/PPPQ1PPP/R3K2R b KQkq - 0 1",
-      "prompt": "Now Black castles queenside (long castle).",
-      "targetSan": ["O-O-O"],
-      "hint": "Move the king two squares toward the a-file rook." },
-    { "type": "teach",
+      "prompt": "Now Black castles long with **{{O-O-O}}** — king to c8, rook to d8, attacking down the d-file.",
+      "targetSan": [
+        "O-O-O"
+      ],
+      "hint": "Move the king two squares toward the a-file rook. The rook hops over to d8 in the same motion."
+    },
+    {
+      "type": "teach",
       "fen": "2kr3r/pppq1ppp/2n1pn2/3p4/3P4/2N1PN2/PPPQ1PPP/R4RK1 w - - 0 1",
-      "title": "Done!",
-      "text": "Both kings are safe and both a-file rooks are connected with the other rook. Castling early is one of the most important habits in chess — aim to do it by move 10 in most games." }
+      "title": "Both Kings Tucked In",
+      "text": "Both sides have castled — White short, Black long — and the position now has its full character.\n\nNotice what changed:\n\n- **Both kings are off the e-file.** No more accidental pins or pokes from a queen.\n- **All four rooks are connected** along their back ranks. They can swing to any open file.\n- **Both armies are battle-ready.** The fight for the center can begin.\n\nWhen you castle on **opposite sides** (one player short, one long), watch out — pawn storms become deadly because each side can hurl pawns at the other king without exposing his own. A racing attack often decides the game.\n\n> Aim to castle by move 10. Late castles get caught in the middle of the board."
+    }
   ]
 }

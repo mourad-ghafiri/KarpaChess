@@ -1,20 +1,20 @@
 {
   "id": "greek-gift",
-  "title": "El Regalo Griego (Bxh7+)",
+  "title": "El sacrificio griego (Axh7+)",
   "summary": "Sacrificio clásico de alfil contra el rey enrocado",
   "difficulty": "advanced",
   "steps": [
     {
       "type": "teach",
       "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2BPP3/2N2N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
-      "title": "El Patrón",
-      "text": "El \"Regalo Griego\" es un sacrificio de alfil en h7: Bxh7+ Kxh7 Ng5+ Kg8 (o Kg6) Qh5 — y el ataque rompe. Se llama así porque parece gratis pero lleva destrucción."
+      "title": "El patrón",
+      "text": "El **sacrificio griego** es el sacrificio más famoso del ajedrez: se entrega un alfil en h7 (o h2 para las negras), el rey lo toma — y entra de cabeza en un ataque de mate con caballo y dama.\n\n## La secuencia estándar\n\nUna línea modelo se ve así:\n\n1. {{Bxh7+}} — sacrificio de alfil.\n2. **Rxh7** — el rey debe tomar (o el alfil regresa con una pieza ganada).\n3. {{Ng5+}} — jaque de caballo.\n4. **Rg8** (o **Rg6** en algunas variantes) — el rey huye.\n5. {{Qh5}} — la dama se une, amenazando **Dh7#**.\n6. Los únicos recursos del defensor son *forzados*, y la mayoría pierden.\n\n## Cuándo aparece este ataque\n\n- Las negras han enrocado **corto** con peones en f7-g7-h7.\n- El alfil en **d3** (o la batería c2-b1) apunta al peón h7.\n- Un **caballo blanco** puede saltar a **g5** con jaque y tempo.\n- La dama blanca tiene una ruta despejada hacia **h5**.\n- El caballo defensor de **f6** (el escudo natural de h7) ha **desaparecido**, está **clavado** o **distraído**.\n\n## Por qué se llama así\n\nLos griegos, según la leyenda, dejaron el caballo de madera fuera de Troya como \"regalo\" — y los troyanos lo arrastraron dentro hacia su perdición. Un alfil en h7 parece un regalo descuidado, pero lleva todo un ataque dentro.\n\n> La pieza que aceptas puede no ser el regalo que querías."
     },
     {
       "type": "teach",
       "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2BPP3/2N2N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
-      "title": "Lista de Verificación",
-      "text": "El Regalo Griego funciona cuando: (1) Las Negras tienen un caballo NO en f6 bloqueando Ng5, (2) la dama puede llegar a h5 rápidamente, (3) ninguna pieza negra puede interferir. Si eso se cumple, suele ser decisivo. Si no, simplemente pierdes un alfil."
+      "title": "Lista antes de sacrificar",
+      "text": "El sacrificio griego o gana o *pierde* — no hay término medio. Antes de entregar el alfil, repasa esta lista.\n\n## La lista de sí/no\n\n1. **Sin defensor en f6.** ¿Puede el caballo negro llegar a f6 para tapar el agujero? Si la respuesta es sí, *aborta*.\n2. **Caballo listo para g5.** ¿Está un caballo blanco a una jugada de {{Ng5}} después de que el rey tome?\n3. **Ruta de la dama hacia h5.** ¿Está libre el camino de d1 a h5 (o h3 a h5) sin obstrucciones?\n4. **Sin huida a g6.** Si el rey corre a **g6**, ¿tienes jugadas como **Dh5+** o **f4-f5** para continuar?\n5. **Sin interferencia de la dama o el alfil negros** que produzca un contra-jaque.\n6. **Sin contraataque** más rápido sobre tu propio rey.\n\nSi cada respuesta es *sí*, el sacrificio es casi siempre correcto.\n\n## Una continuación modelo\n\nDespués de {{Bxh7+}} **Rxh7** {{Ng5+}}:\n\n- **Rg8**: {{Qh5}} amenaza {{Qh7#}}. La mayoría de las defensas fallan.\n- **Rg6**: las blancas suelen jugar {{Qg4}} o {{h4}} trayendo más atacantes.\n- **Rh6**: raro pero peligroso — calcula {{Nxf7+}} y {{Qd2+}}.\n\n## Cuándo *no* hacerlo\n\n- El caballo defensor está sólidamente en **f6** sin forma de quitarlo.\n- Tu dama está lejos (por ejemplo en a1) y no puede llegar a **h5** a tiempo.\n- El rival tiene una pieza (normalmente un alfil en g4 o e6) que puede interponerse con jaque.\n- No tienes continuación tras **Rg8**.\n\n> El sacrificio griego recompensa el cálculo. Castiga la esperanza."
     }
   ]
 }

@@ -1,8 +1,11 @@
 {
   "id": "mate-in-1-27",
-  "fen": "k7/7R/2K5/8/8/8/8/8 w - - 0 1",
+  "fen": "k7/8/1K6/8/8/8/8/7R w - - 0 1",
   "solution": [
-    "Ra7+"
+    "Rh8#"
   ],
-  "hint": "Coupez la colonne a et le roi meurt."
+  "title": "Marteau à distance",
+  "setup": "Le roi noir est coincé dans le coin **a8** et votre roi en **b6** verrouille les cases de fuite diagonales.",
+  "hint": "Glissez la tour jusqu'à la 8e rangée depuis loin — votre roi en **b6** tient {{a7}} et {{b7}}.",
+  "explanation": "## L'idée\n\nUn autre **mat R+T contre R dans le coin**, cette fois la tour porte le coup depuis l'autre extrémité de l'échiquier. Le roi en b6 est à la *distance standard de la cage*, contrôlant les cases de fuite diagonales.\n\nJouez {{Rh8#}}.\n\nPourquoi le roi est-il bloqué ?\n\n- {{b8}} — couverte par la tour en h8 (8e rangée)\n- {{a7}} — couverte par votre roi en **b6**\n- {{b7}} — couverte par votre roi en **b6**\n- La tour est trop loin pour {{Kxh8}}\n- Rien ne peut s'interposer sur la 8e rangée\n\n> **À retenir :** lors d'un mat R+T, la tour peut frapper depuis n'importe où sur la rangée ou la colonne dès que la *cage du roi* est établie. La distance n'affaiblit pas le mat."
 }

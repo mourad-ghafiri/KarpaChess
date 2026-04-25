@@ -8,62 +8,62 @@
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "Welcome",
-      "text": "Chess is played on 64 squares by 16 pieces per side. White always moves first. You'll meet every piece in turn — the pawn, knight, bishop, rook, queen, and king."
+      "text": "Sixty-four squares, thirty-two pieces, infinite stories. That's chess.\n\nThe board you see in front of you is the starting position of every game ever played by Capablanca, Fischer, Kasparov, and Carlsen. White always moves first, then Black, alternating until one king is checkmated, the players agree to a draw, or time runs out.\n\n## What you'll learn here\n\n- How each of the **six piece types** moves and captures\n- Why some pieces are stronger than others\n- The vocabulary you'll use for the rest of your chess life\n\nDon't try to memorize everything. Each piece has one or two simple rules — once you've moved them a few times, the patterns become muscle memory.\n\n> The pieces are characters in a story. Learn how each one walks before you ask them to dance."
     },
     {
       "type": "teach",
       "fen": "8/8/8/8/8/8/4P3/4K3 w - - 0 1",
       "title": "The Pawn",
-      "text": "Pawns march forward one square at a time — or two on their very first move. They capture diagonally. A pawn that reaches the far side promotes into any piece you choose. Small, but decisive."
+      "text": "The humble pawn — the soul of chess, said the master Philidor.\n\nA pawn is the only piece that **moves and captures differently**. It marches forward one square at a time, never sideways and never backward. On its very first move, it has the option to leap two squares — a single jolt of energy before its long, slow career.\n\n## Three things every pawn can do\n\n- **Step forward** one square, only if that square is empty\n- **Leap two squares** from its starting rank — handy for the opening\n- **Capture diagonally** one square forward, taking an enemy piece\n\nAnd one magical reward awaits: a pawn that reaches the far side **promotes** into any piece you choose (queens are the popular pick). A foot soldier becomes a queen. That's the dream.\n\nFor example, from the starting square, the e-pawn can play {{e3}} or {{e4}}.\n\n> Pawns can never go back — choose their path with care."
     },
     {
       "type": "play",
       "fen": "8/8/8/8/8/8/4P3/4K3 w - - 0 1",
-      "prompt": "Push the pawn two squares forward to claim the center.",
+      "prompt": "Push the e-pawn two squares to claim the center with **{{e4}}**.",
       "targetSan": [
         "e4"
       ],
-      "hint": "On its first move, a pawn may jump two squares. Try e4."
+      "hint": "On a pawn's very first move, it can leap two squares. The center is a great place to land."
     },
     {
       "type": "teach",
       "fen": "8/8/8/8/8/8/8/4K2N w - - 0 1",
       "title": "The Knight",
-      "text": "Knights leap in an L-shape — two squares one way, then one at a right angle. They're the only piece that can jump over others. Tricky to see, deadly in the right spot."
+      "text": "The knight is the trickster of the chessboard.\n\nUnlike every other piece, the knight does **not** travel in straight lines. It hops in an **L-shape**: two squares one direction (rank or file), then one square perpendicular. From a central square, a knight reaches up to eight different squares — like petals around a flower.\n\n## What makes knights special\n\n- **They jump.** No other piece can leap over friendly or enemy pieces — knights soar over them.\n- **They love the center.** A knight on the rim attacks just two or three squares; a knight in the center attacks eight.\n- **They're slow but devastating.** A knight can take four moves to cross the board, but in the right outpost it's a monster.\n\nFrom h1, the knight can hop to {{Nf2}} or {{Ng3}}. Notice how the L-shape works — count two squares one way, one square the other.\n\n> A knight on the rim is dim. A knight in the middle is a riddle."
     },
     {
       "type": "play",
       "fen": "8/8/8/8/8/8/8/4K2N w - - 0 1",
-      "prompt": "Develop the knight toward the center. Play Nf3 or Ng3.",
+      "prompt": "Develop the knight toward the action. Try **{{Nf2}}** or **{{Ng3}}** — both are L-shaped jumps from h1.",
       "targetSan": [
         "Nf2",
         "Ng3"
       ],
-      "hint": "Knight on h1 can reach f2 or g3."
+      "hint": "Two squares one direction, then one square perpendicular. From h1, what squares does that reach?"
     },
     {
       "type": "teach",
       "fen": "8/8/8/8/8/8/8/2B1K3 w - - 0 1",
       "title": "The Bishop",
-      "text": "Bishops glide along diagonals as far as they like. Each bishop stays on one color forever — one controls light squares, the other dark. They love open positions."
+      "text": "Bishops are the diagonal aristocrats. They glide as far as they like along the slanted lines of the board — but only on **one color forever**.\n\nThe bishop you see here lives on dark squares; its partner (when she joins) will live on light squares. Together they cover the whole board. Apart, each one has half the world hidden from her.\n\n## Bishop fundamentals\n\n- **Range is long, but blocked by pieces.** A bishop's beam stops at the first piece in its path.\n- **Open positions are paradise.** Few pawns means the bishop can stretch.\n- **The two bishops together** are called the *bishop pair* and are slightly stronger than a pair of knights.\n\nFrom c1, this bishop can swing to {{Bd2}}, {{Be3}}, {{Bf4}}, all the way to {{Bh6}} if nothing is in the way.\n\n> A bishop is a long-range sniper. Give her open lines and she'll dominate."
     },
     {
       "type": "teach",
       "fen": "8/8/8/8/8/8/8/R3K3 w - - 0 1",
       "title": "The Rook",
-      "text": "Rooks move in straight lines — along ranks and files. They become monsters in the endgame and love open files."
+      "text": "Rooks are the heavy infantry — straight lines and brute force.\n\nA rook moves any number of squares along **ranks** (rows) or **files** (columns). Like a bishop, its beam stops at the first piece. Unlike a bishop, it can change colors and reach every square on the board, eventually.\n\n## What rooks love\n\n- **Open files.** A file with no pawns is a rook's highway.\n- **The 7th rank** (or 2nd from your opponent's side). Rooks here harvest pawns and harass the king.\n- **Endgames.** With the board emptied, rooks become unstoppable.\n\nA rook's other special trick is **castling** — the only time a king and rook move together, on the same turn. We'll cover that in its own lesson.\n\n> Bring rooks out late. They're slow to develop, but in the endgame they rule."
     },
     {
       "type": "teach",
       "fen": "8/8/8/8/8/8/8/3QK3 w - - 0 1",
       "title": "The Queen",
-      "text": "The queen combines rook and bishop — moving any distance along ranks, files, or diagonals. She's the most powerful piece. Don't bring her out too early; she can be chased."
+      "text": "The queen is the most powerful piece on the board — by a long way.\n\nShe moves like a **rook and bishop combined**: any number of squares along ranks, files, OR diagonals. From a central square, she can attack 27 squares at once. No other piece comes close.\n\n## A note of caution\n\n- **Don't bring her out too early.** Each time she's attacked, she has to retreat — and you waste a tempo.\n- **Trade carefully.** Losing a queen for less is usually losing the game.\n- **In attacks, she's the conductor.** Pair her with a knight or bishop and devastating combinations appear.\n\nA queen on d1 can flow to {{Qd5}}, swing to {{Qa4}}, or strike along {{Qh5}} — only blocked when she meets a piece.\n\n> Power is patient. Develop your minor pieces first; the queen joins the dance later."
     },
     {
       "type": "teach",
       "fen": "8/8/8/8/8/8/8/4K3 w - - 0 1",
       "title": "The King",
-      "text": "The king steps one square in any direction. Protect him at all costs — if he's checkmated, the game ends. In the endgame, activate him: he's worth about three pawns in the attack."
+      "text": "The king is the heart of every position. Lose him, and the game is over.\n\nThe king plods just **one square in any direction**: forward, backward, sideways, or diagonally. Modest range, but he carries the whole game on his shoulders. He can never step into a square attacked by an enemy piece — that would be illegal, since walking into check ends the game.\n\n## Two phases, two roles\n\n- **Opening and middlegame:** *hide him.* Castle as soon as you can. The king belongs in a corner, behind a wall of pawns.\n- **Endgame:** *activate him.* With queens off and danger reduced, the king becomes a fighting piece worth roughly three pawns.\n\nThis switch — from cowering to charging — is one of chess's deepest ideas.\n\n> Protect your king as if your life depends on it. Because in chess, it does."
     }
   ]
 }

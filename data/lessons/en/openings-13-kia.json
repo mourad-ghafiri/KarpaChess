@@ -8,31 +8,31 @@
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "A Flexible Weapon",
-      "text": "The King's Indian Attack (KIA) is the King's Indian Defense played by White. Fianchetto the king's bishop, castle fast, then expand with e4/e5. Used by Bobby Fischer with deadly effect."
+      "text": "The **King's Indian Attack** (KIA) is the King's Indian Defense — *played by White*. Same setup, same plans, just colors reversed: White fianchettoes the king's bishop, castles short, and then unleashes a slow, methodical kingside attack.\n\nIt was Bobby Fischer's secret weapon when he wanted to dodge mainstream theory. Even today, top players like **Hikaru Nakamura** and **Levon Aronian** trot it out as a surprise weapon.\n\n## The defining sequence\n\nA model order is {{Nf3}} **{{d5}}** {{g3}} **{{Nf6}}** {{Bg2}} **{{c5}}** **{{O-O}}** **{{Nc6}}** {{d3}} **{{e6}}** {{Nbd2}}. The key signature is the cluster: **Nf3, g3, Bg2, 0-0, d3, Nbd2, e4** — almost regardless of what Black does.\n\n## What each side wants\n\n- **White's plan:** complete the fianchetto setup, then push **{{e4}}** and eventually **{{e5}}**, opening lines toward the kingside. Pieces stack up: **Re1**, **Nf1-g3**, **h2-h4-h5**, and a kingside breakthrough.\n- **Black's plan:** treat it like a French Defense or Sicilian — develop solidly, contest the queenside (**...b5, ...c5-c4, ...Rb8**), and exploit White's slow setup.\n- **Pawn structure:** *KIA / French structure* — White pawns at d3-e4 vs Black at d5-e6, with attacks on opposite wings.\n\n## Why it's grandmaster-friendly\n\nThe KIA is **one system against everything** — Sicilian, French, Caro-Kann all transpose into similar middlegames. You learn one set of plans and apply it for life.\n\n> The KIA is chess's universal answer. Slow setup, sharp attack."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "prompt": "Start with 1.Nf3",
+      "prompt": "Start with the most flexible first move: **{{Nf3}}**.",
       "targetSan": [
         "Nf3"
       ],
-      "hint": "Flexible first move."
+      "hint": "1.Nf3 develops a piece and keeps every option open. It can transpose to Reti, English, Catalan, or — as here — the KIA."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppp1ppp/8/4p3/8/5N2/PPPPPPPP/RNBQKB1R w KQkq - 0 2",
-      "prompt": "Now fianchetto: 2.g3",
+      "prompt": "Begin the fianchetto with **{{g3}}** — preparing the bishop's long diagonal.",
       "targetSan": [
         "g3"
       ],
-      "hint": "Prepare the bishop's long diagonal."
+      "hint": "g3 prepares the fianchetto — the bishop will live on g2, eyeing the long h1-a8 diagonal."
     },
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppp1ppp/8/4p3/8/5NP1/PPPPPP1P/RNBQKB1R b KQkq - 0 2",
       "title": "KIA Structure",
-      "text": "Next: Bg2, 0-0, d3, Nbd2, e4. You'll get a solid kingside fortress and a coiled spring ready for e5. Ideal if you want ONE opening against everything."
+      "text": "After **{{Nf3}}** and **{{g3}}**, the rest of the King's Indian Attack falls into a familiar groove.\n\n## The full setup\n\n1. **{{Nf3}}** — flexible knight development.\n2. **{{g3}}** — preparing the fianchetto.\n3. **{{Bg2}}** — bishop to its long-diagonal home.\n4. **{{O-O}}** — castle short, king tucked away.\n5. **{{d3}}** — solid central support.\n6. **{{Nbd2}}** — second knight (not on c3, where it would block c-pawn).\n7. **{{e4}}** — *the* attacking move. The center awakens.\n\nFrom there: **Re1**, **Nf1-h2** or **Nf1-g3**, **h2-h4-h5**, and a kingside avalanche.\n\n## A model game plan\n\nAfter Black's typical setup (**...d5, ...Nf6, ...e6, ...c5, ...Nc6, ...Be7**), White breaks with **e4-e5** kicking the f6 knight. Then **Nf1-g3** and **h4-h5** open lines. Combined with **Qe2** and **Bf4**, the attack on f7/h7 becomes deadly.\n\n## The KIA's main appeal\n\n- **One opening fits all.** Sicilian? French? Caro-Kann? You play the KIA against all three.\n- **Strategically rich.** The middlegame plans repeat, but the tactics are fresh every game.\n- **Hard to refute.** Even strong opponents have to be careful — Black's natural setups walk into White's plans.\n\n> If you want one weapon for life, learn the KIA. You'll never be without an answer."
     }
   ]
 }

@@ -4,5 +4,8 @@
   "solution": [
     "Rd8#"
   ],
-  "hint": "Skakmat baris belakang klasik."
+  "title": "Tembok Pion",
+  "setup": "Pelindung pion Hitam di **f7**, **g7**, **h7** masih utuh — tetapi tanpa jendela pelarian, itu adalah hukuman mati.",
+  "hint": "Geser benteng naik di lajur terbuka — pion {{f7}}-{{g7}}-{{h7}} bekerja untuk Anda.",
+  "explanation": "## Idenya\n\n**Skakmat baris belakang** dalam bentuk paling murni: lajur terbuka, baris belakang kosong, dan pelindung pion Hitam tanpa petak pelarian.\n\nMainkan {{Rd8#}}.\n\nMengapa raja terjebak?\n\n- {{f8}} dan {{h8}} — dikuasai benteng di d8 (baris ke-8)\n- {{f7}}, {{g7}}, {{h7}} — semua diblokir pion Hitam sendiri\n- Tidak ada di garis d8-g8 yang bisa menghalangi\n- Raja tidak bisa menangkap: d8 jauh dari g8\n\n> **Pelajaran:** Ini adalah posisi yang dipakai setiap pelatih catur di hari pertama. Solusinya sederhana — dorong *salah satu* pion f, g, atau h satu petak ke depan untuk membuat jendela pelarian sebelum benteng tiba."
 }

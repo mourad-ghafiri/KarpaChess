@@ -4,5 +4,8 @@
   "solution": [
     "Rxa8+"
   ],
-  "hint": "Trade the enemy rook with check."
+  "title": "Trade Into a Winning Endgame",
+  "setup": "Two rooks face each other on the **a-file** — and Black's king is also on the back rank.",
+  "hint": "When you can trade rooks with check and emerge into a winning endgame, do it without hesitation.",
+  "explanation": "## The Idea\n\nThis is a **simplification** tactic. White's rook trades with Black's rook, but with a critical bonus: it does so **with check**, dictating Black's response.\n\nWhite plays {{Rxa8+}}.\n\n## Black's Forced Reply\n\nThe rook on a8 attacks the king on e8 along the **eighth rank**. Black has only one option:\n\n- {{Kxa8}} — impossible, king cannot teleport four squares.\n- The king must move out of check: {{Kd7}}, {{Ke7}}, or {{Kf7}}. Each leaves the rook on a8 alive.\n\nWait — actually with the rook now on a8 and undefended, black's king can never reach it (4 squares away). Black moves the king, **and White is up an entire rook!**\n\n## Why This Wins\n\nThe resulting position is **King + Rook vs. lone King** — a forced win. Every beginner should know how to deliver mate with K+R vs K. This puzzle is therefore a forced win in the cleanest possible way: a single capture leads directly to a winning endgame.\n\n## Pattern to Memorize\n\n> A trade that brings you into a winning endgame is worth far more than a flashy attack that fizzles.\n\nLook for opportunities to **simplify** when you are ahead, even by tactical means."
 }

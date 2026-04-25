@@ -4,5 +4,8 @@
   "solution": [
     "Rxd5+"
   ],
-  "hint": "Menteri terpaku — tangkap dia."
+  "title": "Pakuan Jarak Jauh",
+  "setup": "Menteri hitam mengembara ke **d5** — tepat di antara rajanya di d8 dan benteng putih di d2.",
+  "hint": "Jarak bukan pertahanan saat buah terpaku. Ambil dia.",
+  "explanation": "## Idenya\n\nMenteri hitam terlihat aktif di tengah, tetapi dia sebenarnya **terpaku**. Benteng putih di d2 menembusnya sampai ke raja hitam di d8. Dia lumpuh.\n\nPutih memainkan {{Rxd5+}}, menangkap menteri dengan skak.\n\n- Hitam hanya punya satu jawaban legal: {{Kxd5}}? Tidak — raja di d8, tiga petak jauhnya. Raja tidak bisa mencapai d5 dalam satu langkah.\n- Jadi Hitam harus memindahkan raja keluar dari skak: {{Kc7}}, {{Kc8}}, {{Ke7}}, {{Ke8}}, {{Kd7}} — salah satu dari ini.\n- Benteng tidak bisa ditangkap. **Putih menang menteri secara cuma-cuma.**\n\n## Pola untuk Diingat\n\n> Pakuan absolut tidak peduli seberapa jauh raja. Selama raja lawan duduk di garis yang sama, buah yang terpaku tidak bisa kabur.\n\nIni bahkan lebih baik daripada pakuan biasa — tidak ada perebutan kembali instan, hanya kemenangan menteri yang bersih."
 }

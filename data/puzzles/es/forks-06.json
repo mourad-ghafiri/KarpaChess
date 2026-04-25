@@ -1,8 +1,13 @@
 {
   "id": "forks-06",
-  "fen": "4k3/8/8/2n5/8/8/8/Q3K3 w - - 0 1",
+  "fen": "8/8/8/k6n/8/8/3Q4/4K3 w - - 0 1",
   "solution": [
-    "Qa5"
+    "Qd5+",
+    "Kb6",
+    "Qxh5"
   ],
-  "hint": "Gana el caballo a lo largo de la fila."
+  "title": "La dama horquilla a lo largo de la fila",
+  "setup": "El rey y el caballo negros están en la misma 5ª fila — la dama puede salpicar a ambos con una jugada.",
+  "hint": "Desliza la dama a la 5ª fila con jaque. Desde {{d5}} apunta al rey y al caballo a la vez.",
+  "explanation": "## La idea\n\nUna **horquilla por la fila** con la dama. El rey negro en a5 y el caballo en h5 comparten la 5ª fila sin nada en medio. La casilla {{d5}} es la emboscada perfecta — la dama ataca ambas piezas a lo largo de la fila.\n\nTras {{Qd5+}} las negras no tienen buena respuesta:\n\n- **¿Capturar la dama?** El rey en a5 está a tres casillas de d5 — demasiado lejos.\n- **¿Bloquear el jaque?** La única pieza negra que queda es el caballo en h5, y desde ahí no puede saltar a b5 ni c5 (las únicas casillas de bloqueo) en una jugada.\n- **¿Huir?** El rey debe abandonar la 5ª fila, lo que abandona al caballo.\n\nLas negras juegan {{Kb6}} (o cualquier huida del rey) y las blancas se llevan el caballo con {{Qxh5}}.\n\n## Patrón a memorizar\n\n> Cuando dos piezas enemigas están en la **misma fila, columna o diagonal**, pregúntate si tu dama puede llegar a una casilla entre ellas — ahí vive la horquilla."
 }

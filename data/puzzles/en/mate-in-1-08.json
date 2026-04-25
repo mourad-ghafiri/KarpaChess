@@ -4,5 +4,8 @@
   "solution": [
     "Qe8#"
   ],
-  "hint": "Don't go in a straight line — pick the square your king already guards."
+  "title": "Diagonal Squeeze",
+  "setup": "King and queen are stacked on the **h-file** — but the mate is hiding off to the side.",
+  "hint": "Don't deliver check from h7 — that's stalemate. Cross to the long diagonal so {{g7}} stays covered by your king.",
+  "explanation": "## The Idea\n\nThis position is a classic **stalemate trap** disguised as a mate. The natural move {{Qg6}} or {{Qh7}} would either be stalemate or let the king to g8. The trick is to come from the side.\n\nPlay {{Qe8#}}.\n\nWhy is the king stuck?\n\n- {{g8}} — covered by the queen along the 8th rank\n- {{g7}} — controlled by your own king on **h6**\n- {{h7}} — also controlled by your king on h6\n- The king cannot capture (e8 is far) and nothing can interpose\n\n> **Takeaway:** In the K+Q vs K endgame, beware of stalemate. The queen often delivers mate from a *knight's move away* from the enemy king — never directly adjacent unless your own king defends her."
 }

@@ -4,5 +4,8 @@
   "solution": [
     "Rxe7+"
   ],
-  "hint": "Knight is pinned — capture it."
+  "title": "The Pinned Knight",
+  "setup": "A black knight on **e7** stands frozen between the white rook on e2 and the black king on e8.",
+  "hint": "A pinned knight is the saddest knight — it cannot even hop away.",
+  "explanation": "## The Idea\n\n**Absolute pin** on a knight. Normally knights laugh at pins because they jump, but a piece pinned to its own king cannot legally move at all — even to a non-capturing square — because the move would expose the king.\n\nWhite plays {{Rxe7+}}, winning the knight cleanly.\n\n- {{Kxe7}} is the only legal reply.\n- The trade is rook (5) for knight (3). At first glance that looks like a loss, but in this barren endgame White wins by simplifying into king-and-rook vs lone king.\n- In a richer position, this same pattern just **wins a knight for nothing** when more material is on the board.\n\n## Pattern to Memorize\n\n> A pinned knight is helpless: it cannot move, cannot defend, cannot escape.\n\nWhenever you see an enemy knight on the same line as its king, look for ways to **add an attacker** to that square."
 }

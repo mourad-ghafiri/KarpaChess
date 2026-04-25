@@ -4,5 +4,8 @@
   "solution": [
     "Rxd6+"
   ],
-  "hint": "Menteri terpaku pada rajanya — tangkap."
+  "title": "Menteri yang Beku",
+  "setup": "Menteri hitam berada di **lajur d** di depan rajanya, sementara benteng putih mengincarnya dari bawah.",
+  "hint": "Buah yang terpaku pada rajanya tidak bisa bergerak. Ambil dia.",
+  "explanation": "## Idenya\n\nIni adalah **pakuan absolut** klasik. Menteri hitam di d6 lengket pada rajanya di d8 — menggerakkannya akan menyingkap raja ke skak, yang ilegal. Jadi dia harus duduk di sana dan menyerap apa pun yang mendarat di petaknya.\n\nPutih memainkan {{Rxd6+}}, melahap menteri. Hitam sekarang dalam skak dan harus menjawab:\n\n- {{Kxd6}} merebut kembali benteng, tetapi Putih sudah menukar benteng dengan menteri — keuntungan material yang jelas.\n- Raja tidak punya jalan keluar legal lain: menghalangi mustahil (tidak ada buah di antaranya), dan benteng hanya bisa ditangkap oleh raja.\n\n## Pola untuk Diingat\n\n> Saat buah lawan terpaku pada rajanya, serang dia dengan buah lain. Buah yang terpaku tidak bisa lari.\n\nCari ini setiap langkah: **penyerang jarak jauh (benteng, gajah, menteri) plus target di garis yang sama dengan raja lawan.**"
 }

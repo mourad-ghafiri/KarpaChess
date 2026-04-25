@@ -1,21 +1,29 @@
 {
   "id": "remove-the-defender",
-  "title": "Singkirkan Pembela",
-  "summary": "Hilangkan bidak yang menyatukan posisi mereka",
+  "title": "Eliminasi Pembela",
+  "summary": "Singkirkan buah yang menyatukan posisi mereka",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "5rk1/R4ppp/8/8/8/8/5PPP/6K1 w - - 0 1",
       "title": "Pembela Kunci",
-      "text": "Banyak taktik gagal karena satu bidak musuh mempertahankan segalanya. Solusinya: singkirkan atau tukar. Di sini benteng Hitam di f8 mempertahankan baris belakang. Jika Putih mengambil pion f7, benteng dialihkan dan raja telanjang." },
-    { "type": "play",
+      "text": "Sebagian besar posisi disatukan oleh **satu** buah. Singkirkan, dan sisanya runtuh. Taktik ini disebut *eliminasi pembela* (atau kadang *menyingkirkan penjaga*).\n\n## Apa yang harus dicari\n\n- Kelemahan baris belakang yang dibela oleh **satu** benteng.\n- Bidak yang membela kuda, atau kuda yang menjaga petak kunci.\n- Menteri yang dipaku pada tugas pertahanan di sekitar raja.\n\nJika Anda dapat menangkap, menukar, atau mengusir satu buah itu, seluruh struktur jatuh.\n\n## Geometrinya\n\nPetakan **pembela** dari setiap petak kunci lawan. Untuk skakmat baris belakang, baris belakang adalah petak kunci; pembelanya adalah buah mana pun yang mengontrolnya. Untuk kuda yang menggantung, pembelanya adalah bidak atau buah yang melindunginya.\n\n## Cara menemukannya\n\n1. Cari **ancaman** yang ingin Anda mainkan — biasanya mat atau tangkapan yang menang.\n2. Identifikasi **satu buah** yang mencegah ancaman itu.\n3. Cari cara untuk **menyingkirkan** buah itu: tangkap (bahkan dengan biaya material), tukar, atau paksa pergi.\n4. Pastikan *kelanjutannya* tetap berhasil setelah penangkapan kembali.\n\nDi sini {{Rxf7}} menghancurkan pembela f7 Hitam. Benteng hitam di f8 menjaga baris belakang; jika Hitam menangkap kembali dengan {{Rxf7}}, benteng *pergi* dari baris belakang dan Putih bisa menerobos di langkah berikutnya.\n\n> Pembela yang disingkirkan adalah sasaran yang terbuka."
+    },
+    {
+      "type": "play",
       "fen": "5rk1/R4ppp/8/8/8/8/5PPP/6K1 w - - 0 1",
-      "prompt": "Ambil pion f7 — itu memaksa Hitam untuk bereaksi.",
-      "targetSan": ["Rxf7"],
-      "hint": "Rxf7 menyingkirkan pembela baris belakang." },
-    { "type": "teach",
+      "prompt": "Hancurkan bidak f7 dengan **{{Rxf7}}** — dan saksikan baris belakang runtuh.",
+      "targetSan": [
+        "Rxf7"
+      ],
+      "hint": "Buah mana yang menjaga baris belakang Hitam? Apa yang terjadi jika Anda memaksanya bergerak?"
+    },
+    {
+      "type": "teach",
       "fen": "5rk1/5Rpp/8/8/8/8/5PPP/6K1 b - - 0 1",
-      "title": "Yang Terjadi Setelahnya",
-      "text": "Sekarang Hitam harus menangani benteng di f7. Jika Hitam menukar dengan ...Rxf7, baris belakang masih lemah. Selalu tanyakan: 'Apa yang menyatukan posisi mereka?' Jawabannya biasanya satu bidak spesifik." }
+      "title": "Yang Terjadi Selanjutnya",
+      "text": "Setelah {{Rxf7}}, Hitam harus bereaksi. Pilihan apa pun yang ia ambil, strukturnya telah tercerai-berai.\n\n## Pilihan Hitam\n\n- **{{Rxf7}}** — menarik benteng dari baris belakang. Ide Putih berikutnya adalah invasi buah berat ke baris kedelapan.\n- **Raja bergerak** — meninggalkan Putih dengan satu bidak ekstra jauh di kamp Hitam dengan buah yang aktif.\n- **Mengabaikannya** — Putih memenangkan lebih banyak material dengan {{Rxg7+}}.\n\n## Pelajarannya\n\nSelalu tanyakan pertanyaan diagnostik yang sama:\n\n> *Buah lawan tunggal apa yang mencegah saya menang?*\n\nLalu curahkan perhatian Anda untuk menyingkirkannya — dengan tangkapan, dengan pertukaran, dengan pengalihan, atau dengan langkah tempo yang mengusirnya."
+    }
   ]
 }

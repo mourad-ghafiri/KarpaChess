@@ -1,6 +1,6 @@
 {
   "id": "greek-gift",
-  "title": "Le cadeau grec (Fxh7+)",
+  "title": "Le cadeau grec (Bxh7+)",
   "summary": "Sacrifice classique du fou contre le roi roqué",
   "difficulty": "advanced",
   "steps": [
@@ -8,13 +8,13 @@
       "type": "teach",
       "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2BPP3/2N2N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
       "title": "Le motif",
-      "text": "Le \"cadeau grec\" est un sacrifice du fou en h7 : Bxh7+ Kxh7 Ng5+ Kg8 (ou Kg6) Qh5 — et l'attaque perce. Nommé ainsi car il paraît gratuit mais porte la destruction."
+      "text": "Le **cadeau grec** est le sacrifice le plus célèbre des échecs : un fou est lâché en h7 (ou h2 pour les Noirs), le roi prend — et marche droit dans une attaque de mat avec cavalier et dame.\n\n## La séquence standard\n\nUne ligne modèle ressemble à ceci :\n\n1. {{Bxh7+}} — sacrifice du fou.\n2. **Kxh7** — le roi doit prendre (sinon le fou rentre avec une pièce gagnée).\n3. {{Ng5+}} — échec du cavalier.\n4. **Kg8** (ou **Kg6** dans certaines variantes) — le roi fuit.\n5. {{Qh5}} — la dame se joint, menaçant **Qh7#**.\n6. Les seules ressources du défenseur sont *forcées*, et la plupart perdent.\n\n## Quand cette attaque apparaît\n\n- Les Noirs ont roqué **petit** avec des pions en f7-g7-h7.\n- Le fou en **d3** (ou batterie c2-b1) lorgne le pion h7.\n- Un **cavalier blanc** peut sauter en **g5** avec échec et tempo.\n- La dame blanche a un chemin libre vers **h5**.\n- Le cavalier défenseur en **f6** (le bouclier naturel de h7) est **parti**, **cloué** ou **distrait**.\n\n## Pourquoi ce nom\n\nLes Grecs auraient laissé le cheval de bois devant Troie en « cadeau » — et les Troyens l'auraient traîné à l'intérieur, à leur perte. Un fou en h7 ressemble à un cadeau négligent, mais il porte toute une attaque à l'intérieur.\n\n> La pièce que vous acceptez n'est peut-être pas le cadeau que vous vouliez."
     },
     {
       "type": "teach",
       "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2BPP3/2N2N2/PPP2PPP/R1BQ1RK1 w - - 0 1",
-      "title": "La liste de vérification",
-      "text": "Le cadeau grec fonctionne quand : (1) les Noirs ont un cavalier qui n'est PAS en f6 bloquant Ng5, (2) la dame peut rapidement atteindre h5, (3) aucune pièce noire ne peut interférer. Si ces conditions tiennent, c'est généralement décisif. Sinon, vous perdez juste un fou."
+      "title": "Liste de vérification avant de sacrifier",
+      "text": "Le cadeau grec gagne ou *perd* — il n'y a pas d'entre-deux. Avant de donner le fou, parcourez cette liste.\n\n## La liste oui/non\n\n1. **Pas de défenseur en f6.** Le cavalier des Noirs peut-il atteindre f6 pour boucher le trou ? Si oui, *abandonnez*.\n2. **Cavalier prêt pour g5.** Un cavalier blanc est-il à un coup de {{Ng5}} après la prise du roi ?\n3. **Route de la dame vers h5.** Le chemin de d1 à h5 (ou h3 à h5) est-il libre d'obstructions ?\n4. **Pas de fuite vers g6.** Si le roi fuit en **g6**, avez-vous des coups comme **Qh5+** ou **f4-f5** pour suivre ?\n5. **Pas d'interférence** de la dame ou du fou noir qui livrerait un contre-échec.\n6. **Pas de contre-attaque** plus rapide sur votre propre roi.\n\nSi toutes les réponses sont *oui*, le sacrifice est presque toujours sain.\n\n## Une continuation modèle\n\nAprès {{Bxh7+}} **Kxh7** {{Ng5+}} :\n\n- **Kg8** : {{Qh5}} menace {{Qh7#}}. La plupart des défenses échouent.\n- **Kg6** : Blanc joue souvent {{Qg4}} ou {{h4}} amenant plus d'attaquants.\n- **Kh6** : rare mais dangereux — calculez {{Nxf7+}} et {{Qd2+}}.\n\n## Quand *ne pas* le faire\n\n- Le cavalier défenseur est solidement en **f6** sans moyen de le déloger.\n- Votre dame est loin (par ex. en a1) et ne peut atteindre **h5** à temps.\n- L'adversaire a une pièce (souvent un fou en g4 ou e6) qui peut s'interposer avec échec.\n- Vous n'avez aucune suite après **Kg8**.\n\n> Le cadeau grec récompense le calcul. Il punit l'espoir."
     }
   ]
 }

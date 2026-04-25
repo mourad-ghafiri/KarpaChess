@@ -4,23 +4,35 @@
   "summary": "Una defensa sólida como una roca contra 1.e4",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "Sólida y Firme",
-      "text": "La Caro-Kann (1.e4 c6) prepara ...d5 con el apoyo del peón c. A diferencia de la Francesa, el alfil de casillas claras se desarrolla libremente. Es tranquila, estratégica y famosamente difícil de quebrar." },
-    { "type": "play",
+      "text": "La **Defensa Caro-Kann** es la elección de los jugadores que quieren *sobrevivir a la apertura* y llegar a un medio juego sano sin memorizar montañas de teoría. Ha sido un caballo de batalla para campeones del mundo como Capablanca, Karpov y Anand.\n\n## La secuencia que la define\n\nLa apertura va {{e4}} {{c6}}. Con **...c6**, las negras preparan **...d5** en la siguiente jugada — pero a diferencia de la Francesa (1...e6), la jugada del peón c *no* bloquea el alfil de casillas claras. Tras ...d5 y un eventual cambio, el alfil negro emerge activamente a f5 o g4.\n\n## Qué quiere cada bando\n\n- **Plan blanco:** desafiar el centro con **{{d4}}** y elegir un sistema — *Avance* ({{e5}}), *Cambio* ({{exd5}}), *Clásica* ({{Nc3}} o {{Nd2}} dxe4 Nxe4) o *Dos Caballos* ({{Nc3}}, {{Nf3}}). Cada uno lleva a un medio juego diferente.\n- **Plan negro:** jugar **...d5**, desarrollar el alfil de c8 *fuera* de la cadena de peones (normalmente a f5), después **...e6**, **...Nd7**, **...Ngf6**, enrocar corto y buscar una ligera ventaja en el final.\n- **Estructura de peones:** suele producir una *cadena de peones Caro-Kann* (e6, d5) o, tras los cambios, una estructura simétrica limpia donde las negras están encantadas de moler.\n\n## Por qué jugarla\n\nLa Caro-Kann le da a las negras **un buen alfil de casillas claras** (la queja más habitual contra la Francesa queda resuelta) y un hueso duro para que las blancas lo rompan. Premia la paciencia y una excelente técnica de finales.\n\n> La Caro-Kann es el equivalente ajedrecístico de un muro de granito. Lenta, firme, casi imposible de romper."
+    },
+    {
+      "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
-      "prompt": "Las Negras juegan la estructura Caro-Kann.",
-      "targetSan": ["c6"],
-      "hint": "1...c6 prepara ...d5." },
-    { "type": "play",
+      "prompt": "Las negras juegan la Caro-Kann con **{{c6}}** — preparando **...d5** con todo el apoyo de los peones.",
+      "targetSan": [
+        "c6"
+      ],
+      "hint": "A diferencia de la Francesa (1...e6), esta jugada deja libre el alfil de casillas claras de las negras. Sólido Y activo."
+    },
+    {
+      "type": "play",
       "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
-      "prompt": "Respuesta principal de las Blancas: refuerza el centro.",
-      "targetSan": ["d4"],
-      "hint": "2.d4 reclama el centro completo." },
-    { "type": "teach",
+      "prompt": "La respuesta principal de las blancas: clavar el centro completo con **{{d4}}**.",
+      "targetSan": [
+        "d4"
+      ],
+      "hint": "Con d4, las blancas construyen el gran centro clásico. Si las negras desafían con ...d5, la posición se vuelve crítica."
+    },
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pp1ppppp/2p5/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2",
       "title": "La Ruptura",
-      "text": "Las Negras juegan ahora 2...d5, desafiando directamente el centro blanco. Las Blancas pueden avanzar (e5), cambiar (exd5) o entrar en la Variante del Avance. Cada una conduce a un tipo distinto de partida." }
+      "text": "Ahora las negras juegan el planeado **...d5**, golpeando directamente el peón blanco de e4. Las blancas deben elegir cómo reaccionar — y la elección define el resto de la partida.\n\n## Cuatro variantes principales\n\n- **Variante del Avance** — **3.e5**. Las blancas avanzan, ganando espacio. Las negras sacan el alfil con **...Bf5** antes de encerrarlo.\n- **Variante del Cambio** — **3.exd5 cxd5**. Simétrica, tranquila, da a las blancas una pequeña ventaja de espacio.\n- **Variante Clásica (Capablanca)** — **3.Nc3 dxe4 4.Nxe4 Bf5**. Famosa por el activo alfil negro en f5.\n- **Ataque Panov-Botvinnik** — **3.exd5 cxd5 4.c4!** Las blancas transponen a un juego con peón dama aislado y posibilidades de ataque.\n\nUna partida modelo va {{e4}} {{c6}} {{d4}} {{d5}} {{Nc3}} **dxe4** {{Nxe4}} **Bf5**. Las negras emergen con la pareja de alfiles ya rota a tu favor y un planteamiento flexible.\n\n> La Caro-Kann te enseña que *la flexibilidad gana más partidas que la agresividad*."
+    }
   ]
 }

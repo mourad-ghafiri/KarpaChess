@@ -1,8 +1,11 @@
 {
   "id": "mate-in-1-20",
-  "fen": "4k3/4Q3/4K3/8/8/8/8/8 w - - 0 1",
+  "fen": "4k3/8/4K3/8/8/8/8/Q7 w - - 0 1",
   "solution": [
-    "Qb7"
+    "Qa8#"
   ],
-  "hint": "Enjaula al rey por el costado."
+  "title": "Enjaular al rey por el costado",
+  "setup": "Tus reyes están en **oposición** en la columna e. La dama, lejos en **a1**, tiene una autopista limpia por la fila final.",
+  "hint": "Lleva la dama al rincón de la fila final — tu rey ya cubre {{d7}}, {{e7}} y {{f7}}.",
+  "explanation": "## La idea\n\nUn **mate de manual de R+D contra R en la fila final** con los reyes en oposición. La dama barre la octava fila desde lejos.\n\nJuega {{Qa8#}}.\n\n¿Por qué está atrapado el rey?\n\n- {{d8}} y {{f8}} — cubiertas por la dama en a8 (octava fila)\n- {{d7}}, {{e7}}, {{f7}} — todas controladas por tu rey en **e6**\n- La dama está lejos del rey, así que {{Kxa8}} es imposible\n- Nada puede interponerse en la octava fila vacía\n\n> **Conclusión:** El *enjaulado lateral* es el mate de dama más seguro — sin riesgo de ahogado, dama bien defendida por la distancia, y los reyes en oposición limpia. Practícalo hasta que sea automático."
 }

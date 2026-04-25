@@ -4,5 +4,8 @@
   "solution": [
     "Rxa8#"
   ],
-  "hint": "Échangez les tours et mattez — le mur de pions sert aussi de prison."
+  "title": "Tours Échangées, Mat Servi",
+  "setup": "Position symétrique avec les tours qui se fixent sur la colonne a. Le roi noir n'a pas d'air.",
+  "hint": "Échangez les tours. Le mur de pions noirs est aussi la prison des Noirs.",
+  "explanation": "## L'Idée\n\n{{Rxa8#}} est un **échange-vers-mat** — la forme la plus simple et la plus élégante d'exécution sur la dernière rangée.\n\n### Coup par coup\n\n1. La tour blanche capture la tour noire en a8.\n2. Les Noirs n'ont aucune pièce pour reprendre (le roi en g8 est trop loin ; aucun autre défenseur sur la 8e rangée).\n3. Le roi est en échec par la tour blanche en a8 sur toute la 8e rangée.\n4. **Aucune échappatoire :** g7-h7 sont les propres pions, h8 / f8 sont attaqués par la tour blanche, et il ne reste rien pour capturer ou s'interposer.\n\n### Ce que les Noirs auraient dû faire plus tôt\n\n- Pousser {{h6}} ou {{g6}} il y a longtemps pour donner de l'air au roi.\n- Garder une pièce (cavalier, fou, dame) défendant la dernière rangée.\n- Éviter les échanges de tours sur les colonnes ouvertes quand le roi n'a pas de luft.\n\n> Deux armées de force égale + un tempo supplémentaire de structure de pions = une armée gagne. Le mat du couloir est le prix d'un luft négligé."
 }

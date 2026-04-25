@@ -4,5 +4,8 @@
   "solution": [
     "Kd4"
   ],
-  "hint": "Centralisez avant de pousser."
+  "title": "Le Roi d'Abord, le Pion Ensuite",
+  "setup": "Une finale simple roi et pion — votre pion est en **e4**, votre roi juste derrière, et le roi ennemi loin en e8.",
+  "hint": "Poussez le **roi**, pas le pion. Le roi doit mener ; le pion ne suit que lorsque le chemin est sûr.",
+  "explanation": "## Principe Clé : Le Roi est le Moteur\n\nDans les finales de roi et pion, le camp qui a le pion supplémentaire gagne en **escortant** le pion avec le roi. Si le pion part seul, le roi adverse rattrape et bloque. Votre roi doit arriver sur la **6e rangée devant le pion** avant que le pion ne fonce.\n\n## Le Plan\n\n1. **{{Kd4}}** — Les Blancs centralisent, vers d5 ou e5. Aller en f4 est aussi correct ; le principe est de marcher vers la case de promotion du pion.\n2. Quoi que jouent les Noirs (...Kd7 ou ...Ke7), les Blancs continuent avec **Kd5** puis **Kd6 / Ke5 / Kf6** pour gagner le contrôle des cases autour du pion.\n3. Une fois le roi sur la 6e rangée devant le pion, vous poussez. Le pion promeut alors par la force.\n\n> Mémorisez cette règle : **roi sur la 6e, pion sur la 5e — vous gagnez**.\n\n## Ce Qui Ne Va Pas si Vous Poussez le Pion d'Abord\n\nSi les Blancs jouent 1.e5? immédiatement, les Noirs répondent 1...Ke7 et après 2.Kd4 Ke6 le roi noir bloque le pion par devant. Les Blancs peuvent sonder mais jamais percer, et la partie est nulle. Le pion ne peut se battre seul — il a besoin de l'escorte du roi."
 }

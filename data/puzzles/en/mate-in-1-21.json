@@ -4,5 +4,8 @@
   "solution": [
     "Rd8#"
   ],
-  "hint": "Classic back-rank mate."
+  "title": "The Wall of Pawns",
+  "setup": "Black's pawn shield on **f7**, **g7**, **h7** is intact — but with no escape window, that's a death sentence.",
+  "hint": "Slide the rook up the open file — the {{f7}}-{{g7}}-{{h7}} pawns do all the work.",
+  "explanation": "## The Idea\n\nThe **back-rank mate** in its purest form: an open file, an empty back rank, and a Black pawn shield with zero escape squares.\n\nPlay {{Rd8#}}.\n\nWhy is the king stuck?\n\n- {{f8}} and {{h8}} — covered by the rook on d8 (8th rank)\n- {{f7}}, {{g7}}, {{h7}} — all blocked by Black's own pawns\n- Nothing on the d8-g8 line can interpose\n- The king cannot capture: d8 is far from g8\n\n> **Takeaway:** This is the position every chess teacher uses on day one. The fix is simple — push *one* of the f, g, or h pawns one square forward to make an escape window before the rook arrives."
 }

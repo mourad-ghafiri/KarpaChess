@@ -4,5 +4,8 @@
   "solution": [
     "Rg8#"
   ],
-  "hint": "Serang kolom raja — ia terkurung oleh raja Anda dan pionnya sendiri."
+  "title": "Tutup Tutupnya",
+  "setup": "Raja Hitam tersangkut di **h8** dengan bidak **h7** memblokir satu-satunya kotak pelarian yang belum dikuasai benteng.",
+  "hint": "Naikkan benteng di lajur g — raja Anda dan bidak Hitam menutup tutupnya.",
+  "explanation": "## Idenya\n\n**Skakmat pojok K+B** dengan sedikit twist: benteng datang dari lajur *bersebelahan*, bukan baris yang sama dengan raja.\n\nMain {{Rg8#}}.\n\nMengapa raja terjebak?\n\n- {{h8}} — benteng di g8 menyerang seluruh baris ke-8 termasuk h8\n- {{g7}} — dikuasai raja Anda di **f7**\n- {{h7}} — diblokir bidak Hitam sendiri\n- Benteng di g8 dilindungi raja Anda di f7, jadi {{Kxg8}} tetap ilegal\n\n> **Inti:** Ketika raja musuh terkurung bidaknya sendiri, Anda tidak perlu rumit. Jalan benteng ke kotak yang *dilindungi raja Anda* di baris atau lajur yang bersebelahan dengan raja terjebak."
 }

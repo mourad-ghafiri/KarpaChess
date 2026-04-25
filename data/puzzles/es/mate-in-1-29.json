@@ -1,8 +1,11 @@
 {
   "id": "mate-in-1-29",
-  "fen": "6k1/6pp/6B1/5K2/8/8/8/8 w - - 0 1",
+  "fen": "7k/5K2/8/6N1/8/8/8/2B5 w - - 0 1",
   "solution": [
-    "Bf7+"
+    "Bb2#"
   ],
-  "hint": "Alfil en la diagonal larga — rey atrapado."
+  "title": "Lanza por la diagonal larga",
+  "setup": "Tu caballo en **g5** pica {{h7}}, tu rey en **f7** sella {{g7}}, {{g8}} y {{f8}} — y el alfil está a un movimiento de la diagonal **a1-h8**.",
+  "hint": "Coloca el alfil en la **diagonal larga** — el rey en **h8** no tiene a dónde huir.",
+  "explanation": "## La idea\n\nUn precioso **mate con alfil + caballo + rey**. El alfil se desliza a la diagonal larga y atraviesa hasta h8, mientras que el caballo y el rey cubren todas las casillas de escape.\n\nJuega {{Bb2#}}.\n\n¿Por qué está atrapado el rey?\n\n- El alfil en b2 ataca h8 directamente por la **diagonal a1-h8**\n- {{g7}} — cubierta por tu rey en **f7**\n- {{g8}} — cubierta por tu rey en **f7**\n- {{h7}} — controlada por el caballo en **g5**\n- El alfil está demasiado lejos para {{Kxb2}}, y nada puede interponerse en la diagonal larga\n\n> **Conclusión:** La **diagonal a1-h8** estilo fianchetto (o su espejo **h1-a8**) es uno de los carriles de mate más letales del ajedrez. Cuando tu alfil llega a esa diagonal y el rey está en el rincón con una pieza cubriendo h7 — partida terminada."
 }

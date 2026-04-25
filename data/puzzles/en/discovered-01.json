@@ -4,5 +4,8 @@
   "solution": [
     "Nd6+"
   ],
-  "hint": "Move the knight — the rook attacks through."
+  "title": "Knight Steps, Rook Strikes",
+  "setup": "White's rook stands behind the knight on the open **e-file**, with the black king staring straight at both pieces.",
+  "hint": "The knight is the only thing standing between your rook and the enemy king — move it with check.",
+  "explanation": "## The Idea\n\nA discovered attack always has two actors: the **mover** (the piece in front) and the **discoverer** (the piece behind). Here the knight on e4 is the mover and the rook on e1 is the discoverer. As long as the knight sits on the e-file, the rook does no work.\n\n## Why {{Nd6+}} Works\n\nThe knight leaves the e-file with tempo. Two things happen at the same instant:\n\n- The rook on e1 now sees all the way to e8 and gives check.\n- The knight has landed on **d6**, where it also attacks the king's only running square, **f7**, and stares at e8 a second time.\n\nBlack's king is checked by a piece it cannot capture (the rook is far away and defended), and it cannot block on the e-file because there is nothing in between. The only legal reply is to step aside, after which the knight on d6 is excellently placed.\n\n## Why Nothing Else Is As Good\n\nIf the knight moves to a square that does **not** also stab at the king's escape (for example a passive retreat), Black simply runs the king to f7 or d7 and the discovered check loses much of its sting. The lesson: when you spring a discovered check, try to land the moving piece on a square that adds to the attack."
 }

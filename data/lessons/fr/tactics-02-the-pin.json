@@ -1,23 +1,23 @@
 {
   "id": "the-pin",
   "title": "Le clouage",
-  "summary": "Fixer une pièce — elle ne peut pas bouger",
+  "summary": "Figez une pièce — elle ne peut plus bouger",
   "difficulty": "beginner",
   "steps": [
     {
       "type": "teach",
       "fen": "3k4/8/3q4/8/8/8/3R4/3K4 w - - 0 1",
       "title": "Clouage absolu",
-      "text": "Quand une pièce est clouée contre son roi, elle ne peut pas bouger légalement — bouger exposerait le roi à l'échec. Ici la dame noire est clouée sur la colonne d. Elle est figée."
+      "text": "Un **clouage** survient quand une pièce ennemie se trouve entre votre attaquant et une pièce ennemie *plus précieuse* placée derrière. La pièce devant est collée à sa case — bouger exposerait ce qui se trouve derrière.\n\n## La géométrie\n\nUn clouage exige trois choses sur une même ligne — une colonne, une rangée ou une diagonale :\n\n1. Votre **attaquant à longue portée** ({{Rd2}}, dame ou fou).\n2. La **pièce clouée** au milieu.\n3. Une **cible plus précieuse** derrière elle.\n\nSeuls les tours, les fous et les dames peuvent clouer — ils se déplacent en ligne droite. Les cavaliers, les pions et les rois ne le peuvent pas.\n\n## Deux variantes\n\n- **Clouage absolu** — la pièce derrière est le **roi**. Bouger la pièce de devant serait illégal.\n- **Clouage relatif** — la pièce derrière est seulement très précieuse (par exemple une dame). La pièce de devant *peut* bouger, mais cela perdrait du matériel.\n\n## Comment repérer un clouage\n\n1. Examinez chacune de vos pièces à longue portée.\n2. Tracez ses lignes à travers la position.\n3. Marquez toute ligne contenant *deux* pièces ennemies, la plus précieuse à l'arrière.\n4. Si vous en trouvez une, demandez : *puis-je attaquer la pièce clouée avec un autre attaquant ?* Une pièce clouée ne peut pas s'enfuir — c'est une cible.\n\nDans cette position, la tour en d2 cloue la dame noire en d6 contre le roi en d8. La dame est figée — et nous avons un tir libre.\n\n> Une pièce clouée n'est pas une pièce. C'est une cible."
     },
     {
       "type": "play",
       "fen": "3k4/8/3q4/8/8/8/3R4/3K4 w - - 0 1",
-      "prompt": "Capturez la dame clouée.",
+      "prompt": "Capturez la dame clouée avec **{{Rxd6+}}** — elle ne peut pas s'écarter.",
       "targetSan": [
         "Rxd6+"
       ],
-      "hint": "Elle ne peut pas bouger. Prenez-la."
+      "hint": "La dame est collée à la colonne d. Elle ne se défend pas elle-même ; elle *est* la cible."
     }
   ]
 }

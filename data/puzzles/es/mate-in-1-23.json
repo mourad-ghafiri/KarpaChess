@@ -4,5 +4,8 @@
   "solution": [
     "Rc8#"
   ],
-  "hint": "La octava fila está completamente abierta."
+  "title": "Martillo por la columna semiabierta",
+  "setup": "La columna c está vacía entre tu torre y la octava fila, y el escudo de peones negro no tiene ventana de escape.",
+  "hint": "Carga por la columna c abierta — los peones de {{f7}}-{{g7}}-{{h7}} atrapan al rey por ti.",
+  "explanation": "## La idea\n\nUn **mate de fila final por columna semiabierta**. Aunque haya material extra en el tablero, todo lo que importa es la octava fila despejada y el escudo de peones bloqueado.\n\nJuega {{Rc8#}}.\n\n¿Por qué está atrapado el rey?\n\n- {{f8}}, {{h8}} y el resto de la octava fila — cubiertas por la torre en c8\n- {{f7}}, {{g7}}, {{h7}} — todas bloqueadas por los propios peones negros\n- Las negras no tienen ninguna pieza que pueda interponerse entre c8 y g8 a tiempo\n- El rey no puede capturar: c8 está demasiado lejos de g8\n\n> **Conclusión:** Una *columna semiabierta* (la tuya tiene un peón, la suya no) es una de las estructuras más poderosas del ajedrez. Comprueba siempre si tu torre puede convertir esa columna en un mate."
 }

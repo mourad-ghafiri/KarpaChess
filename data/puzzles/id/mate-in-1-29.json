@@ -1,8 +1,11 @@
 {
   "id": "mate-in-1-29",
-  "fen": "6k1/6pp/6B1/5K2/8/8/8/8 w - - 0 1",
+  "fen": "7k/5K2/8/6N1/8/8/8/2B5 w - - 0 1",
   "solution": [
-    "Bf7+"
+    "Bb2#"
   ],
-  "hint": "Gajah di diagonal panjang — raja terjebak."
+  "title": "Tombak Diagonal Panjang",
+  "setup": "Kuda Anda di **g5** menjepit {{h7}}, raja Anda di **f7** mengunci {{g7}}, {{g8}} dan {{f8}} — dan gajah satu langkah dari diagonal **a1-h8**.",
+  "hint": "Pijakkan gajah di **diagonal panjang** — raja di **h8** tidak punya tempat lari.",
+  "explanation": "## Idenya\n\nSebuah skakmat **gajah + kuda + raja** yang indah. Gajah meluncur ke diagonal panjang dan menembus sampai h8, sementara kuda dan raja menutup setiap petak pelarian.\n\nMainkan {{Bb2#}}.\n\nMengapa raja terjebak?\n\n- Gajah di b2 menyerang h8 langsung di sepanjang **diagonal a1-h8**\n- {{g7}} — dikuasai raja Anda di **f7**\n- {{g8}} — dikuasai raja Anda di **f7**\n- {{h7}} — dikuasai kuda di **g5**\n- Gajah terlalu jauh untuk {{Kxb2}}, dan tidak ada yang bisa menghalangi di diagonal panjang\n\n> **Pelajaran:** **Diagonal a1-h8** ala fianchetto (atau cerminnya **h1-a8**) adalah salah satu jalur skakmat paling mematikan dalam catur. Saat gajah Anda mencapai diagonal itu dan raja di sudut dengan satu buah menutup h7 — permainan selesai."
 }

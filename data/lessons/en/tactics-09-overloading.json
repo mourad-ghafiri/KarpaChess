@@ -4,18 +4,26 @@
   "summary": "A piece doing two jobs will fail at one",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "4k3/4q3/8/8/8/8/4R3/4K3 w - - 0 1",
       "title": "Too Much Work",
-      "text": "An overloaded piece is defending (or attacking) more than it can handle. The classic case: one piece defends two squares. When you attack one, the other falls. Here Black's queen is defending the king — she can't move without losing to Rxe7+." },
-    { "type": "play",
+      "text": "An **overloaded** piece is one that has more defensive duties than it can handle. Attack one of its jobs, and it fails at another.\n\n## The classic shape\n\nOne enemy piece is doing two of these at once:\n\n- Defending a square that, if invaded, would be mate.\n- Defending another piece that is otherwise loose.\n- Blocking a check while also guarding a key square.\n- Holding a pin while also covering a knight fork square.\n\nIf a piece is doing **two** jobs, you only need to make it do **three** for it to fail.\n\n## The geometry\n\nThere is no shape — overloading is bookkeeping. Map every defender's duties; find the piece with two; attack one of those duties.\n\n## How to find it\n\n1. List the enemy pieces that guard the most things.\n2. For each, write down its duties — squares defended, pieces protected, lines covered.\n3. Find an attack that forces the piece to drop one duty.\n4. Profit from the abandoned square.\n\nHere Black's queen on e7 is overloaded: she's the only piece between the rook on e2 and the king on e8. White plays {{Rxe7+}} — the queen falls because she cannot both stay home and shield the king.\n\n> Loyal pieces still get fired when there is too much work."
+    },
+    {
+      "type": "play",
       "fen": "4k3/4q3/8/8/8/8/4R3/4K3 w - - 0 1",
-      "prompt": "Capture the pinned queen.",
-      "targetSan": ["Rxe7+"],
-      "hint": "The queen's double duty (defending king AND her square) means she dies." },
-    { "type": "teach",
+      "prompt": "Snatch the overloaded queen with **{{Rxe7+}}** — she is shielding the king and cannot move.",
+      "targetSan": [
+        "Rxe7+"
+      ],
+      "hint": "The queen is doing two jobs at once. Attack one and the other fails."
+    },
+    {
+      "type": "teach",
       "fen": "4k3/4R3/8/8/8/8/8/4K3 b - - 0 1",
       "title": "Spotting Overloads",
-      "text": "Look for pieces defending multiple things — pawns defending each other plus a piece, or a knight holding back a file while also blockading a passed pawn. When you find one, attack one of its duties." }
+      "text": "Now the rook is on e7, two pawns up in material with a winning king-and-pawn endgame ahead. The overload did its work.\n\n## Common overload patterns to memorize\n\n- A pawn defending two pieces (knight + bishop).\n- A knight that blockades a passed pawn *and* defends another minor piece.\n- A queen that holds a back rank *and* defends a hanging knight.\n- A rook that defends the back rank *and* opposes an enemy rook on a file.\n\n## A useful question\n\nWhenever you scan a position, ask: *which enemy piece defends more than one thing?* That piece is your weak spot. Find a move that forces it to choose, and you win.\n\n> Strong moves do not just attack pieces. They attack *responsibilities*."
+    }
   ]
 }

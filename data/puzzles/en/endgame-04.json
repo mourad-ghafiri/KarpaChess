@@ -4,5 +4,8 @@
   "solution": [
     "Kd5"
   ],
-  "hint": "Gain ground with the king."
+  "title": "King Activity Wins",
+  "setup": "Pawn on **e3**, your king on **e4**, the black king sitting on f6 trying to keep watch over the pawn's promotion square.",
+  "hint": "Don't go straight forward — **gain ground** by stepping to a square the enemy king cannot reach.",
+  "explanation": "## Key Principle: Gaining Squares with the King\n\nThe black king is doing its job: it covers e5, e6 and e7, slowing your pawn. To make progress, your king must reach the 6th rank without trading itself off. The way to do that is to step **diagonally forward** to a square the enemy king cannot dispute.\n\n## The Plan\n\n1. **{{Kd5}}** — White advances toward the queenside, gaining a rank without ever standing on a square Black can immediately challenge. Black cannot reply Kd5 (occupied), Ke5 (attacked by your king), or Kf5 (attacked).\n2. Black's best try is **...Ke7**, hurrying back to defend. White answers with **Kc6** or **Ke5**, continuing to push the enemy king while keeping the pawn safe.\n3. When the white king reaches the 6th rank, the pawn marches: **e4, e5, e6** — and the king clears the queening square.\n\n## What Goes Wrong If You Push the Pawn\n\nIf White plays 1.e4? right away, the king on f6 is now well-placed: 1...Ke6! and Black has secured the **square in front of the pawn**. From there it is a fortress and a draw. The lesson: **before pushing, win the squares your pawn will stand on**."
 }

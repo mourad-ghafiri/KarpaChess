@@ -1,21 +1,29 @@
 {
   "id": "rook-mate",
   "title": "R + T contre R",
-  "summary": "Conduire le roi au bord et donner mat",
+  "summary": "Pousser le roi vers le bord et mater",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "7k/8/5K2/8/8/8/8/6R1 w - - 0 1",
       "title": "La technique",
-      "text": "Roi et tour contre roi est toujours une victoire pour le camp fort. La technique : utiliser la tour pour couper le roi ennemi, puis avancer votre roi à ses côtés pour le pousser vers le bord. Enfin, donner mat sur la dernière rangée." },
-    { "type": "teach",
+      "text": "## R + T contre R — le gain de manuel\n\nRoi et tour contre roi seul est **toujours gagnant** pour le camp fort. Pas de finesse d'opposition à apprendre, pas d'exception de zugzwang — juste une technique propre que vous pouvez répéter depuis n'importe quelle position de départ en **environ 16 coups**.\n\n### À quoi ressemble cette finale\n\n- **Tour + roi** contre roi nu.\n- L'échiquier est vide ; tout est question de coordination.\n\n### Le concept clé : couper et bousculer\n\nLa tour **coupe** une rangée ou colonne que le roi adverse ne peut franchir. Votre roi le **bouscule** ensuite — en prenant l'opposition — pour le repousser vers ce mur. Le mat arrive quand le roi seul est cloué au **bord** sans cases d'évasion.\n\n### Procédure pour convertir\n\n1. Placez la tour pour **couper** le roi adverse sur une rangée ou colonne, rétrécissant sa prison.\n2. **Faites avancer votre roi** pour faire face au roi adverse (opposition directe).\n3. Quand le roi adverse doit se déplacer le long du mur, **basculez la tour** sur la nouvelle ligne de coupe.\n4. Répétez jusqu'à ce qu'il soit au **bord**, puis matez avec une coupe à la {{Rg8#}}.\n\n### Erreurs courantes\n\n- **Pater** le roi seul sur le bord avec la tour loin. Vérifiez toujours qu'il a au moins une case *ou* qu'il est en échec.\n- Permettre aux rois d'être adjacents sur la même colonne — le roi attaque votre tour.\n- Promener le roi pendant que la tour fait tout le travail — il faut les deux.\n\n> La tour coupe, le roi bouscule, puis mat sur le bord."
+    },
+    {
+      "type": "teach",
       "fen": "7k/5K1p/8/8/8/8/8/6R1 w - - 0 1",
       "title": "Le filet de mat",
-      "text": "Quand le roi ennemi est coincé contre le bord et que le roi adverse empêche toute évasion, votre tour s'avance pour le mat. Le motif est celui-ci — mémorisez-le." },
-    { "type": "play",
+      "text": "## Le motif final\n\nRegardez attentivement cette position. Le roi noir est en **h8**, son propre pion en **h7** bloque la seule échappée. Le roi blanc en **f7** contrôle **g7** et **g8** — toutes les cases de fuite. La tour blanche en **g1** a une voie libre vers **g8**.\n\n### Pourquoi c'est un mat forcé\n\n- **g8** — couvert par le roi blanc *et* la tour qui mate.\n- **g7** — couvert par le roi blanc en f7.\n- **h7** — occupé par le pion noir lui-même.\n\nLe roi adverse n'a nulle part où fuir. La pièce de mat, la tour, glisse en **g8** avec échec.\n\n### Le motif à mémoriser\n\n- Roi défenseur sur le **bord** (8e rangée).\n- Roi attaquant **à deux cases**, contrôlant l'évasion en diagonale.\n- La tour donne **mat sur la colonne ou rangée du bord**.\n\nCette image exacte — parfois avec un pion qui coopère, parfois pure — est l'**empreinte** du mat R+T contre R. Gravez-la.\n\n> Une fois que vous voyez la cage, vous pouvez la construire de n'importe où."
+    },
+    {
+      "type": "play",
       "fen": "7k/5K1p/8/8/8/8/8/6R1 w - - 0 1",
-      "prompt": "Donnez échec et mat.",
-      "targetSan": ["Rg8#"],
-      "hint": "Le propre pion du roi est le mur de sa prison." }
+      "prompt": "Donnez **échec et mat** sur la dernière rangée. Le principe : *la tour ferme la cage que votre roi a déjà construite*.",
+      "targetSan": [
+        "Rg8#"
+      ],
+      "hint": "Le pion h7 fait votre travail — glissez la tour sur la **8e rangée** avec échec."
+    }
   ]
 }

@@ -4,5 +4,8 @@
   "solution": [
     "Qxd4"
   ],
-  "hint": "Dia tidak terlindungi — ambil menterinya."
+  "title": "Menteri Gratis, Ambil Saja",
+  "setup": "Dua menteri saling berhadapan — tetapi hanya satu yang terlindungi.",
+  "hint": "Selalu cari buah yang tergantung. Taktik paling sederhana adalah *ambil yang gratis*.",
+  "explanation": "## Idenya\n\nIni adalah taktik **buah longgar** paling dasar. Menteri hitam di d4 tidak terlindungi. Menteri putih di d1 menyerangnya di sepanjang lajur d. Putih tinggal mengambil.\n\nPutih memainkan {{Qxd4}}.\n\n- Raja hitam di e8, jauh — tidak ada perebutan kembali.\n- Tidak ada buah hitam yang menjaga d4.\n- Putih menang menteri tanpa apa-apa.\n\n## Pola untuk Diingat\n\n> Sebelum setiap langkah, pindai untuk **buah lawan tidak terlindungi** di garis yang Anda kuasai.\n\nGM John Nunn menyebutnya *Loose Pieces* — aturan **LPDO** (Loose Pieces Drop Off) adalah dasar semua taktik. Kuasai ini dan sisanya catur taktis hanyalah hiasan."
 }

@@ -4,18 +4,26 @@
   "summary": "Lleva al rey al borde y da mate",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "7k/8/5K2/8/8/8/8/6R1 w - - 0 1",
       "title": "La Técnica",
-      "text": "Rey y torre contra rey es siempre ganado para el bando fuerte. La técnica: usa la torre para cortar al rey enemigo, luego camina con tu rey al lado para empujarlo al borde. Finalmente, da mate en la última fila." },
-    { "type": "teach",
+      "text": "## R + T contra R — la victoria de manual\n\nRey y torre contra rey solo es **siempre ganado** para el bando fuerte. No hay truco de oposición que aprender, ni excepción de zugzwang — solo una técnica limpia que puedes repetir desde cualquier posición de partida en **unas 16 jugadas**.\n\n### Cómo es este final\n\n- **Torre + rey** contra rey solo.\n- El tablero está vacío; todo es coordinación.\n\n### El concepto clave: cortar y empujar\n\nLa torre **corta** una fila o columna que el rey enemigo no puede cruzar. Luego tu rey lo **empuja** — tomando la oposición — para empujarlo hacia ese muro. El mate llega cuando el rey solo está pegado al **borde** sin casillas de escape.\n\n### Procedimiento para convertir\n\n1. Coloca la torre para **cortar** al rey enemigo en una fila o columna, estrechando su prisión.\n2. **Marcha con tu rey** para encarar al rey rival (oposición directa).\n3. Cuando el rey enemigo deba moverse a lo largo del muro, **cambia la torre** a la nueva línea de corte.\n4. Repite hasta que esté en el **borde**, luego da mate con un corte tipo {{Rg8#}}.\n\n### Errores comunes\n\n- **Ahogar** al rey solo en el borde con la torre lejos. Comprueba siempre que tenga al menos una casilla *o* esté en jaque.\n- Permitir que los reyes queden adyacentes en la misma columna — el rey ataca tu torre.\n- Vagar con el rey mientras la torre hace todo el trabajo — necesitas a los dos.\n\n> La torre corta, el rey empuja, y luego mate en el borde."
+    },
+    {
+      "type": "teach",
       "fen": "7k/5K1p/8/8/8/8/8/6R1 w - - 0 1",
       "title": "La Red de Mate",
-      "text": "Cuando el rey enemigo está clavado al borde y el rey opuesto impide cualquier huida, tu torre se desliza para el mate. Este es el patrón — memorízalo." },
-    { "type": "play",
+      "text": "## El patrón final\n\nMira con atención esta posición. El rey negro está en **h8**, su propio peón en **h7** bloqueando la única salida. El rey blanco en **f7** controla **g7** y **g8** — todas las casillas de escape. La torre blanca en **g1** tiene un carril limpio hasta **g8**.\n\n### Por qué es mate forzado\n\n- **g8** — cubierta por el rey blanco *y* por la torre que da mate.\n- **g7** — cubierta por el rey blanco en f7.\n- **h7** — ocupada por el propio peón negro.\n\nEl rey enemigo no tiene a dónde correr. La pieza que da mate, la torre, se desliza a **g8** con jaque.\n\n### El patrón a memorizar\n\n- Rey defensor en el **borde** (8ª fila).\n- Rey atacante a **dos casillas**, controlando el escape en diagonal.\n- La torre da **mate en la columna o fila del borde**.\n\nEsta imagen exacta — a veces con un peón cooperando, a veces pura — es la **huella** del mate de R+T contra R. Grábala.\n\n> Una vez que veas la jaula, podrás construirla desde cualquier sitio."
+    },
+    {
+      "type": "play",
       "fen": "7k/5K1p/8/8/8/8/8/6R1 w - - 0 1",
-      "prompt": "Da jaque mate.",
-      "targetSan": ["Rg8#"],
-      "hint": "El propio peón del rey es su muro de prisión." }
+      "prompt": "Da **jaque mate** por la fila final. El principio: *la torre cierra la jaula que tu rey ya construyó*.",
+      "targetSan": [
+        "Rg8#"
+      ],
+      "hint": "El peón de h7 está haciendo tu trabajo — desliza la torre a la **8ª fila** con jaque."
+    }
   ]
 }

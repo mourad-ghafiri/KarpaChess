@@ -4,5 +4,8 @@
   "solution": [
     "exd4"
   ],
-  "hint": "Tangkap menuju tengah."
+  "title": "Tangkap Menuju Pusat",
+  "setup": "Putih telah memainkan **d4**, menawarkan pertukaran pion. Hitam ambil — dan raih pusat.",
+  "hint": "Selalu rebut kembali ke arah pusat saat Anda punya pilihan — itu meningkatkan struktur pion.",
+  "explanation": "## Idenya\n\nIni adalah **tangkapan pion tengah** dasar — langkah fondasi dari mana **Center Game** terkenal dan banyak posisi terbuka muncul.\n\nHitam memainkan {{exd4}}, menangkap pion-d dengan pion-e.\n\n## Mengapa Tangkapan Ini?\n\n- Pion hitam pindah dari **e5** (petak kurang sentral) ke **d4** (lebih sentral).\n- Pion tengah Putih hilang, membebaskan buah-buah Hitam.\n- Material sekarang sama, tetapi Hitam punya struktur pion yang lebih baik.\n\n## Bagaimana Jika Hitam Tidak Mengambil?\n\nJika Hitam mengabaikan tawaran:\n\n- Putih bisa memainkan {{dxe5}} di langkah berikutnya, memenangkan pion-e.\n- Atau Putih bisa memainkan {{d5}}, mendapatkan baji yang kuat.\n\nApa pun caranya Hitam kehilangan pengaruh tengah.\n\n## Pola untuk Diingat\n\n> Saat Anda bisa menangkap **menuju pusat**, hampir selalu lakukan demikian. Pion tersentralisasi mengontrol lebih banyak petak, mendukung lebih banyak buah, dan menciptakan lebih banyak ancaman.\n\nTindakan sederhana memainkan exd4 di sini mewakili prinsip besar: **berjuang untuk pusat dengan setiap langkah yang bisa.**"
 }

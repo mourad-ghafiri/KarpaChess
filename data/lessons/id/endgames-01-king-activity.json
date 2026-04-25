@@ -8,17 +8,17 @@
       "type": "teach",
       "fen": "4k3/8/8/4K3/4P3/8/8/8 w - - 0 1",
       "title": "Kekuatan Raja",
-      "text": "Di babak tengah, raja bersembunyi. Di babak akhir dia keluar bertarung. Di sini raja Anda harus mengawal pionnya ke promosi. Teknik itu penting."
+      "text": "## Raja babak akhir\n\nDi **babak tengah**, raja adalah buronan — telah rokade, tersembunyi, dipertahankan oleh pionnya. Di **babak akhir**, dengan kebanyakan bidak telah ditukar, ketakutan itu menjadi kemewahan yang tidak bisa Anda nikmati. Raja kini menjadi **bidak penyerang**, kira-kira bernilai bidak ringan yang kuat, dan setiap rencana menang dalam babak akhir sederhana dimulai dengannya.\n\n### Apa posisi ini\n\n- Raja Putih di **e5**, sudah mengawal pionnya dari depan.\n- Pion di **e4**, dua kotak dari jalur promosi.\n- Raja Hitam di **e8**, menghalangi jalan.\n\nIni adalah pola dasar **R + P vs R** — struktur menang paling umum dalam catur.\n\n### Prosedur untuk mengkonversi\n\n1. **Pimpin dengan raja**, jangan pion. Pion mendorong hanya saat raja telah membersihkan jalan.\n2. **Mengapit** raja lawan dengan melangkah diagonal ke depan: {{Kd6}} atau {{Kf6}}.\n3. **Ambil oposisi** — saat raja saling berhadapan satu kotak terpisah dan lawan harus jalan, Anda mengendalikan tarian.\n4. **Lalu dorong pion** untuk merebut lebih banyak ruang dan memaksa promosi.\n\n### Kesalahan umum\n\n- Mendorong {{e5}} terlalu awal — pion datang tanpa pengawalan dan diblokade.\n- Melangkah mundur dengan raja (misalnya Ke4) — Anda kehilangan tempo dan oposisi.\n- Berjalan menyamping raja tanpa rencana mengapit.\n\n### Garis model\n\n{{Kd6}} ... Kd8 {{e5}} ... Ke8 {{Kc7}} — raja telah membersihkan koridor dan pion tak terhentikan.\n\n> Aktifkan raja sebelum mendorong pion."
     },
     {
       "type": "play",
       "fen": "4k3/8/8/4K3/4P3/8/8/8 w - - 0 1",
-      "prompt": "Dorong raja Anda maju — ambil oposisi.",
+      "prompt": "Langkahkan raja diagonal ke depan untuk **mengapit** pembela. Terapkan prinsip: *raja dulu, pion belakangan*.",
       "targetSan": [
         "Kd6",
         "Kf6"
       ],
-      "hint": "Kd6 atau Kf6 — keduanya merebut oposisi."
+      "hint": "Jangan sentuh pionnya dulu — bersihkan jalur untuknya dengan langkah diagonal di baris ke-6."
     }
   ]
 }

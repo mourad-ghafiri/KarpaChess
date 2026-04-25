@@ -4,5 +4,8 @@
   "solution": [
     "g3"
   ],
-  "hint": "La dama se ha sobreextendido — castígala."
+  "title": "Castiga a la Dama Errante",
+  "setup": "Las negras han salido prematuramente con **Dh4**, esperando amenazas baratas. Los peones blancos están a punto de hacérselo pagar.",
+  "hint": "Cuando la dama enemiga asoma pronto, échala con un humilde peón y gana un tempo gratis.",
+  "explanation": "## La idea\n\nEste es un motivo de **atrapamiento / ganancia de tempo**. La prematura {{Qh4}} de las negras colocó a la dama en una casilla aparentemente activa, pero sin apoyo — y justo al lado de un peón que está a punto de convertirla en fugitiva.\n\nLas blancas juegan {{g3}}, atacando a la dama con un peón.\n\n## Por qué sufren las negras\n\n- La dama tiene muy pocas casillas buenas de retirada. {{Qh3}} o {{Qh5}} la mantienen activa, pero las blancas han ganado una jugada gratuita de desarrollo.\n- ¿{{Qxe4}}? Imposible — no hay nada que capturar ahí.\n- {{Qxh2}} se topa con {{Rxh2}}, perdiendo la dama por una torre.\n\nCada jugada que la dama desperdicia es un tempo que las blancas usan para desarrollar caballos, alfiles y enrocarse.\n\n## Patrón a memorizar\n\n> No saques tu dama temprano — es la pieza más valiosa, así que cada atacante es un tempo gratis para el oponente.\n\nCuando *ellos* rompen esta regla, **persigue a la dama con piezas baratas**: peones y piezas menores ganan tiempo mientras la dama corre a casa."
 }

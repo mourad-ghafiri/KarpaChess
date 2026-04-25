@@ -4,5 +4,8 @@
   "solution": [
     "Qxe5+"
   ],
-  "hint": "Capturez avec échec — le cavalier n'est pas défendu."
+  "title": "Cavalier Gratuit, Échec Gratuit",
+  "setup": "Le cavalier noir en e5 est sans défense sur la même colonne que le roi.",
+  "hint": "La dame voit à travers la colonne e. Capturer le cavalier donne aussi échec.",
+  "explanation": "## L'Idée\n\nCe n'est pas une fourchette au sens strict — c'est une **pièce détachée** capturée avec **tempo**. Le cavalier en e5 n'a pas de défenseur, et la dame blanche en a1 peut l'atteindre par {{Qxe5+}}.\n\nLe `+` est ce qui rend le coup sans risque : la dame atterrit sur la même colonne que le roi noir, donc elle donne échec au moment de la capture. Les Noirs doivent traiter l'échec avant tout, donc pas le temps de punir une dame blanche pendante — et de toute façon, le roi en e8 est trop loin de e5 pour reprendre.\n\n## Pourquoi les Noirs n'ont Rien\n\n- **Capturer la dame ?** {{Kxe5}} demanderait au roi de bondir de trois cases — illégal.\n- **S'interposer ?** Aucune pièce noire ne reste pour s'interposer.\n- **Fuir ?** Le roi doit quitter la colonne e (Kd7, Kf7, Kd8, Kf8), mais le cavalier est déjà parti.\n\n## Schéma à Mémoriser\n\n> Une pièce détachée sur la **même ligne que son roi** peut souvent être prise avec échec. L'échec vous offre le tempo pour conserver la pièce capturée."
 }

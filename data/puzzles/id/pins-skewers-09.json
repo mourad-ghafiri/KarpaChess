@@ -4,5 +4,8 @@
   "solution": [
     "Rxe7+"
   ],
-  "hint": "Kuda terpaku — tangkap."
+  "title": "Kuda yang Terpaku",
+  "setup": "Kuda hitam di **e7** berdiri beku antara benteng putih di e2 dan raja hitam di e8.",
+  "hint": "Kuda yang terpaku adalah kuda paling sedih — dia bahkan tidak bisa melompat pergi.",
+  "explanation": "## Idenya\n\n**Pakuan absolut** pada kuda. Biasanya kuda menertawakan pakuan karena mereka melompat, tetapi buah yang terpaku pada rajanya sendiri tidak bisa pindah secara legal sama sekali — bahkan ke petak non-tangkap — karena langkah itu akan menyingkap raja.\n\nPutih memainkan {{Rxe7+}}, memenangkan kuda dengan bersih.\n\n- {{Kxe7}} adalah satu-satunya jawaban legal.\n- Pertukaran: benteng (5) untuk kuda (3). Sekilas terlihat sebagai kerugian, tetapi di akhir gersang ini Putih menang dengan menyederhanakan ke raja-dan-benteng vs raja sendirian.\n- Dalam posisi yang lebih kaya, pola yang sama ini hanya **menang kuda gratis** ketika lebih banyak material di papan.\n\n## Pola untuk Diingat\n\n> Kuda yang terpaku tak berdaya: tidak bisa pindah, tidak bisa membela, tidak bisa kabur.\n\nSetiap kali Anda melihat kuda lawan di garis yang sama dengan rajanya, cari cara untuk **menambah penyerang** ke petak itu."
 }

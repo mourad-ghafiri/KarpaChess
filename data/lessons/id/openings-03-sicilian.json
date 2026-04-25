@@ -4,28 +4,44 @@
   "summary": "Balasan paling tajam Hitam terhadap 1.e4",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "Balasan Paling Tajam",
-      "text": "Ketika Putih memainkan 1.e4, balasan Hitam yang paling tempur adalah 1...c5 — Pertahanan Sisilia. Hitam tidak menyerah di pusat dan menyiapkan serangan balik sisi menteri. Ini adalah pertahanan paling populer di setiap tingkat catur." },
-    { "type": "play",
+      "text": "**Pertahanan Sisilia** adalah jawaban Hitam yang paling banyak dimainkan, paling ditakuti, dan paling dianalisis untuk **{{e4}}**. Itu mengatakan, secara efektif: *Saya tidak tertarik pada simetri — saya ingin bertarung.*\n\n## Langkah pembukaan\n\nSetelah {{e4}} {{c5}}, Hitam telah melakukan sesuatu yang halus tetapi kuat. Alih-alih mencerminkan dengan ...e5, pion-c menantang pusat Putih dari samping. Ia **tidak** memblokir kolom-c (yang persis kolom yang Hitam inginkan untuk serangan balik).\n\n## Apa yang diinginkan masing-masing pihak\n\n- **Rencana Putih:** main {{Nf3}} dan {{d4}} untuk membuka posisi (*Sisilia Terbuka*), kembangkan bidak agresif, dan bangun serangan kingside.\n- **Rencana Hitam:** tukar pion-c untuk pion-d (setelah **...cxd4**), rebut *kolom-c setengah-terbuka*, kembangkan dengan **...Nc6**, **...d6**, **...Nf6**, **...e6** atau **...g6**, dan serang balik di queenside.\n- **Struktur pion:** sangat asimetris — Hitam sering punya *pion-d mundur* dan pion di e6+d6, sementara Putih punya pion e4 yang kuat dan menargetkan badai f2-f4-f5.\n\n## Mengapa grandmaster menyukainya\n\nSisilia menciptakan **ketidakseimbangan dari langkah pertama**. Putih menyerang satu sayap, Hitam yang lain. Permainan menentukan jauh lebih umum dari remis — dan itulah sebabnya setiap juara dunia harus mempelajarinya dengan tuntas.\n\n> Simetri untuk permainan ramah. Sisilia ingin pertarungan."
+    },
+    {
+      "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "prompt": "Mainkan langkah pertama Putih yang paling berprinsip.",
-      "targetSan": ["e4"],
-      "hint": "1.e4 — pembukaan pion raja klasik." },
-    { "type": "play",
+      "prompt": "Buka dengan langkah pertama paling berprinsip — mainkan **{{e4}}**.",
+      "targetSan": [
+        "e4"
+      ],
+      "hint": "1.e4 adalah pilihan pembukaan klasik Putih — merebut kotak pusat dan membebaskan menteri dan gajah f1."
+    },
+    {
+      "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
-      "prompt": "Hitam memainkan Sisilia — dorong pion c.",
-      "targetSan": ["c5"],
-      "hint": "1...c5 memperebutkan d4 tanpa memblokir kolom c." },
-    { "type": "play",
+      "prompt": "Hitam memainkan Sisilia — dorong **{{c5}}**, memperebutkan d4 dari sisi.",
+      "targetSan": [
+        "c5"
+      ],
+      "hint": "Jangan cermin dengan ...e5. Sebagai gantinya dorong pion-c — ia menyerang d4 tanpa memblokir kolom-c yang Hitam inginkan."
+    },
+    {
+      "type": "play",
       "fen": "rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
-      "prompt": "Balasan klasik Putih: kembangkan kuda.",
-      "targetSan": ["Nf3"],
-      "hint": "2.Nf3 menyiapkan d4, Sisilia Terbuka." },
-    { "type": "teach",
+      "prompt": "Balasan klasik Putih: **{{Nf3}}**, mempersiapkan **d4** untuk Sisilia Terbuka.",
+      "targetSan": [
+        "Nf3"
+      ],
+      "hint": "Kuda dikembangkan, menyerang ide ...e5, dan membersihkan jalan untuk d2-d4 — langkah yang mendefinisikan Sisilia Terbuka."
+    },
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
       "title": "Mengapa Sisilia?",
-      "text": "Berbeda dari ...e5 yang mencerminkan langkah Putih, ...c5 menciptakan permainan asimetris. Putih menyerang di sisi raja; Hitam menyerang balik di sisi menteri. Permainan tajam dan menentukan — kemenangan, bukan remis, yang umum." }
+      "text": "Sekarang Anda bisa melihat kejeniusan {{c5}}. Hitam siap memainkan **...d6** atau **...e6** dan kemudian melompat ke kolom-c setengah-terbuka dengan benteng nanti.\n\n## Empat varian utama penataan Hitam\n\n- **Najdorf** — {{c5}} {{Nf3}} {{d6}} {{d4}} {{cxd4}} {{Nxd4}} {{Nf6}} {{Nc3}} **a6** — yang paling tajam, paling teoritis dari semuanya.\n- **Dragon** — Hitam fianchetto dengan **...g6** dan **...Bg7**. Serangan liar di sisi berlawanan.\n- **Sveshnikov** — Hitam memainkan ...Nf6 dan ...e5, menerima pion-d mundur untuk aktivitas bidak.\n- **Taimanov / Kan** — penataan fleksibel dengan ...e6 dan ...a6, lebih lambat tetapi keras seperti kuku.\n\nVarian mana yang Anda pilih banyak menyatakan tentang gaya Anda: pemain Najdorf taktis menyukai perhitungan; pemain Sveshnikov menyukai bidak aktif; pemain Kan menyukai jepitan strategis tenang.\n\n> Pilih varian Sisilia dan pelajari secara mendalam. Hadiahnya adalah seumur hidup permainan bertepi-dua."
+    }
   ]
 }

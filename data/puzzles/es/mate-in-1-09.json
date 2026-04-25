@@ -4,5 +4,8 @@
   "solution": [
     "Ra8#"
   ],
-  "hint": "El propio peón del rey sella su destino — sólo camina con la torre hasta la octava fila."
+  "title": "Su propio peón, su propia jaula",
+  "setup": "El rey negro está en la esquina con el peón **h7** bloqueando su única huida, mientras tu rey en **f7** cierra el resto.",
+  "hint": "Marcha la torre hasta arriba — el peón {{h7}} está haciendo el trabajo por ti.",
+  "explanation": "## La idea\n\nUn puro **mate de pasillo en la esquina**. Tu rey en **f7** ahoga g7 y g8, y el peón negro de h7 termina la jaula.\n\nJuega {{Ra8#}}.\n\n¿Por qué el rey está atrapado?\n\n- {{g8}} — cubierta por tu rey en **f7**\n- {{g7}} — también cubierta por tu rey en **f7**\n- {{h7}} — bloqueada por el propio peón negro\n- El rey no puede capturar la torre (h8 a a8 es media tablero) y nada puede interponerse\n\n> **Conclusión:** Un rey en la séptima fila a una columna del rey enemigo es la *jaula estándar* para R+T contra R. Una vez que el rey está encerrado, la torre da el golpe mortal desde cualquier casilla segura de la última fila."
 }

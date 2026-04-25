@@ -4,5 +4,8 @@
   "solution": [
     "Ra8#"
   ],
-  "hint": "Le propre pion du roi scelle son destin — amenez simplement la tour sur la 8e rangée."
+  "title": "Son Propre Pion, Sa Propre Cage",
+  "setup": "Le roi noir est dans le coin avec le pion **h7** bloquant sa seule fuite, tandis que votre roi en **f7** verrouille le reste.",
+  "hint": "Faites avancer la tour jusqu'au bout — le pion {{h7}} fait le travail à votre place.",
+  "explanation": "## L'Idée\n\nUn pur **mat dans le coin sur la dernière rangée**. Votre roi en **f7** étouffe g7 et g8, et le pion noir h7 termine la cage.\n\nJouez {{Ra8#}}.\n\nPourquoi le roi est-il piégé ?\n\n- {{g8}} — couverte par votre roi en **f7**\n- {{g7}} — aussi couverte par votre roi en **f7**\n- {{h7}} — bloquée par le propre pion noir\n- Le roi ne peut capturer la tour (h8 à a8 fait la moitié de l'échiquier) et rien ne peut s'interposer\n\n> **À retenir :** Un roi sur la 7e rangée à une colonne du roi ennemi est la *cage standard* pour R+T contre R. Une fois le roi enfermé, la tour donne le coup fatal depuis n'importe quelle case sûre de la dernière rangée."
 }

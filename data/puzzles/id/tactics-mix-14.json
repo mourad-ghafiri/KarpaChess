@@ -4,5 +4,8 @@
   "solution": [
     "d6"
   ],
-  "hint": "Dorong pion — batasi raja."
+  "title": "Membatasi Raja",
+  "setup": "Bidak lewat di **d5** maju menuju promosi, dengan raja Hitam mengawasi dari e8.",
+  "hint": "Dorong bidak ke kotak yang tidak bisa dimasuki raja. Pembatasan memenangkan endgame.",
+  "explanation": "## Idenya\n\nIni adalah teknik **pembatasan raja** — gagasan kritis dalam endgame bidak. Dengan mendorong bidak maju, Putih menolak raja Hitam atas kotak-kotak kunci.\n\nPutih bermain {{d6}}.\n\n## Apa yang Dikuasai Bidak\n\nBidak di d6 menyerang kotak **c7** dan **e7**. Raja Hitam di e8 kini tidak dapat melangkah secara legal ke e7 — kotak itu diserang.\n\nRaja Hitam dipaksa mundur atau bergeser: {{Kd7}} (memblokade bidak), {{Kf7}}, {{Kf8}}, atau {{Kd8}}.\n\n## Mengapa d6 (Bukan Dorongan Lambat)?\n\nDi posisi ini raja Putih masih jauh di e1, jadi bidak tidak bisa promosi sendirian — ia butuh bantuan raja. **Tetapi** memajukan bidak terlebih dahulu membatasi raja Hitam dan memberi waktu bagi raja Putih untuk maju ke papan.\n\n## Pola yang Harus Diingat\n\n> Dalam endgame **R+B vs R**, bidak tidak selalu paling cepat dengan didorong. Kadang ia paling cepat dengan **membatasi** — menolak raja lawan atas kotak kunci sehingga raja Anda dapat mengelilinginya.\n\nIni adalah ide di balik **oposisi**, **outflanking**, dan **kotak bidak** yang terkenal — pondasi setiap endgame bidak."
 }

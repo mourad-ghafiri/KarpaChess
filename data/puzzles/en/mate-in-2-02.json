@@ -1,10 +1,13 @@
 {
   "id": "mate-in-2-02",
-  "fen": "7k/8/6K1/6Q1/8/8/8/8 w - - 0 1",
+  "fen": "Q7/8/8/8/8/6K1/8/7k w - - 0 1",
   "solution": [
-    "Qh5+",
-    "Kg8",
-    "Qh8+"
+    "Qh8+",
+    "Kg1",
+    "Qa1#"
   ],
-  "hint": "Check to force the king, then mate."
+  "title": "Long-Diagonal Trap",
+  "setup": "Black's king is jammed in the **h1** corner; your king on **g3** holds {{g2}} and {{h2}}, leaving only **g1** as an escape.",
+  "hint": "Force the king to {{g1}} with a long-distance check, then sweep him with the **a1-h8** diagonal.",
+  "explanation": "## The Idea\n\nA stylish **K+Q vs K mate-in-2** in the corner. The queen cuts the king's escape, then delivers mate from the *opposite* corner.\n\n**1. {{Qh8+}}** — the queen lands on the h-file, giving a long-distance check. Black's king must move.\n\n**1...{{Kg1}}** — forced. {{Kg2}} is illegal (your king on **g3** attacks g2), {{Kh2}} is illegal (your king attacks h2), and {{Kxh8}} is impossible (too far).\n\n**2. {{Qa1#}}** — the queen swings down the long **h8-a1** diagonal to mate.\n\nWhy is the king stuck after move 2?\n\n- {{b1}} and the rest of the 1st rank — covered by the queen on a1\n- {{f1}} — also covered by the queen on a1 (1st rank)\n- {{h2}} — controlled by your king on **g3**\n- {{g2}} — controlled by your king on **g3**\n- The queen is far away, so {{Kxa1}} is impossible\n\n> **Takeaway:** Long diagonals are queen highways. When mating in the corner, look for a *two-corner pattern* — check from one corner to force the king, then mate from the opposite corner along the long diagonal."
 }

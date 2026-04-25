@@ -4,18 +4,26 @@
   "summary": "Force a piece to move where it shouldn't",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "4r1k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
       "title": "The Lure",
-      "text": "Deflection is forcing an enemy piece away from a key square or defensive role. Often it's done with a check or a tempting capture. The piece can't refuse, and its departure opens a winning line." },
-    { "type": "play",
+      "text": "**Deflection** is forcing an enemy piece *off* an important square or duty. Removing the defender takes the piece *off the board*; deflection just *bumps* it elsewhere — often with a capture or check it cannot refuse.\n\n## The visual trigger\n\nLook for a piece doing critical defensive work — guarding a back rank, blockading a pawn, defending a piece or a mating square. Now find a way to *force* it somewhere else.\n\n## The geometry\n\nDeflection lives at intersections:\n\n- A piece is on a square that defends **square A**.\n- You attack the piece on **square B** where it must move or be lost.\n- Once it moves to B, A is unguarded.\n\nThe sacrifice or threat must be more urgent than the defensive duty — usually a check, a queen capture, or a fork.\n\n## How to spot it\n\n1. Find the enemy piece holding everything together.\n2. Look for **forcing moves** that attack that piece: checks, big captures, mate threats.\n3. After the forced response, evaluate: *is the abandoned square now winning for me?*\n\nHere White's {{Ra8}} pressures the e8 rook along the eighth rank and threatens {{Rxe8+}} ideas. If Black trades with {{Rxa8}}, the e-file (and back rank) opens up.\n\n> Pressure is the language of chess. The opponent's pieces answer when forced to."
+    },
+    {
+      "type": "play",
       "fen": "4r1k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
-      "prompt": "Invade with the rook. What happens if Black trades?",
-      "targetSan": ["Ra8"],
-      "hint": "Ra8 pressures the rook on e8 — a trade simplifies the game." },
-    { "type": "teach",
+      "prompt": "Apply pressure with **{{Ra8}}** — Black's rook is now begged to leave its post.",
+      "targetSan": [
+        "Ra8"
+      ],
+      "hint": "Aim a heavy piece at the back rank. The defender has to deal with it."
+    },
+    {
+      "type": "teach",
       "fen": "R3r1k1/5ppp/8/8/8/8/5PPP/6K1 b - - 0 1",
       "title": "Forced Exchange",
-      "text": "Black will likely trade (Rxa8 or Rb8). After the trade, simplification favors the active side. The lesson: pressure forces decisions — and decisions under pressure usually go wrong." }
+      "text": "From this position Black has only uncomfortable choices. The rook on e8 is overworked — defending the back rank *and* facing the white rook on a8.\n\n## Black's tries\n\n- **{{Rxa8}}** — trades but invites simplifications that favor the active side.\n- **{{Rb8}}** — sidesteps but allows White to penetrate further.\n- **King moves** — abandons the back rank entirely.\n\n## The lesson\n\nDeflection is rarely about the immediate material gain. It is about *who decides what happens next*. When the opponent has to react to your moves, you control the tempo of the position.\n\n> Pressure forces decisions. Decisions under pressure usually go wrong."
+    }
   ]
 }

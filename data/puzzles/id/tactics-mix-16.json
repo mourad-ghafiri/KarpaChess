@@ -4,5 +4,8 @@
   "solution": [
     "Bxc6+"
   ],
-  "hint": "Tukar dan rusak struktur Hitam."
+  "title": "Rusak Struktur Hitam",
+  "setup": "Gajah Putih di **b5** mempaku kuda di c6 melawan — yah, tidak ada apa-apa secara khusus. Saatnya bertukar.",
+  "hint": "Pertukaran Spanyol: gajah ambil kuda, menggandakan bidak-c Hitam dan menciptakan kelemahan jangka panjang.",
+  "explanation": "## Idenya\n\nIni adalah **pertukaran Spanyol (Ruy López)** klasik. Gajah Putih di b5 menukar dirinya untuk kuda Hitam di c6, dengan dua manfaat jelas.\n\nPutih bermain {{Bxc6+}}.\n\n## Apa yang Dipakai Hitam untuk Memakan Balik\n\nHitam harus mengatasi skak (gajah di c6 menyerang raja di e8 sepanjang diagonal a4-e8). Ada tiga balasan:\n\n- {{bxc6}} — bidak-b memakan. **Paling umum.** Ini **menggandakan bidak-c Hitam** (c7 dan c6), menciptakan kelemahan struktural jangka panjang.\n- {{dxc6}} — bidak-d memakan. Ini membuka lajur d tetapi juga menggandakan bidak-c, hanya saja kurang canggung.\n- Memblokir? Tidak ada yang sampai ke d7 dengan bersih (menteri dan gajah terhalang).\n\n## Mengapa Pertukaran Ini Strategis\n\nBidak ganda **lemah secara struktural**:\n\n- Mereka tidak bisa saling membela (satu di depan yang lain).\n- Mereka mengontrol kotak lebih sedikit daripada dua bidak yang berdampingan.\n- Mereka menciptakan **lajur setengah terbuka** untuk benteng lawan.\n\nMaterial seimbang (gajah untuk kuda = 3 lawan 3), tetapi Putih telah memenangkan pertarungan *posisional*.\n\n## Pola yang Harus Diingat\n\n> Pertukaran yang **merusak struktur bidak lawan** sama berharganya dengan pertukaran yang memenangkan material — kadang lebih.\n\nIni adalah jiwa catur strategis: keuntungan kecil dan permanen yang terakumulasi melalui banyak gerakan."
 }

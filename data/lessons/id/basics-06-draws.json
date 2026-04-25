@@ -1,20 +1,26 @@
 {
   "id": "draws",
   "title": "Pat & Remis",
-  "summary": "Setengah poin kadang-kadang adalah kemenangan",
+  "summary": "Setengah poin kadang adalah kemenangan",
   "difficulty": "beginner",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "7k/8/6K1/8/8/8/8/8 w - - 0 1",
-      "title": "Pat",
-      "text": "Pat terjadi ketika pihak yang akan bergerak TIDAK memiliki langkah legal tetapi rajanya TIDAK dalam skak. Ini remis. Hati-hati: ketika Anda memiliki keunggulan yang luar biasa, jangan sampai membuat pat raja lawan — itu membuang kemenangan!" },
-    { "type": "teach",
+      "title": "Pat (Stalemate)",
+      "text": "Pat adalah aturan paling kejam dalam catur — dan paling indah, tergantung di sisi mana Anda berada.\n\nIa terjadi ketika **pihak yang akan jalan punya nol langkah sah tetapi TIDAK dalam keadaan skak**. Hasilnya? **Remis** seketika, tidak peduli seberapa pincang hitungan material.\n\nLihat diagramnya: raja Hitam di h8 tidak punya tempat tujuan. Dia tidak bisa melangkah ke g8 (diserang oleh raja Anda di g6), tidak bisa ke h7 (juga diserang), dan dia tidak dalam skak di h8. Jika ini giliran Hitam, ini pat.\n\n## Mengapa pat ada\n\n- Ia menghargai teknik yang cermat dan menghukum kelalaian.\n- Ia memberi pihak yang kalah kesempatan bertarung bahkan di posisi sulit.\n- Ia mengajarkan bahwa *menyerang raja saja tidak cukup — Anda harus meninggalkan baginya satu langkah sah sampai Anda bisa skakmat*.\n\n> Bahkan dengan raja dan menteri vs raja sendirian, langkah ceroboh bisa menyebabkan pat. Selalu beri raja lawan setidaknya satu kotak sah — sampai Anda bisa menyelesaikannya."
+    },
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "Cara Lain untuk Remis",
-      "text": "Selain pat: (1) pengulangan tiga kali — posisi yang sama dicapai tiga kali; (2) aturan 50 langkah — 50 langkah tanpa penangkapan atau gerakan pion; (3) material tidak cukup — misalnya dua raja sendirian, atau raja + kuda vs raja; (4) kedua pemain setuju remis." },
-    { "type": "teach",
+      "text": "Pat hanya satu dari beberapa jalan menuju setengah poin. Mengetahui semuanya menyelamatkan permainan — dan menghasilkan poin.\n\n## Lima jenis remis utama\n\n- **Pat** — tidak ada langkah sah, tidak dalam skak.\n- **Pengulangan tiga kali** — posisi yang sama (dengan pihak yang sama akan jalan dan hak rokade/en-passant yang sama) muncul tiga kali. Salah satu pemain bisa mengklaim remis.\n- **Aturan lima puluh langkah** — lima puluh langkah berturut-turut oleh kedua sisi tanpa langkah pion atau pemakanan. Salah satu pemain bisa mengklaim.\n- **Material tidak cukup** — tidak ada sisi yang punya kekuatan tembak untuk skakmat. Raja vs raja, R + K vs R, atau R + G vs R adalah remis mati klasik.\n- **Persetujuan** — kedua pemain sepakat untuk membagi poin.\n\nDua lagi yang kurang umum: **posisi mati** (skakmat secara matematis tidak mungkin untuk kedua sisi) dan **kehabisan waktu vs material tidak cukup** dalam permainan online.\n\n> Remis adalah setengah kemenangan. Kadang-kadang itu adalah kemenangan."
+    },
+    {
+      "type": "teach",
       "fen": "4k3/4q3/8/8/8/8/8/4K3 w - - 0 1",
       "title": "Menghindari Kecelakaan",
-      "text": "Bahkan ketika Anda jelas-jelas kalah, pat bisa menyelamatkan Anda! Selalu periksa: apakah lawan saya memiliki langkah legal? Jika tidak, dan Anda tidak dalam skak, itu remis. Inilah sebabnya teknik babak akhir penting — bahkan dengan R+M vs R, permainan ceroboh bisa pat." }
+      "text": "Pat adalah teknik **utama** yang harus Anda kuasai sebelum mengklaim bisa skakmat.\n\nDi posisi ini Anda kalah dalam material — menteri Hitam akan mendominasi — tetapi jika Hitam main ceroboh, *Anda* mungkin lolos dengan pat.\n\n## Daftar periksa dua detik sebelum setiap langkah\n\n1. *Apakah lawan saya akan punya setidaknya satu langkah sah setelah ini?*\n2. *Apakah ada bidak lawan yang macet (tidak ada kotak sah untuk raja, semua pion terhalang, semua bidak dipakukan)?*\n3. *Apakah saya akan mengambil bidak bergerak terakhir mereka?*\n\nJika jawaban pertanyaan 1 adalah **tidak** dan raja **tidak** dalam skak — Anda baru saja membuat pat. Banyak posisi menang yang dibuang oleh langkah menteri yang terlalu percaya diri.\n\n## Pelajaran terkenal\n\nDi babak akhir paling sederhana — Raja + Menteri vs Raja — jebakan pat paling umum adalah menempatkan menteri satu kotak di depan raja yang tersudut tanpa jalan keluar. Selalu tinggalkan raja lawan satu kotak pelarian sampai raja Anda cukup dekat untuk memberikan skakmat.\n\n> Saat Anda menang, tugas Anda adalah tetap tenang. Kemenangan sudah ada — jangan kembalikan."
+    }
   ]
 }

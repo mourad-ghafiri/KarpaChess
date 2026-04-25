@@ -7,35 +7,35 @@
     {
       "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "title": "Italia",
-      "text": "Permainan Italia dimulai dengan langkah pertama paling berprinsip: e4. Kita akan membangun hingga Bc4, mengincar f7, resep klasik."
+      "title": "Permainan Italia",
+      "text": "Permainan Italia adalah salah satu pembukaan **tertua** dalam catur dan tetap — sungguh luar biasa — salah satu yang paling populer di setiap tingkat, termasuk puncak peringkat dunia.\n\n## Langkah-langkah penentu\n\nUrutan kanonik adalah {{e4}} {{e5}} {{Nf3}} {{Nc6}} {{Bc4}}. Tiga langkah berprinsip, tiga bidak dikembangkan, dan gajah mengincar f7 — kotak terlemah di kubu Hitam.\n\n## Apa yang diinginkan masing-masing pihak\n\n- **Rencana Putih:** selesaikan pengembangan dengan {{Nc3}} (atau {{c3}} mempersiapkan d4), rokade pendek, dan perlahan bangun serangan kingside atau dorong d4 untuk mengklaim pusat.\n- **Rencana Hitam:** cermin dengan **...Nf6** dan **...Bc5** (Giuoco Piano) atau **...Be7** (Hungaria yang lebih tenang), rokade pendek, dan perebutan pusat dengan **...d6** atau **...d5**.\n- **Struktur pion:** simetris di awal, sering menjadi pusat tertutup setelah **c3 / d3 / d6**.\n\n## Mengapa berhasil\n\nPermainan Italia menghormati setiap prinsip pembukaan: pion tengah, dua bidak ringan keluar, raja siap rokade. Tidak perlu teori sangat spesifik — hanya langkah-langkah baik.\n\n> Catur klasik dalam bentuk paling murninya: bidak keluar, raja aman, pertarungan di pusat."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "prompt": "Buka dengan 1. e4",
+      "prompt": "Buka dengan pion raja — mainkan **{{e4}}**.",
       "targetSan": [
         "e4"
       ],
-      "hint": "Dorong pion raja dua kotak."
+      "hint": "Langkah pertama paling populer dalam sejarah catur membuka jalur untuk menteri dan gajah f1."
     },
     {
       "type": "play",
       "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
-      "prompt": "Sekarang 2. Nf3, menyerang pion e5.",
+      "prompt": "Kembangkan dengan **{{Nf3}}** — kuda yang menyerang **e5** dan mempersiapkan rokade.",
       "targetSan": [
         "Nf3"
       ],
-      "hint": "Kuda ke f3 — pilihan andalan setiap master."
+      "hint": "Dua burung dengan satu batu: langkah ini mengembangkan bidak DAN menyerang pion tengah Hitam."
     },
     {
       "type": "play",
       "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
-      "prompt": "3. Bc4 — klaim hak Anda di f7.",
+      "prompt": "Tanam gajah dengan **{{Bc4}}** — mengarah lurus ke kotak f7.",
       "targetSan": [
         "Bc4"
       ],
-      "hint": "Gajah ke c4 memasuki Permainan Italia sebenarnya."
+      "hint": "Kotak paling rentan di kubu Hitam adalah f7, dijaga hanya oleh raja. Gajah di c4 menatapnya langsung."
     }
   ]
 }

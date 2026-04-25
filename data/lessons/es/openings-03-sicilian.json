@@ -1,31 +1,47 @@
 {
   "id": "sicilian",
   "title": "La Defensa Siciliana",
-  "summary": "La respuesta más afilada de las Negras a 1.e4",
+  "summary": "La respuesta más afilada de las negras a 1.e4",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
       "title": "La Réplica Más Afilada",
-      "text": "Cuando las Blancas juegan 1.e4, la respuesta más combativa de las Negras es 1...c5 — la Defensa Siciliana. Las Negras no ceden nada en el centro y preparan un contrataque en el flanco de dama. Es la defensa más popular en todos los niveles del ajedrez." },
-    { "type": "play",
+      "text": "La **Defensa Siciliana** es la respuesta más jugada, más temida y más analizada de las negras a **{{e4}}**. Dice, en efecto: *no me interesa la simetría — quiero pelea.*\n\n## La jugada clave\n\nTras {{e4}} {{c5}}, las negras han hecho algo sutil pero poderoso. En lugar de imitar con ...e5, el peón de c desafía el centro blanco desde el flanco. **No** bloquea la columna c (que es exactamente la columna que las negras quieren para el contrajuego).\n\n## Lo que quiere cada bando\n\n- **Plan blanco:** jugar {{Nf3}} y {{d4}} para abrir la posición (la *Siciliana Abierta*), desarrollar piezas con agresividad y construir un ataque en el flanco de rey.\n- **Plan negro:** cambiar el peón c por el peón d (tras **...cxd4**), apoderarse de la *columna c semiabierta*, desarrollar con **...Nc6**, **...d6**, **...Nf6**, **...e6** o **...g6**, y contraatacar en el flanco de dama.\n- **Estructura de peones:** descontroladamente asimétrica — las negras suelen tener un *peón d retrasado* y peones en e6+d6, mientras que las blancas tienen un poderoso peón en e4 y buscan tormentas con f2-f4-f5.\n\n## Por qué la aman los grandes maestros\n\nLa Siciliana crea **desequilibrio desde la primera jugada**. Las blancas atacan en un flanco, las negras en el otro. Las partidas decisivas son mucho más comunes que las tablas — y por eso todo campeón mundial ha tenido que aprenderla a fondo.\n\n> La simetría es para partidas amistosas. La Siciliana quiere pelea."
+    },
+    {
+      "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-      "prompt": "Juega la primera jugada más principista de las Blancas.",
-      "targetSan": ["e4"],
-      "hint": "1.e4 — la clásica apertura del peón rey." },
-    { "type": "play",
+      "prompt": "Abre con la primera jugada más principista — juega **{{e4}}**.",
+      "targetSan": [
+        "e4"
+      ],
+      "hint": "1.e4 es la elección clásica de las blancas — reclama una casilla central y libera a la dama y al alfil de f1."
+    },
+    {
+      "type": "play",
       "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
-      "prompt": "Las Negras juegan la Siciliana — empuja el peón c.",
-      "targetSan": ["c5"],
-      "hint": "1...c5 lucha por d4 sin bloquear la columna c." },
-    { "type": "play",
+      "prompt": "Las negras juegan la Siciliana — empuja **{{c5}}**, luchando por d4 desde el flanco.",
+      "targetSan": [
+        "c5"
+      ],
+      "hint": "No imites con ...e5. En su lugar empuja el peón de c — ataca d4 sin bloquear la columna c que quieren las negras."
+    },
+    {
+      "type": "play",
       "fen": "rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
-      "prompt": "Respuesta clásica de las Blancas: desarrolla el caballo.",
-      "targetSan": ["Nf3"],
-      "hint": "2.Nf3 prepara d4, la Siciliana Abierta." },
-    { "type": "teach",
+      "prompt": "Respuesta clásica blanca: **{{Nf3}}**, preparando **d4** para la Siciliana Abierta.",
+      "targetSan": [
+        "Nf3"
+      ],
+      "hint": "El caballo desarrolla, frena ideas de ...e5 y despeja el camino para d2-d4 — la jugada que define la Siciliana Abierta."
+    },
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
       "title": "¿Por Qué la Siciliana?",
-      "text": "A diferencia de ...e5 que refleja la jugada de las Blancas, ...c5 crea juego asimétrico. Las Blancas atacan en el flanco de rey; las Negras contraatacan en el de dama. Las partidas son afiladas y decisivas — los triunfos, no las tablas, son comunes." }
+      "text": "Ahora puedes ver el ingenio de {{c5}}. Las negras están listas para jugar **...d6** o **...e6** y luego saltar a la columna c semiabierta con una torre más adelante.\n\n## Los cuatro sabores principales del montaje negro\n\n- **Najdorf** — {{c5}} {{Nf3}} {{d6}} {{d4}} {{cxd4}} {{Nxd4}} {{Nf6}} {{Nc3}} **a6** — el más afilado y teórico de todos.\n- **Dragón** — las negras hacen fianchetto con **...g6** y **...Bg7**. Ataques salvajes a lados opuestos.\n- **Sveshnikov** — las negras juegan ...Nf6 y ...e5, aceptando un peón d retrasado a cambio de actividad de piezas.\n- **Taimanov / Kan** — montajes flexibles con ...e6 y ...a6, más lentos pero duros como el acero.\n\nQué sabor elijas dice mucho de tu estilo: los najdorfistas tácticos aman el cálculo; los del Sveshnikov aman las piezas activas; los del Kan disfrutan los apretones tranquilos y estratégicos.\n\n> Elige un sabor de Siciliana y apréndelo a fondo. La recompensa es toda una vida de partidas de doble filo."
+    }
   ]
 }

@@ -4,5 +4,8 @@
   "solution": [
     "Nxd3"
   ],
-  "hint": "Kuda menangkap benteng."
+  "title": "Benteng Gratis",
+  "setup": "Benteng Hitam berkelana ke kotak yang tidak dibela siapa pun — dan kuda hanya satu lompatan jauhnya.",
+  "hint": "Hitung pembela {{d3}} — tidak ada. Kuda menjalankan tugasnya.",
+  "explanation": "## Idenya\n\nSebelum mencari kombinasi mewah, periksa apakah ada yang sekadar **menggantung**. Di sini, benteng di d3 tidak punya pembela Hitam, dan kuda Putih di c1 menyerangnya langsung lewat bentuk L c1 → d3.\n\n- {{Nxd3}} menangkap benteng dengan harga kuda yang juga tidak banyak gunanya.\n- Pertukaran nilai: benteng (5) untuk kuda (3) = **+2 material**.\n\n### Pelajarannya\n\n1. Selalu mulai dengan memindai **bidak menggantung** di kedua sisi.\n2. Bandingkan penyerang vs pembela kotak per kotak.\n3. Jika bidak Anda mencapai bidak musuh tanpa pembela, ambil — *kecuali* tangkapan balik adalah masalah lebih buruk.\n\nDi sini tidak ada tangkapan balik: raja Hitam di e8 jauh dari d3, dan tidak ada bidak Hitam lain di papan.\n\n> Benteng untuk kuda adalah salah satu kemenangan material paling bersih dalam catur. Jangan biarkan yang mudah lewat."
 }

@@ -4,5 +4,8 @@
   "solution": [
     "Qa8#"
   ],
-  "hint": "La dame contrôle la 8e, le cavalier couvre g6."
+  "title": "Filet dame + cavalier",
+  "setup": "Votre cavalier en **f6** empêche le roi d'atteindre {{g8}}, votre roi en **h6** verrouille {{g7}}, et le pion **h7** bouche la troisième fuite.",
+  "hint": "Envoyez la dame sur la dernière rangée — le cavalier en **f6** scelle {{g8}}.",
+  "explanation": "## L'idée\n\nUn **filet de mat dame + cavalier** avec le pion du roi qui aide. La dame frappe depuis le coin, tandis que le cavalier et le roi ont déjà verrouillé le reste de la boîte.\n\nJouez {{Qa8#}}.\n\nPourquoi le roi est-il bloqué ?\n\n- La dame en a8 attaque h8 le long de la 8e rangée (échec)\n- {{g8}} — contrôlée par le cavalier en **f6**\n- {{g7}} — contrôlée par votre roi en **h6**\n- {{h7}} — bloquée par le propre pion noir (qui est aussi attaqué par le roi, mais le mat passe d'abord)\n- Rien ne peut s'interposer sur la 8e rangée vide entre a8 et h8\n\n> **À retenir :** un cavalier à un coup du coin est un *gardien silencieux* — il couvre les cases de fuite de la deuxième rangée que la dame ne peut pas atteindre en un coup. Chaque fois que vous avez dame + cavalier + roi près du coin adverse, cherchez ce schéma."
 }

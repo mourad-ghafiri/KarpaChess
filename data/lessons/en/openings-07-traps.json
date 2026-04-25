@@ -4,17 +4,23 @@
   "summary": "Recognize (and avoid) classic blunders",
   "difficulty": "intermediate",
   "steps": [
-    { "type": "teach",
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/ppp2ppp/8/3pp3/4P3/2N5/PPPP1PPP/R1BQKBNR w KQkq - 0 3",
       "title": "The Scholar's Mate",
-      "text": "The most famous trap: bring the queen and bishop out early to attack f7. If Black doesn't defend carefully, checkmate comes in four moves. After 1.e4 e5 2.Bc4 Nc6 3.Qh5 — if Black plays a natural-looking move like 3...Nf6?? — the game can end with 4.Qxf7#." },
-    { "type": "teach",
+      "text": "Every chess player learns the **Scholar's Mate** sooner or later — usually because someone has just unleashed it on them.\n\nThe basic recipe goes: {{e4}} {{e5}} {{Bc4}} {{Nc6}} {{Qh5}}. White has rushed the queen into the attack with one goal: target the **f7 square**, defended only by Black's king. If Black plays a careless move like **3...Nf6??**, White crashes through with **4.Qxf7#** — checkmate in four moves.\n\n## Why does it work?\n\n- **f7** is a uniquely weak square — only the king defends it.\n- The queen on h5 attacks f7; the bishop on c4 attacks f7. Two attackers, one defender.\n- A natural-looking knight move (like ...Nf6) blocks Black's queen from reaching f7's defense without solving the threat.\n\n## How to refute it\n\n- **3...g6** chases the queen and defends — most direct.\n- **3...Qe7** defends f7 with the queen, perfectly safe.\n- **3...Nf6??** is the move that loses — block the diagonal, but don't address the threat.\n\n> Knowing a trap is a 100-rating-point gift. Falling for it once teaches you forever."
+    },
+    {
+      "type": "teach",
       "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 0 4",
       "title": "The Punishment",
-      "text": "Against a prepared opponent, this is easily met by 3...g6 or 3...Qe7, defending f7. Knowing the trap lets you both avoid it as Black and punish careless play as White." },
-    { "type": "teach",
+      "text": "Against an alert opponent, the Scholar's Mate is *not* a winning weapon — it's a **losing** one. The early queen sortie violates two opening principles at once:\n\n- The queen is on h5 — exposed and easily chased.\n- White hasn't developed a single other piece besides one bishop.\n\n## Why Scholar's Mate fails at any decent level\n\n- After **3...g6** the queen retreats to **4.Qf3** (still threatening f7) — and Black plays **4...Nf6** safely. Now Black has *two pieces developed* against White's *one*, and White's queen will be chased again.\n- After **3...Qe7** Black is calm, has saved f7, and can play **...Nf6**, **...d6**, **...Bg7**, finishing development with a clear conscience.\n\n## The lesson\n\nIf an opponent attacks your weakest square with one piece, you usually have a calm defensive move. **Don't panic** and don't grab the bait of attacking their queen *if* it costs you f7. Defend first, then chase.\n\n> The Scholar's Mate punishes ignorance. Once you know it, you punish it instead."
+    },
+    {
+      "type": "teach",
       "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPPBPPP/RNBQK2R w KQkq - 0 3",
-      "title": "Develop Don't Dash",
-      "text": "Most 'traps' rely on the opponent breaking basic principles — leaving the king in the center, walking into a fork, or weakening a key square like f2/f7. Develop calmly and watch for tactics every single move." }
+      "title": "Develop, Don't Dash",
+      "text": "Most opening traps share one feature: **the victim broke a basic principle**. They left their king in the center, walked into a fork, weakened f2/f7, or moved the same piece three times before developing the rest.\n\n## The most common trap families\n\n- **Légal's Mate** — White wins after a careless ...Bg4 pin: {{e4}} {{e5}} {{Nf3}} {{d6}} {{Bc4}} **Bg4** {{Nc3}} **g6**?? {{Nxe5}}! and the bishop on g4 is undefended — Black loses material or worse.\n- **Fishing Pole Trap** (Ruy Lopez) — Black plays **...h5** and **...Ng4** to bait the bishop on g5 into capturing, opening lines toward White's king after a sacrifice.\n- **Noah's Ark Trap** (Ruy Lopez) — After White's bishop wanders to b3, Black traps it with **...c5-c4** if White isn't careful.\n- **Fried Liver** — After {{e4}} {{e5}} {{Nf3}} {{Nc6}} {{Bc4}} {{Nf6}} **{{Ng5}}** **d5** {{exd5}} **Nxd5**?! {{Nxf7}}!? — White sacs a knight for a furious king-hunt.\n\n## The universal antidote\n\nApply the **three opening principles** every move:\n\n1. Are my pieces developing toward the center?\n2. Is my king on track to castle?\n3. Did I just allow a check, capture, or fork?\n\nFollow that checklist and you'll fall for far fewer traps than you set yourself.\n\n> Most traps live in the *opponent's* mistakes. Play principled chess and watch them tumble in by themselves."
+    }
   ]
 }

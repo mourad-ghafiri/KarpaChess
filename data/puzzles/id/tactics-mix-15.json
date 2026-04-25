@@ -4,5 +4,8 @@
   "solution": [
     "a4"
   ],
-  "hint": "Majukan pion pass Anda."
+  "title": "Lomba Bidak dengan Dukungan Raja",
+  "setup": "Raja Putih sudah berdiri di **e6** — mendukung penuh setiap dorongan. Bidak-a hanya butuh tendangan awal.",
+  "hint": "Ketika raja Anda aktif dan bidak masih jauh dari promosi, dorong bidaknya — raja siap mengawalnya nanti.",
+  "explanation": "## Idenya\n\nIni adalah problem **endgame raja-dan-bidak** yang fundamental. Putih punya keuntungan besar: rajanya sudah maju ke **e6**, sementara bidak masih di a2. Rencananya sederhana — **lombakan bidak ke promosi**.\n\nPutih bermain {{a4}} (dorongan dua kotak awal, lebih cepat daripada {{a3}}).\n\n## Mengapa a4 Daripada a3?\n\n- {{a4}} menghemat tempo: bidak melompat ke a4 dalam satu gerakan, bukan dua gerakan ke kotak yang sama via {{a3}} lalu {{a4}}.\n- Tempo ini krusial dalam lomba: semakin dekat bidak dengan promosi, semakin sulit raja Hitam menangkapnya.\n\n## Kesulitan Hitam\n\nRaja Hitam di **e8** harus berlari sampai ke **a8** untuk menangkap bidak — tujuh gerakan raja. Bidak butuh lima gerakan untuk promosi ({{a4}}, {{a5}}, {{a6}}, {{a7}}, {{a8=Q}}). Bahkan tanpa dukungan raja Putih, bidak akan memenangkan lomba dengan nyaman.\n\nTetapi di sini, raja Putih di e6 sudah **dalam kotak bidak** terhadap jalur raja Hitam — ia bisa mengganggu atau mendukung sesuai kebutuhan.\n\n## Pola yang Harus Diingat\n\n> **Lomba bidak** dimenangkan dengan menghitung tempo. Selalu dorong dua kotak pada gerakan pertama saat bidak masih di baris awal — tempo gratis itu sering menentukan segalanya.\n\nAturan **kotak bidak**: bayangkan kotak dengan bidak di satu sudut dan kotak promosi di diagonalnya. Jika raja lawan berada di luar kotak itu, bidak akan promosi."
 }

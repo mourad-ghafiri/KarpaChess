@@ -4,5 +4,8 @@
   "solution": [
     "a8=Q+"
   ],
-  "hint": "Promotion with check."
+  "title": "Crown the Pawn",
+  "setup": "The white pawn has reached **a7** — one step from a brand-new queen.",
+  "hint": "Always promote with check when you can. It denies the defender a free move.",
+  "explanation": "## The Idea\n\nA simple **promotion with check**. The pawn on a7 reaches a8 and transforms into a queen, simultaneously delivering check along the eighth rank to the king on e8.\n\nWhite plays {{a8=Q+}}.\n\n## Black's Forced Reply\n\nThe black king must address the check. With no defenders nearby, the only options are king moves:\n\n- {{Kd7}}, {{Ke7}}, {{Kf7}}, {{Kf8}}, {{Kd8}} — all flight squares are valid.\n- The king cannot reach a8 to capture (too far).\n- Nothing can interpose — Black has no other pieces.\n\nWhite emerges with a queen plus the king — a trivially won endgame.\n\n## Pattern to Memorize\n\n> When promoting, **prefer queening with check** — it forces the opponent to react to your move first.\n\nWatch out for stalemate traps in slightly different positions: when the enemy king has no legal squares, a non-checking queen can accidentally draw. Here, the king has plenty of breathing room, so the check is pure profit."
 }

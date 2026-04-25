@@ -4,5 +4,8 @@
   "solution": [
     "Rc8#"
   ],
-  "hint": "The 8th rank is wide open."
+  "title": "Half-Open File Hammer",
+  "setup": "The c-file is empty between your rook and the 8th rank, and Black's pawn shield has no escape window.",
+  "hint": "Charge up the open c-file — the {{f7}}-{{g7}}-{{h7}} pawns trap the king for you.",
+  "explanation": "## The Idea\n\nA **back-rank mate via a half-open file**. Even with extra material on the board, all that matters is the bare 8th rank and the locked-in pawn shield.\n\nPlay {{Rc8#}}.\n\nWhy is the king stuck?\n\n- {{f8}}, {{h8}} and the rest of the 8th rank — covered by the rook on c8\n- {{f7}}, {{g7}}, {{h7}} — all blocked by Black's own pawns\n- Black has no piece that can interpose between c8 and g8 in time\n- The king cannot capture: c8 is too far from g8\n\n> **Takeaway:** A *half-open file* (yours has a pawn, theirs doesn't) is one of the most powerful structures in chess. Always check whether your rook can convert that file into a mate."
 }

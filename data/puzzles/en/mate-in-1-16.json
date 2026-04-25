@@ -2,7 +2,10 @@
   "id": "mate-in-1-16",
   "fen": "6k1/5Q2/5K2/8/8/8/8/8 w - - 0 1",
   "solution": [
-    "Qf8+"
+    "Qg7#"
   ],
-  "hint": "Queen step forward — king support seals it."
+  "title": "Side-Step Kiss",
+  "setup": "Your queen on **f7** and king on **f6** form a tight team — but landing on {{f8}} would be a stalemate trap.",
+  "hint": "Don't take the obvious file — slide one square sideways onto a square your king already defends.",
+  "explanation": "## The Idea\n\nA **kiss-of-death corner mate**. Going to {{f8}} just gives check with an escape; the right move is to drop *next to* the king on a square your king defends.\n\nPlay {{Qg7#}}.\n\nWhy is the king stuck?\n\n- The queen on g7 attacks g8 directly (check)\n- {{h8}} — covered by the queen on g7 (diagonal)\n- {{h7}} — covered by the queen on g7 (rank)\n- {{Kxg7}} is illegal — your king on **f6** defends g7\n- Nothing can block: the queen is adjacent\n\n> **Takeaway:** When you have a queen + king mating, count flight squares for *every* candidate move. The right square is often the one *defended by your king*, not the one giving check from afar."
 }

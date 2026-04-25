@@ -6,5 +6,8 @@
     "Kc8",
     "Qa8#"
   ],
-  "hint": "Menteri melangkah maju dengan skak, giring raja ke sudut, lalu berikan skakmat di baris ke-8."
+  "title": "Kandang Dua Langkah",
+  "setup": "Raja-raja saling berhadapan di **lajur d**, menteri Anda mengintai di **d1** siap mendaki dengan skak.",
+  "hint": "Naikkan menteri dengan skak, giring raja ke sudut, lalu sapu baris belakang untuk skakmat.",
+  "explanation": "## Idenya\n\nSebuah **mate-in-2 K+Q vs K** klasik. Langkah 1 memaksa raja ke samping, langkah 2 mengakhirinya di baris belakang.\n\n**1. {{Qd5+}}** — menteri melompat naik di lajur dengan skak. Raja Hitam di **d8** harus pindah; satu-satunya petak yang tidak dikuasai raja Anda di **d6** atau diserang menteri adalah **c8**.\n\n**1...{{Kc8}}** — terpaksa. {{Kxd5}} ilegal (raja Anda menjaga d5), {{Ke8}} juga legal tetapi kalah dengan cara yang sama; kita ikuti garis buku.\n\n**2. {{Qa8#}}** — menteri menyapu ke sudut baris belakang, memberi skakmat.\n\nMengapa raja terjebak setelah langkah 2?\n\n- {{b8}} — diserang menteri di sepanjang baris ke-8\n- {{c7}}, {{d7}} — keduanya dikuasai raja Anda di **d6**\n- Menteri jauh dari raja, jadi {{Kxa8}} mustahil\n- Tidak ada yang bisa menghalangi di baris ke-8\n\n> **Pelajaran:** Pada akhir K+Q, menteri yang melakukan pemotongan dan raja Anda yang memberikan *dukungan*. Selalu pasangkan skak menteri dengan dukungan raja, dan berbaris menuju skakmat baris belakang atau tepi."
 }

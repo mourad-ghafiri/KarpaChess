@@ -4,5 +4,8 @@
   "solution": [
     "Rd8+"
   ],
-  "hint": "Rook to the 8th — pawn cover doesn't help."
+  "title": "Pawns Don't Save This King",
+  "setup": "Black has played {{g6}} for some luft — but the king sits on g8 and the only escape is into a corner.",
+  "hint": "{{Rd8+}} drives the king. The escape route is shorter than Black thinks.",
+  "explanation": "## The Idea\n\n{{Rd8+}} is decisive even though Black has created some breathing room with {{g6}}. The check forces a king move, and Black's options are catastrophic:\n\n### After Rd8+\n\n1. **Kh7?** Loses to the rook continuing the assault — White swings to h-file and the king runs out of squares.\n2. **Kg7** — the king tries to walk forward, but the rook follows along the 7th rank, harassing the king and pawns.\n\nThe key insight: **{{g6}} was not enough luft** because the king is still pinned to the 8th rank by its own f7 and h7 pawns. The g-pawn move only helped if the king could actually slip down to g7 *safely* — which it cannot, because White's rook will follow on the 7th rank or 8th rank.\n\n### Pattern\n\n- *Half-luft* (one pawn moved) is worse than no luft, because it tempts the king to its death.\n- True luft means the king has a **safe** flight square, not just an empty one.\n\n> Luft is about safety, not just space."
 }
