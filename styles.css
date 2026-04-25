@@ -1164,16 +1164,9 @@ body.modal-open { overflow: hidden; }
 /* Per-tool cursor. Default for creation tools is crosshair; select is the
    normal arrow (selecting shapes isn't a drawing action); text uses the
    I-beam; eraser keeps crosshair so you can aim precisely at a shape. */
-body.mode-commentator .sq,
-body.mode-commentator.draw-tool-arrow  .sq,
-body.mode-commentator.draw-tool-line   .sq,
-body.mode-commentator.draw-tool-rect   .sq,
-body.mode-commentator.draw-tool-circle .sq,
-body.mode-commentator.draw-tool-pen    .sq,
-body.mode-commentator.draw-tool-eraser .sq { cursor: crosshair; }
-body.mode-commentator.draw-tool-select .sq,
-body.mode-commentator.draw-tool-select .piece { cursor: default; }
-body.mode-commentator.draw-tool-text   .sq { cursor: text; }
+/* Cursor stays the default arrow in commentator mode regardless of tool —
+   drawing happens via right-click + drag, the board is still primarily for
+   playing moves. */
 
 /* Text annotations: bold serif with a faint outline so they read on any square */
 .draw-text {
@@ -1232,7 +1225,7 @@ body.mode-commentator.draw-tool-text   .sq { cursor: text; }
   stroke: #2d5c40;
 }
 .draw-rot-stem { stroke: rgba(47, 74, 107, 0.7); stroke-width: 0.02; }
-.draw-hit      { cursor: grab; }
+.draw-hit      { cursor: default; }
 
 /* Variation cue — dim the square backgrounds (but NOT the pieces, which stay
    crisp) so it's unmistakable you've stepped off the main line. */
@@ -1255,65 +1248,157 @@ body.mode-commentator.cm-has-match .cm-draw-toolbar {
   box-shadow: var(--shadow-sm);
 }
 body.mode-commentator .board-controls { display: none; }
-.draw-tools { display: flex; gap: 6px; flex-wrap: wrap; }
+.draw-tools { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
 .draw-tool {
-  padding: 6px 10px;
+  padding: 7px 12px;
   border: 1px solid var(--paper-edge);
   background: var(--paper-2);
-  border-radius: 8px;
-  font: inherit; font-size: 12px;
+  border-radius: 9px;
+  font: inherit; font-size: 13px;
   color: var(--ink-1);
   cursor: pointer;
-  display: inline-flex; align-items: center; gap: 6px;
-  transition: all var(--t-fast);
+  display: inline-flex; align-items: center; gap: 7px;
+  transition: background var(--t-fast), border-color var(--t-fast),
+              color var(--t-fast), transform var(--t-fast);
 }
-.draw-tool:hover { background: var(--paper-1); border-color: var(--sage); color: var(--sage-deep); }
+.draw-tool:hover {
+  background: var(--paper-1);
+  border-color: var(--sage);
+  color: var(--sage-deep);
+}
+@media (hover: hover) {
+  .draw-tool:hover { transform: translateY(-1px); }
+}
 .draw-tool.active {
   background: var(--sage-soft);
   border-color: var(--sage);
   color: var(--sage-deep);
   font-weight: 600;
 }
-.draw-icon { font-size: 14px; line-height: 1; }
+.draw-icon {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 18px; height: 18px;
+}
+.draw-icon svg { display: block; }
+
 .draw-style-row {
-  display: flex; align-items: center; gap: 8px;
+  display: flex; align-items: center; gap: 10px;
   flex-wrap: wrap;
 }
-.draw-colors { display: flex; gap: 4px; align-items: center; }
-.draw-swatch {
-  width: 20px; height: 20px;
-  border-radius: 50%;
-  border: 2px solid var(--paper-edge);
-  cursor: pointer;
-  transition: all var(--t-fast);
-  padding: 0;
+.draw-colors {
+  display: flex; gap: 5px; align-items: center;
+  padding: 3px;
+  background: var(--paper-2);
+  border: 1px solid var(--paper-edge);
+  border-radius: 999px;
 }
-.draw-swatch:hover { transform: scale(1.12); }
+.draw-swatch {
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: transform var(--t-fast), box-shadow var(--t-fast);
+  padding: 0;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+@media (hover: hover) {
+  .draw-swatch:hover { transform: scale(1.15); }
+}
 .draw-swatch.active {
   outline: 2px solid var(--ink-0);
   outline-offset: 2px;
+  transform: scale(1.08);
 }
 .draw-width {
   flex: 1;
-  min-width: 60px;
+  min-width: 70px;
   accent-color: var(--sage);
   margin: 0;
 }
+.draw-utils {
+  display: inline-flex; align-items: center; gap: 4px;
+  margin-inline-start: auto;
+  padding-inline-start: 8px;
+  border-inline-start: 1px solid var(--paper-edge);
+}
 .draw-iconbtn {
-  width: 28px; height: 28px;
+  width: 32px; height: 32px;
   padding: 0;
   border: 1px solid var(--paper-edge);
-  border-radius: 6px;
+  border-radius: 8px;
   background: var(--paper-2);
   color: var(--ink-1);
   cursor: pointer;
-  font-size: 14px; line-height: 1;
   display: inline-flex; align-items: center; justify-content: center;
   transition: all var(--t-fast);
 }
-.draw-iconbtn:hover { background: var(--paper-1); border-color: var(--sage); color: var(--sage-deep); }
+.draw-iconbtn:hover {
+  background: var(--paper-1);
+  border-color: var(--sage);
+  color: var(--sage-deep);
+}
+.draw-iconbtn[disabled] {
+  opacity: 0.35;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.draw-iconbtn svg { display: block; }
 .draw-iconbtn-warn { color: var(--coral-deep); }
-.draw-iconbtn-warn:hover { background: var(--coral-soft); border-color: var(--coral); color: var(--coral-deep); }
+.draw-iconbtn-warn:hover {
+  background: var(--coral-soft);
+  border-color: var(--coral);
+  color: var(--coral-deep);
+}
+
+/* One-time hint card explaining right-click annotation */
+.cm-annot-tip {
+  position: absolute;
+  bottom: 12px; left: 50%;
+  transform: translate(-50%, 12px);
+  z-index: 12;
+  max-width: min(560px, 92%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 200ms ease, transform 200ms ease;
+}
+.cm-annot-tip.show {
+  opacity: 1;
+  transform: translate(-50%, 0);
+  pointer-events: auto;
+}
+.cm-annot-tip-body {
+  display: flex; align-items: center; gap: 12px;
+  padding: 10px 14px;
+  background: var(--ink-0);
+  color: var(--paper-0);
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+  font-size: 13px;
+  line-height: 1.4;
+}
+.cm-annot-tip-icon { font-size: 18px; line-height: 1; }
+.cm-annot-tip-text { flex: 1; }
+.cm-annot-tip-dismiss {
+  flex: 0 0 auto;
+  padding: 5px 12px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--paper-0);
+  color: var(--ink-0);
+  font: inherit; font-size: 12px; font-weight: 600;
+  cursor: pointer;
+  transition: transform var(--t-fast);
+}
+.cm-annot-tip-dismiss:hover { transform: scale(1.04); }
+
+/* Cursor hint when long-press is being recognized on touch */
+.cm-annot-armed {
+  outline: 2px dashed var(--sage);
+  outline-offset: -4px;
+}
+
+/* Square highlight overlays should not block clicks on the square underneath. */
+.draw-shape-g .draw-hit { cursor: default; }
 
 /* Commentator right-panel layout */
 .tab-panel[data-panel="commentator"] { display: none; }

@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#f3ecd9" />
   <title>KarpaChess — Learn. Play. Master.</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <link rel="stylesheet" href="styles.css?v=r6" />
+  <link rel="stylesheet" href="styles.css?v=r7" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Noto+Sans+Arabic:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -179,6 +179,17 @@
 
       <!-- Drawing toolbar replaces board-controls in commentator mode (CSS-gated) -->
       <div class="cm-draw-toolbar" id="cm-draw-toolbar"></div>
+
+      <!-- One-time hint shown the first time the user enters Commentator -->
+      <div class="cm-annot-tip" id="cm-annot-tip" hidden>
+        <div class="cm-annot-tip-body">
+          <span class="cm-annot-tip-icon" aria-hidden="true">🖱</span>
+          <span class="cm-annot-tip-text" data-i18n="commentator.tips.rightClickToDraw">
+            Right-click + drag to draw arrows · Right-click a square to highlight it · Hold Shift / Alt / Cmd for different colors
+          </span>
+          <button class="cm-annot-tip-dismiss" id="cm-annot-tip-dismiss" type="button" data-i18n="commentator.tips.gotIt">Got it</button>
+        </div>
+      </div>
     </section>
 
     <!-- ============ RIGHT SIDEBAR (tab content) ============ -->

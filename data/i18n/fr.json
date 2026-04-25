@@ -1,6 +1,8 @@
 {
-  "language": { "name": "Français", "code": "fr" },
-
+  "language": {
+    "name": "Français",
+    "code": "fr"
+  },
   "ui": {
     "brand": {
       "title": "KarpaChess",
@@ -95,7 +97,6 @@
       "lessonComplete": "Leçon terminée !"
     }
   },
-
   "game": {
     "result": {
       "checkmate": "Échec et mat !",
@@ -146,7 +147,6 @@
       "timeUsedLong": "{time} utilisées"
     }
   },
-
   "chess": {
     "piece": {
       "p": "pion",
@@ -169,13 +169,36 @@
       "queenside": "aile dame"
     }
   },
-
   "classification": {
-    "best":       { "label": "Meilleur coup", "glyph": "★",  "comment": "C'est le choix préféré du moteur — aucun meilleur coup sur l'échiquier." },
-    "good":       { "label": "Solide",      "glyph": "✓",  "commentAgree": "Le moteur approuve — un choix solide.", "commentAlt": "Une continuation raisonnable. Le moteur préférait légèrement <b>{best}</b>." },
-    "inaccuracy": { "label": "Imprécision", "glyph": "?!", "comment": "Petit écart — <b>{best}</b> aurait été un peu plus fort.", "commentShort": "Petit écart." },
-    "mistake":    { "label": "Erreur",      "glyph": "?",  "comment": "Une erreur — <b>{best}</b> était nettement meilleur.", "commentShort": "Une erreur." },
-    "blunder":    { "label": "Gaffe",       "glyph": "??", "comment": "Une gaffe. <b>{best}</b> était nécessaire.", "commentShort": "Une gaffe." },
+    "best": {
+      "label": "Meilleur coup",
+      "glyph": "★",
+      "comment": "C'est le choix préféré du moteur — aucun meilleur coup sur l'échiquier."
+    },
+    "good": {
+      "label": "Solide",
+      "glyph": "✓",
+      "commentAgree": "Le moteur approuve — un choix solide.",
+      "commentAlt": "Une continuation raisonnable. Le moteur préférait légèrement <b>{best}</b>."
+    },
+    "inaccuracy": {
+      "label": "Imprécision",
+      "glyph": "?!",
+      "comment": "Petit écart — <b>{best}</b> aurait été un peu plus fort.",
+      "commentShort": "Petit écart."
+    },
+    "mistake": {
+      "label": "Erreur",
+      "glyph": "?",
+      "comment": "Une erreur — <b>{best}</b> était nettement meilleur.",
+      "commentShort": "Une erreur."
+    },
+    "blunder": {
+      "label": "Gaffe",
+      "glyph": "??",
+      "comment": "Une gaffe. <b>{best}</b> était nécessaire.",
+      "commentShort": "Une gaffe."
+    },
     "review": {
       "good": "Meilleur coup ou presque.",
       "ok": "Coup solide.",
@@ -184,7 +207,6 @@
       "blunder": "Gaffe."
     }
   },
-
   "nag": {
     "1": "Bon coup",
     "2": "Erreur",
@@ -201,7 +223,6 @@
     "18": "Les Blancs gagnent",
     "19": "Les Noirs gagnent"
   },
-
   "hint": {
     "eyebrow": "Coup suggéré",
     "loading": "…",
@@ -217,12 +238,10 @@
     "quiet": "Améliore votre <b>{piece}</b> en <b>{square}</b>.",
     "checkSuffix": " Donne aussi <b>échec</b>."
   },
-
   "banner": {
     "reviewBtn": "🔍 Revoir la partie",
     "newGameBtn": "Nouvelle partie"
   },
-
   "coach": {
     "greeting": "Bonjour — je suis votre coach d'échecs. Posez-moi n'importe quelle question sur la position. J'explique les idées, les tactiques et les plans.",
     "thinking": "Réflexion…",
@@ -539,7 +558,6 @@
       "generic": "Concentrez-vous sur les idées — placement des pièces, cassures de pions, finales typiques."
     }
   },
-
   "settings": {
     "title": "Paramètres",
     "board": "Échiquier",
@@ -589,7 +607,6 @@
       "glm": "Les modèles GLM de Zhipu AI. Le point de terminaison par défaut est la région Chine — passez par un proxy si nécessaire."
     }
   },
-
   "commentator": {
     "title": "Studio Commentateur",
     "importLede": "Collez un PGN, déposez un fichier ou choisissez une partie d'exemple ci-dessous pour commencer à commenter.",
@@ -641,10 +658,15 @@
       "text": "Texte",
       "strokeWidth": "Épaisseur du trait",
       "deleteSelected": "Supprimer la sélection (Suppr)",
-      "clearAll": "Effacer toutes les formes sur ce coup"
+      "clearAll": "Effacer toutes les formes sur ce coup",
+      "undo": "Annuler",
+      "redo": "Rétablir"
+    },
+    "tips": {
+      "rightClickToDraw": "Clic droit + glisser pour tracer des flèches · Clic droit sur une case pour la surligner · Maintenez Maj / Alt / Cmd pour changer de couleur",
+      "gotIt": "OK"
     }
   },
-
   "learn": {
     "title": "Apprendre les échecs",
     "lede": "Leçons guidées sur les grands sujets. Touchez une catégorie pour plonger.",
@@ -659,7 +681,6 @@
     "backToLessons": "Retour aux leçons",
     "categoryCount": "{done}/{total}"
   },
-
   "puzzles": {
     "title": "Énigmes",
     "lede": "Choisissez un thème à pratiquer. Chaque ensemble enseigne un schéma.",
@@ -675,7 +696,6 @@
     "themeCompleteHeader": "🏆 Thème terminé.",
     "themeCompleteBody": "Vous avez terminé toutes les énigmes de {theme}."
   },
-
   "coachTab": {
     "title": "Coach IA",
     "providerLabel": "Fournisseur",
@@ -696,11 +716,9 @@
     "analyzeQuestion": "Analysez la position actuelle.",
     "analyzePrompt": "Donnez une analyse claire de cette position : caractéristiques clés, menaces, coups candidats, et une recommandation avec ses raisons."
   },
-
   "promotion": {
     "title": "Promouvoir le pion"
   },
-
   "review": {
     "title": "Revue de la partie",
     "analyzing": "Analyse…",
@@ -721,26 +739,66 @@
       "blunder": "Gaffe"
     }
   },
-
   "lessons": {
     "categories": {
-      "basics":   { "name": "Bases",       "description": "Les fondamentaux que tout joueur d'échecs doit connaître." },
-      "openings": { "name": "Ouvertures",  "description": "Commencez chaque partie avec intention." },
-      "tactics":  { "name": "Tactiques",   "description": "Des schémas qui gagnent du matériel et des parties." },
-      "endgames": { "name": "Finales",     "description": "Convertissez les positions gagnées ; sauvez les perdues." },
-      "strategy": { "name": "Stratégie",   "description": "Pensez en plans, pas seulement en coups." },
-      "attack":   { "name": "Attaque",     "description": "Attaques de mat et chasses au roi." }
+      "basics": {
+        "name": "Bases",
+        "description": "Les fondamentaux que tout joueur d'échecs doit connaître."
+      },
+      "openings": {
+        "name": "Ouvertures",
+        "description": "Commencez chaque partie avec intention."
+      },
+      "tactics": {
+        "name": "Tactiques",
+        "description": "Des schémas qui gagnent du matériel et des parties."
+      },
+      "endgames": {
+        "name": "Finales",
+        "description": "Convertissez les positions gagnées ; sauvez les perdues."
+      },
+      "strategy": {
+        "name": "Stratégie",
+        "description": "Pensez en plans, pas seulement en coups."
+      },
+      "attack": {
+        "name": "Attaque",
+        "description": "Attaques de mat et chasses au roi."
+      }
     }
   },
-
   "puzzleThemes": {
-    "mate-in-1":    { "name": "Mat en 1",              "description": "Trouvez le coup décisif — donnez échec et mat en un seul coup." },
-    "mate-in-2":    { "name": "Mat en 2",              "description": "Mats forcés en deux coups. Pensez un pas en avance." },
-    "forks":        { "name": "Fourchettes",           "description": "Attaquez deux pièces à la fois et gagnez du matériel." },
-    "pins-skewers": { "name": "Clouages et enfilades", "description": "Alignez les pièces ennemies et gagnez celle de derrière." },
-    "back-rank":    { "name": "Dernière rangée",       "description": "Exploitez le roi piégé derrière ses propres pions." },
-    "tactics-mix":  { "name": "Tactiques mixtes",      "description": "Une variété de schémas tactiques — trouvez le meilleur coup." },
-    "discovered":   { "name": "Attaques à la découverte", "description": "Bougez une pièce, en libérez une autre." },
-    "endgame":      { "name": "Technique de finale",   "description": "Convertissez proprement les finales gagnantes." }
+    "mate-in-1": {
+      "name": "Mat en 1",
+      "description": "Trouvez le coup décisif — donnez échec et mat en un seul coup."
+    },
+    "mate-in-2": {
+      "name": "Mat en 2",
+      "description": "Mats forcés en deux coups. Pensez un pas en avance."
+    },
+    "forks": {
+      "name": "Fourchettes",
+      "description": "Attaquez deux pièces à la fois et gagnez du matériel."
+    },
+    "pins-skewers": {
+      "name": "Clouages et enfilades",
+      "description": "Alignez les pièces ennemies et gagnez celle de derrière."
+    },
+    "back-rank": {
+      "name": "Dernière rangée",
+      "description": "Exploitez le roi piégé derrière ses propres pions."
+    },
+    "tactics-mix": {
+      "name": "Tactiques mixtes",
+      "description": "Une variété de schémas tactiques — trouvez le meilleur coup."
+    },
+    "discovered": {
+      "name": "Attaques à la découverte",
+      "description": "Bougez une pièce, en libérez une autre."
+    },
+    "endgame": {
+      "name": "Technique de finale",
+      "description": "Convertissez proprement les finales gagnantes."
+    }
   }
 }

@@ -1,6 +1,8 @@
 {
-  "language": { "name": "Español", "code": "es" },
-
+  "language": {
+    "name": "Español",
+    "code": "es"
+  },
   "ui": {
     "brand": {
       "title": "KarpaChess",
@@ -95,7 +97,6 @@
       "lessonComplete": "¡Lección completada!"
     }
   },
-
   "game": {
     "result": {
       "checkmate": "¡Jaque mate!",
@@ -146,7 +147,6 @@
       "timeUsedLong": "{time} usados"
     }
   },
-
   "chess": {
     "piece": {
       "p": "peón",
@@ -169,13 +169,36 @@
       "queenside": "flanco de dama"
     }
   },
-
   "classification": {
-    "best":       { "label": "Mejor jugada", "glyph": "★",  "comment": "Es la opción preferida del motor — no hay mejor jugada sobre el tablero." },
-    "good":       { "label": "Sólida",       "glyph": "✓",  "commentAgree": "El motor la aprueba — una elección sólida.", "commentAlt": "Una continuación razonable. El motor prefería ligeramente <b>{best}</b>." },
-    "inaccuracy": { "label": "Imprecisión",  "glyph": "?!", "comment": "Pequeño desliz — <b>{best}</b> habría sido un poco más fuerte.", "commentShort": "Pequeño desliz." },
-    "mistake":    { "label": "Error",        "glyph": "?",  "comment": "Un error — <b>{best}</b> era notablemente mejor.", "commentShort": "Un error." },
-    "blunder":    { "label": "Error grave",  "glyph": "??", "comment": "Un error grave. Se necesitaba <b>{best}</b>.", "commentShort": "Un error grave." },
+    "best": {
+      "label": "Mejor jugada",
+      "glyph": "★",
+      "comment": "Es la opción preferida del motor — no hay mejor jugada sobre el tablero."
+    },
+    "good": {
+      "label": "Sólida",
+      "glyph": "✓",
+      "commentAgree": "El motor la aprueba — una elección sólida.",
+      "commentAlt": "Una continuación razonable. El motor prefería ligeramente <b>{best}</b>."
+    },
+    "inaccuracy": {
+      "label": "Imprecisión",
+      "glyph": "?!",
+      "comment": "Pequeño desliz — <b>{best}</b> habría sido un poco más fuerte.",
+      "commentShort": "Pequeño desliz."
+    },
+    "mistake": {
+      "label": "Error",
+      "glyph": "?",
+      "comment": "Un error — <b>{best}</b> era notablemente mejor.",
+      "commentShort": "Un error."
+    },
+    "blunder": {
+      "label": "Error grave",
+      "glyph": "??",
+      "comment": "Un error grave. Se necesitaba <b>{best}</b>.",
+      "commentShort": "Un error grave."
+    },
     "review": {
       "good": "Mejor jugada o casi.",
       "ok": "Jugada sólida.",
@@ -184,7 +207,6 @@
       "blunder": "Error grave."
     }
   },
-
   "nag": {
     "1": "Buena jugada",
     "2": "Error",
@@ -201,7 +223,6 @@
     "18": "Blancas ganan",
     "19": "Negras ganan"
   },
-
   "hint": {
     "eyebrow": "Jugada sugerida",
     "loading": "…",
@@ -217,12 +238,10 @@
     "quiet": "Mejora tu <b>{piece}</b> a <b>{square}</b>.",
     "checkSuffix": " Además da <b>jaque</b>."
   },
-
   "banner": {
     "reviewBtn": "🔍 Revisar partida",
     "newGameBtn": "Partida nueva"
   },
-
   "coach": {
     "greeting": "Hola — soy tu entrenador de ajedrez. Pregúntame lo que quieras sobre la posición. Explico ideas, tácticas y planes.",
     "thinking": "Pensando…",
@@ -539,7 +558,6 @@
       "generic": "Céntrate en las ideas — colocación de piezas, rupturas de peón y finales típicos."
     }
   },
-
   "settings": {
     "title": "Ajustes",
     "board": "Tablero",
@@ -589,7 +607,6 @@
       "glm": "Los modelos GLM de Zhipu AI. El endpoint por defecto es el de la región de China — cámbialo a un proxy si lo necesitas."
     }
   },
-
   "commentator": {
     "title": "Estudio del Comentarista",
     "importLede": "Pega un PGN, suelta un archivo o elige una partida de ejemplo abajo para empezar a comentar.",
@@ -641,10 +658,15 @@
       "text": "Texto",
       "strokeWidth": "Grosor del trazo",
       "deleteSelected": "Borrar selección (Supr)",
-      "clearAll": "Borrar todas las formas de esta jugada"
+      "clearAll": "Borrar todas las formas de esta jugada",
+      "undo": "Deshacer",
+      "redo": "Rehacer"
+    },
+    "tips": {
+      "rightClickToDraw": "Clic derecho + arrastrar para dibujar flechas · Clic derecho en una casilla para resaltarla · Mantén Mayús / Alt / Cmd para distintos colores",
+      "gotIt": "Entendido"
     }
   },
-
   "learn": {
     "title": "Aprender Ajedrez",
     "lede": "Lecciones guiadas por los grandes temas. Toca una categoría para sumergirte.",
@@ -659,7 +681,6 @@
     "backToLessons": "Volver a las lecciones",
     "categoryCount": "{done}/{total}"
   },
-
   "puzzles": {
     "title": "Puzles",
     "lede": "Elige un tema para practicar. Cada conjunto enseña un patrón.",
@@ -675,7 +696,6 @@
     "themeCompleteHeader": "🏆 Tema completado.",
     "themeCompleteBody": "Has terminado todos los puzles de {theme}."
   },
-
   "coachTab": {
     "title": "Entrenador IA",
     "providerLabel": "Proveedor",
@@ -696,11 +716,9 @@
     "analyzeQuestion": "Analiza la posición actual.",
     "analyzePrompt": "Da un análisis claro de esta posición: características clave, amenazas, jugadas candidatas y una recomendación con razones."
   },
-
   "promotion": {
     "title": "Promocionar peón"
   },
-
   "review": {
     "title": "Revisión de la partida",
     "analyzing": "Analizando…",
@@ -721,26 +739,66 @@
       "blunder": "Error grave"
     }
   },
-
   "lessons": {
     "categories": {
-      "basics":   { "name": "Fundamentos", "description": "Lo esencial que todo ajedrecista debe saber." },
-      "openings": { "name": "Aperturas",   "description": "Empieza cada partida con un propósito." },
-      "tactics":  { "name": "Tácticas",    "description": "Patrones que ganan material y partidas." },
-      "endgames": { "name": "Finales",     "description": "Concreta posiciones ganadas; salva las perdidas." },
-      "strategy": { "name": "Estrategia",  "description": "Piensa en planes, no solo en jugadas." },
-      "attack":   { "name": "Ataque",      "description": "Ataques de mate y cacerías al rey." }
+      "basics": {
+        "name": "Fundamentos",
+        "description": "Lo esencial que todo ajedrecista debe saber."
+      },
+      "openings": {
+        "name": "Aperturas",
+        "description": "Empieza cada partida con un propósito."
+      },
+      "tactics": {
+        "name": "Tácticas",
+        "description": "Patrones que ganan material y partidas."
+      },
+      "endgames": {
+        "name": "Finales",
+        "description": "Concreta posiciones ganadas; salva las perdidas."
+      },
+      "strategy": {
+        "name": "Estrategia",
+        "description": "Piensa en planes, no solo en jugadas."
+      },
+      "attack": {
+        "name": "Ataque",
+        "description": "Ataques de mate y cacerías al rey."
+      }
     }
   },
-
   "puzzleThemes": {
-    "mate-in-1":    { "name": "Mate en 1",             "description": "Encuentra el golpe decisivo — entrega jaque mate en una sola jugada." },
-    "mate-in-2":    { "name": "Mate en 2",             "description": "Mates forzados en dos jugadas. Piensa un paso por delante." },
-    "forks":        { "name": "Horquillas",            "description": "Ataca dos piezas a la vez y gana material." },
-    "pins-skewers": { "name": "Clavadas y Enfiladas",  "description": "Alinea las piezas rivales y gana la de detrás." },
-    "back-rank":    { "name": "Última fila",           "description": "Aprovecha al rey atrapado tras sus propios peones." },
-    "tactics-mix":  { "name": "Tácticas variadas",     "description": "Una variedad de patrones tácticos — encuentra la mejor jugada." },
-    "discovered":   { "name": "Ataques al descubierto","description": "Mueve una pieza y desata a otra." },
-    "endgame":      { "name": "Técnica de finales",    "description": "Concreta finales ganadores con limpieza." }
+    "mate-in-1": {
+      "name": "Mate en 1",
+      "description": "Encuentra el golpe decisivo — entrega jaque mate en una sola jugada."
+    },
+    "mate-in-2": {
+      "name": "Mate en 2",
+      "description": "Mates forzados en dos jugadas. Piensa un paso por delante."
+    },
+    "forks": {
+      "name": "Horquillas",
+      "description": "Ataca dos piezas a la vez y gana material."
+    },
+    "pins-skewers": {
+      "name": "Clavadas y Enfiladas",
+      "description": "Alinea las piezas rivales y gana la de detrás."
+    },
+    "back-rank": {
+      "name": "Última fila",
+      "description": "Aprovecha al rey atrapado tras sus propios peones."
+    },
+    "tactics-mix": {
+      "name": "Tácticas variadas",
+      "description": "Una variedad de patrones tácticos — encuentra la mejor jugada."
+    },
+    "discovered": {
+      "name": "Ataques al descubierto",
+      "description": "Mueve una pieza y desata a otra."
+    },
+    "endgame": {
+      "name": "Técnica de finales",
+      "description": "Concreta finales ganadores con limpieza."
+    }
   }
 }

@@ -94,6 +94,7 @@ export class CommentatorController {
     this.drawingOverlay.enable(true);
     this.drawingOverlay.render();
     this.#renderInsightsForCurrent();
+    this.#maybeShowAnnotTip();
   }
 
   onExitTab() {
@@ -108,6 +109,26 @@ export class CommentatorController {
     if (this.practiceSnapshot.has()) {
       this.practiceSnapshot.restoreInto(this.gameState);
     }
+  }
+
+  /** One-time hint card explaining the right-click annotation gestures. */
+  #maybeShowAnnotTip() {
+    const KEY = 'karpa.cmAnnotTipSeen';
+    if (localStorage.getItem(KEY) === '1') return;
+    const tip = $('#cm-annot-tip');
+    if (!tip) return;
+    tip.hidden = false;
+    requestAnimationFrame(() => tip.classList.add('show'));
+    const dismiss = () => {
+      localStorage.setItem(KEY, '1');
+      tip.classList.remove('show');
+      setTimeout(() => { tip.hidden = true; }, 200);
+    };
+    $('#cm-annot-tip-dismiss')?.addEventListener('click', dismiss, { once: true });
+    // Auto-dismiss after 12s if the user doesn't click
+    setTimeout(() => {
+      if (tip.classList.contains('show')) dismiss();
+    }, 12000);
   }
 
   // ============ import ============

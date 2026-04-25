@@ -1,6 +1,8 @@
 {
-  "language": { "name": "日本語", "code": "ja" },
-
+  "language": {
+    "name": "日本語",
+    "code": "ja"
+  },
   "ui": {
     "brand": {
       "title": "KarpaChess",
@@ -95,7 +97,6 @@
       "lessonComplete": "レッスン完了！"
     }
   },
-
   "game": {
     "result": {
       "checkmate": "チェックメイト！",
@@ -146,7 +147,6 @@
       "timeUsedLong": "{time}使用"
     }
   },
-
   "chess": {
     "piece": {
       "p": "ポーン",
@@ -169,13 +169,36 @@
       "queenside": "クイーンサイド"
     }
   },
-
   "classification": {
-    "best":       { "label": "最善手",      "glyph": "★",  "comment": "エンジンのトップ候補です。これ以上の手はありません。" },
-    "good":       { "label": "堅実な手",    "glyph": "✓",  "commentAgree": "エンジンも賛成、堅実な選択です。", "commentAlt": "妥当な続き方です。エンジンはわずかに<b>{best}</b>を好みました。" },
-    "inaccuracy": { "label": "不正確",      "glyph": "?!", "comment": "小さなミス ― <b>{best}</b>の方がやや強かったです。", "commentShort": "小さなミスです。" },
-    "mistake":    { "label": "ミス",        "glyph": "?",  "comment": "ミスです ― <b>{best}</b>の方が明らかに良かったです。", "commentShort": "ミスです。" },
-    "blunder":    { "label": "大悪手",      "glyph": "??", "comment": "大悪手です。<b>{best}</b>が必要でした。", "commentShort": "大悪手です。" },
+    "best": {
+      "label": "最善手",
+      "glyph": "★",
+      "comment": "エンジンのトップ候補です。これ以上の手はありません。"
+    },
+    "good": {
+      "label": "堅実な手",
+      "glyph": "✓",
+      "commentAgree": "エンジンも賛成、堅実な選択です。",
+      "commentAlt": "妥当な続き方です。エンジンはわずかに<b>{best}</b>を好みました。"
+    },
+    "inaccuracy": {
+      "label": "不正確",
+      "glyph": "?!",
+      "comment": "小さなミス ― <b>{best}</b>の方がやや強かったです。",
+      "commentShort": "小さなミスです。"
+    },
+    "mistake": {
+      "label": "ミス",
+      "glyph": "?",
+      "comment": "ミスです ― <b>{best}</b>の方が明らかに良かったです。",
+      "commentShort": "ミスです。"
+    },
+    "blunder": {
+      "label": "大悪手",
+      "glyph": "??",
+      "comment": "大悪手です。<b>{best}</b>が必要でした。",
+      "commentShort": "大悪手です。"
+    },
     "review": {
       "good": "最善またはほぼ最善の手。",
       "ok": "堅実な手。",
@@ -184,7 +207,6 @@
       "blunder": "大悪手。"
     }
   },
-
   "nag": {
     "1": "好手",
     "2": "ミス",
@@ -201,7 +223,6 @@
     "18": "白が勝勢",
     "19": "黒が勝勢"
   },
-
   "hint": {
     "eyebrow": "推奨手",
     "loading": "…",
@@ -217,12 +238,10 @@
     "quiet": "<b>{piece}</b>を<b>{square}</b>へ配置を改善します。",
     "checkSuffix": " さらに<b>チェック</b>もかかります。"
   },
-
   "banner": {
     "reviewBtn": "🔍 対局レビュー",
     "newGameBtn": "新規対局"
   },
-
   "coach": {
     "greeting": "こんにちは ― あなたのチェスコーチです。局面について何でも聞いてください。アイデア、戦術、プランを説明します。",
     "thinking": "考え中…",
@@ -539,7 +558,6 @@
       "generic": "アイデアに集中しましょう ― 駒の配置、ポーンブレイク、典型的なエンドゲーム。"
     }
   },
-
   "settings": {
     "title": "設定",
     "board": "盤面",
@@ -589,7 +607,6 @@
       "glm": "Zhipu AIのGLMモデル。デフォルトのエンドポイントは中国リージョン ― 必要に応じてプロキシに切り替えてください。"
     }
   },
-
   "commentator": {
     "title": "解説スタジオ",
     "importLede": "PGNを貼り付け、ファイルをドロップするか、下のサンプル対局を選んで解説を始めましょう。",
@@ -635,16 +652,21 @@
       "erase": "消去",
       "arrow": "矢印",
       "line": "線",
-      "box": "四角",
+      "box": "長方形",
       "circle": "円",
       "pen": "ペン",
       "text": "テキスト",
       "strokeWidth": "線幅",
       "deleteSelected": "選択を削除（Del）",
-      "clearAll": "この手のすべての図形をクリア"
+      "clearAll": "この手のすべての図形をクリア",
+      "undo": "元に戻す",
+      "redo": "やり直し"
+    },
+    "tips": {
+      "rightClickToDraw": "右クリック + ドラッグで矢印を描画・右クリックでマス目をハイライト・Shift / Alt / Cmd で色を変更",
+      "gotIt": "OK"
     }
   },
-
   "learn": {
     "title": "チェスを学ぶ",
     "lede": "大きなテーマを横断する導かれたレッスン。カテゴリをタップして始めましょう。",
@@ -659,7 +681,6 @@
     "backToLessons": "レッスン一覧へ戻る",
     "categoryCount": "{done}/{total}"
   },
-
   "puzzles": {
     "title": "パズル",
     "lede": "練習するテーマを選びましょう。各セットは一つのパターンを教えます。",
@@ -675,7 +696,6 @@
     "themeCompleteHeader": "🏆 テーマ完了。",
     "themeCompleteBody": "{theme}のすべてのパズルを解きました。"
   },
-
   "coachTab": {
     "title": "AIコーチ",
     "providerLabel": "プロバイダー",
@@ -696,11 +716,9 @@
     "analyzeQuestion": "現在の局面を解析してください。",
     "analyzePrompt": "この局面について明快な解析をお願いします：重要な特徴、脅威、候補手、そして理由付きの推奨手。"
   },
-
   "promotion": {
     "title": "ポーンを昇格"
   },
-
   "review": {
     "title": "対局レビュー",
     "analyzing": "解析中…",
@@ -721,26 +739,66 @@
       "blunder": "大悪手"
     }
   },
-
   "lessons": {
     "categories": {
-      "basics":   { "name": "基礎",       "description": "すべてのチェスプレイヤーが知るべき基本。" },
-      "openings": { "name": "オープニング", "description": "すべての対局を目的を持って始めましょう。" },
-      "tactics":  { "name": "戦術",       "description": "駒と対局を勝ち取るパターン。" },
-      "endgames": { "name": "エンドゲーム", "description": "勝ち局面を仕留め、負け局面を救う。" },
-      "strategy": { "name": "戦略",       "description": "単なる手ではなく、プランで考える。" },
-      "attack":   { "name": "攻撃",       "description": "詰み攻撃とキング狩り。" }
+      "basics": {
+        "name": "基礎",
+        "description": "すべてのチェスプレイヤーが知るべき基本。"
+      },
+      "openings": {
+        "name": "オープニング",
+        "description": "すべての対局を目的を持って始めましょう。"
+      },
+      "tactics": {
+        "name": "戦術",
+        "description": "駒と対局を勝ち取るパターン。"
+      },
+      "endgames": {
+        "name": "エンドゲーム",
+        "description": "勝ち局面を仕留め、負け局面を救う。"
+      },
+      "strategy": {
+        "name": "戦略",
+        "description": "単なる手ではなく、プランで考える。"
+      },
+      "attack": {
+        "name": "攻撃",
+        "description": "詰み攻撃とキング狩り。"
+      }
     }
   },
-
   "puzzleThemes": {
-    "mate-in-1":    { "name": "1手詰め",        "description": "決め手を見つけて ― 一手でチェックメイトを決めましょう。" },
-    "mate-in-2":    { "name": "2手詰め",        "description": "2手強制詰み。一手先を読みましょう。" },
-    "forks":        { "name": "フォーク",       "description": "2つの駒を同時に攻撃して駒得しましょう。" },
-    "pins-skewers": { "name": "ピン＆スキュア", "description": "敵の駒を並べ、後ろのものを取りましょう。" },
-    "back-rank":    { "name": "バックランク",   "description": "自ポーンの後ろに閉じ込められたキングを突きましょう。" },
-    "tactics-mix":  { "name": "戦術ミックス",   "description": "様々な戦術パターン ― 最善手を見つけましょう。" },
-    "discovered":   { "name": "発見攻撃",       "description": "一つの駒を動かし、別の駒を解き放ちましょう。" },
-    "endgame":      { "name": "エンドゲーム技法", "description": "勝ちエンドゲームをきれいに仕留めましょう。" }
+    "mate-in-1": {
+      "name": "1手詰め",
+      "description": "決め手を見つけて ― 一手でチェックメイトを決めましょう。"
+    },
+    "mate-in-2": {
+      "name": "2手詰め",
+      "description": "2手強制詰み。一手先を読みましょう。"
+    },
+    "forks": {
+      "name": "フォーク",
+      "description": "2つの駒を同時に攻撃して駒得しましょう。"
+    },
+    "pins-skewers": {
+      "name": "ピン＆スキュア",
+      "description": "敵の駒を並べ、後ろのものを取りましょう。"
+    },
+    "back-rank": {
+      "name": "バックランク",
+      "description": "自ポーンの後ろに閉じ込められたキングを突きましょう。"
+    },
+    "tactics-mix": {
+      "name": "戦術ミックス",
+      "description": "様々な戦術パターン ― 最善手を見つけましょう。"
+    },
+    "discovered": {
+      "name": "発見攻撃",
+      "description": "一つの駒を動かし、別の駒を解き放ちましょう。"
+    },
+    "endgame": {
+      "name": "エンドゲーム技法",
+      "description": "勝ちエンドゲームをきれいに仕留めましょう。"
     }
   }
+}

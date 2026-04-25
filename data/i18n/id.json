@@ -1,6 +1,8 @@
 {
-  "language": { "name": "Bahasa Indonesia", "code": "id" },
-
+  "language": {
+    "name": "Bahasa Indonesia",
+    "code": "id"
+  },
   "ui": {
     "brand": {
       "title": "KarpaChess",
@@ -95,7 +97,6 @@
       "lessonComplete": "Pelajaran selesai!"
     }
   },
-
   "game": {
     "result": {
       "checkmate": "Sekakmat!",
@@ -146,7 +147,6 @@
       "timeUsedLong": "{time} terpakai"
     }
   },
-
   "chess": {
     "piece": {
       "p": "pion",
@@ -169,13 +169,36 @@
       "queenside": "sayap menteri"
     }
   },
-
   "classification": {
-    "best":       { "label": "Langkah terbaik",  "glyph": "★",  "comment": "Ini adalah pilihan utama mesin — tidak ada langkah yang lebih baik di papan." },
-    "good":       { "label": "Mantap",      "glyph": "✓",  "commentAgree": "Mesin menyetujui — pilihan yang mantap.", "commentAlt": "Kelanjutan yang wajar. Mesin sedikit lebih memilih <b>{best}</b>." },
-    "inaccuracy": { "label": "Ketidakakuratan", "glyph": "?!", "comment": "Kesalahan kecil — <b>{best}</b> akan sedikit lebih kuat.", "commentShort": "Kesalahan kecil." },
-    "mistake":    { "label": "Kesalahan",    "glyph": "?",  "comment": "Sebuah kesalahan — <b>{best}</b> jauh lebih baik.", "commentShort": "Sebuah kesalahan." },
-    "blunder":    { "label": "Blunder",    "glyph": "??", "comment": "Sebuah blunder. <b>{best}</b> dibutuhkan.", "commentShort": "Sebuah blunder." },
+    "best": {
+      "label": "Langkah terbaik",
+      "glyph": "★",
+      "comment": "Ini adalah pilihan utama mesin — tidak ada langkah yang lebih baik di papan."
+    },
+    "good": {
+      "label": "Mantap",
+      "glyph": "✓",
+      "commentAgree": "Mesin menyetujui — pilihan yang mantap.",
+      "commentAlt": "Kelanjutan yang wajar. Mesin sedikit lebih memilih <b>{best}</b>."
+    },
+    "inaccuracy": {
+      "label": "Ketidakakuratan",
+      "glyph": "?!",
+      "comment": "Kesalahan kecil — <b>{best}</b> akan sedikit lebih kuat.",
+      "commentShort": "Kesalahan kecil."
+    },
+    "mistake": {
+      "label": "Kesalahan",
+      "glyph": "?",
+      "comment": "Sebuah kesalahan — <b>{best}</b> jauh lebih baik.",
+      "commentShort": "Sebuah kesalahan."
+    },
+    "blunder": {
+      "label": "Blunder",
+      "glyph": "??",
+      "comment": "Sebuah blunder. <b>{best}</b> dibutuhkan.",
+      "commentShort": "Sebuah blunder."
+    },
     "review": {
       "good": "Langkah terbaik atau hampir terbaik.",
       "ok": "Langkah yang mantap.",
@@ -184,7 +207,6 @@
       "blunder": "Blunder."
     }
   },
-
   "nag": {
     "1": "Langkah bagus",
     "2": "Kesalahan",
@@ -201,7 +223,6 @@
     "18": "Putih menang",
     "19": "Hitam menang"
   },
-
   "hint": {
     "eyebrow": "Langkah yang disarankan",
     "loading": "…",
@@ -217,12 +238,10 @@
     "quiet": "Memperbaiki <b>{piece}</b> Anda ke <b>{square}</b>.",
     "checkSuffix": " Juga memberikan <b>sekak</b>."
   },
-
   "banner": {
     "reviewBtn": "🔍 Tinjau Pertandingan",
     "newGameBtn": "Permainan Baru"
   },
-
   "coach": {
     "greeting": "Hai — saya pelatih catur Anda. Tanyakan apa pun tentang posisi. Saya menjelaskan ide, taktik, dan rencana.",
     "thinking": "Berpikir…",
@@ -539,7 +558,6 @@
       "generic": "Fokus pada ide — penempatan buah, terobosan pion, akhir permainan khas."
     }
   },
-
   "settings": {
     "title": "Pengaturan",
     "board": "Papan",
@@ -589,7 +607,6 @@
       "glm": "Model GLM dari Zhipu AI. Endpoint default adalah wilayah Cina — ganti ke proxy jika diperlukan."
     }
   },
-
   "commentator": {
     "title": "Studio Komentator",
     "importLede": "Tempel PGN, jatuhkan berkas, atau pilih contoh permainan di bawah untuk mulai memberi komentar.",
@@ -635,16 +652,21 @@
       "erase": "Hapus",
       "arrow": "Panah",
       "line": "Garis",
-      "box": "Kotak",
+      "box": "Persegi",
       "circle": "Lingkaran",
       "pen": "Pena",
       "text": "Teks",
       "strokeWidth": "Lebar garis",
       "deleteSelected": "Hapus yang dipilih (Del)",
-      "clearAll": "Bersihkan semua bentuk pada langkah ini"
+      "clearAll": "Bersihkan semua bentuk pada langkah ini",
+      "undo": "Urungkan",
+      "redo": "Ulangi"
+    },
+    "tips": {
+      "rightClickToDraw": "Klik kanan + seret untuk membuat panah · Klik kanan pada petak untuk menyorot · Tahan Shift / Alt / Cmd untuk warna berbeda",
+      "gotIt": "Mengerti"
     }
   },
-
   "learn": {
     "title": "Belajar Catur",
     "lede": "Pelajaran terpandu di seluruh topik besar. Ketuk kategori untuk menyelami.",
@@ -659,7 +681,6 @@
     "backToLessons": "Kembali ke pelajaran",
     "categoryCount": "{done}/{total}"
   },
-
   "puzzles": {
     "title": "Teka-teki",
     "lede": "Pilih tema untuk berlatih. Setiap set mengajarkan satu pola.",
@@ -675,7 +696,6 @@
     "themeCompleteHeader": "🏆 Tema selesai.",
     "themeCompleteBody": "Anda telah menyelesaikan semua teka-teki dalam {theme}."
   },
-
   "coachTab": {
     "title": "Pelatih AI",
     "providerLabel": "Penyedia",
@@ -696,11 +716,9 @@
     "analyzeQuestion": "Analisis posisi saat ini.",
     "analyzePrompt": "Berikan analisis yang jelas tentang posisi ini: fitur kunci, ancaman, langkah kandidat, dan rekomendasi dengan alasannya."
   },
-
   "promotion": {
     "title": "Promosikan pion"
   },
-
   "review": {
     "title": "Tinjauan Pertandingan",
     "analyzing": "Menganalisis…",
@@ -721,26 +739,66 @@
       "blunder": "Blunder"
     }
   },
-
   "lessons": {
     "categories": {
-      "basics":   { "name": "Dasar-dasar",   "description": "Fundamental yang harus diketahui setiap pemain catur." },
-      "openings": { "name": "Pembukaan", "description": "Mulailah setiap permainan dengan tujuan." },
-      "tactics":  { "name": "Taktik",  "description": "Pola yang memenangkan materi dan permainan." },
-      "endgames": { "name": "Akhir Permainan", "description": "Ubah posisi menang; selamatkan yang kalah." },
-      "strategy": { "name": "Strategi", "description": "Berpikir dalam rencana, bukan hanya langkah." },
-      "attack":   { "name": "Serangan",   "description": "Serangan matsemat dan perburuan raja." }
+      "basics": {
+        "name": "Dasar-dasar",
+        "description": "Fundamental yang harus diketahui setiap pemain catur."
+      },
+      "openings": {
+        "name": "Pembukaan",
+        "description": "Mulailah setiap permainan dengan tujuan."
+      },
+      "tactics": {
+        "name": "Taktik",
+        "description": "Pola yang memenangkan materi dan permainan."
+      },
+      "endgames": {
+        "name": "Akhir Permainan",
+        "description": "Ubah posisi menang; selamatkan yang kalah."
+      },
+      "strategy": {
+        "name": "Strategi",
+        "description": "Berpikir dalam rencana, bukan hanya langkah."
+      },
+      "attack": {
+        "name": "Serangan",
+        "description": "Serangan matsemat dan perburuan raja."
+      }
     }
   },
-
   "puzzleThemes": {
-    "mate-in-1":    { "name": "Mat dalam 1",          "description": "Temukan pukulan mematikan — berikan sekakmat dalam satu langkah." },
-    "mate-in-2":    { "name": "Mat dalam 2",          "description": "Matsemat paksa dua langkah. Berpikirlah satu langkah ke depan." },
-    "forks":        { "name": "Garpu",              "description": "Serang dua buah sekaligus dan menangkan materi." },
-    "pins-skewers": { "name": "Jepitan & Tusukan",     "description": "Barisan buah musuh dan menangkan yang di belakang." },
-    "back-rank":    { "name": "Baris Belakang",          "description": "Manfaatkan raja yang terperangkap di belakang pionnya sendiri." },
-    "tactics-mix":  { "name": "Taktik Campuran",      "description": "Berbagai pola taktis — temukan langkah terbaik." },
-    "discovered":   { "name": "Serangan Tersingkap", "description": "Gerakkan satu buah, lepaskan yang lain." },
-    "endgame":      { "name": "Teknik Akhir Permainan", "description": "Ubah akhir permainan yang menang dengan bersih." }
+    "mate-in-1": {
+      "name": "Mat dalam 1",
+      "description": "Temukan pukulan mematikan — berikan sekakmat dalam satu langkah."
+    },
+    "mate-in-2": {
+      "name": "Mat dalam 2",
+      "description": "Matsemat paksa dua langkah. Berpikirlah satu langkah ke depan."
+    },
+    "forks": {
+      "name": "Garpu",
+      "description": "Serang dua buah sekaligus dan menangkan materi."
+    },
+    "pins-skewers": {
+      "name": "Jepitan & Tusukan",
+      "description": "Barisan buah musuh dan menangkan yang di belakang."
+    },
+    "back-rank": {
+      "name": "Baris Belakang",
+      "description": "Manfaatkan raja yang terperangkap di belakang pionnya sendiri."
+    },
+    "tactics-mix": {
+      "name": "Taktik Campuran",
+      "description": "Berbagai pola taktis — temukan langkah terbaik."
+    },
+    "discovered": {
+      "name": "Serangan Tersingkap",
+      "description": "Gerakkan satu buah, lepaskan yang lain."
+    },
+    "endgame": {
+      "name": "Teknik Akhir Permainan",
+      "description": "Ubah akhir permainan yang menang dengan bersih."
+    }
   }
 }

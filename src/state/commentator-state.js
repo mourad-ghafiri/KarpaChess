@@ -230,12 +230,57 @@ export class CommentatorState {
     n.comment = text;
     this.persist();
   }
-  setDrawings(nodeId, drawings) {
+  /**
+   * Replace the drawings array on a node, pushing the previous value onto a
+   * per-node undo stack. Pass `{ skipHistory: true }` to bypass the stack
+   * (used by undo/redo themselves and by storage hydration).
+   */
+  setDrawings(nodeId, drawings, opts = {}) {
     const n = this.nodeById.get(nodeId);
     if (!n) return;
+    if (!opts.skipHistory) {
+      if (!n._drawHistory) n._drawHistory = [];
+      n._drawFuture = [];
+      n._drawHistory.push((n.drawings || []).map(s => deepClone(s)));
+      // Cap to 30 frames so undo memory stays bounded.
+      if (n._drawHistory.length > 30) n._drawHistory.shift();
+    }
     n.drawings = drawings;
     this.bus.emit(EVENTS.COMMENTATOR_DRAWING_CHANGED, { nodeId });
     this.persist();
+  }
+
+  /** Undo the last drawing change on the given node. Returns true on success. */
+  undoDrawings(nodeId) {
+    const n = this.nodeById.get(nodeId);
+    if (!n || !n._drawHistory || n._drawHistory.length === 0) return false;
+    if (!n._drawFuture) n._drawFuture = [];
+    n._drawFuture.push((n.drawings || []).map(s => deepClone(s)));
+    n.drawings = n._drawHistory.pop();
+    this.bus.emit(EVENTS.COMMENTATOR_DRAWING_CHANGED, { nodeId });
+    this.persist();
+    return true;
+  }
+
+  /** Redo a previously-undone drawing change. */
+  redoDrawings(nodeId) {
+    const n = this.nodeById.get(nodeId);
+    if (!n || !n._drawFuture || n._drawFuture.length === 0) return false;
+    if (!n._drawHistory) n._drawHistory = [];
+    n._drawHistory.push((n.drawings || []).map(s => deepClone(s)));
+    n.drawings = n._drawFuture.pop();
+    this.bus.emit(EVENTS.COMMENTATOR_DRAWING_CHANGED, { nodeId });
+    this.persist();
+    return true;
+  }
+
+  canUndoDrawings(nodeId) {
+    const n = this.nodeById.get(nodeId);
+    return !!(n && n._drawHistory && n._drawHistory.length);
+  }
+  canRedoDrawings(nodeId) {
+    const n = this.nodeById.get(nodeId);
+    return !!(n && n._drawFuture && n._drawFuture.length);
   }
 
   setPlayer(color, { name, photoDataUrl }) {
@@ -413,4 +458,8 @@ export class CommentatorState {
 function sanEq(a, b) {
   if (!a || !b) return false;
   return a.replace(/[+#]/g, '') === b.replace(/[+#]/g, '');
+}
+
+function deepClone(s) {
+  return JSON.parse(JSON.stringify(s));
 }

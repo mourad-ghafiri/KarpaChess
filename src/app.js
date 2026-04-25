@@ -253,7 +253,10 @@ async function bootstrap() {
   const drawingOverlay = new DrawingOverlay({
     svgEl: $('#cm-draw-svg'),
     toolbarEl: $('#cm-draw-toolbar'),
-    boardRootEl: document.getElementById('board')
+    // The right-click handler attaches to `.board-holder` (parent of both
+    // #board and the SVG overlays) so right-click works no matter which
+    // sibling element is the topmost target at click time.
+    boardRootEl: document.querySelector('.board-holder')
   }, gameState, commentatorState, bus);
 
   const moveTreeView = new MoveTreeView($('#cm-move-tree'), commentatorState, bus);

@@ -1,39 +1,89 @@
 /**
- * DrawingOverlay — full SVG annotation layer for the Commentator board.
+ * DrawingOverlay — annotation layer for the Commentator board.
  *
- * Tools:
- *   select   — click a shape to pick it; drag body to move; drag corner
- *              handles to resize; drag the halo handle to rotate.
- *   eraser   — click a shape to delete it.
- *   arrow / line / rect / circle / pen / text — create new shapes.
+ * Two input paths:
  *
- * Stable tool: the chosen tool stays selected until the user picks another.
- * Stable selection: once a shape is picked it stays selected across re-renders
- * (and across ply navigation it's cleared, since drawings are per-ply).
+ * 1. **Right-click / long-press on the board** (Lichess pattern, no tool needed)
+ *      • Right-click + drag from sq A → sq B  → arrow A → B
+ *      • Right-click on a single square        → toggle a square highlight
+ *      • Right-click on an existing shape      → delete it
+ *      • Modifier keys swap the color (Shift→red, Alt→yellow, Ctrl/Cmd→blue,
+ *        plain→green).
+ *      • On touch, a 350 ms long-press is the right-click equivalent.
  *
- * Shape shape:
- *   { kind, color, stroke, points: [[x,y],...], text?, rotation?: degrees }
+ * 2. **Toolbar tool mode** (only for tools that genuinely need free input)
+ *      • Pen      — freehand polyline
+ *      • Text     — labelled annotation with an inline HTML editor
+ *      • Rect     — bounding box for "this whole region matters"
  *
- * Coordinate system: 0..8 board-units matching the SVG viewBox.
+ *  Selection chrome (resize / rotate handles) appears automatically when a
+ *  shape is tapped while one of the toolbar tools is active. There is no
+ *  separate "Select" or "Eraser" tool — those are subsumed by the right-click
+ *  gestures and the Delete key.
+ *
+ *  Per-ply undo / redo is delegated to commentatorState (Cmd+Z / Cmd+Shift+Z).
+ *
+ *  Coordinate system: 0..8 board-units matching the SVG viewBox.
  */
 import { EVENTS, DRAW_COLORS } from '../core/constants.js';
 import { i18n } from '../core/i18n.js';
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
 
+/** The three creation tools that need a tool-mode (free-input). */
 const TOOLS = [
-  { id: 'select', key: 'select', icon: '⬚' },
-  { id: 'eraser', key: 'erase',  icon: '✕' },
-  { id: 'arrow',  key: 'arrow',  icon: '➤' },
-  { id: 'line',   key: 'line',   icon: '╱' },
-  { id: 'rect',   key: 'box',    icon: '▭' },
-  { id: 'circle', key: 'circle', icon: '◯' },
-  { id: 'pen',    key: 'pen',    icon: '✎' },
-  { id: 'text',   key: 'text',   icon: 'T' }
+  { id: 'pen',  key: 'pen'  },
+  { id: 'text', key: 'text' },
+  { id: 'rect', key: 'box'  }
 ];
 
-const HANDLE_SIZE = 0.22;   // in board-units
-const ROT_OFFSET = 0.55;   // distance above bounding box for the rotate handle
+/** Inline 18×18 SVG icons matching the rest of the app's stroke style. */
+const ICON_SVG = {
+  pen: `<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M3 21l4-1 11-11-3-3L4 17l-1 4z"/>
+          <path d="M14 6l3 3"/>
+        </svg>`,
+  text: `<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M5 6h14"/><path d="M12 6v14"/><path d="M9 20h6"/>
+        </svg>`,
+  rect: `<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="4" y="6" width="16" height="12" rx="2"/>
+        </svg>`,
+  undo: `<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M9 14l-4-4 4-4"/>
+          <path d="M5 10h9a5 5 0 010 10h-3"/>
+        </svg>`,
+  redo: `<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M15 14l4-4-4-4"/>
+          <path d="M19 10h-9a5 5 0 000 10h3"/>
+        </svg>`,
+  trash:`<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+            stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 7h16"/>
+          <path d="M9 7V4h6v3"/>
+          <path d="M6 7l1 13a2 2 0 002 2h6a2 2 0 002-2l1-13"/>
+          <path d="M10 11v7M14 11v7"/>
+        </svg>`
+};
+
+/** Modifier-key → color lookup. Plain (no modifier) is green. */
+const MOD_COLOR = {
+  plain: '#3b7a55',   // sage / green
+  shift: '#c25a3c',   // coral / red
+  alt:   '#e5b445',   // yellow
+  meta:  '#2f4a6b',   // navy / blue
+  ctrl:  '#2f4a6b'
+};
+
+const HANDLE_SIZE  = 0.22;
+const ROT_OFFSET   = 0.55;
+const LONG_PRESS_MS = 350;
+const DRAG_THRESHOLD = 0.3;   // board-units to count as drag vs tap
 
 export class DrawingOverlay {
   constructor({ svgEl, toolbarEl, boardRootEl }, gameState, commentatorState, bus) {
@@ -44,56 +94,65 @@ export class DrawingOverlay {
     this.commentatorState = commentatorState;
     this.bus = bus;
 
-    this.tool = 'select';
+    this.tool = null;            // null = no tool mode (right-click annotations only)
     this.color = DRAW_COLORS[0].hex;
     this.stroke = 0.08;
     this.enabled = false;
     this.selectedIdx = null;
-    this.drag = null;         // active drag descriptor
+    this.drag = null;            // active toolbar drag descriptor
+    this._rcDrag = null;         // active right-click drag descriptor
+    this._touchPress = null;     // long-press timer state
 
     this.#buildToolbar();
-    this.#wirePointer();
+    this.#wireToolbarPointer();
+    this.#wireBoardRightClick();
     this.#wireKeys();
 
     bus.on(EVENTS.COMMENTATOR_NAVIGATED, () => {
       this.selectedIdx = null;
       this.#closeInlineText();
+      this.#updateUndoRedoButtons();
       this.render();
     });
-    bus.on(EVENTS.COMMENTATOR_DRAWING_CHANGED, () => this.render());
+    bus.on(EVENTS.COMMENTATOR_DRAWING_CHANGED, () => {
+      this.#updateUndoRedoButtons();
+      this.render();
+    });
     bus.on(EVENTS.STATE_CHANGED, (e) => {
       const t = e?.detail?.type;
       if (t === 'mode' || t === 'orientation') this.render();
     });
+    bus.on(EVENTS.I18N_CHANGED, () => this.#buildToolbar());
 
     this.svg.hidden = true;
   }
 
-  // ---- lifecycle -------------------------------------------------
+  // ============= lifecycle =============
   enable(on) {
     this.enabled = on;
-    if (!on) { this.selectedIdx = null; }
+    if (!on) { this.selectedIdx = null; this.tool = null; }
     this.#refreshPointerEvents();
+    this.#syncToolButtons();
     this.render();
   }
   isEnabled() { return this.enabled; }
 
   /**
-   * Creation tools (arrow / line / rect / circle / pen / text) need to
-   * capture every click on the overlay. Select / eraser tools let empty-square
-   * clicks fall through to the board so the user can still play moves and
-   * create variations while the drawing layer is active. Shapes themselves
-   * always catch clicks via their per-shape pointer-events.
+   * The overlay only captures clicks while a creation tool is active. Without
+   * a tool, the SVG is `pointer-events: none` so left-clicks fall through to
+   * the board (so the user can play moves / create variations) and right-clicks
+   * are caught by the board-root right-click handler.
    */
   #refreshPointerEvents() {
-    const capture = this.enabled && this.tool !== 'select' && this.tool !== 'eraser';
+    const capture = this.enabled && this.tool != null;
     this.svg.style.pointerEvents = capture ? 'auto' : 'none';
   }
 
-  // ---- toolbar ---------------------------------------------------
+  // ============= toolbar =============
   #buildToolbar() {
     this.toolbar.innerHTML = '';
 
+    // Row 1: tool buttons + utilities (undo / redo / clear)
     const tools = document.createElement('div');
     tools.className = 'draw-tools';
     for (const t of TOOLS) {
@@ -103,13 +162,29 @@ export class DrawingOverlay {
       b.type = 'button';
       b.dataset.tool = t.id;
       b.title = label;
-      b.innerHTML = `<span class="draw-icon">${t.icon}</span><span class="draw-label">${label}</span>`;
-      b.addEventListener('click', () => this.#setTool(t.id));
+      b.innerHTML = `<span class="draw-icon">${ICON_SVG[t.id]}</span><span class="draw-label">${label}</span>`;
+      b.addEventListener('click', () => this.#toggleTool(t.id));
       tools.appendChild(b);
     }
+
+    const utilGroup = document.createElement('div');
+    utilGroup.className = 'draw-utils';
+
+    this._undoBtn = this.#mkUtil(ICON_SVG.undo, i18n.t('commentator.drawTools.undo'),
+      () => this.#undo());
+    this._redoBtn = this.#mkUtil(ICON_SVG.redo, i18n.t('commentator.drawTools.redo'),
+      () => this.#redo());
+    const clearBtn = this.#mkUtil(ICON_SVG.trash, i18n.t('commentator.drawTools.clearAll'),
+      () => this.#clearAll(), 'draw-iconbtn-warn');
+
+    utilGroup.appendChild(this._undoBtn);
+    utilGroup.appendChild(this._redoBtn);
+    utilGroup.appendChild(clearBtn);
+
+    tools.appendChild(utilGroup);
     this.toolbar.appendChild(tools);
 
-    // Single combined row: colors → stroke → delete / clear
+    // Row 2: colors + stroke
     const styleRow = document.createElement('div');
     styleRow.className = 'draw-style-row';
 
@@ -139,63 +214,80 @@ export class DrawingOverlay {
     });
     styleRow.appendChild(stroke);
 
-    const delBtn = document.createElement('button');
-    delBtn.type = 'button';
-    delBtn.className = 'draw-iconbtn';
-    delBtn.title = i18n.t('commentator.drawTools.deleteSelected');
-    delBtn.textContent = '🗑';
-    delBtn.addEventListener('click', () => this.#deleteSelected());
-    styleRow.appendChild(delBtn);
-
-    const clearBtn = document.createElement('button');
-    clearBtn.type = 'button';
-    clearBtn.className = 'draw-iconbtn draw-iconbtn-warn';
-    clearBtn.title = i18n.t('commentator.drawTools.clearAll');
-    clearBtn.textContent = '⌫';
-    clearBtn.addEventListener('click', () => this.#clearAll());
-    styleRow.appendChild(clearBtn);
-
     this.toolbar.appendChild(styleRow);
 
-    this.#setTool('select');
+    this.#syncToolButtons();
     this.#setColor(this.color);
+    this.#updateUndoRedoButtons();
   }
 
-  #setTool(id) {
-    this.tool = id;
-    for (const b of this.toolbar.querySelectorAll('.draw-tool'))
-      b.classList.toggle('active', b.dataset.tool === id);
-    // Reflect the tool on <body> so each tool can own its cursor via CSS.
+  #mkUtil(svg, title, onClick, extraCls = '') {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'draw-iconbtn' + (extraCls ? ' ' + extraCls : '');
+    b.title = title;
+    b.innerHTML = svg;
+    b.addEventListener('click', onClick);
+    return b;
+  }
+
+  #toggleTool(id) {
+    this.tool = (this.tool === id) ? null : id;
+    this.selectedIdx = null;
+    this.#closeInlineText();
+    this.#syncToolButtons();
+    this.#refreshPointerEvents();
+    this.render();
+  }
+
+  #syncToolButtons() {
+    for (const b of this.toolbar.querySelectorAll('.draw-tool')) {
+      b.classList.toggle('active', b.dataset.tool === this.tool);
+    }
+    // Reflect the tool on <body> so cursor styling can switch via CSS.
     for (const c of [...document.body.classList]) {
       if (c.startsWith('draw-tool-')) document.body.classList.remove(c);
     }
-    document.body.classList.add('draw-tool-' + id);
-    // Switching tools deselects (eraser/arrow/etc don't need a selection).
-    if (id !== 'select' && this.selectedIdx != null) { this.selectedIdx = null; this.render(); }
-    this.#closeInlineText();
-    this.#refreshPointerEvents();
+    if (this.tool) document.body.classList.add('draw-tool-' + this.tool);
   }
 
   #setColor(hex) {
     this.color = hex;
-    for (const b of this.toolbar.querySelectorAll('.draw-swatch'))
+    for (const b of this.toolbar.querySelectorAll('.draw-swatch')) {
       b.classList.toggle('active', b.dataset.color === hex);
+    }
     if (this.selectedIdx != null) this.#updateSelected(s => { s.color = hex; });
   }
 
-  // ---- pointer handling -----------------------------------------
-  #wirePointer() {
-    this.svg.addEventListener('pointerdown', (e) => this.#onDown(e));
-    this.svg.addEventListener('pointermove', (e) => this.#onMove(e));
-    window.addEventListener('pointerup',     (e) => this.#onUp(e));
-    // Capture pointer moves outside the SVG so drags still track
-    window.addEventListener('pointermove', (e) => {
-      if (this.drag) this.#onMove(e);
-    });
-    // Double-click on a text shape with the Select tool opens the inline
-    // editor with the existing text pre-filled.
+  #updateUndoRedoButtons() {
+    const cur = this.commentatorState.currentNode();
+    if (!cur || !this._undoBtn) return;
+    this._undoBtn.disabled = !this.commentatorState.canUndoDrawings(cur.id);
+    this._redoBtn.disabled = !this.commentatorState.canRedoDrawings(cur.id);
+  }
+
+  #undo() {
+    const cur = this.commentatorState.currentNode();
+    if (!cur) return;
+    this.commentatorState.undoDrawings(cur.id);
+    this.selectedIdx = null;
+  }
+  #redo() {
+    const cur = this.commentatorState.currentNode();
+    if (!cur) return;
+    this.commentatorState.redoDrawings(cur.id);
+    this.selectedIdx = null;
+  }
+
+  // ============= toolbar pointer (Pen / Text / Rect) =============
+  #wireToolbarPointer() {
+    this.svg.addEventListener('pointerdown', (e) => this.#onToolDown(e));
+    this.svg.addEventListener('pointermove', (e) => this.#onToolMove(e));
+    window.addEventListener('pointerup',     (e) => this.#onToolUp(e));
+    window.addEventListener('pointermove',   (e) => { if (this.drag) this.#onToolMove(e); });
+    // Double-click on a text shape with no tool active → reopen its inline editor.
     this.svg.addEventListener('dblclick', (e) => {
-      if (!this.enabled || this.tool !== 'select') return;
+      if (!this.enabled) return;
       const idx = this.#hitTest(e.target);
       if (idx == null) return;
       const shape = this.#currentDrawings()[idx];
@@ -207,16 +299,18 @@ export class DrawingOverlay {
   #pointToBoard(e) {
     const rect = this.svg.getBoundingClientRect();
     const x = ((e.clientX - rect.left) / rect.width) * 8;
-    const y = ((e.clientY - rect.top) / rect.height) * 8;
+    const y = ((e.clientY - rect.top)  / rect.height) * 8;
     return [clamp(x, -0.5, 8.5), clamp(y, -0.5, 8.5)];
   }
 
-  #onDown(e) {
-    if (!this.enabled) return;
+  #onToolDown(e) {
+    if (!this.enabled || !this.tool) return;
     if (!this.commentatorState.hasMatch()) return;
+    if (e.button !== 0) return;   // left click only here; right-click goes to the board handler
+
     const pt = this.#pointToBoard(e);
 
-    // Handle hits first (corner / rotate handles on the selected shape).
+    // Check if user grabbed a resize/rotate handle (for an existing selected shape)
     const handle = e.target.closest('[data-handle]');
     if (handle && this.selectedIdx != null) {
       const kind = handle.dataset.handle;
@@ -227,9 +321,9 @@ export class DrawingOverlay {
       return;
     }
 
-    if (this.tool === 'select') {
-      const hit = this.#hitTest(e.target);
-      if (hit == null) { this.selectedIdx = null; this.render(); return; }
+    // Click on an existing shape with a tool active → select it (so handles appear)
+    const hit = this.#hitTest(e.target);
+    if (hit != null) {
       this.selectedIdx = hit;
       const startShape = JSON.parse(JSON.stringify(this.#selected()));
       this.drag = { type: 'move', origin: pt, startShape };
@@ -238,17 +332,11 @@ export class DrawingOverlay {
       return;
     }
 
-    if (this.tool === 'eraser') {
-      const hit = this.#hitTest(e.target);
-      if (hit != null) this.#deleteAt(hit);
-      return;
-    }
-
+    // Otherwise: tool-specific creation
     if (this.tool === 'text') {
       this.#startInlineText(e, pt);
       return;
     }
-
     if (this.tool === 'pen') {
       this.drag = { type: 'pen', shape: {
         kind: 'pen', color: this.color, stroke: this.stroke, points: [pt], rotation: 0
@@ -257,65 +345,47 @@ export class DrawingOverlay {
       this.svg.setPointerCapture?.(e.pointerId);
       return;
     }
-
-    // arrow / line / rect / circle — two-point drag
-    this.drag = { type: 'create', shape: {
-      kind: this.tool, color: this.color, stroke: this.stroke,
-      points: [pt, pt], rotation: 0
-    }};
-    this.#drawPreview(this.drag.shape);
-    this.svg.setPointerCapture?.(e.pointerId);
-    e.preventDefault();
+    if (this.tool === 'rect') {
+      this.drag = { type: 'create', shape: {
+        kind: 'rect', color: this.color, stroke: this.stroke,
+        points: [pt, pt], rotation: 0
+      }};
+      this.#drawPreview(this.drag.shape);
+      this.svg.setPointerCapture?.(e.pointerId);
+      e.preventDefault();
+    }
   }
 
-  #onMove(e) {
+  #onToolMove(e) {
     if (!this.drag) return;
     const pt = this.#pointToBoard(e);
-
     if (this.drag.type === 'pen') {
       this.drag.shape.points.push(pt);
       this.#drawPreview(this.drag.shape);
-      return;
-    }
-
-    if (this.drag.type === 'create') {
+    } else if (this.drag.type === 'create') {
       this.drag.shape.points[1] = pt;
       this.#drawPreview(this.drag.shape);
-      return;
-    }
-
-    if (this.drag.type === 'move') {
+    } else if (this.drag.type === 'move') {
       const [dx, dy] = [pt[0] - this.drag.origin[0], pt[1] - this.drag.origin[1]];
       this.#updateSelected(s => {
         s.points = this.drag.startShape.points.map(([x, y]) => [x + dx, y + dy]);
       });
-      return;
-    }
-
-    if (this.drag.type === 'resize') {
+    } else if (this.drag.type === 'resize') {
       this.#applyResize(pt);
-      return;
-    }
-
-    if (this.drag.type === 'rotate') {
+    } else if (this.drag.type === 'rotate') {
       this.#applyRotate(pt);
-      return;
     }
   }
 
-  #onUp(e) {
+  #onToolUp() {
     if (!this.drag) return;
     const d = this.drag;
     this.drag = null;
-
     if (d.type === 'pen') {
       this.#clearPreview();
       if (d.shape.points.length > 1) this.#addShape(d.shape);
-      // Don't auto-select: handles / chrome only appear when the user
-      // explicitly picks the Select tool and clicks on a shape.
       return;
     }
-
     if (d.type === 'create') {
       this.#clearPreview();
       const [[x1, y1], [x2, y2]] = d.shape.points;
@@ -323,25 +393,222 @@ export class DrawingOverlay {
       this.#addShape(d.shape);
       return;
     }
-
-    // move / resize / rotate — persist already happened via #updateSelected
     this.render();
   }
 
-  // ---- inline text editor ---------------------------------------
+  // ============= board right-click + long-press =============
+  #wireBoardRightClick() {
+    if (!this.boardRoot) return;
+
+    // Don't show the browser's context menu on the board.
+    this.boardRoot.addEventListener('contextmenu', (e) => {
+      if (this.gameState.mode === 'commentator' && this.enabled) e.preventDefault();
+    });
+
+    this.boardRoot.addEventListener('pointerdown', (e) => {
+      if (!this.enabled || this.gameState.mode !== 'commentator') return;
+      if (!this.commentatorState.hasMatch()) return;
+      if (this.tool) return;        // toolbar tool active → toolbar handles input
+
+      // Right-button mouse click, OR touch with long-press
+      if (e.button === 2) {
+        this.#beginRightDrag(e);
+        e.preventDefault();
+      } else if (e.pointerType === 'touch' && e.isPrimary) {
+        this.#armLongPress(e);
+      }
+    });
+
+    this.boardRoot.addEventListener('pointermove', (e) => this.#onBoardMove(e));
+    window.addEventListener('pointerup',           (e) => this.#onBoardUp(e));
+    window.addEventListener('pointercancel',       () => this.#cancelLongPress());
+  }
+
+  #armLongPress(e) {
+    this.#cancelLongPress();
+    const pt = this.#pointToBoard(e);
+    const px = e.clientX, py = e.clientY;
+    this._touchPress = {
+      pointerId: e.pointerId,
+      startPt: pt,
+      startScreen: [px, py],
+      timer: setTimeout(() => {
+        // Convert into a right-drag on long-press
+        this._touchPress.armed = true;
+        this.boardRoot.classList.add('cm-annot-armed');
+        this.#beginRightDrag(e, pt);
+      }, LONG_PRESS_MS)
+    };
+  }
+  #cancelLongPress() {
+    if (!this._touchPress) return;
+    clearTimeout(this._touchPress.timer);
+    this.boardRoot.classList.remove('cm-annot-armed');
+    this._touchPress = null;
+  }
+
+  #beginRightDrag(e, ptOverride) {
+    const pt = ptOverride || this.#pointToBoard(e);
+    const sq = this.#squareAt(pt);
+    const color = this.#colorForEvent(e);
+    // If the user pressed on an existing shape, mark it for deletion on up
+    const hitIdx = this.#hitTestAtPoint(pt);
+    this._rcDrag = {
+      pointerId: e.pointerId,
+      startPt: pt,
+      startSq: sq,
+      lastPt: pt,
+      color,
+      hitIdx,
+      isDrag: false
+    };
+  }
+
+  #onBoardMove(e) {
+    if (this._touchPress && !this._touchPress.armed) {
+      // If the touch moves too far before the long-press timer fires, cancel.
+      const [sx, sy] = this._touchPress.startScreen;
+      if (Math.hypot(e.clientX - sx, e.clientY - sy) > 10) this.#cancelLongPress();
+    }
+    if (!this._rcDrag) return;
+    const pt = this.#pointToBoard(e);
+    this._rcDrag.lastPt = pt;
+    if (!this._rcDrag.isDrag) {
+      const [sx, sy] = this._rcDrag.startPt;
+      if (Math.hypot(pt[0] - sx, pt[1] - sy) >= DRAG_THRESHOLD) this._rcDrag.isDrag = true;
+    }
+    if (this._rcDrag.isDrag) {
+      // Live preview of the arrow we're about to drop
+      const prev = {
+        kind: 'arrow',
+        color: this._rcDrag.color,
+        stroke: this.stroke,
+        points: [
+          this.#squareCenter(this._rcDrag.startSq) || this._rcDrag.startPt,
+          this.#squareCenter(this.#squareAt(pt))    || pt
+        ],
+        rotation: 0
+      };
+      this.#drawPreview(prev);
+    }
+  }
+
+  #onBoardUp(e) {
+    this.#cancelLongPress();
+    if (!this._rcDrag) return;
+    const d = this._rcDrag;
+    this._rcDrag = null;
+    this.boardRoot.classList.remove('cm-annot-armed');
+    this.#clearPreview();
+
+    if (d.isDrag) {
+      const fromSq = d.startSq;
+      const toSq   = this.#squareAt(d.lastPt);
+      if (!fromSq || !toSq || sameSq(fromSq, toSq)) return;
+      const from = this.#squareCenter(fromSq);
+      const to   = this.#squareCenter(toSq);
+      this.#addShape({
+        kind: 'arrow', color: d.color, stroke: this.stroke,
+        points: [from, to], rotation: 0
+      });
+      return;
+    }
+
+    // Single click: shape under cursor → delete; else → toggle highlight on the square
+    if (d.hitIdx != null) {
+      this.#deleteAt(d.hitIdx);
+      return;
+    }
+    if (!d.startSq) return;
+    this.#toggleSquareHighlight(d.startSq, d.color);
+  }
+
+  #colorForEvent(e) {
+    if (e.shiftKey)              return MOD_COLOR.shift;
+    if (e.altKey)                return MOD_COLOR.alt;
+    if (e.metaKey || e.ctrlKey)  return MOD_COLOR.meta;
+    return MOD_COLOR.plain;
+  }
+
+  /** Map a board-units point to a board square `[r, c]` (orientation-aware). */
+  #squareAt([x, y]) {
+    if (x < 0 || x > 8 || y < 0 || y > 8) return null;
+    const vc = Math.floor(x);
+    const vr = Math.floor(y);
+    if (vc < 0 || vc > 7 || vr < 0 || vr > 7) return null;
+    const orient = this.gameState.orientation;
+    return orient === 'w' ? [vr, vc] : [7 - vr, 7 - vc];
+  }
+  /** Map [r, c] (board coords) to the center of that square in board-units. */
+  #squareCenter(sq) {
+    if (!sq) return null;
+    const [r, c] = sq;
+    const orient = this.gameState.orientation;
+    const vr = orient === 'w' ? r : 7 - r;
+    const vc = orient === 'w' ? c : 7 - c;
+    return [vc + 0.5, vr + 0.5];
+  }
+
   /**
-   * Present a real HTML input overlayed on the board at the click position
-   * (instead of a native `prompt()` dialog). Enter commits, Escape cancels,
-   * blur commits (so clicking elsewhere saves what you typed).
-   *
-   * @param {PointerEvent|MouseEvent} e  — the click that triggered editing
-   * @param {[number, number]} boardPt   — board-space coords for the shape
-   * @param {number|null} replaceIdx    — if set, overwrite this shape instead of adding
-   * @param {string} initialText
+   * Square highlights are stored as `{ kind: 'square', sq: [r, c], color, stroke }`
+   * (sq in board coords, not orientation-flipped).
    */
+  #toggleSquareHighlight(sq, color) {
+    const cur = this.commentatorState.currentNode();
+    if (!cur) return;
+    const drawings = (cur.drawings || []).slice();
+    const idx = drawings.findIndex(s => s.kind === 'square' && s.sq && s.sq[0] === sq[0] && s.sq[1] === sq[1] && s.color === color);
+    if (idx >= 0) {
+      drawings.splice(idx, 1);
+    } else {
+      drawings.push({ kind: 'square', sq, color, stroke: this.stroke });
+    }
+    this.commentatorState.setDrawings(cur.id, drawings);
+  }
+
+  /** Find the shape whose hit region contains the given board point, or null. */
+  #hitTestAtPoint([x, y]) {
+    const drawings = this.#currentDrawings();
+    for (let i = drawings.length - 1; i >= 0; i--) {
+      const s = drawings[i];
+      if (this.#shapeContainsPoint(s, [x, y])) return i;
+    }
+    return null;
+  }
+
+  #shapeContainsPoint(s, [px, py]) {
+    if (s.kind === 'square') {
+      const [vr, vc] = this.#viewSquare(s.sq);
+      if (vr == null) return false;
+      return px >= vc && px <= vc + 1 && py >= vr && py >= vr && py <= vr + 1;
+    }
+    if (s.kind === 'pen' || s.kind === 'arrow' || s.kind === 'line') {
+      // Segment-distance test; loose threshold so it's easy to hit.
+      const pts = s.points;
+      const r = Math.max(0.18, s.stroke * 2);
+      for (let i = 0; i < pts.length - 1; i++) {
+        if (distPointSeg([px, py], pts[i], pts[i + 1]) < r) return true;
+      }
+      return false;
+    }
+    if (s.kind === 'rect' || s.kind === 'circle' || s.kind === 'text') {
+      const box = boundingBox(s.points);
+      return px >= box.x - 0.05 && px <= box.x + box.w + 0.05
+          && py >= box.y - 0.05 && py <= box.y + box.h + 0.05;
+    }
+    return false;
+  }
+
+  #viewSquare(sq) {
+    if (!sq) return [null, null];
+    const orient = this.gameState.orientation;
+    return orient === 'w' ? sq : [7 - sq[0], 7 - sq[1]];
+  }
+
+  // ============= inline text editor =============
   #startInlineText(e, [bx, by], replaceIdx = null, initialText = '') {
     this.#closeInlineText();
-    const holder = this.svg.parentElement;   // .board-holder
+    const holder = this.svg.parentElement;
     const holderRect = holder.getBoundingClientRect();
     const px = e.clientX - holderRect.left;
     const py = e.clientY - holderRect.top;
@@ -358,7 +625,6 @@ export class DrawingOverlay {
     holder.appendChild(input);
     this._textEditor = input;
 
-    // Focus next frame so the click that spawned us doesn't immediately blur
     requestAnimationFrame(() => { input.focus(); input.select(); });
 
     let done = false;
@@ -388,21 +654,19 @@ export class DrawingOverlay {
 
     input.addEventListener('keydown', (ev) => {
       ev.stopPropagation();
-      if (ev.key === 'Enter') { ev.preventDefault(); commit(); }
-      else if (ev.key === 'Escape') { ev.preventDefault(); cleanup(); }
+      if (ev.key === 'Enter')        { ev.preventDefault(); commit(); }
+      else if (ev.key === 'Escape')  { ev.preventDefault(); cleanup(); }
     });
-    // Defer so Enter's keyup (which would blur via some OSes) doesn't race
     input.addEventListener('blur', () => setTimeout(commit, 0));
   }
-
   #closeInlineText() {
     if (this._textEditor) { this._textEditor.remove(); this._textEditor = null; }
   }
 
-  /** Replace a drawing at `idx` by running a mutator over a shallow copy. */
+  // ============= shape mutations =============
   #updateAt(idx, mutator) {
     const cur = this.commentatorState.currentNode();
-    if (!cur || !cur.drawings[idx]) return;
+    if (!cur || !cur.drawings || !cur.drawings[idx]) return;
     const drawings = cur.drawings.slice();
     const s = JSON.parse(JSON.stringify(drawings[idx]));
     mutator(s);
@@ -410,73 +674,59 @@ export class DrawingOverlay {
     this.commentatorState.setDrawings(cur.id, drawings);
   }
 
-  // ---- shape creation / mutation --------------------------------
   #addShape(shape) {
     const cur = this.commentatorState.currentNode();
     if (!cur) return;
-    const drawings = cur.drawings.slice();
+    const drawings = (cur.drawings || []).slice();
     drawings.push(shape);
     this.commentatorState.setDrawings(cur.id, drawings);
   }
-
   #deleteAt(idx) {
     const cur = this.commentatorState.currentNode();
     if (!cur) return;
-    const drawings = cur.drawings.slice();
+    const drawings = (cur.drawings || []).slice();
     drawings.splice(idx, 1);
     this.commentatorState.setDrawings(cur.id, drawings);
     if (this.selectedIdx === idx) this.selectedIdx = null;
     else if (this.selectedIdx > idx) this.selectedIdx--;
   }
-
-  #deleteSelected() {
-    if (this.selectedIdx != null) this.#deleteAt(this.selectedIdx);
-  }
-
+  #deleteSelected() { if (this.selectedIdx != null) this.#deleteAt(this.selectedIdx); }
   #clearAll() {
     const cur = this.commentatorState.currentNode();
-    if (!cur || !cur.drawings.length) return;
+    if (!cur || !cur.drawings || !cur.drawings.length) return;
     this.selectedIdx = null;
     this.commentatorState.setDrawings(cur.id, []);
   }
-
   #updateSelected(mutator) {
     if (this.selectedIdx == null) return;
     const cur = this.commentatorState.currentNode();
     if (!cur) return;
-    const drawings = cur.drawings.slice();
+    const drawings = (cur.drawings || []).slice();
     const s = JSON.parse(JSON.stringify(drawings[this.selectedIdx]));
     mutator(s);
     drawings[this.selectedIdx] = s;
     this.commentatorState.setDrawings(cur.id, drawings);
   }
-
   #selected() {
     if (this.selectedIdx == null) return null;
     return this.#currentDrawings()[this.selectedIdx] || null;
   }
-
   #currentDrawings() {
     const cur = this.commentatorState.currentNode();
-    return cur ? cur.drawings : [];
+    return (cur && cur.drawings) ? cur.drawings : [];
   }
 
-  // ---- resize / rotate math -------------------------------------
+  // ============= resize / rotate =============
   #applyResize(pt) {
     const s = this.drag.startShape;
-    const corner = this.drag.corner;   // 'nw'|'ne'|'sw'|'se'|'n'|'s'|'e'|'w' or end handle indices
+    const corner = this.drag.corner;
     const box = boundingBox(s.points);
-
     if (s.kind === 'arrow' || s.kind === 'line') {
-      // Endpoint drag
       const endIdx = corner === 'end2' ? 1 : 0;
       this.#updateSelected(out => { out.points = s.points.slice(); out.points[endIdx] = pt; });
       return;
     }
-
-    // Compute scale factor + pivot for rect/circle/text/pen
-    let pivot = [0, 0];
-    let pickCorner = [0, 0];
+    let pivot = [0, 0]; let pickCorner = [0, 0];
     switch (corner) {
       case 'nw': pivot = [box.x + box.w, box.y + box.h]; pickCorner = [box.x, box.y]; break;
       case 'ne': pivot = [box.x, box.y + box.h];         pickCorner = [box.x + box.w, box.y]; break;
@@ -487,14 +737,10 @@ export class DrawingOverlay {
       case 'w':  pivot = [box.x + box.w, box.y];         pickCorner = [box.x, box.y]; break;
       case 'e':  pivot = [box.x, box.y];                 pickCorner = [box.x + box.w, box.y]; break;
     }
-    const origDx = pickCorner[0] - pivot[0];
-    const origDy = pickCorner[1] - pivot[1];
-    const newDx = pt[0] - pivot[0];
-    const newDy = pt[1] - pivot[1];
-    // Axis-locked: n/s only scale Y; e/w only scale X.
+    const origDx = pickCorner[0] - pivot[0], origDy = pickCorner[1] - pivot[1];
+    const newDx  = pt[0] - pivot[0],          newDy = pt[1] - pivot[1];
     const sx = (corner === 'n' || corner === 's') ? 1 : (origDx === 0 ? 1 : newDx / origDx);
     const sy = (corner === 'e' || corner === 'w') ? 1 : (origDy === 0 ? 1 : newDy / origDy);
-
     this.#updateSelected(out => {
       out.points = s.points.map(([x, y]) => [
         pivot[0] + (x - pivot[0]) * sx,
@@ -502,53 +748,64 @@ export class DrawingOverlay {
       ]);
     });
   }
-
   #applyRotate(pt) {
     const s = this.drag.startShape;
     const box = boundingBox(s.points);
     const cx = box.x + box.w / 2, cy = box.y + box.h / 2;
     const origin = this.drag.origin;
-    const angStart = Math.atan2(origin[1] - cy, origin[0] - cx);
-    const angNow = Math.atan2(pt[1] - cy, pt[0] - cx);
-    const delta = (angNow - angStart) * 180 / Math.PI;
+    const ang0 = Math.atan2(origin[1] - cy, origin[0] - cx);
+    const ang1 = Math.atan2(pt[1] - cy, pt[0] - cx);
+    const delta = (ang1 - ang0) * 180 / Math.PI;
     this.#updateSelected(out => { out.rotation = ((s.rotation || 0) + delta + 360) % 360; });
   }
 
-  // ---- hit testing -----------------------------------------------
-  /** Given a click target, return the shape index it belongs to or null. */
+  /** Given a click target, return the shape index it belongs to (DOM-driven). */
   #hitTest(target) {
     const g = target.closest('[data-shape-idx]');
     if (!g) return null;
     return parseInt(g.dataset.shapeIdx, 10);
   }
 
-  // ---- key bindings ---------------------------------------------
+  // ============= keyboard =============
   #wireKeys() {
     document.addEventListener('keydown', (e) => {
-      if (!this.enabled) return;
+      if (!this.enabled || this.gameState.mode !== 'commentator') return;
       if (/INPUT|TEXTAREA/.test(document.activeElement?.tagName)) return;
-      if (e.key === 'Escape') { this.selectedIdx = null; this.render(); }
-      else if (e.key === 'Delete' || e.key === 'Backspace') {
-        if (this.selectedIdx != null) { e.preventDefault(); this.#deleteSelected(); }
+
+      if (e.key === 'Escape') {
+        if (this.tool) { this.#toggleTool(this.tool); return; }
+        if (this.selectedIdx != null) { this.selectedIdx = null; this.render(); return; }
+      }
+      if (e.key === 'Delete' || e.key === 'Backspace') {
+        if (this.selectedIdx != null) { e.preventDefault(); this.#deleteSelected(); return; }
+      }
+      // Undo / redo (gated to commentator only)
+      const mod = e.metaKey || e.ctrlKey;
+      if (mod && (e.key === 'z' || e.key === 'Z')) {
+        e.preventDefault();
+        if (e.shiftKey) this.#redo(); else this.#undo();
+        return;
+      }
+      // Tool shortcuts
+      if (!mod) {
+        if (e.key === 'p' || e.key === 'P') { e.preventDefault(); this.#toggleTool('pen'); }
+        else if (e.key === 't' || e.key === 'T') { e.preventDefault(); this.#toggleTool('text'); }
+        else if (e.key === 'r' || e.key === 'R') { e.preventDefault(); this.#toggleTool('rect'); }
       }
     });
   }
 
-  // ---- rendering -------------------------------------------------
+  // ============= rendering =============
   render() {
     for (const child of [...this.svg.children]) {
       if (child.id !== 'draw-preview') child.remove();
     }
-
     if (this.gameState.mode !== 'commentator') { this.svg.hidden = true; return; }
     this.svg.hidden = false;
     if (!this.commentatorState.hasMatch()) return;
 
-    // Selection chrome (outline + handles for resize / rotate) only exists
-    // while the Select tool is active. Switching to another tool hides them
-    // without actually clearing the selectedIdx — which is harmless because
-    // no other tool reads it.
-    const showChrome = this.tool === 'select';
+    // Selection chrome only when a tool is active and a shape is selected.
+    const showChrome = this.tool != null;
 
     const drawings = this.#currentDrawings();
     drawings.forEach((d, idx) => {
@@ -559,8 +816,12 @@ export class DrawingOverlay {
     });
 
     if (showChrome && this.selectedIdx != null && drawings[this.selectedIdx]) {
-      const h = this.#handlesFor(drawings[this.selectedIdx]);
-      if (h) this.svg.insertBefore(h, this.#previewGroup());
+      const sel = drawings[this.selectedIdx];
+      // Square highlights aren't resizable
+      if (sel.kind !== 'square') {
+        const h = this.#handlesFor(sel);
+        if (h) this.svg.insertBefore(h, this.#previewGroup());
+      }
     }
   }
 
@@ -580,20 +841,18 @@ export class DrawingOverlay {
     if (g) g.innerHTML = '';
   }
 
-  /** Returns an <g> containing the shape, rotated about its bounding-box center. */
   #shapeGroup(shape, selected) {
     const body = this.#shapeBody(shape);
     if (!body) return null;
     const g = document.createElementNS(SVG_NS, 'g');
     g.setAttribute('class', 'draw-shape-g' + (selected ? ' selected' : ''));
     const rot = shape.rotation || 0;
-    if (rot) {
+    if (rot && shape.kind !== 'square') {
       const box = boundingBox(shape.points);
       const cx = box.x + box.w / 2, cy = box.y + box.h / 2;
       g.setAttribute('transform', `rotate(${rot} ${cx} ${cy})`);
     }
     g.appendChild(body);
-    // Invisible hit-target atop the shape so it's easy to grab
     const hit = this.#hitTarget(shape);
     if (hit) g.appendChild(hit);
     return g;
@@ -607,15 +866,25 @@ export class DrawingOverlay {
       case 'circle': return this.#circle(s);
       case 'pen':    return this.#pen(s);
       case 'text':   return this.#text(s);
+      case 'square': return this.#square(s);
     }
     return null;
   }
 
   #hitTarget(s) {
-    if (s.kind === 'text') return null;   // text element handles its own hit
+    if (s.kind === 'text') return null;
+    if (s.kind === 'square') {
+      const [vr, vc] = this.#viewSquare(s.sq);
+      if (vr == null) return null;
+      const r = document.createElementNS(SVG_NS, 'rect');
+      r.setAttribute('x', vc); r.setAttribute('y', vr);
+      r.setAttribute('width', 1); r.setAttribute('height', 1);
+      r.setAttribute('fill', 'transparent');
+      r.setAttribute('class', 'draw-hit');
+      return r;
+    }
     const box = boundingBox(s.points);
     if (s.kind === 'pen') {
-      // path-based hit; fatter invisible clone
       const clone = this.#pen(s);
       clone.setAttribute('stroke', 'rgba(0,0,0,0.001)');
       clone.setAttribute('stroke-width', Math.max(0.25, s.stroke * 3));
@@ -630,6 +899,7 @@ export class DrawingOverlay {
     return r;
   }
 
+  // ============= shape primitives =============
   #arrow(s) {
     const g = document.createElementNS(SVG_NS, 'g');
     const [[x1, y1], [x2, y2]] = s.points;
@@ -651,8 +921,7 @@ export class DrawingOverlay {
     const tip = document.createElementNS(SVG_NS, 'polygon');
     tip.setAttribute('points', `${x2},${y2} ${ex + nx * w},${ey + ny * w} ${ex - nx * w},${ey - ny * w}`);
     tip.setAttribute('fill', s.color);
-    g.appendChild(shaft);
-    g.appendChild(tip);
+    g.appendChild(shaft); g.appendChild(tip);
     return g;
   }
   #line(s) {
@@ -714,8 +983,24 @@ export class DrawingOverlay {
     t.textContent = s.text || '';
     return t;
   }
+  /** Square highlight — a translucent ring around an entire square. */
+  #square(s) {
+    const [vr, vc] = this.#viewSquare(s.sq);
+    if (vr == null) return null;
+    const g = document.createElementNS(SVG_NS, 'g');
+    const r = document.createElementNS(SVG_NS, 'rect');
+    r.setAttribute('x', vc + 0.05); r.setAttribute('y', vr + 0.05);
+    r.setAttribute('width', 0.9); r.setAttribute('height', 0.9);
+    r.setAttribute('rx', 0.08);
+    r.setAttribute('fill', 'none');
+    r.setAttribute('stroke', s.color);
+    r.setAttribute('stroke-width', 0.07);
+    r.setAttribute('opacity', '0.92');
+    g.appendChild(r);
+    return g;
+  }
 
-  // ---- handles (selection chrome) --------------------------------
+  // ============= selection chrome =============
   #handlesFor(shape) {
     const g = document.createElementNS(SVG_NS, 'g');
     g.setAttribute('class', 'draw-handles');
@@ -723,7 +1008,6 @@ export class DrawingOverlay {
     const box = boundingBox(shape.points);
     const cx = box.x + box.w / 2, cy = box.y + box.h / 2;
     if (rot) g.setAttribute('transform', `rotate(${rot} ${cx} ${cy})`);
-
     const addHandle = (x, y, kind, cls = 'corner') => {
       const h = document.createElementNS(SVG_NS, 'rect');
       h.setAttribute('x', x - HANDLE_SIZE / 2);
@@ -734,36 +1018,29 @@ export class DrawingOverlay {
       h.setAttribute('data-handle', kind);
       g.appendChild(h);
     };
-
-    // Selection outline
     const outline = document.createElementNS(SVG_NS, 'rect');
     outline.setAttribute('x', box.x - 0.05); outline.setAttribute('y', box.y - 0.05);
     outline.setAttribute('width',  box.w + 0.1); outline.setAttribute('height', box.h + 0.1);
     outline.setAttribute('class', 'draw-outline');
     g.appendChild(outline);
-
     if (shape.kind === 'arrow' || shape.kind === 'line') {
       addHandle(shape.points[0][0], shape.points[0][1], 'end1', 'end');
       addHandle(shape.points[1][0], shape.points[1][1], 'end2', 'end');
     } else if (shape.kind !== 'pen' && shape.kind !== 'text') {
-      // 8 handles for rect/circle
-      addHandle(box.x,                 box.y,                 'nw');
-      addHandle(box.x + box.w,         box.y,                 'ne');
-      addHandle(box.x,                 box.y + box.h,         'sw');
-      addHandle(box.x + box.w,         box.y + box.h,         'se');
-      addHandle(box.x + box.w / 2,     box.y,                 'n',  'edge');
-      addHandle(box.x + box.w / 2,     box.y + box.h,         's',  'edge');
-      addHandle(box.x,                 box.y + box.h / 2,     'w',  'edge');
-      addHandle(box.x + box.w,         box.y + box.h / 2,     'e',  'edge');
+      addHandle(box.x,         box.y,          'nw');
+      addHandle(box.x + box.w, box.y,          'ne');
+      addHandle(box.x,         box.y + box.h,  'sw');
+      addHandle(box.x + box.w, box.y + box.h,  'se');
+      addHandle(box.x + box.w / 2, box.y,          'n', 'edge');
+      addHandle(box.x + box.w / 2, box.y + box.h,  's', 'edge');
+      addHandle(box.x,             box.y + box.h / 2, 'w', 'edge');
+      addHandle(box.x + box.w,     box.y + box.h / 2, 'e', 'edge');
     } else if (shape.kind === 'text') {
-      // 4 corner handles (scale font) — n/s/e/w don't make sense for text
-      addHandle(box.x,                 box.y,                 'nw');
-      addHandle(box.x + box.w,         box.y,                 'ne');
-      addHandle(box.x,                 box.y + box.h,         'sw');
-      addHandle(box.x + box.w,         box.y + box.h,         'se');
+      addHandle(box.x,         box.y,          'nw');
+      addHandle(box.x + box.w, box.y,          'ne');
+      addHandle(box.x,         box.y + box.h,  'sw');
+      addHandle(box.x + box.w, box.y + box.h,  'se');
     }
-
-    // Rotate handle — sits above bounding box center
     if (shape.kind !== 'pen') {
       const rx = box.x + box.w / 2;
       const ry = box.y - ROT_OFFSET;
@@ -779,11 +1056,11 @@ export class DrawingOverlay {
       rot.setAttribute('data-handle', 'rot');
       g.appendChild(rot);
     }
-
     return g;
   }
 }
 
+// ============= helpers =============
 function boundingBox(points) {
   if (!points || points.length === 0) return { x: 0, y: 0, w: 0, h: 0 };
   let minx = Infinity, miny = Infinity, maxx = -Infinity, maxy = -Infinity;
@@ -793,5 +1070,12 @@ function boundingBox(points) {
   }
   return { x: minx, y: miny, w: Math.max(0.001, maxx - minx), h: Math.max(0.001, maxy - miny) };
 }
-
 function clamp(v, lo, hi) { return v < lo ? lo : v > hi ? hi : v; }
+function sameSq(a, b) { return a && b && a[0] === b[0] && a[1] === b[1]; }
+function distPointSeg(p, a, b) {
+  const [px, py] = p, [ax, ay] = a, [bx, by] = b;
+  const dx = bx - ax, dy = by - ay;
+  const t = Math.max(0, Math.min(1, ((px - ax) * dx + (py - ay) * dy) / (dx * dx + dy * dy || 1)));
+  const x = ax + t * dx, y = ay + t * dy;
+  return Math.hypot(px - x, py - y);
+}

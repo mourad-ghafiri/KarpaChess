@@ -1,6 +1,8 @@
 {
-  "language": { "name": "中文", "code": "zh" },
-
+  "language": {
+    "name": "中文",
+    "code": "zh"
+  },
   "ui": {
     "brand": {
       "title": "KarpaChess",
@@ -95,7 +97,6 @@
       "lessonComplete": "课程完成！"
     }
   },
-
   "game": {
     "result": {
       "checkmate": "将杀！",
@@ -146,7 +147,6 @@
       "timeUsedLong": "已用 {time}"
     }
   },
-
   "chess": {
     "piece": {
       "p": "兵",
@@ -169,13 +169,36 @@
       "queenside": "后翼"
     }
   },
-
   "classification": {
-    "best":       { "label": "最佳着法", "glyph": "★",  "comment": "这是引擎的首选——棋盘上没有更好的走法。" },
-    "good":       { "label": "稳健",     "glyph": "✓",  "commentAgree": "引擎认可——稳健的选择。", "commentAlt": "合理的延续。引擎稍稍更偏好 <b>{best}</b>。" },
-    "inaccuracy": { "label": "不准确",   "glyph": "?!", "comment": "小失误——<b>{best}</b> 会稍强一些。", "commentShort": "小失误。" },
-    "mistake":    { "label": "错着",     "glyph": "?",  "comment": "错着——<b>{best}</b> 明显更好。", "commentShort": "一步错着。" },
-    "blunder":    { "label": "严重失误", "glyph": "??", "comment": "严重失误。需要走 <b>{best}</b>。", "commentShort": "严重失误。" },
+    "best": {
+      "label": "最佳着法",
+      "glyph": "★",
+      "comment": "这是引擎的首选——棋盘上没有更好的走法。"
+    },
+    "good": {
+      "label": "稳健",
+      "glyph": "✓",
+      "commentAgree": "引擎认可——稳健的选择。",
+      "commentAlt": "合理的延续。引擎稍稍更偏好 <b>{best}</b>。"
+    },
+    "inaccuracy": {
+      "label": "不准确",
+      "glyph": "?!",
+      "comment": "小失误——<b>{best}</b> 会稍强一些。",
+      "commentShort": "小失误。"
+    },
+    "mistake": {
+      "label": "错着",
+      "glyph": "?",
+      "comment": "错着——<b>{best}</b> 明显更好。",
+      "commentShort": "一步错着。"
+    },
+    "blunder": {
+      "label": "严重失误",
+      "glyph": "??",
+      "comment": "严重失误。需要走 <b>{best}</b>。",
+      "commentShort": "严重失误。"
+    },
     "review": {
       "good": "最佳或接近最佳的着法。",
       "ok": "稳健的着法。",
@@ -184,7 +207,6 @@
       "blunder": "严重失误。"
     }
   },
-
   "nag": {
     "1": "好棋",
     "2": "错着",
@@ -201,7 +223,6 @@
     "18": "白方必胜",
     "19": "黑方必胜"
   },
-
   "hint": {
     "eyebrow": "推荐着法",
     "loading": "…",
@@ -217,12 +238,10 @@
     "quiet": "把你的 <b>{piece}</b> 优化到 <b>{square}</b>。",
     "checkSuffix": " 同时送上 <b>将军</b>。"
   },
-
   "banner": {
     "reviewBtn": "🔍 复盘对局",
     "newGameBtn": "新对局"
   },
-
   "coach": {
     "greeting": "你好——我是你的国际象棋教练。关于局面任何问题都可以问我。我会解释思路、战术和计划。",
     "thinking": "思考中…",
@@ -539,7 +558,6 @@
       "generic": "聚焦思路——子力部署、兵的突破、典型残局。"
     }
   },
-
   "settings": {
     "title": "设置",
     "board": "棋盘",
@@ -589,7 +607,6 @@
       "glm": "智谱 AI 的 GLM 模型。默认端点为中国区——如有需要请切换到代理。"
     }
   },
-
   "commentator": {
     "title": "解说工作室",
     "importLede": "粘贴 PGN、拖入文件，或在下方挑选一局示例对局开始解说。",
@@ -635,16 +652,21 @@
       "erase": "擦除",
       "arrow": "箭头",
       "line": "直线",
-      "box": "方框",
+      "box": "矩形",
       "circle": "圆圈",
       "pen": "画笔",
       "text": "文字",
       "strokeWidth": "线宽",
       "deleteSelected": "删除所选（Del）",
-      "clearAll": "清除本步上的所有图形"
+      "clearAll": "清除本步上的所有图形",
+      "undo": "撤销",
+      "redo": "重做"
+    },
+    "tips": {
+      "rightClickToDraw": "右键 + 拖动绘制箭头 · 右键单击格子高亮 · 按住 Shift / Alt / Cmd 切换颜色",
+      "gotIt": "知道了"
     }
   },
-
   "learn": {
     "title": "学习国际象棋",
     "lede": "围绕重要主题的引导式课程。点击分类深入学习。",
@@ -659,7 +681,6 @@
     "backToLessons": "返回课程",
     "categoryCount": "{done}/{total}"
   },
-
   "puzzles": {
     "title": "战术题",
     "lede": "选择一个主题练习。每个题组教授一种图形。",
@@ -675,7 +696,6 @@
     "themeCompleteHeader": "🏆 主题完成。",
     "themeCompleteBody": "你已完成 {theme} 中的所有题目。"
   },
-
   "coachTab": {
     "title": "AI 教练",
     "providerLabel": "服务商",
@@ -696,11 +716,9 @@
     "analyzeQuestion": "分析当前局面。",
     "analyzePrompt": "给出这个局面的清晰分析：主要特征、威胁、候选着法，以及附带理由的推荐着法。"
   },
-
   "promotion": {
     "title": "兵升变"
   },
-
   "review": {
     "title": "对局复盘",
     "analyzing": "分析中…",
@@ -721,26 +739,66 @@
       "blunder": "严重失误"
     }
   },
-
   "lessons": {
     "categories": {
-      "basics":   { "name": "基础",   "description": "每位棋手必知的基本功。" },
-      "openings": { "name": "开局",   "description": "让每一局都开始得有目的。" },
-      "tactics":  { "name": "战术",   "description": "赢子和赢棋的图形。" },
-      "endgames": { "name": "残局",   "description": "把占优化为胜势；把败势挽救为和。" },
-      "strategy": { "name": "战略",   "description": "以计划思考，而不仅仅是着法。" },
-      "attack":   { "name": "进攻",   "description": "杀王攻击与追猎王的技术。" }
+      "basics": {
+        "name": "基础",
+        "description": "每位棋手必知的基本功。"
+      },
+      "openings": {
+        "name": "开局",
+        "description": "让每一局都开始得有目的。"
+      },
+      "tactics": {
+        "name": "战术",
+        "description": "赢子和赢棋的图形。"
+      },
+      "endgames": {
+        "name": "残局",
+        "description": "把占优化为胜势；把败势挽救为和。"
+      },
+      "strategy": {
+        "name": "战略",
+        "description": "以计划思考，而不仅仅是着法。"
+      },
+      "attack": {
+        "name": "进攻",
+        "description": "杀王攻击与追猎王的技术。"
+      }
     }
   },
-
   "puzzleThemes": {
-    "mate-in-1":    { "name": "一步杀",       "description": "找到致命一击——一步送出将杀。" },
-    "mate-in-2":    { "name": "两步杀",       "description": "两步强制杀棋。多想一步。" },
-    "forks":        { "name": "叉击",         "description": "同时攻击两枚棋子以赢得子力。" },
-    "pins-skewers": { "name": "牵制与串击",   "description": "让敌方的棋子排成一线，赢下后面的那一枚。" },
-    "back-rank":    { "name": "底线",         "description": "利用被自家兵困住的王。" },
-    "tactics-mix":  { "name": "综合战术",     "description": "多样的战术图形——找出最佳着法。" },
-    "discovered":   { "name": "闪击",         "description": "动一枚子，放出另一枚。" },
-    "endgame":      { "name": "残局技术",     "description": "干净利落地把胜势残局收下。" }
+    "mate-in-1": {
+      "name": "一步杀",
+      "description": "找到致命一击——一步送出将杀。"
+    },
+    "mate-in-2": {
+      "name": "两步杀",
+      "description": "两步强制杀棋。多想一步。"
+    },
+    "forks": {
+      "name": "叉击",
+      "description": "同时攻击两枚棋子以赢得子力。"
+    },
+    "pins-skewers": {
+      "name": "牵制与串击",
+      "description": "让敌方的棋子排成一线，赢下后面的那一枚。"
+    },
+    "back-rank": {
+      "name": "底线",
+      "description": "利用被自家兵困住的王。"
+    },
+    "tactics-mix": {
+      "name": "综合战术",
+      "description": "多样的战术图形——找出最佳着法。"
+    },
+    "discovered": {
+      "name": "闪击",
+      "description": "动一枚子，放出另一枚。"
+    },
+    "endgame": {
+      "name": "残局技术",
+      "description": "干净利落地把胜势残局收下。"
+    }
   }
 }

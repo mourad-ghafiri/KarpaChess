@@ -1,6 +1,8 @@
 {
-  "language": { "name": "English", "code": "en" },
-
+  "language": {
+    "name": "English",
+    "code": "en"
+  },
   "ui": {
     "brand": {
       "title": "KarpaChess",
@@ -95,7 +97,6 @@
       "lessonComplete": "Lesson complete!"
     }
   },
-
   "game": {
     "result": {
       "checkmate": "Checkmate!",
@@ -146,7 +147,6 @@
       "timeUsedLong": "{time} used"
     }
   },
-
   "chess": {
     "piece": {
       "p": "pawn",
@@ -169,13 +169,36 @@
       "queenside": "queenside"
     }
   },
-
   "classification": {
-    "best":       { "label": "Best move",  "glyph": "★",  "comment": "This is the engine's top pick — no better move on the board." },
-    "good":       { "label": "Solid",      "glyph": "✓",  "commentAgree": "Engine approves — a solid choice.", "commentAlt": "A reasonable continuation. The engine slightly preferred <b>{best}</b>." },
-    "inaccuracy": { "label": "Inaccuracy", "glyph": "?!", "comment": "Small slip — <b>{best}</b> would have been a touch stronger.", "commentShort": "Small slip." },
-    "mistake":    { "label": "Mistake",    "glyph": "?",  "comment": "A mistake — <b>{best}</b> was noticeably better.", "commentShort": "A mistake." },
-    "blunder":    { "label": "Blunder",    "glyph": "??", "comment": "A blunder. <b>{best}</b> was needed.", "commentShort": "A blunder." },
+    "best": {
+      "label": "Best move",
+      "glyph": "★",
+      "comment": "This is the engine's top pick — no better move on the board."
+    },
+    "good": {
+      "label": "Solid",
+      "glyph": "✓",
+      "commentAgree": "Engine approves — a solid choice.",
+      "commentAlt": "A reasonable continuation. The engine slightly preferred <b>{best}</b>."
+    },
+    "inaccuracy": {
+      "label": "Inaccuracy",
+      "glyph": "?!",
+      "comment": "Small slip — <b>{best}</b> would have been a touch stronger.",
+      "commentShort": "Small slip."
+    },
+    "mistake": {
+      "label": "Mistake",
+      "glyph": "?",
+      "comment": "A mistake — <b>{best}</b> was noticeably better.",
+      "commentShort": "A mistake."
+    },
+    "blunder": {
+      "label": "Blunder",
+      "glyph": "??",
+      "comment": "A blunder. <b>{best}</b> was needed.",
+      "commentShort": "A blunder."
+    },
     "review": {
       "good": "Best or near-best move.",
       "ok": "Solid move.",
@@ -184,7 +207,6 @@
       "blunder": "Blunder."
     }
   },
-
   "nag": {
     "1": "Good move",
     "2": "Mistake",
@@ -201,7 +223,6 @@
     "18": "White is winning",
     "19": "Black is winning"
   },
-
   "hint": {
     "eyebrow": "Suggested move",
     "loading": "…",
@@ -217,12 +238,10 @@
     "quiet": "Improves your <b>{piece}</b> to <b>{square}</b>.",
     "checkSuffix": " Also gives <b>check</b>."
   },
-
   "banner": {
     "reviewBtn": "🔍 Review Match",
     "newGameBtn": "New Game"
   },
-
   "coach": {
     "greeting": "Hi — I'm your chess coach. Ask me anything about the position. I explain ideas, tactics, and plans.",
     "thinking": "Thinking…",
@@ -539,7 +558,6 @@
       "generic": "Focus on the ideas — piece placement, pawn breaks, typical endgames."
     }
   },
-
   "settings": {
     "title": "Settings",
     "board": "Board",
@@ -589,7 +607,6 @@
       "glm": "Zhipu AI's GLM models. The default endpoint is the China region — swap to a proxy if needed."
     }
   },
-
   "commentator": {
     "title": "Commentator Studio",
     "importLede": "Paste a PGN, drop a file, or pick a sample game below to start commenting.",
@@ -635,16 +652,21 @@
       "erase": "Erase",
       "arrow": "Arrow",
       "line": "Line",
-      "box": "Box",
+      "box": "Rectangle",
       "circle": "Circle",
       "pen": "Pen",
       "text": "Text",
       "strokeWidth": "Stroke width",
       "deleteSelected": "Delete selected (Del)",
-      "clearAll": "Clear all shapes on this move"
+      "clearAll": "Clear all shapes on this move",
+      "undo": "Undo",
+      "redo": "Redo"
+    },
+    "tips": {
+      "rightClickToDraw": "Right-click + drag to draw arrows · Right-click a square to highlight it · Hold Shift / Alt / Cmd for different colors",
+      "gotIt": "Got it"
     }
   },
-
   "learn": {
     "title": "Learn Chess",
     "lede": "Guided lessons across the big topics. Tap a category to dive in.",
@@ -659,7 +681,6 @@
     "backToLessons": "Back to lessons",
     "categoryCount": "{done}/{total}"
   },
-
   "puzzles": {
     "title": "Puzzles",
     "lede": "Pick a theme to practice. Each set teaches one pattern.",
@@ -675,7 +696,6 @@
     "themeCompleteHeader": "🏆 Theme complete.",
     "themeCompleteBody": "You've finished all puzzles in {theme}."
   },
-
   "coachTab": {
     "title": "AI Coach",
     "providerLabel": "Provider",
@@ -696,11 +716,9 @@
     "analyzeQuestion": "Analyze the current position.",
     "analyzePrompt": "Give a clear analysis of this position: key features, threats, candidate moves, and a recommendation with reasons."
   },
-
   "promotion": {
     "title": "Promote pawn"
   },
-
   "review": {
     "title": "Match Review",
     "analyzing": "Analyzing…",
@@ -721,26 +739,66 @@
       "blunder": "Blunder"
     }
   },
-
   "lessons": {
     "categories": {
-      "basics":   { "name": "Basics",   "description": "The fundamentals every chess player must know." },
-      "openings": { "name": "Openings", "description": "Start every game with purpose." },
-      "tactics":  { "name": "Tactics",  "description": "Patterns that win material and games." },
-      "endgames": { "name": "Endgames", "description": "Convert won positions; save lost ones." },
-      "strategy": { "name": "Strategy", "description": "Think in plans, not just moves." },
-      "attack":   { "name": "Attack",   "description": "Mating attacks and king hunts." }
+      "basics": {
+        "name": "Basics",
+        "description": "The fundamentals every chess player must know."
+      },
+      "openings": {
+        "name": "Openings",
+        "description": "Start every game with purpose."
+      },
+      "tactics": {
+        "name": "Tactics",
+        "description": "Patterns that win material and games."
+      },
+      "endgames": {
+        "name": "Endgames",
+        "description": "Convert won positions; save lost ones."
+      },
+      "strategy": {
+        "name": "Strategy",
+        "description": "Think in plans, not just moves."
+      },
+      "attack": {
+        "name": "Attack",
+        "description": "Mating attacks and king hunts."
+      }
     }
   },
-
   "puzzleThemes": {
-    "mate-in-1":    { "name": "Mate in 1",          "description": "Find the killing blow — deliver checkmate in a single move." },
-    "mate-in-2":    { "name": "Mate in 2",          "description": "Two-move forced mates. Think one step ahead." },
-    "forks":        { "name": "Forks",              "description": "Attack two pieces at once and win material." },
-    "pins-skewers": { "name": "Pins & Skewers",     "description": "Line up the enemy pieces and win the one behind." },
-    "back-rank":    { "name": "Back Rank",          "description": "Exploit the king trapped behind its own pawns." },
-    "tactics-mix":  { "name": "Mixed Tactics",      "description": "A variety of tactical patterns — find the best move." },
-    "discovered":   { "name": "Discovered Attacks", "description": "Move one piece, unleash another." },
-    "endgame":      { "name": "Endgame Technique", "description": "Convert winning endgames cleanly." }
+    "mate-in-1": {
+      "name": "Mate in 1",
+      "description": "Find the killing blow — deliver checkmate in a single move."
+    },
+    "mate-in-2": {
+      "name": "Mate in 2",
+      "description": "Two-move forced mates. Think one step ahead."
+    },
+    "forks": {
+      "name": "Forks",
+      "description": "Attack two pieces at once and win material."
+    },
+    "pins-skewers": {
+      "name": "Pins & Skewers",
+      "description": "Line up the enemy pieces and win the one behind."
+    },
+    "back-rank": {
+      "name": "Back Rank",
+      "description": "Exploit the king trapped behind its own pawns."
+    },
+    "tactics-mix": {
+      "name": "Mixed Tactics",
+      "description": "A variety of tactical patterns — find the best move."
+    },
+    "discovered": {
+      "name": "Discovered Attacks",
+      "description": "Move one piece, unleash another."
+    },
+    "endgame": {
+      "name": "Endgame Technique",
+      "description": "Convert winning endgames cleanly."
+    }
   }
 }
