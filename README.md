@@ -13,11 +13,12 @@
 
 Most chess apps are built for playing. **KarpaChess is built for learning.** Every feature is designed to teach — from step-by-step lessons to themed puzzle sets to AI-powered match review. No leaderboards. No rating grind. No distractions. Just you, the board, and the ideas behind every move.
 
+- 🌍 **8 languages** — English, Français, Español, العربية (RTL), 中文, Русский, Bahasa Indonesia, 日本語. Every lesson, puzzle, hint, and AI-coach response speaks your language. Pick a flag in the topbar; the whole app flips instantly
 - 📚 **71 guided lessons** across 6 categories — beginner to advanced, with teach-and-play steps
 - 🧩 **100 hand-crafted puzzles** across 8 themes, every one engine-verified
-- 🤖 **AI Coach** with 11 providers: Anthropic, OpenAI, OpenRouter, Mistral, DeepSeek, xAI Grok, Qwen, GLM, MiniMax, Ollama, LM Studio — plus a built-in offline coach
+- 🤖 **AI Coach** with 11 providers: Anthropic, OpenAI, OpenRouter, Mistral, DeepSeek, xAI Grok, Qwen, GLM, MiniMax, Ollama, LM Studio — plus a built-in offline coach. Replies in your selected language
 - 🔍 **Match Review** — every move you play, compared to the engine's best
-- 🎬 **Commentator Studio** — import a PGN, scrub the game, get engine insights on every ply, edit players inline, see the imported clocks tick, draw arrows / circles / freehand / text on the board, explore variations — a full broadcast-ready studio, fully offline
+- 🎬 **Commentator Studio** — Lichess-style annotations: right-click + drag to draw arrows, right-click a square to highlight it, modifier keys swap colors. Per-ply auto-analysis, engine arrows, variations, inline player editing, imported clocks. Full broadcast-ready studio, fully offline
 - 💡 **Persistent hints** with arrows drawn right on the board
 - 🎨 **Scholar's Library** aesthetic — warm paper tones, serif elegance
 - 💾 **100% offline-capable** — runs locally, no accounts, no servers
@@ -95,14 +96,25 @@ A full studio for studying or broadcasting games. The right panel has two states
 - **Click the avatar** → file picker; photo is auto-downscaled to 192 px JPEG and inlined into localStorage
 - **Imported clocks** — if the PGN carries `[%clk]` annotations, the timer slots show remaining time per ply (hover for "time used" tooltip). `[%emt]` as a fallback. Missing clock data shows **—**
 
-**Drawing overlay**
-- Drawing tools live in the board-controls row (replacing flip/undo/hint/new while in Commentator mode) — no toggle needed, they're always live
-- 8 tools: **Select** (move / resize / rotate selected shape) · **Eraser** · **Arrow** · **Line** · **Rect** · **Circle** · **Pen** (freehand) · **Text** (inline editor — no native prompt dialogs)
-- 7-color palette, stroke-width slider, delete-selected + clear-all icon buttons
-- Per-tool cursor (arrow for select, crosshair for creation, I-beam for text)
-- Shapes store position + rotation; selecting a shape shows corner/edge resize handles and a rotation halo above; drag the body to move
-- Double-click a text shape with the Select tool to edit it in place
+**Drawing overlay — Lichess / Chess.com pattern**
+
+Annotations are right-click first. The board's left-click stays for moves and variations — no mode-switching, ever.
+
+| Gesture | Effect |
+|---|---|
+| **Right-click + drag** sq A → sq B | Draw arrow A → B |
+| **Right-click** a single square | Toggle a colored highlight on that square |
+| **Right-click** an existing shape | Delete it |
+| **Long-press** on touch (≥ 350 ms) | Same as right-click; drag for arrows |
+| `Shift` / `Alt` / `Ctrl/Cmd` while right-dragging | Swap to red / yellow / blue (plain = green) |
+| **Cmd/Ctrl + Z** · **Cmd/Ctrl + Shift + Z** | Undo / redo (per-ply stack, ~30 frames) |
+
+The toolbar above the board adds three tools for free-input cases that need a tool mode — **Pen** (freehand), **Text** (inline editor, no native prompt dialogs), **Rectangle**. Plus utility buttons for **Undo · Redo · Clear**, a 7-color palette, and a stroke-width slider.
+
+- Selecting a shape shows corner/edge resize handles + a rotation halo; drag the body to move
+- Double-click a text shape with no tool active to edit it in place
 - Drawings are **per-ply** — navigating away and back restores exactly what you drew on that move
+- A one-time tip card explains the right-click gestures the first time you visit Commentator (dismissable, persisted)
 
 **Move tree**
 - Collapsed by default at the bottom of the right panel so screen-sharing a broadcast doesn't spoil the upcoming moves
@@ -168,15 +180,18 @@ KarpaChess wears a **"Scholar's Library"** aesthetic — deliberately different 
 | **Ctrl+Z** / **⌘Z** | Undo move |
 | **Esc** | Close modal · clear selection · exit drawing mode |
 
-**Commentator tab** (drawing tools are always live — no toggle needed):
+**Commentator tab:**
 
 | Key | Action |
 |---|---|
 | **←** / **→** | Previous / next move (analysis runs automatically on each) |
 | **Home** / **End** | Jump to start / end of main line |
 | **↑** | Return to main line from a variation |
+| **P** / **T** / **R** | Toggle Pen / Text / Rectangle tool |
+| **Cmd/Ctrl + Z** | Undo last drawing change |
+| **Cmd/Ctrl + Shift + Z** | Redo |
 | **Del** / **Backspace** | Delete the selected shape |
-| **Esc** | Deselect |
+| **Esc** | Deselect / exit active tool |
 
 (Shortcuts are blocked while typing in inputs and while any modal is open.)
 
@@ -188,22 +203,27 @@ KarpaChess is native ES modules — no build step, no bundler. `index.html` load
 
 ```
 learn-chess/
-├── index.html             # App shell — 5 tabs, modals, hint card
-├── styles.css             # Scholar's Library theme
+├── index.html             # App shell — 5 tabs, modals, hint card, language switcher
+├── styles.css             # Scholar's Library theme + RTL overrides
 ├── screenshot.png
-├── data/                  # Content (lessons + puzzles, pure JSON)
+├── data/                  # Content — pure JSON, language-scoped
+│   ├── i18n/
+│   │   ├── en.json        # master translation bundle (610 keys)
+│   │   └── <lang>.json    # fr · es · ar · zh · ru · id · ja
 │   ├── lessons/
-│   │   ├── index.json
-│   │   └── <category>-NN-<slug>.json   # one file per lesson
+│   │   ├── index.json     # category list + filenames (language-agnostic)
+│   │   ├── en/<category>-NN-<slug>.json   # one file per lesson, per language
+│   │   └── <lang>/...                     # 71 lessons × 8 languages
 │   └── puzzles/
 │       ├── index.json
-│       └── <theme>-NN.json             # one file per puzzle
+│       ├── en/<theme>-NN.json             # one file per puzzle, per language
+│       └── <lang>/...                     # 100 puzzles × 8 languages
 └── src/
     ├── app.js             # Composition root — wires every module
-    ├── core/              # EventBus, constants, DOM helpers (+ imageFileToDataUrl)
+    ├── core/              # EventBus, constants, DOM helpers, i18n runtime
     ├── engine/            # chess.js — rules, SAN, FEN, search
     ├── state/             # GameState, PrefsStore, learn/puzzle/review state,
-    │                      #  commentator-state (move-tree + path + persistence)
+    │                      #  commentator-state (move-tree + path + per-ply undo)
     ├── services/          # Storage, sound, particles, toast, modals, clock, content,
     │                      #  pgn (parse + serialize, variations, NAGs, clocks)
     ├── ai/                # Coach facade + 11 provider implementations
@@ -211,21 +231,24 @@ learn-chess/
     │                      # xai, qwen, glm, minimax, ollama, lmstudio
     ├── modes/             # GameMode hierarchy (practice/lesson/puzzle/review/commentator)
     ├── ui/                # BoardView, history, player cards, hint, banner,
-    │                      #  drawing-overlay, move-tree-view, …
+    │                      #  drawing-overlay, move-tree-view, lang-switcher, …
     └── features/          # One controller per tab (practice/learn/puzzles/coach/review/commentator)
 ```
 
 Each file does one thing. Adding a new AI provider = drop one file in `src/ai/providers/` and register it in `src/app.js`. Adding a tab = drop one controller in `src/features/`. No central switch statements to update — modes/providers are plug-and-play via registries.
 
-**Adding content is easy:** drop a new JSON file in `data/lessons/` or `data/puzzles/`, add its filename to the matching `index.json` array, reload. Done. Every file is auto-discovered at startup.
+**Adding content is easy:** drop a new JSON file in `data/lessons/<lang>/` or `data/puzzles/<lang>/`, add its filename to the language-agnostic `index.json` array, reload. Done. Every file is auto-discovered at startup.
+
+**Adding a language:** create `data/i18n/<code>.json` (copy structure from `en.json`), translate the values, add `<code>` to `SUPPORTED_LANGS` + flag/native-name in `LANG_LABELS`/`LANG_FLAGS` in `src/core/constants.js`. Optional: add per-language lesson/puzzle directories under `data/lessons/<code>/` and `data/puzzles/<code>/` — the content loader transparently falls back to English for any missing file, so partial translations ship safely.
 
 ### 🏗 Architecture notes
 
 - **SOLID + OOP, no build step.** ES modules + plain classes. Runs in any modern browser as-is.
-- **EventBus** decouples views from state — views subscribe to `state:changed` / `prefs:changed` and re-render; nothing reaches across module boundaries.
+- **EventBus** decouples views from state — views subscribe to `state:changed` / `prefs:changed` / `i18n:changed` and re-render; nothing reaches across module boundaries.
 - **Strategy pattern** for AI providers (one `AIProvider` base, `OpenAICompatibleProvider` template method for the many OpenAI-compatible APIs).
 - **State pattern** for game modes — replaces what used to be scattered `if (mode === 'lesson')` cascades.
 - **Facade** — `CoachService` hides provider selection + fallback behind one `ask(q, ctx)`.
+- **i18n singleton** — `src/core/i18n.js` loads the user's language bundle, walks `[data-i18n]` DOM attributes on init + on every language switch, and exposes `i18n.t(key, params)` to JS. SAN move notation stays international; only prose translates. Missing keys fall back to English.
 
 ### ▶️ Running locally
 
