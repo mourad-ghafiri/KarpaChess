@@ -3,7 +3,7 @@
 > **Learn Chess · Every Move Teaches**
 > A focused, beautiful, fully-offline chess learning app powered by AI. Pure HTML / CSS / JS — no build step, no dependencies, no tracking.
 
-### 🌐 [Try the live demo →](https://mourad-ghafiri.github.io/KarpaChess)
+### 🌐 [Try the live application →](https://karpachess.com)
 
 ![KarpaChess — Scholar's Library theme](screenshot.png)
 
