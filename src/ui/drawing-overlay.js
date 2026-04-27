@@ -381,13 +381,21 @@ export class DrawingOverlay {
     this.svg.addEventListener('pointermove', (e) => this.#onToolMove(e));
     window.addEventListener('pointerup',     (e) => this.#onToolUp(e));
     window.addEventListener('pointermove',   (e) => { if (this.drag) this.#onToolMove(e); });
-    // Double-click on a text shape with no tool active → reopen its inline editor.
-    this.svg.addEventListener('dblclick', (e) => {
+    // Double-click on a text shape reopens the inline editor.
+    //
+    // We bind on the stable .board-holder (instead of the SVG that gets its
+    // children torn down on every render) AND we hit-test by board geometry
+    // rather than DOM ancestry — the original DOM target is gone by the time
+    // the second click lands, so #hitTest(e.target) would miss.
+    this.boardRoot?.addEventListener('dblclick', (e) => {
       if (!this.enabled) return;
-      const idx = this.#hitTest(e.target);
+      if (this.gameState.mode === MODE_IDS.COMMENTATOR && !this.commentatorState.hasMatch()) return;
+      const pt = this.#pointToBoard(e);
+      const idx = this.#hitTestAtPoint(pt);
       if (idx == null) return;
       const shape = this.#currentDrawings()[idx];
       if (!shape || shape.kind !== 'text') return;
+      e.preventDefault(); e.stopPropagation();
       this.#startInlineText(e, shape.points[0], idx, shape.text);
     });
   }
@@ -400,13 +408,15 @@ export class DrawingOverlay {
   }
 
   #onToolDown(e) {
-    if (!this.enabled || !this.tool) return;
+    if (!this.enabled) return;
     if (this.gameState.mode === MODE_IDS.COMMENTATOR && !this.commentatorState.hasMatch()) return;
     if (e.button !== 0) return;   // left click only here; right-click goes to the board handler
 
     const pt = this.#pointToBoard(e);
 
-    // Check if user grabbed a resize/rotate handle (for an existing selected shape)
+    // Resize / rotate handle drag — works whenever a shape is selected, even
+    // if no tool is active (so a freshly-created text remains editable after
+    // the one-shot tool deselect).
     const handle = e.target.closest('[data-handle]');
     if (handle && this.selectedIdx != null) {
       const kind = handle.dataset.handle;
@@ -417,18 +427,33 @@ export class DrawingOverlay {
       return;
     }
 
-    // Click on an existing shape with a tool active → select it (so handles appear)
+    // Click on an existing shape:
+    //   • with a tool active     → select any shape so its handles appear
+    //   • with no tool active    → only text shapes are selectable, so other
+    //                              annotations stay click-through and the user
+    //                              can still play moves on the squares below.
     const hit = this.#hitTest(e.target);
     if (hit != null) {
-      this.selectedIdx = hit;
-      const startShape = JSON.parse(JSON.stringify(this.#selected()));
-      this.drag = { type: 'move', origin: pt, startShape };
-      this.render();
-      this.svg.setPointerCapture?.(e.pointerId);
-      return;
+      const shape = this.#currentDrawings()[hit];
+      const canSelect = !!this.tool || shape?.kind === 'text';
+      if (canSelect) {
+        const selectionChanged = this.selectedIdx !== hit;
+        this.selectedIdx = hit;
+        const startShape = JSON.parse(JSON.stringify(shape));
+        this.drag = { type: 'move', origin: pt, startShape };
+        // Re-rendering tears down the clicked DOM node, which would prevent the
+        // browser from pairing this click with a follow-up to make a dblclick.
+        // Only rebuild when the selection actually changes.
+        if (selectionChanged) this.render();
+        this.svg.setPointerCapture?.(e.pointerId);
+        return;
+      }
     }
 
-    // Otherwise: tool-specific creation
+    // No tool, no selectable shape → let the click bubble through to the board.
+    if (!this.tool) return;
+
+    // Tool-specific creation
     if (this.tool === 'text') {
       this.#startInlineText(e, pt);
       return;
@@ -787,8 +812,9 @@ export class DrawingOverlay {
           kind: 'text', color: this.color, stroke: this.stroke,
           points: [[bx, by]], text: v, rotation: 0
         });
-        // One-shot: drop the text tool after committing so a stray click on the
-        // board doesn't immediately spawn another editor.
+        // One-shot: drop the text tool so a stray click on the board doesn't
+        // immediately spawn another editor. The text is left unselected —
+        // single-click later shows handles, double-click reopens the editor.
         if (this.tool === 'text') this.#toggleTool('text');
       }
     };
@@ -966,8 +992,11 @@ export class DrawingOverlay {
     }
     this.svg.hidden = false;
 
-    // Selection chrome only when a tool is active and a shape is selected.
-    const showChrome = this.tool != null;
+    // Selection chrome appears whenever a shape is explicitly selected — that
+    // covers both the toolbar-tool case and the auto-selection we set right
+    // after creating a text annotation, so its handles stay reachable after
+    // the one-shot tool deselect.
+    const showChrome = this.tool != null || this.selectedIdx != null;
 
     const drawings = this.#currentDrawings();
     drawings.forEach((d, idx) => {
