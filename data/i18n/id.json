@@ -665,6 +665,18 @@
     "tips": {
       "rightClickToDraw": "Klik kanan + seret untuk membuat panah · Klik kanan pada petak untuk menyorot · Tahan Shift / Alt / Cmd untuk warna berbeda",
       "gotIt": "Mengerti"
+    },
+    "result": {
+      "title": "Ringkasan pertandingan",
+      "checkmate": "Sekak mat · {winner} menang",
+      "stalemate": "Remis posisi · seri",
+      "drawnGame": "Seri",
+      "whiteWins": "Putih menang",
+      "blackWins": "Hitam menang",
+      "white": "Putih",
+      "black": "Hitam",
+      "accuracy": "Akurasi",
+      "analyzing": "Menghitung akurasi…"
     }
   },
   "learn": {

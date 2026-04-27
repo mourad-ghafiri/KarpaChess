@@ -665,6 +665,18 @@
     "tips": {
       "rightClickToDraw": "Clic derecho + arrastrar para dibujar flechas · Clic derecho en una casilla para resaltarla · Mantén Mayús / Alt / Cmd para distintos colores",
       "gotIt": "Entendido"
+    },
+    "result": {
+      "title": "Resumen de la partida",
+      "checkmate": "Jaque mate · ganan las {winner}",
+      "stalemate": "Rey ahogado · tablas",
+      "drawnGame": "Tablas",
+      "whiteWins": "Ganan las Blancas",
+      "blackWins": "Ganan las Negras",
+      "white": "Blancas",
+      "black": "Negras",
+      "accuracy": "Precisión",
+      "analyzing": "Calculando precisión…"
     }
   },
   "learn": {

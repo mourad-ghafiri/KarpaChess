@@ -665,6 +665,18 @@
     "tips": {
       "rightClickToDraw": "Right-click + drag to draw arrows · Right-click a square to highlight it · Hold Shift / Alt / Cmd for different colors",
       "gotIt": "Got it"
+    },
+    "result": {
+      "title": "Match summary",
+      "checkmate": "Checkmate · {winner} wins",
+      "stalemate": "Stalemate · draw",
+      "drawnGame": "Drawn game",
+      "whiteWins": "White wins",
+      "blackWins": "Black wins",
+      "white": "White",
+      "black": "Black",
+      "accuracy": "Accuracy",
+      "analyzing": "Computing accuracy…"
     }
   },
   "learn": {

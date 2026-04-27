@@ -665,6 +665,18 @@
     "tips": {
       "rightClickToDraw": "ПКМ + перетаскивание — стрелки · ПКМ по клетке — подсветка · Shift / Alt / Cmd меняют цвет",
       "gotIt": "Понятно"
+    },
+    "result": {
+      "title": "Итоги партии",
+      "checkmate": "Мат · побеждают {winner}",
+      "stalemate": "Пат · ничья",
+      "drawnGame": "Ничья",
+      "whiteWins": "Победа белых",
+      "blackWins": "Победа чёрных",
+      "white": "Белые",
+      "black": "Чёрные",
+      "accuracy": "Точность",
+      "analyzing": "Считаем точность…"
     }
   },
   "learn": {

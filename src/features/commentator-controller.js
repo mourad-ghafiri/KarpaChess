@@ -26,6 +26,13 @@ const CLASSIFICATION_TONE = {
   best: 'good', good: 'good', inaccuracy: 'warn', mistake: 'bad', blunder: 'bad'
 };
 
+/** Per-classification quality score (0-100). Averaged across each player's
+ *  moves for the end-of-match accuracy headline. Stays aligned with the
+ *  best/good/inaccuracy/mistake/blunder ladder shown in the insights panel. */
+const QUALITY_SCORE = {
+  best: 100, good: 85, inaccuracy: 60, mistake: 30, blunder: 10
+};
+
 function classificationMeta(key) {
   return {
     glyph: i18n.t('classification.' + key + '.glyph'),
@@ -52,12 +59,14 @@ export class CommentatorController {
     this.insightsEl = $('#cm-insights');
     this.badgeEl    = $('#cm-insight-overlay');
     this._analyzing = null;  // guard against overlapping async analyses
+    this._resultShownFor = null;   // node-id of the last node we opened the recap for
 
     this.#wireImport();
     this.#wireSamples();
     this.#wireNav();
     this.#wireBadgesToggle();
     this.#wireKeyboard();
+    this.#wireResultModal();
 
     bus.on(EVENTS.COMMENTATOR_MATCH_LOADED, () => this.#onMatchChanged());
     bus.on(EVENTS.COMMENTATOR_NAVIGATED,    () => this.#onNavigated());
@@ -225,6 +234,7 @@ export class CommentatorController {
     this.#syncBoardToCurrentNode();
     this.#renderStatus();
     this.#renderInsightsForCurrent();
+    this.#maybeShowResultModal();
   }
 
   #syncBoardToCurrentNode() {
@@ -471,6 +481,8 @@ export class CommentatorController {
 
   #onMatchChanged() {
     if (!this.active) return;
+    this._resultShownFor = null;
+    if (this.modals.isOpen('cm-result-modal')) this.modals.close('cm-result-modal');
     this.#toggleViews();
     if (this.commentatorState.hasMatch()) {
       this.#syncBoardToCurrentNode();
@@ -481,6 +493,139 @@ export class CommentatorController {
     this.moveTreeView.render();
     this.drawingOverlay.render();
     this.#renderInsightsForCurrent();
+  }
+
+  // ============ end-of-match recap modal ============
+  #wireResultModal() {
+    $('#cm-result-close')?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      this.modals.close('cm-result-modal');
+    });
+    // Click outside the modal body (i.e. on the backdrop) closes it.
+    $('#cm-result-modal')?.addEventListener('click', (e) => {
+      if (e.target === e.currentTarget) this.modals.close('cm-result-modal');
+    });
+  }
+
+  /** Open the recap when the user lands on the end of a finished main line. */
+  #maybeShowResultModal() {
+    if (!this.commentatorState.hasMatch()) return;
+    const cur = this.commentatorState.currentNode();
+    if (!cur) return;
+    if (cur.mainChild) return;                            // not the last node
+    if (this.commentatorState.isOffMainLine()) return;    // exploring a variation
+
+    const fen = this.commentatorState.currentFen();
+    if (!fen) return;
+    const status = Chess.status(Chess.fromFEN(fen));
+    const pgnResult = (this.commentatorState.meta?.Result || '').trim();
+    const isFinished = status.over || ['1-0', '0-1', '1/2-1/2'].includes(pgnResult);
+    if (!isFinished) return;
+
+    if (this._resultShownFor === cur.id) return;
+    this._resultShownFor = cur.id;
+    this.#openResultModal(status, pgnResult);
+  }
+
+  #openResultModal(status, pgnResult) {
+    const opened = this.modals.open('cm-result-modal');
+    if (!opened && !this.modals.isOpen('cm-result-modal')) return;
+
+    // Headline
+    const headlineEl = $('#cm-result-headline');
+    if (headlineEl) headlineEl.textContent = this.#resultHeadline(status, pgnResult);
+
+    // Player rows: photo + name, mirroring player-cards.js fallback glyphs.
+    this.#paintResultPlayerRow('w', '♔');
+    this.#paintResultPlayerRow('b', '♚');
+
+    // Reset accuracy cells while we (re)compute.
+    for (const pct of document.querySelectorAll('#cm-result-modal .cm-result-pct')) {
+      pct.textContent = '—';
+    }
+    const statusEl = $('#cm-result-status');
+    if (statusEl) {
+      statusEl.textContent = i18n.t('commentator.result.analyzing');
+      statusEl.hidden = false;
+    }
+
+    // Make sure every main-line move has a classification, then paint accuracy.
+    this.#analyzeAllAndPaintAccuracy();
+  }
+
+  #paintResultPlayerRow(color, fallbackGlyph) {
+    const row = document.querySelector(`#cm-result-modal .cm-result-player[data-color="${color}"]`);
+    if (!row) return;
+    const avatar = row.querySelector('.avatar');
+    const nameEl = row.querySelector('.cm-result-name');
+    const player = this.commentatorState.players?.[color] || {};
+    const photo  = player.photoDataUrl || '';
+    if (avatar) {
+      if (photo) {
+        avatar.style.backgroundImage = `url(${photo})`;
+        avatar.classList.add('has-photo');
+        avatar.textContent = '';
+      } else {
+        avatar.style.backgroundImage = '';
+        avatar.classList.remove('has-photo');
+        avatar.textContent = fallbackGlyph;
+      }
+    }
+    if (nameEl) {
+      const name = (player.name || '').trim();
+      nameEl.textContent = name || i18n.side(color);
+    }
+  }
+
+  #resultHeadline(status, pgnResult) {
+    if (status.result === 'checkmate' && status.winner) {
+      const winner = i18n.side(status.winner);
+      return i18n.t('commentator.result.checkmate', { winner });
+    }
+    if (status.result === 'stalemate') return i18n.t('commentator.result.stalemate');
+    if (status.over && !status.winner)  return i18n.t('commentator.result.drawnGame');
+
+    // FEN isn't itself terminal — fall back to the PGN's [Result] tag (resignation, etc.).
+    if (pgnResult === '1-0')      return i18n.t('commentator.result.whiteWins');
+    if (pgnResult === '0-1')      return i18n.t('commentator.result.blackWins');
+    if (pgnResult === '1/2-1/2')  return i18n.t('commentator.result.drawnGame');
+    return '';
+  }
+
+  async #analyzeAllAndPaintAccuracy() {
+    const main = this.commentatorState.mainLine();
+    for (const n of main) {
+      if (!n.move) continue;
+      if (n.classification != null) continue;
+      this.#analyseNode(n);
+      // Yield to the browser between searches so the modal stays responsive.
+      await new Promise(r => setTimeout(r, 0));
+      if (!this.modals.isOpen('cm-result-modal')) return;
+    }
+    this.#paintAccuracy();
+    const statusEl = $('#cm-result-status');
+    if (statusEl) statusEl.hidden = true;
+  }
+
+  #paintAccuracy() {
+    const totals = { w: { sum: 0, n: 0 }, b: { sum: 0, n: 0 } };
+    for (const n of this.commentatorState.mainLine()) {
+      if (!n.move || n.classification == null) continue;
+      const score = QUALITY_SCORE[n.classification];
+      if (score == null) continue;
+      const bucket = totals[n.move.color];
+      if (!bucket) continue;
+      bucket.sum += score;
+      bucket.n   += 1;
+    }
+    for (const color of ['w', 'b']) {
+      const cell = document.querySelector(
+        `#cm-result-modal .cm-result-player[data-color="${color}"] .cm-result-pct`
+      );
+      if (!cell) continue;
+      const b = totals[color];
+      cell.textContent = b.n > 0 ? `${Math.round(b.sum / b.n)}%` : '—';
+    }
   }
 
   #toast(message, kind = 'info') {

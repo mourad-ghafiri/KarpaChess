@@ -665,6 +665,18 @@
     "tips": {
       "rightClickToDraw": "نقرة يمنى + سحب لرسم الأسهم · نقرة يمنى على المربع لتمييزه · اضغط Shift / Alt / Cmd لألوان مختلفة",
       "gotIt": "فهمت"
+    },
+    "result": {
+      "title": "ملخّص المباراة",
+      "checkmate": "كش مات · فاز {winner}",
+      "stalemate": "بات · تعادل",
+      "drawnGame": "تعادل",
+      "whiteWins": "فاز الأبيض",
+      "blackWins": "فاز الأسود",
+      "white": "أبيض",
+      "black": "أسود",
+      "accuracy": "الدقّة",
+      "analyzing": "جارٍ حساب الدقّة…"
     }
   },
   "learn": {

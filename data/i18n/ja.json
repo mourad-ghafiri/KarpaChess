@@ -665,6 +665,18 @@
     "tips": {
       "rightClickToDraw": "右クリック + ドラッグで矢印を描画・右クリックでマス目をハイライト・Shift / Alt / Cmd で色を変更",
       "gotIt": "OK"
+    },
+    "result": {
+      "title": "対局のまとめ",
+      "checkmate": "チェックメイト · {winner}の勝ち",
+      "stalemate": "ステイルメイト · 引き分け",
+      "drawnGame": "引き分け",
+      "whiteWins": "白の勝ち",
+      "blackWins": "黒の勝ち",
+      "white": "白",
+      "black": "黒",
+      "accuracy": "正確度",
+      "analyzing": "正確度を計算中…"
     }
   },
   "learn": {

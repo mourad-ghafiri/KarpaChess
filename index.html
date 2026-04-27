@@ -750,6 +750,44 @@
     </div>
   </div>
 
+  <!-- ============ COMMENTATOR RESULT MODAL ============ -->
+  <div class="modal-backdrop" id="cm-result-modal" hidden>
+    <div class="modal glass cm-result">
+      <div class="modal-head">
+        <h2 data-i18n="commentator.result.title">Match summary</h2>
+        <button class="icon-btn" id="cm-result-close" data-i18n-aria-label="ui.button.close" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="cm-result-headline" id="cm-result-headline"></div>
+        <div class="cm-result-players">
+          <div class="cm-result-player" data-color="w">
+            <div class="avatar"></div>
+            <div class="cm-result-info">
+              <div class="cm-result-name"></div>
+              <div class="cm-result-side" data-i18n="commentator.result.white">White</div>
+            </div>
+            <div class="cm-result-acc">
+              <span class="cm-result-pct">—</span>
+              <span class="cm-result-pct-label" data-i18n="commentator.result.accuracy">Accuracy</span>
+            </div>
+          </div>
+          <div class="cm-result-player" data-color="b">
+            <div class="avatar"></div>
+            <div class="cm-result-info">
+              <div class="cm-result-name"></div>
+              <div class="cm-result-side" data-i18n="commentator.result.black">Black</div>
+            </div>
+            <div class="cm-result-acc">
+              <span class="cm-result-pct">—</span>
+              <span class="cm-result-pct-label" data-i18n="commentator.result.accuracy">Accuracy</span>
+            </div>
+          </div>
+        </div>
+        <div class="cm-result-status" id="cm-result-status" hidden></div>
+      </div>
+    </div>
+  </div>
+
   <!-- ============ TOAST ============ -->
   <div class="toast-wrap" id="toast-wrap"></div>
 

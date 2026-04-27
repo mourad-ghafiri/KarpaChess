@@ -1857,6 +1857,61 @@ body.mode-commentator .board-controls { display: none; }
 .cm-badge.tone-warn circle { fill: var(--gold); }
 .cm-badge.tone-bad  circle { fill: var(--coral); }
 
+/* ---------- End-of-match recap modal ---------- */
+.cm-result-headline {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--sage-deep);
+  text-align: center;
+  letter-spacing: -0.01em;
+  margin-bottom: 18px;
+}
+.cm-result-players { display: flex; flex-direction: column; gap: 10px; }
+.cm-result-player {
+  display: grid;
+  grid-template-columns: 56px 1fr auto;
+  gap: 14px;
+  align-items: center;
+  padding: 14px 16px;
+  background: var(--paper-2);
+  border: 1px solid var(--paper-edge);
+  border-radius: var(--r-md);
+}
+.cm-result-player .avatar {
+  width: 56px; height: 56px; border-radius: 14px;
+  font-size: 32px;
+  background: var(--paper-1);
+  border: 1px solid var(--paper-edge);
+  color: var(--ink-0);
+  display: grid; place-items: center;
+  background-size: cover; background-position: center;
+}
+.cm-result-player .avatar.has-photo { color: transparent; }
+.cm-result-name { font-weight: 700; font-size: 16px; color: var(--ink-0); }
+.cm-result-side {
+  font-size: 11px; color: var(--ink-2);
+  text-transform: uppercase; letter-spacing: 1.2px; margin-top: 2px;
+}
+.cm-result-acc { text-align: right; }
+.cm-result-pct {
+  display: block;
+  font-family: 'Fraunces', serif;
+  font-weight: 700; font-size: 26px;
+  color: var(--sage-deep); letter-spacing: -0.01em;
+}
+.cm-result-pct-label {
+  font-size: 10px; color: var(--ink-2);
+  text-transform: uppercase; letter-spacing: 1.2px;
+}
+.cm-result-status {
+  margin-top: 14px; padding: 10px 12px;
+  border-radius: var(--r-md);
+  background: var(--paper-2);
+  font-size: 13px; color: var(--ink-1);
+  text-align: center;
+}
+
 /* ---------- Board theme variations ---------- */
 body.theme-royal    { --board-a: #f0d9b5; --board-b: #b58863; }
 body.theme-midnight { --board-a: #dee3e6; --board-b: #8ca2ad; }

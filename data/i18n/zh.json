@@ -665,6 +665,18 @@
     "tips": {
       "rightClickToDraw": "右键 + 拖动绘制箭头 · 右键单击格子高亮 · 按住 Shift / Alt / Cmd 切换颜色",
       "gotIt": "知道了"
+    },
+    "result": {
+      "title": "对局总结",
+      "checkmate": "将杀 · {winner}获胜",
+      "stalemate": "逼和 · 和棋",
+      "drawnGame": "和棋",
+      "whiteWins": "白方获胜",
+      "blackWins": "黑方获胜",
+      "white": "白方",
+      "black": "黑方",
+      "accuracy": "准确率",
+      "analyzing": "正在计算准确率…"
     }
   },
   "learn": {

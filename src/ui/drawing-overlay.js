@@ -84,6 +84,7 @@ const HANDLE_SIZE  = 0.22;
 const ROT_OFFSET   = 0.55;
 const LONG_PRESS_MS = 350;
 const DRAG_THRESHOLD = 0.3;   // board-units to count as drag vs tap
+const RIGHT_CLICK_ARROW_STROKE = 0.16;   // chunkier than toolbar default so right-click arrows pop on any square
 
 export class DrawingOverlay {
   constructor({ svgEl, toolbarEl, boardRootEl }, gameState, commentatorState, bus) {
@@ -479,14 +480,16 @@ export class DrawingOverlay {
     }
     if (this._rcDrag.isDrag) {
       // Live preview of the arrow we're about to drop
+      const fromSq = this._rcDrag.startSq;
+      const toSq = this.#squareAt(pt);
+      const points = this.#arrowGeometry(fromSq, toSq) ||
+        [this.#squareCenter(fromSq) || this._rcDrag.startPt,
+         this.#squareCenter(toSq)   || pt];
       const prev = {
         kind: 'arrow',
         color: this._rcDrag.color,
-        stroke: this.stroke,
-        points: [
-          this.#squareCenter(this._rcDrag.startSq) || this._rcDrag.startPt,
-          this.#squareCenter(this.#squareAt(pt))    || pt
-        ],
+        stroke: RIGHT_CLICK_ARROW_STROKE,
+        points,
         rotation: 0
       };
       this.#drawPreview(prev);
@@ -505,11 +508,11 @@ export class DrawingOverlay {
       const fromSq = d.startSq;
       const toSq   = this.#squareAt(d.lastPt);
       if (!fromSq || !toSq || sameSq(fromSq, toSq)) return;
-      const from = this.#squareCenter(fromSq);
-      const to   = this.#squareCenter(toSq);
+      const points = this.#arrowGeometry(fromSq, toSq) ||
+        [this.#squareCenter(fromSq), this.#squareCenter(toSq)];
       this.#addShape({
-        kind: 'arrow', color: d.color, stroke: this.stroke,
-        points: [from, to], rotation: 0
+        kind: 'arrow', color: d.color, stroke: RIGHT_CLICK_ARROW_STROKE,
+        points, rotation: 0
       });
       return;
     }
@@ -547,6 +550,31 @@ export class DrawingOverlay {
     const vr = orient === 'w' ? r : 7 - r;
     const vc = orient === 'w' ? c : 7 - c;
     return [vc + 0.5, vr + 0.5];
+  }
+
+  /**
+   * Points list for an arrow between two squares.
+   *   • knight-shaped displacement → 3 points with an L-bend (longer leg first)
+   *   • everything else            → straight 2-point arrow
+   * Returns null if either square is missing.
+   */
+  #arrowGeometry(fromSq, toSq) {
+    if (!fromSq || !toSq) return null;
+    const dr = Math.abs(toSq[0] - fromSq[0]);
+    const dc = Math.abs(toSq[1] - fromSq[1]);
+    const isKnight = (dr === 1 && dc === 2) || (dr === 2 && dc === 1);
+    if (!isKnight) {
+      return [this.#squareCenter(fromSq), this.#squareCenter(toSq)];
+    }
+    // Longer leg goes first — gives the canonical chess "L" reading direction.
+    const cornerSq = dr > dc
+      ? [toSq[0],   fromSq[1]]
+      : [fromSq[0], toSq[1]];
+    return [
+      this.#squareCenter(fromSq),
+      this.#squareCenter(cornerSq),
+      this.#squareCenter(toSq)
+    ];
   }
 
   /**
@@ -592,11 +620,27 @@ export class DrawingOverlay {
       return false;
     }
     if (s.kind === 'rect' || s.kind === 'circle' || s.kind === 'text') {
-      const box = boundingBox(s.points);
+      const box = this.#shapeBoundingBox(s);
       return px >= box.x - 0.05 && px <= box.x + box.w + 0.05
           && py >= box.y - 0.05 && py <= box.y + box.h + 0.05;
     }
     return false;
+  }
+
+  /**
+   * Bounding box for a shape. Text shapes only carry a single anchor point so
+   * `boundingBox(points)` would be near-zero; we synthesize a virtual box from
+   * the rendered font-size and text length so rotate/resize handles land on
+   * the actual glyph extent.
+   */
+  #shapeBoundingBox(s) {
+    if (s.kind !== 'text') return boundingBox(s.points);
+    const [[x, y]] = s.points;
+    const fontSize = Math.max(0.35, (s.stroke || 0.08) * 5);
+    const len = Math.max(1, (s.text || '').length);
+    const w = Math.max(0.5, len * fontSize * 0.55);   // approximate em-width for Fraunces
+    const h = fontSize * 1.1;
+    return { x: x - w / 2, y: y - h / 2, w, h };
   }
 
   #viewSquare(sq) {
@@ -649,6 +693,9 @@ export class DrawingOverlay {
           kind: 'text', color: this.color, stroke: this.stroke,
           points: [[bx, by]], text: v, rotation: 0
         });
+        // One-shot: drop the text tool after committing so a stray click on the
+        // board doesn't immediately spawn another editor.
+        if (this.tool === 'text') this.#toggleTool('text');
       }
     };
 
@@ -720,12 +767,28 @@ export class DrawingOverlay {
   #applyResize(pt) {
     const s = this.drag.startShape;
     const corner = this.drag.corner;
-    const box = boundingBox(s.points);
     if (s.kind === 'arrow' || s.kind === 'line') {
-      const endIdx = corner === 'end2' ? 1 : 0;
+      const endIdx = corner === 'end2' ? s.points.length - 1 : 0;
       this.#updateSelected(out => { out.points = s.points.slice(); out.points[endIdx] = pt; });
       return;
     }
+    if (s.kind === 'text') {
+      // Text scales by changing `stroke` (which drives font-size in #text).
+      // We use distance-from-center so any corner handle scales uniformly.
+      const box = this.#shapeBoundingBox(s);
+      const cx = box.x + box.w / 2, cy = box.y + box.h / 2;
+      const cornerPt = [
+        box.x + (corner === 'ne' || corner === 'se' ? box.w : 0),
+        box.y + (corner === 'sw' || corner === 'se' ? box.h : 0)
+      ];
+      const origDist = Math.hypot(cornerPt[0] - cx, cornerPt[1] - cy) || 1;
+      const newDist  = Math.hypot(pt[0] - cx, pt[1] - cy);
+      const scale = newDist / origDist;
+      const newStroke = clamp((s.stroke || 0.08) * scale, 0.04, 0.6);
+      this.#updateSelected(out => { out.stroke = newStroke; });
+      return;
+    }
+    const box = boundingBox(s.points);
     let pivot = [0, 0]; let pickCorner = [0, 0];
     switch (corner) {
       case 'nw': pivot = [box.x + box.w, box.y + box.h]; pickCorner = [box.x, box.y]; break;
@@ -750,7 +813,7 @@ export class DrawingOverlay {
   }
   #applyRotate(pt) {
     const s = this.drag.startShape;
-    const box = boundingBox(s.points);
+    const box = this.#shapeBoundingBox(s);
     const cx = box.x + box.w / 2, cy = box.y + box.h / 2;
     const origin = this.drag.origin;
     const ang0 = Math.atan2(origin[1] - cy, origin[0] - cx);
@@ -848,7 +911,7 @@ export class DrawingOverlay {
     g.setAttribute('class', 'draw-shape-g' + (selected ? ' selected' : ''));
     const rot = shape.rotation || 0;
     if (rot && shape.kind !== 'square') {
-      const box = boundingBox(shape.points);
+      const box = this.#shapeBoundingBox(shape);
       const cx = box.x + box.w / 2, cy = box.y + box.h / 2;
       g.setAttribute('transform', `rotate(${rot} ${cx} ${cy})`);
     }
@@ -872,7 +935,6 @@ export class DrawingOverlay {
   }
 
   #hitTarget(s) {
-    if (s.kind === 'text') return null;
     if (s.kind === 'square') {
       const [vr, vc] = this.#viewSquare(s.sq);
       if (vr == null) return null;
@@ -883,7 +945,18 @@ export class DrawingOverlay {
       r.setAttribute('class', 'draw-hit');
       return r;
     }
-    const box = boundingBox(s.points);
+    if (s.kind === 'text') {
+      // Text shapes only carry one anchor point — synthesize a hit rect over
+      // the rendered glyph so a single click can select / move the text.
+      const box = this.#shapeBoundingBox(s);
+      const r = document.createElementNS(SVG_NS, 'rect');
+      r.setAttribute('x', box.x); r.setAttribute('y', box.y);
+      r.setAttribute('width', box.w); r.setAttribute('height', box.h);
+      r.setAttribute('fill', 'transparent');
+      r.setAttribute('class', 'draw-hit');
+      return r;
+    }
+    const box = this.#shapeBoundingBox(s);
     if (s.kind === 'pen') {
       const clone = this.#pen(s);
       clone.setAttribute('stroke', 'rgba(0,0,0,0.001)');
@@ -902,26 +975,51 @@ export class DrawingOverlay {
   // ============= shape primitives =============
   #arrow(s) {
     const g = document.createElementNS(SVG_NS, 'g');
-    const [[x1, y1], [x2, y2]] = s.points;
-    const dx = x2 - x1, dy = y2 - y1;
+    const pts = s.points;
+    if (!pts || pts.length < 2) return g;
+
+    // Last segment carries the arrowhead direction.
+    const [px1, py1] = pts[pts.length - 2];
+    const [px2, py2] = pts[pts.length - 1];
+    const dx = px2 - px1, dy = py2 - py1;
     const len = Math.hypot(dx, dy) || 1;
     const head = Math.min(0.4, len * 0.3);
-    const ex = x2 - (dx / len) * head;
-    const ey = y2 - (dy / len) * head;
+    const ex = px2 - (dx / len) * head;
+    const ey = py2 - (dy / len) * head;
 
-    const shaft = document.createElementNS(SVG_NS, 'line');
-    shaft.setAttribute('x1', x1); shaft.setAttribute('y1', y1);
-    shaft.setAttribute('x2', ex); shaft.setAttribute('y2', ey);
+    // Truncate the last point of the path so the shaft stops where the head starts.
+    const shaftPts = pts.slice(0, -1).concat([[ex, ey]]);
+    const d = 'M ' + shaftPts.map(p => p.join(' ')).join(' L ');
+
+    // Subtle dark underlay so the arrow stands out on both light and dark squares.
+    const outline = document.createElementNS(SVG_NS, 'path');
+    outline.setAttribute('d', d);
+    outline.setAttribute('stroke', 'rgba(0,0,0,0.35)');
+    outline.setAttribute('stroke-width', s.stroke + 0.04);
+    outline.setAttribute('stroke-linecap', 'round');
+    outline.setAttribute('stroke-linejoin', 'round');
+    outline.setAttribute('fill', 'none');
+    g.appendChild(outline);
+
+    const shaft = document.createElementNS(SVG_NS, 'path');
+    shaft.setAttribute('d', d);
     shaft.setAttribute('stroke', s.color);
     shaft.setAttribute('stroke-width', s.stroke);
     shaft.setAttribute('stroke-linecap', 'round');
+    shaft.setAttribute('stroke-linejoin', 'round');
+    shaft.setAttribute('fill', 'none');
+    g.appendChild(shaft);
 
     const nx = -dy / len, ny = dx / len;
     const w = head * 0.55;
     const tip = document.createElementNS(SVG_NS, 'polygon');
-    tip.setAttribute('points', `${x2},${y2} ${ex + nx * w},${ey + ny * w} ${ex - nx * w},${ey - ny * w}`);
+    tip.setAttribute('points', `${px2},${py2} ${ex + nx * w},${ey + ny * w} ${ex - nx * w},${ey - ny * w}`);
     tip.setAttribute('fill', s.color);
-    g.appendChild(shaft); g.appendChild(tip);
+    tip.setAttribute('stroke', 'rgba(0,0,0,0.35)');
+    tip.setAttribute('stroke-width', 0.025);
+    tip.setAttribute('stroke-linejoin', 'round');
+    g.appendChild(tip);
+
     return g;
   }
   #line(s) {
@@ -983,7 +1081,7 @@ export class DrawingOverlay {
     t.textContent = s.text || '';
     return t;
   }
-  /** Square highlight — a translucent ring around an entire square. */
+  /** Square highlight — a translucent fill in the chosen color, with a soft border. */
   #square(s) {
     const [vr, vc] = this.#viewSquare(s.sq);
     if (vr == null) return null;
@@ -992,10 +1090,11 @@ export class DrawingOverlay {
     r.setAttribute('x', vc + 0.05); r.setAttribute('y', vr + 0.05);
     r.setAttribute('width', 0.9); r.setAttribute('height', 0.9);
     r.setAttribute('rx', 0.08);
-    r.setAttribute('fill', 'none');
+    r.setAttribute('fill', s.color);
+    r.setAttribute('fill-opacity', '0.32');
     r.setAttribute('stroke', s.color);
-    r.setAttribute('stroke-width', 0.07);
-    r.setAttribute('opacity', '0.92');
+    r.setAttribute('stroke-opacity', '0.85');
+    r.setAttribute('stroke-width', 0.04);
     g.appendChild(r);
     return g;
   }
@@ -1005,7 +1104,7 @@ export class DrawingOverlay {
     const g = document.createElementNS(SVG_NS, 'g');
     g.setAttribute('class', 'draw-handles');
     const rot = shape.rotation || 0;
-    const box = boundingBox(shape.points);
+    const box = this.#shapeBoundingBox(shape);
     const cx = box.x + box.w / 2, cy = box.y + box.h / 2;
     if (rot) g.setAttribute('transform', `rotate(${rot} ${cx} ${cy})`);
     const addHandle = (x, y, kind, cls = 'corner') => {
@@ -1024,8 +1123,9 @@ export class DrawingOverlay {
     outline.setAttribute('class', 'draw-outline');
     g.appendChild(outline);
     if (shape.kind === 'arrow' || shape.kind === 'line') {
+      const last = shape.points[shape.points.length - 1];
       addHandle(shape.points[0][0], shape.points[0][1], 'end1', 'end');
-      addHandle(shape.points[1][0], shape.points[1][1], 'end2', 'end');
+      addHandle(last[0], last[1], 'end2', 'end');
     } else if (shape.kind !== 'pen' && shape.kind !== 'text') {
       addHandle(box.x,         box.y,          'nw');
       addHandle(box.x + box.w, box.y,          'ne');

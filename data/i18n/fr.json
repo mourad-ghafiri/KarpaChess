@@ -665,6 +665,18 @@
     "tips": {
       "rightClickToDraw": "Clic droit + glisser pour tracer des flèches · Clic droit sur une case pour la surligner · Maintenez Maj / Alt / Cmd pour changer de couleur",
       "gotIt": "OK"
+    },
+    "result": {
+      "title": "Résumé de la partie",
+      "checkmate": "Échec et mat · victoire des {winner}",
+      "stalemate": "Pat · partie nulle",
+      "drawnGame": "Partie nulle",
+      "whiteWins": "Victoire des Blancs",
+      "blackWins": "Victoire des Noirs",
+      "white": "Blancs",
+      "black": "Noirs",
+      "accuracy": "Précision",
+      "analyzing": "Calcul de la précision…"
     }
   },
   "learn": {
