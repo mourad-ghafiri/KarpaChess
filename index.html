@@ -4,14 +4,121 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#f3ecd9" />
-  <title>KarpaChess — Learn. Play. Master.</title>
+  <meta name="color-scheme" content="light" />
+
+  <title>KarpaChess — Learn Chess Online · Free Lessons, Puzzles, AI Coach &amp; Match Review</title>
+  <meta name="description" content="Free, offline-capable chess learning app: 71 guided lessons, 100 hand-crafted puzzles, AI Coach, match review, and broadcast-style commentator annotations. Available in 8 languages. No accounts, no tracking." />
+  <meta name="keywords" content="chess, learn chess, chess lessons, chess puzzles, chess AI coach, chess training, online chess, free chess, chess analysis, chess commentator, chess opening, endgame, tactics, KarpaChess" />
+  <meta name="author" content="KarpaChess" />
+  <meta name="application-name" content="KarpaChess" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="KarpaChess" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="mobile-web-app-capable" content="yes" />
+
+  <!-- Canonical + per-language alternates so search engines surface the right
+       locale to each user. The query-string is parsed by app.js on boot. -->
+  <link rel="canonical" href="https://karpachess.com/" />
+  <link rel="alternate" hreflang="x-default" href="https://karpachess.com/" />
+  <link rel="alternate" hreflang="en" href="https://karpachess.com/?lang=en" />
+  <link rel="alternate" hreflang="fr" href="https://karpachess.com/?lang=fr" />
+  <link rel="alternate" hreflang="es" href="https://karpachess.com/?lang=es" />
+  <link rel="alternate" hreflang="ar" href="https://karpachess.com/?lang=ar" />
+  <link rel="alternate" hreflang="zh" href="https://karpachess.com/?lang=zh" />
+  <link rel="alternate" hreflang="ru" href="https://karpachess.com/?lang=ru" />
+  <link rel="alternate" hreflang="id" href="https://karpachess.com/?lang=id" />
+  <link rel="alternate" hreflang="ja" href="https://karpachess.com/?lang=ja" />
+
+  <!-- Open Graph (Facebook / LinkedIn / Discord / Slack) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="KarpaChess" />
+  <meta property="og:title" content="KarpaChess — Learn Chess Online" />
+  <meta property="og:description" content="Free, offline-capable chess learning app: 71 lessons, 100 puzzles, AI Coach, match review, broadcast-style annotations. Available in 8 languages." />
+  <meta property="og:url" content="https://karpachess.com/" />
+  <meta property="og:image" content="https://karpachess.com/screenshot.png" />
+  <meta property="og:image:alt" content="KarpaChess — a board mid-lesson with the Scholar's Library theme, showing the move tree and AI insights panel." />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:locale:alternate" content="zh_CN" />
+  <meta property="og:locale:alternate" content="ru_RU" />
+  <meta property="og:locale:alternate" content="id_ID" />
+  <meta property="og:locale:alternate" content="ja_JP" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="KarpaChess — Learn Chess Online" />
+  <meta name="twitter:description" content="Free, offline-capable chess learning app: lessons, puzzles, AI Coach, match review, broadcast-style annotations. 8 languages." />
+  <meta name="twitter:image" content="https://karpachess.com/screenshot.png" />
+  <meta name="twitter:image:alt" content="KarpaChess board with insights panel" />
+
+  <!-- Discovery -->
+  <link rel="manifest" href="manifest.webmanifest" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <link rel="stylesheet" href="styles.css?v=r8" />
+  <link rel="apple-touch-icon" href="favicon.svg" />
+  <link rel="sitemap" type="application/xml" href="sitemap.xml" />
+
+  <!-- Structured data: tells search engines this is a free educational web app
+       with a chess-coaching focus, in 8 languages. Helps land in the
+       Google "Web App" / "Game" rich-result tracks. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "KarpaChess",
+    "alternateName": "Karpa Chess",
+    "description": "Free, offline-capable chess learning app: 71 guided lessons, 100 hand-crafted puzzles, AI Coach across 11 LLM providers, match review, and a Lichess-style commentator studio. Available in 8 languages.",
+    "url": "https://karpachess.com/",
+    "image": "https://karpachess.com/screenshot.png",
+    "applicationCategory": "EducationalApplication",
+    "applicationSubCategory": "Chess",
+    "operatingSystem": "Any (modern web browser)",
+    "browserRequirements": "Requires JavaScript. Works in Chrome, Firefox, Safari, Edge.",
+    "isAccessibleForFree": true,
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": ["en", "fr", "es", "ar", "zh", "ru", "id", "ja"],
+    "featureList": [
+      "71 guided chess lessons across 6 categories",
+      "100 hand-crafted, engine-verified puzzles across 8 themes",
+      "AI Coach with 11 LLM providers plus a built-in offline coach",
+      "Match Review with engine analysis",
+      "Commentator Studio with arrows, square highlights, accuracy %, and end-of-match recap",
+      "Lichess-style annotation tools with knight L-arrows",
+      "8 languages including RTL Arabic",
+      "100% offline-capable, no accounts, no tracking"
+    ],
+    "creator": {
+      "@type": "Organization",
+      "name": "KarpaChess",
+      "url": "https://karpachess.com/"
+    }
+  }
+  </script>
+
+  <!-- Asset preloads -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="script" href="./src/app.js" crossorigin />
+  <link rel="modulepreload" href="./src/app.js" />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Noto+Sans+Arabic:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=r8" />
 </head>
 <body>
+  <noscript>
+    <div style="max-width:640px;margin:80px auto;padding:24px;font-family:Georgia,serif;text-align:center;color:#3a352a;background:#fbf6e8;border:1px solid #e6dfc8;border-radius:12px">
+      <h1 style="margin:0 0 12px;font-size:24px">KarpaChess</h1>
+      <p style="margin:0 0 16px;font-size:16px;line-height:1.5">A free, fully-offline chess learning app — guided lessons, hand-crafted puzzles, an AI Coach, match review, and a broadcast-style commentator studio in 8 languages.</p>
+      <p style="margin:0;font-size:14px;color:#6a6656">This app is interactive and requires JavaScript. Please enable JavaScript in your browser to play, learn, and analyse.</p>
+    </div>
+  </noscript>
+
   <div class="bg-layer">
     <div class="orb orb-1"></div>
     <div class="orb orb-2"></div>
@@ -30,8 +137,8 @@
         </svg>
       </div>
       <div class="brand-text">
-        <div class="brand-title" data-i18n="ui.brand.title">KarpaChess</div>
-        <div class="brand-sub" data-i18n="ui.brand.tagline">Learn Chess · Every Move Teaches</div>
+        <h1 class="brand-title" data-i18n="ui.brand.title">KarpaChess</h1>
+        <p class="brand-sub" data-i18n="ui.brand.tagline">Learn Chess · Every Move Teaches</p>
       </div>
     </div>
 

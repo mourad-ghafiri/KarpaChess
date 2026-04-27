@@ -1,0 +1,11 @@
+# KarpaChess — robots policy
+# This is a fully client-side static web app; everything is safe to crawl.
+
+User-agent: *
+Allow: /
+
+# Don't waste crawl budget on the i18n JSON bundles — they're only meaningful
+# when paired with the running app, not as standalone pages.
+Disallow: /data/i18n/
+
+Sitemap: https://karpachess.com/sitemap.xml

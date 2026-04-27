@@ -84,8 +84,13 @@ async function bootstrap() {
   const prefs = new PrefsStore(storage, bus);
   prefs.load();
 
-  // ---------- i18n: detect language if unset, then load bundle
-  if (!storage.read()?.lang) {
+  // ---------- i18n: ?lang=<code> query string > saved pref > navigator.language
+  // The query-string path is what makes the hreflang alternates in index.html
+  // actually flip the UI when a search engine sends a user to e.g. ?lang=fr.
+  const queryLang = langFromQuery();
+  if (queryLang) {
+    prefs.set('lang', queryLang);
+  } else if (!storage.read()?.lang) {
     const detected = detectLanguage();
     prefs.set('lang', detected);
   }
@@ -310,6 +315,18 @@ function detectLanguage() {
   const nav = (navigator.language || 'en').toLowerCase();
   const code = nav.split('-')[0];
   return SUPPORTED_LANGS.includes(code) ? code : 'en';
+}
+
+/** Read `?lang=<code>` from the current URL. Returns null if absent or unsupported. */
+function langFromQuery() {
+  try {
+    const code = new URLSearchParams(window.location.search).get('lang');
+    if (!code) return null;
+    const lower = code.toLowerCase();
+    return SUPPORTED_LANGS.includes(lower) ? lower : null;
+  } catch {
+    return null;
+  }
 }
 
 function applyTheme(name) {
