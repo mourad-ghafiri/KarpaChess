@@ -644,7 +644,11 @@ export class DrawingOverlay {
       return;
     }
     if (!d.startSq) return;
-    this.#toggleSquareHighlight(d.startSq, d.color);
+    // Square highlights default to the palette red (the standard "look here"
+    // colour) on a plain right-click. Modifiers still produce their usual
+    // hue, so the user can mix and match.
+    const color = d.color === MOD_COLOR.plain ? DRAW_COLORS[0].hex : d.color;
+    this.#toggleSquareHighlight(d.startSq, color);
   }
 
   #colorForEvent(e) {
