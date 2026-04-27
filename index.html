@@ -101,6 +101,29 @@
 
     <!-- ============ CENTER: BOARD ============ -->
     <section class="board-area">
+      <div class="board-controls top">
+        <button class="btn ghost" id="btn-flip" data-i18n-title="ui.buttonTitle.flip" title="Flip board (F)">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M7 4v6H3l5 5 5-5h-4V4H7zm10 16v-6h4l-5-5-5 5h4v6h2z"/></svg>
+          <span data-i18n="ui.button.flip">Flip</span>
+        </button>
+        <button class="btn ghost" id="btn-undo" data-i18n-title="ui.buttonTitle.undo" title="Undo (Ctrl+Z)">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 5V2L5 9l7 7v-3c4 0 7 2 8 5 0-6-4-11-8-13z"/></svg>
+          <span data-i18n="ui.button.undo">Undo</span>
+        </button>
+        <button class="btn ghost" id="btn-hint" data-i18n-title="ui.buttonTitle.hint" title="Get a hint (H)">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 2a7 7 0 00-4 12.74V17a2 2 0 002 2h4a2 2 0 002-2v-2.26A7 7 0 0012 2zm-2 20h4v-1h-4v1z"/></svg>
+          <span data-i18n="ui.button.hint">Hint</span>
+        </button>
+        <button class="btn accent" id="btn-analyze" data-i18n-title="ui.buttonTitle.analyze" title="Deep analysis">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M9 3v18l6-9z"/></svg>
+          <span data-i18n="ui.button.analyze">Analyze</span>
+        </button>
+        <button class="btn primary" id="btn-new" data-i18n-title="ui.buttonTitle.newGame" title="New game (N)">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+          <span data-i18n="ui.button.newGame">New Game</span>
+        </button>
+      </div>
+
       <div class="board-frame glass" dir="ltr">
         <div class="board-with-ranks">
           <div class="rank-labels" id="rank-labels-left"></div>
@@ -125,6 +148,22 @@
         </div>
 
         <div class="board-overlay" id="board-overlay"></div>
+        <div class="hint-card hint-overlay glass" id="hint-card" hidden>
+          <div class="hint-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22">
+              <path fill="currentColor" d="M9 21h6v-1H9v1zm3-19a7 7 0 00-4 12.74V17a2 2 0 002 2h4a2 2 0 002-2v-2.26A7 7 0 0012 2zm2 14h-4v-1.26A5 5 0 1117 9a4.93 4.93 0 01-3 4.58V16z"/>
+            </svg>
+          </div>
+          <div class="hint-body">
+            <div class="hint-eyebrow" data-i18n="hint.eyebrow">Suggested move</div>
+            <div class="hint-move" id="hint-move">—</div>
+            <div class="hint-text" id="hint-text">Thinking...</div>
+          </div>
+          <div class="hint-actions">
+            <button class="btn primary" id="btn-play-hint" type="button" data-i18n="ui.button.playIt">Play it</button>
+            <button class="btn ghost" id="btn-close-hint" type="button" data-i18n-aria-label="ui.aria.dismissHint" data-i18n="ui.button.dismiss" aria-label="Dismiss hint">Dismiss</button>
+          </div>
+        </div>
         <div class="game-banner" id="game-banner" hidden>
           <button class="banner-close icon-btn" id="banner-close" type="button" data-i18n-aria-label="ui.buttonTitle.closeBanner" aria-label="Dismiss">✕</button>
           <div class="banner-icon" id="banner-icon">🏆</div>
@@ -137,47 +176,7 @@
         </div>
       </div>
 
-      <div class="hint-card glass" id="hint-card" hidden>
-        <div class="hint-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" width="22" height="22">
-            <path fill="currentColor" d="M9 21h6v-1H9v1zm3-19a7 7 0 00-4 12.74V17a2 2 0 002 2h4a2 2 0 002-2v-2.26A7 7 0 0012 2zm2 14h-4v-1.26A5 5 0 1117 9a4.93 4.93 0 01-3 4.58V16z"/>
-          </svg>
-        </div>
-        <div class="hint-body">
-          <div class="hint-eyebrow" data-i18n="hint.eyebrow">Suggested move</div>
-          <div class="hint-move" id="hint-move">—</div>
-          <div class="hint-text" id="hint-text">Thinking...</div>
-        </div>
-        <div class="hint-actions">
-          <button class="btn primary" id="btn-play-hint" type="button" data-i18n="ui.button.playIt">Play it</button>
-          <button class="btn ghost" id="btn-close-hint" type="button" data-i18n-aria-label="ui.aria.dismissHint" data-i18n="ui.button.dismiss" aria-label="Dismiss hint">Dismiss</button>
-        </div>
-      </div>
-
-      <div class="board-controls">
-        <button class="btn ghost" id="btn-flip" data-i18n-title="ui.buttonTitle.flip" title="Flip board (F)">
-          <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M7 4v6H3l5 5 5-5h-4V4H7zm10 16v-6h4l-5-5-5 5h4v6h2z"/></svg>
-          <span data-i18n="ui.button.flip">Flip</span>
-        </button>
-        <button class="btn ghost" id="btn-undo" data-i18n-title="ui.buttonTitle.undo" title="Undo (Ctrl+Z)">
-          <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 5V2L5 9l7 7v-3c4 0 7 2 8 5 0-6-4-11-8-13z"/></svg>
-          <span data-i18n="ui.button.undo">Undo</span>
-        </button>
-        <button class="btn ghost" id="btn-hint" data-i18n-title="ui.buttonTitle.hint" title="Get a hint (H)">
-          <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 2a7 7 0 00-4 12.74V17a2 2 0 002 2h4a2 2 0 002-2v-2.26A7 7 0 0012 2zm-2 20h4v-1h-4v1z"/></svg>
-          <span data-i18n="ui.button.hint">Hint</span>
-        </button>
-        <button class="btn accent" id="btn-analyze" data-i18n-title="ui.buttonTitle.analyze" title="Deep analysis">
-          <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M9 3v18l6-9z"/></svg>
-          <span data-i18n="ui.button.analyze">Analyze</span>
-        </button>
-        <button class="btn primary" id="btn-new" data-i18n-title="ui.buttonTitle.newGame" title="New game (N)">
-          <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" fill="none"/></svg>
-          <span data-i18n="ui.button.newGame">New Game</span>
-        </button>
-      </div>
-
-      <!-- Drawing toolbar replaces board-controls in commentator mode (CSS-gated) -->
+      <!-- Drawing toolbar — available in every chess-board tab. -->
       <div class="cm-draw-toolbar" id="cm-draw-toolbar"></div>
 
       <!-- One-time hint shown the first time the user enters Commentator -->

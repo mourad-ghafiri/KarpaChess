@@ -97,17 +97,37 @@ body.modal-open { overflow: hidden; }
   position: fixed; inset: 0; pointer-events: none; z-index: 50;
 }
 
-/* ---------- Top bar ---------- */
+/* ---------- Top bar ----------
+   Topbar uses the same 3-column grid as `.layout` below, so the nav-tabs
+   slot sits directly over the board column. Brand fills the left panel
+   width, the language / settings cluster fills the right panel width,
+   and the nav-wrap is justified to the centre of the middle column —
+   which is the board column. Tablet/mobile keep their own layouts via
+   the existing media queries further down. */
 .topbar {
   height: 64px;
-  padding: 0 24px;
-  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 320px minmax(480px, 1fr) 360px;
+  column-gap: 20px;
+  align-items: center;
   background: var(--paper-1);
   border-bottom: 1px solid var(--paper-edge);
   position: relative; z-index: 5;
   box-shadow: var(--shadow-xs);
 }
-.brand { display: flex; align-items: center; gap: 14px; min-width: 220px; }
+.brand { display: flex; align-items: center; gap: 14px; min-width: 220px; justify-self: start; }
+.topbar > .nav-wrap    { justify-self: center; }
+.topbar > .top-actions { justify-self: end; }
+
+/* Match the smaller layout breakpoint so the alignment stays true. */
+@media (max-width: 1280px) {
+  .topbar {
+    padding: 0 14px;
+    grid-template-columns: 280px 1fr 320px;
+    column-gap: 14px;
+  }
+}
 .brand-crest {
   width: 44px; height: 44px; border-radius: 12px;
   display: grid; place-items: center;
@@ -482,20 +502,39 @@ body.modal-open { overflow: hidden; }
 }
 .banner-close:hover { color: var(--ink-0); background: var(--paper-2); }
 
-/* ---------- Hint card ---------- */
+/* ---------- Hint card ----------
+   Positioned absolutely inside .board-frame so it floats on top of the board
+   like a small modal — pinned to the top edge so it doesn't obscure the
+   action area where the user typically plays. */
 .hint-card {
   display: grid;
   grid-template-columns: 44px 1fr auto;
   align-items: center;
   gap: 14px;
-  padding: 14px 18px;
+  padding: 12px 16px;
   border-radius: var(--r-lg);
   background: linear-gradient(90deg, var(--gold-soft), var(--paper-1));
   border: 1px solid rgba(184, 138, 61, 0.4);
   border-left: 4px solid var(--coral);
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-lg);
   max-width: min(680px, 100%);
-  animation: hintIn 300ms var(--t-mid);
+}
+.hint-card.hint-overlay {
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 6;
+  width: max-content;
+  max-width: calc(100% - 28px);
+  background: rgba(251, 246, 232, 0.96);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  animation: hintOverlayIn 240ms var(--t-mid);
+}
+@keyframes hintOverlayIn {
+  from { opacity: 0; transform: translate(-50%, -8px); }
+  to   { opacity: 1; transform: translate(-50%, 0); }
 }
 @keyframes hintIn { from { opacity: 0; transform: translateY(-6px); } }
 .hint-icon {
@@ -523,9 +562,33 @@ body.modal-open { overflow: hidden; }
 }
 .hint-actions { display: flex; gap: 6px; align-items: center; }
 
-/* ---------- Board controls ---------- */
+/* ---------- Board controls (now sits above the board as a top toolbar) ----------
+   Practice-only: Flip / Undo / Hint / Analyze / New Game don't apply on the
+   Learn / Puzzles / Coach / Commentator tabs, so we hide the row everywhere
+   except `body.tab-practice` (set by TabController on tab activation). */
 .board-controls {
   display: flex; gap: 8px; flex-wrap: wrap; justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: var(--size, min(68vh, 640px));
+}
+.board-controls.top { display: none; }
+body.tab-practice .board-controls.top {
+  display: flex;
+  /* Slightly tighter buttons up top so the row reads as a toolbar, not a CTA strip */
+  padding: 8px 12px;
+  border-radius: var(--r-md);
+  background: var(--paper-1);
+  border: 1px solid var(--paper-edge);
+  box-shadow: var(--shadow-xs);
+}
+.board-controls.top .btn {
+  padding: 8px 14px;
+  font-size: 12.5px;
+  box-shadow: none;
+}
+.board-controls.top .btn:hover {
+  box-shadow: var(--shadow-xs);
 }
 .btn {
   appearance: none;
@@ -1331,18 +1394,21 @@ body.mode-commentator.off-main-line .sq.dark  { background: color-mix(in srgb, v
 body.mode-commentator.off-main-line .file-labels,
 body.mode-commentator.off-main-line .rank-labels { opacity: 0.5; transition: opacity var(--t-mid); }
 
-/* Swap practice controls for drawing toolbar — but only once a match is
-   loaded (no match = nothing to draw on). */
-.cm-draw-toolbar { display: none; }
-body.mode-commentator.cm-has-match .cm-draw-toolbar {
+/* Drawing toolbar lives below the board in every mode. The only place we
+   hide it is the Commentator tab before a match is loaded — there's no
+   board state to annotate yet. */
+.cm-draw-toolbar {
   display: flex; flex-direction: column; gap: 10px;
-  margin-top: 12px;
   padding: 10px 12px;
   border-radius: var(--r-md);
   background: var(--paper-1);
   border: 1px solid var(--paper-edge);
   box-shadow: var(--shadow-sm);
 }
+body.mode-commentator:not(.cm-has-match) .cm-draw-toolbar { display: none; }
+
+/* The Commentator tab uses the move tree / insights panels for navigation,
+   so we don't want the practice action row there. */
 body.mode-commentator .board-controls { display: none; }
 .draw-tools { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
 .draw-tool {

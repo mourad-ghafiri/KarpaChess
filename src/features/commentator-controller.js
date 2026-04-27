@@ -100,7 +100,6 @@ export class CommentatorController {
     this.#toggleViews();
     this.#renderStatus();
     this.moveTreeView.render();
-    this.drawingOverlay.enable(true);
     this.drawingOverlay.render();
     this.#renderInsightsForCurrent();
     this.#maybeShowAnnotTip();
@@ -108,7 +107,7 @@ export class CommentatorController {
 
   onExitTab() {
     this.active = false;
-    this.drawingOverlay.enable(false);
+    this.drawingOverlay.render();
     document.body.classList.remove('off-main-line', 'cm-has-match');
     for (const c of [...document.body.classList]) {
       if (c.startsWith('draw-tool-')) document.body.classList.remove(c);

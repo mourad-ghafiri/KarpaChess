@@ -14,6 +14,7 @@ export class TabController {
   constructor(bus) {
     this.bus = bus;
     this.current = $$('.tab.active')[0]?.dataset.tab || null;
+    if (this.current) document.body.classList.add('tab-' + this.current);
 
     for (const t of $$('.tab')) {
       t.addEventListener('click', () => {
@@ -37,6 +38,12 @@ export class TabController {
 
     $$('.tab').forEach(t => t.classList.toggle('active', t.dataset.tab === name));
     $$('.tab-panel').forEach(p => p.classList.toggle('active', p.dataset.panel === name));
+    // Mirror the active tab onto <body> so CSS can gate per-tab chrome
+    // (e.g. the top control row only appears on the Practice tab).
+    for (const c of [...document.body.classList]) {
+      if (c.startsWith('tab-')) document.body.classList.remove(c);
+    }
+    document.body.classList.add('tab-' + name);
     this.current = name;
     this.#syncCrumbLabel();
     this.bus.emit(EVENTS.TAB_ACTIVATED, { name });

@@ -25,7 +25,7 @@
  *
  *  Coordinate system: 0..8 board-units matching the SVG viewBox.
  */
-import { EVENTS, DRAW_COLORS } from '../core/constants.js';
+import { EVENTS, DRAW_COLORS, MODE_IDS } from '../core/constants.js';
 import { i18n } from '../core/i18n.js';
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
@@ -98,11 +98,20 @@ export class DrawingOverlay {
     this.tool = null;            // null = no tool mode (right-click annotations only)
     this.color = DRAW_COLORS[0].hex;
     this.stroke = 0.08;
-    this.enabled = false;
+    this.enabled = true;         // available in every chess-board tab; toolbar gates by CSS
     this.selectedIdx = null;
     this.drag = null;            // active toolbar drag descriptor
     this._rcDrag = null;         // active right-click drag descriptor
     this._touchPress = null;     // long-press timer state
+
+    // Ephemeral drawings backend used by every non-commentator mode (practice,
+    // learn, puzzles, coach). Drawings live only as long as the position does
+    // — any board move / undo / reset wipes them, mirroring how a real coach
+    // erases the board between examples. Commentator continues to use the
+    // per-node, persisted store on `commentatorState`.
+    this._localDrawings = [];
+    this._localHistory  = [];
+    this._localFuture   = [];
 
     this.#buildToolbar();
     this.#wireToolbarPointer();
@@ -121,17 +130,55 @@ export class DrawingOverlay {
     });
     bus.on(EVENTS.STATE_CHANGED, (e) => {
       const t = e?.detail?.type;
-      if (t === 'mode' || t === 'orientation') this.render();
+      if (t === 'mode' || t === 'orientation') {
+        // Mode flip → ephemeral state from another tab is no longer relevant.
+        if (t === 'mode') this.#resetLocalDrawings();
+        this.#updateUndoRedoButtons();
+        this.render();
+        return;
+      }
+      // For non-commentator modes a position change wipes the local board.
+      if (!this.#useCommentator()
+          && (t === 'move' || t === 'undo' || t === 'reset' || t === 'fen')) {
+        this.#resetLocalDrawings();
+        this.selectedIdx = null;
+        this.#closeInlineText();
+        this.#updateUndoRedoButtons();
+        this.render();
+      }
     });
     bus.on(EVENTS.I18N_CHANGED, () => this.#buildToolbar());
 
     this.svg.hidden = true;
+    // Settle initial pointer-events / button states.
+    this.#refreshPointerEvents();
+  }
+
+  /** True when we should read/write through commentatorState's per-node store. */
+  #useCommentator() {
+    return this.gameState.mode === MODE_IDS.COMMENTATOR
+      && this.commentatorState?.hasMatch?.();
+  }
+
+  #resetLocalDrawings() {
+    this._localDrawings = [];
+    this._localHistory  = [];
+    this._localFuture   = [];
   }
 
   // ============= lifecycle =============
+  /**
+   * Toggle the overlay on/off. The overlay is enabled by default in every
+   * chess-board tab — callers should rarely need this. We keep the method so
+   * tests / future tabs without a board can opt out.
+   */
   enable(on) {
-    this.enabled = on;
-    if (!on) { this.selectedIdx = null; this.tool = null; }
+    this.enabled = !!on;
+    if (!on) {
+      this.selectedIdx = null;
+      this.tool = null;
+      this.#closeInlineText();
+    }
     this.#refreshPointerEvents();
     this.#syncToolButtons();
     this.render();
@@ -260,24 +307,72 @@ export class DrawingOverlay {
     if (this.selectedIdx != null) this.#updateSelected(s => { s.color = hex; });
   }
 
+  #canUndo() {
+    if (this.#useCommentator()) {
+      const cur = this.commentatorState.currentNode();
+      return !!(cur && this.commentatorState.canUndoDrawings(cur.id));
+    }
+    return this._localHistory.length > 0;
+  }
+  #canRedo() {
+    if (this.#useCommentator()) {
+      const cur = this.commentatorState.currentNode();
+      return !!(cur && this.commentatorState.canRedoDrawings(cur.id));
+    }
+    return this._localFuture.length > 0;
+  }
   #updateUndoRedoButtons() {
-    const cur = this.commentatorState.currentNode();
-    if (!cur || !this._undoBtn) return;
-    this._undoBtn.disabled = !this.commentatorState.canUndoDrawings(cur.id);
-    this._redoBtn.disabled = !this.commentatorState.canRedoDrawings(cur.id);
+    if (!this._undoBtn) return;
+    this._undoBtn.disabled = !this.#canUndo();
+    this._redoBtn.disabled = !this.#canRedo();
   }
 
   #undo() {
-    const cur = this.commentatorState.currentNode();
-    if (!cur) return;
-    this.commentatorState.undoDrawings(cur.id);
+    if (this.#useCommentator()) {
+      const cur = this.commentatorState.currentNode();
+      if (cur) this.commentatorState.undoDrawings(cur.id);
+    } else {
+      if (!this._localHistory.length) return;
+      this._localFuture.push(this._localDrawings.slice());
+      this._localDrawings = this._localHistory.pop();
+      this.#afterLocalChange();
+    }
     this.selectedIdx = null;
   }
   #redo() {
-    const cur = this.commentatorState.currentNode();
-    if (!cur) return;
-    this.commentatorState.redoDrawings(cur.id);
+    if (this.#useCommentator()) {
+      const cur = this.commentatorState.currentNode();
+      if (cur) this.commentatorState.redoDrawings(cur.id);
+    } else {
+      if (!this._localFuture.length) return;
+      this._localHistory.push(this._localDrawings.slice());
+      this._localDrawings = this._localFuture.pop();
+      this.#afterLocalChange();
+    }
     this.selectedIdx = null;
+  }
+
+  /**
+   * Replace the active drawings array. Routes to commentatorState (which
+   * persists + emits its own change event) when a match is loaded, otherwise
+   * keeps the change in the in-memory ephemeral store with its own undo stack.
+   */
+  #writeDrawings(drawings) {
+    if (this.#useCommentator()) {
+      const cur = this.commentatorState.currentNode();
+      if (cur) this.commentatorState.setDrawings(cur.id, drawings);
+      return;
+    }
+    this._localHistory.push(this._localDrawings.map(deepCloneShape));
+    if (this._localHistory.length > 30) this._localHistory.shift();
+    this._localFuture = [];
+    this._localDrawings = drawings;
+    this.#afterLocalChange();
+  }
+
+  #afterLocalChange() {
+    this.#updateUndoRedoButtons();
+    this.render();
   }
 
   // ============= toolbar pointer (Pen / Text / Rect) =============
@@ -306,7 +401,7 @@ export class DrawingOverlay {
 
   #onToolDown(e) {
     if (!this.enabled || !this.tool) return;
-    if (!this.commentatorState.hasMatch()) return;
+    if (this.gameState.mode === MODE_IDS.COMMENTATOR && !this.commentatorState.hasMatch()) return;
     if (e.button !== 0) return;   // left click only here; right-click goes to the board handler
 
     const pt = this.#pointToBoard(e);
@@ -403,12 +498,13 @@ export class DrawingOverlay {
 
     // Don't show the browser's context menu on the board.
     this.boardRoot.addEventListener('contextmenu', (e) => {
-      if (this.gameState.mode === 'commentator' && this.enabled) e.preventDefault();
+      if (this.enabled) e.preventDefault();
     });
 
     this.boardRoot.addEventListener('pointerdown', (e) => {
-      if (!this.enabled || this.gameState.mode !== 'commentator') return;
-      if (!this.commentatorState.hasMatch()) return;
+      if (!this.enabled) return;
+      // No board to annotate in commentator before a match is loaded.
+      if (this.gameState.mode === MODE_IDS.COMMENTATOR && !this.commentatorState.hasMatch()) return;
       if (this.tool) return;        // toolbar tool active → toolbar handles input
 
       // Right-button mouse click, OR touch with long-press
@@ -582,16 +678,14 @@ export class DrawingOverlay {
    * (sq in board coords, not orientation-flipped).
    */
   #toggleSquareHighlight(sq, color) {
-    const cur = this.commentatorState.currentNode();
-    if (!cur) return;
-    const drawings = (cur.drawings || []).slice();
+    const drawings = this.#currentDrawings().slice();
     const idx = drawings.findIndex(s => s.kind === 'square' && s.sq && s.sq[0] === sq[0] && s.sq[1] === sq[1] && s.color === color);
     if (idx >= 0) {
       drawings.splice(idx, 1);
     } else {
       drawings.push({ kind: 'square', sq, color, stroke: this.stroke });
     }
-    this.commentatorState.setDrawings(cur.id, drawings);
+    this.#writeDrawings(drawings);
   }
 
   /** Find the shape whose hit region contains the given board point, or null. */
@@ -712,55 +806,51 @@ export class DrawingOverlay {
 
   // ============= shape mutations =============
   #updateAt(idx, mutator) {
-    const cur = this.commentatorState.currentNode();
-    if (!cur || !cur.drawings || !cur.drawings[idx]) return;
-    const drawings = cur.drawings.slice();
-    const s = JSON.parse(JSON.stringify(drawings[idx]));
+    const drawings = this.#currentDrawings().slice();
+    if (!drawings[idx]) return;
+    const s = deepCloneShape(drawings[idx]);
     mutator(s);
     drawings[idx] = s;
-    this.commentatorState.setDrawings(cur.id, drawings);
+    this.#writeDrawings(drawings);
   }
 
   #addShape(shape) {
-    const cur = this.commentatorState.currentNode();
-    if (!cur) return;
-    const drawings = (cur.drawings || []).slice();
+    const drawings = this.#currentDrawings().slice();
     drawings.push(shape);
-    this.commentatorState.setDrawings(cur.id, drawings);
+    this.#writeDrawings(drawings);
   }
   #deleteAt(idx) {
-    const cur = this.commentatorState.currentNode();
-    if (!cur) return;
-    const drawings = (cur.drawings || []).slice();
+    const drawings = this.#currentDrawings().slice();
     drawings.splice(idx, 1);
-    this.commentatorState.setDrawings(cur.id, drawings);
+    this.#writeDrawings(drawings);
     if (this.selectedIdx === idx) this.selectedIdx = null;
     else if (this.selectedIdx > idx) this.selectedIdx--;
   }
   #deleteSelected() { if (this.selectedIdx != null) this.#deleteAt(this.selectedIdx); }
   #clearAll() {
-    const cur = this.commentatorState.currentNode();
-    if (!cur || !cur.drawings || !cur.drawings.length) return;
+    if (!this.#currentDrawings().length) return;
     this.selectedIdx = null;
-    this.commentatorState.setDrawings(cur.id, []);
+    this.#writeDrawings([]);
   }
   #updateSelected(mutator) {
     if (this.selectedIdx == null) return;
-    const cur = this.commentatorState.currentNode();
-    if (!cur) return;
-    const drawings = (cur.drawings || []).slice();
-    const s = JSON.parse(JSON.stringify(drawings[this.selectedIdx]));
+    const drawings = this.#currentDrawings().slice();
+    if (!drawings[this.selectedIdx]) return;
+    const s = deepCloneShape(drawings[this.selectedIdx]);
     mutator(s);
     drawings[this.selectedIdx] = s;
-    this.commentatorState.setDrawings(cur.id, drawings);
+    this.#writeDrawings(drawings);
   }
   #selected() {
     if (this.selectedIdx == null) return null;
     return this.#currentDrawings()[this.selectedIdx] || null;
   }
   #currentDrawings() {
-    const cur = this.commentatorState.currentNode();
-    return (cur && cur.drawings) ? cur.drawings : [];
+    if (this.#useCommentator()) {
+      const cur = this.commentatorState.currentNode();
+      return (cur && cur.drawings) ? cur.drawings : [];
+    }
+    return this._localDrawings;
   }
 
   // ============= resize / rotate =============
@@ -832,7 +922,7 @@ export class DrawingOverlay {
   // ============= keyboard =============
   #wireKeys() {
     document.addEventListener('keydown', (e) => {
-      if (!this.enabled || this.gameState.mode !== 'commentator') return;
+      if (!this.enabled) return;
       if (/INPUT|TEXTAREA/.test(document.activeElement?.tagName)) return;
 
       if (e.key === 'Escape') {
@@ -842,14 +932,19 @@ export class DrawingOverlay {
       if (e.key === 'Delete' || e.key === 'Backspace') {
         if (this.selectedIdx != null) { e.preventDefault(); this.#deleteSelected(); return; }
       }
-      // Undo / redo (gated to commentator only)
+      // Undo / redo. Only consume the keystroke if we actually have a drawing
+      // to roll back — otherwise let it fall through to practice-controller's
+      // chess undo so Cmd+Z stays useful when the board is clean.
       const mod = e.metaKey || e.ctrlKey;
       if (mod && (e.key === 'z' || e.key === 'Z')) {
+        const ok = e.shiftKey ? this.#canRedo() : this.#canUndo();
+        if (!ok) return;
         e.preventDefault();
+        e.stopImmediatePropagation?.();
         if (e.shiftKey) this.#redo(); else this.#undo();
         return;
       }
-      // Tool shortcuts
+      // Tool shortcuts (skipped while typing in an input — guarded above).
       if (!mod) {
         if (e.key === 'p' || e.key === 'P') { e.preventDefault(); this.#toggleTool('pen'); }
         else if (e.key === 't' || e.key === 'T') { e.preventDefault(); this.#toggleTool('text'); }
@@ -863,9 +958,13 @@ export class DrawingOverlay {
     for (const child of [...this.svg.children]) {
       if (child.id !== 'draw-preview') child.remove();
     }
-    if (this.gameState.mode !== 'commentator') { this.svg.hidden = true; return; }
+    if (!this.enabled) { this.svg.hidden = true; return; }
+    // In commentator mode there's nothing to draw on until a match is loaded.
+    if (this.gameState.mode === MODE_IDS.COMMENTATOR && !this.commentatorState.hasMatch()) {
+      this.svg.hidden = true;
+      return;
+    }
     this.svg.hidden = false;
-    if (!this.commentatorState.hasMatch()) return;
 
     // Selection chrome only when a tool is active and a shape is selected.
     const showChrome = this.tool != null;
@@ -1179,3 +1278,4 @@ function distPointSeg(p, a, b) {
   const x = ax + t * dx, y = ay + t * dy;
   return Math.hypot(px - x, py - y);
 }
+function deepCloneShape(s) { return JSON.parse(JSON.stringify(s)); }
