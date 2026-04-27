@@ -170,6 +170,11 @@
     }
   },
   "classification": {
+    "brilliant": {
+      "label": "Jugada brillante",
+      "glyph": "!!",
+      "comment": "Un hallazgo brillante — un sacrificio que el motor sigue considerando la mejor jugada del tablero."
+    },
     "best": {
       "label": "Mejor jugada",
       "glyph": "★",

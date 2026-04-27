@@ -170,6 +170,11 @@
     }
   },
   "classification": {
+    "brilliant": {
+      "label": "Coup brillant",
+      "glyph": "!!",
+      "comment": "Une trouvaille brillante — un sacrifice que le moteur considère toujours comme le meilleur coup de l'échiquier."
+    },
     "best": {
       "label": "Meilleur coup",
       "glyph": "★",

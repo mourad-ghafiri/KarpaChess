@@ -170,6 +170,11 @@
     }
   },
   "classification": {
+    "brilliant": {
+      "label": "Brilliant move",
+      "glyph": "!!",
+      "comment": "A brilliant find — a sacrifice the engine still rates as the strongest move on the board."
+    },
     "best": {
       "label": "Best move",
       "glyph": "★",

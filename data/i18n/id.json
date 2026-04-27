@@ -170,6 +170,11 @@
     }
   },
   "classification": {
+    "brilliant": {
+      "label": "Langkah brilian",
+      "glyph": "!!",
+      "comment": "Temuan brilian — pengorbanan yang tetap dinilai mesin sebagai langkah terkuat di papan."
+    },
     "best": {
       "label": "Langkah terbaik",
       "glyph": "★",

@@ -170,6 +170,11 @@
     }
   },
   "classification": {
+    "brilliant": {
+      "label": "妙手",
+      "glyph": "!!",
+      "comment": "妙手——这步弃子，引擎仍视为棋盘上的最佳着法。"
+    },
     "best": {
       "label": "最佳着法",
       "glyph": "★",

@@ -27,6 +27,7 @@
   --gold:       #b88a3d;          /* XP / rewards */
   --gold-soft:  #f1dfae;
   --navy:       #2f4a6b;           /* cool accent */
+  --navy-soft:  #d6dde6;           /* used by the "brilliant" classification tier */
   --plum:       #8a4a6b;            /* tertiary */
 
   /* Board — classic cream/green */
@@ -1764,11 +1765,13 @@ body.mode-commentator .board-controls { display: none; }
 .mt-san.cls-inaccuracy { color: var(--gold); }
 .mt-san.cls-good { color: var(--sage-deep); }
 .mt-san.cls-best { color: var(--sage-deep); font-weight: 700; }
+.mt-san.cls-brilliant { color: var(--navy); font-weight: 700; }
 .mt-san.active.cls-blunder,
 .mt-san.active.cls-mistake,
 .mt-san.active.cls-inaccuracy,
 .mt-san.active.cls-good,
-.mt-san.active.cls-best { color: var(--paper-1); }
+.mt-san.active.cls-best,
+.mt-san.active.cls-brilliant { color: var(--paper-1); }
 .mt-cls {
   display: inline-block;
   margin-right: 3px;
@@ -1848,6 +1851,10 @@ body.mode-commentator .board-controls { display: none; }
 .cm-insight-head.tone-good { background: var(--sage-soft); border-left-color: var(--sage); }
 .cm-insight-head.tone-warn { background: var(--gold-soft); border-left-color: var(--gold); }
 .cm-insight-head.tone-bad  { background: var(--coral-soft); border-left-color: var(--coral); }
+.cm-insight-head.tone-brilliant {
+  background: linear-gradient(135deg, var(--navy-soft), var(--paper-1));
+  border-left-color: var(--navy);
+}
 .cm-insight-glyph {
   flex: 0 0 auto;
   width: 38px; height: 38px;
@@ -1862,6 +1869,7 @@ body.mode-commentator .board-controls { display: none; }
 .tone-good .cm-insight-glyph { color: var(--sage-deep); }
 .tone-warn .cm-insight-glyph { color: var(--gold); }
 .tone-bad  .cm-insight-glyph { color: var(--coral-deep); }
+.tone-brilliant .cm-insight-glyph { color: var(--navy); }
 .cm-insight-title { min-width: 0; flex: 1; }
 .cm-insight-label {
   font-family: 'Fraunces', serif;
@@ -1922,6 +1930,7 @@ body.mode-commentator .board-controls { display: none; }
 .cm-badge.tone-good circle { fill: var(--sage); }
 .cm-badge.tone-warn circle { fill: var(--gold); }
 .cm-badge.tone-bad  circle { fill: var(--coral); }
+.cm-badge.tone-brilliant circle { fill: var(--navy); }
 
 /* ---------- End-of-match recap modal ---------- */
 .cm-result-headline {

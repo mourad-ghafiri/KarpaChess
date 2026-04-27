@@ -170,6 +170,11 @@
     }
   },
   "classification": {
+    "brilliant": {
+      "label": "妙手",
+      "glyph": "!!",
+      "comment": "見事な妙手 — 駒を捨てる一手ですが、エンジンも盤上で最善と認めています。"
+    },
     "best": {
       "label": "最善手",
       "glyph": "★",

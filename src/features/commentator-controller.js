@@ -23,14 +23,16 @@ import { i18n } from '../core/i18n.js';
 const ANALYSIS_DEPTH = 2;
 
 const CLASSIFICATION_TONE = {
+  brilliant: 'brilliant',
   best: 'good', good: 'good', inaccuracy: 'warn', mistake: 'bad', blunder: 'bad'
 };
 
 /** Per-classification quality score (0-100). Averaged across each player's
  *  moves for the end-of-match accuracy headline. Stays aligned with the
- *  best/good/inaccuracy/mistake/blunder ladder shown in the insights panel. */
+ *  brilliant/best/good/inaccuracy/mistake/blunder ladder shown in the insights
+ *  panel. Brilliant matches best so the accuracy reads cleanly as a percent. */
 const QUALITY_SCORE = {
-  best: 100, good: 85, inaccuracy: 60, mistake: 30, blunder: 10
+  brilliant: 100, best: 100, good: 85, inaccuracy: 60, mistake: 30, blunder: 10
 };
 
 function classificationMeta(key) {
@@ -47,6 +49,44 @@ function classificationFor(delta) {
   if (delta < 150)  return 'inaccuracy';
   if (delta < 300)  return 'mistake';
   return              'blunder';
+}
+
+/** Static material total (centipawns) for `color` on the given state. Excludes
+ *  the king so trades / sacs aren't dwarfed by king value. */
+function materialOf(state, color) {
+  let mat = 0;
+  for (const piece of state.board) {
+    if (!piece || piece.c !== color || piece.p === 'k') continue;
+    mat += Chess.PIECE_VALUE[piece.p] || 0;
+  }
+  return mat;
+}
+
+/**
+ * True when the player's move concedes ≥150 cp of material vs. the engine's
+ * best 1-ply reply from the post-move position. Combined with a `best`-tier
+ * delta this is what we surface as "brilliant" — the move is the engine's
+ * top choice AND it apparently throws away a piece's worth of material.
+ *
+ * 150 cp ≈ 1½ pawns: catches a queen-for-pawn (~800), a knight sac (~320),
+ * an exchange sac (R-for-B ~170). Plain trades / recaptures net to zero and
+ * stay classified as `best`.
+ */
+function isSacrifice(state, move) {
+  const color = move.color;
+  const before = materialOf(state, color);
+  const ourClone = { ...move };
+  Chess.makeMove(state, ourClone);
+  const oppBest = Chess.search(state, 1);
+  let after = before;
+  if (oppBest && oppBest.move) {
+    const oppClone = { ...oppBest.move };
+    Chess.makeMove(state, oppClone);
+    after = materialOf(state, color);
+    Chess.undoLast(state);
+  }
+  Chess.undoLast(state);
+  return (before - after) >= 150;
 }
 
 export class CommentatorController {
@@ -301,7 +341,14 @@ export class CommentatorController {
     Chess.undoLast(preState);
 
     const delta = Math.max(0, evalBest - evalAfter);
-    this.commentatorState.setClassification(node.id, classificationFor(delta));
+    let key = classificationFor(delta);
+    // Promote `best` to `brilliant` when the move is also a material sacrifice.
+    // Re-parse `prev.fen` so the helper can mutate / undo without touching the
+    // state we already worked with above.
+    if (key === 'best' && isSacrifice(Chess.fromFEN(prev.fen), node.move)) {
+      key = 'brilliant';
+    }
+    this.commentatorState.setClassification(node.id, key);
     if (bestSan) this.commentatorState.setEngineBest(node.id, bestSan, evalBest);
     this.moveTreeView.render();
   }
@@ -380,6 +427,8 @@ export class CommentatorController {
     const key = node.classification;
     const bestTag = bestSan ? `<b>${escapeHtml(bestSan)}</b>` : '';
     switch (key) {
+      case 'brilliant':
+        return escapeHtml(lead) + i18n.t('classification.brilliant.comment');
       case 'best':
         return escapeHtml(lead) + i18n.t('classification.best.comment');
       case 'good':
